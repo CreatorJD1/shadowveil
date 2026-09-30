@@ -1,0 +1,1271 @@
+{
+ "load": "All part sets loaded for apose\nbody: skin mesh views/apose/body/skin.json (37654 vertices, 72685 triangles, groups 201/203/205/220/222/240/242/250)\nbody: 13 jointed parts\nlayers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2\nmouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE\nfinger frames: 30 segments",
+ "text": "Joint test (apose)\nSUMMARY (apose, 12 joints bent to 25 deg; widths along silhouette normals within 30 px of the joint):\n  cut/nearest   mean width 107.7% of rest (over 10 joints, 2 without rest edge samples skipped), min 0.25 px, edges without line 26.1% (rest 9.3%), holes in rest silhouette 1, seam px 0, vacated 36\n  cut/linear    mean width 106.4% of rest (over 10 joints, 2 without rest edge samples skipped), min 1.00 px, edges without line 24.4% (rest 9.3%), holes in rest silhouette 1, seam px 0, vacated 35\n  cut/ss2       mean width 105.9% of rest (over 10 joints, 2 without rest edge samples skipped), min 1.00 px, edges without line 24.0% (rest 9.3%), holes in rest silhouette 1, seam px 0, vacated 35\n  skin/nearest  mean width 101.7% of rest (over 10 joints, 2 without rest edge samples skipped), min 0.25 px, edges without line 22.7% (rest 9.3%), holes in rest silhouette 0, seam px 0, vacated 0\n  skin/linear   mean width 100.1% of rest (over 10 joints, 2 without rest edge samples skipped), min 1.00 px, edges without line 20.9% (rest 9.3%), holes in rest silhouette 0, seam px 0, vacated 0\n  skin/ss2      mean width 99.9% of rest (over 10 joints, 2 without rest edge samples skipped), min 1.00 px, edges without line 24.5% (rest 9.3%), holes in rest silhouette 0, seam px 0, vacated 0\n  best width preservation: cut -> cut/ss2, skin -> skin/ss2\nshoulder_L [edge radius 45 px] @(822,439) rest: mean 1.31 min 1.25 px (83 samples, 5 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.51 (116% of rest) min 1.00 p10 1.25 no-line 18/96 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.42 (109% of rest) min 1.25 p10 1.25 no-line 12/95 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.42 (108% of rest) min 1.25 p10 1.25 no-line 10/95 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.31 (100% of rest) min 0.50 p10 1.25 no-line 31/107 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.25 (96% of rest) min 1.00 p10 1.25 no-line 20/105 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.26 (96% of rest) min 1.25 p10 1.25 no-line 29/105 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nshoulder_R [edge radius 45 px] @(541,439) rest: mean 1.29 min 1.25 px (81 samples, 8 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.51 (117% of rest) min 1.00 p10 1.25 no-line 16/98 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.42 (110% of rest) min 1.25 p10 1.25 no-line 5/91 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.40 (108% of rest) min 1.25 p10 1.25 no-line 4/91 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.39 (108% of rest) min 1.25 p10 1.25 no-line 17/92 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.34 (104% of rest) min 1.25 p10 1.25 no-line 8/88 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.33 (103% of rest) min 1.25 p10 1.25 no-line 10/88 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nelbow_L @(926,562) rest: mean 1.25 min 1.25 px (44 samples, 1 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.34 (107% of rest) min 1.00 p10 1.25 no-line 12/50 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.31 (104% of rest) min 1.25 p10 1.25 no-line 14/50 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.30 (104% of rest) min 1.25 p10 1.25 no-line 13/50 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.30 (104% of rest) min 1.25 p10 1.25 no-line 12/54 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.26 (101% of rest) min 1.25 p10 1.25 no-line 13/51 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 16/52 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nelbow_R @(438,563) rest: mean 1.27 min 1.25 px (41 samples, 5 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.32 (104% of rest) min 1.00 p10 1.25 no-line 18/53 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.30 (102% of rest) min 1.25 p10 1.25 no-line 14/51 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.28 (101% of rest) min 1.25 p10 1.25 no-line 14/50 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.26 (99% of rest) min 1.00 p10 1.25 no-line 11/53 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.26 (99% of rest) min 1.25 p10 1.25 no-line 6/49 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.26 (99% of rest) min 1.25 p10 1.25 no-line 8/49 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nhip_L [edge radius 60 px] @(747,793) rest: mean 0.00 min 0.00 px (0 samples, 0 no-line), enclosed 0\n   cut/nearest   25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nhip_R [edge radius 60 px] @(618,792) rest: mean 0.00 min 0.00 px (0 samples, 0 no-line), enclosed 0\n   cut/nearest   25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 0.00 (n/a: <20 rest edge samples) min 0.00 p10 0.00 no-line 0/0 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nknee_L [edge radius 45 px] @(760,1150) rest: mean 1.28 min 1.25 px (96 samples, 9 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.37 (107% of rest) min 1.00 p10 1.25 no-line 21/104 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.37 (107% of rest) min 1.25 p10 1.25 no-line 25/105 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.34 (105% of rest) min 1.00 p10 1.25 no-line 25/105 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.28 (100% of rest) min 1.25 p10 1.25 no-line 12/105 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.27 (99% of rest) min 1.25 p10 1.25 no-line 16/106 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.27 (99% of rest) min 1.25 p10 1.25 no-line 19/106 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nknee_R [edge radius 45 px] @(604,1150) rest: mean 1.27 min 1.00 px (93 samples, 13 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.27 (100% of rest) min 0.25 p10 1.25 no-line 29/103 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.33 (105% of rest) min 1.00 p10 1.25 no-line 21/96 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.32 (104% of rest) min 1.00 p10 1.25 no-line 22/96 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.28 (101% of rest) min 0.25 p10 1.25 no-line 16/103 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.28 (101% of rest) min 1.00 p10 1.25 no-line 10/98 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.26 (99% of rest) min 1.00 p10 1.25 no-line 16/97 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nankle_L @(772,1570) rest: mean 1.26 min 1.00 px (46 samples, 8 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.38 (110% of rest) min 1.00 p10 1.25 no-line 18/54 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.39 (110% of rest) min 1.00 p10 1.25 no-line 17/54 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.41 (111% of rest) min 1.00 p10 1.25 no-line 17/54 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.28 (102% of rest) min 1.25 p10 1.25 no-line 10/53 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.28 (101% of rest) min 1.00 p10 1.25 no-line 10/53 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.28 (102% of rest) min 1.25 p10 1.25 no-line 10/53 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nankle_R @(591,1570) rest: mean 1.25 min 1.25 px (46 samples, 9 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.39 (111% of rest) min 0.25 p10 1.25 no-line 17/54 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/linear    25deg width mean 1.45 (116% of rest) min 1.25 p10 1.25 no-line 17/51 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   cut/ss2       25deg width mean 1.44 (115% of rest) min 1.25 p10 1.25 no-line 17/51 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/nearest  25deg width mean 1.23 (98% of rest) min 0.25 p10 1.25 no-line 8/55 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.26 (101% of rest) min 1.25 p10 1.25 no-line 9/54 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.26 (101% of rest) min 1.25 p10 1.25 no-line 10/54 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nwrist_L @(1068,707) rest: mean 1.25 min 1.25 px (61 samples, 4 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.31 (105% of rest) min 0.25 p10 1.25 no-line 30/89 | holes in rest silhouette 1 (enclosed 1), vacated<=16px 18, seam px 0\n   cut/linear    25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 34/87 | holes in rest silhouette 1 (enclosed 1), vacated<=16px 18, seam px 0\n   cut/ss2       25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 33/87 | holes in rest silhouette 1 (enclosed 1), vacated<=16px 18, seam px 0\n   skin/nearest  25deg width mean 1.29 (103% of rest) min 0.25 p10 1.25 no-line 29/74 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 35/74 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 35/74 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\nwrist_R @(295,707) rest: mean 1.25 min 1.25 px (60 samples, 5 no-line), enclosed 0\n   cut/nearest   25deg width mean 1.27 (101% of rest) min 0.25 p10 1.25 no-line 26/85 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 18, seam px 0\n   cut/linear    25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 27/82 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 17, seam px 0\n   cut/ss2       25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 28/82 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 17, seam px 0\n   skin/nearest  25deg width mean 1.26 (101% of rest) min 1.25 p10 1.25 no-line 28/72 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/linear   25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 30/72 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0\n   skin/ss2      25deg width mean 1.25 (100% of rest) min 1.25 p10 1.25 no-line 31/72 | holes in rest silhouette 0 (enclosed 0), vacated<=16px 0, seam px 0",
+ "JT": {
+  "view": "apose",
+  "deg": 25,
+  "rows": [
+   {
+    "radius": 45,
+    "joint": "shoulder_L",
+    "param": "ShoulderL",
+    "x": 1,
+    "at": [
+     822,
+     439
+    ],
+    "rest": {
+     "n": 83,
+     "zero": 5,
+     "mean": 1.3072289156626506,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 78,
+      "zero": 18,
+      "mean": 1.5128205128205128,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.1572728346921894,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 83,
+      "zero": 12,
+      "mean": 1.4186746987951808,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0852534562211982,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 85,
+      "zero": 10,
+      "mean": 1.4176470588235295,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0844673353212253,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 76,
+      "zero": 31,
+      "mean": 1.305921052631579,
+      "min": 0.5,
+      "p10": 1.25,
+      "ratio": 0.9989995149163231,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 85,
+      "zero": 20,
+      "mean": 1.2529411764705882,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 0.9584711303876389,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 76,
+      "zero": 29,
+      "mean": 1.256578947368421,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 0.9612539413048751,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 45,
+    "joint": "shoulder_R",
+    "param": "ShoulderR",
+    "x": 1,
+    "at": [
+     541,
+     439
+    ],
+    "rest": {
+     "n": 81,
+     "zero": 8,
+     "mean": 1.2901234567901234,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 82,
+      "zero": 16,
+      "mean": 1.5091463414634145,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.1697689345314506,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 86,
+      "zero": 5,
+      "mean": 1.4156976744186047,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0973350395015022,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 87,
+      "zero": 4,
+      "mean": 1.3994252873563218,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0847219930704504,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 75,
+      "zero": 17,
+      "mean": 1.3933333333333333,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.08,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 80,
+      "zero": 8,
+      "mean": 1.3375,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0367224880382775,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 78,
+      "zero": 10,
+      "mean": 1.3269230769230769,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.028524107471476,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 30,
+    "joint": "elbow_L",
+    "param": "ElbowL",
+    "x": 1,
+    "at": [
+     925.5,
+     561.5
+    ],
+    "rest": {
+     "n": 44,
+     "zero": 1,
+     "mean": 1.25,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 38,
+      "zero": 12,
+      "mean": 1.3355263157894737,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.068421052631579,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 36,
+      "zero": 14,
+      "mean": 1.3055555555555556,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0444444444444445,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 37,
+      "zero": 13,
+      "mean": 1.304054054054054,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0432432432432432,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 42,
+      "zero": 12,
+      "mean": 1.3035714285714286,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.042857142857143,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 38,
+      "zero": 13,
+      "mean": 1.256578947368421,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0052631578947369,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 36,
+      "zero": 16,
+      "mean": 1.25,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 30,
+    "joint": "elbow_R",
+    "param": "ElbowR",
+    "x": 1,
+    "at": [
+     438,
+     563
+    ],
+    "rest": {
+     "n": 41,
+     "zero": 5,
+     "mean": 1.2682926829268293,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 35,
+      "zero": 18,
+      "mean": 1.3214285714285714,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.0418956043956042,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 37,
+      "zero": 14,
+      "mean": 1.2972972972972974,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.022869022869023,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 36,
+      "zero": 14,
+      "mean": 1.2847222222222223,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0129540598290598,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 42,
+      "zero": 11,
+      "mean": 1.2619047619047619,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 0.9949633699633699,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 43,
+      "zero": 6,
+      "mean": 1.255813953488372,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 0.9901610017889088,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 41,
+      "zero": 8,
+      "mean": 1.2560975609756098,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 0.9903846153846154,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 60,
+    "joint": "hip_L",
+    "param": "HipL",
+    "x": 1,
+    "at": [
+     747,
+     792.5
+    ],
+    "rest": {
+     "n": 0,
+     "zero": 0,
+     "mean": 0,
+     "min": 0,
+     "p10": 0,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 60,
+    "joint": "hip_R",
+    "param": "HipR",
+    "x": 1,
+    "at": [
+     618,
+     791.5
+    ],
+    "rest": {
+     "n": 0,
+     "zero": 0,
+     "mean": 0,
+     "min": 0,
+     "p10": 0,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 0,
+      "zero": 0,
+      "mean": 0,
+      "min": 0,
+      "p10": 0,
+      "ratio": 0,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 45,
+    "joint": "knee_L",
+    "param": "KneeL",
+    "x": 1,
+    "at": [
+     759.5,
+     1150
+    ],
+    "rest": {
+     "n": 96,
+     "zero": 9,
+     "mean": 1.28125,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 83,
+      "zero": 21,
+      "mean": 1.3674698795180722,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.06729356450191,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 80,
+      "zero": 25,
+      "mean": 1.371875,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0707317073170732,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 80,
+      "zero": 25,
+      "mean": 1.34375,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.048780487804878,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 93,
+      "zero": 12,
+      "mean": 1.2795698924731183,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 0.998688696564385,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 90,
+      "zero": 16,
+      "mean": 1.2694444444444444,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 0.9907859078590785,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 87,
+      "zero": 19,
+      "mean": 1.2672413793103448,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 0.9890664423885618,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 45,
+    "joint": "knee_R",
+    "param": "KneeR",
+    "x": 1,
+    "at": [
+     603.5,
+     1150
+    ],
+    "rest": {
+     "n": 93,
+     "zero": 13,
+     "mean": 1.2688172043010753,
+     "min": 1,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 74,
+      "zero": 29,
+      "mean": 1.2702702702702702,
+      "min": 0.25,
+      "p10": 1.25,
+      "ratio": 1.0011452130096197,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 75,
+      "zero": 21,
+      "mean": 1.3333333333333333,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.0508474576271185,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 74,
+      "zero": 22,
+      "mean": 1.320945945945946,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.04108451672011,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 87,
+      "zero": 16,
+      "mean": 1.278735632183908,
+      "min": 0.25,
+      "p10": 1.25,
+      "ratio": 1.0078170660432495,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 88,
+      "zero": 10,
+      "mean": 1.28125,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.0097987288135593,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 81,
+      "zero": 16,
+      "mean": 1.2592592592592593,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 0.992467043314501,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 30,
+    "joint": "ankle_L",
+    "param": "AnkleL",
+    "x": 1,
+    "at": [
+     772,
+     1570
+    ],
+    "rest": {
+     "n": 46,
+     "zero": 8,
+     "mean": 1.2608695652173914,
+     "min": 1,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 36,
+      "zero": 18,
+      "mean": 1.3819444444444444,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.0960249042145593,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 37,
+      "zero": 17,
+      "mean": 1.3918918918918919,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.1039142590866728,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 37,
+      "zero": 17,
+      "mean": 1.4054054054054055,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.1146318732525629,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 43,
+      "zero": 10,
+      "mean": 1.2848837209302326,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.019045709703288,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 43,
+      "zero": 10,
+      "mean": 1.2790697674418605,
+      "min": 1,
+      "p10": 1.25,
+      "ratio": 1.0144346431435445,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 43,
+      "zero": 10,
+      "mean": 1.2848837209302326,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.019045709703288,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 30,
+    "joint": "ankle_R",
+    "param": "AnkleR",
+    "x": 1,
+    "at": [
+     590.5,
+     1570
+    ],
+    "rest": {
+     "n": 46,
+     "zero": 9,
+     "mean": 1.25,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 37,
+      "zero": 17,
+      "mean": 1.385135135135135,
+      "min": 0.25,
+      "p10": 1.25,
+      "ratio": 1.1081081081081081,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 34,
+      "zero": 17,
+      "mean": 1.4485294117647058,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.1588235294117646,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 34,
+      "zero": 17,
+      "mean": 1.4411764705882353,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.1529411764705881,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 47,
+      "zero": 8,
+      "mean": 1.2287234042553192,
+      "min": 0.25,
+      "p10": 1.25,
+      "ratio": 0.9829787234042554,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 45,
+      "zero": 9,
+      "mean": 1.261111111111111,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.008888888888889,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 44,
+      "zero": 10,
+      "mean": 1.2613636363636365,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0090909090909093,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 30,
+    "joint": "wrist_L",
+    "param": "WristL",
+    "x": 1,
+    "at": [
+     1068,
+     706.5
+    ],
+    "rest": {
+     "n": 61,
+     "zero": 4,
+     "mean": 1.25,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 59,
+      "zero": 30,
+      "mean": 1.3093220338983051,
+      "min": 0.25,
+      "p10": 1.25,
+      "ratio": 1.0474576271186442,
+      "enclosed": 1,
+      "inRest": 1,
+      "vacated": 18,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 53,
+      "zero": 34,
+      "mean": 1.25,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1,
+      "enclosed": 1,
+      "inRest": 1,
+      "vacated": 18,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 54,
+      "zero": 33,
+      "mean": 1.25,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1,
+      "enclosed": 1,
+      "inRest": 1,
+      "vacated": 18,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 45,
+      "zero": 29,
+      "mean": 1.288888888888889,
+      "min": 0.25,
+      "p10": 1.25,
+      "ratio": 1.031111111111111,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 39,
+      "zero": 35,
+      "mean": 1.25,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 39,
+      "zero": 35,
+      "mean": 1.25,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   },
+   {
+    "radius": 30,
+    "joint": "wrist_R",
+    "param": "WristR",
+    "x": 1,
+    "at": [
+     295,
+     706.5
+    ],
+    "rest": {
+     "n": 60,
+     "zero": 5,
+     "mean": 1.25,
+     "min": 1.25,
+     "p10": 1.25,
+     "enclosed": 0
+    },
+    "modes": {
+     "cut/nearest": {
+      "n": 59,
+      "zero": 26,
+      "mean": 1.2669491525423728,
+      "min": 0.25,
+      "p10": 1.25,
+      "ratio": 1.0135593220338983,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 18,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/linear": {
+      "n": 55,
+      "zero": 27,
+      "mean": 1.2545454545454546,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0036363636363637,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 17,
+      "seam": 0,
+      "deg": 25
+     },
+     "cut/ss2": {
+      "n": 54,
+      "zero": 28,
+      "mean": 1.2546296296296295,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0037037037037035,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 17,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/nearest": {
+      "n": 44,
+      "zero": 28,
+      "mean": 1.2613636363636365,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1.0090909090909093,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/linear": {
+      "n": 42,
+      "zero": 30,
+      "mean": 1.25,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     },
+     "skin/ss2": {
+      "n": 41,
+      "zero": 31,
+      "mean": 1.25,
+      "min": 1.25,
+      "p10": 1.25,
+      "ratio": 1,
+      "enclosed": 0,
+      "inRest": 0,
+      "vacated": 0,
+      "seam": 0,
+      "deg": 25
+     }
+    }
+   }
+  ],
+  "summary": [
+   {
+    "m": "cut/nearest",
+    "ratio": 1.0770947165237563,
+    "min": 0.25,
+    "holes": 1,
+    "seam": 0,
+    "zero": 205,
+    "noLinePct": 26.081424936386767,
+    "restNoLinePct": 9.331476323119777,
+    "vac": 36,
+    "joints": 10,
+    "skipped": 2
+   },
+   {
+    "m": "cut/linear",
+    "ratio": 1.063785528011516,
+    "min": 1,
+    "holes": 1,
+    "seam": 0,
+    "zero": 186,
+    "noLinePct": 24.409448818897637,
+    "restNoLinePct": 9.331476323119777,
+    "vac": 35,
+    "joints": 10,
+    "skipped": 2
+   },
+   {
+    "m": "cut/ss2",
+    "ratio": 1.0586528389415821,
+    "min": 1,
+    "holes": 1,
+    "seam": 0,
+    "zero": 183,
+    "noLinePct": 24.0473061760841,
+    "restNoLinePct": 9.331476323119777,
+    "vac": 35,
+    "joints": 10,
+    "skipped": 2
+   },
+   {
+    "m": "skin/nearest",
+    "ratio": 1.0165552243654035,
+    "min": 0.25,
+    "holes": 0,
+    "seam": 0,
+    "zero": 174,
+    "noLinePct": 22.65625,
+    "restNoLinePct": 9.331476323119777,
+    "vac": 0,
+    "joints": 10,
+    "skipped": 2
+   },
+   {
+    "m": "skin/linear",
+    "ratio": 1.0014525946814632,
+    "min": 1,
+    "holes": 0,
+    "seam": 0,
+    "zero": 157,
+    "noLinePct": 20.933333333333334,
+    "restNoLinePct": 9.331476323119777,
+    "vac": 0,
+    "joints": 10,
+    "skipped": 2
+   },
+   {
+    "m": "skin/ss2",
+    "ratio": 0.9989832768658227,
+    "min": 1,
+    "holes": 0,
+    "seam": 0,
+    "zero": 184,
+    "noLinePct": 24.533333333333335,
+    "restNoLinePct": 9.331476323119777,
+    "vac": 0,
+    "joints": 10,
+    "skipped": 2
+   }
+  ],
+  "best": {
+   "cut": "cut/ss2",
+   "skin": "skin/ss2"
+  }
+ },
+ "rest": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)\nlayers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2\nmouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE"
+}

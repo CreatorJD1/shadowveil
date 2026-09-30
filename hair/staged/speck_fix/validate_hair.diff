@@ -1,0 +1,18 @@
+--- hair/validate_hair.py (live)
++++ hair/staged/speck_fix/validate_hair.py (staged)
+@@ -73,12 +73,13 @@
+     # (3) files
+     listed={e['file'] for e in rig}; onDisk={os.path.basename(p) for p in glob.glob(f'{hd}/*.png')}
+     rep['files_unlisted']=sorted(onDisk-listed); rep['files_missing']=sorted(listed-onDisk)
+-    parts={}; bad=[]
++    parts={}; bad=[]; em0=np.array(Image.open(f'{R}/hair/{v}_hair_erase_mask.png'))>127
+     for e in rig:
+         p=rgba(f"{hd}/{e['file']}"); parts[e['id']]=p
+         r,g,b,a=[p[...,i] for i in range(4)]
+         if p.shape!=(H,W,4): bad.append((e['file'],'size'))
+-        if ((a>0)&(b>r+40)&(b>g+40)).sum(): bad.append((e['file'],'chroma'))
++        # speck fix: in a swaying strand, a px that is an exact base.png copy (RGBA) inside the hair erase mask is her navy hair
++        if ((a>0)&(b>r+40)&(b>g+40)&~((p==base).all(-1)&em0&(e['swayWeight']>0))).sum(): bad.append((e['file'],'chroma'))
+         if ((a>0)&(r>240)&(g>240)&(b>240)).sum()>50: bad.append((e['file'],'white'))
+         if (a==255).all(): bad.append((e['file'],'no alpha'))
+         if e['x']!=0 or e['y']!=0: bad.append((e['file'],'offset'))

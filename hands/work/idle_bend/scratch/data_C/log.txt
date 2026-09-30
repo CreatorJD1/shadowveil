@@ -1,0 +1,8 @@
+L_Middle1: pivot (1249.2, 398.3) -> (1249.68, 394.33) (+4.0 px dorsal)
+R_Middle1: pivot (115.8, 398.3) -> (115.38, 394.32) (+4.0 px dorsal)
+L_Index1: pivot (1247.0, 410.2) -> (1247.08, 405.2) (+5.0 px dorsal)
+R_Index1: pivot (118.0, 410.2) -> (117.92, 405.2) (+5.0 px dorsal)
+L_Ring1: pivot (1247.0, 410.2) -> (1247.08, 405.2) (+5.0 px dorsal)
+R_Ring1: pivot (118.0, 410.2) -> (117.92, 405.2) (+5.0 px dorsal)
+L_Pinky1: pivot (1247.0, 410.2) -> (1247.08, 405.2) (+5.0 px dorsal)
+R_Pinky1: pivot (118.0, 410.2) -> (117.92, 405.2) (+5.0 px dorsal)

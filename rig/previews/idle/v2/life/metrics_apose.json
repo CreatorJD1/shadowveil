@@ -1,0 +1,683 @@
+{
+ "before_v1": {
+  "view": "apose",
+  "frames": 240,
+  "params": {
+   "BodyLean": {
+    "range": [
+     -0.025,
+     0.025
+    ],
+    "p2p": 0.05,
+    "p2pDeg": 0.4
+   },
+   "HeadTilt": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "HeadNod": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "ShoulderL": {
+    "range": [
+     -0.012,
+     0.012
+    ],
+    "p2p": 0.024,
+    "p2pDeg": 0.6
+   },
+   "ShoulderR": {
+    "range": [
+     -0.012,
+     0.012
+    ],
+    "p2p": 0.024,
+    "p2pDeg": 0.6
+   },
+   "ElbowL": {
+    "range": [
+     -0.01,
+     0.01
+    ],
+    "p2p": 0.02,
+    "p2pDeg": 0.5
+   },
+   "ElbowR": {
+    "range": [
+     -0.01,
+     0.01
+    ],
+    "p2p": 0.02,
+    "p2pDeg": 0.5
+   },
+   "WristL": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "WristR": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "HipL": {
+    "range": [
+     -0.03,
+     0.0
+    ],
+    "p2p": 0.03,
+    "p2pDeg": 0.75
+   },
+   "HipR": {
+    "range": [
+     -0.03,
+     0.0
+    ],
+    "p2p": 0.03,
+    "p2pDeg": 0.75
+   },
+   "KneeL": {
+    "range": [
+     0.0,
+     0.03
+    ],
+    "p2p": 0.03,
+    "p2pDeg": 0.75
+   },
+   "KneeR": {
+    "range": [
+     0.0,
+     0.03
+    ],
+    "p2p": 0.03,
+    "p2pDeg": 0.75
+   },
+   "AnkleL": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "AnkleR": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "RootX": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0
+   },
+   "RootY": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0
+   },
+   "EyeBallX": {
+    "range": [
+     -0.723,
+     0.66
+    ],
+    "p2p": 1.382
+   },
+   "EyeBallY": {
+    "range": [
+     -0.243,
+     0.321
+    ],
+    "p2p": 0.564
+   },
+   "MouthForm": {
+    "range": [
+     -1.0,
+     1.0
+    ],
+    "p2p": 2.0
+   },
+   "MouthOpen": {
+    "range": [
+     0.0,
+     0.975
+    ],
+    "p2p": 0.975
+   },
+   "HandLIndex": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0
+   },
+   "HandRIndex": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0
+   },
+   "HandLThumb": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0
+   }
+  },
+  "bones": {
+   "head": {
+    "angP2P": 0.4,
+    "pivotPxP2P": [
+     0.0,
+     0.0
+    ]
+   },
+   "torso": {
+    "angP2P": 0.4,
+    "pivotPxP2P": [
+     0.0,
+     0.0
+    ]
+   },
+   "pelvis": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     0.0,
+     0.0
+    ]
+   },
+   "upperArm_L": {
+    "angP2P": 1.0,
+    "pivotPxP2P": [
+     1.9,
+     1.0
+    ]
+   },
+   "upperArm_R": {
+    "angP2P": 0.36,
+    "pivotPxP2P": [
+     1.9,
+     1.0
+    ]
+   },
+   "forearm_L": {
+    "angP2P": 1.5,
+    "pivotPxP2P": [
+     0.7,
+     2.8
+    ]
+   },
+   "forearm_R": {
+    "angP2P": 0.86,
+    "pivotPxP2P": [
+     2.3,
+     0.8
+    ]
+   },
+   "thigh_L": {
+    "angP2P": 0.75,
+    "pivotPxP2P": [
+     0.0,
+     0.0
+    ]
+   },
+   "thigh_R": {
+    "angP2P": 0.75,
+    "pivotPxP2P": [
+     0.0,
+     0.0
+    ]
+   },
+   "shin_L": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     4.7,
+     0.2
+    ]
+   },
+   "shin_R": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     4.7,
+     0.2
+    ]
+   },
+   "foot_L": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     4.7,
+     0.2
+    ]
+   },
+   "foot_R": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     4.7,
+     0.2
+    ]
+   },
+   "toes_L": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     4.7,
+     0.2
+    ]
+   },
+   "toes_R": {
+    "angP2P": 1.0,
+    "pivotPxP2P": [
+     4.7,
+     0.2
+    ]
+   }
+  },
+  "kneeKinkDeg_L": [
+   0.0,
+   0.75
+  ],
+  "kneeKinkDeg_R": [
+   0.0,
+   0.75
+  ],
+  "mouthSwitches": 48,
+  "mouthShapes": [
+   "mouth_AA",
+   "mouth_AA_half",
+   "mouth_EE",
+   "mouth_EE_half",
+   "mouth_M",
+   "mouth_OH",
+   "mouth_OH_half",
+   "mouth_rest",
+   "mouth_smile"
+  ],
+  "blinkStarts(open<0.5)": [
+   1.633,
+   2.067,
+   7.767
+  ],
+  "blinkGapsS": [
+   0.43,
+   5.7
+  ],
+  "shutFrames(open<0.5)": 7,
+  "footSlide": {
+   "A": {
+    "maxAbsToeHeelDxPx": 5,
+    "maxLiftPx": 0,
+    "maxSinkPx": 0
+   },
+   "B": {
+    "maxAbsToeHeelDxPx": 5,
+    "maxLiftPx": 0,
+    "maxSinkPx": 0
+   }
+  },
+  "interiorPartialAlpha": {
+   "sampledEvery": 4,
+   "max": 383,
+   "mean": 317.2,
+   "max_lt240": 275,
+   "mean_lt240": 201.1
+  }
+ },
+ "after_life": {
+  "view": "apose",
+  "frames": 240,
+  "params": {
+   "BodyLean": {
+    "range": [
+     -0.197,
+     0.229
+    ],
+    "p2p": 0.425,
+    "p2pDeg": 3.4
+   },
+   "HeadTilt": {
+    "range": [
+     -0.28,
+     0.356
+    ],
+    "p2p": 0.636,
+    "p2pDeg": 5.09
+   },
+   "HeadNod": {
+    "range": [
+     -0.3,
+     0.0
+    ],
+    "p2p": 0.3,
+    "p2pDeg": 1.8
+   },
+   "ShoulderL": {
+    "range": [
+     -1.0,
+     1.0
+    ],
+    "p2p": 2.0,
+    "p2pDeg": 50.0
+   },
+   "ShoulderR": {
+    "range": [
+     -0.952,
+     1.0
+    ],
+    "p2p": 1.952,
+    "p2pDeg": 48.8
+   },
+   "ElbowL": {
+    "range": [
+     0.045,
+     0.528
+    ],
+    "p2p": 0.484,
+    "p2pDeg": 12.09
+   },
+   "ElbowR": {
+    "range": [
+     -0.532,
+     -0.039
+    ],
+    "p2p": 0.492,
+    "p2pDeg": 12.3
+   },
+   "WristL": {
+    "range": [
+     -0.125,
+     0.255
+    ],
+    "p2p": 0.38,
+    "p2pDeg": 9.49
+   },
+   "WristR": {
+    "range": [
+     -0.338,
+     0.067
+    ],
+    "p2p": 0.405,
+    "p2pDeg": 10.13
+   },
+   "HipL": {
+    "range": [
+     -0.08,
+     0.08
+    ],
+    "p2p": 0.16,
+    "p2pDeg": 4.0
+   },
+   "HipR": {
+    "range": [
+     -0.08,
+     0.08
+    ],
+    "p2p": 0.16,
+    "p2pDeg": 4.0
+   },
+   "KneeL": {
+    "range": [
+     -0.08,
+     0.08
+    ],
+    "p2p": 0.16,
+    "p2pDeg": 4.0
+   },
+   "KneeR": {
+    "range": [
+     -0.08,
+     0.08
+    ],
+    "p2p": 0.16,
+    "p2pDeg": 4.0
+   },
+   "AnkleL": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "AnkleR": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0,
+    "p2pDeg": 0.0
+   },
+   "RootX": {
+    "range": [
+     -12.5,
+     12.491
+    ],
+    "p2p": 24.992
+   },
+   "RootY": {
+    "range": [
+     -0.288,
+     -0.0
+    ],
+    "p2p": 0.287
+   },
+   "EyeBallX": {
+    "range": [
+     -0.657,
+     1.0
+    ],
+    "p2p": 1.657
+   },
+   "EyeBallY": {
+    "range": [
+     -0.194,
+     0.227
+    ],
+    "p2p": 0.421
+   },
+   "MouthForm": {
+    "range": [
+     -1.0,
+     0.0
+    ],
+    "p2p": 1.0
+   },
+   "MouthOpen": {
+    "range": [
+     0.0,
+     0.0
+    ],
+    "p2p": 0.0
+   },
+   "HandLIndex": {
+    "range": [
+     0.05,
+     0.15
+    ],
+    "p2p": 0.1
+   },
+   "HandRIndex": {
+    "range": [
+     0.05,
+     0.15
+    ],
+    "p2p": 0.1
+   },
+   "HandLThumb": {
+    "range": [
+     0.05,
+     0.15
+    ],
+    "p2p": 0.1
+   }
+  },
+  "bones": {
+   "head": {
+    "angP2P": 4.26,
+    "pivotPxP2P": [
+     27.6,
+     1.4
+    ]
+   },
+   "torso": {
+    "angP2P": 3.4,
+    "pivotPxP2P": [
+     25.0,
+     0.0
+    ]
+   },
+   "pelvis": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     25.0,
+     0.0
+    ]
+   },
+   "upperArm_L": {
+    "angP2P": 47.56,
+    "pivotPxP2P": [
+     12.0,
+     8.4
+    ]
+   },
+   "upperArm_R": {
+    "angP2P": 52.19,
+    "pivotPxP2P": [
+     12.0,
+     8.3
+    ]
+   },
+   "forearm_L": {
+    "angP2P": 39.25,
+    "pivotPxP2P": [
+     97.3,
+     77.4
+    ]
+   },
+   "forearm_R": {
+    "angP2P": 42.97,
+    "pivotPxP2P": [
+     115.0,
+     100.3
+    ]
+   },
+   "thigh_L": {
+    "angP2P": 4.0,
+    "pivotPxP2P": [
+     25.0,
+     0.0
+    ]
+   },
+   "thigh_R": {
+    "angP2P": 4.0,
+    "pivotPxP2P": [
+     25.0,
+     0.0
+    ]
+   },
+   "shin_L": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     1.0,
+     0.9
+    ]
+   },
+   "shin_R": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     1.0,
+     1.0
+    ]
+   },
+   "foot_L": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     1.0,
+     0.9
+    ]
+   },
+   "foot_R": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     1.0,
+     1.0
+    ]
+   },
+   "toes_L": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     1.0,
+     0.9
+    ]
+   },
+   "toes_R": {
+    "angP2P": 0.0,
+    "pivotPxP2P": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "kneeKinkDeg_L": [
+   -2.0,
+   2.0
+  ],
+  "kneeKinkDeg_R": [
+   -2.0,
+   2.0
+  ],
+  "mouthSwitches": 2,
+  "mouthShapes": [
+   "mouth_M",
+   "mouth_rest"
+  ],
+  "blinkStarts(open<0.5)": [
+   1.6,
+   6.233
+  ],
+  "blinkGapsS": [
+   4.63
+  ],
+  "shutFrames(open<0.5)": 16,
+  "footSlide": {
+   "A": {
+    "maxAbsToeHeelDxPx": 1,
+    "maxLiftPx": 1,
+    "maxSinkPx": 0
+   },
+   "B": {
+    "maxAbsToeHeelDxPx": 1,
+    "maxLiftPx": 0,
+    "maxSinkPx": 0
+   }
+  },
+  "interiorPartialAlpha": {
+   "sampledEvery": 4,
+   "max": 613,
+   "mean": 451.3,
+   "max_lt240": 389,
+   "mean_lt240": 306.6
+  }
+ }
+}

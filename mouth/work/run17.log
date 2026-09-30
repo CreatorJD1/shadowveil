@@ -1,0 +1,23 @@
+apose gloss px 10 colour #CBA793 centroid (np.float64(-0.39999999999997726), np.float64(4.300000000000011))
+apose anchor (681, 286) bbox [657, 280, 704, 298] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 945, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 1.9889734078832764, 'blue': (0, 0)}
+   smile {'changedPx': 968, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.015625, 'worstAt': (653, 277, 0.984), 'meanAlphaErrOnPart': 0.0009574292224833151, 'keyResidual': 2.581479449542867, 'blue': (0, 0)}
+   OH_half {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 2.2516065311967095, 'blue': (0, 0)}
+   AA_half {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 2.135203326543954, 'blue': (0, 0)}
+   EE_half {'changedPx': 977, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.05132688336662272, 'worstAt': (656, 280, 0.949), 'meanAlphaErrOnPart': 0.0009486253895149206, 'keyResidual': 3.336228168796408, 'blue': (0, 0)}
+   OH {'changedPx': 960, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.05296419786506201, 'worstAt': (681, 278, 0.947), 'meanAlphaErrOnPart': 0.0010437676703214176, 'keyResidual': 5.128752278161004, 'blue': (0, 0)}
+   AA {'changedPx': 1066, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.057458134811936734, 'worstAt': (661, 289, 0.943), 'meanAlphaErrOnPart': 0.00086187559303832, 'keyResidual': 5.5895391978879365, 'blue': (0, 0)}
+   EE {'changedPx': 969, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.0258069765140736, 'worstAt': (703, 279, 0.884), 'meanAlphaErrOnPart': 0.000946660162722119, 'keyResidual': 2.581479449542867, 'blue': (0, 0)}
+tpose gloss px 8 colour #C2A387 centroid (np.float64(0.0), np.float64(5.375))
+tpose anchor (682, 277) bbox [659, 272, 704, 289] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 919, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009037117148808855, 'keyResidual': 2.828427124746185, 'blue': (0, 0)}
+   smile {'changedPx': 947, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.043210402214472476, 'worstAt': (666, 272, 0.957), 'meanAlphaErrOnPart': 0.000991489808444618, 'keyResidual': 2.7965960043652056, 'blue': (0, 0)}
+   OH_half {'changedPx': 920, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009037117148808855, 'keyResidual': 2.111944549849338, 'blue': (0, 0)}
+   AA_half {'changedPx': 919, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009040930373419396, 'keyResidual': 4.515679436998665, 'blue': (0, 0)}
+   EE_half {'changedPx': 954, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.056698682186231975, 'worstAt': (667, 272, 0.943), 'meanAlphaErrOnPart': 0.0009856338273633752, 'keyResidual': 2.543149008961912, 'blue': (0, 0)}
+   OH {'changedPx': 925, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.058194337412058816, 'worstAt': (677, 269, 0.942), 'meanAlphaErrOnPart': 0.0010260697902182208, 'keyResidual': 4.977095147899343, 'blue': (0, 0)}
+   AA {'changedPx': 968, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.02857831104754438, 'worstAt': (663, 281, 0.83), 'meanAlphaErrOnPart': 0.0008974264503294308, 'keyResidual': 5.839785957204586, 'blue': (0, 0)}
+   EE {'changedPx': 938, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.05739257731071734, 'worstAt': (698, 272, 0.943), 'meanAlphaErrOnPart': 0.0010957427297257297, 'keyResidual': 5.185788421538928, 'blue': (0, 0)}
+DONE

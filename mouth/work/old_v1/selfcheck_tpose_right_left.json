@@ -1,0 +1,386 @@
+{
+  "tpose": {
+    "anchor": [
+      682,
+      277
+    ],
+    "bbox": [
+      659,
+      272,
+      704,
+      289
+    ],
+    "colors": {
+      "skin": "#B98155",
+      "upper": "#563519",
+      "lower": "#643D1F",
+      "line": "#311100",
+      "hl": "#C9AA8F",
+      "outline": "#311100",
+      "inner": "#2E0D0B",
+      "teeth": "#F3ECE2",
+      "tongue": "#8E4440"
+    },
+    "checks": {
+      "rest": {
+        "changedPx": 0,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.0,
+        "worstAt": [
+          0,
+          0,
+          0.0
+        ],
+        "meanAlphaErrOnPart": 0.0,
+        "keyResidual": 0.0,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "M": {
+        "changedPx": 920,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.007781736366316076,
+        "worstAt": [
+          700,
+          270,
+          0.008
+        ],
+        "meanAlphaErrOnPart": 0.0005353538210379431,
+        "keyResidual": 3.5766774760089204,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "smile": {
+        "changedPx": 945,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.07015842994456445,
+        "worstAt": [
+          693,
+          270,
+          0.91
+        ],
+        "meanAlphaErrOnPart": 0.0006714382133506221,
+        "keyResidual": 3.6095126991523196,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "OH": {
+        "changedPx": 925,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.007781736366316076,
+        "worstAt": [
+          700,
+          270,
+          0.008
+        ],
+        "meanAlphaErrOnPart": 0.0005257391985607484,
+        "keyResidual": 3.746237082849471,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "AA": {
+        "changedPx": 1087,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.019607843137254943,
+        "worstAt": [
+          664,
+          280,
+          1.0
+        ],
+        "meanAlphaErrOnPart": 0.0004588874278587352,
+        "keyResidual": 3.708851684748269,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "EE": {
+        "changedPx": 921,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.007843137254901933,
+        "worstAt": [
+          660,
+          273,
+          1.0
+        ],
+        "meanAlphaErrOnPart": 0.000572678619832124,
+        "keyResidual": 3.6095126991523196,
+        "blue": [
+          0,
+          0
+        ]
+      }
+    },
+    "baseMd5": "48ca865da99761717902dd410abaf22f"
+  },
+  "right": {
+    "anchor": [
+      760,
+      274
+    ],
+    "bbox": [
+      760,
+      263,
+      782,
+      286
+    ],
+    "colors": {
+      "skin": "#B4784C",
+      "upper": "#523218",
+      "lower": "#613919",
+      "line": "#2C0F02",
+      "hl": "#E8C2AC",
+      "outline": "#10082D",
+      "inner": "#2E0D0B",
+      "teeth": "#F3ECE2",
+      "tongue": "#8E4440"
+    },
+    "checks": {
+      "rest": {
+        "changedPx": 0,
+        "uncoveredLipPx": 37,
+        "lipPx": 239,
+        "maxAlphaErr": 0.0,
+        "worstAt": [
+          0,
+          0,
+          0.0
+        ],
+        "meanAlphaErrOnPart": 0.0,
+        "keyResidual": 0.0,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "M": {
+        "changedPx": 461,
+        "uncoveredLipPx": 6,
+        "lipPx": 239,
+        "maxAlphaErr": 0.007843137254901933,
+        "worstAt": [
+          759,
+          273,
+          1.0
+        ],
+        "meanAlphaErrOnPart": 0.0006579706370478397,
+        "keyResidual": 3.6873014692706,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "smile": {
+        "changedPx": 466,
+        "uncoveredLipPx": 4,
+        "lipPx": 239,
+        "maxAlphaErr": 0.03529568665550242,
+        "worstAt": [
+          758,
+          271,
+          0.686
+        ],
+        "meanAlphaErrOnPart": 0.0009075969697727448,
+        "keyResidual": 3.6873014692706,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "OH": {
+        "changedPx": 511,
+        "uncoveredLipPx": 6,
+        "lipPx": 239,
+        "maxAlphaErr": 0.021598910465297605,
+        "worstAt": [
+          781,
+          259,
+          0.661
+        ],
+        "meanAlphaErrOnPart": 0.0007465231593555465,
+        "keyResidual": 3.950031472041295,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "AA": {
+        "changedPx": 672,
+        "uncoveredLipPx": 0,
+        "lipPx": 239,
+        "maxAlphaErr": 0.0512461374581874,
+        "worstAt": [
+          772,
+          267,
+          0.839
+        ],
+        "meanAlphaErrOnPart": 0.0007129079869108325,
+        "keyResidual": 4.099812325773574,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "EE": {
+        "changedPx": 462,
+        "uncoveredLipPx": 8,
+        "lipPx": 239,
+        "maxAlphaErr": 0.019607843137254943,
+        "worstAt": [
+          776,
+          266,
+          1.0
+        ],
+        "meanAlphaErrOnPart": 0.0008667488289072649,
+        "keyResidual": 4.952625017150647,
+        "blue": [
+          0,
+          0
+        ]
+      }
+    },
+    "baseMd5": "0fcd6495c48cb2e99928f9ab8c30ddfc"
+  },
+  "left": {
+    "anchor": [
+      612,
+      270
+    ],
+    "bbox": [
+      590,
+      261,
+      612,
+      283
+    ],
+    "colors": {
+      "skin": "#B77A4D",
+      "upper": "#5C3114",
+      "lower": "#67391C",
+      "line": "#2C0E02",
+      "hl": "#BF8E6C",
+      "outline": "#170530",
+      "inner": "#2E0D0B",
+      "teeth": "#F3ECE2",
+      "tongue": "#8E4440"
+    },
+    "checks": {
+      "rest": {
+        "changedPx": 0,
+        "uncoveredLipPx": 47,
+        "lipPx": 254,
+        "maxAlphaErr": 0.0,
+        "worstAt": [
+          0,
+          0,
+          0.0
+        ],
+        "meanAlphaErrOnPart": 0.0,
+        "keyResidual": 0.0,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "M": {
+        "changedPx": 468,
+        "uncoveredLipPx": 4,
+        "lipPx": 254,
+        "maxAlphaErr": 0.0117647058823529,
+        "worstAt": [
+          609,
+          269,
+          1.0
+        ],
+        "meanAlphaErrOnPart": 0.0005851102265580866,
+        "keyResidual": 3.777891164516527,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "smile": {
+        "changedPx": 472,
+        "uncoveredLipPx": 0,
+        "lipPx": 254,
+        "maxAlphaErr": 0.015482883069792175,
+        "worstAt": [
+          599,
+          262,
+          0.875
+        ],
+        "meanAlphaErrOnPart": 0.0006010773510346757,
+        "keyResidual": 3.777891164516527,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "OH": {
+        "changedPx": 529,
+        "uncoveredLipPx": 4,
+        "lipPx": 254,
+        "maxAlphaErr": 0.14117647058823535,
+        "worstAt": [
+          595,
+          283,
+          1.0
+        ],
+        "meanAlphaErrOnPart": 0.0014482973685190918,
+        "keyResidual": 3.777891164516527,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "AA": {
+        "changedPx": 697,
+        "uncoveredLipPx": 3,
+        "lipPx": 254,
+        "maxAlphaErr": 0.17647058823529416,
+        "worstAt": [
+          597,
+          285,
+          1.0
+        ],
+        "meanAlphaErrOnPart": 0.001063472716432214,
+        "keyResidual": 3.777891164516527,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "EE": {
+        "changedPx": 468,
+        "uncoveredLipPx": 2,
+        "lipPx": 254,
+        "maxAlphaErr": 0.0342814700363121,
+        "worstAt": [
+          609,
+          267,
+          0.899
+        ],
+        "meanAlphaErrOnPart": 0.0007646368307832818,
+        "keyResidual": 6.357094692677723,
+        "blue": [
+          0,
+          0
+        ]
+      }
+    },
+    "baseMd5": "8c44921afcfcbb27dcd9b03ae9c2f0e0"
+  }
+}

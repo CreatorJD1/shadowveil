@@ -1,0 +1,169 @@
+{
+ "views": {
+  "apose": {
+   "bunSwayY": 0.3,
+   "strands": {
+    "strand_01": {
+     "k": 1.0,
+     "swayY": 1.0
+    },
+    "strand_02": {
+     "k": 0.86,
+     "swayY": 0.8
+    },
+    "strand_03": {
+     "k": 0.95,
+     "swayY": 0.9,
+     "deg": [
+      7.7,
+      7.7
+     ],
+     "win": 22,
+     "segments": 2,
+     "split_of": 3
+    },
+    "strand_04": {
+     "k": 0.82,
+     "swayY": 0.75
+    },
+    "strand_05": {
+     "k": 0.92,
+     "swayY": 0.95
+    },
+    "strand_06": {
+     "k": 0.88,
+     "swayY": 0.85,
+     "deg": [
+      7.6,
+      8.4
+     ],
+     "segments": 2,
+     "split_of": 3
+    },
+    "strand_07": {
+     "k": 0.97,
+     "swayY": 0.7
+    }
+   }
+  },
+  "tpose": {
+   "bunSwayY": 0.3,
+   "strands": {
+    "strand_01": {
+     "k": 1.0,
+     "swayY": 1.0
+    },
+    "strand_02": {
+     "k": 0.86,
+     "swayY": 0.8
+    },
+    "strand_03": {
+     "k": 0.95,
+     "swayY": 0.9,
+     "segments": 1
+    },
+    "strand_04": {
+     "k": 0.82,
+     "swayY": 0.75
+    },
+    "strand_05": {
+     "k": 0.92,
+     "swayY": 0.95
+    },
+    "strand_06": {
+     "k": 0.88,
+     "swayY": 0.85,
+     "deg": [
+      1.7,
+      3.4
+     ],
+     "segments": 2,
+     "split_of": 3
+    }
+   }
+  },
+  "left": {
+   "bunSwayY": 0.3,
+   "strands": {
+    "strand_01": {
+     "k": 0.86,
+     "swayY": 1.0,
+     "segments": 1
+    },
+    "strand_02": {
+     "k": 0.95,
+     "swayY": 0.8
+    },
+    "strand_03": {
+     "k": 0.82,
+     "swayY": 0.9
+    },
+    "strand_04": {
+     "k": 0.92,
+     "swayY": 0.75,
+     "deg": [
+      9.9,
+      9.9
+     ]
+    }
+   }
+  },
+  "right": {
+   "bunSwayY": 0.3,
+   "strands": {
+    "strand_01": {
+     "k": 1.0,
+     "swayY": 0.9,
+     "deg": [
+      10.1,
+      10.1
+     ]
+    },
+    "strand_02": {
+     "k": 0.86,
+     "swayY": 0.75,
+     "deg": [
+      10.0,
+      10.0
+     ]
+    },
+    "strand_03": {
+     "k": 0.95,
+     "swayY": 0.95
+    },
+    "strand_04": {
+     "k": 0.82,
+     "swayY": 0.85
+    }
+   }
+  },
+  "back": {
+   "bunSwayY": 0.3,
+   "strands": {
+    "strand_01": {
+     "k": 0.86,
+     "swayY": 1.0,
+     "segments": 1
+    },
+    "strand_02": {
+     "k": 0.95,
+     "swayY": 0.8,
+     "segments": 1
+    },
+    "strand_03": {
+     "k": 0.82,
+     "swayY": 0.9
+    },
+    "strand_04": {
+     "k": 0.92,
+     "swayY": 0.75,
+     "segments": 1
+    },
+    "strand_05": {
+     "k": 0.88,
+     "swayY": 0.95
+    }
+   }
+  }
+ }
+}

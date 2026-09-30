@@ -1,0 +1,708 @@
+{
+ "smoke /": {
+  "info": {
+   "title": "Clean room",
+   "h1": "Clean room",
+   "count": "17 videos",
+   "meta": "Idle · loop · short · silent",
+   "stage": [
+    768,
+    1168
+   ],
+   "clips": [
+    "Idle",
+    "Sway",
+    "Nod",
+    "Look",
+    "Side idle",
+    "Back idle",
+    "Sit",
+    "Squat",
+    "Smirk",
+    "Ready",
+    "Glare",
+    "Clasp",
+    "Hip",
+    "Angry",
+    "Run",
+    "Idle long",
+    "Walk"
+   ]
+  },
+  "errs": [
+   "console: Failed to load resource: the server responded with a status of 404 ()"
+  ]
+ },
+ "smoke /clean-room/index.html": {
+  "info": {
+   "title": "Clean room",
+   "h1": "Clean room",
+   "count": "17 videos",
+   "meta": "Idle · loop · short · silent",
+   "stage": [
+    768,
+    1168
+   ],
+   "clips": [
+    "Idle",
+    "Sway",
+    "Nod",
+    "Look",
+    "Side idle",
+    "Back idle",
+    "Sit",
+    "Squat",
+    "Smirk",
+    "Ready",
+    "Glare",
+    "Clasp",
+    "Hip",
+    "Angry",
+    "Run",
+    "Idle long",
+    "Walk"
+   ]
+  },
+  "errs": []
+ },
+ "videos": [
+  {
+   "id": "idle",
+   "name": "Idle",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/idle.mp4"
+  },
+  {
+   "id": "sway",
+   "name": "Sway",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/sway.mp4"
+  },
+  {
+   "id": "nod",
+   "name": "Nod",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/nod.mp4"
+  },
+  {
+   "id": "look",
+   "name": "Look",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/look.mp4?v=2"
+  },
+  {
+   "id": "side",
+   "name": "Side idle",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/side.mp4"
+  },
+  {
+   "id": "back",
+   "name": "Back idle",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/back.mp4"
+  },
+  {
+   "id": "sit",
+   "name": "Sit",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/sit.mp4?v=1"
+  },
+  {
+   "id": "squat",
+   "name": "Squat",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/squat.mp4?v=2"
+  },
+  {
+   "id": "smirk",
+   "name": "Smirk",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/smirk.mp4?v=1"
+  },
+  {
+   "id": "ready",
+   "name": "Ready",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/ready.mp4?v=1"
+  },
+  {
+   "id": "glare",
+   "name": "Glare",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/glare.mp4?v=1"
+  },
+  {
+   "id": "clasp",
+   "name": "Clasp",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/clasp.mp4?v=1"
+  },
+  {
+   "id": "hip",
+   "name": "Hip",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/hip.mp4?v=1"
+  },
+  {
+   "id": "angry",
+   "name": "Angry",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/angry.mp4?v=1"
+  },
+  {
+   "id": "run",
+   "name": "Run",
+   "kind": "loop",
+   "length": "short",
+   "src": "/clean-room/videos/run.mp4"
+  },
+  {
+   "id": "idle-long",
+   "name": "Idle long",
+   "kind": "loop",
+   "length": "long",
+   "src": "/clean-room/videos/idle-long.mp4"
+  },
+  {
+   "id": "walk",
+   "name": "Walk",
+   "kind": "loop",
+   "length": "long",
+   "src": "/clean-room/videos/walk.mp4"
+  },
+  {
+   "id": "talk",
+   "name": "Talk",
+   "kind": "talk",
+   "length": "short",
+   "src": "/clean-room/videos/talk.mp4"
+  },
+  {
+   "id": "wave",
+   "name": "Wave",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/wave.mp4"
+  },
+  {
+   "id": "point",
+   "name": "Point",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/point.mp4?v=1"
+  },
+  {
+   "id": "kick",
+   "name": "Kick",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/kick.mp4?v=2"
+  },
+  {
+   "id": "dodge",
+   "name": "Dodge",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/dodge.mp4?v=1"
+  },
+  {
+   "id": "inspect",
+   "name": "Inspect",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/inspect.mp4?v=1"
+  },
+  {
+   "id": "startle",
+   "name": "Startle",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/startle.mp4?v=2"
+  },
+  {
+   "id": "brace",
+   "name": "Brace",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/brace.mp4?v=1"
+  },
+  {
+   "id": "stumble",
+   "name": "Stumble",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/stumble.mp4?v=1"
+  },
+  {
+   "id": "worry",
+   "name": "Worry",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/worry.mp4?v=1"
+  },
+  {
+   "id": "stop",
+   "name": "Stop",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/stop.mp4?v=1"
+  },
+  {
+   "id": "kneel",
+   "name": "Kneel",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/kneel.mp4?v=1"
+  },
+  {
+   "id": "yawn",
+   "name": "Yawn",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/yawn.mp4?v=1"
+  },
+  {
+   "id": "gasp",
+   "name": "Gasp",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/gasp.mp4?v=2"
+  },
+  {
+   "id": "strap",
+   "name": "Strap",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/strap.mp4?v=1"
+  },
+  {
+   "id": "shrug",
+   "name": "Shrug",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/shrug.mp4?v=1"
+  },
+  {
+   "id": "cheeks",
+   "name": "Cheeks",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/cheeks.mp4?v=1"
+  },
+  {
+   "id": "hem",
+   "name": "Hem",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/hem.mp4?v=1"
+  },
+  {
+   "id": "sad",
+   "name": "Sad",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/sad.mp4?v=1"
+  },
+  {
+   "id": "tongue",
+   "name": "Tongue",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/tongue.mp4?v=1"
+  },
+  {
+   "id": "jump",
+   "name": "Jump",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/jump.mp4?v=2"
+  },
+  {
+   "id": "getup",
+   "name": "Get up",
+   "kind": "action",
+   "length": "short",
+   "src": "/clean-room/videos/getup.mp4"
+  }
+ ],
+ "clip idle": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Idle · loop · short · silent",
+  "errs": []
+ },
+ "clip sway": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Sway · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/sway.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/sway.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip nod": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Nod · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/nod.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip look": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Look · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip side": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Side idle · loop · short · silent",
+  "errs": []
+ },
+ "clip back": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Back idle · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/back.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip sit": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Sit · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/sit.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip squat": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Squat · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/squat.mp4?v=2 net::ERR_ABORTED"
+  ]
+ },
+ "clip smirk": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Smirk · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/smirk.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip ready": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Ready · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip glare": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Glare · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/glare.mp4?v=1 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/glare.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip clasp": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Clasp · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/clasp.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip hip": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Hip · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/hip.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip angry": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Angry · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/angry.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip run": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Run · loop · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/run.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip idle-long": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Idle long · loop · long · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle-long.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip walk": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Walk · loop · long · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/walk.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip talk": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Talk · talk · short · silent",
+  "errs": []
+ },
+ "clip wave": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Wave · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip point": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Point · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/point.mp4?v=1 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/point.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip kick": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Kick · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/kick.mp4?v=2 net::ERR_ABORTED"
+  ]
+ },
+ "clip dodge": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Dodge · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/dodge.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip inspect": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Inspect · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/inspect.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip startle": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Startle · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/startle.mp4?v=2 net::ERR_ABORTED"
+  ]
+ },
+ "clip brace": {
+  "w": 720,
+  "h": 1264,
+  "meta": "Brace · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/brace.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip stumble": {
+  "w": 848,
+  "h": 1056,
+  "meta": "Stumble · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/stumble.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip worry": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Worry · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip stop": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Stop · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/stop.mp4?v=1 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/stop.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip kneel": {
+  "w": 896,
+  "h": 1008,
+  "meta": "Kneel · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/kneel.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip yawn": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Yawn · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip gasp": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Gasp · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip strap": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Strap · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED"
+  ]
+ },
+ "clip shrug": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Shrug · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/shrug.mp4?v=1 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/shrug.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip cheeks": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Cheeks · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/cheeks.mp4?v=1 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/cheeks.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip hem": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Hem · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/hem.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip sad": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Sad · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/wave.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/sad.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip tongue": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Tongue · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/tongue.mp4?v=1 net::ERR_ABORTED"
+  ]
+ },
+ "clip jump": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Jump · action · short · silent",
+  "errs": [
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/idle.mp4 net::ERR_ABORTED",
+   "reqfail: http://127.0.0.1:8842/clean-room/videos/jump.mp4?v=2 net::ERR_ABORTED"
+  ]
+ },
+ "clip getup": {
+  "w": 768,
+  "h": 1168,
+  "meta": "Get up · action · short · silent",
+  "errs": []
+ },
+ "tab Base": {
+  "count": "5 poses",
+  "broken": []
+ },
+ "tab Hair": {
+  "count": "8 poses",
+  "broken": []
+ },
+ "tab Loops": {
+  "count": "24 poses",
+  "broken": []
+ },
+ "tab Extreme": {
+  "count": "27 poses",
+  "broken": []
+ },
+ "tab Playful": {
+  "count": "4 poses",
+  "broken": []
+ },
+ "tab Move": {
+  "count": "31 poses",
+  "broken": []
+ },
+ "tab Ground": {
+  "count": "25 poses",
+  "broken": []
+ },
+ "tab Face": {
+  "count": "33 poses",
+  "broken": []
+ },
+ "tab Idle": {
+  "count": "46 poses",
+  "broken": []
+ },
+ "tab Older": {
+  "count": "31 poses",
+  "broken": []
+ },
+ "stillsErrs": []
+}

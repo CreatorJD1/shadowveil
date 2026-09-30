@@ -1,0 +1,135 @@
+{
+ "ours_L_vs_r-hand_pivot-aligned": {
+  "offset": [
+   -42.0,
+   -53.5
+  ],
+  "placed_at": [
+   1047,
+   664
+  ],
+  "rounding_residual": [
+   0.0,
+   0.5
+  ],
+  "iou": 0.3361530715005035,
+  "ours_px": 8430,
+  "grok_px": 4838,
+  "only_ours": 5092,
+  "only_grok": 1500,
+  "edge_max": 67.80117993073571,
+  "edge_p95": 53.72615327244693,
+  "edge_mean": 18.694509258242697,
+  "max_ours_to_grok": 67.80117993073571,
+  "max_grok_to_ours": 36.124783736376884,
+  "max_pt_ours": [
+   1169,
+   825
+  ],
+  "max_pt_grok": [
+   1111,
+   666
+  ]
+ },
+ "ours_L_vs_r-hand_as-placed (same canvas)": {
+  "offset": [
+   0.0,
+   0.0
+  ],
+  "placed_at": [
+   1089,
+   718
+  ],
+  "rounding_residual": [
+   0.0,
+   0.0
+  ],
+  "iou": 0.5149577529116237,
+  "ours_px": 8430,
+  "grok_px": 4838,
+  "only_ours": 3920,
+  "only_grok": 328,
+  "edge_max": 58.69412236331676,
+  "edge_p95": 40.068680824380046,
+  "edge_mean": 5.465935361882846,
+  "max_ours_to_grok": 58.69412236331676,
+  "max_grok_to_ours": 29.966648127543394,
+  "grok_edge_px": 659,
+  "grok_edge_within1px": 0.8861911987860395,
+  "grok_edge_within2px": 0.8877086494688923,
+  "grok_inside_ours": 0.9322033898305084,
+  "grok_components": [
+   4502,
+   335,
+   1
+  ]
+ },
+ "ours_R_vs_l-hand_pivot-aligned": {
+  "offset": [
+   40.0,
+   -53.5
+  ],
+  "placed_at": [
+   217,
+   664
+  ],
+  "rounding_residual": [
+   0.0,
+   0.5
+  ],
+  "iou": 0.3462157809983897,
+  "ours_px": 8467,
+  "grok_px": 4909,
+  "only_ours": 5027,
+  "only_grok": 1469,
+  "edge_max": 66.40030120413611,
+  "edge_p95": 52.15649483182536,
+  "edge_mean": 18.490333672573882,
+  "max_ours_to_grok": 66.40030120413611,
+  "max_grok_to_ours": 36.345563690772494,
+  "max_pt_ours": [
+   193,
+   824
+  ],
+  "max_pt_grok": [
+   251,
+   666
+  ]
+ },
+ "ours_R_vs_l-hand_as-placed (same canvas)": {
+  "offset": [
+   0.0,
+   0.0
+  ],
+  "placed_at": [
+   177,
+   718
+  ],
+  "rounding_residual": [
+   0.0,
+   0.0
+  ],
+  "iou": 0.5215561369582528,
+  "ours_px": 8467,
+  "grok_px": 4909,
+  "only_ours": 3882,
+  "only_grok": 324,
+  "edge_max": 57.9396237474839,
+  "edge_p95": 39.19709187104901,
+  "edge_mean": 5.355814797890362,
+  "max_ours_to_grok": 57.9396237474839,
+  "max_grok_to_ours": 30.23243291566195,
+  "grok_edge_px": 665,
+  "grok_edge_within1px": 0.881203007518797,
+  "grok_edge_within2px": 0.8917293233082707,
+  "grok_inside_ours": 0.9339987777551436,
+  "grok_components": [
+   4578,
+   327,
+   1,
+   1,
+   1,
+   1
+  ]
+ }
+}

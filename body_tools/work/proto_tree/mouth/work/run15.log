@@ -1,0 +1,69 @@
+apose gloss px 10 colour #CBA793 centroid (np.float64(-0.39999999999997726), np.float64(4.300000000000011))
+apose anchor (681, 286) bbox [657, 280, 704, 298] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 945, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 1.9889734078832764, 'blue': (0, 0)}
+   smile {'changedPx': 974, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.13963664150465216, 'worstAt': (659, 279, 0.704), 'meanAlphaErrOnPart': 0.0015316438100453232, 'keyResidual': 122.42468481762599, 'blue': (0, 0)}
+   OH_half {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 2.2516065311967095, 'blue': (0, 0)}
+   AA_half {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 2.135203326543954, 'blue': (0, 0)}
+   EE_half {'changedPx': 984, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.07676216150896897, 'worstAt': (658, 278, 0.606), 'meanAlphaErrOnPart': 0.0012263963443359678, 'keyResidual': 74.17649292972749, 'blue': (0, 0)}
+   OH {'changedPx': 969, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.05412591894602603, 'worstAt': (686, 300, 0.652), 'meanAlphaErrOnPart': 0.001152024075244205, 'keyResidual': 85.0527241663553, 'blue': (0, 0)}
+   AA {'changedPx': 1068, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.1215686274509804, 'worstAt': (667, 294, 1.0), 'meanAlphaErrOnPart': 0.0011864847852073692, 'keyResidual': 55.943973332381, 'blue': (0, 0)}
+   EE {'changedPx': 973, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.1333333333333333, 'worstAt': (658, 279, 1.0), 'meanAlphaErrOnPart': 0.0016743547472224069, 'keyResidual': 117.06901009560308, 'blue': (0, 0)}
+tpose gloss px 8 colour #C2A387 centroid (np.float64(0.0), np.float64(5.375))
+tpose anchor (682, 277) bbox [659, 272, 704, 289] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 919, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009037117148808855, 'keyResidual': 2.828427124746185, 'blue': (0, 0)}
+   smile {'changedPx': 951, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.043210402214472476, 'worstAt': (666, 272, 0.957), 'meanAlphaErrOnPart': 0.0010189987374687765, 'keyResidual': 45.932330869390455, 'blue': (0, 0)}
+   OH_half {'changedPx': 920, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009037117148808855, 'keyResidual': 2.111944549849338, 'blue': (0, 0)}
+   AA_half {'changedPx': 919, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01787991296885827, 'worstAt': (666, 272, 0.767), 'meanAlphaErrOnPart': 0.0009258791588185196, 'keyResidual': 106.89381623207679, 'blue': (0, 0)}
+   EE_half {'changedPx': 957, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.056698682186231975, 'worstAt': (667, 272, 0.943), 'meanAlphaErrOnPart': 0.0009757547575514951, 'keyResidual': 36.069668299703096, 'blue': (0, 0)}
+   OH {'changedPx': 932, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.058194337412058816, 'worstAt': (677, 269, 0.942), 'meanAlphaErrOnPart': 0.0010594050275686802, 'keyResidual': 80.91356011139486, 'blue': (0, 0)}
+   AA {'changedPx': 989, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.11372549019607847, 'worstAt': (669, 285, 1.0), 'meanAlphaErrOnPart': 0.001316606697154197, 'keyResidual': 134.29297530720208, 'blue': (0, 0)}
+   EE {'changedPx': 947, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.0862745098039216, 'worstAt': (664, 275, 1.0), 'meanAlphaErrOnPart': 0.0012375568734501704, 'keyResidual': 48.33551902251569, 'blue': (0, 0)}
+right gloss px 7 colour #976144 centroid (np.float64(12.285714285714334), np.float64(3.571428571428555))
+right anchor (760, 274) bbox [760, 263, 782, 286] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 37, 'lipPx': 239, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 586, 'uncoveredLipPx': 9, 'lipPx': 239, 'maxAlphaErr': 0.4, 'worstAt': (782, 262, 1.0), 'meanAlphaErrOnPart': 0.018369620086231043, 'keyResidual': 171.31729095389034, 'blue': (0, 0)}
+   smile {'changedPx': 585, 'uncoveredLipPx': 8, 'lipPx': 239, 'maxAlphaErr': 0.4, 'worstAt': (782, 262, 1.0), 'meanAlphaErrOnPart': 0.0176022986084429, 'keyResidual': 171.31729095389034, 'blue': (0, 0)}
+   OH_half {'changedPx': 596, 'uncoveredLipPx': 5, 'lipPx': 239, 'maxAlphaErr': 0.4, 'worstAt': (782, 262, 1.0), 'meanAlphaErrOnPart': 0.011641635813634763, 'keyResidual': 171.31729095389034, 'blue': (0, 0)}
+   AA_half {'changedPx': 663, 'uncoveredLipPx': 2, 'lipPx': 239, 'maxAlphaErr': 0.3764705882352941, 'worstAt': (782, 262, 1.0), 'meanAlphaErrOnPart': 0.011600631051098046, 'keyResidual': 160.44877446950494, 'blue': (0, 0)}
+   EE_half {'changedPx': 587, 'uncoveredLipPx': 9, 'lipPx': 239, 'maxAlphaErr': 0.4, 'worstAt': (782, 262, 1.0), 'meanAlphaErrOnPart': 0.015659048764099886, 'keyResidual': 203.5580377229564, 'blue': (0, 0)}
+   OH {'changedPx': 611, 'uncoveredLipPx': 3, 'lipPx': 239, 'maxAlphaErr': 0.4, 'worstAt': (782, 262, 1.0), 'meanAlphaErrOnPart': 0.010645805437898316, 'keyResidual': 171.31729095389034, 'blue': (0, 0)}
+   AA {'changedPx': 716, 'uncoveredLipPx': 1, 'lipPx': 239, 'maxAlphaErr': 0.3689950980392157, 'worstAt': (782, 261, 0.906), 'meanAlphaErrOnPart': 0.011416998918791187, 'keyResidual': 157.20189545216556, 'blue': (0, 0)}
+   EE {'changedPx': 599, 'uncoveredLipPx': 3, 'lipPx': 239, 'maxAlphaErr': 0.3921568627450981, 'worstAt': (783, 264, 1.0), 'meanAlphaErrOnPart': 0.014289266498528994, 'keyResidual': 168.24719323183982, 'blue': (0, 0)}
+left gloss px 5 colour #AE795F centroid (np.float64(-11.799999999999955), np.float64(4.600000000000023))
+left anchor (612, 270) bbox [590, 261, 612, 283] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 47, 'lipPx': 254, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 616, 'uncoveredLipPx': 11, 'lipPx': 254, 'maxAlphaErr': 0.4117647058823529, 'worstAt': (593, 279, 1.0), 'meanAlphaErrOnPart': 0.013771634176551651, 'keyResidual': 161.18814351543637, 'blue': (0, 0)}
+   smile {'changedPx': 616, 'uncoveredLipPx': 11, 'lipPx': 254, 'maxAlphaErr': 0.4117647058823529, 'worstAt': (593, 279, 1.0), 'meanAlphaErrOnPart': 0.013668594506278596, 'keyResidual': 161.18814351543637, 'blue': (0, 0)}
+   OH_half {'changedPx': 630, 'uncoveredLipPx': 6, 'lipPx': 254, 'maxAlphaErr': 0.4000612745098039, 'worstAt': (601, 287, 0.984), 'meanAlphaErrOnPart': 0.010485343148323913, 'keyResidual': 158.85912034933912, 'blue': (0, 0)}
+   AA_half {'changedPx': 700, 'uncoveredLipPx': 1, 'lipPx': 254, 'maxAlphaErr': 0.4156862745098039, 'worstAt': (591, 256, 1.0), 'meanAlphaErrOnPart': 0.01116802667977174, 'keyResidual': 163.73537619491364, 'blue': (0, 0)}
+   EE_half {'changedPx': 616, 'uncoveredLipPx': 11, 'lipPx': 254, 'maxAlphaErr': 0.40404411764705883, 'worstAt': (601, 287, 0.969), 'meanAlphaErrOnPart': 0.012832743389580807, 'keyResidual': 214.67420629886266, 'blue': (0, 0)}
+   OH {'changedPx': 640, 'uncoveredLipPx': 4, 'lipPx': 254, 'maxAlphaErr': 0.4000612745098039, 'worstAt': (601, 287, 0.984), 'meanAlphaErrOnPart': 0.008919188056708433, 'keyResidual': 158.85912034933912, 'blue': (0, 0)}
+   AA {'changedPx': 779, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.3803921568627451, 'worstAt': (597, 290, 1.0), 'meanAlphaErrOnPart': 0.010615136927149334, 'keyResidual': 148.63109808393457, 'blue': (0, 0)}
+   EE {'changedPx': 634, 'uncoveredLipPx': 5, 'lipPx': 254, 'maxAlphaErr': 0.4000612745098039, 'worstAt': (601, 287, 0.984), 'meanAlphaErrOnPart': 0.013274042534846897, 'keyResidual': 158.85912034933912, 'blue': (0, 0)}
+apose rest->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+apose rest->smile {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+apose AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 54, 'meanDevFromIdealMix': 13.07}
+apose M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 39, 'meanDevFromIdealMix': 11.02}
+apose rest->AA_half {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+apose AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 42, 'meanDevFromIdealMix': 9.14}
+tpose rest->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+tpose rest->smile {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+tpose AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 53, 'meanDevFromIdealMix': 13.44}
+tpose M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 44, 'meanDevFromIdealMix': 12.12}
+tpose rest->AA_half {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+tpose AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 43, 'meanDevFromIdealMix': 10.19}
+left rest->AA {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+left rest->smile {'baseShowThroughOnLips': 0.706, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+left AA->EE {'baseShowThroughOnLips': 0.316, 'maxDevFromIdealMix': 51, 'meanDevFromIdealMix': 10.84}
+left M->OH {'baseShowThroughOnLips': 0.353, 'maxDevFromIdealMix': 34, 'meanDevFromIdealMix': 7.42}
+left rest->AA_half {'baseShowThroughOnLips': 0.539, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+left AA_half->AA {'baseShowThroughOnLips': 0.27, 'maxDevFromIdealMix': 50, 'meanDevFromIdealMix': 8.99}
+right rest->AA {'baseShowThroughOnLips': 0.682, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right rest->smile {'baseShowThroughOnLips': 0.7, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.41}
+right AA->EE {'baseShowThroughOnLips': 0.411, 'maxDevFromIdealMix': 56, 'meanDevFromIdealMix': 10.48}
+right M->OH {'baseShowThroughOnLips': 0.49, 'maxDevFromIdealMix': 35, 'meanDevFromIdealMix': 9.65}
+right rest->AA_half {'baseShowThroughOnLips': 0.688, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right AA_half->AA {'baseShowThroughOnLips': 0.47, 'maxDevFromIdealMix': 56, 'meanDevFromIdealMix': 9.11}
+DONE

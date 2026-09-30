@@ -1,0 +1,321 @@
+{
+ "apose": {
+  "before": {
+   "bun": 4.0,
+   "strand_01": 10.0,
+   "strand_02": 10.0,
+   "strand_03": 7.7,
+   "strand_04": 10.0,
+   "strand_05": 10.0,
+   "strand_06": 7.3,
+   "strand_07": 10.0,
+   "strand_03_tip": 7.7,
+   "strand_06_tip": 8.1
+  },
+  "after": {
+   "bun": 4.0,
+   "strand_01": 10.0,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_05": 10.0,
+   "strand_06": 10.0,
+   "strand_07": 10.0,
+   "strand_03_tip": 10.0,
+   "strand_06_tip": 10.0
+  },
+  "log": {
+   "bun": {
+    "deg": 4.0,
+    "note": "bun design value (not a clamp), unchanged"
+   },
+   "strand_01": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_02": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_03": {
+    "deg": 10.0,
+    "frm": 7.7,
+    "limited_by": null
+   },
+   "strand_04": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_05": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_06": {
+    "deg": 10.0,
+    "frm": 7.3,
+    "limited_by": null
+   },
+   "strand_07": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_03_tip": {
+    "deg": 10.0,
+    "frm": 7.7,
+    "limited_by": null
+   },
+   "strand_06_tip": {
+    "deg": 10.0,
+    "frm": 8.1,
+    "limited_by": null
+   },
+   "_final_hits": {
+    "bun": 0,
+    "strand_01": 0,
+    "strand_02": 0,
+    "strand_03": 0,
+    "strand_04": 0,
+    "strand_05": 0,
+    "strand_06": 0,
+    "strand_07": 0,
+    "strand_03_tip": 0,
+    "strand_06_tip": 0
+   }
+  }
+ },
+ "tpose": {
+  "before": {
+   "bun": 4.0,
+   "strand_01": 10.0,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_05": 0.0,
+   "strand_06": 4.9,
+   "strand_06_tip": 10.0
+  },
+  "after": {
+   "bun": 4.0,
+   "strand_01": 10.0,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_05": 10.0,
+   "strand_06": 4.9,
+   "strand_06_tip": 10.0
+  },
+  "log": {
+   "bun": {
+    "deg": 4.0,
+    "note": "bun design value (not a clamp), unchanged"
+   },
+   "strand_01": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_02": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_03": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_04": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_05": {
+    "deg": 10.0,
+    "frm": 0.0,
+    "limited_by": null
+   },
+   "strand_06": {
+    "deg": 4.9,
+    "frm": 4.9,
+    "limited_by": "eye/mouth 2px margin"
+   },
+   "strand_06_tip": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "_final_hits": {
+    "bun": 0,
+    "strand_01": 0,
+    "strand_02": 0,
+    "strand_03": 0,
+    "strand_04": 0,
+    "strand_05": 0,
+    "strand_06": 0,
+    "strand_06_tip": 0
+   }
+  }
+ },
+ "left": {
+  "before": {
+   "bun": 4.0,
+   "strand_01": 7.8,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 9.9,
+   "strand_04_tip": 9.9
+  },
+  "after": {
+   "bun": 4.0,
+   "strand_01": 10.0,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_04_tip": 10.0
+  },
+  "log": {
+   "bun": {
+    "deg": 4.0,
+    "note": "bun design value (not a clamp), unchanged"
+   },
+   "strand_01": {
+    "deg": 10.0,
+    "frm": 7.8,
+    "limited_by": null
+   },
+   "strand_02": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_03": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_04": {
+    "deg": 10.0,
+    "frm": 9.9,
+    "limited_by": null
+   },
+   "strand_04_tip": {
+    "deg": 10.0,
+    "frm": 9.9,
+    "limited_by": null
+   },
+   "_final_hits": {
+    "bun": 0,
+    "strand_01": 0,
+    "strand_02": 0,
+    "strand_03": 0,
+    "strand_04": 0,
+    "strand_04_tip": 0
+   }
+  }
+ },
+ "right": {
+  "before": {
+   "bun": 4.0,
+   "strand_01": 10.1,
+   "strand_02": 3.3,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_01_tip": 10.1,
+   "strand_02_tip": 10.0
+  },
+  "after": {
+   "bun": 4.0,
+   "strand_01": 10.1,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_01_tip": 10.1,
+   "strand_02_tip": 10.0
+  },
+  "log": {
+   "bun": {
+    "deg": 4.0,
+    "note": "bun design value (not a clamp), unchanged"
+   },
+   "strand_01": {
+    "deg": 10.1,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_02": {
+    "deg": 10.0,
+    "frm": 3.3,
+    "limited_by": null
+   },
+   "strand_03": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_04": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_01_tip": {
+    "deg": 10.1,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_02_tip": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "_final_hits": {
+    "bun": 0,
+    "strand_01": 0,
+    "strand_02": 0,
+    "strand_03": 0,
+    "strand_04": 0,
+    "strand_01_tip": 0,
+    "strand_02_tip": 0
+   }
+  }
+ },
+ "back": {
+  "before": {
+   "bun": 4.0,
+   "strand_01": 10.0,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_05": 10.0
+  },
+  "after": {
+   "bun": 4.0,
+   "strand_01": 10.0,
+   "strand_02": 10.0,
+   "strand_03": 10.0,
+   "strand_04": 10.0,
+   "strand_05": 10.0
+  },
+  "log": {
+   "bun": {
+    "deg": 4.0,
+    "note": "bun design value (not a clamp), unchanged"
+   },
+   "strand_01": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_02": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_03": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_04": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "strand_05": {
+    "deg": 10.0,
+    "note": "at/above cap, unchanged"
+   },
+   "_final_hits": {
+    "bun": 0,
+    "strand_01": 0,
+    "strand_02": 0,
+    "strand_03": 0,
+    "strand_04": 0,
+    "strand_05": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+apose {"names":["rest","M","smile","OH_half","AA_half","EE_half","OH","AA","EE","anger"],"talkGrid":["mouth_M","mouth_rest","mouth_AA_half","mouth_OH_half","mouth_OH","mouth_AA"],"talkSim":{"mouth_rest":3600},"manualAt025m1":"mouth_anger"} errs 0
+tpose {"names":["rest","M","smile","OH_half","AA_half","EE_half","OH","AA","EE","anger"],"talkGrid":["mouth_M","mouth_rest","mouth_AA_half","mouth_OH_half","mouth_OH","mouth_AA"],"talkSim":{"mouth_rest":3600},"manualAt025m1":"mouth_anger"} errs 0
+left {"names":["rest","M","smile","OH_half","AA_half","EE_half","OH","AA","EE"],"talkGrid":["mouth_M","mouth_rest","mouth_AA_half","mouth_OH_half","mouth_OH","mouth_AA"],"talkSim":{"mouth_rest":3600},"manualAt025m1":"mouth_M"} errs 0
+right {"names":["rest","M","smile","OH_half","AA_half","EE_half","OH","AA","EE"],"talkGrid":["mouth_M","mouth_rest","mouth_AA_half","mouth_OH_half","mouth_OH","mouth_AA"],"talkSim":{"mouth_rest":3600},"manualAt025m1":"mouth_M"} errs 0

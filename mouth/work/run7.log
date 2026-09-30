@@ -1,0 +1,15 @@
+right anchor (760, 274) bbox [760, 263, 782, 286] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 37, 'lipPx': 239, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 583, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.0625, 'worstAt': (776, 285, 0.938), 'meanAlphaErrOnPart': 0.0009756228380622769, 'keyResidual': 2.2977272655612704, 'blue': (0, 0)}
+   smile {'changedPx': 583, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.0625, 'worstAt': (776, 285, 0.938), 'meanAlphaErrOnPart': 0.0010677186876993279, 'keyResidual': 2.735049624707834, 'blue': (0, 0)}
+   OH {'changedPx': 624, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.0625, 'worstAt': (784, 270, 0.938), 'meanAlphaErrOnPart': 0.0011067846885002776, 'keyResidual': 2.1989342111265064, 'blue': (0, 0)}
+   AA {'changedPx': 651, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.045718992219964116, 'worstAt': (775, 264, 0.954), 'meanAlphaErrOnPart': 0.001485273783758716, 'keyResidual': 2.8897068660670913, 'blue': (0, 0)}
+   EE {'changedPx': 597, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.078125, 'worstAt': (782, 261, 0.922), 'meanAlphaErrOnPart': 0.0011863182118804967, 'keyResidual': 2.5496487184759897, 'blue': (0, 0)}
+left anchor (612, 270) bbox [590, 261, 612, 283] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 47, 'lipPx': 254, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 610, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.07627471789751894, 'worstAt': (616, 270, 0.924), 'meanAlphaErrOnPart': 0.0013679838618768237, 'keyResidual': 2.326403033377984, 'blue': (0, 0)}
+   smile {'changedPx': 610, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.07627471789751894, 'worstAt': (616, 270, 0.924), 'meanAlphaErrOnPart': 0.0013692309801072936, 'keyResidual': 2.277891164516527, 'blue': (0, 0)}
+   OH {'changedPx': 651, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.07627471789751894, 'worstAt': (616, 270, 0.924), 'meanAlphaErrOnPart': 0.0016048317403858856, 'keyResidual': 2.277891164516527, 'blue': (0, 0)}
+   AA {'changedPx': 692, 'uncoveredLipPx': 1, 'lipPx': 254, 'maxAlphaErr': 0.0980392156862745, 'worstAt': (593, 275, 1.0), 'meanAlphaErrOnPart': 0.002127213682381097, 'keyResidual': 3.335485076989939, 'blue': (0, 0)}
+   EE {'changedPx': 625, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.07627471789751894, 'worstAt': (616, 270, 0.924), 'meanAlphaErrOnPart': 0.0015562444135318598, 'keyResidual': 4.914804416559244, 'blue': (0, 0)}
+DONE

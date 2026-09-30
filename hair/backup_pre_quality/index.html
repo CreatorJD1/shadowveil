@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Shadowveil hair live preview</title>
+<style>body{background:#2a2a30;color:#ddd;font:14px sans-serif;margin:12px}canvas{background:#fff;image-rendering:auto}label{margin-right:14px}.row{margin:6px 0}</style></head><body>
+<div class="row"><b>Shadowveil hair: live sway preview</b> (drawImage only: hair_back, base_body, then hair parts by layer)</div>
+<div class="row"><label>View <select id="view"><option>apose</option><option>tpose</option><option>left</option><option>right</option><option>back</option></select></label>
+<label>HairSwayX <input id="sx" type="range" min="-1" max="1" step="0.01" value="0"> <span id="sxv">0</span></label>
+<label>HairSwayY <input id="sy" type="range" min="-1" max="1" step="0.01" value="0"> <span id="syv">0</span></label>
+<label><input id="auto" type="checkbox" checked> auto sway</label>
+<label><input id="rest" type="checkbox"> show original base.png</label>
+<label><input id="full" type="checkbox"> full body</label></div>
+<canvas id="c" width="700" height="700"></canvas>
+<script>
+const c=document.getElementById('c'),g=c.getContext('2d');let S={},t0=performance.now();
+const img=u=>new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=u+'?v='+Date.now()});
+async function load(v){const b='/views/'+v+'/';const rig=await (await fetch(b+'hair/rig.json?v='+Date.now())).json();
+ const parts=await Promise.all((Array.isArray(rig)?rig:rig.parts).map(async p=>({...p,im:p.file?await img(b+'hair/'+p.file):null})));
+ S={v,ymax:(Array.isArray(rig)?2:(rig.swayYMaxPx??3)),rig:parts.sort((a,b)=>a.layer-b.layer),base:await img(b+'base.png'),body:await img(b+'base_body.png')};}
+function draw(){if(!S.rig)return requestAnimationFrame(draw);
+ let sx=+document.getElementById('sx').value, sy=+document.getElementById('sy').value;
+ if(document.getElementById('auto').checked){const t=(performance.now()-t0)/1000;sx=Math.sin(t*2.2);sy=Math.sin(t*4.4)*0.4;}
+ document.getElementById('sxv').textContent=sx.toFixed(2);document.getElementById('syv').textContent=sy.toFixed(2);
+ const full=document.getElementById('full').checked;g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,700,700);
+ if(full){const s=700/1739;g.setTransform(s,0,0,s,(700-1365*s)/2,0);}else{g.setTransform(1.75,0,0,1.75,-480*1.75,-20*1.75);}
+ if(document.getElementById('rest').checked){S.base&&g.drawImage(S.base,0,0);return requestAnimationFrame(draw);}
+ const T=p=>{const a=(p.swayWeight||0)*(p.maxSwayDeg||0)*sx*Math.PI/180,dy=(p.swayY??p.swayWeight??0)*S.ymax*sy;g.save();g.translate(p.pivotX,p.pivotY+dy);g.rotate(a);g.translate(-p.pivotX,-p.pivotY);g.drawImage(p.im,p.x,p.y);g.restore();};
+ S.rig.filter(p=>p.im&&p.layer<200).forEach(T);(S.body||S.base)&&g.drawImage(S.body||S.base,0,0);
+ S.rig.filter(p=>p.im&&p.layer>=200).forEach(T);
+ requestAnimationFrame(draw);}
+document.getElementById('view').onchange=e=>load(e.target.value);load('apose').then(draw);
+</script></body></html>

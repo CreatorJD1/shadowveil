@@ -1,0 +1,1139 @@
+{
+ "view": "right",
+ "neckY": 395,
+ "load": {
+  "skin": true,
+  "useSkin": true,
+  "skinSrc": "views/right/body/skin.json",
+  "headBone": "head",
+  "status": "All part sets loaded for right\nbody: skin mesh views/right/body/skin.json (27609 vertices, 53329 triangles, groups 220/222/239/240/241/242/246/250/251)\nskin underlay: base_body_underlay.png (20210 triangles, layer 219, rest footprint 36673 px fully hidden)\nbody: 9 jointed parts\nlayers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2\nmouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE\nfinger frames: 15 segments",
+  "warn": [],
+  "hairParts": [
+   "hair_back",
+   "hair_front",
+   "bun",
+   "strand_01",
+   "strand_01_tip",
+   "strand_02",
+   "strand_02_tip",
+   "strand_03",
+   "strand_04"
+  ],
+  "hairLoaded": [
+   [
+    "hair_back",
+    true
+   ],
+   [
+    "hair_front",
+    true
+   ],
+   [
+    "bun",
+    true
+   ],
+   [
+    "strand_01",
+    true
+   ],
+   [
+    "strand_01_tip",
+    true
+   ],
+   [
+    "strand_02",
+    true
+   ],
+   [
+    "strand_02_tip",
+    true
+   ],
+   [
+    "strand_03",
+    true
+   ],
+   [
+    "strand_04",
+    true
+   ]
+  ]
+ },
+ "restCheck": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+ "result": {
+  "restHairBackVisiblePx": 0,
+  "restHairPx": 10313,
+  "poses": [
+   {
+    "pose": {
+     "ShoulderL": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ShoulderL": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ShoulderR": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ShoulderR": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ElbowL": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ElbowL": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ElbowR": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ElbowR": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "HipL": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "HipL": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "HipR": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "HipR": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "KneeL": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "KneeL": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "KneeR": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "KneeR": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "AnkleL": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "AnkleL": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "AnkleR": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "AnkleR": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ToeL": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ToeL": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ToeR": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "ToeR": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "WristL": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "WristL": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "WristR": -1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "WristR": 1
+    },
+    "headAngleDeg": 0,
+    "headT": [
+     0,
+     0
+    ],
+    "hairBackVisiblePx": 0,
+    "hairBackPeekPx": 0,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": null,
+    "attach": {
+     "hairPx": 10313,
+     "outsideRestHairMappedByHead2px": 0
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 718,
+    "hairBackPeekPx": 718,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": {
+     "hairPx": 11829,
+     "outsideRestHairMappedByHead2px": 759
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 727,
+    "hairBackPeekPx": 727,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": {
+     "hairPx": 11842,
+     "outsideRestHairMappedByHead2px": 771
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": -1,
+     "ShoulderR": -1,
+     "ElbowL": -1,
+     "ElbowR": -1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 718,
+    "hairBackPeekPx": 718,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": {
+     "hairPx": 11829,
+     "outsideRestHairMappedByHead2px": 759
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": -1,
+     "ShoulderR": 1,
+     "ElbowL": -1,
+     "ElbowR": 1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 718,
+    "hairBackPeekPx": 718,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": {
+     "hairPx": 11829,
+     "outsideRestHairMappedByHead2px": 759
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": 1,
+     "ShoulderR": -1,
+     "ElbowL": 1,
+     "ElbowR": -1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 718,
+    "hairBackPeekPx": 718,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": {
+     "hairPx": 11829,
+     "outsideRestHairMappedByHead2px": 759
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": 1,
+     "ShoulderR": 1,
+     "ElbowL": 1,
+     "ElbowR": 1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 718,
+    "hairBackPeekPx": 718,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": {
+     "hairPx": 11829,
+     "outsideRestHairMappedByHead2px": 759
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": -1,
+     "ShoulderR": -1,
+     "ElbowL": -1,
+     "ElbowR": -1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 727,
+    "hairBackPeekPx": 727,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": {
+     "hairPx": 11842,
+     "outsideRestHairMappedByHead2px": 771
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": -1,
+     "ShoulderR": 1,
+     "ElbowL": -1,
+     "ElbowR": 1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 727,
+    "hairBackPeekPx": 727,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": {
+     "hairPx": 11842,
+     "outsideRestHairMappedByHead2px": 771
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": 1,
+     "ShoulderR": -1,
+     "ElbowL": 1,
+     "ElbowR": -1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 727,
+    "hairBackPeekPx": 727,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": {
+     "hairPx": 11842,
+     "outsideRestHairMappedByHead2px": 771
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": 1,
+     "ShoulderR": 1,
+     "ElbowL": 1,
+     "ElbowR": 1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 727,
+    "hairBackPeekPx": 727,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": {
+     "hairPx": 11842,
+     "outsideRestHairMappedByHead2px": 771
+    },
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": -1,
+     "ShoulderR": 1,
+     "HairSwayX": -1,
+     "HairSwayY": -1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 843,
+    "hairBackPeekPx": 843,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": null,
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": -1,
+     "ShoulderR": 1,
+     "HairSwayX": -1,
+     "HairSwayY": 1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 855,
+    "hairBackPeekPx": 855,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": null,
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": -1,
+     "ShoulderR": 1,
+     "HairSwayX": 1,
+     "HairSwayY": -1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 764,
+    "hairBackPeekPx": 764,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": null,
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": -1,
+     "ShoulderL": -1,
+     "ShoulderR": 1,
+     "HairSwayX": 1,
+     "HairSwayY": 1
+    },
+    "headAngleDeg": -8,
+    "headT": [
+     -95.48,
+     104.57
+    ],
+    "hairBackVisiblePx": 848,
+    "hairBackPeekPx": 848,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     463,
+     62,
+     716,
+     305
+    ],
+    "attach": null,
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": 1,
+     "ShoulderR": -1,
+     "HairSwayX": -1,
+     "HairSwayY": -1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 815,
+    "hairBackPeekPx": 815,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     40,
+     874,
+     283
+    ],
+    "attach": null,
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": 1,
+     "ShoulderR": -1,
+     "HairSwayX": -1,
+     "HairSwayY": 1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 845,
+    "hairBackPeekPx": 845,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": null,
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": 1,
+     "ShoulderR": -1,
+     "HairSwayX": 1,
+     "HairSwayY": -1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 764,
+    "hairBackPeekPx": 764,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": null,
+    "issues": []
+   },
+   {
+    "pose": {
+     "BodyLean": 1,
+     "ShoulderL": 1,
+     "ShoulderR": -1,
+     "HairSwayX": 1,
+     "HairSwayY": 1
+    },
+    "headAngleDeg": 8,
+    "headT": [
+     109.1,
+     -90.27
+    ],
+    "hairBackVisiblePx": 855,
+    "hairBackPeekPx": 855,
+    "peekBelowNeckBoundary": 0,
+    "neckPeekPx": [],
+    "peekBBox": [
+     637,
+     39,
+     875,
+     283
+    ],
+    "attach": null,
+    "issues": []
+   }
+  ]
+ },
+ "offset": [
+  {
+   "BodyLean": -1,
+   "headAngleDeg": -8,
+   "bestShift": {
+    "ox": 0,
+    "oy": 0,
+    "err": 0.311
+   }
+  },
+  {
+   "BodyLean": 1,
+   "headAngleDeg": 8,
+   "bestShift": {
+    "ox": 0,
+    "oy": 0,
+    "err": 0.253
+   }
+  }
+ ],
+ "consoleErrors": []
+}

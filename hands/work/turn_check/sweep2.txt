@@ -1,0 +1,55 @@
+f001 0.0 1056 L:tips5 L93.0 pl54.6 pw37.5 fl38.4 th-v/-v | R:tips5 L93.0 pl53.8 pw38.2 fl39.2 th+v/+v
+f006 3.6 1056 L:tips5 L93.0 pl54.5 pw39.6 fl38.5 th-v/-v | R:tips5 L92.0 pl54.8 pw38.2 fl37.2 th+v/+v
+f011 9.1 1058 L:tips5 L93.0 pl53.1 pw36.8 fl39.9 th-v/-v | R:tips5 L90.0 pl51.4 pw38.2 fl38.6 th+v/+v
+f016 15.1 1060 L:tips5 L94.0 pl56.9 pw35.4 fl37.1 th-v/-v | R:tips5 L88.1 pl53.6 pw36.1 fl34.4 th+v/+v
+f021 21.9 1062 L:tips5 L96.0 pl57.3 pw36.1 fl38.8 th-v/-v | R:tips5 L85.0 pl49.0 pw36.1 fl36.0 th+v/+v
+f026 29.1 1063 L:tips5 L95.0 pl56.6 pw39.2 fl38.4 th-v/-v | R:tips5 L80.0 pl49.3 pw33.2 fl30.7 th+v/+v
+f031 37.2 1064 L:tips4 L96.0 pl60.8 pw38.9 fl35.2 th-v/-v | R:tips4 L76.0 pl57.0 pw23.0 fl19.0 th+v/+v
+f035 44.3 1066 L:tips4 L95.0 pl63.2 pw37.0 fl31.8 th-v/-v | R:tips3 L73.0 pl57.6 pw29.2 fl15.4 th+v/+v
+f036 46.2 1066 L:tips4 L94.0 pl63.6 pw36.4 fl30.4 th-v/-v | R:tips2 L71.0 pl47.9 pw28.6 fl23.1 th+v/+v
+f041 56.1 1066 L:tips4 L89.0 pl70.0 pw35.8 fl19.0 th-v/-v | R:tips1 L64.3 pl- pw- fl- th+v/+v
+f046 66.6 1067 L:tips0 L83.0 pl- pw- fl- th-v/-v | R:tips2 L111.0 pl68.1 pw30.4 fl42.9 th+v/+v
+f051 78.0 1068 L:tips0 L72.4 pl- pw- fl- thindeterminate/-v
+f056 88.9 1068 
+f057 90.0 1068 
+f061 94.8 1066 
+f066 96.9 1062 
+f071 104.6 1058 L:tips1 L89.0 pl- pw- fl- th+v/+v | R:tips1 L109.0 pl- pw- fl- thindeterminate/-v
+f076 115.8 1056 L:tips1 L93.0 pl- pw- fl- th+v/+v | R:tips4 L45.0 pl36.3 pw19.0 fl8.7 th-v/-v
+f081 125.8 1051 L:tips3 L94.0 pl70.5 pw32.5 fl23.5 th+v/+v | R:tips2 L52.1 pl37.4 pw25.5 fl14.7 th-v/-v
+f086 135.6 1048 L:tips3 L96.1 pl60.7 pw38.2 fl35.5 th+v/+v | R:tips3 L61.0 pl48.6 pw26.1 fl12.4 th-v/-v
+f091 145.5 1044 L:tips3 L98.2 pl57.5 pw40.8 fl40.8 th+v/+v | R:tips4 L72.0 pl60.1 pw26.0 fl11.9 th-v/-v
+f096 155.2 1042 L:tips5 L96.0 pl54.1 pw39.8 fl41.9 th+v/+v | R:tips4 L77.0 pl53.2 pw26.2 fl23.8 th-v/-v
+f101 164.8 1038 L:tips5 L97.0 pl55.0 pw39.0 fl42.0 th+v/+v | R:tips5 L85.0 pl51.8 pw36.8 fl33.2 th-v/-v
+f106 174.5 1034 L:tips5 L93.2 pl54.3 pw38.3 fl38.8 th+v/+v | R:tips5 L89.0 pl51.6 pw39.6 fl37.4 th-v/-v
+f109 180.0 1034 L:tips5 L94.1 pl57.5 pw37.9 fl36.7 th+v/+v | R:tips5 L92.0 pl52.5 pw32.5 fl39.5 th-v/-v
+f111 182.9 1036 L:tips5 L91.0 pl52.7 pw37.5 fl38.3 th+v/+v | R:tips5 L95.0 pl52.0 pw41.1 fl43.0 th-v/-v
+f116 192.7 1046 L:tips5 L85.0 pl49.8 pw36.4 fl35.2 th+v/+v | R:tips5 L96.0 pl51.5 pw42.1 fl44.5 th-v/-v
+f121 202.3 1042 L:tips5 L80.0 pl48.0 pw35.4 fl32.0 th+v/+v | R:tips5 L98.0 pl53.1 pw42.6 fl44.9 th-v/-v
+f126 211.6 1042 L:tips4 L75.0 pl50.8 pw26.3 fl24.2 th+v/+v | R:tips5 L100.0 pl58.1 pw42.6 fl41.9 th-v/-v
+f131 220.8 1044 L:tips4 L70.0 pl56.2 pw23.9 fl13.8 th+v/+v | R:tips5 L99.0 pl56.9 pw41.9 fl42.1 th-v/-v
+f133 224.5 1046 L:tips4 L65.0 pl53.6 pw22.5 fl11.4 th+v/+v | R:tips5 L98.2 pl62.7 pw41.1 fl35.5 th-v/-v
+f136 230.3 1048 L:tips4 L59.0 pl49.6 pw21.5 fl9.4 th+v/+v | R:tips3 L96.0 pl57.7 pw40.4 fl38.3 th-v/-v
+f141 240.1 1051 L:tips2 L50.0 pl34.4 pw24.4 fl15.6 th+v/+v | R:tips3 L97.0 pl63.2 pw34.7 fl33.8 th-v/-v
+f146 249.9 1054 L:tips0 L106.0 pl- pw- fl- thindeterminate/+v | R:tips2 L97.0 pl75.5 pw29.7 fl21.5 th-v/-v
+f151 260.5 1058 
+f156 265.8 1061 
+f161 268.2 1062 
+f164 270.0 1062 
+f166 272.1 1064 
+f171 282.1 1064 L:tips1 L131.0 pl- pw- fl- th+v/-v | R:tips0 L64.0 pl- pw- fl- th+v/+v
+f176 292.6 1064 L:tips1 L33.5 pl- pw- fl- th-v/-v | R:tips3 L77.0 pl63.6 pw28.8 fl13.4 th+v/+v
+f181 301.6 1064 L:tips1 L65.0 pl- pw- fl- th-v/-v | R:tips4 L88.0 pl65.3 pw34.4 fl22.7 th+v/+v
+f186 309.9 1064 L:tips2 L68.0 pl54.0 pw28.6 fl14.0 th-v/-v | R:tips4 L90.0 pl71.2 pw28.6 fl18.8 th+v/+v
+f189 314.8 1064 L:tips2 L69.0 pl50.4 pw29.8 fl18.6 th-v/-v | R:tips4 L91.0 pl63.7 pw29.8 fl27.3 th+v/+v
+f191 317.8 1064 L:tips2 L73.0 pl49.6 pw30.8 fl23.4 th-v/-v | R:tips4 L94.0 pl66.0 pw30.5 fl28.0 th+v/+v
+f196 325.5 1064 L:tips4 L75.0 pl50.2 pw32.6 fl24.8 th-v/-v | R:tips5 L95.0 pl62.6 pw31.1 fl32.4 th+v/+v
+f201 332.5 1064 L:tips5 L81.0 pl49.2 pw35.4 fl31.8 th-v/-v | R:tips5 L96.0 pl58.6 pw31.8 fl37.4 th+v/+v
+f206 338.9 1062 L:tips5 L83.0 pl51.4 pw36.1 fl31.6 th-v/-v | R:tips5 L96.0 pl58.8 pw31.8 fl37.2 th+v/+v
+f211 345.3 1060 L:tips5 L86.0 pl50.4 pw36.8 fl35.6 th-v/-v | R:tips5 L94.1 pl55.6 pw31.9 fl38.5 th+v/+v
+f216 350.7 1058 L:tips5 L88.0 pl49.6 pw37.9 fl38.4 th-v/-v | R:tips5 L96.0 pl55.8 pw39.6 fl40.2 th+v/+v
+f221 353.8 1058 L:tips5 L90.0 pl51.5 pw38.2 fl38.5 th-v/-v | R:tips5 L93.0 pl54.1 pw39.6 fl38.9 th+v/+v
+f226 354.9 1058 L:tips5 L91.0 pl51.2 pw38.9 fl39.8 th-v/-v | R:tips5 L93.0 pl54.1 pw38.2 fl38.9 th+v/+v
+f231 355.8 1056 L:tips5 L92.0 pl54.6 pw38.2 fl37.4 th-v/-v | R:tips5 L93.0 pl54.6 pw29.1 fl38.4 th+v/+v
+f236 360.0 1056 L:tips5 L93.0 pl51.7 pw39.6 fl41.3 th-v/-v | R:tips5 L92.0 pl52.1 pw38.2 fl39.9 th+v/+v
+f241 360.0 1056 L:tips5 L93.0 pl51.7 pw39.6 fl41.3 th-v/-v | R:tips5 L92.0 pl53.8 pw37.5 fl38.2 th+v/+v

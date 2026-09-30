@@ -1,0 +1,27 @@
+{
+ "apose": {
+  "skin": true,
+  "status": "PASS: Motion quality (apose)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (339039 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms",
+  "consoleErrors": []
+ },
+ "tpose": {
+  "skin": true,
+  "status": "PASS: Motion quality (tpose)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (320202 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms",
+  "consoleErrors": []
+ },
+ "left": {
+  "skin": true,
+  "status": "PASS: Motion quality (left)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (217109 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms",
+  "consoleErrors": []
+ },
+ "right": {
+  "skin": true,
+  "status": "PASS: Motion quality (right)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (212980 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms",
+  "consoleErrors": []
+ },
+ "back": {
+  "skin": true,
+  "status": "PASS: Motion quality (back)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (345016 px region): 0, blinks: 1, mouth switches: 0\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 1, mouth switches: 0",
+  "consoleErrors": []
+ }
+}

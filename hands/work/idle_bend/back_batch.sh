@@ -1,0 +1,9 @@
+set -e
+while read n a b c d; do
+  python3 mkback.py $n $a $b $c $d
+  node hb_render.mjs back cases_data.json renders/data/back_$n --layers=1 --port=8951 --hands=$PWD/scratch/back_$n 2>&1 | tail -1
+  python3 pivot_qa.py renders/data/back_$n back qa_back_$n.json data_backup/back_rig.json >/dev/null
+  echo "== $n $a $b $c $d done $(date +%H:%M:%S)"
+done <<LIST
+$1
+LIST

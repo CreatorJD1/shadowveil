@@ -1,0 +1,403 @@
+{
+ "apose": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rig_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 25089,
+  "BODY_changed_px_outside_our_erase_mask": 17588,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 1160,
+  "over_base_diff_outside_despill": 1160,
+  "joint_cap_px": 80,
+  "sway_parts_overlap_px": 0,
+  "wisp_exempt_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 4367,
+  "forbidden_sources": 31,
+  "under_face_static_px": {},
+  "rest_overlap": {},
+  "sweep": "v1.3 independent drives: own s x 41, each ancestor s x 21, own dy in all reachable values",
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "rotDegAtS1": 1.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 10.0,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.6,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 5.7,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_05": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_06": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 5.3,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_07": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.7,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_03_tip": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.5,
+    "ancestors": [
+     "strand_03"
+    ],
+    "overlap_px_at_final": 0
+   },
+   "strand_06_tip": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.8,
+    "ancestors": [
+     "strand_06"
+    ],
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "tpose": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rig_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 17343,
+  "BODY_changed_px_outside_our_erase_mask": 8603,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 3030,
+  "over_base_diff_outside_despill": 3030,
+  "joint_cap_px": 36,
+  "sway_parts_overlap_px": 0,
+  "wisp_exempt_px": 40,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 4142,
+  "forbidden_sources": 31,
+  "under_face_static_px": {
+   "hair_back": 94
+  },
+  "rest_overlap": {},
+  "sweep": "v1.3 independent drives: own s x 41, each ancestor s x 21, own dy in all reachable values",
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "rotDegAtS1": 1.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 10.0,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.6,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.5,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_05": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_06": {
+    "maxSwayDeg": 4.9,
+    "rotDegAtS1": 2.597,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_06_tip": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.8,
+    "ancestors": [
+     "strand_06"
+    ],
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "left": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rig_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 19282,
+  "BODY_changed_px_outside_our_erase_mask": 8898,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 922,
+  "over_base_diff_outside_despill": 922,
+  "joint_cap_px": 41,
+  "sway_parts_overlap_px": 0,
+  "wisp_exempt_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 2059,
+  "forbidden_sources": 20,
+  "under_face_static_px": {},
+  "rest_overlap": {},
+  "sweep": "v1.3 independent drives: own s x 41, each ancestor s x 21, own dy in all reachable values",
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "rotDegAtS1": 1.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.6,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.5,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 5.5,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_04_tip": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.2,
+    "ancestors": [
+     "strand_04"
+    ],
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "right": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rig_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 19748,
+  "BODY_changed_px_outside_our_erase_mask": 9250,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 883,
+  "over_base_diff_outside_despill": 883,
+  "joint_cap_px": 54,
+  "sway_parts_overlap_px": 0,
+  "wisp_exempt_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 2061,
+  "forbidden_sources": 20,
+  "under_face_static_px": {},
+  "rest_overlap": {},
+  "sweep": "v1.3 independent drives: own s x 41, each ancestor s x 21, own dy in all reachable values",
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "rotDegAtS1": 1.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.1,
+    "rotDegAtS1": 6.06,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 5.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.5,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_01_tip": {
+    "maxSwayDeg": 10.1,
+    "rotDegAtS1": 10.1,
+    "ancestors": [
+     "strand_01"
+    ],
+    "overlap_px_at_final": 0
+   },
+   "strand_02_tip": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.6,
+    "ancestors": [
+     "strand_02"
+    ],
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "back": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rig_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 27546,
+  "BODY_changed_px_outside_our_erase_mask": 16726,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 1390,
+  "over_base_diff_outside_despill": 1390,
+  "joint_cap_px": 0,
+  "sway_parts_overlap_px": 0,
+  "wisp_exempt_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 0,
+  "forbidden_sources": 0,
+  "under_face_static_px": {},
+  "rest_overlap": {},
+  "sweep": "v1.3 independent drives: own s x 41, each ancestor s x 21, own dy in all reachable values",
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "rotDegAtS1": 1.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.6,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.5,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 9.2,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   },
+   "strand_05": {
+    "maxSwayDeg": 10.0,
+    "rotDegAtS1": 8.8,
+    "ancestors": [],
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ }
+}

@@ -1,0 +1,25 @@
+apose rest->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+apose rest->smile {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+apose AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 54, 'meanDevFromIdealMix': 13.07}
+apose M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 39, 'meanDevFromIdealMix': 11.35}
+apose rest->AA_half {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+apose AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 42, 'meanDevFromIdealMix': 9.14}
+tpose rest->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+tpose rest->smile {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.45}
+tpose AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 53, 'meanDevFromIdealMix': 13.44}
+tpose M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 44, 'meanDevFromIdealMix': 12.46}
+tpose rest->AA_half {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+tpose AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 43, 'meanDevFromIdealMix': 10.19}
+left rest->AA {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+left rest->smile {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+left AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 51, 'meanDevFromIdealMix': 10.91}
+left M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 34, 'meanDevFromIdealMix': 7.71}
+left rest->AA_half {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+left AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 50, 'meanDevFromIdealMix': 9.01}
+right rest->AA {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right rest->smile {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 56, 'meanDevFromIdealMix': 10.59}
+right M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 33, 'meanDevFromIdealMix': 9.82}
+right rest->AA_half {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 56, 'meanDevFromIdealMix': 9.22}
+DONE

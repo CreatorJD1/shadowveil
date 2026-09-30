@@ -1,0 +1,318 @@
+{
+ "apose": {
+  "EyeR": {
+   "rest": 4.0,
+   "min": 4.0,
+   "min_frame": 0,
+   "min_t": 0.03333
+  },
+  "EyeL": {
+   "rest": 4.0,
+   "min": 3.0,
+   "min_frame": 81,
+   "min_t": 2.73333
+  },
+  "mouth": {
+   "rest": 40.36279296875,
+   "min": 38.747291564941406,
+   "min_frame": 54,
+   "min_t": 1.83333
+  }
+ },
+ "tpose": {
+  "EyeR": {
+   "rest": 0.0,
+   "min": 0.0,
+   "min_frame": 0,
+   "min_t": 0.03333
+  },
+  "EyeL": {
+   "rest": 5.0,
+   "min": 4.0,
+   "min_frame": 77,
+   "min_t": 2.6
+  },
+  "mouth": {
+   "rest": 39.5751953125,
+   "min": 38.3782958984375,
+   "min_frame": 125,
+   "min_t": 4.2
+  }
+ },
+ "left": {
+  "EyeL": {
+   "rest": 2.196899890899658,
+   "min": 1.399999976158142,
+   "min_frame": 114,
+   "min_t": 3.83333
+  },
+  "mouth": {
+   "rest": 29.16279411315918,
+   "min": 27.568994522094727,
+   "min_frame": 111,
+   "min_t": 3.73333
+  }
+ },
+ "right": {
+  "EyeR": {
+   "rest": 9.787599563598633,
+   "min": 7.990699768066406,
+   "min_frame": 41,
+   "min_t": 1.4
+  },
+  "mouth": {
+   "rest": 31.78759765625,
+   "min": 28.78759765625,
+   "min_frame": 45,
+   "min_t": 1.53333
+  }
+ },
+ "back": {},
+ "apose_hair_stiff": {
+  "EyeR": {
+   "rest": 4.0,
+   "min": 4.0,
+   "min_frame": 0,
+   "min_t": 0.03333
+  },
+  "EyeL": {
+   "rest": 4.0,
+   "min": 3.0,
+   "min_frame": 104,
+   "min_t": 3.5
+  },
+  "mouth": {
+   "rest": 40.36279296875,
+   "min": 39.36279296875,
+   "min_frame": 36,
+   "min_t": 1.23333
+  }
+ },
+ "apose_hair_middle": {
+  "EyeR": {
+   "rest": 4.0,
+   "min": 4.0,
+   "min_frame": 0,
+   "min_t": 0.03333
+  },
+  "EyeL": {
+   "rest": 4.0,
+   "min": 3.0,
+   "min_frame": 106,
+   "min_t": 3.56667
+  },
+  "mouth": {
+   "rest": 40.36279296875,
+   "min": 39.36279296875,
+   "min_frame": 39,
+   "min_t": 1.33333
+  }
+ },
+ "keys_idle_breathe_apose": {
+  "EyeR": {
+   "rest": 4.0,
+   "min": 4.0,
+   "min_frame": 0,
+   "min_t": 0
+  },
+  "EyeL": {
+   "rest": 4.0,
+   "min": 3.0,
+   "min_frame": 80,
+   "min_t": 2.66667
+  },
+  "mouth": {
+   "rest": 40.36279296875,
+   "min": 38.747291564941406,
+   "min_frame": 52,
+   "min_t": 1.73333
+  }
+ },
+ "keys_idle_breathe_tpose": {
+  "EyeR": {
+   "rest": 0.0,
+   "min": 0.0,
+   "min_frame": 0,
+   "min_t": 0
+  },
+  "EyeL": {
+   "rest": 5.0,
+   "min": 4.0,
+   "min_frame": 74,
+   "min_t": 2.46667
+  },
+  "mouth": {
+   "rest": 39.5751953125,
+   "min": 38.393798828125,
+   "min_frame": 129,
+   "min_t": 4.3
+  }
+ },
+ "keys_idle_breathe_left": {
+  "EyeL": {
+   "rest": 2.196899890899658,
+   "min": 1.399999976158142,
+   "min_frame": 118,
+   "min_t": 3.93333
+  },
+  "mouth": {
+   "rest": 29.16279411315918,
+   "min": 27.568994522094727,
+   "min_frame": 115,
+   "min_t": 3.83333
+  }
+ },
+ "keys_idle_breathe_right": {
+  "EyeR": {
+   "rest": 9.787599563598633,
+   "min": 7.990699768066406,
+   "min_frame": 45,
+   "min_t": 1.5
+  },
+  "mouth": {
+   "rest": 31.78759765625,
+   "min": 28.393798828125,
+   "min_frame": 52,
+   "min_t": 1.73333
+  }
+ },
+ "keys_idle_breathe_back": {},
+ "keys_idle_weight_shift_apose": {
+  "EyeR": {
+   "rest": 4.0,
+   "min": 4.0,
+   "min_frame": 0,
+   "min_t": 0
+  },
+  "EyeL": {
+   "rest": 4.0,
+   "min": 3.0,
+   "min_frame": 122,
+   "min_t": 4.06667
+  },
+  "mouth": {
+   "rest": 40.36279296875,
+   "min": 35.5596923828125,
+   "min_frame": 56,
+   "min_t": 1.86667
+  }
+ },
+ "keys_idle_weight_shift_tpose": {
+  "EyeR": {
+   "rest": 0.0,
+   "min": 0.0,
+   "min_frame": 0,
+   "min_t": 0
+  },
+  "EyeL": {
+   "rest": 5.0,
+   "min": 3.0,
+   "min_frame": 177,
+   "min_t": 5.9
+  },
+  "mouth": {
+   "rest": 39.5751953125,
+   "min": 36.550392150878906,
+   "min_frame": 188,
+   "min_t": 6.26667
+  }
+ },
+ "keys_idle_weight_shift_left": {
+  "EyeL": {
+   "rest": 2.196899890899658,
+   "min": 1.399999976158142,
+   "min_frame": 227,
+   "min_t": 7.56667
+  },
+  "mouth": {
+   "rest": 29.16279411315918,
+   "min": 27.568994522094727,
+   "min_frame": 221,
+   "min_t": 7.36667
+  }
+ },
+ "keys_idle_weight_shift_right": {
+  "EyeR": {
+   "rest": 9.787599563598633,
+   "min": 8.787599563598633,
+   "min_frame": 46,
+   "min_t": 1.53333
+  },
+  "mouth": {
+   "rest": 31.78759765625,
+   "min": 29.78759765625,
+   "min_frame": 54,
+   "min_t": 1.8
+  }
+ },
+ "keys_idle_weight_shift_back": {},
+ "keys_idle_arm_settle_apose": {
+  "EyeR": {
+   "rest": 4.0,
+   "min": 4.0,
+   "min_frame": 0,
+   "min_t": 0
+  },
+  "EyeL": {
+   "rest": 4.0,
+   "min": 3.0,
+   "min_frame": 80,
+   "min_t": 2.66667
+  },
+  "mouth": {
+   "rest": 40.36279296875,
+   "min": 39.35039138793945,
+   "min_frame": 53,
+   "min_t": 1.76667
+  }
+ },
+ "keys_idle_arm_settle_tpose": {
+  "EyeR": {
+   "rest": 0.0,
+   "min": 0.0,
+   "min_frame": 0,
+   "min_t": 0
+  },
+  "EyeL": {
+   "rest": 5.0,
+   "min": 4.0,
+   "min_frame": 77,
+   "min_t": 2.56667
+  },
+  "mouth": {
+   "rest": 39.5751953125,
+   "min": 38.181396484375,
+   "min_frame": 121,
+   "min_t": 4.03333
+  }
+ },
+ "keys_idle_arm_settle_left": {
+  "EyeL": {
+   "rest": 2.196899890899658,
+   "min": 1.399999976158142,
+   "min_frame": 111,
+   "min_t": 3.7
+  },
+  "mouth": {
+   "rest": 29.16279411315918,
+   "min": 27.568994522094727,
+   "min_frame": 108,
+   "min_t": 3.6
+  }
+ },
+ "keys_idle_arm_settle_right": {
+  "EyeR": {
+   "rest": 9.787599563598633,
+   "min": 7.990699768066406,
+   "min_frame": 40,
+   "min_t": 1.33333
+  },
+  "mouth": {
+   "rest": 31.78759765625,
+   "min": 28.78759765625,
+   "min_frame": 46,
+   "min_t": 1.53333
+  }
+ },
+ "keys_idle_arm_settle_back": {}
+}

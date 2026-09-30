@@ -1,0 +1,1 @@
+for n in c8 c9; do node hb_render.mjs back cases_data.json renders/data/back_$n --layers=1 --port=8951 --hands=$PWD/scratch/back_$n 2>&1 | tail -1; python3 pivot_qa.py renders/data/back_$n back qa_back_$n.json data_backup/back_rig.json >/dev/null; echo "== $n done $(date +%H:%M:%S)"; done

@@ -1,0 +1,20 @@
+apose skip_hidden rest diff pixels: 0 max 0
+apose draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 1214 max 64
+tpose skip_hidden rest diff pixels: 0 max 0
+tpose draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 1962 max 64
+left skip_hidden rest diff pixels: 0 max 0
+left draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 0 max 0
+right skip_hidden rest diff pixels: 0 max 0
+right draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 0 max 0
+back skip_hidden rest diff pixels: 0 max 0
+back draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 3347 max 64

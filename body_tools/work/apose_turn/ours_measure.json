@@ -1,0 +1,153 @@
+{
+ "apose": {
+  "top": 40,
+  "foot": 1682,
+  "H": 1642,
+  "cx": 681,
+  "shoulder_w": 359,
+  "bust_w": 215,
+  "bust_y": 497,
+  "waist_w": 156,
+  "waist_y": 631,
+  "hip_w": 286,
+  "hip_y": 844,
+  "crotch_y": 844,
+  "knee_w": 74.0,
+  "knee_runs": 2,
+  "ankle_w": 47.5,
+  "ankle_y": 1538,
+  "ankle_runs": 2,
+  "leg_len": 694,
+  "arms": {
+   "R": {
+    "armpit": [
+     569,
+     462
+    ],
+    "tip": [
+     193,
+     825
+    ],
+    "len": 522.6327582538239
+   },
+   "L": {
+    "armpit": [
+     794,
+     462
+    ],
+    "tip": [
+     1171,
+     824
+    ],
+    "len": 522.6595450195089
+   }
+  }
+ },
+ "tpose": {
+  "top": 40,
+  "foot": 1682,
+  "H": 1642,
+  "cx": 680,
+  "shoulder_w": 234,
+  "bust_w": 210,
+  "bust_y": 492,
+  "waist_w": 159,
+  "waist_y": 631,
+  "hip_w": 279,
+  "hip_y": 835,
+  "crotch_y": 835,
+  "knee_w": 72.0,
+  "knee_runs": 2,
+  "ankle_w": 45.5,
+  "ankle_y": 1540,
+  "ankle_runs": 2,
+  "leg_len": 705,
+  "arms": {}
+ },
+ "left": {
+  "top": 40,
+  "foot": 1681,
+  "H": 1641,
+  "cx": 688,
+  "shoulder_w": 164,
+  "bust_w": 191,
+  "bust_y": 493,
+  "waist_w": 146,
+  "waist_y": 697,
+  "hip_w": 181,
+  "hip_y": 801,
+  "crotch_y": null,
+  "knee_w": 94.0,
+  "knee_runs": 1,
+  "ankle_w": 65.0,
+  "ankle_y": 1533,
+  "ankle_runs": 1,
+  "leg_len": null,
+  "arms": {}
+ },
+ "right": {
+  "top": 40,
+  "foot": 1681,
+  "H": 1641,
+  "cx": 671,
+  "shoulder_w": 164,
+  "bust_w": 194,
+  "bust_y": 488,
+  "waist_w": 142,
+  "waist_y": 706,
+  "hip_w": 178,
+  "hip_y": 805,
+  "crotch_y": null,
+  "knee_w": 92.0,
+  "knee_runs": 1,
+  "ankle_w": 58.0,
+  "ankle_y": 1533,
+  "ankle_runs": 1,
+  "leg_len": null,
+  "arms": {}
+ },
+ "back": {
+  "top": 40,
+  "foot": 1681,
+  "H": 1641,
+  "cx": 681,
+  "shoulder_w": 361,
+  "bust_w": 217,
+  "bust_y": 483,
+  "waist_w": 162,
+  "waist_y": 631,
+  "hip_w": 291,
+  "hip_y": 840,
+  "crotch_y": 840,
+  "knee_w": 78.0,
+  "knee_runs": 2,
+  "ankle_w": 48.0,
+  "ankle_y": 1552,
+  "ankle_runs": 2,
+  "leg_len": 712,
+  "arms": {
+   "R": {
+    "armpit": [
+     567,
+     462
+    ],
+    "tip": [
+     212,
+     832
+    ],
+    "len": 512.7621280866987
+   },
+   "L": {
+    "armpit": [
+     796,
+     462
+    ],
+    "tip": [
+     1151,
+     832
+    ],
+    "len": 512.7621280866987
+   }
+  }
+ }
+}

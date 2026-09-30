@@ -1,0 +1,122 @@
+{
+ "swayYMaxPx": 3,
+ "parts": [
+  {
+   "id": "hair_back",
+   "file": "hair_back.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 680.3,
+   "pivotY": 145.5,
+   "parent": null,
+   "layer": 100,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "hair_front",
+   "file": "hair_front.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 680.3,
+   "pivotY": 145.5,
+   "parent": null,
+   "layer": 600,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "bun",
+   "file": "bun.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 695.7,
+   "pivotY": 106.9,
+   "parent": "hair_front",
+   "layer": 101,
+   "swayWeight": 0.3,
+   "maxSwayDeg": 4.0,
+   "swayY": 0.3
+  },
+  {
+   "id": "strand_01",
+   "file": "strand_01.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 598.3,
+   "pivotY": 212.7,
+   "parent": "hair_front",
+   "layer": 601,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_02",
+   "file": "strand_02.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 609.2,
+   "pivotY": 121.3,
+   "parent": "hair_front",
+   "layer": 602,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_03",
+   "file": "strand_03.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 614.0,
+   "pivotY": 241.0,
+   "parent": "hair_front",
+   "layer": 603,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_04",
+   "file": "strand_04.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 640.9,
+   "pivotY": 153.9,
+   "parent": "hair_front",
+   "layer": 604,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_05",
+   "file": "strand_05.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 721.0,
+   "pivotY": 152.2,
+   "parent": "hair_front",
+   "layer": 605,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_06",
+   "file": "strand_06.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 770.8,
+   "pivotY": 175.1,
+   "parent": "hair_front",
+   "layer": 606,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 2.8,
+   "swayY": 1.0
+  }
+ ]
+}

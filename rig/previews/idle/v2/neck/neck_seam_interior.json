@@ -1,0 +1,162 @@
+{
+ "apose": {
+  "tiltP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltP_leanM": {
+   "alphaLossInteriorPx": 977,
+   "crackPx": 0,
+   "minAlpha": 0
+  },
+  "nodP_leanP": {
+   "alphaLossInteriorPx": 1002,
+   "crackPx": 2,
+   "minAlpha": 0
+  }
+ },
+ "tpose": {
+  "tiltP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltP_leanM": {
+   "alphaLossInteriorPx": 876,
+   "crackPx": 793,
+   "minAlpha": 0
+  },
+  "nodP_leanP": {
+   "alphaLossInteriorPx": 814,
+   "crackPx": 814,
+   "minAlpha": 0
+  }
+ },
+ "left": {
+  "tiltP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltP_leanM": {
+   "alphaLossInteriorPx": 2131,
+   "crackPx": 0,
+   "minAlpha": 0
+  },
+  "nodP_leanP": {
+   "alphaLossInteriorPx": 2353,
+   "crackPx": 1,
+   "minAlpha": 0
+  }
+ },
+ "right": {
+  "tiltP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltP_leanM": {
+   "alphaLossInteriorPx": 2295,
+   "crackPx": 0,
+   "minAlpha": 0
+  },
+  "nodP_leanP": {
+   "alphaLossInteriorPx": 2115,
+   "crackPx": 0,
+   "minAlpha": 0
+  }
+ },
+ "back": {
+  "tiltP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodP": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "nodM": {
+   "alphaLossInteriorPx": 0,
+   "crackPx": 0,
+   "minAlpha": 255
+  },
+  "tiltP_leanM": {
+   "alphaLossInteriorPx": 1075,
+   "crackPx": 6,
+   "minAlpha": 0
+  },
+  "nodP_leanP": {
+   "alphaLossInteriorPx": 1112,
+   "crackPx": 10,
+   "minAlpha": 0
+  }
+ }
+}

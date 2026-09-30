@@ -1,0 +1,96 @@
+{
+ "swayYMaxPx": 3,
+ "parts": [
+  {
+   "id": "hair_back",
+   "file": "hair_back.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 662.9,
+   "pivotY": 170.3,
+   "parent": null,
+   "layer": 100,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "hair_front",
+   "file": "hair_front.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 662.9,
+   "pivotY": 170.3,
+   "parent": null,
+   "layer": 600,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "bun",
+   "file": "bun.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 604.2,
+   "pivotY": 142.4,
+   "parent": "hair_front",
+   "layer": 650,
+   "swayWeight": 0.3,
+   "maxSwayDeg": 4.0,
+   "swayY": 0.3
+  },
+  {
+   "id": "strand_01",
+   "file": "strand_01.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 683.4,
+   "pivotY": 227.8,
+   "parent": "hair_front",
+   "layer": 601,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_02",
+   "file": "strand_02.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 724.4,
+   "pivotY": 169.6,
+   "parent": "hair_front",
+   "layer": 602,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_03",
+   "file": "strand_03.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 743.4,
+   "pivotY": 149.6,
+   "parent": "hair_front",
+   "layer": 603,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_04",
+   "file": "strand_04.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 789.6,
+   "pivotY": 153.8,
+   "parent": "hair_front",
+   "layer": 604,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  }
+ ]
+}

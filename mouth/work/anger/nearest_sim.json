@@ -1,0 +1,646 @@
+{
+ "gridPoints": {
+  "rest": {
+   "point": [
+    0,
+    0
+   ],
+   "before": "rest",
+   "frontAfter": "rest",
+   "profile": "rest",
+   "talkBefore": "rest",
+   "talkAfter": "rest"
+  },
+  "M": {
+   "point": [
+    0,
+    -1
+   ],
+   "before": "M",
+   "frontAfter": "M",
+   "profile": "M",
+   "talkBefore": "M",
+   "talkAfter": "M"
+  },
+  "smile": {
+   "point": [
+    0,
+    1
+   ],
+   "before": "smile",
+   "frontAfter": "smile",
+   "profile": "smile",
+   "talkBefore": "rest",
+   "talkAfter": "rest"
+  },
+  "OH_half": {
+   "point": [
+    0.5,
+    -1
+   ],
+   "before": "OH_half",
+   "frontAfter": "OH_half",
+   "profile": "OH_half",
+   "talkBefore": "OH_half",
+   "talkAfter": "OH_half"
+  },
+  "AA_half": {
+   "point": [
+    0.5,
+    0
+   ],
+   "before": "AA_half",
+   "frontAfter": "AA_half",
+   "profile": "AA_half",
+   "talkBefore": "AA_half",
+   "talkAfter": "AA_half"
+  },
+  "EE_half": {
+   "point": [
+    0.5,
+    1
+   ],
+   "before": "EE_half",
+   "frontAfter": "EE_half",
+   "profile": "EE_half",
+   "talkBefore": "AA_half",
+   "talkAfter": "AA_half"
+  },
+  "OH": {
+   "point": [
+    1,
+    -1
+   ],
+   "before": "OH",
+   "frontAfter": "OH",
+   "profile": "OH",
+   "talkBefore": "OH",
+   "talkAfter": "OH"
+  },
+  "AA": {
+   "point": [
+    1,
+    0
+   ],
+   "before": "AA",
+   "frontAfter": "AA",
+   "profile": "AA",
+   "talkBefore": "AA",
+   "talkAfter": "AA"
+  },
+  "EE": {
+   "point": [
+    1,
+    1
+   ],
+   "before": "EE",
+   "frontAfter": "EE",
+   "profile": "EE",
+   "talkBefore": "AA",
+   "talkAfter": "AA"
+  },
+  "anger": {
+   "point": [
+    0.25,
+    -1
+   ],
+   "before": "M",
+   "frontAfter": "anger",
+   "profile": "M",
+   "talkBefore": "M",
+   "talkAfter": "anger"
+  }
+ },
+ "clips": {
+  "mouth_showcase": {
+   "frames": 343,
+   "frontAfter_runs_ms": [
+    [
+     "rest",
+     600
+    ],
+    [
+     "M",
+     800
+    ],
+    [
+     "smile",
+     800
+    ],
+    [
+     "OH_half",
+     800
+    ],
+    [
+     "AA_half",
+     800
+    ],
+    [
+     "EE_half",
+     800
+    ],
+    [
+     "OH",
+     800
+    ],
+    [
+     "AA",
+     800
+    ],
+    [
+     "EE",
+     800
+    ],
+    [
+     "rest",
+     800
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "OH_half",
+     133
+    ],
+    [
+     "rest",
+     100
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "OH",
+     133
+    ],
+    [
+     "M",
+     100
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "rest",
+     133
+    ],
+    [
+     "OH_half",
+     100
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "M",
+     133
+    ],
+    [
+     "AA",
+     100
+    ],
+    [
+     "OH",
+     133
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "rest",
+     133
+    ],
+    [
+     "AA_half",
+     100
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "OH_half",
+     133
+    ],
+    [
+     "M",
+     133
+    ],
+    [
+     "rest",
+     733
+    ]
+   ],
+   "profile_runs_ms": [
+    [
+     "rest",
+     600
+    ],
+    [
+     "M",
+     800
+    ],
+    [
+     "smile",
+     800
+    ],
+    [
+     "OH_half",
+     800
+    ],
+    [
+     "AA_half",
+     800
+    ],
+    [
+     "EE_half",
+     800
+    ],
+    [
+     "OH",
+     800
+    ],
+    [
+     "AA",
+     800
+    ],
+    [
+     "EE",
+     800
+    ],
+    [
+     "rest",
+     800
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "OH_half",
+     133
+    ],
+    [
+     "rest",
+     100
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "OH",
+     133
+    ],
+    [
+     "M",
+     100
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "rest",
+     133
+    ],
+    [
+     "OH_half",
+     100
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "M",
+     133
+    ],
+    [
+     "AA",
+     100
+    ],
+    [
+     "OH",
+     133
+    ],
+    [
+     "AA_half",
+     133
+    ],
+    [
+     "rest",
+     133
+    ],
+    [
+     "AA_half",
+     100
+    ],
+    [
+     "AA",
+     133
+    ],
+    [
+     "OH_half",
+     133
+    ],
+    [
+     "M",
+     133
+    ],
+    [
+     "rest",
+     733
+    ]
+   ],
+   "framesChangedVsBefore": [],
+   "dense_newAnger_ms": 2.1,
+   "dense_newAnger_at_s": [
+    8.174,
+    8.675,
+    8.799,
+    8.8,
+    9.174,
+    9.175,
+    9.55,
+    9.674,
+    10.549,
+    10.55
+   ]
+  },
+  "jump": {
+   "frames": 49,
+   "frontAfter_runs_ms": [
+    [
+     "rest",
+     500
+    ],
+    [
+     "AA_half",
+     300
+    ],
+    [
+     "OH_half",
+     300
+    ],
+    [
+     "M",
+     200
+    ],
+    [
+     "rest",
+     333
+    ]
+   ],
+   "profile_runs_ms": [
+    [
+     "rest",
+     500
+    ],
+    [
+     "AA_half",
+     300
+    ],
+    [
+     "OH_half",
+     300
+    ],
+    [
+     "M",
+     200
+    ],
+    [
+     "rest",
+     333
+    ]
+   ],
+   "framesChangedVsBefore": [],
+   "dense_newAnger_ms": 0.5,
+   "dense_newAnger_at_s": [
+    1.099,
+    1.1
+   ]
+  },
+  "run": {
+   "frames": 61,
+   "frontAfter_runs_ms": [
+    [
+     "AA_half",
+     400
+    ],
+    [
+     "rest",
+     267
+    ],
+    [
+     "AA_half",
+     400
+    ],
+    [
+     "rest",
+     267
+    ],
+    [
+     "AA_half",
+     400
+    ],
+    [
+     "rest",
+     300
+    ]
+   ],
+   "profile_runs_ms": [
+    [
+     "AA_half",
+     400
+    ],
+    [
+     "rest",
+     267
+    ],
+    [
+     "AA_half",
+     400
+    ],
+    [
+     "rest",
+     267
+    ],
+    [
+     "AA_half",
+     400
+    ],
+    [
+     "rest",
+     300
+    ]
+   ],
+   "framesChangedVsBefore": [],
+   "dense_newAnger_ms": 0.0,
+   "dense_newAnger_at_s": []
+  },
+  "anger": {
+   "frames": 91,
+   "frontAfter_runs_ms": [
+    [
+     "rest",
+     300
+    ],
+    [
+     "anger",
+     2733
+    ]
+   ],
+   "profile_runs_ms": [
+    [
+     "rest",
+     300
+    ],
+    [
+     "M",
+     2733
+    ]
+   ],
+   "framesChangedVsBefore": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+   ],
+   "previousKeys_runs_ms": [
+    [
+     "rest",
+     300
+    ],
+    [
+     "M",
+     2733
+    ]
+   ],
+   "dense_newAnger_ms": 0.0,
+   "dense_newAnger_at_s": []
+  }
+ },
+ "proceduralTalk": {
+  "note": "port of stepTalk() at 60 fps, 20 seeds x 120 s, instantaneous pick (no 120 ms hold)",
+  "frames": 144000,
+  "framesPickingAngerWithCurrentTALK_EXCLUDE": 6295,
+  "pct": 4.37,
+  "framesChangedWithAngerAddedToTALK_EXCLUDE": 0
+ }
+}

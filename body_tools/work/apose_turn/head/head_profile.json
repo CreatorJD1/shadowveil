@@ -1,0 +1,424 @@
+{
+ "ours": {
+  "left": {
+   "src": "left",
+   "H": 1639,
+   "scale": 1.0012,
+   "nose_tip": [
+    581,
+    239
+   ],
+   "eye_y_rig": 212.6,
+   "nose_y_rig": 238.2,
+   "head_depth_nose_to_back": 215.3,
+   "nose_to_ear_front": 134.2,
+   "nose_to_ear_centre": 135.7,
+   "nose_to_ear_back": 137.2,
+   "nose_to_eye_front": 29.0,
+   "nose_to_eye_back": 48.1,
+   "eye_width": 20.0,
+   "ear_rows": 40
+  },
+  "right": {
+   "src": "right",
+   "H": 1640,
+   "scale": 1.0006,
+   "nose_tip": [
+    792,
+    243
+   ],
+   "eye_y_rig": 216.3,
+   "nose_y_rig": 243.1,
+   "head_depth_nose_to_back": 222.1,
+   "nose_to_ear_front": 137.1,
+   "nose_to_ear_centre": 138.6,
+   "nose_to_ear_back": 140.1,
+   "nose_to_eye_front": 34.0,
+   "nose_to_eye_back": 52.0,
+   "eye_width": 19.0,
+   "ear_rows": 40
+  }
+ },
+ "video": {
+  "f061": {
+   "src": "f061",
+   "H": 1065,
+   "scale": 1.5408,
+   "nose_tip": [
+    316,
+    196
+   ],
+   "eye_y_rig": 224.0,
+   "nose_y_rig": 255.7,
+   "head_depth_nose_to_back": 198.8,
+   "nose_to_ear_front": 100.2,
+   "nose_to_ear_centre": 104.8,
+   "nose_to_ear_back": 109.4,
+   "nose_to_eye_front": 21.6,
+   "nose_to_eye_back": 33.9,
+   "eye_width": 13.9,
+   "ear_rows": 25
+  },
+  "f062": {
+   "src": "f062",
+   "H": 1063,
+   "scale": 1.5437,
+   "nose_tip": [
+    314,
+    198
+   ],
+   "eye_y_rig": 224.7,
+   "nose_y_rig": 259.2,
+   "head_depth_nose_to_back": 202.2,
+   "nose_to_ear_front": 101.9,
+   "nose_to_ear_centre": 106.1,
+   "nose_to_ear_back": 109.6,
+   "nose_to_eye_front": 24.7,
+   "nose_to_eye_back": 35.5,
+   "eye_width": 12.3,
+   "ear_rows": 24
+  },
+  "f063": {
+   "src": "f063",
+   "H": 1063,
+   "scale": 1.5437,
+   "nose_tip": [
+    314,
+    198
+   ],
+   "eye_y_rig": 224.6,
+   "nose_y_rig": 259.2,
+   "head_depth_nose_to_back": 202.2,
+   "nose_to_ear_front": 98.8,
+   "nose_to_ear_centre": 103.0,
+   "nose_to_ear_back": 107.3,
+   "nose_to_eye_front": 24.7,
+   "nose_to_eye_back": 34.0,
+   "eye_width": 10.8,
+   "ear_rows": 24
+  },
+  "f064": {
+   "src": "f064",
+   "H": 1063,
+   "scale": 1.5437,
+   "nose_tip": [
+    314,
+    198
+   ],
+   "eye_y_rig": 223.2,
+   "nose_y_rig": 259.2,
+   "head_depth_nose_to_back": 202.2,
+   "nose_to_ear_front": 95.7,
+   "nose_to_ear_centre": 101.1,
+   "nose_to_ear_back": 101.9,
+   "nose_to_eye_front": 24.7,
+   "nose_to_eye_back": 30.9,
+   "eye_width": 7.7,
+   "ear_rows": 24
+  },
+  "f065": {
+   "src": "f065",
+   "H": 1061,
+   "scale": 1.5467,
+   "nose_tip": [
+    314,
+    198
+   ],
+   "eye_y_rig": 224.9,
+   "nose_y_rig": 259.6,
+   "head_depth_nose_to_back": 202.6,
+   "nose_to_ear_front": 94.3,
+   "nose_to_ear_centre": 99.0,
+   "nose_to_ear_back": 103.6,
+   "nose_to_eye_front": 21.7,
+   "nose_to_eye_back": 29.4,
+   "eye_width": 9.3,
+   "ear_rows": 26
+  },
+  "f066": {
+   "src": "f066",
+   "H": 1061,
+   "scale": 1.5467,
+   "nose_tip": [
+    314,
+    198
+   ],
+   "eye_y_rig": 223.5,
+   "nose_y_rig": 259.6,
+   "head_depth_nose_to_back": 202.6,
+   "nose_to_ear_front": 91.3,
+   "nose_to_ear_centre": 95.9,
+   "nose_to_ear_back": 100.5,
+   "nose_to_eye_front": 21.7,
+   "nose_to_eye_back": 27.8,
+   "eye_width": 7.7,
+   "ear_rows": 26
+  },
+  "f067": {
+   "src": "f067",
+   "H": 1059,
+   "scale": 1.5496,
+   "nose_tip": [
+    316,
+    196
+   ],
+   "eye_y_rig": 225.3,
+   "nose_y_rig": 256.9,
+   "head_depth_nose_to_back": 199.9,
+   "nose_to_ear_front": 86.8,
+   "nose_to_ear_centre": 91.4,
+   "nose_to_ear_back": 94.5,
+   "nose_to_eye_front": 18.6,
+   "nose_to_eye_back": 23.2,
+   "eye_width": 6.2,
+   "ear_rows": 26
+  },
+  "f151": {
+   "src": "f151",
+   "H": 1057,
+   "scale": 1.5525,
+   "nose_tip": [
+    443,
+    198
+   ],
+   "eye_y_rig": 213.9,
+   "nose_y_rig": 260.5,
+   "head_depth_nose_to_back": 197.2,
+   "nose_to_ear_front": 83.8,
+   "nose_to_ear_centre": 85.4,
+   "nose_to_ear_back": 86.9,
+   "nose_to_eye_front": 9.3,
+   "nose_to_eye_back": 10.9,
+   "eye_width": 3.1,
+   "ear_rows": 27
+  },
+  "f152": {
+   "src": "f152",
+   "H": 1057,
+   "scale": 1.5525,
+   "nose_tip": [
+    443,
+    198
+   ],
+   "eye_y_rig": 196.0,
+   "nose_y_rig": 260.5,
+   "head_depth_nose_to_back": 197.2,
+   "nose_to_ear_front": 83.8,
+   "nose_to_ear_centre": 86.2,
+   "nose_to_ear_back": 88.5,
+   "nose_to_eye_front": 6.2,
+   "nose_to_eye_back": 7.8,
+   "eye_width": 3.1,
+   "ear_rows": 15
+  },
+  "f153": {
+   "src": "f153",
+   "H": 1057,
+   "scale": 1.5525,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 205.6,
+   "nose_y_rig": 257.4,
+   "head_depth_nose_to_back": 197.2,
+   "nose_to_ear_front": 88.5,
+   "nose_to_ear_centre": 90.0,
+   "nose_to_ear_back": 91.6,
+   "nose_to_eye_front": 18.6,
+   "nose_to_eye_back": 20.2,
+   "eye_width": 3.1,
+   "ear_rows": 19
+  },
+  "f154": {
+   "src": "f154",
+   "H": 1059,
+   "scale": 1.5496,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 221.3,
+   "nose_y_rig": 256.9,
+   "head_depth_nose_to_back": 196.8,
+   "nose_to_ear_front": 91.4,
+   "nose_to_ear_centre": 93.7,
+   "nose_to_ear_back": 97.6,
+   "nose_to_eye_front": 23.2,
+   "nose_to_eye_back": 23.2,
+   "eye_width": 1.5,
+   "ear_rows": 25
+  },
+  "f155": {
+   "src": "f155",
+   "H": 1059,
+   "scale": 1.5496,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 217.4,
+   "nose_y_rig": 256.9,
+   "head_depth_nose_to_back": 196.8,
+   "nose_to_ear_front": 93.0,
+   "nose_to_ear_centre": 96.1,
+   "nose_to_ear_back": 97.6,
+   "nose_to_eye_front": 9.3,
+   "nose_to_eye_back": 9.3,
+   "eye_width": 1.5,
+   "ear_rows": 23
+  },
+  "f156": {
+   "src": "f156",
+   "H": 1061,
+   "scale": 1.5467,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 216.3,
+   "nose_y_rig": 256.5,
+   "head_depth_nose_to_back": 196.4,
+   "nose_to_ear_front": 95.9,
+   "nose_to_ear_centre": 97.4,
+   "nose_to_ear_back": 99.0,
+   "nose_to_eye_front": 9.3,
+   "nose_to_eye_back": 9.3,
+   "eye_width": 1.5,
+   "ear_rows": 24
+  },
+  "f157": {
+   "src": "f157",
+   "H": 1059,
+   "scale": 1.5496,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 217.6,
+   "nose_y_rig": 253.8,
+   "head_depth_nose_to_back": 196.8,
+   "nose_to_ear_front": 97.6,
+   "nose_to_ear_centre": 100.3,
+   "nose_to_ear_back": 102.3,
+   "nose_to_eye_front": 24.8,
+   "nose_to_eye_back": 27.9,
+   "eye_width": 4.6,
+   "ear_rows": 22
+  },
+  "f158": {
+   "src": "f158",
+   "H": 1059,
+   "scale": 1.5496,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 220.5,
+   "nose_y_rig": 253.8,
+   "head_depth_nose_to_back": 196.8,
+   "nose_to_ear_front": 100.7,
+   "nose_to_ear_centre": 102.3,
+   "nose_to_ear_back": 103.8,
+   "nose_to_eye_front": 12.4,
+   "nose_to_eye_back": 13.9,
+   "eye_width": 3.1,
+   "ear_rows": 24
+  },
+  "f159": {
+   "src": "f159",
+   "H": 1059,
+   "scale": 1.5496,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 220.3,
+   "nose_y_rig": 253.8,
+   "head_depth_nose_to_back": 196.8,
+   "nose_to_ear_front": 101.5,
+   "nose_to_ear_centre": 104.2,
+   "nose_to_ear_back": 106.9,
+   "nose_to_eye_front": 12.4,
+   "nose_to_eye_back": 17.0,
+   "eye_width": 6.2,
+   "ear_rows": 24
+  },
+  "f160": {
+   "src": "f160",
+   "H": 1061,
+   "scale": 1.5467,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 221.0,
+   "nose_y_rig": 253.4,
+   "head_depth_nose_to_back": 196.4,
+   "nose_to_ear_front": 103.6,
+   "nose_to_ear_centre": 105.9,
+   "nose_to_ear_back": 109.8,
+   "nose_to_eye_front": 12.4,
+   "nose_to_eye_back": 17.0,
+   "eye_width": 6.2,
+   "ear_rows": 25
+  },
+  "f161": {
+   "src": "f161",
+   "H": 1061,
+   "scale": 1.5467,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 212.0,
+   "nose_y_rig": 253.4,
+   "head_depth_nose_to_back": 196.4,
+   "nose_to_ear_front": 104.4,
+   "nose_to_ear_centre": 107.5,
+   "nose_to_ear_back": 109.8,
+   "nose_to_eye_front": 6.2,
+   "nose_to_eye_back": 9.3,
+   "eye_width": 4.6,
+   "ear_rows": 26
+  },
+  "f162": {
+   "src": "f162",
+   "H": 1061,
+   "scale": 1.5467,
+   "nose_tip": [
+    443,
+    196
+   ],
+   "eye_y_rig": 198.5,
+   "nose_y_rig": 253.4,
+   "head_depth_nose_to_back": 196.4,
+   "nose_to_ear_front": 105.2,
+   "nose_to_ear_centre": 109.0,
+   "nose_to_ear_back": 112.9,
+   "nose_to_eye_front": 6.2,
+   "nose_to_eye_back": 7.7,
+   "eye_width": 3.1,
+   "ear_rows": 25
+  },
+  "f163": {
+   "src": "f163",
+   "H": 1061,
+   "scale": 1.5467,
+   "nose_tip": [
+    443,
+    198
+   ],
+   "eye_y_rig": 217.1,
+   "nose_y_rig": 256.5,
+   "head_depth_nose_to_back": 199.5,
+   "nose_to_ear_front": 109.8,
+   "nose_to_ear_centre": 112.1,
+   "nose_to_ear_back": 114.5,
+   "nose_to_eye_front": 35.6,
+   "nose_to_eye_back": 35.6,
+   "eye_width": 1.5,
+   "ear_rows": 23
+  }
+ }
+}

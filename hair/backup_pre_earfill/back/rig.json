@@ -1,0 +1,109 @@
+{
+ "swayYMaxPx": 3,
+ "parts": [
+  {
+   "id": "hair_back",
+   "file": "hair_back.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 681.0,
+   "pivotY": 196.6,
+   "parent": null,
+   "layer": 100,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "hair_front",
+   "file": "hair_front.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 681.0,
+   "pivotY": 196.6,
+   "parent": null,
+   "layer": 600,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "bun",
+   "file": "bun.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 685.0,
+   "pivotY": 142.5,
+   "parent": "hair_back",
+   "layer": 650,
+   "swayWeight": 0.3,
+   "maxSwayDeg": 4.0,
+   "swayY": 0.3
+  },
+  {
+   "id": "strand_01",
+   "file": "strand_01.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 591.0,
+   "pivotY": 181.5,
+   "parent": "hair_back",
+   "layer": 601,
+   "swayWeight": 0.86,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0
+  },
+  {
+   "id": "strand_02",
+   "file": "strand_02.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 615.0,
+   "pivotY": 256.0,
+   "parent": "hair_back",
+   "layer": 604,
+   "swayWeight": 0.95,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.8
+  },
+  {
+   "id": "strand_03",
+   "file": "strand_03.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 649.4,
+   "pivotY": 278.7,
+   "parent": "hair_back",
+   "layer": 607,
+   "swayWeight": 0.82,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.9
+  },
+  {
+   "id": "strand_04",
+   "file": "strand_04.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 747.0,
+   "pivotY": 256.0,
+   "parent": "hair_back",
+   "layer": 610,
+   "swayWeight": 0.92,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.75
+  },
+  {
+   "id": "strand_05",
+   "file": "strand_05.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 768.7,
+   "pivotY": 209.5,
+   "parent": "hair_back",
+   "layer": 613,
+   "swayWeight": 0.88,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.95
+  }
+ ]
+}

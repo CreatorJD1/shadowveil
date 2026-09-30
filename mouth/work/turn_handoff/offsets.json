@@ -1,0 +1,20 @@
+{
+ "apose": {
+  "frame": 1,
+  "mouth_dx": 0,
+  "mouth_dy": -9,
+  "ncc": 0.945
+ },
+ "left": {
+  "frame": 62,
+  "mouth_dx": 8,
+  "mouth_dy": 13,
+  "ncc": 0.783
+ },
+ "right": {
+  "frame": 160,
+  "mouth_dx": -7,
+  "mouth_dy": 6,
+  "ncc": 0.761
+ }
+}

@@ -1,0 +1,35 @@
+apose R 8814
+apose L 8774
+tpose R 4317
+tpose L 4286
+left L 8988
+right R 9390
+back L 8377
+back R 8349
+{('apose', 'L'): {'S': [185.0, 129.0, 86.0], 'L': [13.0, 11.0, 29.0]}, ('apose', 'R'): {'S': [185.0, 128.0, 86.0], 'L': [17.0, 12.0, 30.0]}, ('tpose', 'L'): {'S': [185.0, 127.0, 83.0], 'L': [53.0, 25.0, 15.0]}, ('tpose', 'R'): {'S': [185.0, 127.0, 83.0], 'L': [51.0, 25.5, 25.0]}, ('left', 'L'): {'S': [183.0, 122.0, 77.0], 'L': [43.0, 13.0, 2.0]}, ('right', 'R'): {'S': [181.0, 120.0, 76.0], 'L': [44.0, 12.0, 3.0]}, ('back', 'L'): {'S': [180.0, 120.0, 77.0], 'L': [30.0, 13.0, 55.0]}, ('back', 'R'): {'S': [180.0, 120.0, 77.0], 'L': [36.5, 14.5, 48.0]}}
+apose skip_hidden rest diff pixels: 0 max 0
+apose draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 1214 max 64
+tpose skip_hidden rest diff pixels: 0 max 0
+tpose draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 1962 max 64
+left skip_hidden rest diff pixels: 0 max 0
+left draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 0 max 0
+right skip_hidden rest diff pixels: 0 max 0
+right draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 0 max 0
+back skip_hidden rest diff pixels: 0 max 0
+back draw_hidden rest diff pixels: 0 max 0
+   part px outside mask: 0  mask px not covered: 0  blueish px: 0
+   (unerased base + parts) diff px: 3347 max 64
+apose done 0
+tpose done 0
+left done 0
+right done 0
+back done 0
+sheet

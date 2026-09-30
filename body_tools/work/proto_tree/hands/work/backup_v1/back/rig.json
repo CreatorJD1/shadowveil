@@ -1,0 +1,525 @@
+{
+ "contract": "v1",
+ "owner": "Base Hands",
+ "view": "back",
+ "canvas": [
+  1365,
+  1739
+ ],
+ "keyColor": "#0000FF",
+ "coordinateSpace": "view pixels, origin top-left; every part PNG is full-canvas (x=y=0)",
+ "curlSign": "maxCurlDeg is signed: canvas rotate() convention, + = clockwise on screen (y down)",
+ "parts": [
+  {
+   "id": "L_palm",
+   "file": "L_palm.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 308.0,
+   "pivotY": 730.0,
+   "parent": null,
+   "layer": 420,
+   "maxCurlDeg": 0,
+   "note": "wrist-crease pivot; palm draws above the forearm"
+  },
+  {
+   "id": "L_Pinky1",
+   "file": "L_Pinky1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 291.4,
+   "pivotY": 797.5,
+   "parent": "L_palm",
+   "layer": 421,
+   "maxCurlDeg": 55,
+   "jointRadiusPx": 7.5
+  },
+  {
+   "id": "L_Pinky2",
+   "file": "L_Pinky2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 283.0,
+   "pivotY": 820.2,
+   "parent": "L_Pinky1",
+   "layer": 422,
+   "maxCurlDeg": 70,
+   "jointRadiusPx": 6.0
+  },
+  {
+   "id": "L_Pinky3",
+   "file": "L_Pinky3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 277.4,
+   "pivotY": 834.1,
+   "parent": "L_Pinky2",
+   "layer": 423,
+   "maxCurlDeg": 50,
+   "jointRadiusPx": 5.5
+  },
+  {
+   "id": "L_Ring1",
+   "file": "L_Ring1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 276.0,
+   "pivotY": 793.9,
+   "parent": "L_palm",
+   "layer": 424,
+   "maxCurlDeg": 55,
+   "jointRadiusPx": 7.2
+  },
+  {
+   "id": "L_Ring2",
+   "file": "L_Ring2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 262.8,
+   "pivotY": 820.7,
+   "parent": "L_Ring1",
+   "layer": 425,
+   "maxCurlDeg": 70,
+   "jointRadiusPx": 7.0
+  },
+  {
+   "id": "L_Ring3",
+   "file": "L_Ring3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 252.7,
+   "pivotY": 836.2,
+   "parent": "L_Ring2",
+   "layer": 426,
+   "maxCurlDeg": 50,
+   "jointRadiusPx": 6.0
+  },
+  {
+   "id": "L_Middle1",
+   "file": "L_Middle1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 262.2,
+   "pivotY": 787.6,
+   "parent": "L_palm",
+   "layer": 427,
+   "maxCurlDeg": 55,
+   "jointRadiusPx": 7.8
+  },
+  {
+   "id": "L_Middle2",
+   "file": "L_Middle2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 245.4,
+   "pivotY": 815.8,
+   "parent": "L_Middle1",
+   "layer": 428,
+   "maxCurlDeg": 70,
+   "jointRadiusPx": 7.0
+  },
+  {
+   "id": "L_Middle3",
+   "file": "L_Middle3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 235.3,
+   "pivotY": 833.3,
+   "parent": "L_Middle2",
+   "layer": 429,
+   "maxCurlDeg": 50,
+   "jointRadiusPx": 6.5
+  },
+  {
+   "id": "L_Index1",
+   "file": "L_Index1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 247.2,
+   "pivotY": 781.4,
+   "parent": "L_palm",
+   "layer": 430,
+   "maxCurlDeg": 55,
+   "jointRadiusPx": 8.0
+  },
+  {
+   "id": "L_Index2",
+   "file": "L_Index2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 229.9,
+   "pivotY": 802.9,
+   "parent": "L_Index1",
+   "layer": 431,
+   "maxCurlDeg": 70,
+   "jointRadiusPx": 6.5
+  },
+  {
+   "id": "L_Index3",
+   "file": "L_Index3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 220.4,
+   "pivotY": 817.0,
+   "parent": "L_Index2",
+   "layer": 432,
+   "maxCurlDeg": 50,
+   "jointRadiusPx": 5.8
+  },
+  {
+   "id": "L_Thumb1",
+   "file": "L_Thumb1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 282.0,
+   "pivotY": 737.0,
+   "parent": "L_palm",
+   "layer": 433,
+   "maxCurlDeg": -30,
+   "jointRadiusPx": 11.2
+  },
+  {
+   "id": "L_Thumb2",
+   "file": "L_Thumb2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 250.8,
+   "pivotY": 747.5,
+   "parent": "L_Thumb1",
+   "layer": 434,
+   "maxCurlDeg": -45,
+   "jointRadiusPx": 7.5
+  },
+  {
+   "id": "L_Thumb3",
+   "file": "L_Thumb3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 236.9,
+   "pivotY": 755.6,
+   "parent": "L_Thumb2",
+   "layer": 435,
+   "maxCurlDeg": -60,
+   "jointRadiusPx": 6.8
+  },
+  {
+   "id": "R_palm",
+   "file": "R_palm.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1055.0,
+   "pivotY": 730.0,
+   "parent": null,
+   "layer": 400,
+   "maxCurlDeg": 0,
+   "note": "wrist-crease pivot; palm draws above the forearm"
+  },
+  {
+   "id": "R_Pinky1",
+   "file": "R_Pinky1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1071.6,
+   "pivotY": 797.5,
+   "parent": "R_palm",
+   "layer": 401,
+   "maxCurlDeg": -55,
+   "jointRadiusPx": 7.5
+  },
+  {
+   "id": "R_Pinky2",
+   "file": "R_Pinky2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1080.0,
+   "pivotY": 820.2,
+   "parent": "R_Pinky1",
+   "layer": 402,
+   "maxCurlDeg": -70,
+   "jointRadiusPx": 6.0
+  },
+  {
+   "id": "R_Pinky3",
+   "file": "R_Pinky3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1085.6,
+   "pivotY": 834.1,
+   "parent": "R_Pinky2",
+   "layer": 403,
+   "maxCurlDeg": -50,
+   "jointRadiusPx": 5.5
+  },
+  {
+   "id": "R_Ring1",
+   "file": "R_Ring1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1087.0,
+   "pivotY": 793.9,
+   "parent": "R_palm",
+   "layer": 404,
+   "maxCurlDeg": -55,
+   "jointRadiusPx": 7.2
+  },
+  {
+   "id": "R_Ring2",
+   "file": "R_Ring2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1100.2,
+   "pivotY": 820.7,
+   "parent": "R_Ring1",
+   "layer": 405,
+   "maxCurlDeg": -70,
+   "jointRadiusPx": 7.0
+  },
+  {
+   "id": "R_Ring3",
+   "file": "R_Ring3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1109.5,
+   "pivotY": 836.7,
+   "parent": "R_Ring2",
+   "layer": 406,
+   "maxCurlDeg": -50,
+   "jointRadiusPx": 6.0
+  },
+  {
+   "id": "R_Middle1",
+   "file": "R_Middle1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1100.8,
+   "pivotY": 787.6,
+   "parent": "R_palm",
+   "layer": 407,
+   "maxCurlDeg": -55,
+   "jointRadiusPx": 7.8
+  },
+  {
+   "id": "R_Middle2",
+   "file": "R_Middle2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1117.6,
+   "pivotY": 815.8,
+   "parent": "R_Middle1",
+   "layer": 408,
+   "maxCurlDeg": -70,
+   "jointRadiusPx": 7.0
+  },
+  {
+   "id": "R_Middle3",
+   "file": "R_Middle3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1127.3,
+   "pivotY": 833.6,
+   "parent": "R_Middle2",
+   "layer": 409,
+   "maxCurlDeg": -50,
+   "jointRadiusPx": 6.0
+  },
+  {
+   "id": "R_Index1",
+   "file": "R_Index1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1115.8,
+   "pivotY": 781.4,
+   "parent": "R_palm",
+   "layer": 410,
+   "maxCurlDeg": -55,
+   "jointRadiusPx": 8.0
+  },
+  {
+   "id": "R_Index2",
+   "file": "R_Index2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1133.1,
+   "pivotY": 802.9,
+   "parent": "R_Index1",
+   "layer": 411,
+   "maxCurlDeg": -70,
+   "jointRadiusPx": 6.5
+  },
+  {
+   "id": "R_Index3",
+   "file": "R_Index3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1142.6,
+   "pivotY": 817.0,
+   "parent": "R_Index2",
+   "layer": 412,
+   "maxCurlDeg": -50,
+   "jointRadiusPx": 5.8
+  },
+  {
+   "id": "R_Thumb1",
+   "file": "R_Thumb1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1081.0,
+   "pivotY": 737.0,
+   "parent": "R_palm",
+   "layer": 413,
+   "maxCurlDeg": 30,
+   "jointRadiusPx": 11.5
+  },
+  {
+   "id": "R_Thumb2",
+   "file": "R_Thumb2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1112.2,
+   "pivotY": 747.5,
+   "parent": "R_Thumb1",
+   "layer": 414,
+   "maxCurlDeg": 45,
+   "jointRadiusPx": 7.5
+  },
+  {
+   "id": "R_Thumb3",
+   "file": "R_Thumb3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 1126.1,
+   "pivotY": 755.6,
+   "parent": "R_Thumb2",
+   "layer": 415,
+   "maxCurlDeg": 60,
+   "jointRadiusPx": 6.8
+  }
+ ],
+ "spread": {
+  "HandLSpread": {
+   "range": [
+    0,
+    1
+   ],
+   "default": 0,
+   "fingers": {
+    "Index": {
+     "part": "L_Index1",
+     "pivotX": 247.2,
+     "pivotY": 781.4,
+     "maxSpreadDeg": 12
+    },
+    "Ring": {
+     "part": "L_Ring1",
+     "pivotX": 276.0,
+     "pivotY": 793.9,
+     "maxSpreadDeg": -8
+    },
+    "Pinky": {
+     "part": "L_Pinky1",
+     "pivotX": 291.4,
+     "pivotY": 797.5,
+     "maxSpreadDeg": -16
+    }
+   },
+   "note": "rotation added at the finger 1 pivot; Middle does not move"
+  },
+  "HandLThumbSpread": {
+   "range": [
+    -1,
+    1
+   ],
+   "default": 0,
+   "part": "L_Thumb1",
+   "pivotX": 282.0,
+   "pivotY": 737.0,
+   "degAtPlus1": 20,
+   "degAtMinus1": -15,
+   "note": "+1 swings the thumb out away from the index, -1 across the palm"
+  },
+  "HandRSpread": {
+   "range": [
+    0,
+    1
+   ],
+   "default": 0,
+   "fingers": {
+    "Index": {
+     "part": "R_Index1",
+     "pivotX": 1115.8,
+     "pivotY": 781.4,
+     "maxSpreadDeg": -12
+    },
+    "Ring": {
+     "part": "R_Ring1",
+     "pivotX": 1087.0,
+     "pivotY": 793.9,
+     "maxSpreadDeg": 8
+    },
+    "Pinky": {
+     "part": "R_Pinky1",
+     "pivotX": 1071.6,
+     "pivotY": 797.5,
+     "maxSpreadDeg": 16
+    }
+   },
+   "note": "rotation added at the finger 1 pivot; Middle does not move"
+  },
+  "HandRThumbSpread": {
+   "range": [
+    -1,
+    1
+   ],
+   "default": 0,
+   "part": "R_Thumb1",
+   "pivotX": 1081.0,
+   "pivotY": 737.0,
+   "degAtPlus1": -20,
+   "degAtMinus1": 15,
+   "note": "+1 swings the thumb out away from the index, -1 across the palm"
+  }
+ },
+ "hands": {
+  "L": {
+   "visible": true,
+   "box": [
+    195,
+    700,
+    340,
+    865
+   ],
+   "skinRGB": [
+    180,
+    120,
+    77
+   ],
+   "lineRGB": [
+    30,
+    13,
+    55
+   ],
+   "layerGroup": "in front of body"
+  },
+  "R": {
+   "visible": true,
+   "box": [
+    1023,
+    700,
+    1168,
+    865
+   ],
+   "skinRGB": [
+    180,
+    120,
+    77
+   ],
+   "lineRGB": [
+    36,
+    14,
+    48
+   ],
+   "layerGroup": "in front of body"
+  }
+ },
+ "spreadNote": "ThumbSpread: rotation = value*degAtPlus1 for value>=0, |value|*degAtMinus1 for value<0 (degAtMinus1 is the signed rotation at -1)."
+}

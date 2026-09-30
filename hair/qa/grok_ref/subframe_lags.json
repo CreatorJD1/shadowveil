@@ -1,0 +1,288 @@
+{
+ "sway": {
+  "headY_bunY": [
+   -4.6,
+   0.96
+  ],
+  "headY_strandY": [
+   -0.4,
+   0.7
+  ],
+  "headX_bunX": [
+   120.0,
+   0.93
+  ],
+  "headX_strandX": [
+   333.3,
+   0.32
+  ],
+  "tilt_bunAng": [
+   -1.5,
+   0.92
+  ],
+  "tilt_strandAng": [
+   3.4,
+   0.49
+  ]
+ },
+ "nod": {
+  "headY_bunY": [
+   -20.2,
+   0.84
+  ],
+  "headY_strandY": [
+   0.6,
+   0.93
+  ],
+  "headX_bunX": [
+   333.3,
+   0.31
+  ],
+  "headX_strandX": [
+   199.5,
+   0.17
+  ],
+  "tilt_bunAng": [
+   5.2,
+   0.95
+  ],
+  "tilt_strandAng": [
+   -6.7,
+   0.53
+  ]
+ },
+ "run": {
+  "headY_bunY": [
+   2.2,
+   0.99
+  ],
+  "headY_strandY": [
+   -10.3,
+   0.97
+  ],
+  "headX_bunX": [
+   -246.5,
+   0.39
+  ],
+  "headX_strandX": [
+   0.8,
+   0.2
+  ],
+  "tilt_bunAng": [
+   5.8,
+   0.77
+  ],
+  "tilt_strandAng": [
+   -4.4,
+   0.71
+  ]
+ },
+ "jump": {
+  "headY_bunY": [
+   22.9,
+   0.94
+  ],
+  "headY_strandY": [
+   -172.3,
+   0.32
+  ],
+  "headX_bunX": [
+   60.0,
+   0.85
+  ],
+  "headX_strandX": [
+   167.4,
+   -0.0
+  ],
+  "tilt_bunAng": [
+   -9.5,
+   0.3
+  ],
+  "tilt_strandAng": [
+   -333.3,
+   0.1
+  ]
+ },
+ "side": {
+  "headY_bunY": [
+   4.5,
+   0.33
+  ],
+  "headY_strandY": [
+   12.0,
+   0.85
+  ],
+  "headX_bunX": [
+   -48.3,
+   0.44
+  ],
+  "headX_strandX": [
+   14.0,
+   0.74
+  ],
+  "tilt_bunAng": [
+   -0.6,
+   0.97
+  ],
+  "tilt_strandAng": [
+   -15.5,
+   0.47
+  ]
+ },
+ "idle": {
+  "headY_bunY": [
+   1.2,
+   0.84
+  ],
+  "headY_strandY": [
+   -333.3,
+   0.22
+  ],
+  "headX_bunX": [
+   -26.1,
+   0.95
+  ],
+  "headX_strandX": [
+   -137.8,
+   0.17
+  ],
+  "tilt_bunAng": [
+   -2.0,
+   0.78
+  ],
+  "tilt_strandAng": [
+   1.8,
+   0.24
+  ]
+ },
+ "idle-long": {
+  "headY_bunY": [
+   -0.9,
+   0.88
+  ],
+  "headY_strandY": [
+   -6.0,
+   0.23
+  ],
+  "headX_bunX": [
+   -1.5,
+   0.92
+  ],
+  "headX_strandX": [
+   -121.0,
+   0.38
+  ],
+  "tilt_bunAng": [
+   8.5,
+   0.68
+  ],
+  "tilt_strandAng": [
+   -3.6,
+   0.37
+  ]
+ },
+ "look": {
+  "headY_bunY": [
+   -44.8,
+   0.29
+  ],
+  "headY_strandY": [
+   0.3,
+   0.96
+  ],
+  "headX_bunX": [
+   333.3,
+   -0.42
+  ],
+  "headX_strandX": [
+   -2.2,
+   0.54
+  ],
+  "tilt_bunAng": [
+   -0.0,
+   0.98
+  ],
+  "tilt_strandAng": [
+   -2.4,
+   0.6
+  ]
+ },
+ "back": {
+  "headY_bunY": [
+   31.9,
+   0.05
+  ],
+  "headY_strandY": [
+   9.4,
+   0.3
+  ],
+  "headX_bunX": [
+   -333.3,
+   -0.33
+  ],
+  "headX_strandX": [
+   -333.3,
+   -0.22
+  ],
+  "tilt_bunAng": [
+   -33.4,
+   0.74
+  ],
+  "tilt_strandAng": [
+   -43.1,
+   0.3
+  ]
+ },
+ "stop": {
+  "headY_bunY": [
+   333.3,
+   0.36
+  ],
+  "headY_strandY": [
+   11.8,
+   0.03
+  ],
+  "headX_bunX": [
+   5.1,
+   0.26
+  ],
+  "headX_strandX": [
+   -290.1,
+   0.34
+  ],
+  "tilt_bunAng": [
+   -3.0,
+   0.66
+  ],
+  "tilt_strandAng": [
+   -333.3,
+   0.41
+  ]
+ },
+ "walk": {
+  "headY_bunY": [
+   8.1,
+   0.99
+  ],
+  "headY_strandY": [
+   15.1,
+   0.93
+  ],
+  "headX_bunX": [
+   -172.0,
+   0.74
+  ],
+  "headX_strandX": [
+   -7.7,
+   0.87
+  ],
+  "tilt_bunAng": [
+   4.7,
+   0.98
+  ],
+  "tilt_strandAng": [
+   4.7,
+   0.76
+  ]
+ }
+}

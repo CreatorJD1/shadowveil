@@ -1,0 +1,5 @@
+apose f0 apose f30 apose f60 apose f90 apose f120 apose f150 apose f180 apose f210 
+apose done; guard errs 0 issues 0 holds 1 2083.3
+PASS: Motion quality (apose)
+[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (339039 px region): 0, blinks: 1, mouth switches: 0
+[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 0

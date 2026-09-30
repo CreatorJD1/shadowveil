@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Shadowveil eyes live preview</title>
+<style>body{background:#222;color:#ddd;font:14px sans-serif;margin:12px}label{display:inline-block;width:260px;margin:4px 12px 4px 0}input[type=range]{width:160px;vertical-align:middle}canvas{image-rendering:pixelated;background:#fff;display:block;margin-top:10px}</style></head><body>
+<div>View <select id="view"><option>apose</option><option>tpose</option><option>left</option><option>right</option></select>
+<button id="blink">Blink</button> <button id="reset">Rest</button> <label style="width:auto"><input type="checkbox" id="auto"> auto blink + wander</label></div>
+<div id="sliders"></div><canvas id="c"></canvas>
+<script>
+const P={EyeLOpen:[0,1,1],EyeROpen:[0,1,1],EyeBallX:[-1,1,0],EyeBallY:[-1,1,0]};const v={};
+const sl=document.getElementById('sliders');
+for(const k in P){v[k]=P[k][2];const l=document.createElement('label');l.innerHTML=k+' <input type=range min='+P[k][0]+' max='+P[k][1]+' step=0.01 value='+P[k][2]+' id='+k+'> <span id='+k+'v>'+P[k][2]+'</span>';sl.appendChild(l);}
+for(const k in P)document.getElementById(k).oninput=e=>{v[k]=+e.target.value;document.getElementById(k+'v').textContent=v[k].toFixed(2);draw();};
+const c=document.getElementById('c'),ctx=c.getContext('2d');const Z=4;let rig,imgs={},base,region;
+const load=s=>new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.src=s+(s.includes('?')?'&':'?')+'v='+Date.now();});
+async function setView(view){const b='../../views/'+view+'/';rig=await (await fetch(b+'eyes/rig.json?'+Date.now())).json();base=await load(b+'base.png');imgs={};
+for(const p of rig.parts)imgs[p.id]=await load(b+'eyes/'+p.file);
+const [x0,y0,x1,y1]=rig.workRegion;const pad=40;region=[x0-pad,y0-pad,x1-x0+2*pad,y1-y0+2*pad];c.width=region[2]*Z;c.height=region[3]*Z;draw();}
+function off(){const L=rig.irisLimitsPx,X=v.EyeBallX,Y=v.EyeBallY;return[Math.round(X*(X>0?L.dxAtXplus1:-L.dxAtXminus1)),Math.round(Y*(Y>0?L.dyAtYplus1:-L.dyAtYminus1))];}
+function draw(){if(!rig)return;const W=rig.canvas[0],H=rig.canvas[1];const f=document.createElement('canvas');f.width=W;f.height=H;const g=f.getContext('2d');g.drawImage(base,0,0);const [dx,dy]=off();
+for(const E of rig.eyes){const o=document.createElement('canvas');o.width=W;o.height=H;const q=o.getContext('2d');q.drawImage(imgs[E+'_white'],0,0);q.globalCompositeOperation='source-atop';q.drawImage(imgs[E+'_iris'],dx,dy);g.drawImage(o,0,0);
+const fr=Math.round((1-v[E+'Open'])*4);if(imgs[E+'_lid_'+fr])g.drawImage(imgs[E+'_lid_'+fr],0,0);if(imgs[E+'_lash'])g.drawImage(imgs[E+'_lash'],0,0);}
+ctx.imageSmoothingEnabled=false;ctx.clearRect(0,0,c.width,c.height);ctx.drawImage(f,region[0],region[1],region[2],region[3],0,0,c.width,c.height);}
+function setP(k,x){v[k]=x;document.getElementById(k).value=x;document.getElementById(k+'v').textContent=(+x).toFixed(2);}
+function blink(){const seq=[1,.75,.5,.25,0,0,.25,.5,.75,1];let i=0;const t=setInterval(()=>{setP('EyeLOpen',seq[i]);setP('EyeROpen',seq[i]);draw();if(++i>=seq.length)clearInterval(t);},30);}
+document.getElementById('blink').onclick=blink;document.getElementById('reset').onclick=()=>{for(const k in P)setP(k,P[k][2]);draw();};
+document.getElementById('view').onchange=e=>setView(e.target.value);
+setInterval(()=>{if(!document.getElementById('auto').checked)return;if(Math.random()<.25)blink();else{setP('EyeBallX',(Math.random()*2-1).toFixed(2));setP('EyeBallY',(Math.random()*1.4-.7).toFixed(2));draw();}},1200);
+setView('apose');
+</script></body></html>

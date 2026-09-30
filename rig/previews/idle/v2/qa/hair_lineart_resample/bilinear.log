@@ -1,0 +1,5 @@
+bilinear apose parts fail [] joints fail ['strand_03_tip<-strand_03', 'strand_06_tip<-strand_06']
+bilinear tpose parts fail [] joints fail ['strand_03<-hair_front']
+bilinear left parts fail [] joints fail []
+bilinear right parts fail [] joints fail ['strand_02<-hair_front', 'strand_02_tip<-strand_02']
+bilinear back parts fail [] joints fail []

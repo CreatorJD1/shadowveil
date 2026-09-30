@@ -1,0 +1,1255 @@
+{
+ "f023": {
+  "target_deg": "30",
+  "angle_best": 29.9,
+  "angle_range_folded": [
+   22.7,
+   37.1
+  ],
+  "raw_H_vs_front_pct": 0.57,
+  "raw_foot_vs_front_px_video": 6,
+  "raw_foot_vs_front_px_rig": 9.3,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    138248
+   ],
+   "aa_band_px_per_edge_px": 1.183,
+   "skin_flat_frac12": 0.89,
+   "skin_dark_frac": 0.035
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "20": {
+    "shoulder_vl": [
+     548.2,
+     431.0
+    ],
+    "elbow_vl": [
+     454.9,
+     557.0
+    ],
+    "wrist_vl": [
+     323.6,
+     699.9
+    ],
+    "hip_vl": [
+     610.7,
+     785.9
+    ],
+    "knee_vl": [
+     600.9,
+     1150.0
+    ],
+    "ankle_vl": [
+     586.3,
+     1570.0
+    ],
+    "shoulder_vr": [
+     814.8,
+     431.0
+    ],
+    "elbow_vr": [
+     914.8,
+     557.0
+    ],
+    "wrist_vr": [
+     1040.9,
+     699.9
+    ],
+    "hip_vr": [
+     732.7,
+     785.9
+    ],
+    "knee_vr": [
+     749.8,
+     1150.0
+    ],
+    "ankle_vr": [
+     765.3,
+     1570.0
+    ]
+   },
+   "23": {
+    "shoulder_vl": [
+     554.4,
+     431.0
+    ],
+    "elbow_vl": [
+     465.7,
+     557.0
+    ],
+    "wrist_vl": [
+     337.5,
+     699.9
+    ],
+    "hip_vl": [
+     612.2,
+     785.9
+    ],
+    "knee_vl": [
+     603.9,
+     1150.0
+    ],
+    "ankle_vl": [
+     587.9,
+     1570.0
+    ],
+    "shoulder_vr": [
+     814.8,
+     431.0
+    ],
+    "elbow_vr": [
+     911.7,
+     557.0
+    ],
+    "wrist_vr": [
+     1031.7,
+     699.9
+    ],
+    "hip_vr": [
+     731.1,
+     785.9
+    ],
+    "knee_vr": [
+     749.8,
+     1150.0
+    ],
+    "ankle_vr": [
+     763.8,
+     1570.0
+    ]
+   },
+   "26": {
+    "shoulder_vl": [
+     560.9,
+     431.0
+    ],
+    "elbow_vl": [
+     477.0,
+     557.0
+    ],
+    "wrist_vl": [
+     355.2,
+     699.9
+    ],
+    "hip_vl": [
+     613.9,
+     785.9
+    ],
+    "knee_vl": [
+     607.2,
+     1150.0
+    ],
+    "ankle_vl": [
+     589.6,
+     1570.0
+    ],
+    "shoulder_vr": [
+     811.4,
+     431.0
+    ],
+    "elbow_vr": [
+     905.0,
+     557.0
+    ],
+    "wrist_vr": [
+     1020.1,
+     699.9
+    ],
+    "hip_vr": [
+     729.5,
+     785.9
+    ],
+    "knee_vr": [
+     748.1,
+     1150.0
+    ],
+    "ankle_vr": [
+     762.1,
+     1570.0
+    ]
+   }
+  }
+ },
+ "f033": {
+  "target_deg": "45",
+  "angle_best": 43.9,
+  "angle_range_folded": [
+   37.1,
+   50.6
+  ],
+  "raw_H_vs_front_pct": 0.76,
+  "raw_foot_vs_front_px_video": 10,
+  "raw_foot_vs_front_px_rig": 15.6,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    134733
+   ],
+   "aa_band_px_per_edge_px": 1.157,
+   "skin_flat_frac12": 0.882,
+   "skin_dark_frac": 0.044
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "30": {
+    "shoulder_vl": [
+     569.9,
+     431.0
+    ],
+    "elbow_vl": [
+     492.0,
+     557.0
+    ],
+    "wrist_vl": [
+     377.8,
+     699.9
+    ],
+    "hip_vl": [
+     616.8,
+     785.9
+    ],
+    "knee_vl": [
+     611.7,
+     1150.0
+    ],
+    "ankle_vl": [
+     592.5,
+     1570.0
+    ],
+    "shoulder_vr": [
+     808.6,
+     431.0
+    ],
+    "elbow_vr": [
+     896.2,
+     557.0
+    ],
+    "wrist_vr": [
+     1005.3,
+     699.9
+    ],
+    "hip_vr": [
+     723.4,
+     785.9
+    ],
+    "knee_vr": [
+     745.1,
+     1150.0
+    ],
+    "ankle_vr": [
+     760.7,
+     1570.0
+    ]
+   },
+   "33": {
+    "shoulder_vl": [
+     579.4,
+     431.0
+    ],
+    "elbow_vl": [
+     506.3,
+     557.0
+    ],
+    "wrist_vl": [
+     401.5,
+     699.9
+    ],
+    "hip_vl": [
+     620.1,
+     785.9
+    ],
+    "knee_vl": [
+     616.5,
+     1150.0
+    ],
+    "ankle_vl": [
+     592.7,
+     1570.0
+    ],
+    "shoulder_vr": [
+     799.1,
+     431.0
+    ],
+    "elbow_vr": [
+     883.4,
+     557.0
+    ],
+    "wrist_vr": [
+     981.5,
+     699.9
+    ],
+    "hip_vr": [
+     720.2,
+     785.9
+    ],
+    "knee_vr": [
+     743.5,
+     1150.0
+    ],
+    "ankle_vr": [
+     757.5,
+     1570.0
+    ]
+   },
+   "36": {
+    "shoulder_vl": [
+     587.4,
+     431.0
+    ],
+    "elbow_vl": [
+     523.6,
+     557.0
+    ],
+    "wrist_vl": [
+     423.7,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     621.2,
+     1150.0
+    ],
+    "ankle_vl": [
+     594.4,
+     1570.0
+    ],
+    "shoulder_vr": [
+     791.1,
+     431.0
+    ],
+    "elbow_vr": [
+     866.1,
+     557.0
+    ],
+    "wrist_vr": [
+     953.2,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     735.6,
+     1150.0
+    ],
+    "ankle_vr": [
+     751.2,
+     1570.0
+    ]
+   }
+  }
+ },
+ "f041": {
+  "target_deg": "60",
+  "angle_best": 63.9,
+  "angle_range_folded": [
+   58.9,
+   68.9
+  ],
+  "raw_H_vs_front_pct": 0.95,
+  "raw_foot_vs_front_px_video": 10,
+  "raw_foot_vs_front_px_rig": 15.6,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    128130
+   ],
+   "aa_band_px_per_edge_px": 1.125,
+   "skin_flat_frac12": 0.875,
+   "skin_dark_frac": 0.047
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "38": {
+    "shoulder_vl": [
+     593.6,
+     431.0
+    ],
+    "elbow_vl": [
+     535.9,
+     557.0
+    ],
+    "wrist_vl": [
+     443.7,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     624.3,
+     1150.0
+    ],
+    "ankle_vl": [
+     597.5,
+     1570.0
+    ],
+    "shoulder_vr": [
+     784.9,
+     431.0
+    ],
+    "elbow_vr": [
+     855.3,
+     557.0
+    ],
+    "wrist_vr": [
+     934.7,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     731.0,
+     1150.0
+    ],
+    "ankle_vr": [
+     748.1,
+     1570.0
+    ]
+   },
+   "41": {
+    "shoulder_vl": [
+     604.4,
+     431.0
+    ],
+    "elbow_vl": null,
+    "wrist_vl": [
+     470.1,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     630.5,
+     1150.0
+    ],
+    "ankle_vl": [
+     600.6,
+     1570.0
+    ],
+    "shoulder_vr": [
+     770.9,
+     431.0
+    ],
+    "elbow_vr": [
+     835.1,
+     557.0
+    ],
+    "wrist_vr": [
+     900.6,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     723.3,
+     1150.0
+    ],
+    "ankle_vr": [
+     740.3,
+     1570.0
+    ]
+   },
+   "44": {
+    "shoulder_vl": [
+     613.7,
+     431.0
+    ],
+    "elbow_vl": null,
+    "wrist_vl": [
+     500.9,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     636.6,
+     1150.0
+    ],
+    "ankle_vl": [
+     605.2,
+     1570.0
+    ],
+    "shoulder_vr": [
+     758.6,
+     431.0
+    ],
+    "elbow_vr": [
+     813.5,
+     557.0
+    ],
+    "wrist_vr": [
+     868.3,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     717.1,
+     1150.0
+    ],
+    "ankle_vr": [
+     734.2,
+     1570.0
+    ]
+   }
+  }
+ },
+ "f085": {
+  "target_deg": "135",
+  "angle_best": 134.2,
+  "angle_range_folded": [
+   36.9,
+   54.8
+  ],
+  "raw_H_vs_front_pct": -0.76,
+  "raw_foot_vs_front_px_video": -16,
+  "raw_foot_vs_front_px_rig": -24.9,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    134894
+   ],
+   "aa_band_px_per_edge_px": 1.105,
+   "skin_flat_frac12": 0.873,
+   "skin_dark_frac": 0.059
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "82": {
+    "shoulder_vl": [
+     619.9,
+     456.9
+    ],
+    "elbow_vl": [
+     556.0,
+     589.4
+    ],
+    "wrist_vl": [
+     455.1,
+     741.0
+    ],
+    "hip_vl": null,
+    "knee_vl": null,
+    "ankle_vl": null,
+    "shoulder_vr": [
+     799.7,
+     456.9
+    ],
+    "elbow_vr": [
+     855.5,
+     589.4
+    ],
+    "wrist_vr": [
+     895.4,
+     741.0
+    ],
+    "hip_vr": null,
+    "knee_vr": null,
+    "ankle_vr": null
+   },
+   "85": {
+    "shoulder_vl": [
+     605.4,
+     456.9
+    ],
+    "elbow_vl": [
+     535.0,
+     589.4
+    ],
+    "wrist_vl": [
+     427.4,
+     741.0
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     648.3,
+     1150.7
+    ],
+    "ankle_vl": [
+     659.0,
+     1570.9
+    ],
+    "shoulder_vr": [
+     808.1,
+     456.9
+    ],
+    "elbow_vr": [
+     871.9,
+     589.4
+    ],
+    "wrist_vr": [
+     926.2,
+     741.0
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     766.0,
+     1150.7
+    ],
+    "ankle_vr": [
+     777.3,
+     1570.9
+    ]
+   },
+   "88": {
+    "shoulder_vl": [
+     597.4,
+     456.9
+    ],
+    "elbow_vl": [
+     519.0,
+     589.4
+    ],
+    "wrist_vl": [
+     401.7,
+     741.0
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     645.1,
+     1150.7
+    ],
+    "ankle_vl": [
+     652.6,
+     1570.9
+    ],
+    "shoulder_vr": [
+     819.5,
+     456.9
+    ],
+    "elbow_vr": [
+     891.2,
+     589.4
+    ],
+    "wrist_vr": [
+     959.8,
+     741.0
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     772.4,
+     1150.7
+    ],
+    "ankle_vr": [
+     785.4,
+     1570.9
+    ]
+   }
+  }
+ },
+ "f129": {
+  "target_deg": "225 (mirror of 135)",
+  "angle_best": 220.2,
+  "angle_range_folded": [
+   32.4,
+   48.0
+  ],
+  "raw_H_vs_front_pct": -1.14,
+  "raw_foot_vs_front_px_video": -20,
+  "raw_foot_vs_front_px_rig": -31.1,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    137360
+   ],
+   "aa_band_px_per_edge_px": 1.116,
+   "skin_flat_frac12": 0.878,
+   "skin_dark_frac": 0.057
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "126": {
+    "shoulder_vl": [
+     537.0,
+     456.9
+    ],
+    "elbow_vl": [
+     458.3,
+     589.4
+    ],
+    "wrist_vl": [
+     370.4,
+     741.0
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     591.3,
+     1150.7
+    ],
+    "ankle_vl": [
+     584.6,
+     1570.9
+    ],
+    "shoulder_vr": [
+     782.3,
+     456.9
+    ],
+    "elbow_vr": [
+     866.9,
+     589.4
+    ],
+    "wrist_vr": [
+     1000.5,
+     741.0
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     723.9,
+     1150.7
+    ],
+    "ankle_vr": [
+     719.6,
+     1570.9
+    ]
+   },
+   "129": {
+    "shoulder_vl": [
+     542.0,
+     456.9
+    ],
+    "elbow_vl": [
+     471.4,
+     589.4
+    ],
+    "wrist_vl": [
+     397.9,
+     741.0
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     594.7,
+     1150.7
+    ],
+    "ankle_vl": [
+     586.4,
+     1570.9
+    ],
+    "shoulder_vr": [
+     767.9,
+     456.9
+    ],
+    "elbow_vr": [
+     847.6,
+     589.4
+    ],
+    "wrist_vr": [
+     973.0,
+     741.0
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     717.5,
+     1150.7
+    ],
+    "ankle_vr": [
+     710.0,
+     1570.9
+    ]
+   },
+   "132": {
+    "shoulder_vl": [
+     551.8,
+     456.9
+    ],
+    "elbow_vl": [
+     484.4,
+     589.4
+    ],
+    "wrist_vl": [
+     420.5,
+     741.0
+    ],
+    "hip_vl": null,
+    "knee_vl": null,
+    "ankle_vl": null,
+    "shoulder_vr": [
+     758.2,
+     456.9
+    ],
+    "elbow_vr": [
+     833.1,
+     589.4
+    ],
+    "wrist_vr": [
+     953.5,
+     741.0
+    ],
+    "hip_vr": null,
+    "knee_vr": null,
+    "ankle_vr": null
+   }
+  }
+ },
+ "f183": {
+  "target_deg": "300 (mirror of 60)",
+  "angle_best": 297.6,
+  "angle_range_folded": [
+   57.4,
+   67.4
+  ],
+  "raw_H_vs_front_pct": 0.76,
+  "raw_foot_vs_front_px_video": 8,
+  "raw_foot_vs_front_px_rig": 12.5,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    128660
+   ],
+   "aa_band_px_per_edge_px": 1.053,
+   "skin_flat_frac12": 0.874,
+   "skin_dark_frac": 0.049
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "180": {
+    "shoulder_vl": [
+     607.3,
+     431.0
+    ],
+    "elbow_vl": [
+     543.5,
+     557.0
+    ],
+    "wrist_vl": [
+     486.6,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     648.9,
+     1150.0
+    ],
+    "ankle_vl": [
+     628.2,
+     1570.0
+    ],
+    "shoulder_vr": [
+     752.7,
+     431.0
+    ],
+    "elbow_vr": null,
+    "wrist_vr": [
+     885.6,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     734.2,
+     1150.0
+    ],
+    "ankle_vr": [
+     765.1,
+     1570.0
+    ]
+   },
+   "183": {
+    "shoulder_vl": [
+     596.5,
+     431.0
+    ],
+    "elbow_vl": [
+     524.9,
+     557.0
+    ],
+    "wrist_vl": [
+     458.8,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     642.7,
+     1150.0
+    ],
+    "ankle_vl": [
+     623.6,
+     1570.0
+    ],
+    "shoulder_vr": [
+     760.4,
+     431.0
+    ],
+    "elbow_vr": [
+     818.4,
+     557.0
+    ],
+    "wrist_vr": [
+     910.3,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     738.8,
+     1150.0
+    ],
+    "ankle_vr": [
+     768.2,
+     1570.0
+    ]
+   },
+   "186": {
+    "shoulder_vl": [
+     587.4,
+     431.0
+    ],
+    "elbow_vl": [
+     511.3,
+     557.0
+    ],
+    "wrist_vl": [
+     432.9,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     638.2,
+     1150.0
+    ],
+    "ankle_vl": [
+     620.6,
+     1570.0
+    ],
+    "shoulder_vr": [
+     772.6,
+     431.0
+    ],
+    "elbow_vr": [
+     833.7,
+     557.0
+    ],
+    "wrist_vr": [
+     934.7,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     743.3,
+     1150.0
+    ],
+    "ankle_vr": [
+     777.4,
+     1570.0
+    ]
+   }
+  }
+ },
+ "f191": {
+  "target_deg": "315 (mirror of 45)",
+  "angle_best": 314.2,
+  "angle_range_folded": [
+   39.9,
+   51.7
+  ],
+  "raw_H_vs_front_pct": 0.76,
+  "raw_foot_vs_front_px_video": 8,
+  "raw_foot_vs_front_px_rig": 12.5,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    134328
+   ],
+   "aa_band_px_per_edge_px": 1.097,
+   "skin_flat_frac12": 0.881,
+   "skin_dark_frac": 0.045
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "188": {
+    "shoulder_vl": [
+     582.5,
+     431.0
+    ],
+    "elbow_vl": [
+     500.1,
+     557.0
+    ],
+    "wrist_vl": [
+     417.0,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     635.0,
+     1150.0
+    ],
+    "ankle_vl": [
+     615.9,
+     1570.0
+    ],
+    "shoulder_vr": [
+     774.4,
+     431.0
+    ],
+    "elbow_vr": [
+     843.2,
+     557.0
+    ],
+    "wrist_vr": [
+     946.0,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     745.0,
+     1150.0
+    ],
+    "ankle_vr": [
+     771.4,
+     1570.0
+    ]
+   },
+   "191": {
+    "shoulder_vl": [
+     574.8,
+     431.0
+    ],
+    "elbow_vl": [
+     487.8,
+     557.0
+    ],
+    "wrist_vl": [
+     396.9,
+     699.9
+    ],
+    "hip_vl": null,
+    "knee_vl": [
+     628.8,
+     1150.0
+    ],
+    "ankle_vl": [
+     612.8,
+     1570.0
+    ],
+    "shoulder_vr": [
+     782.1,
+     431.0
+    ],
+    "elbow_vr": [
+     855.6,
+     557.0
+    ],
+    "wrist_vr": [
+     966.1,
+     699.9
+    ],
+    "hip_vr": null,
+    "knee_vr": [
+     749.6,
+     1150.0
+    ],
+    "ankle_vr": [
+     774.5,
+     1570.0
+    ]
+   },
+   "194": {
+    "shoulder_vl": [
+     567.1,
+     431.0
+    ],
+    "elbow_vl": [
+     475.4,
+     557.0
+    ],
+    "wrist_vl": [
+     375.3,
+     699.9
+    ],
+    "hip_vl": [
+     647.9,
+     785.9
+    ],
+    "knee_vl": [
+     624.2,
+     1150.0
+    ],
+    "ankle_vl": [
+     609.7,
+     1570.0
+    ],
+    "shoulder_vr": [
+     789.8,
+     431.0
+    ],
+    "elbow_vr": [
+     866.4,
+     557.0
+    ],
+    "wrist_vr": [
+     983.1,
+     699.9
+    ],
+    "hip_vr": [
+     749.6,
+     785.9
+    ],
+    "knee_vr": [
+     751.2,
+     1150.0
+    ],
+    "ankle_vr": [
+     774.5,
+     1570.0
+    ]
+   }
+  }
+ },
+ "f203": {
+  "target_deg": "330 (mirror of 30)",
+  "angle_best": 329.3,
+  "angle_range_folded": [
+   24.4,
+   37.0
+  ],
+  "raw_H_vs_front_pct": 0.76,
+  "raw_foot_vs_front_px_video": 8,
+  "raw_foot_vs_front_px_rig": 12.5,
+  "quality": {
+   "components": 1,
+   "comp_sizes": [
+    138280
+   ],
+   "aa_band_px_per_edge_px": 1.105,
+   "skin_flat_frac12": 0.894,
+   "skin_dark_frac": 0.038
+  },
+  "joints_rig_viewerLeft_viewerRight": {
+   "200": {
+    "shoulder_vl": [
+     554.7,
+     431.0
+    ],
+    "elbow_vl": [
+     456.9,
+     557.0
+    ],
+    "wrist_vl": [
+     342.9,
+     699.9
+    ],
+    "hip_vl": [
+     640.2,
+     785.9
+    ],
+    "knee_vl": [
+     618.0,
+     1150.0
+    ],
+    "ankle_vl": [
+     603.5,
+     1570.0
+    ],
+    "shoulder_vr": [
+     802.2,
+     431.0
+    ],
+    "elbow_vr": [
+     888.0,
+     557.0
+    ],
+    "wrist_vr": [
+     1015.5,
+     699.9
+    ],
+    "hip_vr": [
+     752.6,
+     785.9
+    ],
+    "knee_vr": [
+     757.4,
+     1150.0
+    ],
+    "ankle_vr": [
+     776.0,
+     1570.0
+    ]
+   },
+   "203": {
+    "shoulder_vl": [
+     550.1,
+     431.0
+    ],
+    "elbow_vl": [
+     450.7,
+     557.0
+    ],
+    "wrist_vl": [
+     332.0,
+     699.9
+    ],
+    "hip_vl": [
+     635.5,
+     785.9
+    ],
+    "knee_vl": [
+     613.4,
+     1150.0
+    ],
+    "ankle_vl": [
+     600.4,
+     1570.0
+    ],
+    "shoulder_vr": [
+     806.8,
+     431.0
+    ],
+    "elbow_vr": [
+     897.3,
+     557.0
+    ],
+    "wrist_vr": [
+     1027.9,
+     699.9
+    ],
+    "hip_vr": [
+     752.6,
+     785.9
+    ],
+    "knee_vr": [
+     760.5,
+     1150.0
+    ],
+    "ankle_vr": [
+     777.5,
+     1570.0
+    ]
+   },
+   "206": {
+    "shoulder_vl": [
+     549.8,
+     431.0
+    ],
+    "elbow_vl": [
+     447.1,
+     557.0
+    ],
+    "wrist_vl": [
+     320.5,
+     699.9
+    ],
+    "hip_vl": [
+     635.4,
+     785.9
+    ],
+    "knee_vl": [
+     613.2,
+     1150.0
+    ],
+    "ankle_vl": [
+     598.7,
+     1570.0
+    ],
+    "shoulder_vr": [
+     813.3,
+     431.0
+    ],
+    "elbow_vr": [
+     907.0,
+     557.0
+    ],
+    "wrist_vr": [
+     1040.9,
+     699.9
+    ],
+    "hip_vr": [
+     754.3,
+     785.9
+    ],
+    "knee_vr": [
+     762.1,
+     1150.0
+    ],
+    "ankle_vr": [
+     777.7,
+     1570.0
+    ]
+   }
+  }
+ }
+}

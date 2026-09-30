@@ -1,0 +1,5 @@
+ss2 apose parts fail [] joints fail ['strand_03_tip<-strand_03', 'strand_06_tip<-strand_06']
+ss2 tpose parts fail [] joints fail ['strand_03<-hair_front']
+ss2 left parts fail [] joints fail []
+ss2 right parts fail [] joints fail ['strand_02<-hair_front', 'strand_02_tip<-strand_02']
+ss2 back parts fail [] joints fail []

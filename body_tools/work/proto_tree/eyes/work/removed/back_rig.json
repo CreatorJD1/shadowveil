@@ -1,0 +1,18 @@
+{
+  "contract": "runtime-contract v1.2",
+  "view": "back",
+  "canvas": [
+    1365,
+    1739
+  ],
+  "eyes": [],
+  "note": "Back view: no visible eyes (contract section 1: back = none). Intentionally empty so the renderer has nothing to load and no 404.",
+  "lidFrames": 8,
+  "parts": [],
+  "irisLimitsPx": {
+    "dxAtXminus1": 0,
+    "dxAtXplus1": 0,
+    "dyAtYminus1": 0,
+    "dyAtYplus1": 0
+  }
+}

@@ -1,0 +1,16 @@
+done back warn 0 logs 0
+== c0 -12 -12 12 12 done 04:17:23
+done back warn 0 logs 0
+== c1 -12 -12 0 0 done 04:18:53
+done back warn 0 logs 0
+== c2 -12 -12 -6 -6 done 04:20:27
+done back warn 0 logs 0
+== c3 -12 -12 6 6 done 04:22:01
+done back warn 0 logs 0
+== c4 -12 0 0 12 done 04:23:42
+done back warn 0 logs 0
+== c5 0 0 0 0 done 04:25:39
+done back warn 0 logs 0
+== c6 -12 -12 0 12 done 04:27:43
+done back warn 0 logs 0
+== c7 -12 -6 6 12 done 04:30:18

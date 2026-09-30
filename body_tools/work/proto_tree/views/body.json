@@ -1,0 +1,85 @@
+{
+  "contract": "v1.2",
+  "width": 1365,
+  "height": 1739,
+  "views": {
+    "apose": {
+      "headTopY": 40,
+      "footLineY": 1682,
+      "despilledPx": 3,
+      "despillRows": [
+        139,
+        778
+      ]
+    },
+    "tpose": {
+      "headTopY": 40,
+      "footLineY": 1682,
+      "despilledPx": 2,
+      "despillRows": [
+        195,
+        195
+      ]
+    },
+    "left": {
+      "headTopY": 40,
+      "footLineY": 1681,
+      "despilledPx": 285,
+      "despillRows": [
+        41,
+        1642
+      ]
+    },
+    "right": {
+      "headTopY": 40,
+      "footLineY": 1681,
+      "despilledPx": 280,
+      "despillRows": [
+        40,
+        278
+      ]
+    },
+    "back": {
+      "headTopY": 40,
+      "footLineY": 1681,
+      "despilledPx": 213,
+      "despillRows": [
+        44,
+        847
+      ]
+    }
+  },
+  "parts": [
+    "torso",
+    "pelvis",
+    "upperArm_L",
+    "upperArm_R",
+    "forearm_L",
+    "forearm_R",
+    "thigh_L",
+    "thigh_R",
+    "shin_L",
+    "shin_R",
+    "foot_L",
+    "foot_R"
+  ],
+  "notes": {
+    "back": "heels and under-buttock crease are shaded; needs flat skin",
+    "tpose": "bra band ~12px and crotch ~9px higher than apose; head is redrawn, not identical to apose"
+  },
+  "despill": "B clamped to max(R,G) only where B>max(R,G)+45 and B>90; everything else is the original drawing",
+  "rig": "views/<view>/body/rig.json",
+  "params": [
+    "BodyLean",
+    "ShoulderL",
+    "ShoulderR",
+    "ElbowL",
+    "ElbowR",
+    "HipL",
+    "HipR",
+    "KneeL",
+    "KneeR",
+    "AnkleL",
+    "AnkleR"
+  ]
+}

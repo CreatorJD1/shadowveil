@@ -1,0 +1,116 @@
+{
+ "apose": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": [],
+  "empty": [],
+  "layers": {
+   "hair": "v1.2",
+   "body": "skin",
+   "hands": "v1.2",
+   "eyes": "v1.2",
+   "mouth": "v1.2"
+  },
+  "fingerFrames": {
+   "segments": 30,
+   "problems": []
+  },
+  "skin": {
+   "file": "views/apose/body/skin.json",
+   "uncoveredOpaque": 0,
+   "doubleCovered": 0,
+   "underlay": {
+    "footprintPx": 7664,
+    "touchTransparent": 0,
+    "touchPartialAlpha": 0,
+    "touchNotAbove": 0,
+    "layer": 200,
+    "ok": true
+   }
+  }
+ },
+ "tpose": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": [],
+  "empty": [],
+  "layers": {
+   "hair": "v1.2",
+   "body": "v1.2",
+   "hands": "v1.2",
+   "eyes": "v1.2",
+   "mouth": "v1.2"
+  },
+  "fingerFrames": {
+   "segments": 30,
+   "problems": []
+  }
+ },
+ "left": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": [],
+  "empty": [],
+  "layers": {
+   "hair": "v1.2",
+   "body": "v1.2",
+   "hands": "v1.2",
+   "eyes": "v1.2",
+   "mouth": "v1.2"
+  },
+  "fingerFrames": {
+   "segments": 15,
+   "problems": []
+  }
+ },
+ "right": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": [],
+  "empty": [],
+  "layers": {
+   "hair": "v1.2",
+   "body": "v1.2",
+   "hands": "v1.2",
+   "eyes": "v1.2",
+   "mouth": "v1.2"
+  },
+  "fingerFrames": {
+   "segments": 15,
+   "problems": []
+  }
+ },
+ "back": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": [],
+  "empty": [],
+  "layers": {
+   "hair": "v1.2",
+   "body": "v1.2",
+   "hands": "v1.2"
+  },
+  "fingerFrames": {
+   "segments": 30,
+   "problems": []
+  }
+ }
+}

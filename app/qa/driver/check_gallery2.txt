@@ -1,0 +1,5 @@
+imagine_images 442 pages 10 broken so far 0 failed 0
+imagine_videos 61 pages 2 broken so far 0 failed 0
+artifacts 314 pages 7 broken so far 0 failed 0
+data 324 pages 7 broken so far 0 failed 0
+TOTAL {"imgs":756,"vids":61,"datas":324,"broken":0,"failed":0,"dataBad":0,"files":2735}

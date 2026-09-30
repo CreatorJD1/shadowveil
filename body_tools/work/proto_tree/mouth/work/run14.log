@@ -1,0 +1,69 @@
+/usr/lib/python3/dist-packages/numpy/_core/fromnumeric.py:3860: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/lib/python3/dist-packages/numpy/_core/_methods.py:137: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+/workspace/shadowveil/mouth/work/build5.py:221: RuntimeWarning: Mean of empty slice.
+  gy,gx=np.nonzero(gl); GC=(gx.mean()-AX,gy.mean()-AY); print(view,'gloss px',int(gl.sum()),'colour',hx(P['hl']),'centroid',GC)
+/usr/lib/python3/dist-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+apose gloss px 10 colour #CBA793 centroid (np.float64(-0.39999999999997726), np.float64(4.300000000000011))
+apose anchor (681, 286) bbox [657, 280, 704, 298] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 1.9889734078832764, 'blue': (0, 0)}
+   smile {'changedPx': 984, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.13963664150465216, 'worstAt': (659, 279, 0.704), 'meanAlphaErrOnPart': 0.0015316438100453232, 'keyResidual': 122.42468481762599, 'blue': (0, 0)}
+   OH_half {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 2.2516065311967095, 'blue': (0, 0)}
+   AA_half {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 2.135203326543954, 'blue': (0, 0)}
+   EE_half {'changedPx': 984, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.07676216150896897, 'worstAt': (658, 278, 0.606), 'meanAlphaErrOnPart': 0.0012263963443359678, 'keyResidual': 74.17649292972749, 'blue': (0, 0)}
+   OH {'changedPx': 969, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.0698121934558299, 'worstAt': (686, 300, 0.652), 'meanAlphaErrOnPart': 0.0011857338342194281, 'keyResidual': 85.0527241663553, 'blue': (0, 0)}
+   AA {'changedPx': 1068, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.1215686274509804, 'worstAt': (667, 294, 1.0), 'meanAlphaErrOnPart': 0.0011864847852073692, 'keyResidual': 55.943973332381, 'blue': (0, 0)}
+   EE {'changedPx': 973, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.1333333333333333, 'worstAt': (658, 279, 1.0), 'meanAlphaErrOnPart': 0.0016743547472224069, 'keyResidual': 117.06901009560308, 'blue': (0, 0)}
+tpose gloss px 8 colour #C2A387 centroid (np.float64(0.0), np.float64(5.375))
+tpose anchor (682, 277) bbox [659, 272, 704, 289] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 919, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009037117148808855, 'keyResidual': 2.828427124746185, 'blue': (0, 0)}
+   smile {'changedPx': 951, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.043210402214472476, 'worstAt': (666, 272, 0.957), 'meanAlphaErrOnPart': 0.0010189987374687765, 'keyResidual': 45.932330869390455, 'blue': (0, 0)}
+   OH_half {'changedPx': 920, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009037117148808855, 'keyResidual': 2.111944549849338, 'blue': (0, 0)}
+   AA_half {'changedPx': 919, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01787991296885827, 'worstAt': (666, 272, 0.767), 'meanAlphaErrOnPart': 0.0009258791588185196, 'keyResidual': 106.89381623207679, 'blue': (0, 0)}
+   EE_half {'changedPx': 957, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.056698682186231975, 'worstAt': (667, 272, 0.943), 'meanAlphaErrOnPart': 0.0009757547575514951, 'keyResidual': 36.069668299703096, 'blue': (0, 0)}
+   OH {'changedPx': 932, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.058194337412058816, 'worstAt': (677, 269, 0.942), 'meanAlphaErrOnPart': 0.0010594050275686802, 'keyResidual': 80.91356011139486, 'blue': (0, 0)}
+   AA {'changedPx': 989, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.11372549019607847, 'worstAt': (669, 285, 1.0), 'meanAlphaErrOnPart': 0.0013137358562849064, 'keyResidual': 134.29297530720208, 'blue': (0, 0)}
+   EE {'changedPx': 947, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.0862745098039216, 'worstAt': (664, 275, 1.0), 'meanAlphaErrOnPart': 0.0012375568734501704, 'keyResidual': 48.33551902251569, 'blue': (0, 0)}
+Traceback (most recent call last):
+  File "/workspace/shadowveil/mouth/work/build5.py", line 362, in <module>
+    b,M,D,rep,anc,bbox,P=build(v)
+                         ~~~~~^^^
+  File "/workspace/shadowveil/mouth/work/build5.py", line 221, in build
+    gy,gx=np.nonzero(gl); GC=(gx.mean()-AX,gy.mean()-AY); print(view,'gloss px',int(gl.sum()),'colour',hx(P['hl']),'centroid',GC)
+                                                                                                       ~~^^^^^^^^^
+  File "/workspace/shadowveil/mouth/work/build5.py", line 11, in hx
+    def hx(c): return '#%02X%02X%02X'%tuple(int(round(v)) for v in c)
+                                      ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/shadowveil/mouth/work/build5.py", line 11, in <genexpr>
+    def hx(c): return '#%02X%02X%02X'%tuple(int(round(v)) for v in c)
+                                                ~~~~~^^^
+ValueError: cannot convert float NaN to integer
+apose rest->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+apose rest->smile {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+apose AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 54, 'meanDevFromIdealMix': 13.07}
+apose M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 39, 'meanDevFromIdealMix': 11.09}
+apose rest->AA_half {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+apose AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 42, 'meanDevFromIdealMix': 9.13}
+tpose rest->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+tpose rest->smile {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.45}
+tpose AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 53, 'meanDevFromIdealMix': 13.44}
+tpose M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 44, 'meanDevFromIdealMix': 12.12}
+tpose rest->AA_half {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+tpose AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 43, 'meanDevFromIdealMix': 10.19}
+left rest->AA {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.44}
+left rest->smile {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+left AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 51, 'meanDevFromIdealMix': 10.91}
+left M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 34, 'meanDevFromIdealMix': 7.61}
+left rest->AA_half {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.43}
+left AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 50, 'meanDevFromIdealMix': 8.61}
+right rest->AA {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right rest->smile {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right AA->EE {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 56, 'meanDevFromIdealMix': 10.59}
+right M->OH {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 34, 'meanDevFromIdealMix': 9.77}
+right rest->AA_half {'baseShowThroughOnLips': 0.5, 'maxDevFromIdealMix': 0, 'meanDevFromIdealMix': 0.42}
+right AA_half->AA {'baseShowThroughOnLips': 0.25, 'maxDevFromIdealMix': 56, 'meanDevFromIdealMix': 8.9}
+DONE

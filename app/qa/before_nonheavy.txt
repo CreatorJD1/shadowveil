@@ -1,0 +1,197 @@
+== tab p0 (Clean room (current, partial)): imgs=4 vids=0 brokenImg=4 brokenVid=0 failedReq=86
+   404 http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/body.png
+   404 http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/hair.png
+   404 http://127.0.0.1:8765/clean-room/rig/head.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/apose-turn.png?v=1
+   404 http://127.0.0.1:8765/clean-room/videos/apose-turn.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/wave.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/wave.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/talk.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/idle/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/idle/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/idle.png?v=1
+   404 http://127.0.0.1:8765/clean-room/videos/idle.mp4
+   FAILED http://127.0.0.1:8765/clean-room/videos/idle.mp4 net::ERR_ABORTED
+   404 http://127.0.0.1:8765/clean-room/layers/anim/sway.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/sway/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/sway/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/sway.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/nod/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/nod.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/nod/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/nod.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/anim/look.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/look/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/look/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/look.mp4?v=2
+   404 http://127.0.0.1:8765/clean-room/layers/anim/side.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/side/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/side/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/side.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/back/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/back.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/back/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/back.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/anim/sit.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/sit/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/sit/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/sit.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/squat.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/squat/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/squat/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/squat.mp4?v=2
+   FAILED http://127.0.0.1:8765/clean-room/videos/squat.mp4?v=2 net::ERR_ABORTED
+   404 http://127.0.0.1:8765/clean-room/layers/anim/smirk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/smirk/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/smirk/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/smirk.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/ready.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/ready/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/ready.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/ready/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/glare.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/glare/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/glare/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/glare.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/clasp.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/clasp/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/clasp/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/clasp.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/hip/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/hip.png?v=1
+   404 http://127.0.0.1:8765/clean-room/videos/hip.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/hip/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/angry.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/angry/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/angry/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/angry.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/run.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/run/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/run/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/run.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/anim/idle-long.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/idle-long/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/idle-long/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/idle-long.mp4
+   FAILED http://127.0.0.1:8765/clean-room/videos/idle-long.mp4 net::ERR_ABORTED
+   404 http://127.0.0.1:8765/clean-room/layers/anim/walk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/walk/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/walk/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/walk.mp4
+   [iframe] IMG http://127.0.0.1:8765/clean-room/layers/anim/walk.png?v=1
+   [iframe] IMG http://127.0.0.1:8765/clean-room/rig/head.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+== tab p1 (Clean room (static)): imgs=4 vids=0 brokenImg=4 brokenVid=0 failedReq=17
+   404 http://127.0.0.1:8765/clean-room/layers/anim/apose-turn.png?v=1
+   404 http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/hair.png
+   404 http://127.0.0.1:8765/clean-room/rig/head.png
+   404 http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/apose-turn.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/wave.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/wave.mp4
+   FAILED http://127.0.0.1:8765/clean-room/videos/wave.mp4 net::ERR_ABORTED
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/talk.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/body.png
+   FAILED http://127.0.0.1:8765/clean-room/videos/talk.mp4 net::ERR_ABORTED
+   [iframe] IMG http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   [iframe] IMG http://127.0.0.1:8765/clean-room/rig/head.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+== tab p2 (Base model clean room): imgs=4 vids=0 brokenImg=4 brokenVid=0 failedReq=16
+   404 http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/hair.png
+   404 http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/body.png
+   404 http://127.0.0.1:8765/clean-room/rig/head.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/apose-turn.png?v=1
+   404 http://127.0.0.1:8765/clean-room/videos/apose-turn.mp4?v=1
+   FAILED http://127.0.0.1:8765/clean-room/videos/apose-turn.mp4?v=1 net::ERR_ABORTED
+   404 http://127.0.0.1:8765/clean-room/layers/anim/wave.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/wave.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/talk.mp4
+   [iframe] IMG http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   [iframe] IMG http://127.0.0.1:8765/clean-room/rig/head.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+== tab p5 (Puppet rig (attachment)): imgs=4 vids=0 brokenImg=4 brokenVid=0 failedReq=15
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/hair.png
+   404 http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+   404 http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/apose-turn.png?v=1
+   404 http://127.0.0.1:8765/clean-room/rig/head.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/apose-turn.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/wave.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/wave.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/body.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/videos/talk.mp4
+   [iframe] IMG http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   [iframe] IMG http://127.0.0.1:8765/clean-room/rig/head.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+== tab p6 (Meta AI guide handoff): imgs=4 vids=0 brokenImg=4 brokenVid=0 failedReq=16
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/hair.png
+   404 http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/apose-turn.png?v=1
+   404 http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+   404 http://127.0.0.1:8765/clean-room/rig/head.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/apose-turn.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/wave.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/wave.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/talk.mp4
+   FAILED http://127.0.0.1:8765/clean-room/videos/talk.mp4 net::ERR_ABORTED
+   [iframe] IMG http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   [iframe] IMG http://127.0.0.1:8765/clean-room/rig/head.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+== tab media (Media): imgs=4 vids=0 brokenImg=4 brokenVid=0 failedReq=16
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/anim/apose-turn.png?v=1
+   404 http://127.0.0.1:8765/clean-room/rig/head.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/apose-turn/body.png
+   404 http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   404 http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+   404 http://127.0.0.1:8765/clean-room/videos/apose-turn.mp4?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/anim/wave.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/hair.png
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/wave/body.png
+   404 http://127.0.0.1:8765/clean-room/videos/wave.mp4
+   FAILED http://127.0.0.1:8765/clean-room/videos/wave.mp4 net::ERR_ABORTED
+   404 http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/hair.png
+   404 http://127.0.0.1:8765/clean-room/videos/talk.mp4
+   404 http://127.0.0.1:8765/clean-room/layers/hierarchy/anim/talk/body.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/layers/anim/talk.png?v=1
+   [iframe] IMG http://127.0.0.1:8765/clean-room/rig/head.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/left-socket.png
+   [iframe] IMG http://127.0.0.1:8765/clean-room/eyes/right-socket.png
+TOTAL {"failed":166,"brokenImg":24,"brokenVid":0,"imgs":24,"vids":0}

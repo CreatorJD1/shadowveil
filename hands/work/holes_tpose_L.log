@@ -1,0 +1,41 @@
+deg +25.0 cut/nearest            holes 2 (rest 0) tears 6 (rest 1) box [1148, 367, 1205, 437]
+    HOLE {'world': (1180, 391), 'alpha': 0, 'palm_src': (1176, 390), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1181, 391), 'alpha': 0, 'palm_src': (1177, 390), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg +25.0 cut/linear             holes 2 (rest 0) tears 6 (rest 1) box [1148, 367, 1205, 437]
+    HOLE {'world': (1180, 391), 'alpha': 81, 'palm_src': (1176, 390), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1181, 391), 'alpha': 27, 'palm_src': (1177, 390), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg +25.0 cut/ss2                holes 2 (rest 0) tears 6 (rest 1) box [1148, 367, 1205, 437]
+    HOLE {'world': (1180, 391), 'alpha': 82, 'palm_src': (1176, 390), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1181, 391), 'alpha': 78, 'palm_src': (1177, 390), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg +25.0 skin/nearest           holes 0 (rest 0) tears 6 (rest 1) box [1148, 367, 1205, 437]
+deg +25.0 skin/linear            holes 0 (rest 0) tears 5 (rest 1) box [1148, 367, 1205, 437]
+deg +25.0 skin/ss2               holes 0 (rest 0) tears 4 (rest 1) box [1148, 367, 1205, 437]
+deg +25.0 skin+underlay/nearest  holes 0 (rest 0) tears 6 (rest 1) box [1148, 367, 1205, 437]
+deg +25.0 skin+underlay/linear   holes 0 (rest 0) tears 5 (rest 1) box [1148, 367, 1205, 437]
+deg +25.0 skin+underlay/ss2      holes 0 (rest 0) tears 4 (rest 1) box [1148, 367, 1205, 437]
+deg -25.0 cut/nearest            holes 4 (rest 0) tears 14 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1183, 412), 'alpha': 0, 'palm_src': (1177, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1181, 413), 'alpha': 0, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1182, 413), 'alpha': 0, 'palm_src': (1176, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1183, 413), 'alpha': 0, 'palm_src': (1177, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 cut/linear             holes 4 (rest 0) tears 14 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1183, 412), 'alpha': 124, 'palm_src': (1177, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1181, 413), 'alpha': 93, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1182, 413), 'alpha': 15, 'palm_src': (1176, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1183, 413), 'alpha': 123, 'palm_src': (1177, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 cut/ss2                holes 3 (rest 0) tears 14 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1181, 413), 'alpha': 93, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1182, 413), 'alpha': 57, 'palm_src': (1176, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+    HOLE {'world': (1183, 413), 'alpha': 123, 'palm_src': (1177, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 skin/nearest           holes 1 (rest 0) tears 8 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1181, 413), 'alpha': 0, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 skin/linear            holes 1 (rest 0) tears 8 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1181, 413), 'alpha': 93, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 skin/ss2               holes 1 (rest 0) tears 8 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1181, 413), 'alpha': 93, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 skin+underlay/nearest  holes 1 (rest 0) tears 8 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1181, 413), 'alpha': 0, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 skin+underlay/linear   holes 1 (rest 0) tears 8 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1181, 413), 'alpha': 93, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}
+deg -25.0 skin+underlay/ss2      holes 1 (rest 0) tears 8 (rest 1) box [1149, 367, 1207, 437]
+    HOLE {'world': (1181, 413), 'alpha': 93, 'palm_src': (1175, 414), 'palm_a': 0, 'palm_within3': True, 'forearm_rest_a': 0, 'base_a': 255}

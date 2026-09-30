@@ -1,0 +1,45 @@
+apose frames 66 failing 44
+ #1 rot-90_tw-1: line break wrist_L +1 piece(s); line break knuckle_L +2 piece(s)
+ #3 rot-60_tw-1: wrist seam gap L 1px; line break wrist_L +1 piece(s)
+ #4 rot-45_tw-1: wrist seam gap R 1px; line break wrist_L +1 piece(s)
+ #5 rot-30_tw-1: line break wrist_L +1 piece(s)
+ #9 rot30_tw-1: wrist seam gap R 1px
+ #11 rot60_tw-1: wrist seam gap L 1px; wrist seam gap R 3px
+ #12 rot75_tw-1: line break wrist_L +1 piece(s)
+ #13 rot90_tw-1: line break wrist_L +1 piece(s); line break knuckle_L +2 piece(s)
+ #14 rot-90_tw0: line break wrist_L +1 piece(s); line break knuckle_L +2 piece(s)
+ #16 rot-60_tw0: wrist seam gap L 1px; line break wrist_L +1 piece(s)
+ #17 rot-45_tw0: wrist seam gap R 1px; line break wrist_L +1 piece(s)
+ #18 rot-30_tw0: line break wrist_L +1 piece(s)
+ #22 rot30_tw0: wrist seam gap R 1px
+ #24 rot60_tw0: wrist seam gap L 1px; wrist seam gap R 3px
+ #25 rot75_tw0: line break wrist_L +1 piece(s)
+ #26 rot90_tw0: line break wrist_L +1 piece(s); line break knuckle_L +2 piece(s)
+ #27 rot-90_tw1: leak L 8px; wrist seam gap L 30px; leak R 33px; wrist seam gap R 36px
+ #28 rot-75_tw1: leak L 10px; wrist seam gap L 42px; leak R 31px; wrist seam gap R 36px
+ #29 rot-60_tw1: leak L 9px; wrist seam gap L 44px; leak R 34px; wrist seam gap R 45px
+ #30 rot-45_tw1: leak L 10px; wrist seam gap L 44px; leak R 35px; wrist seam gap R 41px
+ #31 rot-30_tw1: leak L 10px; wrist seam gap L 54px; leak R 31px; wrist seam gap R 45px
+ #32 rot-15_tw1: leak L 10px; wrist seam gap L 48px; leak R 30px; wrist seam gap R 48px
+ #33 rot0_tw1: wrist seam gap L 39px; wrist seam gap R 39px
+ #34 rot15_tw1: leak L 10px; wrist seam gap L 45px; leak R 25px; wrist seam gap R 43px
+ #35 rot30_tw1: leak L 12px; wrist seam gap L 43px; leak R 25px; wrist seam gap R 51px
+ #36 rot45_tw1: leak L 13px; wrist seam gap L 50px; leak R 21px; wrist seam gap R 48px
+ #37 rot60_tw1: leak L 12px; wrist seam gap L 42px; leak R 22px; wrist seam gap R 46px
+ #38 rot75_tw1: leak L 13px; wrist seam gap L 35px; leak R 17px; wrist seam gap R 32px
+ #39 rot90_tw1: leak L 8px; wrist seam gap L 31px; leak R 18px; wrist seam gap R 27px
+ #49 tw0.250: wrist seam gap L 31px; wrist seam gap R 130px
+ #50 tw0.375: leak L 180px; wrist seam gap L 9px; leak R 191px
+ #51 tw0.500: wrist seam gap L 8px
+ #52 tw0.625: leak L 180px; wrist seam gap L 9px; leak R 191px
+ #53 tw0.750: leak L 14px; wrist seam gap L 27px; leak R 24px; wrist seam gap R 48px
+ #54 tw0.875: leak L 11px; wrist seam gap L 32px; leak R 30px; wrist seam gap R 33px
+ #55 tw1.000: wrist seam gap L 39px; wrist seam gap R 39px
+ #56 sh-1_el-1_bend: line break wrist_L +1 piece(s); line break wrist_R +1 piece(s)
+ #57 sh-1_el-1_bend_wr45_tw.5: leak L 188px; wrist seam gap L 13px; leak R 194px; wrist seam gap R 2px
+ #58 sh-1_el1_bend: line break wrist_L +2 piece(s)
+ #59 sh-1_el1_bend_wr45_tw.5: leak L 188px; wrist seam gap L 13px; leak R 194px; wrist seam gap R 2px
+ #60 sh1_el-1_bend: line break wrist_L +1 piece(s); line break wrist_R +1 piece(s)
+ #61 sh1_el-1_bend_wr45_tw.5: leak L 188px; wrist seam gap L 13px; leak R 194px; wrist seam gap R 2px
+ #62 sh1_el1_bend: line break wrist_L +2 piece(s)
+ #63 sh1_el1_bend_wr45_tw.5: leak L 188px; wrist seam gap L 13px; leak R 194px; wrist seam gap R 2px

@@ -1,0 +1,262 @@
+[
+ {
+  "id": "acts-2-1",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 458,
+  "hair_w": 304,
+  "hair_h_over_fig": 0.278,
+  "h_over_w": 1.51,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.263,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "angry",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 344,
+  "hair_w": 192,
+  "hair_h_over_fig": 0.304,
+  "h_over_w": 1.79,
+  "hair_top_rel": 0.004,
+  "bottom_frac_px": 0.355,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "emotions-5",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 466,
+  "hair_w": 308,
+  "hair_h_over_fig": 0.277,
+  "h_over_w": 1.51,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.177,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "getup-rise-1",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 356,
+  "hair_w": 276,
+  "hair_h_over_fig": 0.243,
+  "h_over_w": 1.29,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.163,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "hip",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 342,
+  "hair_w": 162,
+  "hair_h_over_fig": 0.306,
+  "h_over_w": 2.11,
+  "hair_top_rel": 0.002,
+  "bottom_frac_px": 0.347,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "idle-front-4",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 460,
+  "hair_w": 302,
+  "hair_h_over_fig": 0.277,
+  "h_over_w": 1.52,
+  "hair_top_rel": 0.002,
+  "bottom_frac_px": 0.233,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "inspect",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 342,
+  "hair_w": 212,
+  "hair_h_over_fig": 0.307,
+  "h_over_w": 1.61,
+  "hair_top_rel": -0.002,
+  "bottom_frac_px": 0.346,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "kick",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 350,
+  "hair_w": 160,
+  "hair_h_over_fig": 0.304,
+  "h_over_w": 2.19,
+  "hair_top_rel": 0.002,
+  "bottom_frac_px": 0.354,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "loop-blink-2",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 466,
+  "hair_w": 300,
+  "hair_h_over_fig": 0.277,
+  "h_over_w": 1.55,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.22,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "loop-talk-4",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 464,
+  "hair_w": 298,
+  "hair_h_over_fig": 0.276,
+  "h_over_w": 1.56,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.186,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "reactions-2-2",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 456,
+  "hair_w": 236,
+  "hair_h_over_fig": 0.278,
+  "h_over_w": 1.93,
+  "hair_top_rel": 0.002,
+  "bottom_frac_px": 0.138,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "set-16-10p2",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 444,
+  "hair_w": 276,
+  "hair_h_over_fig": 0.261,
+  "h_over_w": 1.61,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.528,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "set-17-3",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 446,
+  "hair_w": 664,
+  "hair_h_over_fig": 0.28,
+  "h_over_w": 0.67,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.242,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "set-18-4p2",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 392,
+  "hair_w": 256,
+  "hair_h_over_fig": 0.235,
+  "h_over_w": 1.53,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.1,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "sheet-1db5-5",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 452,
+  "hair_w": 250,
+  "hair_h_over_fig": 0.278,
+  "h_over_w": 1.81,
+  "hair_top_rel": 0.004,
+  "bottom_frac_px": 0.146,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "sheet-aab0-3",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 448,
+  "hair_w": 280,
+  "hair_h_over_fig": 0.27,
+  "h_over_w": 1.6,
+  "hair_top_rel": 0.006,
+  "bottom_frac_px": 0.118,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "stumble",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 298,
+  "hair_w": 332,
+  "hair_h_over_fig": 0.283,
+  "h_over_w": 0.9,
+  "hair_top_rel": 0.002,
+  "bottom_frac_px": 0.081,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "wave",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 350,
+  "hair_w": 232,
+  "hair_h_over_fig": 0.304,
+  "h_over_w": 1.51,
+  "hair_top_rel": 0.001,
+  "bottom_frac_px": 0.328,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "xknee",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 300,
+  "hair_w": 742,
+  "hair_h_over_fig": 0.323,
+  "h_over_w": 0.4,
+  "hair_top_rel": 0.004,
+  "bottom_frac_px": 0.896,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "yawn",
+  "role": "bun, bangs, strands. No face, no clothes.",
+  "hair_h": 330,
+  "hair_w": 206,
+  "hair_h_over_fig": 0.293,
+  "h_over_w": 1.6,
+  "hair_top_rel": 0.002,
+  "bottom_frac_px": 0.42,
+  "role_note": "bun, bangs, strands. No face, no clothes."
+ },
+ {
+  "id": "OURS_apose",
+  "hair_h": 308,
+  "hair_w": 221,
+  "hair_h_over_fig": 0.187,
+  "h_over_w": 1.39,
+  "bottom_frac_px": 0.089
+ },
+ {
+  "id": "OURS_tpose",
+  "hair_h": 295,
+  "hair_w": 221,
+  "hair_h_over_fig": 0.18,
+  "h_over_w": 1.33,
+  "bottom_frac_px": 0.083
+ },
+ {
+  "id": "OURS_left",
+  "hair_h": 264,
+  "hair_w": 239,
+  "hair_h_over_fig": 0.161,
+  "h_over_w": 1.1,
+  "bottom_frac_px": 0.192
+ },
+ {
+  "id": "OURS_right",
+  "hair_h": 262,
+  "hair_w": 253,
+  "hair_h_over_fig": 0.16,
+  "h_over_w": 1.04,
+  "bottom_frac_px": 0.207
+ },
+ {
+  "id": "OURS_back",
+  "hair_h": 275,
+  "hair_w": 210,
+  "hair_h_over_fig": 0.167,
+  "h_over_w": 1.31,
+  "bottom_frac_px": 0.312
+ }
+]

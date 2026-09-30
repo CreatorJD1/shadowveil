@@ -1,0 +1,257 @@
+{
+  "contract": "v1.3 (half-open mouth row)",
+  "view": "tpose",
+  "owner": "Base Mouth",
+  "canvas": {
+    "width": 1365,
+    "height": 1739
+  },
+  "anchor": {
+    "x": 682,
+    "y": 277,
+    "desc": "front: lip-seam centre; profile: back corner of the mouth (seam end)"
+  },
+  "drawnMouthBBox": {
+    "x0": 659,
+    "y0": 272,
+    "x1": 704,
+    "y1": 289,
+    "note": "inclusive, view px, lip pixels of base.png"
+  },
+  "partsBBox": {
+    "rest": [
+      655,
+      269,
+      708,
+      293
+    ],
+    "M": [
+      654,
+      268,
+      709,
+      294
+    ],
+    "smile": [
+      654,
+      268,
+      709,
+      294
+    ],
+    "OH_half": [
+      654,
+      268,
+      709,
+      294
+    ],
+    "AA_half": [
+      654,
+      268,
+      709,
+      294
+    ],
+    "EE_half": [
+      654,
+      268,
+      709,
+      294
+    ],
+    "OH": [
+      654,
+      268,
+      709,
+      294
+    ],
+    "AA": [
+      654,
+      268,
+      709,
+      295
+    ],
+    "EE": [
+      654,
+      268,
+      709,
+      294
+    ],
+    "anger": [
+      652,
+      261,
+      711,
+      297
+    ]
+  },
+  "params": {
+    "MouthOpen": {
+      "min": 0,
+      "max": 1,
+      "default": 0
+    },
+    "MouthForm": {
+      "min": -1,
+      "max": 1,
+      "default": 0
+    }
+  },
+  "grid": {
+    "rest": {
+      "MouthOpen": 0,
+      "MouthForm": 0
+    },
+    "M": {
+      "MouthOpen": 0,
+      "MouthForm": -1
+    },
+    "smile": {
+      "MouthOpen": 0,
+      "MouthForm": 1
+    },
+    "OH_half": {
+      "MouthOpen": 0.5,
+      "MouthForm": -1
+    },
+    "AA_half": {
+      "MouthOpen": 0.5,
+      "MouthForm": 0
+    },
+    "EE_half": {
+      "MouthOpen": 0.5,
+      "MouthForm": 1
+    },
+    "OH": {
+      "MouthOpen": 1,
+      "MouthForm": -1
+    },
+    "AA": {
+      "MouthOpen": 1,
+      "MouthForm": 0
+    },
+    "EE": {
+      "MouthOpen": 1,
+      "MouthForm": 1
+    },
+    "anger": {
+      "MouthOpen": 0.25,
+      "MouthForm": -1
+    }
+  },
+  "selection": {
+    "mode": "nearest",
+    "metric": "euclidean on (MouthOpen, MouthForm), both clamped",
+    "tieBreak": "prefer rest, then closed shapes (MouthOpen=0)",
+    "crossfadeMs": 60,
+    "crossfade": "opacity only: outgoing 1->0, incoming 0->1, drawImage + globalAlpha"
+  },
+  "colors": {
+    "skin": "#B98155",
+    "upper": "#563519",
+    "lower": "#643D1F",
+    "line": "#311100",
+    "hl": "#C2A387",
+    "outline": "#311100",
+    "inner": "#3F2319",
+    "teeth": "#EFE4DA",
+    "tongue": "#9C5A4A"
+  },
+  "parts": [
+    {
+      "id": "mouth_rest",
+      "file": "rest.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_M",
+      "file": "M.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_smile",
+      "file": "smile.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_OH_half",
+      "file": "OH_half.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_AA_half",
+      "file": "AA_half.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_EE_half",
+      "file": "EE_half.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_OH",
+      "file": "OH.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_AA",
+      "file": "AA.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_EE",
+      "file": "EE.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    },
+    {
+      "id": "mouth_anger",
+      "file": "anger.png",
+      "x": 0,
+      "y": 0,
+      "pivotX": 682,
+      "pivotY": 277,
+      "parent": "base",
+      "layer": 500
+    }
+  ]
+}

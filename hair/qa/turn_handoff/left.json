@@ -1,0 +1,114 @@
+{
+ "view": "left",
+ "frame": 62,
+ "map": {
+  "scale": 1.54135,
+  "dx": 101.91,
+  "dy": -45.32
+ },
+ "iou_rest": 0.7645064390447015,
+ "iou_classifier_on_base": 0.9418493803622497,
+ "silhouette": {
+  "dx": -5,
+  "dy": 3,
+  "iou_after": 0.7696644295302013,
+  "centroid_dxdy": [
+   -3.3,
+   2.2
+  ]
+ },
+ "bun": {
+  "dx": 14,
+  "dy": 1,
+  "iou_after": 0.9027055946193825,
+  "iou_at0": 0.8263903573694227,
+  "layer": 650
+ },
+ "fringe": {
+  "dx": -10,
+  "dy": 9,
+  "iou_after": 0.7741242564441507,
+  "iou_at0": 0.703840745948346
+ },
+ "head_silhouette": {
+  "dx": 0,
+  "dy": 0,
+  "iou_after": 0.8838147715255746,
+  "iou_at0": 0.8838147715255746
+ },
+ "head_top_dy": -1,
+ "pose_fit": {
+  "iou": 0.810357100486416,
+  "rot_deg_ccw": -6.0,
+  "scale": 1.03
+ },
+ "frame_only": [
+  {
+   "x": 771,
+   "y": 44,
+   "w": 53,
+   "h": 102,
+   "area": 1123,
+   "below_live_hair_bottom": false
+  },
+  {
+   "x": 581,
+   "y": 148,
+   "w": 36,
+   "h": 45,
+   "area": 458,
+   "below_live_hair_bottom": false
+  },
+  {
+   "x": 695,
+   "y": 205,
+   "w": 17,
+   "h": 38,
+   "area": 342,
+   "below_live_hair_bottom": false
+  }
+ ],
+ "live_only": [
+  {
+   "x": 657,
+   "y": 207,
+   "w": 30,
+   "h": 101,
+   "area": 486
+  },
+  {
+   "x": 703,
+   "y": 52,
+   "w": 30,
+   "h": 35,
+   "area": 432
+  }
+ ],
+ "strands": [
+  {
+   "id": "strand_01",
+   "px": 111,
+   "matched_frac": 0.17117117117117117
+  },
+  {
+   "id": "strand_02",
+   "px": 138,
+   "matched_frac": 0.9782608695652174
+  },
+  {
+   "id": "strand_03",
+   "px": 316,
+   "matched_frac": 0.6962025316455697
+  },
+  {
+   "id": "strand_04",
+   "px": 239,
+   "matched_frac": 0.1799163179916318
+  },
+  {
+   "id": "strand_04_tip",
+   "px": 195,
+   "matched_frac": 0.0
+  }
+ ]
+}

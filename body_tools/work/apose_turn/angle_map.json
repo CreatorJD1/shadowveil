@@ -1,0 +1,1529 @@
+{
+ "source": "reference/apose_turn/frames",
+ "frames": 241,
+ "anchors": {
+  "0": 1,
+  "45": 33,
+  "90": 62,
+  "135": 87,
+  "180": 109,
+  "225": 131,
+  "270": 160,
+  "315": 191,
+  "360": 233
+ },
+ "table": [
+  {
+   "angle": 0,
+   "frame": 1
+  },
+  {
+   "angle": 1,
+   "frame": 2
+  },
+  {
+   "angle": 2,
+   "frame": 2
+  },
+  {
+   "angle": 3,
+   "frame": 3
+  },
+  {
+   "angle": 4,
+   "frame": 4
+  },
+  {
+   "angle": 5,
+   "frame": 5
+  },
+  {
+   "angle": 6,
+   "frame": 5
+  },
+  {
+   "angle": 7,
+   "frame": 6
+  },
+  {
+   "angle": 8,
+   "frame": 7
+  },
+  {
+   "angle": 9,
+   "frame": 7
+  },
+  {
+   "angle": 10,
+   "frame": 8
+  },
+  {
+   "angle": 11,
+   "frame": 9
+  },
+  {
+   "angle": 12,
+   "frame": 10
+  },
+  {
+   "angle": 13,
+   "frame": 10
+  },
+  {
+   "angle": 14,
+   "frame": 11
+  },
+  {
+   "angle": 15,
+   "frame": 12
+  },
+  {
+   "angle": 16,
+   "frame": 12
+  },
+  {
+   "angle": 17,
+   "frame": 13
+  },
+  {
+   "angle": 18,
+   "frame": 14
+  },
+  {
+   "angle": 19,
+   "frame": 15
+  },
+  {
+   "angle": 20,
+   "frame": 15
+  },
+  {
+   "angle": 21,
+   "frame": 16
+  },
+  {
+   "angle": 22,
+   "frame": 17
+  },
+  {
+   "angle": 23,
+   "frame": 17
+  },
+  {
+   "angle": 24,
+   "frame": 18
+  },
+  {
+   "angle": 25,
+   "frame": 19
+  },
+  {
+   "angle": 26,
+   "frame": 19
+  },
+  {
+   "angle": 27,
+   "frame": 20
+  },
+  {
+   "angle": 28,
+   "frame": 21
+  },
+  {
+   "angle": 29,
+   "frame": 22
+  },
+  {
+   "angle": 30,
+   "frame": 22
+  },
+  {
+   "angle": 31,
+   "frame": 23
+  },
+  {
+   "angle": 32,
+   "frame": 24
+  },
+  {
+   "angle": 33,
+   "frame": 24
+  },
+  {
+   "angle": 34,
+   "frame": 25
+  },
+  {
+   "angle": 35,
+   "frame": 26
+  },
+  {
+   "angle": 36,
+   "frame": 27
+  },
+  {
+   "angle": 37,
+   "frame": 27
+  },
+  {
+   "angle": 38,
+   "frame": 28
+  },
+  {
+   "angle": 39,
+   "frame": 29
+  },
+  {
+   "angle": 40,
+   "frame": 29
+  },
+  {
+   "angle": 41,
+   "frame": 30
+  },
+  {
+   "angle": 42,
+   "frame": 31
+  },
+  {
+   "angle": 43,
+   "frame": 32
+  },
+  {
+   "angle": 44,
+   "frame": 32
+  },
+  {
+   "angle": 45,
+   "frame": 33
+  },
+  {
+   "angle": 46,
+   "frame": 34
+  },
+  {
+   "angle": 47,
+   "frame": 34
+  },
+  {
+   "angle": 48,
+   "frame": 35
+  },
+  {
+   "angle": 49,
+   "frame": 36
+  },
+  {
+   "angle": 50,
+   "frame": 36
+  },
+  {
+   "angle": 51,
+   "frame": 37
+  },
+  {
+   "angle": 52,
+   "frame": 38
+  },
+  {
+   "angle": 53,
+   "frame": 38
+  },
+  {
+   "angle": 54,
+   "frame": 39
+  },
+  {
+   "angle": 55,
+   "frame": 39
+  },
+  {
+   "angle": 56,
+   "frame": 40
+  },
+  {
+   "angle": 57,
+   "frame": 41
+  },
+  {
+   "angle": 58,
+   "frame": 41
+  },
+  {
+   "angle": 59,
+   "frame": 42
+  },
+  {
+   "angle": 60,
+   "frame": 43
+  },
+  {
+   "angle": 61,
+   "frame": 43
+  },
+  {
+   "angle": 62,
+   "frame": 44
+  },
+  {
+   "angle": 63,
+   "frame": 45
+  },
+  {
+   "angle": 64,
+   "frame": 45
+  },
+  {
+   "angle": 65,
+   "frame": 46
+  },
+  {
+   "angle": 66,
+   "frame": 47
+  },
+  {
+   "angle": 67,
+   "frame": 47
+  },
+  {
+   "angle": 68,
+   "frame": 48
+  },
+  {
+   "angle": 69,
+   "frame": 48
+  },
+  {
+   "angle": 70,
+   "frame": 49
+  },
+  {
+   "angle": 71,
+   "frame": 50
+  },
+  {
+   "angle": 72,
+   "frame": 50
+  },
+  {
+   "angle": 73,
+   "frame": 51
+  },
+  {
+   "angle": 74,
+   "frame": 52
+  },
+  {
+   "angle": 75,
+   "frame": 52
+  },
+  {
+   "angle": 76,
+   "frame": 53
+  },
+  {
+   "angle": 77,
+   "frame": 54
+  },
+  {
+   "angle": 78,
+   "frame": 54
+  },
+  {
+   "angle": 79,
+   "frame": 55
+  },
+  {
+   "angle": 80,
+   "frame": 56
+  },
+  {
+   "angle": 81,
+   "frame": 56
+  },
+  {
+   "angle": 82,
+   "frame": 57
+  },
+  {
+   "angle": 83,
+   "frame": 57
+  },
+  {
+   "angle": 84,
+   "frame": 58
+  },
+  {
+   "angle": 85,
+   "frame": 59
+  },
+  {
+   "angle": 86,
+   "frame": 59
+  },
+  {
+   "angle": 87,
+   "frame": 60
+  },
+  {
+   "angle": 88,
+   "frame": 61
+  },
+  {
+   "angle": 89,
+   "frame": 61
+  },
+  {
+   "angle": 90,
+   "frame": 62
+  },
+  {
+   "angle": 91,
+   "frame": 63
+  },
+  {
+   "angle": 92,
+   "frame": 63
+  },
+  {
+   "angle": 93,
+   "frame": 64
+  },
+  {
+   "angle": 94,
+   "frame": 64
+  },
+  {
+   "angle": 95,
+   "frame": 65
+  },
+  {
+   "angle": 96,
+   "frame": 65
+  },
+  {
+   "angle": 97,
+   "frame": 66
+  },
+  {
+   "angle": 98,
+   "frame": 66
+  },
+  {
+   "angle": 99,
+   "frame": 67
+  },
+  {
+   "angle": 100,
+   "frame": 68
+  },
+  {
+   "angle": 101,
+   "frame": 68
+  },
+  {
+   "angle": 102,
+   "frame": 69
+  },
+  {
+   "angle": 103,
+   "frame": 69
+  },
+  {
+   "angle": 104,
+   "frame": 70
+  },
+  {
+   "angle": 105,
+   "frame": 70
+  },
+  {
+   "angle": 106,
+   "frame": 71
+  },
+  {
+   "angle": 107,
+   "frame": 71
+  },
+  {
+   "angle": 108,
+   "frame": 72
+  },
+  {
+   "angle": 109,
+   "frame": 73
+  },
+  {
+   "angle": 110,
+   "frame": 73
+  },
+  {
+   "angle": 111,
+   "frame": 74
+  },
+  {
+   "angle": 112,
+   "frame": 74
+  },
+  {
+   "angle": 113,
+   "frame": 75
+  },
+  {
+   "angle": 114,
+   "frame": 75
+  },
+  {
+   "angle": 115,
+   "frame": 76
+  },
+  {
+   "angle": 116,
+   "frame": 76
+  },
+  {
+   "angle": 117,
+   "frame": 77
+  },
+  {
+   "angle": 118,
+   "frame": 78
+  },
+  {
+   "angle": 119,
+   "frame": 78
+  },
+  {
+   "angle": 120,
+   "frame": 79
+  },
+  {
+   "angle": 121,
+   "frame": 79
+  },
+  {
+   "angle": 122,
+   "frame": 80
+  },
+  {
+   "angle": 123,
+   "frame": 80
+  },
+  {
+   "angle": 124,
+   "frame": 81
+  },
+  {
+   "angle": 125,
+   "frame": 81
+  },
+  {
+   "angle": 126,
+   "frame": 82
+  },
+  {
+   "angle": 127,
+   "frame": 83
+  },
+  {
+   "angle": 128,
+   "frame": 83
+  },
+  {
+   "angle": 129,
+   "frame": 84
+  },
+  {
+   "angle": 130,
+   "frame": 84
+  },
+  {
+   "angle": 131,
+   "frame": 85
+  },
+  {
+   "angle": 132,
+   "frame": 85
+  },
+  {
+   "angle": 133,
+   "frame": 86
+  },
+  {
+   "angle": 134,
+   "frame": 86
+  },
+  {
+   "angle": 135,
+   "frame": 87
+  },
+  {
+   "angle": 136,
+   "frame": 87
+  },
+  {
+   "angle": 137,
+   "frame": 88
+  },
+  {
+   "angle": 138,
+   "frame": 88
+  },
+  {
+   "angle": 139,
+   "frame": 89
+  },
+  {
+   "angle": 140,
+   "frame": 89
+  },
+  {
+   "angle": 141,
+   "frame": 90
+  },
+  {
+   "angle": 142,
+   "frame": 90
+  },
+  {
+   "angle": 143,
+   "frame": 91
+  },
+  {
+   "angle": 144,
+   "frame": 91
+  },
+  {
+   "angle": 145,
+   "frame": 92
+  },
+  {
+   "angle": 146,
+   "frame": 92
+  },
+  {
+   "angle": 147,
+   "frame": 93
+  },
+  {
+   "angle": 148,
+   "frame": 93
+  },
+  {
+   "angle": 149,
+   "frame": 94
+  },
+  {
+   "angle": 150,
+   "frame": 94
+  },
+  {
+   "angle": 151,
+   "frame": 95
+  },
+  {
+   "angle": 152,
+   "frame": 95
+  },
+  {
+   "angle": 153,
+   "frame": 96
+  },
+  {
+   "angle": 154,
+   "frame": 96
+  },
+  {
+   "angle": 155,
+   "frame": 97
+  },
+  {
+   "angle": 156,
+   "frame": 97
+  },
+  {
+   "angle": 157,
+   "frame": 98
+  },
+  {
+   "angle": 158,
+   "frame": 98
+  },
+  {
+   "angle": 159,
+   "frame": 99
+  },
+  {
+   "angle": 160,
+   "frame": 99
+  },
+  {
+   "angle": 161,
+   "frame": 100
+  },
+  {
+   "angle": 162,
+   "frame": 100
+  },
+  {
+   "angle": 163,
+   "frame": 101
+  },
+  {
+   "angle": 164,
+   "frame": 101
+  },
+  {
+   "angle": 165,
+   "frame": 102
+  },
+  {
+   "angle": 166,
+   "frame": 102
+  },
+  {
+   "angle": 167,
+   "frame": 103
+  },
+  {
+   "angle": 168,
+   "frame": 103
+  },
+  {
+   "angle": 169,
+   "frame": 104
+  },
+  {
+   "angle": 170,
+   "frame": 104
+  },
+  {
+   "angle": 171,
+   "frame": 105
+  },
+  {
+   "angle": 172,
+   "frame": 105
+  },
+  {
+   "angle": 173,
+   "frame": 106
+  },
+  {
+   "angle": 174,
+   "frame": 106
+  },
+  {
+   "angle": 175,
+   "frame": 107
+  },
+  {
+   "angle": 176,
+   "frame": 107
+  },
+  {
+   "angle": 177,
+   "frame": 108
+  },
+  {
+   "angle": 178,
+   "frame": 108
+  },
+  {
+   "angle": 179,
+   "frame": 109
+  },
+  {
+   "angle": 180,
+   "frame": 109
+  },
+  {
+   "angle": 181,
+   "frame": 109
+  },
+  {
+   "angle": 182,
+   "frame": 110
+  },
+  {
+   "angle": 183,
+   "frame": 110
+  },
+  {
+   "angle": 184,
+   "frame": 111
+  },
+  {
+   "angle": 185,
+   "frame": 111
+  },
+  {
+   "angle": 186,
+   "frame": 112
+  },
+  {
+   "angle": 187,
+   "frame": 112
+  },
+  {
+   "angle": 188,
+   "frame": 113
+  },
+  {
+   "angle": 189,
+   "frame": 113
+  },
+  {
+   "angle": 190,
+   "frame": 114
+  },
+  {
+   "angle": 191,
+   "frame": 114
+  },
+  {
+   "angle": 192,
+   "frame": 115
+  },
+  {
+   "angle": 193,
+   "frame": 115
+  },
+  {
+   "angle": 194,
+   "frame": 116
+  },
+  {
+   "angle": 195,
+   "frame": 116
+  },
+  {
+   "angle": 196,
+   "frame": 117
+  },
+  {
+   "angle": 197,
+   "frame": 117
+  },
+  {
+   "angle": 198,
+   "frame": 118
+  },
+  {
+   "angle": 199,
+   "frame": 118
+  },
+  {
+   "angle": 200,
+   "frame": 119
+  },
+  {
+   "angle": 201,
+   "frame": 119
+  },
+  {
+   "angle": 202,
+   "frame": 120
+  },
+  {
+   "angle": 203,
+   "frame": 120
+  },
+  {
+   "angle": 204,
+   "frame": 121
+  },
+  {
+   "angle": 205,
+   "frame": 121
+  },
+  {
+   "angle": 206,
+   "frame": 122
+  },
+  {
+   "angle": 207,
+   "frame": 122
+  },
+  {
+   "angle": 208,
+   "frame": 123
+  },
+  {
+   "angle": 209,
+   "frame": 123
+  },
+  {
+   "angle": 210,
+   "frame": 124
+  },
+  {
+   "angle": 211,
+   "frame": 124
+  },
+  {
+   "angle": 212,
+   "frame": 125
+  },
+  {
+   "angle": 213,
+   "frame": 125
+  },
+  {
+   "angle": 214,
+   "frame": 126
+  },
+  {
+   "angle": 215,
+   "frame": 126
+  },
+  {
+   "angle": 216,
+   "frame": 127
+  },
+  {
+   "angle": 217,
+   "frame": 127
+  },
+  {
+   "angle": 218,
+   "frame": 128
+  },
+  {
+   "angle": 219,
+   "frame": 128
+  },
+  {
+   "angle": 220,
+   "frame": 129
+  },
+  {
+   "angle": 221,
+   "frame": 129
+  },
+  {
+   "angle": 222,
+   "frame": 130
+  },
+  {
+   "angle": 223,
+   "frame": 130
+  },
+  {
+   "angle": 224,
+   "frame": 131
+  },
+  {
+   "angle": 225,
+   "frame": 131
+  },
+  {
+   "angle": 226,
+   "frame": 132
+  },
+  {
+   "angle": 227,
+   "frame": 132
+  },
+  {
+   "angle": 228,
+   "frame": 133
+  },
+  {
+   "angle": 229,
+   "frame": 134
+  },
+  {
+   "angle": 230,
+   "frame": 134
+  },
+  {
+   "angle": 231,
+   "frame": 135
+  },
+  {
+   "angle": 232,
+   "frame": 136
+  },
+  {
+   "angle": 233,
+   "frame": 136
+  },
+  {
+   "angle": 234,
+   "frame": 137
+  },
+  {
+   "angle": 235,
+   "frame": 137
+  },
+  {
+   "angle": 236,
+   "frame": 138
+  },
+  {
+   "angle": 237,
+   "frame": 139
+  },
+  {
+   "angle": 238,
+   "frame": 139
+  },
+  {
+   "angle": 239,
+   "frame": 140
+  },
+  {
+   "angle": 240,
+   "frame": 141
+  },
+  {
+   "angle": 241,
+   "frame": 141
+  },
+  {
+   "angle": 242,
+   "frame": 142
+  },
+  {
+   "angle": 243,
+   "frame": 143
+  },
+  {
+   "angle": 244,
+   "frame": 143
+  },
+  {
+   "angle": 245,
+   "frame": 144
+  },
+  {
+   "angle": 246,
+   "frame": 145
+  },
+  {
+   "angle": 247,
+   "frame": 145
+  },
+  {
+   "angle": 248,
+   "frame": 146
+  },
+  {
+   "angle": 249,
+   "frame": 146
+  },
+  {
+   "angle": 250,
+   "frame": 147
+  },
+  {
+   "angle": 251,
+   "frame": 148
+  },
+  {
+   "angle": 252,
+   "frame": 148
+  },
+  {
+   "angle": 253,
+   "frame": 149
+  },
+  {
+   "angle": 254,
+   "frame": 150
+  },
+  {
+   "angle": 255,
+   "frame": 150
+  },
+  {
+   "angle": 256,
+   "frame": 151
+  },
+  {
+   "angle": 257,
+   "frame": 152
+  },
+  {
+   "angle": 258,
+   "frame": 152
+  },
+  {
+   "angle": 259,
+   "frame": 153
+  },
+  {
+   "angle": 260,
+   "frame": 154
+  },
+  {
+   "angle": 261,
+   "frame": 154
+  },
+  {
+   "angle": 262,
+   "frame": 155
+  },
+  {
+   "angle": 263,
+   "frame": 155
+  },
+  {
+   "angle": 264,
+   "frame": 156
+  },
+  {
+   "angle": 265,
+   "frame": 157
+  },
+  {
+   "angle": 266,
+   "frame": 157
+  },
+  {
+   "angle": 267,
+   "frame": 158
+  },
+  {
+   "angle": 268,
+   "frame": 159
+  },
+  {
+   "angle": 269,
+   "frame": 159
+  },
+  {
+   "angle": 270,
+   "frame": 160
+  },
+  {
+   "angle": 271,
+   "frame": 161
+  },
+  {
+   "angle": 272,
+   "frame": 161
+  },
+  {
+   "angle": 273,
+   "frame": 162
+  },
+  {
+   "angle": 274,
+   "frame": 163
+  },
+  {
+   "angle": 275,
+   "frame": 163
+  },
+  {
+   "angle": 276,
+   "frame": 164
+  },
+  {
+   "angle": 277,
+   "frame": 165
+  },
+  {
+   "angle": 278,
+   "frame": 166
+  },
+  {
+   "angle": 279,
+   "frame": 166
+  },
+  {
+   "angle": 280,
+   "frame": 167
+  },
+  {
+   "angle": 281,
+   "frame": 168
+  },
+  {
+   "angle": 282,
+   "frame": 168
+  },
+  {
+   "angle": 283,
+   "frame": 169
+  },
+  {
+   "angle": 284,
+   "frame": 170
+  },
+  {
+   "angle": 285,
+   "frame": 170
+  },
+  {
+   "angle": 286,
+   "frame": 171
+  },
+  {
+   "angle": 287,
+   "frame": 172
+  },
+  {
+   "angle": 288,
+   "frame": 172
+  },
+  {
+   "angle": 289,
+   "frame": 173
+  },
+  {
+   "angle": 290,
+   "frame": 174
+  },
+  {
+   "angle": 291,
+   "frame": 174
+  },
+  {
+   "angle": 292,
+   "frame": 175
+  },
+  {
+   "angle": 293,
+   "frame": 176
+  },
+  {
+   "angle": 294,
+   "frame": 177
+  },
+  {
+   "angle": 295,
+   "frame": 177
+  },
+  {
+   "angle": 296,
+   "frame": 178
+  },
+  {
+   "angle": 297,
+   "frame": 179
+  },
+  {
+   "angle": 298,
+   "frame": 179
+  },
+  {
+   "angle": 299,
+   "frame": 180
+  },
+  {
+   "angle": 300,
+   "frame": 181
+  },
+  {
+   "angle": 301,
+   "frame": 181
+  },
+  {
+   "angle": 302,
+   "frame": 182
+  },
+  {
+   "angle": 303,
+   "frame": 183
+  },
+  {
+   "angle": 304,
+   "frame": 183
+  },
+  {
+   "angle": 305,
+   "frame": 184
+  },
+  {
+   "angle": 306,
+   "frame": 185
+  },
+  {
+   "angle": 307,
+   "frame": 185
+  },
+  {
+   "angle": 308,
+   "frame": 186
+  },
+  {
+   "angle": 309,
+   "frame": 187
+  },
+  {
+   "angle": 310,
+   "frame": 188
+  },
+  {
+   "angle": 311,
+   "frame": 188
+  },
+  {
+   "angle": 312,
+   "frame": 189
+  },
+  {
+   "angle": 313,
+   "frame": 190
+  },
+  {
+   "angle": 314,
+   "frame": 190
+  },
+  {
+   "angle": 315,
+   "frame": 191
+  },
+  {
+   "angle": 316,
+   "frame": 192
+  },
+  {
+   "angle": 317,
+   "frame": 193
+  },
+  {
+   "angle": 318,
+   "frame": 194
+  },
+  {
+   "angle": 319,
+   "frame": 195
+  },
+  {
+   "angle": 320,
+   "frame": 196
+  },
+  {
+   "angle": 321,
+   "frame": 197
+  },
+  {
+   "angle": 322,
+   "frame": 198
+  },
+  {
+   "angle": 323,
+   "frame": 198
+  },
+  {
+   "angle": 324,
+   "frame": 199
+  },
+  {
+   "angle": 325,
+   "frame": 200
+  },
+  {
+   "angle": 326,
+   "frame": 201
+  },
+  {
+   "angle": 327,
+   "frame": 202
+  },
+  {
+   "angle": 328,
+   "frame": 203
+  },
+  {
+   "angle": 329,
+   "frame": 204
+  },
+  {
+   "angle": 330,
+   "frame": 205
+  },
+  {
+   "angle": 331,
+   "frame": 206
+  },
+  {
+   "angle": 332,
+   "frame": 207
+  },
+  {
+   "angle": 333,
+   "frame": 208
+  },
+  {
+   "angle": 334,
+   "frame": 209
+  },
+  {
+   "angle": 335,
+   "frame": 210
+  },
+  {
+   "angle": 336,
+   "frame": 211
+  },
+  {
+   "angle": 337,
+   "frame": 212
+  },
+  {
+   "angle": 338,
+   "frame": 212
+  },
+  {
+   "angle": 339,
+   "frame": 213
+  },
+  {
+   "angle": 340,
+   "frame": 214
+  },
+  {
+   "angle": 341,
+   "frame": 215
+  },
+  {
+   "angle": 342,
+   "frame": 216
+  },
+  {
+   "angle": 343,
+   "frame": 217
+  },
+  {
+   "angle": 344,
+   "frame": 218
+  },
+  {
+   "angle": 345,
+   "frame": 219
+  },
+  {
+   "angle": 346,
+   "frame": 220
+  },
+  {
+   "angle": 347,
+   "frame": 221
+  },
+  {
+   "angle": 348,
+   "frame": 222
+  },
+  {
+   "angle": 349,
+   "frame": 223
+  },
+  {
+   "angle": 350,
+   "frame": 224
+  },
+  {
+   "angle": 351,
+   "frame": 225
+  },
+  {
+   "angle": 352,
+   "frame": 226
+  },
+  {
+   "angle": 353,
+   "frame": 226
+  },
+  {
+   "angle": 354,
+   "frame": 227
+  },
+  {
+   "angle": 355,
+   "frame": 228
+  },
+  {
+   "angle": 356,
+   "frame": 229
+  },
+  {
+   "angle": 357,
+   "frame": 230
+  },
+  {
+   "angle": 358,
+   "frame": 231
+  },
+  {
+   "angle": 359,
+   "frame": 232
+  }
+ ],
+ "notes": "Anchors 0/45/90/270/315 given (report.md). 180=f109: max arm-level span in back half (497px raw), peak L/R mirror symmetry (IoU .91), face/skin-offset in head region crosses zero, head-skin fraction at floor (hair only). 135=f087 and 225=f131: frames whose normalised width t=(span-profile)/(back-profile) equals the value measured at the given 45/315 anchors (t~0.71 at 0.40H; torso-row 0.30H cue agrees within 1 frame); report.md's independent estimates were f085(~134) and f129(~220). 360=f233: motion settles, width/symmetry plateau from f232-233; f233-f241 are a slow settle (frame diff <0.2/255) and f241 ~ f001 (thumb diff 0.9/255, span 565 vs 561 px, i.e. ~1% zoom drift) - so a loop should play f001..f232 and wrap to f001, skipping f233-f241. Speed non-uniform (frames per 45deg): 32,29,25,22,22,29,31,42 - fastest through the back (~2deg/frame), slowest easing into 360 (~1.1deg/frame); f001-f003 near-static start. Back-half frames are ~2% smaller/higher (camera drift, see report). Avoid f130-f131 soft edges if choosing a still; 225 maps to f131, neighbouring f132 is sharper. Profile facing: f062 faces viewer-left (= views/left), f160 faces viewer-right (= views/right). Turn direction: 0->90 turns her to face viewer-left, i.e. her own right side toward camera.",
+ "handoff": {
+  "apose": {
+   "frame": 1,
+   "scale": 1.55492,
+   "dx": 86.0,
+   "dy": -53.3,
+   "residual_px": {
+    "iou": 0.92,
+    "head_top": 0,
+    "foot_line": 0.0,
+    "foot_vs_base_mask_bottom": 0
+   },
+   "aniso_check": {
+    "sx": 1.52383,
+    "dx": 98.0,
+    "iou": 0.9439
+   }
+  },
+  "left": {
+   "frame": 62,
+   "scale": 1.54135,
+   "dx": 101.91,
+   "dy": -45.32,
+   "residual_px": {
+    "iou": 0.8789,
+    "head_top": 0,
+    "foot_line": 0.0,
+    "foot_vs_base_mask_bottom": 0
+   },
+   "aniso_check": {
+    "sx": 1.57218,
+    "dx": 89.9,
+    "iou": 0.8849
+   }
+  },
+  "right": {
+   "frame": 160,
+   "scale": 1.5452,
+   "dx": 100.08,
+   "dy": -49.62,
+   "residual_px": {
+    "iou": 0.857,
+    "head_top": 0,
+    "foot_line": 0.0,
+    "foot_vs_base_mask_bottom": 0
+   },
+   "aniso_check": {
+    "sx": 1.5761,
+    "dx": 88.1,
+    "iou": 0.8605
+   }
+  },
+  "back": {
+   "frame": 109,
+   "scale": 1.58301,
+   "dx": 80.36,
+   "dy": -41.32,
+   "residual_px": {
+    "iou": 0.8164,
+    "head_top": 0,
+    "foot_line": 0.0,
+    "foot_vs_base_mask_bottom": 0
+   },
+   "aniso_check": {
+    "sx": 1.53552,
+    "dx": 95.4,
+    "iou": 0.8404
+   }
+  },
+  "_doc": "base_x = scale*frame_x + dx, base_y = scale*frame_y + dy (frame px 768x1168 -> base px 1365x1739). Uniform scale from head top (mask top) and foot line (frame mask bottom edge -> y1682 apose / y1681 others); dx by max silhouette IoU. head_top/foot_line residuals are 0 by construction; foot_vs_base_mask_bottom = mapped foot minus base alpha bottom. aniso_check = best free-sx fit: IoU gain <=0.024, and profile sx goes the opposite way from front/back, so the leftover is pose difference (arm spread, stance, profile depth), not scale. Kept uniform. back f109 IoU is lower because the video's arms/stance are wider than views/back (see report.md), not misregistration."
+ }
+}

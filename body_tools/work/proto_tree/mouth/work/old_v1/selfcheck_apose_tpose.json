@@ -1,0 +1,186 @@
+{
+  "apose": {
+    "anchor": [
+      681,
+      286
+    ],
+    "bbox": [
+      657,
+      280,
+      704,
+      298
+    ],
+    "colors": {
+      "skin": "#B88155",
+      "upper": "#523017",
+      "lower": "#633B22",
+      "line": "#220C00",
+      "hl": "#E5C0AA",
+      "outline": "#220C00",
+      "inner": "#2E0D0B",
+      "teeth": "#F3ECE2",
+      "tongue": "#8E4440"
+    },
+    "checks": {
+      "rest": {
+        "changedPx": 858,
+        "uncoveredLipPx": 0,
+        "lipPx": 543,
+        "maxAlphaErr": 254.0,
+        "keyResidual": 0.0,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "M": {
+        "changedPx": 1009,
+        "uncoveredLipPx": 0,
+        "lipPx": 543,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.47016673834930395,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "smile": {
+        "changedPx": 1018,
+        "uncoveredLipPx": 0,
+        "lipPx": 543,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.47016673834930395,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "OH": {
+        "changedPx": 1022,
+        "uncoveredLipPx": 0,
+        "lipPx": 543,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.47016673834930395,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "AA": {
+        "changedPx": 1231,
+        "uncoveredLipPx": 0,
+        "lipPx": 543,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.4905300496575072,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "EE": {
+        "changedPx": 1009,
+        "uncoveredLipPx": 0,
+        "lipPx": 543,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.47016673834930395,
+        "blue": [
+          0,
+          0
+        ]
+      }
+    },
+    "baseMd5": "3af8a577400300aec9fcefb2f255d455"
+  },
+  "tpose": {
+    "anchor": [
+      682,
+      277
+    ],
+    "bbox": [
+      659,
+      272,
+      704,
+      289
+    ],
+    "colors": {
+      "skin": "#B98155",
+      "upper": "#563519",
+      "lower": "#643D1F",
+      "line": "#311100",
+      "hl": "#C9AA8F",
+      "outline": "#311100",
+      "inner": "#2E0D0B",
+      "teeth": "#F3ECE2",
+      "tongue": "#8E4440"
+    },
+    "checks": {
+      "rest": {
+        "changedPx": 837,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 254.0,
+        "keyResidual": 0.0,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "M": {
+        "changedPx": 979,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.5735708734845273,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "smile": {
+        "changedPx": 997,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.5735708734845273,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "OH": {
+        "changedPx": 981,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.5735708734845273,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "AA": {
+        "changedPx": 1126,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.5735708734845273,
+        "blue": [
+          0,
+          0
+        ]
+      },
+      "EE": {
+        "changedPx": 978,
+        "uncoveredLipPx": 0,
+        "lipPx": 524,
+        "maxAlphaErr": 0.35956924701588033,
+        "keyResidual": 0.5735708734845273,
+        "blue": [
+          0,
+          0
+        ]
+      }
+    },
+    "baseMd5": "48ca865da99761717902dd410abaf22f"
+  }
+}

@@ -1,0 +1,2 @@
+before_v1 root [0.0, 0.0] [0.0, 0.0] feet {'A': {'maxAbsToeHeelDxPx': 5, 'maxLiftPx': 0, 'maxSinkPx': 0}, 'B': {'maxAbsToeHeelDxPx': 5, 'maxLiftPx': 0, 'maxSinkPx': 0}} ipa {'sampledEvery': 4, 'max': 383, 'mean': 317.2, 'max_lt240': 275, 'mean_lt240': 201.1} mouth 48
+after_life root [-12.5, 12.491] [-0.288, -0.0] feet {'A': {'maxAbsToeHeelDxPx': 1, 'maxLiftPx': 1, 'maxSinkPx': 0}, 'B': {'maxAbsToeHeelDxPx': 1, 'maxLiftPx': 0, 'maxSinkPx': 0}} ipa {'sampledEvery': 4, 'max': 613, 'mean': 451.3, 'max_lt240': 389, 'mean_lt240': 306.6} mouth 2

@@ -1,0 +1,134 @@
+{
+ "view": "right",
+ "frame": 160,
+ "map": {
+  "scale": 1.5452,
+  "dx": 100.08,
+  "dy": -49.62
+ },
+ "iou_rest": 0.7525034505036267,
+ "iou_classifier_on_base": 0.941973047232762,
+ "silhouette": {
+  "dx": 13,
+  "dy": -2,
+  "iou_after": 0.8089175835834015,
+  "centroid_dxdy": [
+   10.9,
+   -2.1
+  ]
+ },
+ "bun": {
+  "dx": -1,
+  "dy": -6,
+  "iou_after": 0.9017480880287186,
+  "iou_at0": 0.8798767195369466,
+  "layer": 650
+ },
+ "fringe": {
+  "dx": 17,
+  "dy": 1,
+  "iou_after": 0.7936775876620885,
+  "iou_at0": 0.6230965341418039
+ },
+ "head_silhouette": {
+  "dx": 7,
+  "dy": 0,
+  "iou_after": 0.8954527570119724,
+  "iou_at0": 0.8823857768846465
+ },
+ "head_top_dy": -1,
+ "pose_fit": {
+  "iou": 0.8157478398442254,
+  "rot_deg_ccw": 3.0,
+  "scale": 1.0
+ },
+ "frame_only": [
+  {
+   "x": 765,
+   "y": 144,
+   "w": 22,
+   "h": 33,
+   "area": 233,
+   "below_live_hair_bottom": false
+  },
+  {
+   "x": 667,
+   "y": 203,
+   "w": 13,
+   "h": 29,
+   "area": 185,
+   "below_live_hair_bottom": false
+  },
+  {
+   "x": 565,
+   "y": 59,
+   "w": 18,
+   "h": 16,
+   "area": 158,
+   "below_live_hair_bottom": false
+  },
+  {
+   "x": 552,
+   "y": 94,
+   "w": 14,
+   "h": 39,
+   "area": 147,
+   "below_live_hair_bottom": false
+  }
+ ],
+ "live_only": [
+  {
+   "x": 648,
+   "y": 45,
+   "w": 26,
+   "h": 38,
+   "area": 488
+  },
+  {
+   "x": 724,
+   "y": 178,
+   "w": 12,
+   "h": 77,
+   "area": 264
+  },
+  {
+   "x": 704,
+   "y": 257,
+   "w": 16,
+   "h": 43,
+   "area": 197
+  }
+ ],
+ "strands": [
+  {
+   "id": "strand_01",
+   "px": 232,
+   "matched_frac": 0.6206896551724138
+  },
+  {
+   "id": "strand_01_tip",
+   "px": 205,
+   "matched_frac": 0.03902439024390244
+  },
+  {
+   "id": "strand_02",
+   "px": 259,
+   "matched_frac": 0.49034749034749037
+  },
+  {
+   "id": "strand_02_tip",
+   "px": 165,
+   "matched_frac": 0.0
+  },
+  {
+   "id": "strand_03",
+   "px": 202,
+   "matched_frac": 0.8514851485148515
+  },
+  {
+   "id": "strand_04",
+   "px": 110,
+   "matched_frac": 0.32727272727272727
+  }
+ ]
+}

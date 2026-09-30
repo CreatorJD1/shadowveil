@@ -1,0 +1,776 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>Shadowveil rig preview (contract v1.8)</title>
+<style>body{margin:0;background:#2a2a30;color:#ddd;font:13px system-ui;display:flex;height:100vh}
+#ui{width:300px;overflow:auto;padding:10px;background:#1c1c22}#ui h3{margin:12px 0 4px;font-size:13px;color:#fff}
+label{display:flex;justify-content:space-between;gap:6px;margin:2px 0}input[type=range]{width:150px}
+#stage{flex:1;display:flex;align-items:center;justify-content:center;overflow:hidden}canvas{background:#fff;max-height:98vh;max-width:100%;image-rendering:pixelated}
+button,select{margin:2px;background:#333;color:#eee;border:1px solid #555;padding:3px 7px}#status{white-space:pre-wrap;font-size:12px;color:#9f9;margin-top:8px}
+#stage{position:relative}#maskbox{position:absolute;overflow:hidden;pointer-events:none}#hairmask{position:absolute;opacity:0.45;pointer-events:none;image-rendering:pixelated}
+#layers{width:430px;overflow:auto;padding:6px 8px;background:#1c1c22;border-left:1px solid #333;font-size:12px}#layers h3{margin:4px 0;font-size:13px;color:#fff}
+.lrow{display:flex;align-items:center;gap:4px;white-space:nowrap;line-height:18px;border:1px solid transparent}.lrow.grp .lab{color:#fff;font-weight:600}.lrow.hov{border-color:#6af;background:#223}
+.lrow.hid .lab{opacity:.4;text-decoration:line-through}.lrow .exp{width:10px;cursor:pointer;color:#aaa}.lrow .solo{padding:0 4px;margin:0;font-size:10px}.lrow .solo.on{background:#a70;color:#fff}
+.lrow .lz{color:#8cf;margin-left:4px}.lrow .inf{color:#bbb;overflow:hidden;text-overflow:ellipsis}.lrow input{margin:0}
+#lpbadge{background:#a30;color:#fff;padding:1px 6px;border-radius:3px;font-weight:600}#lpnote{color:#999;font-size:11px}</style></head>
+<body><div id="ui">
+<b>Shadowveil rig preview</b> (contract v1.8)<br>
+<select id="view"><option>apose</option><option>tpose</option><option>left</option><option>right</option><option>back</option></select>
+<select id="zoom"><option value="full">Full body</option><option value="head">Head</option><option value="hands">Hands</option></select><br>
+<label><span>Body</span><select id="bodymode"><option value="auto">auto (skin if delivered)</option><option value="cut">cut parts</option><option value="skin">skin mesh</option></select></label>
+<label><span>Skin underlay (v1.5)</span><input type="checkbox" id="underlay" checked></label>
+<label><span>Posed filtering</span><select id="quality"><option value="linear">linear</option><option value="ss2" selected>2x supersampled</option><option value="nearest">nearest</option></select></label>
+<button id="rest">Reset to rest</button><button id="check">Rest check</button><button id="mq">Motion quality</button><button id="jt">Joint test</button><br>
+<label><span>Show original base.png</span><input type="checkbox" id="orig"></label>
+<label><span>Auto (blink, gaze, sway, idle)</span><input type="checkbox" id="auto"></label>
+<label><span>Life (v1.8, idle)</span><input type="range" id="life" min="0" max="1" step="0.05" value="1"></label>
+<label><span>Edge seal (v1.8)</span><select id="seal"><option value="1">on: seal abutting part edges</option><option value="0">off</option></select></label>
+<label><span>Auto style (v1.8)</span><select id="autostyle"><option value="idle">idle (rest mouth + soft smile, gaze drift)</option><option value="talk">talk (phrases, glances)</option></select></label>
+<label><span>Foot plant (v1.8)</span><select id="footplant"><option value="xy">on: foot line + planted foot x</option><option value="y">on: foot line only</option><option value="off">off</option></select></label>
+<label><span>Hair spring (v1.8)</span><select id="hairpreset"><option value="default">default 1.1 Hz / ζ 0.3</option><option value="A">A 4.0 Hz / ζ 0.8</option><option value="B">B 2.0 Hz / ζ 0.6</option></select></label>
+<label><span>Mouth switch (v1.8)</span><select id="mouthfade"><option value="35">35 ms crossfade</option><option value="0">hard cut</option></select></label>
+<div id="sliders"></div><div id="status"></div></div>
+<div id="stage"><canvas id="c" width="1365" height="1739"></canvas><div id="maskbox"><img id="hairmask" alt="" style="display:none"></div></div>
+<div id="layers"><button id="lptoggle">◂ hide</button> <b>Layers</b> <span id="lpbadge" style="display:none" title="drag-reorder override stored in this browser only (localStorage); rig.json is unchanged and rest checks ignore it">PREVIEW ORDER OVERRIDE ACTIVE</span>
+<div id="lpbody"><div id="lpnote">Preview only: show/hide, solo, hover-dim and drag-reorder affect this on-screen view only. rig.json is the source of truth; rest checks and tests ignore this panel. Order: first drawn (back) at top → last drawn (front) at bottom; number = layer, #n = draw index.</div>
+<button id="lppause">⏸ Pause</button><button id="lpstep">Step ⏭</button><select id="lpdt" title="step size"><option value="16.6667" selected>1/60 s</option><option value="8.3333">1/120 s</option><option value="33.3333">1/30 s</option><option value="10">10 ms</option><option value="5">5 ms</option><option value="1">1 ms</option><option value="70">70 ms</option></select>
+<button id="lpreset" title="clear the preview reorder override">Reset order</button><button id="lpclear">Clear hide/solo</button><br>
+<label style="justify-content:flex-start"><input type="checkbox" id="lpmask"> <span>Show hair erase mask (overlay, preview only)</span></label>
+<div id="lpclock" style="color:#9cf"></div><div id="lpsolo" style="color:#fc6"></div><div id="lptree"></div></div></div>
+<script>
+const W=1365,H=1739;
+// Dev guard: only authored images + transforms may reach the screen. Every shape/path/text/pixel-write call throws.
+function guard(ctx){for(const k of ['arc','arcTo','ellipse','stroke','fill','fillRect','strokeRect','rect','roundRect','lineTo','moveTo','bezierCurveTo','quadraticCurveTo','beginPath','closePath','clip','fillText','strokeText','putImageData','createLinearGradient','createRadialGradient','createConicGradient','createPattern']){ctx[k]=()=>{throw new Error('Contract violation: '+k+' is not allowed')}}return ctx}
+
+// ---- parameters (contract v1.2 section 3) ----
+const P={EyeLOpen:[0,1,1],EyeROpen:[0,1,1],EyeBallX:[-1,1,0],EyeBallY:[-1,1,0],MouthOpen:[0,1,0],MouthForm:[-1,1,0],HairSwayX:[-1,1,0],HairSwayY:[-1,1,0]};
+for(const h of['L','R']){for(const f of['Thumb','Index','Middle','Ring','Pinky'])P['Hand'+h+f]=[0,1,0];P['Hand'+h+'Spread']=[0,1,0];P['Hand'+h+'ThumbSpread']=[-1,1,0]}
+const BODY_PARAMS=['BodyLean','ShoulderL','ShoulderR','ElbowL','ElbowR','HipL','HipR','KneeL','KneeR','AnkleL','AnkleR','ToeL','ToeR'];
+for(const k of BODY_PARAMS)P[k]=[-1,1,0];
+// default body part -> parameter mapping (a body rig.json part may override with "param")
+const BODY_PARAM_OF={torso:'BodyLean',upperArm_L:'ShoulderL',upperArm_R:'ShoulderR',forearm_L:'ElbowL',forearm_R:'ElbowR',thigh_L:'HipL',thigh_R:'HipR',shin_L:'KneeL',shin_R:'KneeR',foot_L:'AnkleL',foot_R:'AnkleR',toes_L:'ToeL',toes_R:'ToeR'};
+// v1.3 toes: default limits when the toes part gives none (-1 -> -30 deg, +1 -> +20 deg)
+const BODY_LIMIT_DEFAULT={toes_L:[20,-30],toes_R:[20,-30]};
+const BODY_PARENT_OF={torso:'pelvis',upperArm_L:'torso',upperArm_R:'torso',forearm_L:'upperArm_L',forearm_R:'upperArm_R',thigh_L:'pelvis',thigh_R:'pelvis',shin_L:'thigh_L',shin_R:'thigh_R',foot_L:'shin_L',foot_R:'shin_R',toes_L:'foot_L',toes_R:'foot_R'};
+P.WristL=[-1,1,0];P.WristR=[-1,1,0]; // v1.4: hand rotation about the forearm wristPivot
+P.RootX=[-40,40,0];P.RootY=[-40,40,0]; // v1.8: root (pelvis) translation in px, whole px on screen; 0 at rest
+P.HeadTilt=[-1,1,0];P.HeadNod=[-1,1,0]; // v1.8: head roll x8 deg (+ = clockwise on screen) and pitch x6 deg (+ = chin down), about the neck seam
+const v={};for(const k in P)v[k]=P[k][2];
+const sl=document.getElementById('sliders');const inputs={};
+const groups={'Eyes':['EyeLOpen','EyeROpen','EyeBallX','EyeBallY'],'Mouth':['MouthOpen','MouthForm'],'Hair':['HairSwayX','HairSwayY']};
+for(const h of['L','R'])groups['Hand '+h+' (curl, all 3 joints)']=['Thumb','Index','Middle','Ring','Pinky','Spread','ThumbSpread'].map(f=>'Hand'+h+f).concat(['Wrist'+h]);
+groups['Body joints']=BODY_PARAMS;groups['Root (v1.8, px)']=['RootX','RootY'];groups['Head (v1.8)']=['HeadTilt','HeadNod'];
+const groupBox={};
+for(const g in groups){const box=document.createElement('div');groupBox[g]=box;const t=document.createElement('h3');t.textContent=g;box.appendChild(t);for(const k of groups[g]){const l=document.createElement('label');const s=document.createElement('span');s.textContent=k.replace(/^Hand[LR]/,'');const i=document.createElement('input');i.type='range';i.min=P[k][0];i.max=P[k][1];i.step=0.01;i.value=v[k];i.oninput=()=>{v[k]=+i.value;draw()};inputs[k]=i;l.append(s,i);box.appendChild(l)}sl.appendChild(box)}
+// only parameters that drive a delivered body part are enabled (e.g. ToeL/R need toes_L/R)
+function setBodyUI(on,used){const b=groupBox['Body joints'];b.style.display=on?'':'none';for(const k of BODY_PARAMS){const en=on&&(!used||used.has(k));inputs[k].disabled=!en;inputs[k].parentNode.style.opacity=en?1:0.4;if(!en)set(k,P[k][2])}}
+setBodyUI(false);groupBox['Root (v1.8, px)'].style.display='none';groupBox['Head (v1.8)'].style.display='none';
+const t2=document.createElement('h3');t2.textContent='Hand presets';sl.appendChild(t2);
+for(const [n,c] of Object.entries({Open:[0,0,0,0,0],Fist:[1,1,1,1,1],Point:[1,0,1,1,1],Peace:[1,0,0,1,1]})){const b=document.createElement('button');b.textContent=n;b.onclick=()=>{for(const h of['L','R'])['Thumb','Index','Middle','Ring','Pinky'].forEach((f,i)=>set('Hand'+h+f,c[i]));draw()};sl.appendChild(b)}
+function set(k,x){v[k]=x;inputs[k].value=x}
+const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
+const c=document.getElementById('c'),ctx=guard(c.getContext('2d'));
+const cache={};function img(u){if(!u)return Promise.resolve(null);if(!cache[u])cache[u]=new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=u+'?t='+Date.now()});return cache[u]}
+async function json(u){try{const r=await fetch(u+'?t='+Date.now());return r.ok?await r.json():null}catch(e){return null}}
+const partsOf=j=>j?(Array.isArray(j)?j:(Array.isArray(j.parts)?j.parts:null)):null;
+// views without a face: eyes/mouth are not requested at all (no 404s); an empty rig.json (no parts) counts as 'no part set'
+const NO_FACE_VIEWS=new Set(['back']);
+// file:null parts (hidden/placeholder, e.g. a far thigh sharing the near thigh's pivots) never override, dedupe or re-layer a part that has a file:
+// per id, the first part with a file wins; a file:null entry with the same id is dropped
+// face manifests are read null-safe: every optional field gets a neutral default (zero iris travel, 5 lid frames, empty grid, derived eye list)
+function normFace(eyes,mouth){const num=x=>Number.isFinite(+x)?+x:0;
+ if(eyes){if(!Array.isArray(eyes.eyes)||!eyes.eyes.every(e=>typeof e==='string'))eyes.eyes=[...new Set(eyes.parts.map(p=>(String(p.id).match(/^(.+)_white$/)||[])[1]).filter(Boolean))];
+  const L=eyes.irisLimitsPx&&typeof eyes.irisLimitsPx==='object'?eyes.irisLimitsPx:{};eyes.irisLimitsPx={dxAtXplus1:num(L.dxAtXplus1),dxAtXminus1:num(L.dxAtXminus1),dyAtYplus1:num(L.dyAtYplus1),dyAtYminus1:num(L.dyAtYminus1)};
+  if(eyes.params!=null&&typeof eyes.params!=='object')eyes.params=null}
+ if(mouth){if(!mouth.grid||typeof mouth.grid!=='object')mouth.grid={}}}
+function normParts(ps,warn,tag){if(!Array.isArray(ps))return ps;const withFile=new Set(ps.filter(p=>p&&p.file).map(p=>p.id));const seen=new Set();const out=[];
+ for(const p of ps){if(!p||p.id==null)continue;if(p.file){if(seen.has(p.id)){warn.push(tag+': duplicate part id '+p.id+' (later entry ignored)');continue}seen.add(p.id);out.push(p)}
+  else if(!withFile.has(p.id)&&!seen.has('0:'+p.id)){seen.add('0:'+p.id);out.push(p)}}
+ return out}
+
+// ---- global layer scheme (contract v1.2 section 5) ----
+// bands per owner; a manifest whose drawable parts are all integers inside its band(s) uses its numbers as-is,
+// otherwise (pre-v1.2 numbering) its parts are mapped into the band in the order the v1.1 renderer drew them.
+// hands may also use 210-219 (far hand in profile views, under the torso/pelvis at 220+)
+const BANDS={hair:[[100,199],[600,699]],body:[[200,299]],hands:[[300,399],[210,219]],eyes:[[400,499]],mouth:[[500,599]]};
+const inBand=(o,l)=>Number.isInteger(l)&&BANDS[o].some(([a,b])=>l>=a&&l<=b);
+const drawable=ps=>ps.filter(p=>p.file);
+function isV12(o,ps){const d=drawable(ps);return d.length>0&&d.every(p=>inBand(o,p.layer))}
+const byLayer=ps=>ps.map((p,i)=>[p,i]).sort((a,b)=>((a[0].layer??0)-(b[0].layer??0))||(a[1]-b[1])).map(x=>x[0]);
+function resolveLayers(r){const Z={},S={};
+ if(r.hair){const ps=r.hair;if(isV12('hair',ps)){S.hair='v1.2';for(const p of ps)Z['hair:'+p.id]=p.layer}
+  else{S.hair='legacy (mapped)';let b=0,f=0;for(const p of ps)if(p.id==='hair_back')Z['hair:'+p.id]=100+Math.min(b++,99);for(const p of byLayer(ps.filter(p=>p.id!=='hair_back')))Z['hair:'+p.id]=600+Math.min(f++,99)}}
+ if(r.body){const ps=r.body.parts;if(isV12('body',ps)){S.body='v1.2';for(const p of ps)Z['body:'+p.id]=p.layer}else{S.body='out of band (mapped by order)';let n=0;for(const p of byLayer(ps))Z['body:'+p.id]=200+Math.min(n++,99)}}
+ else{S.body='base_body.png';Z['body:base_body']=220}
+ if(r.hands){const ps=r.hands.parts;if(isV12('hands',ps)){S.hands='v1.2';for(const p of ps)Z['hands:'+p.id]=p.layer}else{S.hands='legacy (mapped)';let n=0;for(const p of byLayer(ps))if(p.file)Z['hands:'+p.id]=300+Math.min(n++,99)}}
+ if(r.eyes){const ps=r.eyes.parts,by={};for(const p of ps)by[p.id]=p;
+  if(isV12('eyes',ps)){S.eyes='v1.2';for(const p of ps)Z['eyes:'+p.id]=p.layer}
+  else{S.eyes='legacy (mapped)';r.eyes.eyes.forEach((E,i)=>{for(const p of ps){if(!p.id.startsWith(E+'_'))continue;const s=p.id.slice(E.length+1);Z['eyes:'+p.id]=400+i*10+(s==='white'||s==='iris'?0:s.startsWith('lid_')?1:2)}})}}
+ if(r.mouth){const ps=r.mouth.parts;if(isV12('mouth',ps)){S.mouth='v1.2';for(const p of ps)Z['mouth:'+p.id]=p.layer}else{S.mouth='legacy (mapped)';for(const p of ps)Z['mouth:'+p.id]=500}}
+ r.z=Z;r.scheme=S}
+
+let R=null,view='apose',mouthState={cur:'mouth_rest',prev:null,t0:0};
+async function load(){view=document.getElementById('view').value;for(const k in cache)delete cache[k];const b='../views/'+view+'/';
+ const noFace=NO_FACE_VIEWS.has(view);
+ let [eyes,mouth,hands,hair,body]=await Promise.all(['eyes','mouth','hands','hair','body'].map(s=>(noFace&&(s==='eyes'||s==='mouth'))?null:json(b+s+'/rig.json')));
+ const warn0=[],empty=[];
+ const set0=(s,j)=>{if(!j||typeof j!=='object')return null;if(Array.isArray(j))j={parts:j};const ps=partsOf(j);if(!ps||!ps.length){empty.push(s);return null}return Object.assign({},j,{parts:normParts(ps,warn0,s)})};
+ eyes=set0('eyes',eyes);mouth=set0('mouth',mouth);hands=set0('hands',hands);body=set0('body',body);
+ normFace(eyes,mouth);
+ const hairParts=hair?normParts(partsOf(hair)||[],warn0,'hair'):null;
+ const r={eyes,mouth,hands,hair:hairParts,hairCfg:(hair&&!Array.isArray(hair))?hair:{},body:null,im:{},frames:{},missing:[],warn:warn0,empty,noFace};
+ r.im.base=await img(b+'base.png');r.im.body=await img(b+'base_body.png');
+ for(const [s,j] of [['eyes',eyes],['mouth',mouth],['hands',hands]]){if(!j){if(!(noFace&&s!=='hands')&&!empty.includes(s))r.missing.push(s);continue}for(const p of j.parts)if(p.file)r.im[s+':'+p.id]=await img(b+s+'/'+p.file)}
+ if(r.hair){for(const p of r.hair)if(p.file)r.im['hair:'+p.id]=await img(b+'hair/'+p.file)}else r.missing.push('hair');
+ // body joints: active only when views/<view>/body/rig.json lists parts that load
+ const bp=partsOf(body);
+ if(bp&&bp.length){let n=0;for(const p of bp)if(p.file){const i=await img(b+'body/'+p.file);if(i){r.im['body:'+p.id]=i;n++}else r.warn.push('body part file missing: '+p.file)}
+  if(n)r.body={cfg:Array.isArray(body)?{}:body,parts:bp}}
+ // finger frames <part>_f0..f2.png (declared via part.frames, or probed); f0 must equal the part
+ if(hands){for(const p of hands.parts){if(!p.file||!/^[LR]_(Thumb|Index|Middle|Ring|Pinky)\d$/.test(p.id))continue;const stem=p.file.replace(/\.png$/i,'');
+  // frames come from the part's "frames" field only: entries are "file.png" or {file, pivot:[x,y], childPivot:[x,y]}
+  if(!Array.isArray(p.frames)||!p.frames.length)continue;
+  const list=p.frames.map(e=>typeof e==='string'?{file:e}:e);const fr=[];let bad=null;
+  for(let k=0;k<(list?list.length:3);k++){const e=list?list[k]:{file:stem+'_f'+k+'.png'};const i=e&&e.file?await img(b+'hands/'+e.file):null;if(!i){if(list)bad=p.id+': frame file missing: '+(e&&e.file);break}fr.push({img:i,file:e.file,pivot:pt(e.pivot),childPivot:pt(e.childPivot),layer:e.layer!=null&&e.layer!==''&&Number.isInteger(+e.layer)?+e.layer:null})}
+  if(bad)r.warn.push(bad+'; frames ignored');
+  else if(fr.length){const base=r.im['hands:'+p.id];const f0=fr[0];const child=hands.parts.find(q=>q.parent===p.id);const near=(a,x,y)=>!a||Math.hypot(a[0]-x,a[1]-y)<0.01;
+   if(fr.some(f=>f.img.naturalWidth!==W||f.img.naturalHeight!==H))r.warn.push(p.id+': frame canvas is not '+W+'x'+H+'; frames ignored');
+   else if(base&&!sameImage(f0.img,base))r.warn.push(p.id+': f0 differs from '+p.file+' (rest would change); frames ignored');
+   else if(!near(f0.pivot,p.pivotX,p.pivotY)||(child&&!near(f0.childPivot,child.pivotX,child.pivotY)))r.warn.push(p.id+': f0 pivot/childPivot differ from the part (rest would change); frames ignored');
+   else r.frames[p.id]=fr}}}
+ // v1.4 skin mesh: views/<view>/body/skin.json, or ?skin=draft -> rig/skin_tools/drafts/<view>_skin.json
+ // requested only when listed (body/rig.json "skin": "skin.json") or forced by ?skin=draft|<file>, so views without a skin make no 404 request
+ const skinQ=new URLSearchParams(location.search).get('skin');const skinDecl=body&&!Array.isArray(body)&&typeof body.skin==='string'?body.skin:null;
+ const skinUrl=skinQ==='draft'?'skin_tools/drafts/'+view+'_skin.json':(skinQ&&skinQ.startsWith('draft:')&&skinQ.slice(6).startsWith(view+'_'))?'skin_tools/drafts/'+skinQ.slice(6):(skinQ&&skinQ.startsWith('draft:'))?(skinDecl?b+'body/'+skinDecl:null):(skinQ&&skinQ!=='off'?b+'body/'+skinQ:(skinDecl?b+'body/'+skinDecl:null));
+ const sj=(skinQ==='off'||!skinUrl)?null:await json(skinUrl);if(sj){try{r.skin=await loadSkin(sj,b,r,skinUrl)}catch(e){r.warn.push('skin '+skinUrl+' rejected: '+e.message);r.skin=null}}
+ await trimAll(r);if(eyes)for(const E of eyes.eyes)for(const id of lidIds(eyes,E))if(!r.im['eyes:'+id])r.warn.push('eye lid frame '+id+' not in eyes rig.json / not loaded');resolveLayers(r);r.mouthShapes=buildMouthShapes(r);r.hairInfo=hairChains(r.hair||[]);
+ // wrist check: palm pivot should sit on its forearm's wristPivot
+ if(r.body&&hands){const by={};for(const p of r.body.parts)by[p.id]=p;for(const p of hands.parts){if(!/_palm$/.test(p.id)||!p.file||p.hidden)continue;const fa=by[palmParent(p)];if(!fa)continue;const wp=pt(fa.wristPivot);if(!wp){r.warn.push(fa.id+' has no wristPivot');continue}if(Math.hypot(wp[0]-(p.pivotX||0),wp[1]-(p.pivotY||0))>2)r.warn.push(p.id+' pivot is '+Math.hypot(wp[0]-p.pivotX,wp[1]-p.pivotY).toFixed(1)+' px from '+fa.id+'.wristPivot')}}
+ if(hands)for(const p of hands.parts){if(p.layerCurled!=null&&p.layerCurled!==''&&Number.isInteger(+p.layerCurled))p.layerCurled=+p.layerCurled;if(p.curlLayerAt!=null&&Number.isFinite(+p.curlLayerAt))p.curlLayerAt=+p.curlLayerAt;
+  if(p.layerCurled!=null&&(!Number.isInteger(p.layerCurled)||!inBand('hands',p.layerCurled)))r.warn.push(p.id+': layerCurled '+p.layerCurled+' outside the hands band; ignored');
+  for(const f of (r.frames[p.id]||[]))if(f.layer!=null&&!inBand('hands',f.layer)){r.warn.push(p.id+': frame layer '+f.layer+' outside the hands band; ignored');f.layer=null}}
+ R=r;const drv=new Set();if(r.body)r.body.parts.filter(p=>p.file).forEach(p=>{const k=bodyParamOf(p);if(k)drv.add(k)});if(r.skin)r.skin.bones.forEach(p=>{if(p.param)drv.add(p.param)});setBodyUI(!!(r.body||r.skin),drv);groupBox['Root (v1.8, px)'].style.display=(r.body||r.skin)?'':'none';groupBox['Head (v1.8)'].style.display=(r.body||r.skin)?'':'none';r.neck=neckSetup(r);r.feet=footSetup(r);r.eyeW=eyeWidth(r);
+ R=r;LP.key='';LP.loadOvr();if(location.hash.includes('check'))setTimeout(()=>document.getElementById('check').click(),0);
+ status((r.missing.length?'Not delivered yet for '+view+': '+r.missing.join(', '):'All part sets loaded for '+view)+(r.skin?'\nbody: skin mesh '+r.skin.src+' ('+r.skin.nv+' vertices, '+r.skin.nt+' triangles, groups '+r.skin.groups.map(g=>g.layer).join('/')+')'+(r.skin.underlay?(r.skin.underlay.ok?'\nskin underlay: '+r.skin.underlay.src+' ('+r.skin.underlay.nt+' triangles, layer '+r.skin.underlay.z+', rest footprint '+r.skin.underlay.check.footprintPx+' px fully hidden)':'\nskin underlay REJECTED: '+r.skin.underlay.reason):''):'')+(r.body?'\nbody: '+Object.keys(r.im).filter(k=>k.startsWith('body:')).length+' jointed parts':(r.im.body?'':'\nbase_body.png missing, using base.png'))+'\nlayers: '+Object.entries(r.scheme).map(([k,x])=>k+'='+x).join(', ')+'\nmouth shapes: '+r.mouthShapes.map(s=>s.name).join(', ')+(Object.keys(r.frames).length?'\nfinger frames: '+Object.keys(r.frames).length+' segments':'')+(r.warn.length?'\nWARN: '+r.warn.join('\nWARN: '):''));draw()}
+// v1.3 performance: parts are full-canvas PNGs; crop each to its alpha bounding box once at load (exact pixel copy)
+// and remember the integer offset (ox, oy). drawM adds the offset, so output is identical, only faster.
+function trim(i){if(!i||i.ox!=null)return i;const w=i.naturalWidth||i.width,h=i.naturalHeight||i.height;const o=document.createElement('canvas');o.width=w;o.height=h;const q=guard(o.getContext('2d'));q.drawImage(i,0,0);const d=q.getImageData(0,0,w,h).data;
+ let x0=w,y0=h,x1=-1,y1=-1;for(let y=0;y<h;y++){const row=y*w*4;for(let x=0;x<w;x++)if(d[row+x*4+3]){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;y1=y}}
+ const t=document.createElement('canvas');if(x1<0){t.width=1;t.height=1;t.ox=0;t.oy=0;t.empty=true;return t}t.width=x1-x0+1;t.height=y1-y0+1;const tq=guard(t.getContext('2d'));tq.drawImage(o,x0,y0,t.width,t.height,0,0,t.width,t.height);t.ox=x0;t.oy=y0;return t}
+async function trimAll(r){for(const k in r.im)if(k!=='base'&&k!=='body')r.im[k]=trim(r.im[k]);for(const id in r.frames)for(const f of r.frames[id])f.img=trim(f.img)}
+function sameImage(a,b){const f=x=>{const o=document.createElement('canvas');o.width=W;o.height=H;const q=guard(o.getContext('2d'));q.drawImage(x,0,0);return q.getImageData(0,0,W,H).data};const A=f(a),B=f(b);for(let i=0;i<A.length;i++)if(A[i]!==B[i])return false;return true}
+const pt=w=>Array.isArray(w)?w:(w&&w.x!=null?[w.x,w.y]:null);
+const palmParent=p=>p.parentExternal||('forearm_'+p.id[0]);
+function status(s){document.getElementById('status').textContent=s}
+function mul(a,b){return[a[0]*b[0]+a[2]*b[1],a[1]*b[0]+a[3]*b[1],a[0]*b[2]+a[2]*b[3],a[1]*b[2]+a[3]*b[3],a[0]*b[4]+a[2]*b[5]+a[4],a[1]*b[4]+a[3]*b[5]+a[5]]}
+/* v1.8: only an exactly zero angle is identity (no 0.01 deg snap) */function rotAt(px,py,deg){if(!(Math.abs(deg)>0))return I;const t=deg*Math.PI/180,c=Math.cos(t),s=Math.sin(t);return[c,s,-s,c,px-c*px+s*py,py-s*px-c*py]}
+const I=[1,0,0,1,0,0];const T=(dx,dy)=>[1,0,0,1,dx,dy];
+// v1.8 root: translate every body bone/part (and so hands, face and hair) by whole px RootX/RootY; never at rest
+// v1.8 head: HeadTilt (roll, 8 deg) and HeadNod (pitch, 6 deg) on the body's head part/bone, about the neck seam centre.
+// Profiles: nod is a real rotation (forward = the view's facing side), tilt is not drawn (roll is about the line of sight's normal).
+// Front/back: tilt is a rotation; nod is a vertical offset of HEAD_NOD_PX (+ = down) with no in-plane rotation (that would read as tilt).
+// Skin: head vertices blend head->torso over NECK_GATE_PX from the seam (renderer-side weights, skin.json untouched), so the seam never opens.
+const HEAD_TILT_DEG=8,HEAD_NOD_DEG=6,HEAD_NOD_PX=4,NECK_GATE_PX=36;
+function headFacing(){const vw=document.getElementById('view').value;return vw==='left'?-1:vw==='right'?1:0}
+function headLocal(){const N=R&&R.neck;if(!N)return null;const t=clamp(v.HeadTilt||0,-1,1),n=clamp(v.HeadNod||0,-1,1);if(!t&&!n)return null;const f=headFacing();
+ if(f)return n?rotAt(N.x,N.y,f*n*HEAD_NOD_DEG):null;return mul(T(0,n*HEAD_NOD_PX),rotAt(N.x,N.y,t*HEAD_TILT_DEG))}
+function headApply(BM,rest,key){if(rest||!key||!BM[key])return BM;const L=headLocal();if(L)BM[key]=mul(BM[key],L);return BM}
+function neckSetup(r){const Sk=r.skin;const hb=Sk?Sk.headBone:null;
+ if(!Sk){const hp=r.body&&r.body.parts.find(p=>p.id===((r.body.cfg&&r.body.cfg.headPart)||'head'));return hp?{x:hp.pivotX,y:hp.pivotY,n:0,gated:false,note:'cut parts: no seam gate'}:null}
+ const hi=Sk.bones.findIndex(b=>b.id===hb);if(hi<0)return null;const ti=Sk.bones.findIndex(b=>b.id===Sk.bones[hi].parent);if(ti<0)return null;
+ const dom=(M,i)=>{let b=-1,w=-1;for(let k=0;k<4;k++){if(M.ww[i*4+k]>w){w=M.ww[i*4+k];b=M.wb[i*4+k]}}return b};
+ const cell=new Map(),key=(x,y)=>(Math.floor(x/2)*100003+Math.floor(y/2));for(let i=0;i<Sk.nv;i++)if(dom(Sk,i)!==hi){const k=key(Sk.V[2*i],Sk.V[2*i+1]);if(!cell.has(k))cell.set(k,[]);cell.get(k).push(i)}
+ const seam=[];for(let i=0;i<Sk.nv;i++)if(dom(Sk,i)===hi){const x=Sk.V[2*i],y=Sk.V[2*i+1];let hit=false;for(let a=-1;a<=1&&!hit;a++)for(let b=-1;b<=1&&!hit;b++){const L=cell.get((Math.floor(x/2)+a)*100003+Math.floor(y/2)+b);if(L)for(const j of L)if(Math.hypot(Sk.V[2*j]-x,Sk.V[2*j+1]-y)<=1.5){hit=true;break}}if(hit)seam.push([x,y])}
+ if(!seam.length)return{x:Sk.bones[hi].pivot?Sk.bones[hi].pivot[0]:W/2,y:Sk.bones[hi].pivot?Sk.bones[hi].pivot[1]:H/3,n:0,gated:false,note:'no seam found'};
+ const cx=seam.reduce((a,p)=>a+p[0],0)/seam.length,cy=seam.reduce((a,p)=>a+p[1],0)/seam.length;
+ const gate=M=>{let n=0;for(let i=0;i<M.nv;i++){if(dom(M,i)!==hi)continue;const x=M.V[2*i],y=M.V[2*i+1];let d=1e9;for(const p of seam){const e=Math.hypot(p[0]-x,p[1]-y);if(e<d)d=e}
+  if(d>=NECK_GATE_PX)continue;const u=d/NECK_GATE_PX,w=Math.fround(u*u*(3-2*u));for(let k=0;k<4;k++){M.wb[i*4+k]=0;M.ww[i*4+k]=0}M.wb[i*4]=hi;M.ww[i*4]=w;M.wb[i*4+1]=ti;M.ww[i*4+1]=Math.fround(1-w);n++}return n};
+ const n=gate(Sk);let nu=0;const U=Sk.underlay;if(U&&U.wb&&U.wb!==Sk.wb&&U.V)nu=gate(U);
+ return{x:cx,y:cy,n:seam.length,gatedVerts:n,gatedUnderlay:nu,gated:true,L:NECK_GATE_PX}}
+function rootApply(BM,rest){if(rest)return BM;const dx=Math.round(clamp(v.RootX||0,-rootLim(),rootLim())),dy=Math.round(clamp(v.RootY||0,-rootLim(),rootLim()));if(!dx&&!dy)return BM;const RT=T(dx,dy);for(const k in BM)BM[k]=mul(RT,BM[k]);return BM}
+// ext(p): world matrix for a root whose parent is outside this manifest (hand palm -> body forearm)
+function chain(parts,angle,ext,parentOf){const by={},M={};for(const p of parts)by[p.id]=p;const par=parentOf||(p=>p.parent);
+ function m(id){if(M[id])return M[id];const p=by[id];if(!p)return I;const q=par(p);const base=q&&by[q]?m(q):(ext?ext(p):I);return M[id]=mul(base,rotAt(p.pivotX||0,p.pivotY||0,angle(p)))}for(const p of parts)m(p.id);return M}
+// v1.3 pixel snap: axis-aligned transforms are snapped to whole pixels and drawn without smoothing (exact copies);
+// rotated transforms always use high-quality smoothing so the filter never toggles between frames (no shimmer).
+const isAxis=M=>Math.abs(M[1])<1e-9&&Math.abs(M[2])<1e-9&&Math.abs(M[0]-1)<1e-9&&Math.abs(M[3]-1)<1e-9;
+// v1.8: POSED is set by render(); in posed frames an axis-aligned transform is drawn pixel-exact only when its offset is already whole px
+let POSED=false;const isWhole=M=>M[4]===Math.round(M[4])&&M[5]===Math.round(M[5]);
+// v1.4: g.__S = composite supersampling scale (1 normally, 2 for "2x supersampled" posed frames); QUAL = posed filter mode
+let QUAL='ss2'; // v1.8: posed frames default to 2x supersampled so every angle (incl. exactly 0) goes through one resampling path
+function drawM(g,im,M,alpha){if(!im||im.empty)return;g.save();const ox=im.ox||0,oy=im.oy||0,S=g.__S||1;
+ if(isAxis(M)&&!POSED){g.setTransform(S,0,0,S,S*Math.round(M[4]),S*Math.round(M[5]));g.imageSmoothingEnabled=false}else{g.setTransform(S*M[0],S*M[1],S*M[2],S*M[3],S*M[4],S*M[5]);g.imageSmoothingEnabled=QUAL!=='nearest';g.imageSmoothingQuality='high'}
+ g.globalAlpha=(alpha!=null?alpha:g.globalAlpha)*DIM;g.drawImage(im,ox,oy);g.restore()}
+function handAngle(j){const sp=j.spread||{};return p=>{const m=p.id.match(/^([LR])_(Thumb|Index|Middle|Ring|Pinky)(\d)$/);if(!m)return 0;const[_,h,f,n]=m;let a=(v['Hand'+h+f]||0)*(p.maxCurlDeg||0);
+ if(n==='1'){const S=sp['Hand'+h+'Spread'];if(S&&S.fingers&&S.fingers[f])a+=v['Hand'+h+'Spread']*S.fingers[f].maxSpreadDeg;const T=sp['Hand'+h+'ThumbSpread'];if(f==='Thumb'&&T){const x=v['Hand'+h+'ThumbSpread'];a+=x>=0?x*T.degAtPlus1:Math.abs(x)*T.degAtMinus1}}return a}}
+// nearest finger frame by that segment's curl: index = clamp(floor(curl*(n-1)+0.5)); 0 -> f0, 1 (max curl) -> last frame
+function frameOf(p,rest){const fr=R.frames[p.id];if(!fr)return null;if(rest)return fr[0];const m=p.id.match(/^([LR])_(\w+?)\d$/);const cu=clamp(v['Hand'+m[1]+m[2]]||0,0,1);return fr[clamp(Math.floor(cu*(fr.length-1)+0.5),0,fr.length-1)]}
+// hand chain with per-frame pivot override and child attachment at the parent's current-frame childPivot
+function handChain(parts,angle,ext,rest){const by={},M={};for(const p of parts)by[p.id]=p;
+ function m(id){if(M[id])return M[id];const p=by[id];if(!p)return I;const f=frameOf(p,rest);const piv=(f&&f.pivot)||[p.pivotX||0,p.pivotY||0];const q=p.parent&&by[p.parent];let base,off=[0,0];
+  if(q){base=m(q.id);const pf=frameOf(q,rest);if(pf&&pf.childPivot)off=[pf.childPivot[0]-piv[0],pf.childPivot[1]-piv[1]]}else base=ext(p);
+  return M[id]=mul(base,mul(T(off[0],off[1]),rotAt(piv[0],piv[1],angle(p))))}
+ for(const p of parts)m(p.id);return M}
+// v1.3 layerCurled: a finger segment sorts at layerCurled once its curl >= curlLayerAt (default 0.5), e.g. to tuck behind the palm.
+// Only for v1.2-numbered hand manifests and only when layerCurled is inside the hands band(s); rest always uses layer.
+function handLayer(p,rest){const z=R.z['hands:'+p.id];if(!rest&&R.scheme.hands==='v1.2'){const f=frameOf(p,false);if(f&&f.layer!=null)return f.layer}if(rest||!Number.isInteger(p.layerCurled)||R.scheme.hands!=='v1.2'||!inBand('hands',p.layerCurled))return z;
+ const m=p.id.match(/^([LR])_(Thumb|Index|Middle|Ring|Pinky)\d$/);if(!m)return z;const at=Number.isFinite(p.curlLayerAt)?p.curlLayerAt:0.5;return clamp(v['Hand'+m[1]+m[2]]||0,0,1)>=at?p.layerCurled:z}
+function bodyParamOf(p){if('param' in p)return p.param;const pm=R.body&&R.body.cfg.paramMap;if(pm){for(const k in pm)if(pm[k]===p.id)return k}return BODY_PARAM_OF[p.id]??null}
+// v1.8 stress: render-only clamp bypass for Body's stressTest clips (wanted angles beyond +-1, root beyond +-40 px); default off
+let STRESS=false;function stressEnable(clip){STRESS=!!(clip&&clip.stressTest===true);return STRESS}const rootLim=()=>STRESS?400:40;
+function bodyAngle(p){const k=bodyParamOf(p);if(!k||!(k in v))return 0;const x=STRESS?(+v[k]||0):clamp(v[k],-1,1);const lim=(p.maxDeg??p.maxRotDeg)==null&&p.degAtPlus1==null&&p.degAtMinus1==null?BODY_LIMIT_DEFAULT[p.id]:null;const mx=p.maxDeg??p.maxRotDeg??0;const rd=Number.isFinite(p.rotDir)?p.rotDir:1;const up=p.degAtPlus1??(lim?lim[0]:rd*mx),dn=p.degAtMinus1??(Number.isFinite(p.minRotDeg)?rd*p.minRotDeg:(lim?lim[1]:-rd*mx));return x>=0?x*up:Math.abs(x)*dn}
+// ---- mouth shapes (v1.3: optional half-open row) ----
+// coordinates: the shape's own rig.json part entry (MouthOpen/MouthForm) > rig.json grid[name] > built-in defaults.
+const MOUTH_DEFAULT={rest:[0,0],M:[0,-1],smile:[0,1],OH:[1,-1],AA:[1,0],EE:[1,1],OH_half:[0.5,-1],AA_half:[0.5,0],EE_half:[0.5,1]};
+function buildMouthShapes(r){if(!r.mouth)return[];const g=r.mouth.grid||{},out=[];
+ r.mouth.parts.forEach((p,idx)=>{if(!p.file||!/^mouth_/.test(p.id))return;const name=p.id.slice(6);
+  let o=null;if(Number.isFinite(p.MouthOpen)&&Number.isFinite(p.MouthForm))o=[p.MouthOpen,p.MouthForm];else if(g[name]&&typeof g[name]==='object'&&Number.isFinite(g[name].MouthOpen))o=[g[name].MouthOpen,g[name].MouthForm];else if(MOUTH_DEFAULT[name])o=MOUTH_DEFAULT[name];
+  if(!o){r.warn.push('mouth shape '+p.id+' has no MouthOpen/MouthForm coordinates; ignored');return}
+  if(!r.im['mouth:'+p.id]){r.warn.push('mouth shape '+p.id+' image missing; ignored');return}
+  out.push({id:p.id,name,open:clamp(o[0],0,1),form:clamp(o[1],-1,1),idx})});
+ return out}
+// nearest shape in (MouthOpen, MouthForm); ties prefer rest, then more closed shapes, then manifest order
+// v1.3 eye lid frames: count or list from the eye rig.json, else 5 (<E>_lid_0..4). Accepted forms:
+// "lidFrames": n | ["lid_0",...|"<E>_lid_0",...|"EyeL_lid_0",...] | {"EyeL": n|[...], "EyeR": ...}; or params.<E>Open.frames as n|[...]
+function lidIds(j,E){if(j._lid&&j._lid[E])return j._lid[E];const pick=x=>{if(typeof x==='string'&&/^\d+$/.test(x))x=+x;if(Number.isInteger(x)&&x>=1)return Array.from({length:x},(_,k)=>E+'_lid_'+k);
+  if(Array.isArray(x)&&x.length)return x.map(n=>{n=String(n).replace('<E>',E).replace(/\.png$/i,'');return n.startsWith(E+'_')?n:E+'_'+n});return null};
+ let lf=j.lidFrames;if(lf&&!Array.isArray(lf)&&typeof lf==='object')lf=lf[E];const pf=j.params&&typeof j.params==='object'&&j.params[E+'Open']&&j.params[E+'Open'].frames;
+ const ids=pick(lf)||pick(pf)||pick(5);(j._lid=j._lid||{})[E]=ids;return ids}
+// v1.8 talk driver: while auto talk is running, EE, EE_half and smile are not picked
+const TALK_EXCLUDE=new Set(['EE','EE_half','smile','anger']);let mouthTalk=false;
+function mouthPick(){const S0=R.mouthShapes;const S=mouthTalk&&S0?S0.filter(s=>!TALK_EXCLUDE.has(s.name)):S0;if(!S||!S.length)return'mouth_rest';const mo=clamp(v.MouthOpen,0,1),mf=clamp(v.MouthForm,-1,1);let best=null,bk=null;
+ const lt=(a,b)=>{for(let i=0;i<a.length;i++){if(a[i]!==b[i])return a[i]<b[i]}return false};
+ for(const s of S){const k=[Math.round(Math.hypot(s.open-mo,s.form-mf)*1e9),s.name==='rest'?1:0,s.open,s.idx];if(!bk||lt(k,bk)){best=s;bk=k}}return best.id}
+const MOUTH_HOLD_MS=120,MOUTH_HOLD_TARGET_MS=125;let MOUTH_FADE_MS=35;let holdLog=null; // v1.8: min hold 120 ms (target 125), crossfade 35 ms or 0 = hard cut
+function mouthUpdate(now){const want=mouthPick(),st=mouthState;if(want===st.cur)return false;
+ if(now-st.t0<MOUTH_HOLD_MS)return true; // hold the current shape at least 70 ms: no flicker
+ if(holdLog&&st.t0>-1e8)holdLog.push(now-st.t0);mouthState={prev:st.cur,cur:want,t0:now};return false}
+
+// ---- hair chains (v1.3): strands may be chained root->mid->tip via parent ----
+function hairChains(hair){const by={},info={};for(const p of hair)by[p.id]=p;const sw=p=>(p.swayWeight||0)>0;
+ for(const p of hair){let q=p,d=0;while(q.parent&&by[q.parent]&&sw(by[q.parent])){q=by[q.parent];d++}info[p.id]={root:q.id,depth:d,parent:(p.parent&&by[p.parent]&&sw(by[p.parent]))?p.parent:null,sway:sw(p)}}
+ return info}
+let hairDrive=null,simNow=null,renderIssues=new Set();
+const need=(k,im)=>{if(!im)renderIssues.add(k);return im};
+
+// ---- v1.4 skinned body mesh (linear blend skinning of the authored body image; WebGL textured triangles only) ----
+// ---- v1.5 optional underlay: a second textured mesh drawn beneath the main skin, fully hidden at rest ----
+function useSkin(){if(!R||!R.skin)return false;const e=document.getElementById('bodymode');return !e||e.value!=='cut'}
+function useUnderlay(){const e=document.getElementById('underlay');return !!(R&&R.skin&&R.skin.underlay&&R.skin.underlay.ok&&(!e||e.checked))}
+function parseWeights(list,nv,nb,bad,tag){const wb=new Int32Array(nv*4),ww=new Float32Array(nv*4);if(!Array.isArray(list)||list.length!==nv)bad(tag+'weights length '+(list&&list.length)+' != vertices '+nv);
+ list.forEach((wl,i)=>{if(!Array.isArray(wl)||wl.length<1||wl.length>4)bad(tag+'vertex '+i+': '+(wl&&wl.length)+' influences (1..4)');let sum=0;wl.forEach(([bi,w],k)=>{if(!(bi>=0&&bi<nb))bad(tag+'vertex '+i+': bone index '+bi);wb[i*4+k]=bi;ww[i*4+k]=w;sum+=w});if(Math.abs(sum-1)>1e-3)bad(tag+'vertex '+i+': weights sum '+sum.toFixed(4))});return{wb,ww}}
+function glTex(gl,image){const tex=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tex);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,true);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);
+ gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);for(const k of[gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T])gl.texParameteri(gl.TEXTURE_2D,k,gl.CLAMP_TO_EDGE);return tex}
+function glBuf(gl,data,usage){const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,data,usage);return b}
+async function loadSkin(sj,b,r,src){const bad=m=>{throw new Error(m)};
+ if(!Array.isArray(sj.bones)||!Array.isArray(sj.vertices)||!Array.isArray(sj.triangles)||!Array.isArray(sj.weights))bad('bones/vertices/triangles/weights missing');
+ const nb=sj.bones.length,nv=sj.vertices.length,nt=sj.triangles.length;
+ const names=new Set(sj.bones.map(x=>x.name));for(const x of sj.bones)if(x.parent&&!names.has(x.parent))bad('bone '+x.name+': unknown parent '+x.parent);
+ const image=await img(b+(sj.image||'base_body.png'));if(!image)bad('image '+(sj.image||'base_body.png')+' missing');if(image.naturalWidth!==W||image.naturalHeight!==H)bad('image is not '+W+'x'+H);
+ const bones=sj.bones.map(x=>{const o={id:x.name,parent:x.parent||null,pivotX:x.pivot[0],pivotY:x.pivot[1],param:x.param!==undefined?x.param:(BODY_PARAM_OF[x.name]??null)};
+  for(const k of['maxRotDeg','minRotDeg','rotDir','degAtPlus1','degAtMinus1','maxDeg','wristPivot'])if(x[k]!=null)o[k]=x[k];return o});
+ const {wb,ww}=parseWeights(sj.weights,nv,nb,bad,'');
+ const V=new Float32Array(nv*2);sj.vertices.forEach(([x,y],i)=>{V[2*i]=x;V[2*i+1]=y});
+ const tl=sj.triangleLayers;const tris=sj.triangles.map((t,i)=>{if(!(t[0]>=0&&t[0]<nv&&t[1]>=0&&t[1]<nv&&t[2]>=0&&t[2]<nv))bad('triangle '+i+' index out of range');return{t,l:t.length>3?t[3]:(tl?tl[i]:(sj.layer??220)),i}});
+ tris.sort((a,b)=>(a.l-b.l)||(a.i-b.i));const groups=[];const idx=new Uint32Array(nt*3),uv=new Float32Array(nt*6);
+ tris.forEach((q,k)=>{if(!groups.length||groups[groups.length-1].layer!==q.l)groups.push({layer:q.l,start:k,count:0});groups[groups.length-1].count++;for(let e=0;e<3;e++){const vi=q.t[e];idx[k*3+e]=vi;uv[k*6+e*2]=V[2*vi]/W;uv[k*6+e*2+1]=V[2*vi+1]/H}});
+ for(const g of groups)if(!inBand('body',g.layer)&&!inBand('hands',g.layer))r.warn.push('skin layer group '+g.layer+' outside the body band');
+ {const dom=new Int32Array(nv);for(let i=0;i<nv;i++){let b=-1,w=-1;for(let k=0;k<4;k++)if(ww[i*4+k]>w){w=ww[i*4+k];b=wb[i*4+k]}dom[i]=b}
+  for(const g of groups){const cnt={};for(let k=g.start;k<g.start+g.count;k++){const n=bones[dom[idx[k*3]]].id;cnt[n]=(cnt[n]||0)+1}g.label=Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([n,c])=>n).join('+')}}
+ const gl=glInit();
+ const hb=sj.headBone&&names.has(sj.headBone)?sj.headBone:(names.has('head')?'head':'torso');
+ const Sk={src:src.replace(/^\.\.\//,''),img:image,tex:glTex(gl,image),uvBuf:glBuf(gl,uv,gl.STATIC_DRAW),posBuf:gl.createBuffer(),bones,V,wb,ww,idx,groups,nv,nt,headBone:hb,pos:new Float32Array(nt*6),def:new Float32Array(nv*2),
+  vertsRaw:sj.vertices,weightsRaw:sj.weights,triRaw:sj.triangles};
+ if(sj.underlay!=null){try{Sk.underlay=await loadUnderlay(sj,Sk,b,gl)}catch(e){Sk.underlay={ok:false,reason:e.message}}
+  if(!Sk.underlay.ok)r.warn.push('skin underlay rejected (not drawn): '+Sk.underlay.reason)}
+ return Sk}
+async function loadUnderlay(sj,Sk,b,gl){const u=sj.underlay,bad=m=>{throw new Error(m)};if(typeof u!=='object'||typeof u.image!=='string')bad('"image" missing');
+ const image=await img(b+u.image);if(!image)bad('image '+u.image+' missing');if(image.naturalWidth!==W||image.naturalHeight!==H)bad('image is not '+W+'x'+H);
+ const own=('vertices' in u)||('triangles' in u)||('weights' in u);let V,wb,ww,T,nv;
+ if(own){if(!Array.isArray(u.vertices)||!Array.isArray(u.triangles))bad('own mesh needs vertices, triangles, weights');nv=u.vertices.length;V=new Float32Array(nv*2);u.vertices.forEach(([x,y],i)=>{V[2*i]=x;V[2*i+1]=y});
+  ({wb,ww}=parseWeights(u.weights,nv,Sk.bones.length,bad,'underlay '));T=u.triangles.map((t,i)=>{if(!(t[0]>=0&&t[0]<nv&&t[1]>=0&&t[1]<nv&&t[2]>=0&&t[2]<nv))bad('triangle '+i+' index out of range');return t})}
+ else{nv=Sk.nv;V=Sk.V;wb=Sk.wb;ww=Sk.ww;T=Sk.triRaw}
+ let UVp=V;if(u.uvs!=null){if(!Array.isArray(u.uvs)||u.uvs.length!==nv)bad('uvs must have one [u,v] per vertex');UVp=new Float32Array(nv*2);u.uvs.forEach(([x,y],i)=>{UVp[2*i]=x;UVp[2*i+1]=y})}
+ const minL=Math.min(...Sk.groups.map(g=>g.layer));let z=minL-0.5;if(u.layer!=null){if(!Number.isInteger(u.layer)||!inBand('body',u.layer))bad('layer '+u.layer+' not an integer in the body band');z=u.layer}
+ const nt=T.length,idx=new Uint32Array(nt*3),uv=new Float32Array(nt*6);T.forEach((t,k)=>{for(let e=0;e<3;e++){const vi=t[e];idx[k*3+e]=vi;uv[k*6+e*2]=UVp[2*vi]/W;uv[k*6+e*2+1]=UVp[2*vi+1]/H}});
+ const U={ok:false,img:image,tex:glTex(gl,image),uvBuf:glBuf(gl,uv,gl.STATIC_DRAW),posBuf:gl.createBuffer(),V,wb,ww,idx,nv,nt,z,own,pos:new Float32Array(nt*6),def:new Float32Array(nv*2),src:u.image};
+ // rest rule, checked on the GPU output itself: underlay footprint at rest (NEAREST) must lie under main alpha-255 pixels from groups above it
+ const I0={};for(const bn of Sk.bones)I0[bn.id]=I;meshDeform(U,I0,Sk.bones);const fa=meshReadAlpha(U,[{start:0,count:nt}]);
+ meshDeform(Sk,I0,Sk.bones);const above=Sk.groups.filter(g=>g.layer>z);const ma=meshReadAlpha(Sk,above);
+ let fp=0,tr=0,pa=0;for(let i=0;i<fa.length;i++){if(!fa[i])continue;fp++;if(ma[i]===0)tr++;else if(ma[i]<255)pa++}
+ U.check={footprintPx:fp,touchTransparentOrBelow:tr,touchPartialAlpha:pa};
+ if(tr||pa)bad('rest footprint '+fp+' px touches '+tr+' transparent / not-above px and '+pa+' partial-alpha main px');
+ U.ok=true;return U}
+const SKGL={};
+function glInit(){if(SKGL.gl)return SKGL.gl;const cv=document.createElement('canvas');cv.width=W;cv.height=H;
+ const gl=cv.getContext('webgl',{premultipliedAlpha:true,preserveDrawingBuffer:true,antialias:false,alpha:true,depth:false,stencil:false});if(!gl)throw new Error('WebGL unavailable');
+ const sh=(t,src)=>{const x=gl.createShader(t);gl.shaderSource(x,src);gl.compileShader(x);if(!gl.getShaderParameter(x,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(x));return x};
+ const pr=gl.createProgram();
+ gl.attachShader(pr,sh(gl.VERTEX_SHADER,'attribute vec2 aPos;attribute vec2 aUV;uniform vec2 uSize;varying vec2 vUV;void main(){vec2 p=aPos/uSize*2.0-1.0;gl_Position=vec4(p.x,-p.y,0.0,1.0);vUV=aUV;}'));
+ gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,'precision highp float;varying vec2 vUV;uniform sampler2D uTex;void main(){gl_FragColor=texture2D(uTex,vUV);}'));
+ gl.linkProgram(pr);if(!gl.getProgramParameter(pr,gl.LINK_STATUS))throw new Error(gl.getProgramInfoLog(pr));
+ Object.assign(SKGL,{gl,cv,pr,aPos:gl.getAttribLocation(pr,'aPos'),aUV:gl.getAttribLocation(pr,'aUV'),uSize:gl.getUniformLocation(pr,'uSize')});return gl}
+// LBS: posed vertex = sum_i w_i * M_i * rest vertex; fills Mh.def (per vertex) and Mh.pos (expanded per triangle corner)
+function meshDeform(Mh,BM,bones){const n=Mh.nv,V=Mh.V,D=Mh.def,wb=Mh.wb,ww=Mh.ww;const Ms=bones.map(b=>BM[b.id]||I);
+ for(let i=0;i<n;i++){const x=V[2*i],y=V[2*i+1];let ox=0,oy=0;for(let k=0;k<4;k++){const w=ww[i*4+k];if(!w)continue;const M=Ms[wb[i*4+k]];ox+=w*(M[0]*x+M[2]*y+M[4]);oy+=w*(M[1]*x+M[3]*y+M[5])}D[2*i]=ox;D[2*i+1]=oy}
+ const P=Mh.pos,idx=Mh.idx;for(let k=0;k<idx.length;k++){P[2*k]=D[2*idx[k]];P[2*k+1]=D[2*idx[k]+1]}Mh.dirty=true}
+function meshDraw(Mh,ranges,filt,S){const gl=SKGL.gl,cv=SKGL.cv;if(cv.width!==W*S||cv.height!==H*S){cv.width=W*S;cv.height=H*S}
+ gl.viewport(0,0,cv.width,cv.height);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.useProgram(SKGL.pr);gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);
+ gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,Mh.tex);const f=filt==='nearest'?gl.NEAREST:gl.LINEAR;gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,f);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,f);
+ gl.bindBuffer(gl.ARRAY_BUFFER,Mh.posBuf);if(Mh.dirty){gl.bufferData(gl.ARRAY_BUFFER,Mh.pos,gl.DYNAMIC_DRAW);Mh.dirty=false}
+ gl.enableVertexAttribArray(SKGL.aPos);gl.vertexAttribPointer(SKGL.aPos,2,gl.FLOAT,false,0,0);
+ gl.bindBuffer(gl.ARRAY_BUFFER,Mh.uvBuf);gl.enableVertexAttribArray(SKGL.aUV);gl.vertexAttribPointer(SKGL.aUV,2,gl.FLOAT,false,0,0);gl.uniform2f(SKGL.uSize,W,H);
+ for(const r of ranges)gl.drawArrays(gl.TRIANGLES,r.start*3,r.count*3)}
+function meshReadAlpha(Mh,ranges){meshDraw(Mh,ranges,'nearest',1);const gl=SKGL.gl;const px=new Uint8Array(W*H*4);gl.readPixels(0,0,W,H,gl.RGBA,gl.UNSIGNED_BYTE,px);
+ const a=new Uint8Array(W*H);for(let y=0;y<H;y++){const src=(H-1-y)*W*4,dst=y*W;for(let x=0;x<W;x++)a[dst+x]=px[src+x*4+3]}return a}
+function blitGL(g){g.save();g.setTransform(1,0,0,1,0,0);g.globalAlpha=DIM;g.imageSmoothingEnabled=false;g.drawImage(SKGL.cv,0,0);g.restore()}
+let SKIN_FORCE_GL=false; // test hook: draw rest through the GL path too
+function poseIdent(pose){if(pose.ident==null)pose.ident=R.skin.bones.every(b=>{const M=pose.BM[b.id];return isAxis(M)&&M[4]===0&&M[5]===0});return pose.ident}
+function skinPass(g,grs,pose){const Sk=R.skin;
+ if(poseIdent(pose)&&grs.length===Sk.groups.length&&!SKIN_FORCE_GL){drawM(g,Sk.img,I);return} // rest: exact copy of the authored image
+ if(pose.def!==Sk){meshDeform(Sk,pose.BM,Sk.bones);pose.def=Sk}
+ meshDraw(Sk,grs,(pose.rest||QUAL==='nearest')?'nearest':'linear',g.__S||1);blitGL(g)}
+function underlayPass(g,pose){const U=R.skin.underlay;if(pose.defU!==U){meshDeform(U,pose.BM,R.skin.bones);pose.defU=U}
+ meshDraw(U,[{start:0,count:U.nt}],(pose.rest||QUAL==='nearest')?'nearest':'linear',g.__S||1);blitGL(g)}
+// v1.4 wrist: palm root = forearm world transform (skin bone or cut part) x rotation about the wrist pivot by WristL/R
+function palmExt(p,BM,rest){const fa=BM[palmParent(p)]||I;const k='Wrist'+p.id[0];if(rest||!v[k])return fa;
+ const mx=+(p.maxWristDeg??(R.hands&&R.hands.wristMaxDeg)??25);const x=clamp(v[k],-1,1);const up=p.wristDegAtPlus1??mx,dn=p.wristDegAtMinus1??-mx;
+ return mul(fa,rotAt(p.pivotX||0,p.pivotY||0,x>=0?x*up:Math.abs(x)*dn))}
+// posed frames may be rendered at 2x and downsampled ("2x supersampled"); rest is always rendered 1:1
+let SS=null;
+function renderFinal(g,rest){if(rest||QUAL!=='ss2'){g.__S=1;render(g,rest);return}
+ if(!SS){SS=document.createElement('canvas');SS.width=2*W;SS.height=2*H}const q=guard(SS.getContext('2d'));q.__S=2;render(q,false);
+ g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.clearRect(0,0,W,H);g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';g.drawImage(SS,0,0,2*W,2*H,0,0,W,H)}
+
+const STEP={hair_back:0,body:1,hands:2,eyes:3,mouth:4,hair_front:5};
+const eyeCanvas={};
+function render(g,rest){POSED=!rest;const im=R.im,Z=R.z;g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.clearRect(0,0,g.canvas.width,g.canvas.height);const items=[];let seq=0;
+ const add=(z,step,fn,m)=>items.push({z:Number.isFinite(z)?z:[150,220,300,400,500,650][step],step,seq:seq++,fn,m});const LPA=LP.active;const f1=x=>(+x).toFixed(2);
+ // body: jointed parts if delivered, else base_body.png as in v1.1
+ let BM={},headM=I;
+ if(R.body){const bps=R.body.parts;BM=rootApply(chain(bps,rest?()=>0:bodyAngle,null,p=>p.parent!==undefined?p.parent:BODY_PARENT_OF[p.id]),rest);
+  const hp=R.body.cfg.headPart||(BM.head?'head':'torso');headApply(BM,rest,BM.head||R.body.cfg.headPart?hp:null);headM=BM[hp]||I;
+  if(!useSkin())for(const p of bps)if(p.file)add(Z['body:'+p.id],STEP.body,g=>drawM(g,need('body:'+p.id,im['body:'+p.id]),BM[p.id]),{id:'body:'+p.id,gid:'body',glabel:'cut parts',sys:'body',label:p.id,info:LPA&&!rest&&bodyParamOf(p)?bodyParamOf(p)+' '+f1(v[bodyParamOf(p)]||0)+' → '+bodyAngle(p).toFixed(1)+'°':''})}
+ if(useSkin()){ // v1.4 skinned mesh replaces the cut parts; its bones drive hands (forearm) and face/hair (head)
+  const Sk=R.skin;BM=headApply(rootApply(chain(Sk.bones,rest?()=>0:bodyAngle,null,p=>p.parent),rest),rest,Sk.headBone);headM=BM[Sk.headBone]||BM.head||BM.torso||I;const pose={BM,rest,def:null};R._pose=pose;
+  if(useUnderlay())add(Sk.underlay.z,STEP.body,g=>underlayPass(g,pose),{id:'skin:underlay',gid:'skin',glabel:'skin mesh passes',sys:'body',label:'underlay ('+Sk.underlay.src.split('/').pop()+')',info:Sk.underlay.nt+' tris'});
+  for(const gr of Sk.groups)items.push({z:gr.layer,step:STEP.body,seq:seq++,skin:gr,pose,m:{id:'skin:'+gr.layer,gid:'skin',glabel:'skin mesh passes',sys:'body',label:'pass '+gr.layer+' · '+gr.label,info:gr.count+' tris'}})}
+ else if(!R.body)add(Z['body:base_body'],STEP.body,g=>drawM(g,im.body||im.base,I),{id:'body:base_body',gid:'body',glabel:'body',sys:'body',label:'base_body.png'});
+ R._BM=BM;
+ // hair: each part rotates swayWeight*maxSwayDeg*s about its own pivot in its parent's transformed space (chain),
+ // s = HairSwayX (slider) or the per-part secondary-motion drive in auto mode, clamped to [-1,1]; plus swayY translation
+ const hair=R.hair||[];const dr=id=>(!rest&&hairDrive&&hairDrive[id])||null;
+ const HA={};const hM=chain(hair,p=>{if(rest)return 0;const d=dr(p.id);const a=(p.swayWeight||0)*(p.maxSwayDeg||0)*clamp(d?d.x:v.HairSwayX,-1,1);HA[p.id]=a;return a});
+ const yMax=+R.hairCfg.swayYMaxPx||0;
+ for(const p of hair){if(!p.file)continue;const d=dr(p.id);const dy=rest?0:Math.round(clamp(d?d.y:v.HairSwayY,-1,1)*clamp(+p.swayY||0,0,1)*yMax);const M=mul(headM,mul(T(0,dy),hM[p.id]));const z=Z['hair:'+p.id];const hi=(R.hairInfo||{})[p.id]||{root:p.id,depth:0};const lim=Math.abs((p.swayWeight||0)*(p.maxSwayDeg||0));add(z,z<200?STEP.hair_back:STEP.hair_front,g=>drawM(g,need('hair:'+p.id,im['hair:'+p.id]),M),{id:'hair:'+p.id,gid:'hairstrand:'+hi.root,glabel:'strand '+hi.root,sys:z<200?'hair_back':'hair_front',label:p.id+(hi.depth?' (chain '+hi.depth+')':''),info:LPA?(()=>{let tot=0,q=p,n=0;while(q&&n++<20){tot+=HA[q.id]||0;q=q.parent?hair.find(h=>h.id===q.parent):null}return (lim?(HA[p.id]||0).toFixed(1)+'° / ±'+lim.toFixed(1)+'° (w '+(p.swayWeight||0)+' × max '+(p.maxSwayDeg||0)+'°)':'no sway')+(hi.depth?' · chain Σ '+tot.toFixed(1)+'°':'')+(dy?' · dy '+dy:'')})():'',ginfo:LPA&&hi.depth===0&&lim?'sway '+(HA[p.id]||0).toFixed(1)+'° / ±'+lim.toFixed(1)+'° (maxSwayDeg '+(p.maxSwayDeg||0)+'°)':undefined})}
+ // hands: palms parent to the body forearm (at wristPivot) when the body rig is active
+ if(R.hands){const M=handChain(R.hands.parts,rest?()=>0:handAngle(R.hands),p=>palmExt(p,BM,rest),rest);
+  for(const p of R.hands.parts)if(p.file){const f=frameOf(p,rest);const H0=p.id[0];let info='',ginfo;if(LPA){const fr=R.frames[p.id];const fm=p.id.match(/^([LR])_(\w+?)\d$/);const cu=fm?clamp(v['Hand'+fm[1]+fm[2]]||0,0,1):null;info=(fr?'frame f'+fr.indexOf(f)+'/'+(fr.length-1)+' '+(f.file||''):(fm?'no frames':''))+(cu!=null?' · curl '+f1(cu):'');ginfo=['Thumb','Index','Middle','Ring','Pinky'].map(n=>n[0]+' '+f1(v['Hand'+H0+n]||0)).join(' ')+' · wrist '+f1(v['Wrist'+H0]||0)}add(handLayer(p,rest),STEP.hands,g=>drawM(g,need('hands:'+p.id,f?f.img:im['hands:'+p.id]),M[p.id]),{id:'hands:'+p.id,gid:'hands:'+H0,glabel:(H0==='L'?'left':'right')+' hand ('+H0+')',sys:'hands',label:p.id,info,ginfo})}}
+ if(R.eyes){const j=R.eyes,L=j.irisLimitsPx;const X=rest?0:clamp(v.EyeBallX,-1,1),Y=rest?0:clamp(v.EyeBallY,-1,1);const dx=Math.round(X*(X>0?L.dxAtXplus1:-L.dxAtXminus1)),dy=Math.round(Y*(Y>0?L.dyAtYplus1:-L.dyAtYminus1));
+  for(const E of j.eyes){const rl=id=>{const q=(j.parts||[]).find(x=>x.id===id);return q&&q.layer!=null?q.layer:'—'}; // layer as written in the eyes' rig.json (panel label only)
+   const zW=Z['eyes:'+E+'_white'],zI=Z['eyes:'+E+'_iris']??zW;
+   const mW={id:'eyes:'+E+':white',gid:'eyes:'+E,glabel:E,sys:'eyes',label:'white',info:LPA?'rig.json layer '+rl(E+'_white')+' · the iris is composited into this pass (source-atop)':''};
+   const mI={id:'eyes:'+E+':iris',gid:'eyes:'+E,glabel:E,sys:'eyes',label:'iris',info:LPA?'rig.json layer '+rl(E+'_iris')+' · EyeBallX '+f1(X)+' EyeBallY '+f1(Y)+' → iris '+dx+','+dy+' px · source-atop on white':''};
+   const eyeLayer=(E,withW,iris)=>{let o=eyeCanvas[E];if(!o){o=eyeCanvas[E]=document.createElement('canvas');o.width=W;o.height=H}const q=guard(o.getContext('2d'));
+    q.setTransform(1,0,0,1,0,0);q.globalCompositeOperation='source-over';q.clearRect(0,0,W,H);q.imageSmoothingEnabled=false;
+    const wh=need('eyes:'+E+'_white',im['eyes:'+E+'_white']);if(wh&&!wh.empty)q.drawImage(wh,wh.ox||0,wh.oy||0);if(iris){q.globalCompositeOperation=withW?'source-atop':'source-in';const ir=need('eyes:'+E+'_iris',im['eyes:'+E+'_iris']);if(ir&&!ir.empty)q.drawImage(ir,dx+(ir.ox||0),dy+(ir.oy||0))}q.globalCompositeOperation='source-over';return o};
+   // one real draw (white with the iris source-atop, exactly as before); the iris row only filters/dims inside it in the preview
+   add(zW,STEP.eyes,g=>{const vw=!LPA||LP.visible(mW),vi=!LPA||LP.visible(mI),dw=LPA?LP.dim(mW):1,di=LPA?LP.dim(mI):1;
+    if(vw&&vi&&dw===di){drawM(g,eyeLayer(E,true,true),headM);return}
+    const d0=DIM;try{if(vw){DIM=dw;drawM(g,eyeLayer(E,true,false),headM)}if(vi){DIM=di;drawM(g,eyeLayer(E,false,true),headM)}}finally{DIM=d0}},mW);items[items.length-1].alsoM=mI;
+   items.push({z:zI,step:STEP.eyes,seq:seq++,fn:()=>{},m:mI,panelOnly:true}); // panel row only: drawn inside the white pass
+   const ids=lidIds(j,E);const open=rest?1:clamp(v[E+'Open'],0,1);const li=Math.round((1-open)*(ids.length-1));const lid=ids[li]; // hard switch, never crossfaded
+   const eg=LPA?'lid '+li+'/'+(ids.length-1)+' · Open '+f1(open)+' · ball '+f1(X)+','+f1(Y):undefined;add(Z['eyes:'+lid]??Z['eyes:'+E+'_lid_0'],STEP.eyes,g=>drawM(g,need('eyes:'+lid,im['eyes:'+lid]),headM),{id:'eyes:'+E+':lid',gid:'eyes:'+E,glabel:E,sys:'eyes',label:'lid',info:LPA?lid+' (frame '+li+' of 0..'+(ids.length-1)+')':'',ginfo:eg});add(Z['eyes:'+E+'_lash'],STEP.eyes,g=>drawM(g,need('eyes:'+E+'_lash',im['eyes:'+E+'_lash']),headM),{id:'eyes:'+E+':lash',gid:'eyes:'+E,glabel:E,sys:'eyes',label:'lash'})}}
+ if(R.mouth){const zm=id=>Z['mouth:'+id]??Z['mouth:mouth_rest']??500;
+  const mg=nm=>{if(!LPA)return undefined;const S=R.mouthShapes||[];const k=S.findIndex(q=>q.name===nm||q.id===nm||q.file===nm);return 'shape '+nm.replace(/^mouth_/,'')+' ('+(k+1)+'/'+S.length+') · MouthOpen '+f1(v.MouthOpen)+' · MouthForm '+f1(v.MouthForm)};
+  if(rest)add(zm('mouth_rest'),STEP.mouth,g=>drawM(g,need('mouth:mouth_rest',im['mouth:mouth_rest']),headM),{id:'mouth:in',gid:'mouth',glabel:'mouth',sys:'mouth',label:'shape rest',ginfo:mg('mouth_rest')});
+  else{const now=simNow??performance.now();const pending=mouthUpdate(now);const st=mouthState;const el=now-st.t0,FD=MOUTH_FADE_MS;const a=FD>0?clamp((el+FD/4)/FD,0,1):1;const aOut=FD>0?(el<FD/2?1:clamp(1-(el-FD/2)/(FD/2),0,1)):0;const inFade=FD>0&&el<FD&&!!st.prev;
+   if(inFade||pending){if(simNow==null)requestAnimationFrame(draw)}
+   // v1.3 crossfade rule: outgoing shape stays at full opacity underneath, incoming fades in on top (same layer, drawn after),
+   // outgoing is dropped once incoming reaches 1 -> her base lips never show through mid-fade
+   const fading=inFade;if(fading&&aOut>0)add(zm(st.cur),STEP.mouth,g=>drawM(g,need('mouth:'+st.prev,im['mouth:'+st.prev]),headM,aOut),{id:'mouth:out',gid:'mouth',glabel:'mouth',sys:'mouth',label:'outgoing '+String(st.prev).replace(/^mouth_/,''),info:'opacity '+f1(aOut)+' (underneath, fades over the last half)'});
+   add(zm(st.cur),STEP.mouth,g=>drawM(g,need('mouth:'+st.cur,im['mouth:'+st.cur]),headM,fading?a:1),{id:'mouth:in',gid:'mouth',glabel:'mouth',sys:'mouth',label:(fading?'incoming ':'shape ')+String(st.cur).replace(/^mouth_/,''),info:fading?'opacity '+f1(a)+' (on top)':'opacity 1.00',ginfo:mg(st.cur)+(fading?' · crossfade '+f1(a):'')})}}
+ if(LPA)for(const it of items){if(it.panelOnly)continue;const o=it.m&&LP.ovr[it.m.id];if(o!=null&&Number.isFinite(o))it.z=o} // preview-only reorder override
+ items.sort((a,b)=>(a.z-b.z)||(a.step-b.step)||(a.seq-b.seq));
+ let list=items;if(LPA){lpRecord(items);list=items.filter(it=>!it.panelOnly&&(LP.visible(it.m)||(it.alsoM&&LP.visible(it.alsoM))))}
+ // consecutive skin layer groups (nothing from another owner between them, same preview dim) are drawn in one mesh pass
+ const pass=q=>{for(let i=0;i<list.length;){DIM=LPA?LP.dim(list[i].m):1;if(list[i].skin){let j=i;const grs=[];while(j<list.length&&list[j].skin&&(LPA?LP.dim(list[j].m):1)===DIM){grs.push(list[j].skin);j++}skinPass(q,grs,list[i].pose);i=j}else{list[i].fn(q);i++}}};
+ try{pass(g);if(!rest&&!LPA&&sealOn())sealEdges(g,pass)}finally{DIM=1}}
+let COV=null;function sealOn(){const e=document.getElementById('seal');return !e||e.value!=='0'}
+function sealEdges(g,pass){const cw=g.canvas.width,ch=g.canvas.height;const mk=()=>{const c=document.createElement('canvas');c.width=cw;c.height=ch;return c};
+ if(!COV||COV.width!==cw||COV.height!==ch){COV=mk();SEALC=mk()}
+ // coverage C: every item again, summed with 'lighter' (alpha = min(1, sum of premultiplied alphas))
+ const q=guard(COV.getContext('2d'));q.__S=g.__S;q.setTransform(1,0,0,1,0,0);q.globalAlpha=1;q.globalCompositeOperation='source-over';q.clearRect(0,0,cw,ch);q.globalCompositeOperation='lighter';pass(q);q.globalCompositeOperation='source-over';
+ // D: the composite over itself 8x (destination-over keeps its un-premultiplied colour, alpha -> 1), then D destination-in C
+ const d=guard(SEALC.getContext('2d'));d.setTransform(1,0,0,1,0,0);d.globalAlpha=1;d.imageSmoothingEnabled=false;d.globalCompositeOperation='source-over';d.clearRect(0,0,cw,ch);d.drawImage(g.canvas,0,0);
+ d.globalCompositeOperation='destination-over';for(let k=0;k<8;k++)d.drawImage(SEALC,0,0);d.globalCompositeOperation='destination-in';d.drawImage(COV,0,0);d.globalCompositeOperation='source-over';
+ g.save();g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.imageSmoothingEnabled=false;g.clearRect(0,0,cw,ch);g.drawImage(SEALC,0,0);g.restore()}
+let SEALC=null;
+const Z={full:[0,0,W,H],head:[480,20,400,380],hands:null};
+let FR=null;
+function draw(){if(!R)return;if(!FR){FR=document.createElement('canvas');FR.width=W;FR.height=H}const g=guard(FR.getContext('2d'));
+ if(document.getElementById('orig').checked&&R.im.base){g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,W,H);g.drawImage(R.im.base,0,0)}else{const sn=simNow;if(LP.paused&&sn==null)simNow=LP.clock;LP.active=true;try{renderFinal(g,false)}finally{LP.active=false;simNow=sn}}
+ let z=Z[document.getElementById('zoom').value];if(!z){const hs=R.hands&&R.hands.hands;const b=hs&&(hs.L.visible?hs.L.box:hs.R.box);z=b?[b[0]-30,b[1]-30,b[2]-b[0]+60,b[3]-b[1]+60]:Z.full}
+ if(c.width!==z[2]||c.height!==z[3]){c.width=z[2];c.height=z[3]}ctx.imageSmoothingEnabled=false;ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,c.width,c.height);ctx.drawImage(FR,z[0],z[1],z[2],z[3],0,0,z[2],z[3]);LP.zoom=z;lpUpdate(LP.paused);if(document.getElementById('lpmask').checked)lpMask()}
+function restPixels(){const a=document.createElement('canvas');a.width=W;a.height=H;const g=guard(a.getContext('2d'));render(g,true);return g.getImageData(0,0,W,H).data}
+document.getElementById('check').onclick=()=>{if(!R||!R.im.base)return;const A=restPixels();const b=document.createElement('canvas');b.width=W;b.height=H;const gb=b.getContext('2d');gb.drawImage(R.im.base,0,0);
+ const B=gb.getImageData(0,0,W,H).data;let n=0;for(let i=0;i<A.length;i+=4){if(A[i+3]===0&&B[i+3]===0)continue;if(A[i]!==B[i]||A[i+1]!==B[i+1]||A[i+2]!==B[i+2]||A[i+3]!==B[i+3])n++}
+ status((n===0?'PASS':'FAIL')+': rest vs base.png, '+n+' px differ ('+view+(useSkin()?', skin mesh':'')+')'+(R.missing.length?'\nNot included yet: '+R.missing.join(', '):'')+'\nlayers: '+Object.entries(R.scheme).map(([k,x])=>k+'='+x).join(', ')+'\nmouth shapes: '+R.mouthShapes.map(s=>s.name).join(', ')+(R.warn.length?'\nWARN: '+R.warn.join('\nWARN: '):''))};
+document.getElementById('rest').onclick=()=>{for(const k in P)set(k,P[k][2]);hairDrive=null;mouthTalk=false;draw()};
+// v1.8 settings: UI selects + URL (?auto=talk|idle, ?footplant=xy|y|off, ?hair=default|A|B, ?mouthfade=35|0)
+{const q=new URLSearchParams(location.search);for(const[k,id]of[['auto','autostyle'],['footplant','footplant'],['hair','hairpreset'],['mouthfade','mouthfade'],['quality','quality'],['seal','seal']]){const x=q.get(k);const e=document.getElementById(id);if(x!=null&&[...e.options].some(o=>o.value===x))e.value=x}
+ const mf=document.getElementById('mouthfade');MOUTH_FADE_MS=+mf.value;mf.onchange=()=>{MOUTH_FADE_MS=+mf.value};QUAL=document.getElementById('quality').value;const lq=q.get('life');if(lq!=null&&isFinite(+lq))document.getElementById('life').value=clamp(+lq,0,1)}
+['view'].forEach(id=>document.getElementById(id).onchange=()=>{anim=null;hairDrive=null;LP.key='';LP.hidden.clear();LP.solo.clear();load()});
+document.getElementById('bodymode').onchange=draw;document.getElementById('underlay').onchange=draw;document.getElementById('quality').onchange=e=>{QUAL=e.target.value;draw()};['zoom','orig'].forEach(id=>document.getElementById(id).onchange=draw);
+
+// ---- v1.3 auto mode: eased, stochastic, secondary motion. Output is parameter values only (transforms of authored images). ----
+function rng(seed){let a=seed>>>0;return()=>{a=(a+0x6D2B79F5)>>>0;let t=a;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296}}
+const ease={inQ:u=>u*u,outC:u=>1-Math.pow(1-u,3),io:u=>u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2,smooth:u=>u*u*(3-2*u)};
+const hash=s=>{let h=2166136261;for(const ch of s)h=Math.imul(h^ch.charCodeAt(0),16777619);return(h>>>0)/4294967296};
+function makeAnim(seed){const r=rng(seed);return{r,t:0,lastBlinkEnd:-10,turn:{dir:0,ext:0,prevLean:null},
+ blink:{next:0.8+r()*2,t0:-1,dbl:false},gaze:{x:0,y:0,fx:0,fy:0,tx:0,ty:0,t0:-1,dur:0.07,next:0.6+r()},
+ talk:{mode:'pause',until:0.4+r()*0.8,left:0,t0:0,dur:0,peak:0,f0:0,f1:0,open:0,form:0},
+ body:{w:0,w0:0,w1:0,t0:-10,next:6+r()*6},hair:{},head:null}}
+// v1.8 (Base Eyes): ~330 ms blink = snap shut 42 ms, hold 165 ms, reopen 125 ms; every 2.5-5 s at random; both eyes; plus one when a head turn reverses
+const BLINK={close:0.042,hold:0.165,open:0.125,min:2.5,max:5.0,turnGap:2.5};
+function stepBlink(A){const b=A.blink,t=A.t;const C=BLINK.close,Hd=BLINK.hold,O=BLINK.open;
+ if(b.t0<0&&(t>=b.next||(b.turnReq&&t-A.lastBlinkEnd>=BLINK.turnGap))){b.t0=t;b.turnReq=false}
+ let open=1;if(b.t0>=0){const u=t-b.t0;if(u<C)open=1-u/C;else if(u<C+Hd)open=0;else if(u<C+Hd+O)open=ease.inQ((u-C-Hd)/O);else{b.t0=-1;A.lastBlinkEnd=t;b.next=t+BLINK.min+A.r()*(BLINK.max-BLINK.min)}}
+ b.turnReq=false;set('EyeLOpen',open);set('EyeROpen',open)}
+// v1.8 idle gaze: slow drift of ~0.1 eye width that follows the head sway and leads it by ~3 frames (0.1 s); no big glances
+function stepGazeIdle(A){const t=A.t;const lead=0.1;const L=R.eyes&&R.eyes.irisLimitsPx;if(!L){set('EyeBallX',0);set('EyeBallY',0);return}
+ const dir=Math.sign(headDirX())||1;const s=clamp(leanAt(A,t+lead)/IDLE.leanAmp,-1,1)*0.8+0.2*Math.sin(2*Math.PI*t/9.3+1.1);const px=dir*s*0.1*(R.eyeW||20);
+ const x=px>=0?(L.dxAtXplus1>0?px/L.dxAtXplus1:0):(L.dxAtXminus1<0?px/(-L.dxAtXminus1):0);set('EyeBallX',clamp(x,-1,1));set('EyeBallY',0)}
+// head turn reversal -> request a blink
+function watchTurn(A){const lv=v.BodyLean;const T0=A.turn;if(T0.prevLean!=null){const d=lv-T0.prevLean;const s=Math.sign(d);if(s&&s!==T0.dir){if(T0.dir&&Math.abs(lv-T0.ext)>=0.05)A.blink.turnReq=true;T0.dir=s;T0.ext=lv}}T0.prevLean=lv}
+// v1.8 idle mouth: rest, with Base Mouth's soft smile (MouthForm keys 2.5-4.9 s) once per 8 s loop
+const IDLE_SMILE=[[0,0],[2.5,0],[2.55,0.0741],[2.6,0.2593],[2.65,0.5],[2.7,0.7407],[2.75,0.9259],[2.8,1],[4.6,1],[4.65,0.9259],[4.7,0.7407],[4.75,0.5],[4.8,0.2593],[4.85,0.0741],[4.9,0],[8,0]];
+function keyLerp(ks,t){if(t<=ks[0][0])return ks[0][1];for(let i=1;i<ks.length;i++)if(t<=ks[i][0]){const[a,x]=ks[i-1],[b,y]=ks[i];return b>a?x+(y-x)*(t-a)/(b-a):y}return ks[ks.length-1][1]}
+function stepMouthIdle(A){const u=((A.t%8)+8)%8;set('MouthOpen',0);set('MouthForm',clamp(keyLerp(IDLE_SMILE,u),-1,1))}
+function stepGaze(A){const g=A.gaze,t=A.t,r=A.r;
+ if(t>=g.next){g.fx=g.x;g.fy=g.y;const big=r()<0.7;if(big){if(r()<0.3){g.tx=0;g.ty=0}else{g.tx=(r()*2-1)*0.75;g.ty=(r()*2-1)*0.45}}else{g.tx=clamp(g.x+(r()*2-1)*0.2,-1,1);g.ty=clamp(g.y+(r()*2-1)*0.15,-1,1)}
+  g.t0=t;g.dur=big?0.05+r()*0.04:0.03;g.next=t+(big?0.5+r()*2.2:0.2+r()*0.4)}
+ if(g.t0>=0){const u=clamp((t-g.t0)/g.dur,0,1);const e=ease.io(u);g.x=g.fx+(g.tx-g.fx)*e;g.y=g.fy+(g.ty-g.fy)*e}
+ set('EyeBallX',g.x);set('EyeBallY',g.y)}
+function stepTalk(A,dt){const k=A.talk,t=A.t,r=A.r;const forms=[-1,-0.5,0,0,0.5,1];
+ if(k.mode==='pause'){const u=clamp(dt/0.12,0,1);k.open+=(0-k.open)*u;k.form+=(0-k.form)*clamp(dt/0.25,0,1);if(t>=k.until){k.mode='syl';k.left=3+Math.floor(r()*8);k.t0=t;k.dur=0}}
+ if(k.mode==='syl'){if(t>=k.t0+k.dur){if(k.left<=0){k.mode='pause';k.until=t+0.35+r()*1.1}else{k.left--;k.t0=t+(r()<0.25?0.03+r()*0.06:0);k.dur=0.13+r()*0.14;k.peak=0.35+r()*0.65;k.f0=k.form;k.f1=forms[Math.floor(r()*forms.length)]}}
+  if(k.mode==='syl'){const u=clamp((t-k.t0)/k.dur,0,1);k.open=t<k.t0?Math.max(0,k.open-dt*6):k.peak*Math.pow(Math.sin(Math.PI*u),1.4);k.form=k.f0+(k.f1-k.f0)*ease.smooth(clamp(u/0.45,0,1))}}
+ set('MouthOpen',clamp(k.open,0,1));set('MouthForm',clamp(k.form,-1,1))}
+// v1.8 idle body (rig units: limbs x25 deg, lean x8 deg): breathing lean +-1.76 deg, arm drift ~2.5 deg, hip drift/weight shift ~2.5 deg; root via foot plant
+const IDLE={leanAmp:0.22,leanShift:0.06,armDrift:0.07,armBreath:0.03,elbow:0.06,hip:0.1,hipDrift:0.02};
+function leanAt(A,t){const b=A.body;const w=b.w0+(b.w1-b.w0)*ease.smooth(clamp((t-b.t0)/1.6,0,1));return IDLE.leanAmp*Math.sin(2*Math.PI*t/4.6)-IDLE.leanShift*w}
+function stepBody(A){const b=A.body,t=A.t,r=A.r;const breath=Math.sin(2*Math.PI*t/4.6);
+ if(t>=b.next){b.w0=b.w;let w;do{w=[-1,0,1][Math.floor(r()*3)]}while(w===b.w1);b.w1=w;b.t0=t;b.next=t+7+r()*7}
+ b.w=b.w0+(b.w1-b.w0)*ease.smooth(clamp((t-b.t0)/1.6,0,1));const J=IDLE;
+ const dL=Math.sin(2*Math.PI*t/7.1+0.3),dR=Math.sin(2*Math.PI*t/6.4+1.9),dH=Math.sin(2*Math.PI*t/9.7+0.7);
+ const lag=t-0.35,dLl=Math.sin(2*Math.PI*lag/7.1+0.3),dRl=Math.sin(2*Math.PI*lag/6.4+1.9);
+ set('BodyLean',clamp(leanAt(A,t),-1,1));set('ShoulderL',J.armBreath*breath+J.armDrift*dL);set('ShoulderR',-J.armBreath*breath-J.armDrift*dR);
+ set('ElbowL',J.elbow*dLl);set('ElbowR',-J.elbow*dRl);
+ const h=J.hip*b.w+J.hipDrift*dH;set('HipL',h);set('HipR',h);set('KneeL',-h);set('KneeR',-h);set('AnkleL',0);set('AnkleR',0);set('ToeL',0.05*Math.max(0,b.w));set('ToeR',0.05*Math.max(0,-b.w))}
+// direction the head moves on screen for BodyLean +1 (+1 = viewer's right)
+function headDirX(){const bs=R.skin?R.skin.bones:(R.body?R.body.parts:[]);const tb=bs.find(p=>bodyParamOf(p)==='BodyLean');if(!tb)return 1;const s0=v.BodyLean;v.BodyLean=1;const a=bodyAngle(tb);v.BodyLean=s0;return Math.sign(a)||1}
+// head pose from the body rig (angle deg, pivot point) for hair secondary motion
+function headPose(){if(!R.body)return{a:0,x:0,y:0};const bps=R.body.parts;const BM=rootApply(chain(bps,bodyAngle,null,p=>p.parent!==undefined?p.parent:BODY_PARENT_OF[p.id]),false);const hp=R.body.cfg.headPart||(BM.head?'head':'torso');if(BM[hp]&&hp!=='torso')headApply(BM,false,hp);const M=BM[hp]||I;
+ const hf=(R.hair||[]).find(p=>p.id==='hair_front')||{pivotX:W/2,pivotY:150};const x=hf.pivotX,y=hf.pivotY;return{a:Math.atan2(M[1],M[0])*180/Math.PI,x:M[0]*x+M[2]*y+M[4],y:M[1]*x+M[3]*y+M[5]}}
+// v1.8 hair spring presets (default unchanged until the user picks): f Hz, zeta, child low-pass s, gravity
+const HAIR_PRESETS={default:{rf:1.1,rz:0.3,cf:1.0,cz:0.3,lp:0.09,g:0.8},A:{rf:4.0,rz:0.8,cf:4.0,cz:0.8,lp:0.03,g:0.4},B:{rf:2.0,rz:0.6,cf:2.0,cz:0.6,lp:0.05,g:0.8}};
+let HAIR_PRESET='default';let hairClampLog=null;
+// v1.8 inertia input: full offset (1.0) at 1500 px/s^2 of head acceleration, low-pass 0.05 s, horizontal gain 0.5
+const HAIR_ACC_FULL=1500,HAIR_ACC_LP=0.05,HAIR_ACC_GX=0.5;
+// damped springs, hierarchical: one phase per strand chain (root); each child follows its parent's drive with extra lag
+function stepHair(A,dt){const hpE=document.getElementById('hairpreset');HAIR_PRESET=hpE?hpE.value:HAIR_PRESET;const HP=HAIR_PRESETS[HAIR_PRESET]||HAIR_PRESETS.default;const byH={};for(const q of (R.hair||[]))byH[q.id]=q;const chainDeg={};const hair=R.hair||[],info=R.hairInfo||{};const t=A.t;const hp=headPose();const pv=A.head||hp;
+ const vx=(hp.x-pv.x)/dt,vy=(hp.y-pv.y)/dt,va=(hp.a-pv.a)/dt;A.head=hp;const out={};
+ // v1.8 inertia: low-passed head acceleration (px/s^2); head accelerating up -> hair drops (+y), accelerating right -> hanging tips lag left (+x)
+ {const pv2=A.hv||{x:vx,y:vy};const k=clamp(dt/HAIR_ACC_LP,0,1);A.acc=A.acc||{x:0,y:0};A.acc.x+=((vx-pv2.x)/dt-A.acc.x)*k;A.acc.y+=((vy-pv2.y)/dt-A.acc.y)*k;A.hv={x:vx,y:vy}}
+ const inX=clamp(A.acc.x/HAIR_ACC_FULL*HAIR_ACC_GX,-1,1),inY=clamp(-A.acc.y/HAIR_ACC_FULL,-1,1);
+ const order=[...hair].sort((a,b)=>(info[a.id]?.depth||0)-(info[b.id]?.depth||0));
+ for(const p of order){const inf=info[p.id];if(!inf||!inf.sway)continue;let s=A.hair[p.id];if(!s)s=A.hair[p.id]={x:0,vx:0,y:0,vy:0};
+  const ph=hash(inf.root)*Math.PI*2,d=inf.depth;let tx,ty,f,z;
+  if(!inf.parent){ // chain root: gravity keeps hair hanging when the head tilts, wind with a per-chain phase, head velocity kicks
+   tx=clamp(-hp.a/6,-1,1)*HP.g+0.16*Math.sin(2*Math.PI*0.23*t+ph)+0.07*Math.sin(2*Math.PI*0.61*t+1.7*ph);ty=0.12*Math.sin(2*Math.PI*0.31*t+ph);f=HP.rf;z=HP.rz;
+   tx=clamp(tx+inX,-1,1);ty=clamp(ty+inY,-1,1);
+   s.vx+=(-vx*0.004-va*0.02)*dt*60*0.05;s.vy+=(-vy*0.004)*dt*60*0.05}
+  else{const q=out[inf.parent]||{x:0,y:0};if(s.lx==null){s.lx=q.x;s.ly=q.y}const k=clamp(dt/HP.lp,0,1);s.lx+=(q.x-s.lx)*k;s.ly+=(q.y-s.ly)*k; // extra lag per level: low-pass of the parent's drive
+   tx=s.lx*0.9+0.04*Math.sin(2*Math.PI*0.4*t+ph+d);ty=s.ly*0.8;f=HP.cf;z=HP.cz}
+  const K=(2*Math.PI*f)**2,D=2*z*2*Math.PI*f;const n=Math.max(1,Math.ceil(dt/(1/120)));const h=dt/n;
+  for(let i=0;i<n;i++){s.vx+=(K*(tx-s.x)-D*s.vx)*h;s.x+=s.vx*h;s.vy+=(K*(ty-s.y)-D*s.vy)*h;s.y+=s.vy*h}
+  s.x=clamp(s.x,-1,1);s.y=clamp(s.y,-1,1);
+  // v1.8: a chained segment's total angle (ancestors + own) never exceeds its own limit swayWeight*maxSwayDeg
+  const wd=(p.swayWeight||0)*(p.maxSwayDeg||0);let anc=0;{let q=p.parent&&byH[p.parent];let n=0;while(q&&n++<20){anc+=chainDeg[q.id]||0;q=q.parent&&byH[q.parent]}}
+  if(inf.parent&&wd){const lim=Math.abs(wd);const tot=anc+wd*s.x;const tc=clamp(tot,-lim,lim);if(tc!==tot){s.x=clamp((tc-anc)/wd,-1,1);s.vx=0;if(hairClampLog)hairClampLog.push(p.id)}}
+  chainDeg[p.id]=wd*s.x;out[p.id]={x:s.x,y:s.y}}
+ hairDrive=out;const ro=Object.keys(out).filter(id=>!info[id].parent);if(ro.length){set('HairSwayX',ro.reduce((a,id)=>a+out[id].x,0)/ro.length);set('HairSwayY',ro.reduce((a,id)=>a+out[id].y,0)/ro.length)}}
+
+// ---- v1.8 Life: layered procedural secondary motion for the idle style (amount 0..1: UI 'Life', URL life=; never at rest)
+// breathing 4 s, weight shift 6-10 s (hips + foot plant -> pelvis sway, torso counter-tilt, profile knee give), overlapping
+// follow-through (torso -> head via HeadTilt/HeadNod, upper arm -> forearm -> hand as damped followers), finger drift,
+// micro-saccades leading the head, occasional smile / M press. Rig units: limbs x25 deg, lean x8 deg, tilt x8 deg, nod x6 deg / 4 px.
+const LIFE={breathT:4.0,wMin:6,wMax:10,hip:0.08,lean:0.2,leanBreath:0.04,headDrift:2.0,headKeep:0.45,nodBreath:0.3,nodBreathProf:0.1,
+ shBreath:0.04,shDrift:0.05,elDrift:0.03,wrDrift:0.08,fLo:0.05,fHi:0.15,fCapTpose:0.12,give:0.04,spF:2.2,spZ:0.55,leanF:1.6,leanZ:0.6,wristDeg:25,
+ sacEvery:[0.8,2.0],sacPx:0.03,gazeDrift:0.04,gazeLead:0.1,mouthEvery:[6,12]};
+let LIFE_BASE=null;fetch('../body_tools/idle/idle_clips.json').then(r=>r.json()).then(j=>{LIFE_BASE=(j.clips&&j.clips.idle_arm_sway)||null}).catch(()=>{LIFE_BASE=null});
+function lifeBase(t){const c=LIFE_BASE;const o={};if(!c)return o;const vw=document.getElementById('view').value;const ks=Object.assign({},c.keys||{},(c.viewKeys||{})[vw]||{});const d=c.duration||8;const u=c.loop?((t%d)+d)%d:t;
+ for(const k of [...BODY_PARAMS,'WristL','WristR'])if(ks[k]&&ks[k].length)o[k]=keyLerp(ks[k],u);return o}
+function lifeAmt(){const e=document.getElementById('life');return e?clamp(+e.value,0,1):1}
+function spr(s,x,dt,f,z){if(s.y==null){s.y=x;s.v=0}const K=(2*Math.PI*f)**2,D=2*z*2*Math.PI*f;const n=Math.max(1,Math.ceil(dt/(1/240))),h=dt/n;for(let i=0;i<n;i++){s.v+=(K*(x-s.y)-D*s.v)*h;s.y+=s.v*h}return s.y}
+function lifeSlopes(){const bs=R.skin?R.skin.bones:(R.body?R.body.parts:[]);const o={};for(const k of BODY_PARAMS){const b=bs.find(p=>bodyParamOf(p)===k);if(!b){o[k]=[0,0];continue}const s0=v[k];v[k]=1;const a1=bodyAngle(b);v[k]=-1;const am=bodyAngle(b);v[k]=s0;o[k]=[a1,am]}return o}
+const lifeDeg=(S,k,x)=>x>=0?x*S[k][0]:-x*S[k][1];
+const lifePar=(S,k,d)=>{const[a1,am]=S[k];if(a1&&d/a1>=0)return d/a1;if(am)return -d/am;return 0};
+function lifeW(Lf,dtAhead){return Math.sin(2*Math.PI*(Lf.ph+(dtAhead||0)/Lf.P))}
+function lifeInit(A){return A.life||(A.life={ph:A.r(),P:LIFE.wMin+A.r()*(LIFE.wMax-LIFE.wMin),S:lifeSlopes(),sp:{},mouth:{next:2.5+A.r()*3,t0:-1,kind:null,dur:0},sac:{next:0.4+A.r(),x:0,y:0},log:{}})}
+function stepLife(A,dt){const L=lifeAmt(),t=A.t,Lf=lifeInit(A),S=Lf.S,sp=k=>Lf.sp[k]||(Lf.sp[k]={});const f=headFacing();const view=document.getElementById('view').value;
+ Lf.ph+=dt/Lf.P;if(Lf.ph>=1){Lf.ph-=1;Lf.P=LIFE.wMin+A.r()*(LIFE.wMax-LIFE.wMin)}
+ const br=Math.sin(2*Math.PI*t/LIFE.breathT),inh=(br+1)/2,w=lifeW(Lf);const B=lifeBase(t);const bv=k=>L*(B[k]||0);
+ const out=sd=>(sd==='L'?-1:1)*(view==='back'?-1:1);const pm=view==='right'?-1:1;
+ // weight shift (legs; foot plant then moves the root so the planted feet stay put)
+ const h=L*LIFE.hip*w;const leg={};
+ for(const sd of['L','R']){if(f){const g=L*LIFE.give*Math.max(0,sd==='L'?w:-w);const hip=h+g/2,knee=-Math.max(0,h)-g,ank=-(hip+knee);leg[sd]=[hip*pm,knee*pm,ank*pm]} // canonical: hip +flex, knee <=0 (flexion only), foot kept flat
+  else leg[sd]=[h,-h,0]} // front/back: thighs sway together, shins stay vertical (feet flat)
+ for(const sd of['L','R']){set('Hip'+sd,leg[sd][0]);set('Knee'+sd,leg[sd][1]);set('Ankle'+sd,leg[sd][2]);set('Toe'+sd,0)}
+ // torso: counter-tilt against the sway + breath, as a damped follower (settles after the hips)
+ const leanT=L*(-LIFE.lean*w*(f?0.5:1)+LIFE.leanBreath*br)+bv('BodyLean');const lean=clamp(spr(sp('lean'),leanT,dt,LIFE.leanF,LIFE.leanZ),-1,1);set('BodyLean',lean);
+ const torsoDeg=lifeDeg(S,'BodyLean',lean);
+ // head: stabilises (keeps ~45% of the torso angle) + its own slow drift, followed with lag/overshoot; lag = the head param
+ const hdT=torsoDeg*LIFE.headKeep+L*LIFE.headDrift*(f?0.6:1)*Math.sin(2*Math.PI*t/5.7+0.9);const hd=spr(sp('head'),hdT,dt,LIFE.spF,LIFE.spZ);const lag=hd-torsoDeg;
+ if(f){set('HeadTilt',0);set('HeadNod',clamp(lag/(HEAD_NOD_DEG*f)-L*LIFE.nodBreathProf*br,-1,1))}
+ else{set('HeadTilt',clamp(lag/HEAD_TILT_DEG,-1,1));set('HeadNod',clamp(-L*LIFE.nodBreath*inh,-1,1))}
+ // arms: shoulder (breath lift + drift) -> forearm -> hand, each a damped follower of its parent's world angle
+ const ph={L:0.3,R:1.9};
+ for(const sd of['L','R']){
+  const shT=f?L*LIFE.shDrift*Math.sin(2*Math.PI*t/7.1+ph[sd])*pm:out(sd)*L*(LIFE.shBreath*inh+LIFE.shDrift*Math.sin(2*Math.PI*t/7.1+ph[sd]));
+  const sh=clamp(spr(sp('sh'+sd),shT+bv('Shoulder'+sd),dt,LIFE.spF,LIFE.spZ),-1,1);set('Shoulder'+sd,sh);
+  const Uw=torsoDeg+lifeDeg(S,'Shoulder'+sd,sh);
+  const elB=L*LIFE.elDrift*Math.sin(2*Math.PI*(t-0.3)/6.3+ph[sd]+0.8)*(f?pm:out(sd))+bv('Elbow'+sd);
+  const faW=spr(sp('fa'+sd),Uw+lifeDeg(S,'Elbow'+sd,elB),dt,LIFE.spF,LIFE.spZ);set('Elbow'+sd,clamp(lifePar(S,'Elbow'+sd,faW-Uw),-1,1));
+  if(R.hands){const faNow=Uw+lifeDeg(S,'Elbow'+sd,v['Elbow'+sd]);const wrB=L*LIFE.wrDrift*Math.sin(2*Math.PI*(t-0.45)/5.1+ph[sd]+1.7);
+   const hW=spr(sp('hand'+sd),faNow+LIFE.wristDeg*(wrB+bv('Wrist'+sd)),dt,LIFE.spF,LIFE.spZ);set('Wrist'+sd,clamp((hW-faNow)/LIFE.wristDeg,-0.6,0.6));
+   const cap=view==='tpose'?LIFE.fCapTpose:LIFE.fHi;['Thumb','Index','Middle','Ring','Pinky'].forEach((n,i)=>{const c=LIFE.fLo+(LIFE.fHi-LIFE.fLo)*(0.5+0.5*Math.sin(2*Math.PI*t/5.3+i*1.1+(sd==='R'?2.1:0)));set('Hand'+sd+n,L>0?clamp(c*L,0,cap):0)})}}
+ Lf.log={br,w,h,lean,lag,P:Lf.P}}
+// eyes: slow drift that leads the head sway by ~3 frames + micro-saccades (whole-px iris jumps) every 0.8-2 s
+function stepGazeLife(A){const L=lifeAmt(),t=A.t,Lf=lifeInit(A);const Lm=R.eyes&&R.eyes.irisLimitsPx;if(!Lm){set('EyeBallX',0);set('EyeBallY',0);return}
+ const sc=Lf.sac;if(t>=sc.next){sc.x=(A.r()*2-1)*LIFE.sacPx;sc.y=(A.r()*2-1)*LIFE.sacPx*0.5;sc.next=t+LIFE.sacEvery[0]+A.r()*(LIFE.sacEvery[1]-LIFE.sacEvery[0])}
+ const dir=Math.sign(headDirX())||1;const ahead=-lifeW(Lf,LIFE.gazeLead)*(headFacing()?0.5:1);const ew=R.eyeW||20;
+ const px=L*(dir*ahead*LIFE.gazeDrift*ew+sc.x*ew),py=L*sc.y*ew;const nx=px>=0?(Lm.dxAtXplus1>0?px/Lm.dxAtXplus1:0):(Lm.dxAtXminus1<0?px/(-Lm.dxAtXminus1):0);
+ const ny=py>=0?(Lm.dyAtYplus1>0?py/Lm.dyAtYplus1:0):(Lm.dyAtYminus1<0?py/(-Lm.dyAtYminus1):0);set('EyeBallX',clamp(nx,-1,1));set('EyeBallY',clamp(ny,-1,1))}
+// mouth: rest, with an occasional soft smile (1.6-2.6 s) or a short M press (0.5-0.9 s), 6-12 s apart; one switch in, one out
+function stepMouthLife(A){const L=lifeAmt(),t=A.t,Lf=lifeInit(A),m=Lf.mouth;set('MouthOpen',0);
+ if(L<=0){set('MouthForm',0);return}
+ if(m.t0<0&&t>=m.next){m.t0=t;m.kind=A.r()<0.65?'smile':'M';m.dur=m.kind==='smile'?1.6+A.r():0.5+A.r()*0.4}
+ let e=0;if(m.t0>=0){const u=t-m.t0,rp=0.12;e=u<rp?ease.smooth(u/rp):u<m.dur-rp?1:u<m.dur?ease.smooth((m.dur-u)/rp):0;if(u>=m.dur){m.t0=-1;m.next=t+LIFE.mouthEvery[0]+A.r()*(LIFE.mouthEvery[1]-LIFE.mouthEvery[0])}}
+ const Ms=(R.mouthShapes||[]).find(q=>q.name==='M');const tg=m.kind==='M'&&Ms?{o:Ms.open,f:Ms.form}:{o:0,f:1};
+ set('MouthOpen',clamp(e*tg.o,0,1));set('MouthForm',clamp(e*tg.f,-1,1))}
+function autoStyle(){const e=document.getElementById('autostyle');return e?e.value:'idle'}
+function animStep(A,dt,o){A.t+=dt;const talk=autoStyle()==='talk';
+ if(o.body&&R.body){if(talk)stepBody(A);else stepLife(A,dt);if(!o.rootKeyed)footPlantApply()}
+ watchTurn(A);
+ if(o.face){mouthTalk=talk&&!!R.mouth;stepBlink(A);if(talk)stepGaze(A);else if(o.body)stepGazeLife(A);else stepGazeIdle(A);if(R.mouth){if(talk)stepTalk(A,dt);else if(o.body)stepMouthLife(A);else stepMouthIdle(A)}}
+ if(o.hair&&R.hair)stepHair(A,dt)}
+// ---- v1.8 foot plant: when RootX/RootY are not keyed, offset the root so the lower foot stays on the rest foot line
+// (mode 'xy' also keeps the planted foot's x at its rest x; the planted foot is blended smoothly by height so nothing pops)
+function footSetup(r){const out={L:null,R:null,line:null};const Sk=r.skin;
+ const pick=s=>['foot_'+s,'toes_'+s];
+ if(Sk){const bi=Object.fromEntries(Sk.bones.map((b,i)=>[b.id,i]));let line=-1e9;
+  for(const s of['L','R']){const ids=new Set(pick(s).map(id=>bi[id]).filter(x=>x!=null));if(!ids.size)continue;let ymax=-1e9;const cand=[];
+   for(let i=0;i<Sk.nv;i++){let best=-1,bw=-1;for(let k=0;k<4;k++){const w=Sk.ww[i*4+k];if(w>bw){bw=w;best=Sk.wb[i*4+k]}}if(ids.has(best)){cand.push(i);if(Sk.V[2*i+1]>ymax)ymax=Sk.V[2*i+1]}}
+   const sole=cand.filter(i=>Sk.V[2*i+1]>=ymax-30);if(!sole.length)continue;line=Math.max(line,ymax);
+   out[s]={pts:sole.map(i=>({x:Sk.V[2*i],y:Sk.V[2*i+1],w:[0,1,2,3].map(k=>[Sk.wb[i*4+k],Sk.ww[i*4+k]]).filter(q=>q[1]>0)})),restX:sole.reduce((a,i)=>a+Sk.V[2*i],0)/sole.length}}
+  out.line=line>-1e9?line:null;out.bones=Sk.bones;return out}
+ if(r.body){let line=-1e9;for(const s of['L','R']){const pts=[];for(const id of pick(s)){const im=r.im['body:'+id];if(!im||im.empty)continue;const y=im.oy+im.height-1;for(let k=0;k<=8;k++)pts.push({x:im.ox+k*(im.width-1)/8,y,part:id});line=Math.max(line,y)}if(pts.length)out[s]={pts,restX:pts.reduce((a,p)=>a+p.x,0)/pts.length}}out.line=line>-1e9?line:null;return out}
+ return out}
+function footPlantMode(){const e=document.getElementById('footplant');return e?e.value:'xy'}
+function footPlantApply(){const F=R&&R.feet;const mode=footPlantMode();if(!F||F.line==null||mode==='off'||!(F.L||F.R)){return null}
+ const bones=R.skin?R.skin.bones:R.body.parts;const BM=chain(bones,bodyAngle,null,R.skin?(p=>p.parent):(p=>p.parent!==undefined?p.parent:BODY_PARENT_OF[p.id]));const Ms=R.skin?R.skin.bones.map(b=>BM[b.id]||I):null;
+ const foot=s=>{const f=F[s];if(!f)return null;let ymax=-1e9,sx=0;for(const p of f.pts){let x=0,y=0;if(Ms){for(const[b,w]of p.w){const M=Ms[b];x+=w*(M[0]*p.x+M[2]*p.y+M[4]);y+=w*(M[1]*p.x+M[3]*p.y+M[5])}}else{const M=BM[p.part]||I;x=M[0]*p.x+M[2]*p.y+M[4];y=M[1]*p.x+M[3]*p.y+M[5]}if(y>ymax)ymax=y;sx+=x}return{y:ymax,dx:sx/f.pts.length-f.restX}};
+ const a=foot('L'),b=foot('R');const ys=[a,b].filter(Boolean);const low=Math.max(...ys.map(q=>q.y));const ry=clamp(F.line-low,-40,40);let rx=0;
+ if(mode==='xy'){if(a&&b){const wa=1/(1+Math.exp(-(a.y-b.y)/2));rx=-(wa*a.dx+(1-wa)*b.dx)}else rx=-(a||b).dx;rx=clamp(rx,-40,40)}
+ set('RootX',rx);set('RootY',ry);return{rx,ry,lowFoot:a&&b?(a.y>=b.y?'L':'R'):(a?'L':'R')}}
+function eyeWidth(r){if(!r.eyes)return 0;const ms=r.eyes.measurements||{};const ws=[];for(const E of r.eyes.eyes){const o=ms[E]&&ms[E].opening_bbox;if(Array.isArray(o)&&o.length===4)ws.push(o[2]-o[0]+1);else{const im=r.im['eyes:'+E+'_white'];if(im&&!im.empty)ws.push(im.width)}}return ws.length?ws.reduce((a,b)=>a+b,0)/ws.length:0}
+let anim=null,lastTs=0;
+function loop(ts){requestAnimationFrame(loop);const on=document.getElementById('auto').checked;if(LP.paused&&!mqRunning){lastTs=ts;return}
+ if(!on||!R||mqRunning){if(!mqRunning)mouthTalk=false;if(anim&&!mqRunning){anim=null;hairDrive=null;draw()}lastTs=ts;return}
+ if(!anim)anim=makeAnim((Math.random()*2**31)|0);const dt=clamp((ts-lastTs)/1000,0.001,0.25);lastTs=ts;animStep(anim,dt,{face:true,hair:true,body:true});draw()}
+requestAnimationFrame(loop);
+
+// ---- v1.6 Layers panel (PREVIEW ONLY) ----
+// Lists every draw item of the last on-screen frame in real draw order (view > system > group > part) with layer numbers and live
+// state. Show/hide, solo, hover-dim and drag-reorder act ONLY on the on-screen preview pass (LP.active is set by draw() alone):
+// rest checks, the motion test and the joint test render on their own canvases with LP inactive, so panel state can never change
+// their results. Hover dims the other parts by alpha (no shapes are drawn). Reorder writes only a localStorage preview override,
+// never rig.json. rig.json stays the source of truth.
+let DIM=1; // alpha multiplier for the preview hover dim (always 1 outside LP.active)
+const LP={active:false,open:true,hidden:new Set(),solo:new Set(),hover:null,collapsed:new Set(),items:[],key:'',rows:{},paused:false,clock:0,stepMs:1000/60,ovr:{},drag:null,lastUpd:0,
+ sysName:['hair_back','body','hands','eyes','mouth','hair_front'],
+ ids(m){return m?['view','sys:'+m.sys,m.gid,m.id]:['view']},
+ visible(m){const ids=this.ids(m);if(ids.some(x=>this.hidden.has(x)))return false;if(this.solo.size&&!ids.some(x=>this.solo.has(x)))return false;return true},
+ dim(m){return this.hover&&!this.ids(m).includes(this.hover)?0.25:1},
+ ovrKey(){return 'shadowveil.layers.previewOverride.v1.'+view},
+ loadOvr(){try{this.ovr=JSON.parse(localStorage.getItem(this.ovrKey())||'{}')||{}}catch(e){this.ovr={}}this.badge()},
+ saveOvr(){try{if(Object.keys(this.ovr).length)localStorage.setItem(this.ovrKey(),JSON.stringify(this.ovr));else localStorage.removeItem(this.ovrKey())}catch(e){}this.badge()},
+ badge(){const b=document.getElementById('lpbadge');if(b)b.style.display=Object.keys(this.ovr).length?'':'none'}};
+function lpRecord(items){LP.items=items.map((it,i)=>Object.assign({},it.m||{id:'?'+i,gid:'?',sys:LP.sysName[it.step],label:'?'},{z:it.z,idx:i,panelOnly:!!it.panelOnly}))}
+function lpFmt(z){return Number.isInteger(z)?String(z):(+z.toFixed(3)).toString()}
+function lpBuild(){const tree=document.getElementById('lptree');if(!tree)return;const its=LP.items;const sysOrder=[],groups={};
+ for(const m of its){const s=m.sys;if(!groups[s]){groups[s]={first:m.idx,gs:{},order:[]};sysOrder.push(s)}const G=groups[s];if(!G.gs[m.gid]){G.gs[m.gid]={first:m.idx,items:[],label:m.glabel||m.gid};G.order.push(m.gid)}G.gs[m.gid].items.push(m)}
+ const rows=[];const row=(id,depth,label,z,leaf,parent)=>rows.push({id,depth,label,z,leaf,parent});
+ row('view',0,'view: '+view,'',false,null);
+ for(const s of sysOrder){const G=groups[s];const zs=G.order.flatMap(g=>G.gs[g].items.map(m=>m.z));row('sys:'+s,1,s,lpFmt(Math.min(...zs))+'–'+lpFmt(Math.max(...zs)),false,'view');
+  for(const gid of G.order){const g=G.gs[gid];const single=g.items.length===1&&(g.items[0].id===gid||gid.startsWith('hairstrand:')); // one-part, unchained hair 'strand' = plain part row
+   if(!single)row(gid,2,g.label,g.items.length>1?lpFmt(Math.min(...g.items.map(m=>m.z)))+'–'+lpFmt(Math.max(...g.items.map(m=>m.z))):lpFmt(g.items[0].z),false,'sys:'+s);
+   for(const m of g.items)row(m.id,single?2:3,m.label,lpFmt(m.z),true,single?'sys:'+s:gid)}}
+ LP.parentOf={};for(const r of rows)LP.parentOf[r.id]=r.parent;
+ tree.textContent='';LP.rows={};
+ for(const r of rows){const d=document.createElement('div');d.className='lrow'+(r.leaf?' leaf':' grp');d.dataset.id=r.id;d.style.paddingLeft=(r.depth*12+2)+'px';if(r.leaf)d.draggable=true;
+  const ex=document.createElement('span');ex.className='exp';ex.textContent=r.leaf?' ':(LP.collapsed.has(r.id)?'▸':'▾');
+  const cb=document.createElement('input');cb.type='checkbox';cb.className='vis';cb.title='show/hide (preview only)';cb.checked=!LP.hidden.has(r.id);
+  const so=document.createElement('button');so.className='solo'+(LP.solo.has(r.id)?' on':'');so.textContent='S';so.title='solo (preview only)';
+  const lab=document.createElement('span');lab.className='lab';lab.textContent=r.label;const z=document.createElement('span');z.className='lz';z.textContent=r.z;
+  const inf=document.createElement('span');inf.className='inf';d.append(ex,cb,so,lab,z,inf);tree.appendChild(d);LP.rows[r.id]={el:d,inf,z}}
+ for(const m of LP.items)if(m.panelOnly&&LP.rows[m.id]){const e=LP.rows[m.id].el;e.draggable=false;e.title='drawn inside the white pass (source-atop): hide/solo/hover work, reorder via the white row'}
+ lpCollapse()}
+function lpCollapse(){for(const id in LP.rows){let p=LP.parentOf[id],hide=false;while(p){if(LP.collapsed.has(p)){hide=true;break}p=LP.parentOf[p]}LP.rows[id].el.style.display=hide?'none':''}}
+function lpUpdate(force){if(!LP.open||!R)return;const now=performance.now();const key=view+'|'+LP.items.map(m=>m.id).join(',');
+ if(key!==LP.key){LP.key=key;lpBuild()}else if(!force&&now-LP.lastUpd<60)return;LP.lastUpd=now;
+ const gInfo={};for(const m of LP.items){const r=LP.rows[m.id];if(!r)continue;r.inf.textContent=m.info||'';r.z.textContent=lpFmt(m.z)+' #'+m.idx;if(m.ginfo)gInfo[m.gid]=m.ginfo}
+ for(const g in gInfo)if(LP.rows[g])LP.rows[g].inf.textContent=gInfo[g];
+ const st=document.getElementById('lpclock');if(st){const t=anim?anim.t.toFixed(3)+' s':'—';const mh=R.mouth&&mouthState?Math.max(0,((LP.paused?LP.clock:performance.now())-mouthState.t0)).toFixed(0):null;
+  st.textContent=(LP.paused?'PAUSED':'running')+' · anim t '+t+(mh!=null&&mouthState.t0>-1e8?' · mouth held '+mh+' ms (min '+MOUTH_HOLD_MS+')':'')}
+ for(const id in LP.rows){const r=LP.rows[id];r.el.classList.toggle('hid',!LP.visible(LP.items.find(m=>m.id===id)||{id,gid:id,sys:id.replace('sys:','')})&&LP.rows[id].el.classList.contains('leaf'));r.el.classList.toggle('hov',LP.hover===id)}
+ const sb=document.getElementById('lpsolo');if(sb)sb.textContent=LP.hidden.size||LP.solo.size?'preview filter: '+LP.hidden.size+' hidden, '+LP.solo.size+' solo':''}
+function lpMask(){const on=document.getElementById('lpmask').checked;const im=document.getElementById('hairmask');if(!on){im.style.display='none';return}
+ const src='../hair/'+view+'_hair_erase_mask.png';if(im.dataset.src!==src){im.dataset.src=src;im.src=src}const r=c.getBoundingClientRect(),sr=document.getElementById('stage').getBoundingClientRect();const z=LP.zoom||[0,0,W,H];const s=r.width/z[2];
+ const box=document.getElementById('maskbox');Object.assign(box.style,{left:(r.left-sr.left)+'px',top:(r.top-sr.top)+'px',width:r.width+'px',height:r.height+'px'});
+ Object.assign(im.style,{display:'',width:(W*s)+'px',height:(H*s)+'px',left:(-z[0]*s)+'px',top:(-z[1]*s)+'px'})}
+function lpStep(){if(!R)return;if(!LP.paused)lpPause(true);const dt=LP.stepMs/1000;if(document.getElementById('auto').checked){if(!anim)anim=makeAnim((Math.random()*2**31)|0);animStep(anim,dt,{face:true,hair:true,body:true})}LP.clock+=LP.stepMs;draw()}
+function lpPause(on){LP.paused=on;if(on)LP.clock=performance.now();document.getElementById('lppause').textContent=on?'▶ Play':'⏸ Pause';draw()}
+function lpInit(){const t=document.getElementById('lptree');
+ t.addEventListener('click',e=>{const row=e.target.closest('.lrow');if(!row)return;const id=row.dataset.id;
+  if(e.target.classList.contains('vis')){if(e.target.checked)LP.hidden.delete(id);else LP.hidden.add(id);draw();return}
+  if(e.target.classList.contains('solo')){if(LP.solo.has(id))LP.solo.delete(id);else LP.solo.add(id);e.target.classList.toggle('on',LP.solo.has(id));draw();return}
+  if(e.target.classList.contains('exp')&&!row.classList.contains('leaf')){if(LP.collapsed.has(id))LP.collapsed.delete(id);else LP.collapsed.add(id);e.target.textContent=LP.collapsed.has(id)?'▸':'▾';lpCollapse()}});
+ t.addEventListener('mouseover',e=>{const row=e.target.closest('.lrow');const id=row?row.dataset.id:null;if(id!==LP.hover){LP.hover=id;draw()}});
+ t.addEventListener('mouseleave',()=>{if(LP.hover){LP.hover=null;draw()}});
+ t.addEventListener('dragstart',e=>{const row=e.target.closest('.lrow.leaf');if(!row)return;LP.drag=row.dataset.id;e.dataTransfer.setData('text/plain',LP.drag)});
+ t.addEventListener('dragover',e=>{if(LP.drag)e.preventDefault()});
+ t.addEventListener('drop',e=>{e.preventDefault();const row=e.target.closest('.lrow.leaf');if(!row||!LP.drag)return;const r=row.getBoundingClientRect();lpMove(LP.drag,row.dataset.id,e.clientY<r.top+r.height/2?'before':'after');LP.drag=null});
+ document.getElementById('lppause').onclick=()=>lpPause(!LP.paused);document.getElementById('lpstep').onclick=lpStep;
+ document.getElementById('lpdt').onchange=e=>{LP.stepMs=+e.target.value};
+ document.getElementById('lpreset').onclick=()=>{LP.ovr={};LP.saveOvr();draw()};
+ document.getElementById('lpclear').onclick=()=>{LP.hidden.clear();LP.solo.clear();LP.key='';draw()};
+ document.getElementById('lpmask').onchange=lpMask;window.addEventListener('resize',lpMask);
+ document.getElementById('lptoggle').onclick=()=>{LP.open=!LP.open;document.getElementById('lpbody').style.display=LP.open?'':'none';document.getElementById('lptoggle').textContent=LP.open?'◂ hide':'▸ Layers';LP.key='';draw()}}
+// preview-only reorder: place `id` just before/after `target` in the current draw list by giving it an in-between layer value
+function lpMove(id,target,where){if(id===target)return;if((LP.items.find(m=>m.id===id)||{}).panelOnly)return;const its=LP.items.filter(m=>m.id!==id);const k=its.findIndex(m=>m.id===target);if(k<0)return;const zt=its[k].z;
+ const nb=where==='before'?(k>0?its[k-1].z:zt-1):(k<its.length-1?its[k+1].z:zt+1);let z=(zt+nb)/2;if(z===zt)z=zt+(where==='before'?-0.001:0.001);LP.ovr[id]=+z.toFixed(4);LP.saveOvr();draw()}
+lpInit();
+// ---- v1.3 Motion quality test ----
+let mqRunning=false;
+async function maskData(u){const i=await img(u);if(!i)return null;const o=document.createElement('canvas');o.width=W;o.height=H;const q=guard(o.getContext('2d'));q.drawImage(i,0,0);const d=q.getImageData(0,0,W,H).data;
+ let hasA=false;for(let k=3;k<d.length;k+=4)if(d[k]<255){hasA=true;break}const m=new Uint8Array(W*H);for(let k=0,p=0;k<d.length;k+=4,p++)m[p]=hasA?(d[k+3]>127):((d[k]+d[k+1]+d[k+2])/3>127);return m}
+async function motionTest(seconds=4,fps=15){if(!R||mqRunning)return;mqRunning=true;const saved={};for(const k in P)saved[k]=v[k];const savedMouth=mouthState;const out=[];
+ try{status('Motion quality: running '+seconds+' s x 2 passes ('+view+') ...');await new Promise(r=>setTimeout(r,0));
+  const hm=await maskData('../hands/'+view+'_hand_erase_mask.png'),hr=await maskData('../hair/'+view+'_hair_erase_mask.png');
+  const RA=restPixels();const region=new Uint8Array(W*H);let nreg=0;for(let p=0;p<W*H;p++){if((hm&&hm[p])||(hr&&hr[p])||RA[p*4+3]>0){region[p]=1;nreg++}}
+  const cv=document.createElement('canvas');cv.width=W;cv.height=H;const g=guard(cv.getContext('2d'));
+  for(const pass of [{name:'face-only (gap check)',o:{face:true,hair:false,body:false},gap:true},{name:'full auto',o:{face:true,hair:true,body:true},gap:false}]){
+   for(const k in P)v[k]=P[k][2];hairDrive=null;mouthState={cur:'mouth_rest',prev:null,t0:-1e9};holdLog=[];renderIssues=new Set();
+   const A=makeAnim(20260929);const dt=1/60,N=Math.round(seconds/dt),every=Math.max(1,Math.round(60/fps));const errs=[],gaps=[];let frames=0,maxGap=0,blinks=0,lastOpen=1;
+   for(let i=1;i<=N;i++){animStep(A,dt,pass.o);simNow=A.t*1000;if(R.mouth)mouthUpdate(simNow);if(v.EyeLOpen<0.5&&lastOpen>=0.5)blinks++;lastOpen=v.EyeLOpen;
+    if(i%every)continue;frames++;
+    try{render(g,false)}catch(e){errs.push(A.t.toFixed(2)+'s '+e.message);continue}
+    if(pass.gap){const D=g.getImageData(0,0,W,H).data;let n=0;for(let p=0;p<W*H;p++)if(region[p]&&D[p*4+3]<RA[p*4+3])n++;if(n){gaps.push(A.t.toFixed(2)+'s:'+n+'px');maxGap=Math.max(maxGap,n)}}
+    if(frames%6===0)await new Promise(r=>setTimeout(r,0))}
+   const holds=holdLog.slice();const minHold=holds.length?Math.min(...holds):null;
+   out.push('['+pass.name+'] '+frames+' frames, guard violations: '+(errs.length?errs.length+' ('+errs.slice(0,3).join('; ')+')':'0')+', missing parts: '+(renderIssues.size?[...renderIssues].join(', '):'0')+
+    (pass.gap?', alpha gaps vs rest inside body/hand/hair masks ('+nreg+' px region): '+(gaps.length?gaps.length+' frames, max '+maxGap+' px ('+gaps.slice(0,4).join(', ')+')':'0'):'')+
+    ', blinks: '+blinks+', mouth switches: '+holds.length+(minHold!=null?', min shape hold: '+minHold.toFixed(0)+' ms'+(minHold<MOUTH_HOLD_MS-0.5?' (FLICKER)':''):''));}
+  const ok=out.every(l=>/guard violations: 0,/.test(l)&&/missing parts: 0/.test(l)&&!/FLICKER/.test(l)&&!/\(gap check\)[^\n]*gaps[^:]*: [1-9]/.test(l));
+  status((ok?'PASS':'FAIL')+': Motion quality ('+view+')\n'+out.join('\n'))}
+ catch(e){status('Motion quality: FAIL (exception) '+e.message)}
+ finally{simNow=null;holdLog=null;hairDrive=null;mouthTalk=false;for(const k in P)set(k,saved[k]);mouthState=savedMouth;mqRunning=false;draw()}
+ return document.getElementById('status').textContent}
+// ---- v1.5 Joint test along the parent/child seam ----
+// Seam: skin = mesh edges whose endpoints' dominant bone switches between the parent bone and the child's subtree;
+// cut = the visible part boundary between parent and child (boundary of whichever part is on top, where the other is within 2 px).
+// Every joint (shoulder, elbow, hip, knee, ankle, wrist; L/R) is bent to 25 deg; metrics are taken in a band around the whole
+// posed seam (including where it meets the silhouette) and compared with the same measurement on the rest composite/rest seam.
+const JT_LINE=(r,g,b,a)=>a>=128&&Math.max(r,g,b)<=45; // outline (navy ~(13,11,29), incl. its dark AA)
+function partAlpha(im){const o=document.createElement('canvas');o.width=W;o.height=H;const q=guard(o.getContext('2d'));if(im&&!im.empty)q.drawImage(im,im.ox||0,im.oy||0);const d=q.getImageData(0,0,W,H).data;const a=new Uint8Array(W*H);for(let i=0;i<a.length;i++)a[i]=d[i*4+3];return a}
+function skinSeam(Sk,childId,parentId){const sub=new Set([childId]);let grow=true;while(grow){grow=false;for(const b of Sk.bones)if(b.parent&&sub.has(b.parent)&&!sub.has(b.id)){sub.add(b.id);grow=true}}
+ const bi=Object.fromEntries(Sk.bones.map((b,i)=>[b.id,i]));const pI=bi[parentId];if(pI==null)return[];const side=new Int8Array(Sk.nv);
+ for(let v=0;v<Sk.nv;v++){let best=-1,bw=-1;for(let k=0;k<4;k++){const w=Sk.ww[v*4+k];if(w>bw){bw=w;best=Sk.wb[v*4+k]}}side[v]=best===pI?1:sub.has(Sk.bones[best].id)?2:0}
+ const seen=new Set(),out=[];for(const t of Sk.triRaw)for(let e=0;e<3;e++){const a=t[e],b=t[(e+1)%3];if(side[a]*side[b]!==2)continue;const key=a<b?a*1e6+b:b*1e6+a;if(seen.has(key))continue;seen.add(key);out.push([a,b])}
+ return out} // pairs of vertex indices; seam point = edge midpoint
+function cutSeam(topA,otherA,restA){const out=[];for(let y=2;y<H-2;y++)for(let x=2;x<W-2;x++){const i=y*W+x;if(topA[i]<128)continue;if(topA[i-1]>=128&&topA[i+1]>=128&&topA[i-W]>=128&&topA[i+W]>=128)continue;
+  let near=false;for(let dy=-2;dy<=2&&!near;dy++)for(let dx=-2;dx<=2;dx++)if(otherA[i+dy*W+dx]>=128){near=true;break}if(near&&restA[i]>=128)out.push([x+0.5,y+0.5])}return out}
+function stampMask(Wd,pts,r){const{x0,y0,w,h}=Wd;const m=new Uint8Array(w*h);const seen=new Set();const offs=[];for(let dy=-r;dy<=r;dy++)for(let dx=-r;dx<=r;dx++)if(dx*dx+dy*dy<=r*r)offs.push([dx,dy]);
+ for(const [px,py] of pts){const cx=Math.floor(px)-x0,cy=Math.floor(py)-y0;const k=cy*100000+cx;if(seen.has(k))continue;seen.add(k);for(const [dx,dy] of offs){const x=cx+dx,y=cy+dy;if(x>=0&&y>=0&&x<w&&y<h)m[y*w+x]=1}}return m}
+function morph(src,w,h,r,dilate){const offs=[];for(let dy=-r;dy<=r;dy++)for(let dx=-r;dx<=r;dx++)if(dx*dx+dy*dy<=r*r)offs.push(dy*w+dx,dx,dy);const out=new Uint8Array(w*h);
+ for(let y=0;y<h;y++)for(let x=0;x<w;x++){let v=dilate?0:1;for(let k=0;k<offs.length;k+=3){const xx=x+offs[k+1],yy=y+offs[k+2];const s=(xx<0||yy<0||xx>=w||yy>=h)?(dilate?0:1):src[yy*w+xx];if(dilate?s:!s){v=dilate?1:0;break}}out[y*w+x]=v}return out}
+function seamMetrics(Wd,pts,band8,band10,excl){const{w,h,d}=Wd;const N=w*h;if(excl){for(let i=0;i<N;i++)if(excl(Wd.x0+i%w,Wd.y0+((i/w)|0))){band8[i]=0;band10[i]=0}}const op=new Uint8Array(N);for(let i=0;i<N;i++)op[i]=d[i*4+3]>=128?1:0;
+ // enclosed holes: transparent components not reaching the window border, inside the 8 px seam band
+ const seen=new Uint8Array(N),st=[];for(let x=0;x<w;x++)st.push(x,(h-1)*w+x);for(let y=0;y<h;y++)st.push(y*w,y*w+w-1);
+ while(st.length){const i=st.pop();if(seen[i]||op[i])continue;seen[i]=1;const x=i%w;if(x>0)st.push(i-1);if(x<w-1)st.push(i+1);if(i>=w)st.push(i-w);if(i<N-w)st.push(i+w)}
+ const cl=morph(morph(op,w,h,3,true),w,h,3,false);let holes=0,tears=0;for(let i=0;i<N;i++){if(!band8[i])continue;if(!op[i]&&!seen[i])holes++;if(cl[i]&&!op[i])tears++}
+ // outline along the seam band where it meets the silhouette
+ const A=(x,y)=>(x<0||y<0||x>=w||y>=h)?0:d[(y*w+x)*4+3];const ws=[];let zero=0;
+ for(let y=1;y<h-1;y++)for(let x=1;x<w-1;x++){if(!band10[y*w+x]||A(x,y)<128)continue;if(A(x-1,y)>=128&&A(x+1,y)>=128&&A(x,y-1)>=128&&A(x,y+1)>=128)continue;
+  const gx=(A(x+1,y-1)+2*A(x+1,y)+A(x+1,y+1))-(A(x-1,y-1)+2*A(x-1,y)+A(x-1,y+1)),gy=(A(x-1,y+1)+2*A(x,y+1)+A(x+1,y+1))-(A(x-1,y-1)+2*A(x,y-1)+A(x+1,y-1));const gl=Math.hypot(gx,gy);if(gl<1)continue;
+  const nx=gx/gl,ny=gy/gl;let run=0,started=false,lead=0;for(let t=-1;t<=14;t+=0.25){const sx=Math.floor(x+0.5+nx*t),sy=Math.floor(y+0.5+ny*t);if(sx<0||sy<0||sx>=w||sy>=h)break;const q=(sy*w+sx)*4;const L=JT_LINE(d[q],d[q+1],d[q+2],d[q+3]);if(L){started=true;run++}else if(started)break;else if((lead+=0.25)>2.0)break}
+  if(!run)zero++;else ws.push(run*0.25)}
+ ws.sort((a,b)=>a-b);const n=ws.length;
+ // seam coverage: alpha at each seam point
+ const al=[];for(const [px,py] of pts){const x=Math.floor(px)-Wd.x0,y=Math.floor(py)-Wd.y0;al.push(excl&&excl(Math.floor(px),Math.floor(py))?-1:A(x,y))}
+ return{holes,tears,edges:n+zero,n,zero,mean:n?ws.reduce((s,x)=>s+x,0)/n:0,min:n?ws[0]:0,p10:n?ws[Math.floor(n*0.1)]:0,alpha:al}}
+async function jointTest(deg=25){if(!R||mqRunning)return;mqRunning=true;const saved={};for(const k in P)saved[k]=v[k];const sQ=QUAL,bmE=document.getElementById('bodymode'),sB=bmE.value,qE=document.getElementById('quality'),ulE=document.getElementById('underlay'),sU=ulE.checked;const res=[];
+ try{status('Joint test: running ('+view+') ...');await new Promise(r=>setTimeout(r,0));for(const k in P)v[k]=P[k][2];hairDrive=null;
+  const cv=document.createElement('canvas');cv.width=W;cv.height=H;const g=guard(cv.getContext('2d'));render(g,true);const restCv=document.createElement('canvas');restCv.width=W;restCv.height=H;restCv.getContext('2d').drawImage(cv,0,0);
+  const restA=partAlpha(restCv);
+  const bodies=[];if(R.body)bodies.push('cut');if(R.skin){bodies.push('skin');if(R.skin.underlay&&R.skin.underlay.ok)bodies.push('skin+underlay')}
+  const quals=['nearest','linear','ss2'];const cutBy=R.body?Object.fromEntries(R.body.parts.map(p=>[p.id,p])):{};const alphaCache={};const aOf=id=>alphaCache[id]||(alphaCache[id]=partAlpha(id.startsWith('hands:')?R.im[id]:R.im['body:'+id]));
+  for(const [name,base] of[['shoulder','Shoulder'],['elbow','Elbow'],['hip','Hip'],['knee','Knee'],['ankle','Ankle'],['wrist','Wrist']])for(const s of['L','R']){const k=base+s;if(!(k in P))continue;
+   let x=1,cutDef=null,skinDef=null,palm=null;
+   if(base==='Wrist'){palm=R.hands&&R.hands.parts.find(p=>p.parentExternal&&p.id[0]===s&&p.file);if(!palm)continue;const mx=+(palm.maxWristDeg??R.hands.wristMaxDeg??25);x=Math.min(1,deg/mx);const fa=palmParent(palm);
+    const pts=cutSeam(aOf('hands:'+palm.id),cutBy[fa]?aOf(fa):restA,restA);cutDef={pts,top:'palm'};if(R.skin)skinDef={pts,top:'palm'}}
+   else{const cp=R.body&&R.body.parts.find(p=>p.file&&bodyParamOf(p)===k);const cb=R.skin&&R.skin.bones.find(b=>bodyParamOf(b)===k);const any=cp||cb;if(!any)continue;
+    v[k]=1;const a=Math.abs(bodyAngle(any));v[k]=0;if(!(a>0))continue;x=Math.min(1,deg/a);
+    if(cp){const pid=cp.parent!==undefined?cp.parent:BODY_PARENT_OF[cp.id];const pp=cutBy[pid];if(pp&&pp.file){const childTop=(R.z['body:'+cp.id]??0)>(R.z['body:'+pp.id]??0);
+      cutDef={pts:childTop?cutSeam(aOf(cp.id),aOf(pp.id),restA):cutSeam(aOf(pp.id),aOf(cp.id),restA),top:childTop?cp.id:pp.id}}}
+    if(cb&&cb.parent){const pairs=skinSeam(R.skin,cb.id,cb.parent);if(pairs.length){const V=R.skin.V;skinDef={pairs,pts:pairs.map(([a,b])=>[(V[2*a]+V[2*b])/2,(V[2*a+1]+V[2*b+1])/2])}}}}
+   // v1.5.1 hips: only the outer hip outline is scored. The medial side (towards the other hip pivot: the inner crotch edge between the thighs)
+   // is excluded from holes, tears, seam alpha and outline width, in rest and posed alike.
+   const hipExcl=b=>{if(base!=='Hip')return null;const o=s==='L'?'R':'L';const src=b==='cut'?(R.body?R.body.parts:[]):(R.skin?R.skin.bones:[]);
+    const me=src.find(p=>bodyParamOf(p)==='Hip'+s),ot=src.find(p=>bodyParamOf(p)==='Hip'+o);if(!me||!ot||Math.abs(ot.pivotX-me.pivotX)<4)return null;
+    const sg=Math.sign(ot.pivotX-me.pivotX),px0=me.pivotX;const f=(x,y)=>(x+0.5-px0)*sg>0;f.desc='medial side '+(sg>0?'x > ':'x < ')+px0+' excluded';return f};
+   const row={joint:name+'_'+s,param:k,x:+x.toFixed(3),modes:{},seams:{},excl:{}};
+   const restCache={};
+   for(const b of bodies){const def=b==='cut'?cutDef:skinDef;if(!def||!def.pts.length)continue;bmE.value=b==='cut'?'cut':'skin';ulE.checked=b==='skin+underlay';
+    for(const q of quals){QUAL=q;v[k]=x;renderFinal(g,false);
+     let posed;if(def.pairs){const D=R.skin.def;posed=def.pairs.map(([a,c])=>[(D[2*a]+D[2*c])/2,(D[2*a+1]+D[2*c+1])/2])}
+     else{const M=def.top==='palm'?palmExt(palm,R._BM||{},false):((R._BM||{})[def.top]||I);posed=def.pts.map(([px,py])=>[M[0]*px+M[2]*py+M[4],M[1]*px+M[3]*py+M[5]])}
+     v[k]=0;let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;for(const [px,py] of def.pts.concat(posed)){x0=Math.min(x0,px);y0=Math.min(y0,py);x1=Math.max(x1,px);y1=Math.max(y1,py)}
+     const bx0=Math.max(0,Math.floor(x0-20)),by0=Math.max(0,Math.floor(y0-20)),bx1=Math.min(W,Math.ceil(x1+20)),by1=Math.min(H,Math.ceil(y1+20));
+     const win=c=>({x0:bx0,y0:by0,w:bx1-bx0,h:by1-by0,d:c.getContext('2d').getImageData(bx0,by0,bx1-bx0,by1-by0).data});
+     const ex=hipExcl(b);if(ex)row.excl[b]=ex.desc;const rkey=(def.pairs?'skin':'cut')+(ex?ex.desc:'')+bx0+','+by0+','+bx1+','+by1;
+     if(!restCache[rkey]){const Rw=win(restCv);restCache[rkey]=seamMetrics(Rw,def.pts,stampMask(Rw,def.pts,8),stampMask(Rw,def.pts,10),ex)}
+     const rm=restCache[rkey];const Pw=win(cv);const pm=seamMetrics(Pw,posed,stampMask(Pw,posed,8),stampMask(Pw,posed,10),ex);
+     let thin=0,full=0;for(let i=0;i<pm.alpha.length;i++)if(rm.alpha[i]===255&&pm.alpha[i]>=0){full++;if(pm.alpha[i]<255)thin++}
+     row.seams[b]=def.pts.length;row.modes[b+'/'+q]={seamPts:def.pts.length,holes:pm.holes,restHoles:rm.holes,tears:pm.tears,restTears:rm.tears,thin,thinOf:full,
+      n:pm.n,edges:pm.edges,zero:pm.zero,mean:pm.mean,min:pm.min,p10:pm.p10,restMean:rm.mean,restMin:rm.min,restN:rm.n,restZero:rm.zero,ratio:rm.mean&&pm.n?pm.mean/rm.mean:null}}
+    await new Promise(r=>setTimeout(r,0))}
+   res.push(row)}
+  const f=(n,d=2)=>n==null?'n/a':n.toFixed(d);const lines=[];const agg={};
+  for(const r of res){lines.push(r.joint+' (x='+r.x+'): seam points '+Object.entries(r.seams).map(([b,n])=>b+' '+n).join(', ')+(Object.keys(r.excl).length?' | outer hip only: '+[...new Set(Object.values(r.excl))].join('; '):''));
+   for(const [m,s] of Object.entries(r.modes)){lines.push('   '+m.padEnd(22)+' holes '+s.holes+' (rest '+s.restHoles+'), tears '+s.tears+' (rest '+s.restTears+'), seam alpha<255 '+s.thin+'/'+s.thinOf+
+     ' | outline at silhouette: '+s.n+'/'+s.edges+' edges, mean '+f(s.mean)+' ('+(s.ratio!=null?f(100*s.ratio,0)+'% of rest '+f(s.restMean):'rest n/a')+') min '+f(s.min)+' p10 '+f(s.p10)+', no-line '+s.zero+' (rest '+s.restZero+'/'+(s.restN+s.restZero)+')');
+    const A=agg[m]||(agg[m]={dh:0,dt:0,thin:0,thinOf:0,ratio:0,nr:0,min:1e9,zero:0,edges:0,rz:0,re:0});A.dh+=Math.max(0,s.holes-s.restHoles);A.dt+=Math.max(0,s.tears-s.restTears);A.thin+=s.thin;A.thinOf+=s.thinOf;
+    if(s.ratio!=null&&s.restN>=10){A.ratio+=s.ratio;A.nr++;A.min=Math.min(A.min,s.min)}A.zero+=s.zero;A.edges+=s.edges;A.rz+=s.restZero;A.re+=s.restN+s.restZero}}
+  const summ=Object.entries(agg).map(([m,A])=>({m,newHoles:A.dh,newTears:A.dt,thinPct:A.thinOf?100*A.thin/A.thinOf:0,ratio:A.nr?A.ratio/A.nr:null,min:A.nr?A.min:null,noLinePct:A.edges?100*A.zero/A.edges:0,restNoLinePct:A.re?100*A.rz/A.re:0,joints:A.nr}));
+  const best={};for(const b of bodies){const c=summ.filter(s=>s.m.startsWith(b+'/')&&s.ratio!=null).sort((a,c)=>(a.newHoles+a.newTears)-(c.newHoles+c.newTears)||Math.abs(1-a.ratio)-Math.abs(1-c.ratio));if(c.length)best[b]=c[0].m}
+  const head=['SUMMARY ('+view+', joints bent to '+deg+' deg; metrics in an 8/10 px band along the whole parent/child seam, vs rest; hips: outer hip outline only, medial inner-crotch side excluded):',...summ.map(s=>'  '+s.m.padEnd(22)+' new holes '+s.newHoles+' px, new tears '+s.newTears+' px, seam alpha<255 '+f(s.thinPct,1)+'%, outline width '+(s.ratio!=null?f(100*s.ratio,1)+'% of rest (min '+f(s.min)+' px, '+s.joints+' joints)':'n/a')+', edges without line '+f(s.noLinePct,1)+'% (rest '+f(s.restNoLinePct,1)+'%)'),
+   '  best (fewest new holes+tears, then width closest to rest): '+Object.entries(best).map(([b,m])=>b+' -> '+m).join(', ')];
+  window.JT={view,deg,rows:res,summary:summ,best};status('Joint test ('+view+')\n'+head.join('\n')+'\n'+lines.join('\n'))}
+ catch(e){status('Joint test: FAIL (exception) '+e.message+' '+(e.stack||'').split('\n')[1])}
+ finally{QUAL=sQ;bmE.value=sB;qE.value=sQ;ulE.checked=sU;hairDrive=null;for(const k in P)set(k,saved[k]);mqRunning=false;draw()}
+ return document.getElementById('status').textContent}
+document.getElementById('mq').onclick=()=>motionTest();
+document.getElementById('jt').onclick=()=>jointTest();
+const qv=new URLSearchParams(location.search).get('view');if(qv)document.getElementById('view').value=qv;load();
+</script></body></html>

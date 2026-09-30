@@ -1,0 +1,11 @@
+== tab p0 (Clean room (current)): imgs=6 vids=43 brokenImg=0 brokenVid=0 failedReq=0
+== tab p1 (Clean room (static)): imgs=0 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab p2 (Base model clean room): imgs=1 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab p3 (Driver foundation): imgs=0 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab p4 (Interactive master sheet): imgs=37 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab p5 (Puppet rig (attachment)): imgs=0 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab p6 (Meta AI guide handoff): imgs=0 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab p7 (Clean room media gallery): imgs=47 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab p8 (Pose driver (Clean room)): imgs=17 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab media (Media): imgs=10 vids=6 brokenImg=0 brokenVid=0 failedReq=0
+TOTAL {"failed":0,"brokenImg":0,"brokenVid":0,"imgs":118,"vids":49}

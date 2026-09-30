@@ -1,0 +1,1 @@
+bikini-blend {"sigIn": 12.0, "sigOut": 9.0, "gate": 10.0, "crotchCap": null, "torsoUp": 30.0, "torsoToPelvisPx": 2612, "fabricPx": 14445, "zonePx": 33316, "thighAtOpeningMedianBefore": {"thigh_R": 0.41436052322387695, "thigh_L": 0.3838551342487335}, "thighAtOpeningMedianAfter": {"thigh_R": 0.5, "thigh_L": 0.5}}

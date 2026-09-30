@@ -1,0 +1,73 @@
+{
+ "clip": "apose-turn",
+ "toggles": {
+  "Hair": {
+   "changed": true,
+   "sumRatio": 0.996,
+   "restored": true
+  },
+  "Face": {
+   "changed": true,
+   "sumRatio": 0.945,
+   "restored": true
+  },
+  "Eyes": {
+   "changed": true,
+   "sumRatio": 0.999,
+   "restored": true
+  },
+  "Body": {
+   "changed": true,
+   "sumRatio": 0.086,
+   "restored": true
+  },
+  "Plate": {
+   "changed": true,
+   "sumRatio": 0,
+   "restored": true
+  }
+ },
+ "flash": {
+  "changedPx": 0,
+  "whitePx": 0,
+  "total": 897024
+ },
+ "talk": [
+  {
+   "id": "talk",
+   "rs": 4,
+   "t": 2.44,
+   "err": null,
+   "lanes": "Plate: | Held frame:img | Hair:img | Face:img | Eyes:img | Body:img | Fingers:No separate layer | Mouth:No separate layer",
+   "brokenImgs": 0
+  },
+  {
+   "id": "talk-speak",
+   "rs": 4,
+   "t": 2.28,
+   "err": null,
+   "lanes": "Plate: | Held frame:No held frame for this clip | Hair:Cutting this layer | Face:img | Eyes:img | Body:Cutting this layer | Fingers:No separate layer | Mouth:No separate layer",
+   "brokenImgs": 0
+  },
+  {
+   "id": "talk-ask",
+   "rs": 4,
+   "t": 2.37,
+   "err": null,
+   "lanes": "Plate: | Held frame:No held frame for this clip | Hair:Cutting this layer | Face:img | Eyes:img | Body:Cutting this layer | Fingers:No separate layer | Mouth:No separate layer",
+   "brokenImgs": 0
+  },
+  {
+   "id": "talk-laugh",
+   "rs": 4,
+   "t": 2.42,
+   "err": null,
+   "lanes": "Plate: | Held frame:No held frame for this clip | Hair:Cutting this layer | Face:img | Eyes:img | Body:Cutting this layer | Fingers:No separate layer | Mouth:No separate layer",
+   "brokenImgs": 0
+  }
+ ],
+ "failed": [
+  "404 http://127.0.0.1:8765/favicon.ico"
+ ],
+ "errors": []
+}

@@ -1,0 +1,86 @@
+{
+ "view": "back",
+ "frame": 109,
+ "map": {
+  "scale": 1.58301,
+  "dx": 80.36,
+  "dy": -41.32
+ },
+ "iou_rest": 0.2684522478192798,
+ "iou_classifier_on_base": 0.3111749116607774,
+ "silhouette": {
+  "dx": 2,
+  "dy": 4,
+  "iou_after": 0.27086834733893556,
+  "centroid_dxdy": [
+   0.6,
+   65.2
+  ]
+ },
+ "bun": {
+  "dx": -4,
+  "dy": -6,
+  "iou_after": 0.6454532597935229,
+  "iou_at0": 0.6167307437359141,
+  "layer": 650
+ },
+ "fringe": null,
+ "head_silhouette": {
+  "dx": -1,
+  "dy": 0,
+  "iou_after": 0.9190369139543219,
+  "iou_at0": 0.9187868521353878
+ },
+ "head_top_dy": -1,
+ "pose_fit": {
+  "iou": 0.28806857458869073,
+  "rot_deg_ccw": 2.0,
+  "scale": 1.06
+ },
+ "frame_only": [
+  {
+   "x": 591,
+   "y": 114,
+   "w": 187,
+   "h": 187,
+   "area": 22268,
+   "below_live_hair_bottom": false
+  },
+  {
+   "x": 622,
+   "y": 48,
+   "w": 35,
+   "h": 39,
+   "area": 235,
+   "below_live_hair_bottom": false
+  }
+ ],
+ "live_only": [],
+ "strands": [
+  {
+   "id": "strand_01",
+   "px": 74,
+   "matched_frac": 0.9594594594594594
+  },
+  {
+   "id": "strand_02",
+   "px": 161,
+   "matched_frac": 0.8198757763975155
+  },
+  {
+   "id": "strand_03",
+   "px": 165,
+   "matched_frac": 0.9757575757575757
+  },
+  {
+   "id": "strand_04",
+   "px": 181,
+   "matched_frac": 0.712707182320442
+  },
+  {
+   "id": "strand_05",
+   "px": 73,
+   "matched_frac": 1.0
+  }
+ ]
+}

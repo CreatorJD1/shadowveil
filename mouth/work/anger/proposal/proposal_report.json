@@ -1,0 +1,60 @@
+{
+ "left": {
+  "view": "left",
+  "transform": {
+   "scale": null,
+   "scaleX": 0.2604166666666667,
+   "scaleY": 0.48732083792723263,
+   "rotationDeg": 0.0,
+   "srcCentre": [
+    371.0,
+    436.5
+   ],
+   "dstCentre": [
+    600.5,
+    270.5
+   ],
+   "note": "dst = dstCentre + scale*(src - srcCentre) in pixel-edge coordinates (src px i spans [i,i+1))"
+  },
+  "restDrawnBBox": [
+   588,
+   259,
+   612,
+   284
+  ],
+  "restSeamY": 270.5,
+  "maxAlphaErr": 0.007792568507723273,
+  "uncoveredRestLipPx": 0,
+  "restLipPx": 254,
+  "PROPOSAL": "horizontally compressed FRONT anger mouth; not a real side view; not registered; live profile falls back to M"
+ },
+ "right": {
+  "view": "right",
+  "transform": {
+   "scale": null,
+   "scaleX": 0.2604166666666667,
+   "scaleY": 0.49173098125689085,
+   "rotationDeg": 0.0,
+   "srcCentre": [
+    371.0,
+    436.5
+   ],
+   "dstCentre": [
+    772.5,
+    274.5
+   ],
+   "note": "dst = dstCentre + scale*(src - srcCentre) in pixel-edge coordinates (src px i spans [i,i+1))"
+  },
+  "restDrawnBBox": [
+   760,
+   262,
+   784,
+   287
+  ],
+  "restSeamY": 274.5,
+  "maxAlphaErr": 0.005190518561519467,
+  "uncoveredRestLipPx": 0,
+  "restLipPx": 239,
+  "PROPOSAL": "horizontally compressed FRONT anger mouth; not a real side view; not registered; live profile falls back to M"
+ }
+}

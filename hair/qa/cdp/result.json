@@ -1,0 +1,54 @@
+{
+ "apose": {
+  "restCheck": "All part sets loaded for apose\nbody: 13 jointed parts\nlayers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2\nmouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE\nfinger frames: 30 segments",
+  "swaySteps": {},
+  "motionQuality": "Motion quality: FAIL (exception) useSkin is not defined",
+  "consoleErrors": [
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/favicon.ico",
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/views/apose/body/skin.json?t=1790730616824",
+   "EXCEPTION: ReferenceError: useSkin is not defined\n    at render (http://127.0.0.1:8765/rig/index.html?view=apose:188:3)\n    at restPixels (http://127.0.0.1:8765/rig/index.html?view=apose:225:119)\n    at document.getElementById.onclick (http://127.0.0.1:8765/rig/index.html?view=apose:226:80)\n    at http://127.0.0.1:8765/rig/index.html?view=apose:106:89",
+   "EXCEPTION: ReferenceError: renderFinal is not defined\n    at draw (http://127.0.0.1:8765/rig/index.html?view=apose:222:138)\n    at load (http://127.0.0.1:8765/rig/index.html?view=apose:107:698)",
+   "EXCEPTION: ReferenceError: renderFinal is not defined\n    at draw (http://127.0.0.1:8765/rig/index.html?view=apose:222:138)\n    at motionTest (http://127.0.0.1:8765/rig/index.html?view=apose:309:121)"
+  ]
+ },
+ "tpose": {
+  "restCheck": "All part sets loaded for tpose\nbody: 13 jointed parts\nlayers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2\nmouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE\nfinger frames: 24 segments",
+  "swaySteps": {},
+  "motionQuality": "Motion quality: FAIL (exception) useSkin is not defined",
+  "consoleErrors": [
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/views/tpose/body/skin.json?t=1790730625347",
+   "EXCEPTION: ReferenceError: useSkin is not defined\n    at render (http://127.0.0.1:8765/rig/index.html?view=tpose:188:3)\n    at restPixels (http://127.0.0.1:8765/rig/index.html?view=tpose:225:119)\n    at document.getElementById.onclick (http://127.0.0.1:8765/rig/index.html?view=tpose:226:80)\n    at http://127.0.0.1:8765/rig/index.html?view=tpose:106:89",
+   "EXCEPTION: ReferenceError: renderFinal is not defined\n    at draw (http://127.0.0.1:8765/rig/index.html?view=tpose:222:138)\n    at load (http://127.0.0.1:8765/rig/index.html?view=tpose:107:698)",
+   "EXCEPTION: ReferenceError: renderFinal is not defined\n    at draw (http://127.0.0.1:8765/rig/index.html?view=tpose:222:138)\n    at motionTest (http://127.0.0.1:8765/rig/index.html?view=tpose:309:121)"
+  ]
+ },
+ "left": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (left)\nlayers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2\nmouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE",
+  "swaySteps": 5,
+  "motionQuality": "PASS: Motion quality (left)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (217109 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms",
+  "consoleErrors": [
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/views/left/body/skin.json?t=1790730633090"
+  ]
+ },
+ "right": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (right)\nlayers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2\nmouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE",
+  "swaySteps": 5,
+  "motionQuality": "PASS: Motion quality (right)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (212980 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms",
+  "consoleErrors": [
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/views/right/body/skin.json?t=1790730641528"
+  ]
+ },
+ "back": {
+  "restCheck": "Not delivered yet for back: eyes, mouth\nbody: 13 jointed parts\nlayers: hair=v1.2, body=v1.2, hands=v1.2\nmouth shapes: \nfinger frames: 30 segments",
+  "swaySteps": 5,
+  "motionQuality": "PASS: Motion quality (back)\n[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (345016 px region): 0, blinks: 1, mouth switches: 0\n[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 1, mouth switches: 0",
+  "consoleErrors": [
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/views/back/mouth/rig.json?t=1790730648984",
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/views/back/eyes/rig.json?t=1790730648975",
+   "LOG: Failed to load resource: the server responded with a status of 404 (File not found) http://127.0.0.1:8765/views/back/body/skin.json?t=1790730652165"
+  ]
+ },
+ "live": {
+  "consoleErrors": []
+ }
+}

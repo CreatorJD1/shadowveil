@@ -1,0 +1,5 @@
+3af8a577400300aec9fcefb2f255d455  views/apose/base.png
+dd924df3b839e75b057c8de6e78e406c  views/back/base.png
+8c44921afcfcbb27dcd9b03ae9c2f0e0  views/left/base.png
+0fcd6495c48cb2e99928f9ab8c30ddfc  views/right/base.png
+48ca865da99761717902dd410abaf22f  views/tpose/base.png

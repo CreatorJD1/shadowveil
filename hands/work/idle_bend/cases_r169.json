@@ -1,0 +1,1 @@
+[{"name": "f169", "clip": "idle_arm_settle", "frame": 169}, {"name": "f169_wrist0", "clip": "idle_arm_settle", "frame": 169, "vals": {"WristR": 0}}, {"name": "f169_handsopen", "clip": "idle_arm_settle", "frame": 169, "vals": {"HandRThumb": 0, "HandRIndex": 0, "HandRMiddle": 0, "HandRRing": 0, "HandRPinky": 0, "HandRSpread": 0}}]

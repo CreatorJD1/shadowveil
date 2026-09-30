@@ -1,0 +1,5 @@
+apose AFTER [('auto', 0, 59), ('auto', 25, 101), ('auto', -25, 99)]
+tpose AFTER [('auto', 0, 659), ('auto', 25, 756), ('auto', -25, 763)]
+left AFTER [('auto', 0, 2), ('auto', 25, 2), ('auto', -25, 2)]
+right AFTER [('auto', 0, 0), ('auto', 25, 1), ('auto', -25, 6)]
+back AFTER [('auto', 0, 24), ('auto', 25, 41), ('auto', -25, 22)]

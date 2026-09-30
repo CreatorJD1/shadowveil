@@ -1,0 +1,45 @@
+{
+ "apose": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": []
+ },
+ "tpose": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": []
+ },
+ "left": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": []
+ },
+ "right": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "eye region": 0,
+  "mouth region": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": []
+ },
+ "back": {
+  "total": 0,
+  "hand mask": 0,
+  "hair mask": 0,
+  "elsewhere (base_body outside masks)": 0,
+  "missing": []
+ }
+}

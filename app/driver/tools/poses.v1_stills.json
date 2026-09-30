@@ -1,0 +1,395 @@
+{
+ "generated_by": "app/driver/tools/build_poses.py",
+ "canvas": [
+  1365,
+  1739
+ ],
+ "headY": 40,
+ "footY": 1681,
+ "rest": {
+  "canvas": [
+   1365,
+   1739
+  ],
+  "headY": 40,
+  "footY": 1681,
+  "upscale": false,
+  "mirror": false,
+  "front": "turn-000.png is the original A-pose file, copied, not scaled.",
+  "others": "Drawn taller than the A-pose figure, then scaled down so the head sits at y=40 and the feet at y=1681.",
+  "eyes": "Open. Gaze goes with the head, not at the camera. Amber is her right eye. Green is her left eye. 90 and 270 are separate drawings, not mirrors.",
+  "mouth": "Closed, neutral.",
+  "hair": "High bun, short strands, no wind, no long hair.",
+  "hands": "A-pose rest. Slight spread, same soft curl, thumb in the same place.",
+  "seam": "90 and 270 are one drawing each. The front three-quarter and back views add the calves under the knees, so a faint join can still show there."
+ },
+ "eyes_rule": "Her right eye is amber. Her left eye is green. The mark sits under one eye. A flipped angle would swap both, so every angle is its own still.",
+ "gaze": "Fully open at rest. Look straight ahead with the head, not at the camera.",
+ "mirror": false,
+ "canonical_marks": "turn-000: 1 mark under her right (amber) eye, 2 under her left (green) eye = viewer-right cheek in front views (plus a faint 1-2 px speck).",
+ "policy": {
+  "rule": "Only blend between stills that are both consistent. consistent = marks match turn-000, or marks are not visible (face turned away, expected).",
+  "skip": "default: blend directly between the nearest consistent stills on either side of the angle",
+  "hold": "alternative: hold the last consistent still (in the direction of travel) until the next consistent one is reached",
+  "targets": "inconsistent stills are never pose targets"
+ },
+ "talk": {
+  "clips": [
+   "../../reference/grok_build/public/clean-room/videos/talk-speak.mp4",
+   "../../reference/grok_build/public/clean-room/videos/talk-ask.mp4",
+   "../../reference/grok_build/public/clean-room/videos/talk-laugh.mp4"
+  ],
+  "qa": {
+   "speak": [
+    "../../reference/grok_build/artifacts/turn/qa/speak-0.4.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/speak-1.8.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/speak-3.2.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/speak-5.0.jpg"
+   ],
+   "ask": [
+    "../../reference/grok_build/artifacts/turn/qa/ask-0.4.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/ask-1.8.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/ask-3.2.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/ask-5.0.jpg"
+   ],
+   "laugh": [
+    "../../reference/grok_build/artifacts/turn/qa/laugh-0.4.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/laugh-1.8.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/laugh-3.2.jpg",
+    "../../reference/grok_build/artifacts/turn/qa/laugh-5.0.jpg"
+   ]
+  },
+  "front_window_deg": 10,
+  "note": "Talk clips are 768x1168 arms-down plates (not the A-pose, figure 1136 px tall vs 1641 on the rest canvas). Upscaling is not allowed by the rest spec (upscale:false), so they play 1:1 in the talk panel beside the stage, only while the head is at the front (|angle| <= 10\u00b0), keyed and with the Clean room white-flash skip."
+ },
+ "hair": {
+  "spec": "High bun, short strands, no wind, no long hair.",
+  "hide": "Hair toggle uses the Clean room skin-fill mask (applyPartMask with hair off): hair pixels inside the skull ellipse take the mean face-skin colour sampled from the same still, the rest are made transparent. Authored-pixel masking, nothing drawn."
+ },
+ "stills": [
+  {
+   "angle": 0,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-000.png",
+   "consistent": true,
+   "marks_visible": true,
+   "audit": "true",
+   "note": "CANONICAL. Eyeballed: 1 mark under her right (amber) eye, 2 marks under her left (green) eye (viewer-right) plus a faint 1-2 px speck just inside them.",
+   "detector": "[pair d=68 high] her-left(green)=2@731,244;734,255 her-right(amber)=1@632,247",
+   "overlays": {
+    "eyes": {
+     "use": true,
+     "src": "../../reference/grok_build/artifacts/turn/fix/eyes-000.jpg",
+     "x": 520,
+     "y": 140,
+     "scale": 0.5,
+     "ncc": 0.9934,
+     "key": "blue",
+     "why": "aligned by template match (NCC 0.9934, scale 0.5 = the crop is a 2x enlargement)"
+    },
+    "hands": [
+     {
+      "side": "L",
+      "use": true,
+      "src": "../../reference/grok_build/artifacts/turn/lock/hand-000L.jpg",
+      "x": 150,
+      "y": 620,
+      "scale": 1.0,
+      "ncc": 0.9752,
+      "mad": 4.77,
+      "why": "aligned (NCC 0.975)"
+     },
+     {
+      "side": "R",
+      "use": true,
+      "src": "../../reference/grok_build/artifacts/turn/lock/hand-000R.jpg",
+      "x": 898,
+      "y": 619,
+      "scale": 1.01,
+      "ncc": 0.927,
+      "mad": 7.33,
+      "why": "aligned (NCC 0.927)"
+     }
+    ],
+    "hands_strip": {
+     "use": false,
+     "src": "../../reference/grok_build/artifacts/turn/hands-000.jpg",
+     "ncc": 0.8125,
+     "why": "hands-000.jpg is a resampled QA strip (best NCC 0.8125 at scale 1.205); not aligned cleanly, shown in the side panel only"
+    },
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-000.png",
+     "ncc": 0.3503,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC 0.35); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  },
+  {
+   "angle": 45,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-045.png",
+   "consistent": false,
+   "marks_visible": true,
+   "audit": "false",
+   "note": "Eyeballed: amber side 1 (ok), green side only 1 mark (canonical 2). The eye still artifacts/turn/fix/eyes-045.jpg is a 2x crop of this same still (NCC 0.997) and also shows 1.",
+   "detector": "[pair d=58 high] her-left(green)=1@666,242 her-right(amber)=1@580,246",
+   "overlays": {
+    "eyes": {
+     "use": true,
+     "src": "../../reference/grok_build/artifacts/turn/fix/eyes-045.jpg",
+     "x": 520,
+     "y": 150,
+     "scale": 0.5,
+     "ncc": 0.9968,
+     "key": "blue",
+     "why": "aligned by template match (NCC 0.9968, scale 0.5 = the crop is a 2x enlargement)"
+    },
+    "hands": [
+     {
+      "side": "L",
+      "use": true,
+      "src": "../../reference/grok_build/artifacts/turn/lock/hand-045L.jpg",
+      "x": 220,
+      "y": 640,
+      "scale": 1.0,
+      "ncc": 0.9845,
+      "mad": 4.46,
+      "why": "aligned (NCC 0.985)"
+     },
+     {
+      "side": "R",
+      "use": true,
+      "src": "../../reference/grok_build/artifacts/turn/lock/hand-045R.jpg",
+      "x": 860,
+      "y": 640,
+      "scale": 1.0,
+      "ncc": 0.986,
+      "mad": 4.22,
+      "why": "aligned (NCC 0.986)"
+     }
+    ],
+    "hands_strip": {
+     "use": false,
+     "src": "../../reference/grok_build/artifacts/turn/hands-045.jpg",
+     "ncc": 0.8245,
+     "why": "hands-045.jpg is a resampled QA strip (best NCC 0.8245 at scale 1.205); not aligned cleanly, shown in the side panel only"
+    },
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-045.png",
+     "ncc": -0.0726,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC -0.07); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  },
+  {
+   "angle": 90,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-090.png",
+   "consistent": false,
+   "marks_visible": true,
+   "audit": "false",
+   "note": "Eyeballed: profile shows her left (green) cheek with 0 marks (canonical 2).",
+   "detector": "[single-green d=48 medium] her-left(green)=0@-",
+   "overlays": {
+    "eyes": {
+     "use": true,
+     "src": "../../reference/grok_build/artifacts/turn/fix/eyes-090.jpg",
+     "x": 430,
+     "y": 140,
+     "scale": 0.5,
+     "ncc": 0.9965,
+     "key": "blue",
+     "why": "aligned by template match (NCC 0.9965, scale 0.5 = the crop is a 2x enlargement)"
+    },
+    "hands": [
+     {
+      "use": false,
+      "why": "no hand still for this angle; the turnaround still keeps its own hands"
+     }
+    ],
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-090.png",
+     "ncc": 0.0032,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC 0.00); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  },
+  {
+   "angle": 135,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-135.png",
+   "consistent": true,
+   "marks_visible": false,
+   "audit": "n/a",
+   "note": "Back three-quarter; face turned away, marks not visible (expected).",
+   "detector": "",
+   "overlays": {
+    "eyes": {
+     "use": false,
+     "why": "no eye still for this angle; the turnaround still keeps its own eyes"
+    },
+    "hands": [
+     {
+      "use": false,
+      "why": "no hand still for this angle; the turnaround still keeps its own hands"
+     }
+    ],
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-135.png",
+     "ncc": -0.1063,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC -0.11); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  },
+  {
+   "angle": 180,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-180.png",
+   "consistent": true,
+   "marks_visible": false,
+   "audit": "n/a",
+   "note": "Back; marks not visible (expected).",
+   "detector": "",
+   "overlays": {
+    "eyes": {
+     "use": false,
+     "why": "no eye still for this angle; the turnaround still keeps its own eyes"
+    },
+    "hands": [
+     {
+      "use": false,
+      "why": "no hand still for this angle; the turnaround still keeps its own hands"
+     }
+    ],
+    "hands_strip": {
+     "use": false,
+     "src": "../../reference/grok_build/artifacts/turn/hands-180.jpg",
+     "ncc": 0.8851,
+     "why": "hands-180.jpg is a resampled QA strip (best NCC 0.8851 at scale 1.195); not aligned cleanly, shown in the side panel only"
+    },
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-180.png",
+     "ncc": -0.1243,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC -0.12); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  },
+  {
+   "angle": 225,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-225.png",
+   "consistent": true,
+   "marks_visible": false,
+   "audit": "n/a",
+   "note": "Back three-quarter; marks not visible (expected).",
+   "detector": "",
+   "overlays": {
+    "eyes": {
+     "use": false,
+     "why": "no eye still for this angle; the turnaround still keeps its own eyes"
+    },
+    "hands": [
+     {
+      "use": false,
+      "why": "no hand still for this angle; the turnaround still keeps its own hands"
+     }
+    ],
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-225.png",
+     "ncc": -0.0703,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC -0.07); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  },
+  {
+   "angle": 270,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-270.png",
+   "consistent": true,
+   "marks_visible": true,
+   "audit": "true",
+   "note": "Eyeballed: profile shows her right (amber) cheek with 1 mark (canonical 1). Detector confidence was low (profile iris), verified by eye.",
+   "detector": "[single-amber d=43 low] her-right(amber)=1@821,228",
+   "overlays": {
+    "eyes": {
+     "use": true,
+     "src": "../../reference/grok_build/artifacts/turn/fix/eyes-270.jpg",
+     "x": 620,
+     "y": 140,
+     "scale": 0.5,
+     "ncc": 0.9956,
+     "key": "blue",
+     "why": "aligned by template match (NCC 0.9956, scale 0.5 = the crop is a 2x enlargement)"
+    },
+    "hands": [
+     {
+      "use": false,
+      "why": "no hand still for this angle; the turnaround still keeps its own hands"
+     }
+    ],
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-270.png",
+     "ncc": 0.0022,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC 0.00); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  },
+  {
+   "angle": 315,
+   "src": "../../reference/grok_build/public/clean-room/layers/rotation/turn-315.png",
+   "consistent": false,
+   "marks_visible": true,
+   "audit": "false",
+   "note": "Eyeballed: amber side 1 (ok), green side only 1 mark (canonical 2).",
+   "detector": "[pair d=67 high] her-left(green)=1@771,266 her-right(amber)=1@676,266",
+   "overlays": {
+    "eyes": {
+     "use": true,
+     "src": "../../reference/grok_build/artifacts/turn/fix/eyes-315.jpg",
+     "x": 560,
+     "y": 160,
+     "scale": 0.5,
+     "ncc": 0.9981,
+     "key": "blue",
+     "why": "aligned by template match (NCC 0.9981, scale 0.5 = the crop is a 2x enlargement)"
+    },
+    "hands": [
+     {
+      "side": "L",
+      "use": true,
+      "src": "../../reference/grok_build/artifacts/turn/lock/hand-315L.jpg",
+      "x": 180,
+      "y": 640,
+      "scale": 1.0,
+      "ncc": 0.9911,
+      "mad": 3.22,
+      "why": "aligned (NCC 0.991)"
+     },
+     {
+      "side": "R",
+      "use": true,
+      "src": "../../reference/grok_build/artifacts/turn/lock/hand-315R.jpg",
+      "x": 840,
+      "y": 640,
+      "scale": 1.0,
+      "ncc": 0.99,
+      "mad": 3.58,
+      "why": "aligned (NCC 0.990)"
+     }
+    ],
+    "hands_strip": {
+     "use": false,
+     "src": "../../reference/grok_build/artifacts/turn/hands-315.jpg",
+     "ncc": 0.8083,
+     "why": "hands-315.jpg is a resampled QA strip (best NCC 0.8083 at scale 1.21); not aligned cleanly, shown in the side panel only"
+    },
+    "hair": {
+     "use": false,
+     "src": "../../reference/grok_build/public/clean-room/layers/hair/hair-315.png",
+     "ncc": -0.0574,
+     "why": "hair-NNN.png is a separate 1344x1472 drawing, not registered to the rotation canvas (best NCC -0.06); the still's own hair is the rest-spec hair. Shown in the side panel."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "format": "shadowveil idle clips v1 (same schema as body_tools/idle/idle_clips.json)",
+ "spec": "value(t)=linear interpolation of keys[param]; hard steps via 1 ms ramps",
+ "generator": "python3 mouth/actions/make_mouth_actions.py",
+ "clips": {
+  "jump": {
+   "keys": {
+    "MouthOpen": [
+     [
+      0,
+      0
+     ],
+     [
+      0.499,
+      0
+     ],
+     [
+      0.5,
+      0.5
+     ],
+     [
+      0.799,
+      0.5
+     ],
+     [
+      0.8,
+      0.5
+     ],
+     [
+      1.099,
+      0.5
+     ],
+     [
+      1.1,
+      0
+     ],
+     [
+      1.299,
+      0
+     ],
+     [
+      1.3,
+      0
+     ],
+     [
+      1.6,
+      0
+     ]
+    ],
+    "MouthForm": [
+     [
+      0,
+      0
+     ],
+     [
+      0.499,
+      0
+     ],
+     [
+      0.5,
+      0
+     ],
+     [
+      0.799,
+      0
+     ],
+     [
+      0.8,
+      -1
+     ],
+     [
+      1.099,
+      -1
+     ],
+     [
+      1.1,
+      -1
+     ],
+     [
+      1.299,
+      -1
+     ],
+     [
+      1.3,
+      0
+     ],
+     [
+      1.6,
+      0
+     ]
+    ]
+   },
+   "fps": 30,
+   "duration": 1.6,
+   "loop": false,
+   "interp": "linear",
+   "notes": "Body beats: rest through crouch; effort open AA_half at takeoff 0.50; OH_half at apex 0.80; lips press M on landing 1.10; rest from 1.30 to 1.60."
+  },
+  "run": {
+   "keys": {
+    "MouthOpen": [
+     [
+      0.0,
+      0.5
+     ],
+     [
+      0.399,
+      0.5
+     ],
+     [
+      0.4,
+      0
+     ],
+     [
+      0.6657,
+      0
+     ],
+     [
+      0.6667,
+      0.5
+     ],
+     [
+      1.0657,
+      0.5
+     ],
+     [
+      1.0667,
+      0
+     ],
+     [
+      1.3324,
+      0
+     ],
+     [
+      1.3334,
+      0.5
+     ],
+     [
+      1.7324,
+      0.5
+     ],
+     [
+      1.7334,
+      0
+     ],
+     [
+      2.0,
+      0
+     ]
+    ],
+    "MouthForm": [
+     [
+      0.0,
+      0
+     ],
+     [
+      0.399,
+      0
+     ],
+     [
+      0.4,
+      0
+     ],
+     [
+      0.6657,
+      0
+     ],
+     [
+      0.6667,
+      0
+     ],
+     [
+      1.0657,
+      0
+     ],
+     [
+      1.0667,
+      0
+     ],
+     [
+      1.3324,
+      0
+     ],
+     [
+      1.3334,
+      0
+     ],
+     [
+      1.7324,
+      0
+     ],
+     [
+      1.7334,
+      0
+     ],
+     [
+      2.0,
+      0
+     ]
+    ]
+   },
+   "fps": 30,
+   "duration": 2.0,
+   "loop": true,
+   "interp": "linear",
+   "notes": "breathing mouth: AA_half 0.40 s then rest 0.27 s on each 0.667 s stride, from foot contact; loops cleanly (starts AA_half, ends rest)."
+  },
+  "anger": {
+   "keys": {
+    "MouthOpen": [
+     [
+      0,
+      0
+     ],
+     [
+      0.299,
+      0
+     ],
+     [
+      0.3,
+      0
+     ],
+     [
+      3.0,
+      0
+     ]
+    ],
+    "MouthForm": [
+     [
+      0,
+      0
+     ],
+     [
+      0.299,
+      0
+     ],
+     [
+      0.3,
+      -1
+     ],
+     [
+      3.0,
+      -1
+     ]
+    ]
+   },
+   "fps": 30,
+   "duration": 3.0,
+   "loop": false,
+   "interp": "linear",
+   "notes": "rest, then lips press to M inside Body set-in (0.30) and hold. STAND-IN: set has no true anger/pressed/teeth mouth; M is the closest drawn shape."
+  }
+ }
+}

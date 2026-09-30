@@ -1,0 +1,294 @@
+{
+ "apose": {
+  "lim": {
+   "dxAtXminus1": -3,
+   "dxAtXplus1": 1,
+   "dyAtYminus1": -2,
+   "dyAtYplus1": 2
+  },
+  "eyes": {
+   "EyeR": {
+    "sclera": "#EEE6D8",
+    "skin": "#B67F53",
+    "lash": "#0A0100",
+    "iris_bbox": [
+     638,
+     223,
+     656,
+     236
+    ],
+    "iris_w": 19,
+    "iris_h": 14,
+    "iris_center": [
+     646.7,
+     229.2
+    ],
+    "pupil": {
+     "w": 4,
+     "h": 5,
+     "bbox": [
+      646,
+      226,
+      649,
+      230
+     ]
+    },
+    "opening_bbox": [
+     629,
+     223,
+     662,
+     237
+    ],
+    "room_px": {
+     "left": 9,
+     "right": 3,
+     "top_at_center": 0,
+     "bottom_at_center": 0
+    },
+    "mask_px": 360,
+    "iris_px": 199,
+    "lash_px": 88
+   },
+   "EyeL": {
+    "sclera": "#EEE9DE",
+    "skin": "#B57D51",
+    "lash": "#110700",
+    "iris_bbox": [
+     707,
+     223,
+     723,
+     236
+    ],
+    "iris_w": 17,
+    "iris_h": 14,
+    "iris_center": [
+     715.2,
+     229.7
+    ],
+    "pupil": {
+     "w": 3,
+     "h": 4,
+     "bbox": [
+      714,
+      226,
+      716,
+      229
+     ]
+    },
+    "opening_bbox": [
+     700,
+     223,
+     733,
+     236
+    ],
+    "room_px": {
+     "left": 5,
+     "right": 8,
+     "top_at_center": -1,
+     "bottom_at_center": 0
+    },
+    "mask_px": 353,
+    "iris_px": 192,
+    "lash_px": 75
+   }
+  }
+ },
+ "tpose": {
+  "lim": {
+   "dxAtXminus1": -2,
+   "dxAtXplus1": 1,
+   "dyAtYminus1": -2,
+   "dyAtYplus1": 2
+  },
+  "eyes": {
+   "EyeR": {
+    "sclera": "#EBDFCC",
+    "skin": "#B57E53",
+    "lash": "#0A0201",
+    "iris_bbox": [
+     641,
+     217,
+     657,
+     230
+    ],
+    "iris_w": 17,
+    "iris_h": 14,
+    "iris_center": [
+     648.7,
+     223.0
+    ],
+    "pupil": {
+     "w": 4,
+     "h": 3,
+     "bbox": [
+      648,
+      221,
+      651,
+      223
+     ]
+    },
+    "opening_bbox": [
+     632,
+     217,
+     663,
+     230
+    ],
+    "room_px": {
+     "left": 7,
+     "right": 3,
+     "top_at_center": 0,
+     "bottom_at_center": 0
+    },
+    "mask_px": 332,
+    "iris_px": 181,
+    "lash_px": 93
+   },
+   "EyeL": {
+    "sclera": "#E9E0CE",
+    "skin": "#B27C52",
+    "lash": "#0B0601",
+    "iris_bbox": [
+     707,
+     217,
+     723,
+     230
+    ],
+    "iris_w": 17,
+    "iris_h": 14,
+    "iris_center": [
+     715.3,
+     223.6
+    ],
+    "pupil": {
+     "w": 4,
+     "h": 5,
+     "bbox": [
+      713,
+      220,
+      716,
+      224
+     ]
+    },
+    "opening_bbox": [
+     701,
+     217,
+     732,
+     230
+    ],
+    "room_px": {
+     "left": 4,
+     "right": 7,
+     "top_at_center": -1,
+     "bottom_at_center": 0
+    },
+    "mask_px": 325,
+    "iris_px": 185,
+    "lash_px": 71
+   }
+  }
+ },
+ "left": {
+  "lim": {
+   "dxAtXminus1": 1,
+   "dxAtXplus1": 0,
+   "dyAtYminus1": -1,
+   "dyAtYplus1": 1
+  },
+  "eyes": {
+   "EyeL": {
+    "sclera": "#E5E2D7",
+    "skin": "#B3774A",
+    "lash": "#110603",
+    "iris_bbox": [
+     612,
+     209,
+     617,
+     222
+    ],
+    "iris_w": 6,
+    "iris_h": 14,
+    "iris_center": [
+     614.8,
+     216.2
+    ],
+    "pupil": {
+     "w": 3,
+     "h": 5,
+     "bbox": [
+      613,
+      212,
+      615,
+      216
+     ]
+    },
+    "opening_bbox": [
+     612,
+     207,
+     629,
+     222
+    ],
+    "room_px": {
+     "left": 0,
+     "right": 8,
+     "top_at_center": -1,
+     "bottom_at_center": 0
+    },
+    "mask_px": 200,
+    "iris_px": 59,
+    "lash_px": 52
+   }
+  }
+ },
+ "right": {
+  "lim": {
+   "dxAtXminus1": -2,
+   "dxAtXplus1": 0,
+   "dyAtYminus1": -1,
+   "dyAtYplus1": 1
+  },
+  "eyes": {
+   "EyeR": {
+    "sclera": "#EEE4DB",
+    "skin": "#B07448",
+    "lash": "#0D0302",
+    "iris_bbox": [
+     753,
+     211,
+     762,
+     224
+    ],
+    "iris_w": 10,
+    "iris_h": 14,
+    "iris_center": [
+     756.5,
+     216.8
+    ],
+    "pupil": {
+     "w": 3,
+     "h": 7,
+     "bbox": [
+      756,
+      212,
+      758,
+      218
+     ]
+    },
+    "opening_bbox": [
+     739,
+     210,
+     762,
+     225
+    ],
+    "room_px": {
+     "left": 10,
+     "right": 0,
+     "top_at_center": 0,
+     "bottom_at_center": 0
+    },
+    "mask_px": 235,
+    "iris_px": 103,
+    "lash_px": 50
+   }
+  }
+ }
+}

@@ -1,0 +1,14 @@
+file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/LifecycleWatcher.js:100
+            this.#terminationDeferred.resolve(new Error('Navigating frame was detached'));
+                                              ^
+
+Error: Navigating frame was detached
+    at #onFrameDetached (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/LifecycleWatcher.js:100:47)
+    at file:///workspace/jt/node_modules/puppeteer-core/lib/esm/third_party/mitt/mitt.js:36:7
+    at Array.map (<anonymous>)
+    at Object.emit (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/third_party/mitt/mitt.js:35:20)
+    at CdpFrame.emit (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/common/EventEmitter.js:77:23)
+    at #removeFramesRecursively (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/FrameManager.js:448:15)
+    at #onClientDisconnect (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/FrameManager.js:91:42)
+
+Node.js v20.19.2

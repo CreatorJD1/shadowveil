@@ -1,0 +1,5 @@
+apose base_body differs from base at 17649 px; inside mask 17588 outside mask 61 | mask px where base_body alpha>0: 0 | rest(base_body+parts) diff px: 61 max 255
+tpose base_body differs from base at 8745 px; inside mask 8603 outside mask 142 | mask px where base_body alpha>0: 0 | rest(base_body+parts) diff px: 142 max 255
+left base_body differs from base at 9254 px; inside mask 8907 outside mask 347 | mask px where base_body alpha>0: 8988 | rest(base_body+parts) diff px: 347 max 146
+right base_body differs from base at 9617 px; inside mask 9254 outside mask 363 | mask px where base_body alpha>0: 9390 | rest(base_body+parts) diff px: 363 max 158
+back base_body differs from base at 17144 px; inside mask 16726 outside mask 418 | mask px where base_body alpha>0: 0 | rest(base_body+parts) diff px: 418 max 255

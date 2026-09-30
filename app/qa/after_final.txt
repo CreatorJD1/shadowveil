@@ -1,0 +1,4 @@
+== tab p0 (Clean room (current)): imgs=6 vids=43 brokenImg=0 brokenVid=0 failedReq=0
+== tab p1 (Clean room (static)): imgs=0 vids=0 brokenImg=0 brokenVid=0 failedReq=0
+== tab media (Media): imgs=8 vids=6 brokenImg=0 brokenVid=0 failedReq=0
+TOTAL {"failed":0,"brokenImg":0,"brokenVid":0,"imgs":14,"vids":49}

@@ -1,0 +1,3263 @@
+{
+"version": 2,
+"generated_by": "app/driver/tools/build_turn.py",
+"canvas": [
+1365,
+1739
+],
+"headY": 40,
+"footY": 1682,
+"fit_source": "angle_map.json anchors/angles + angle_map.json handoff (per-view scale/offset, uniform), linear between handoffs",
+"fit_note": "per frame: rest = frame * scale + (dx, dy). Provisional fit: at f001/f062/f109/f160/f241 the head top maps to y40 and the foot line to y1682 (y1681 profiles), and the silhouette centre to the rest view silhouette centre; linear in between. Replaced by body_tools/work/apose_turn/angle_map.json when it exists (rerun this script).",
+"anchors": [
+{
+"frame": 1,
+"angle": 0
+},
+{
+"frame": 33,
+"angle": 45
+},
+{
+"frame": 62,
+"angle": 90
+},
+{
+"frame": 87,
+"angle": 135
+},
+{
+"frame": 109,
+"angle": 180
+},
+{
+"frame": 131,
+"angle": 225
+},
+{
+"frame": 160,
+"angle": 270
+},
+{
+"frame": 191,
+"angle": 315
+},
+{
+"frame": 233,
+"angle": 360
+}
+],
+"handoffs": [
+{
+"frame": 1,
+"view": "apose",
+"bun_z": 101
+},
+{
+"frame": 62,
+"view": "left",
+"bun_z": 650
+},
+{
+"frame": 109,
+"view": "back",
+"bun_z": 650
+},
+{
+"frame": 160,
+"view": "right",
+"bun_z": 650
+}
+],
+"no_hold": [
+57,
+164
+],
+"no_hold_note": "f057 and f164: a hand blends into the hip; the driver never rests or holds there (scrub release is nudged one frame).",
+"loop_end": 232,
+"loop_note": "angle_map: f233-f241 settle back to ~f001, so the turn plays f001..f232 and wraps to f001.",
+"targets": [
+1,
+33,
+62,
+87,
+109,
+132,
+160,
+191
+],
+"target_note": "225\u00b0 maps to f131 (soft edges per angle_map); f132 is used as the 225\u00b0 target.",
+"hidden_during_turn": {
+"eyes": "400-413",
+"mouth": "500, 510-519, 550-599",
+"hands": "300-335, 210-215, 340-379, 216-218",
+"hair": "100, 101, 650, 600-619 (+clips), 102, 690-699, 660-689",
+"how": "During the turn the stage shows only the authored turn frame (eyes, mouth, hands and hair are baked in). The live rig (rig/index.html?view=..., read-only, embedded) is not composited at all, so every live layer above is hidden; its auto (blink / talk) stays off, so eye open 1, gaze 0, mouth open/form 0, fingers/spread/wrist 0 and the hair springs are at rest. Live parts return only at the handoff frames, crossfaded on the matched scale/offset."
+},
+"despill": "Hair-edge despill of the key blue: in a 3 px band next to keyed-out pixels, blue is clamped to max(red, green) + 8 (colour correction of existing pixels only).",
+"mirror": false,
+"talk": {
+"clips": [
+"../../reference/grok_build/public/clean-room/videos/talk-speak.mp4",
+"../../reference/grok_build/public/clean-room/videos/talk-ask.mp4",
+"../../reference/grok_build/public/clean-room/videos/talk-laugh.mp4"
+],
+"qa": {
+"speak": [
+"../../reference/grok_build/artifacts/turn/qa/speak-0.4.jpg",
+"../../reference/grok_build/artifacts/turn/qa/speak-1.8.jpg",
+"../../reference/grok_build/artifacts/turn/qa/speak-3.2.jpg",
+"../../reference/grok_build/artifacts/turn/qa/speak-5.0.jpg"
+],
+"ask": [
+"../../reference/grok_build/artifacts/turn/qa/ask-0.4.jpg",
+"../../reference/grok_build/artifacts/turn/qa/ask-1.8.jpg",
+"../../reference/grok_build/artifacts/turn/qa/ask-3.2.jpg",
+"../../reference/grok_build/artifacts/turn/qa/ask-5.0.jpg"
+],
+"laugh": [
+"../../reference/grok_build/artifacts/turn/qa/laugh-0.4.jpg",
+"../../reference/grok_build/artifacts/turn/qa/laugh-1.8.jpg",
+"../../reference/grok_build/artifacts/turn/qa/laugh-3.2.jpg",
+"../../reference/grok_build/artifacts/turn/qa/laugh-5.0.jpg"
+]
+},
+"note": "Front only (resting at f001). 768x1168 plates played 1:1 in the talk panel with the Clean room key and white-flash skip."
+},
+"removed": "The generated turnaround stills clean-room/layers/rotation/turn-000..315.png are no longer used by the driver (user: wrong feet/knees, head backward 135-225).",
+"frames": [
+{
+"f": 1,
+"src": "../../reference/apose_turn/frames/f001.png",
+"angle": 0,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[pair d=31 medium] her-left(green)=1@417,192 her-right(amber)=0@-"
+}
+},
+{
+"f": 2,
+"src": "../../reference/apose_turn/frames/f002.png",
+"angle": 1.5,
+"scale": 1.5547,
+"dx": 86.26,
+"dy": -53.17,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=1@417,192 | [single-amber d=24 low] her-right(amber)=1@351,187"
+}
+},
+{
+"f": 3,
+"src": "../../reference/apose_turn/frames/f003.png",
+"angle": 3.0,
+"scale": 1.55448,
+"dx": 86.52,
+"dy": -53.04,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@415,185"
+}
+},
+{
+"f": 4,
+"src": "../../reference/apose_turn/frames/f004.png",
+"angle": 4.0,
+"scale": 1.55425,
+"dx": 86.78,
+"dy": -52.91,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=2@414,186;379,200"
+}
+},
+{
+"f": 5,
+"src": "../../reference/apose_turn/frames/f005.png",
+"angle": 5.5,
+"scale": 1.55403,
+"dx": 87.04,
+"dy": -52.78,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=3@414,186;416,192;378,200 | [single-amber d=36 low] her-right(amber)=2@350,186;378,200"
+}
+},
+{
+"f": 6,
+"src": "../../reference/apose_turn/frames/f006.png",
+"angle": 7.0,
+"scale": 1.55381,
+"dx": 87.3,
+"dy": -52.65,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=48 medium] her-left(green)=2@414,186;378,200"
+}
+},
+{
+"f": 7,
+"src": "../../reference/apose_turn/frames/f007.png",
+"angle": 8.5,
+"scale": 1.55359,
+"dx": 87.56,
+"dy": -52.52,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=3@414,186;415,192;377,200"
+}
+},
+{
+"f": 8,
+"src": "../../reference/apose_turn/frames/f008.png",
+"angle": 10.0,
+"scale": 1.55336,
+"dx": 87.83,
+"dy": -52.38,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=3@414,186;415,192;377,200"
+}
+},
+{
+"f": 9,
+"src": "../../reference/apose_turn/frames/f009.png",
+"angle": 11.0,
+"scale": 1.55314,
+"dx": 88.09,
+"dy": -52.25,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=16 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 10,
+"src": "../../reference/apose_turn/frames/f010.png",
+"angle": 12.5,
+"scale": 1.55292,
+"dx": 88.35,
+"dy": -52.12,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@414,192;375,200"
+}
+},
+{
+"f": 11,
+"src": "../../reference/apose_turn/frames/f011.png",
+"angle": 14.0,
+"scale": 1.5527,
+"dx": 88.61,
+"dy": -51.99,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@413,192;374,200"
+}
+},
+{
+"f": 12,
+"src": "../../reference/apose_turn/frames/f012.png",
+"angle": 15.5,
+"scale": 1.55247,
+"dx": 88.87,
+"dy": -51.86,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@412,192;373,200"
+}
+},
+{
+"f": 13,
+"src": "../../reference/apose_turn/frames/f013.png",
+"angle": 17.0,
+"scale": 1.55225,
+"dx": 89.13,
+"dy": -51.73,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=55 medium] her-left(green)=2@412,192;372,200"
+}
+},
+{
+"f": 14,
+"src": "../../reference/apose_turn/frames/f014.png",
+"angle": 18.0,
+"scale": 1.55203,
+"dx": 89.39,
+"dy": -51.6,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@411,192;371,200"
+}
+},
+{
+"f": 15,
+"src": "../../reference/apose_turn/frames/f015.png",
+"angle": 19.5,
+"scale": 1.55181,
+"dx": 89.65,
+"dy": -51.47,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@410,192;370,200"
+}
+},
+{
+"f": 16,
+"src": "../../reference/apose_turn/frames/f016.png",
+"angle": 21.0,
+"scale": 1.55158,
+"dx": 89.91,
+"dy": -51.34,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@410,192;369,200"
+}
+},
+{
+"f": 17,
+"src": "../../reference/apose_turn/frames/f017.png",
+"angle": 22.5,
+"scale": 1.55136,
+"dx": 90.17,
+"dy": -51.21,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=1@408,192 | [single-amber d=24 low] her-right(amber)=1@344,187"
+}
+},
+{
+"f": 18,
+"src": "../../reference/apose_turn/frames/f018.png",
+"angle": 24.0,
+"scale": 1.55114,
+"dx": 90.43,
+"dy": -51.08,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=1@408,192"
+}
+},
+{
+"f": 19,
+"src": "../../reference/apose_turn/frames/f019.png",
+"angle": 25.5,
+"scale": 1.55092,
+"dx": 90.69,
+"dy": -50.95,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@406,192;366,200"
+}
+},
+{
+"f": 20,
+"src": "../../reference/apose_turn/frames/f020.png",
+"angle": 27.0,
+"scale": 1.55069,
+"dx": 90.96,
+"dy": -50.81,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@406,192"
+}
+},
+{
+"f": 21,
+"src": "../../reference/apose_turn/frames/f021.png",
+"angle": 28.0,
+"scale": 1.55047,
+"dx": 91.22,
+"dy": -50.68,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=55 medium] her-left(green)=1@404,192 | [single-amber d=24 low] her-right(amber)=1@341,187"
+}
+},
+{
+"f": 22,
+"src": "../../reference/apose_turn/frames/f022.png",
+"angle": 29.5,
+"scale": 1.55025,
+"dx": 91.48,
+"dy": -50.55,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@403,192"
+}
+},
+{
+"f": 23,
+"src": "../../reference/apose_turn/frames/f023.png",
+"angle": 31.0,
+"scale": 1.55003,
+"dx": 91.74,
+"dy": -50.42,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=1@402,192"
+}
+},
+{
+"f": 24,
+"src": "../../reference/apose_turn/frames/f024.png",
+"angle": 32.5,
+"scale": 1.5498,
+"dx": 92.0,
+"dy": -50.29,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=18 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 25,
+"src": "../../reference/apose_turn/frames/f025.png",
+"angle": 34.0,
+"scale": 1.54958,
+"dx": 92.26,
+"dy": -50.16,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@399,192;358,199"
+}
+},
+{
+"f": 26,
+"src": "../../reference/apose_turn/frames/f026.png",
+"angle": 35.0,
+"scale": 1.54936,
+"dx": 92.52,
+"dy": -50.03,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=16 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 27,
+"src": "../../reference/apose_turn/frames/f027.png",
+"angle": 36.5,
+"scale": 1.54914,
+"dx": 92.78,
+"dy": -49.9,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=17 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 28,
+"src": "../../reference/apose_turn/frames/f028.png",
+"angle": 38.0,
+"scale": 1.54891,
+"dx": 93.04,
+"dy": -49.77,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=17 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 29,
+"src": "../../reference/apose_turn/frames/f029.png",
+"angle": 39.5,
+"scale": 1.54869,
+"dx": 93.3,
+"dy": -49.64,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@394,191"
+}
+},
+{
+"f": 30,
+"src": "../../reference/apose_turn/frames/f030.png",
+"angle": 41.0,
+"scale": 1.54847,
+"dx": 93.56,
+"dy": -49.51,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@392,191"
+}
+},
+{
+"f": 31,
+"src": "../../reference/apose_turn/frames/f031.png",
+"angle": 42.0,
+"scale": 1.54825,
+"dx": 93.82,
+"dy": -49.38,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@390,192"
+}
+},
+{
+"f": 32,
+"src": "../../reference/apose_turn/frames/f032.png",
+"angle": 43.5,
+"scale": 1.54802,
+"dx": 94.09,
+"dy": -49.24,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=18 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 33,
+"src": "../../reference/apose_turn/frames/f033.png",
+"angle": 45,
+"scale": 1.5478,
+"dx": 94.35,
+"dy": -49.11,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=17 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 34,
+"src": "../../reference/apose_turn/frames/f034.png",
+"angle": 46.5,
+"scale": 1.54758,
+"dx": 94.61,
+"dy": -48.98,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@386,191"
+}
+},
+{
+"f": 35,
+"src": "../../reference/apose_turn/frames/f035.png",
+"angle": 48.0,
+"scale": 1.54736,
+"dx": 94.87,
+"dy": -48.85,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@384,191"
+}
+},
+{
+"f": 36,
+"src": "../../reference/apose_turn/frames/f036.png",
+"angle": 49.5,
+"scale": 1.54713,
+"dx": 95.13,
+"dy": -48.72,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=23 low] her-left(green)=1@380,184 her-right(amber)=0@-"
+}
+},
+{
+"f": 37,
+"src": "../../reference/apose_turn/frames/f037.png",
+"angle": 51.0,
+"scale": 1.54691,
+"dx": 95.39,
+"dy": -48.59,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=48 medium] her-left(green)=1@380,191"
+}
+},
+{
+"f": 38,
+"src": "../../reference/apose_turn/frames/f038.png",
+"angle": 52.5,
+"scale": 1.54669,
+"dx": 95.65,
+"dy": -48.46,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=17 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 39,
+"src": "../../reference/apose_turn/frames/f039.png",
+"angle": 54.5,
+"scale": 1.54647,
+"dx": 95.91,
+"dy": -48.33,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=46 medium] her-left(green)=1@377,191"
+}
+},
+{
+"f": 40,
+"src": "../../reference/apose_turn/frames/f040.png",
+"angle": 56.0,
+"scale": 1.54624,
+"dx": 96.17,
+"dy": -48.2,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=41 low] her-left(green)=2@373,184;375,191"
+}
+},
+{
+"f": 41,
+"src": "../../reference/apose_turn/frames/f041.png",
+"angle": 57.5,
+"scale": 1.54602,
+"dx": 96.43,
+"dy": -48.07,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=46 medium] her-left(green)=2@374,192;340,200"
+}
+},
+{
+"f": 42,
+"src": "../../reference/apose_turn/frames/f042.png",
+"angle": 59.0,
+"scale": 1.5458,
+"dx": 96.69,
+"dy": -47.94,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=41 low] her-left(green)=2@370,184;372,192"
+}
+},
+{
+"f": 43,
+"src": "../../reference/apose_turn/frames/f043.png",
+"angle": 60.5,
+"scale": 1.54558,
+"dx": 96.95,
+"dy": -47.81,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=38 low] her-left(green)=2@368,184;370,192"
+}
+},
+{
+"f": 44,
+"src": "../../reference/apose_turn/frames/f044.png",
+"angle": 62.0,
+"scale": 1.54535,
+"dx": 97.22,
+"dy": -47.67,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 45,
+"src": "../../reference/apose_turn/frames/f045.png",
+"angle": 63.5,
+"scale": 1.54513,
+"dx": 97.48,
+"dy": -47.54,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=17 low MIRRORED] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 46,
+"src": "../../reference/apose_turn/frames/f046.png",
+"angle": 65.0,
+"scale": 1.54491,
+"dx": 97.74,
+"dy": -47.41,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=34 low] her-left(green)=2@362,184;364,191"
+}
+},
+{
+"f": 47,
+"src": "../../reference/apose_turn/frames/f047.png",
+"angle": 66.5,
+"scale": 1.54469,
+"dx": 98.0,
+"dy": -47.28,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=36 low] her-left(green)=2@360,184;362,192"
+}
+},
+{
+"f": 48,
+"src": "../../reference/apose_turn/frames/f048.png",
+"angle": 68.5,
+"scale": 1.54446,
+"dx": 98.26,
+"dy": -47.15,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=36 low] her-left(green)=2@358,184;360,192"
+}
+},
+{
+"f": 49,
+"src": "../../reference/apose_turn/frames/f049.png",
+"angle": 70.0,
+"scale": 1.54424,
+"dx": 98.52,
+"dy": -47.02,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=36 low] her-left(green)=2@357,184;359,191"
+}
+},
+{
+"f": 50,
+"src": "../../reference/apose_turn/frames/f050.png",
+"angle": 71.5,
+"scale": 1.54402,
+"dx": 98.78,
+"dy": -46.89,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 51,
+"src": "../../reference/apose_turn/frames/f051.png",
+"angle": 73.0,
+"scale": 1.5438,
+"dx": 99.04,
+"dy": -46.76,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=34 low] her-left(green)=2@353,184;356,192"
+}
+},
+{
+"f": 52,
+"src": "../../reference/apose_turn/frames/f052.png",
+"angle": 74.5,
+"scale": 1.54357,
+"dx": 99.3,
+"dy": -46.63,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 53,
+"src": "../../reference/apose_turn/frames/f053.png",
+"angle": 76.0,
+"scale": 1.54335,
+"dx": 99.56,
+"dy": -46.5,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[pair d=12 low] her-left(green)=0@- her-right(amber)=0@-"
+}
+},
+{
+"f": 54,
+"src": "../../reference/apose_turn/frames/f054.png",
+"angle": 77.5,
+"scale": 1.54313,
+"dx": 99.82,
+"dy": -46.37,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 55,
+"src": "../../reference/apose_turn/frames/f055.png",
+"angle": 79.0,
+"scale": 1.54291,
+"dx": 100.08,
+"dy": -46.24,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 56,
+"src": "../../reference/apose_turn/frames/f056.png",
+"angle": 80.5,
+"scale": 1.54268,
+"dx": 100.35,
+"dy": -46.1,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 57,
+"src": "../../reference/apose_turn/frames/f057.png",
+"angle": 82.5,
+"scale": 1.54246,
+"dx": 100.61,
+"dy": -45.97,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 58,
+"src": "../../reference/apose_turn/frames/f058.png",
+"angle": 84.0,
+"scale": 1.54224,
+"dx": 100.87,
+"dy": -45.84,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 59,
+"src": "../../reference/apose_turn/frames/f059.png",
+"angle": 85.5,
+"scale": 1.54202,
+"dx": 101.13,
+"dy": -45.71,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 60,
+"src": "../../reference/apose_turn/frames/f060.png",
+"angle": 87.0,
+"scale": 1.54179,
+"dx": 101.39,
+"dy": -45.58,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 61,
+"src": "../../reference/apose_turn/frames/f061.png",
+"angle": 88.5,
+"scale": 1.54157,
+"dx": 101.65,
+"dy": -45.45,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 62,
+"src": "../../reference/apose_turn/frames/f062.png",
+"angle": 90,
+"scale": 1.54135,
+"dx": 101.91,
+"dy": -45.32,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 63,
+"src": "../../reference/apose_turn/frames/f063.png",
+"angle": 91.5,
+"scale": 1.54224,
+"dx": 101.45,
+"dy": -45.23,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 64,
+"src": "../../reference/apose_turn/frames/f064.png",
+"angle": 93.5,
+"scale": 1.54312,
+"dx": 100.99,
+"dy": -45.15,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 65,
+"src": "../../reference/apose_turn/frames/f065.png",
+"angle": 95.5,
+"scale": 1.54401,
+"dx": 100.53,
+"dy": -45.06,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 66,
+"src": "../../reference/apose_turn/frames/f066.png",
+"angle": 97.5,
+"scale": 1.5449,
+"dx": 100.08,
+"dy": -44.98,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 67,
+"src": "../../reference/apose_turn/frames/f067.png",
+"angle": 99.0,
+"scale": 1.54578,
+"dx": 99.62,
+"dy": -44.89,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 68,
+"src": "../../reference/apose_turn/frames/f068.png",
+"angle": 100.5,
+"scale": 1.54667,
+"dx": 99.16,
+"dy": -44.81,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 69,
+"src": "../../reference/apose_turn/frames/f069.png",
+"angle": 102.5,
+"scale": 1.54755,
+"dx": 98.7,
+"dy": -44.72,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 70,
+"src": "../../reference/apose_turn/frames/f070.png",
+"angle": 104.5,
+"scale": 1.54844,
+"dx": 98.24,
+"dy": -44.64,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 71,
+"src": "../../reference/apose_turn/frames/f071.png",
+"angle": 106.5,
+"scale": 1.54933,
+"dx": 97.78,
+"dy": -44.55,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 72,
+"src": "../../reference/apose_turn/frames/f072.png",
+"angle": 108.0,
+"scale": 1.55021,
+"dx": 97.32,
+"dy": -44.47,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 73,
+"src": "../../reference/apose_turn/frames/f073.png",
+"angle": 109.5,
+"scale": 1.5511,
+"dx": 96.87,
+"dy": -44.38,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 74,
+"src": "../../reference/apose_turn/frames/f074.png",
+"angle": 111.5,
+"scale": 1.55199,
+"dx": 96.41,
+"dy": -44.3,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 75,
+"src": "../../reference/apose_turn/frames/f075.png",
+"angle": 113.5,
+"scale": 1.55287,
+"dx": 95.95,
+"dy": -44.21,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 76,
+"src": "../../reference/apose_turn/frames/f076.png",
+"angle": 115.5,
+"scale": 1.55376,
+"dx": 95.49,
+"dy": -44.13,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 77,
+"src": "../../reference/apose_turn/frames/f077.png",
+"angle": 117.0,
+"scale": 1.55465,
+"dx": 95.03,
+"dy": -44.04,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 78,
+"src": "../../reference/apose_turn/frames/f078.png",
+"angle": 118.5,
+"scale": 1.55553,
+"dx": 94.57,
+"dy": -43.96,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 79,
+"src": "../../reference/apose_turn/frames/f079.png",
+"angle": 120.5,
+"scale": 1.55642,
+"dx": 94.12,
+"dy": -43.87,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 80,
+"src": "../../reference/apose_turn/frames/f080.png",
+"angle": 122.5,
+"scale": 1.5573,
+"dx": 93.66,
+"dy": -43.79,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 81,
+"src": "../../reference/apose_turn/frames/f081.png",
+"angle": 124.5,
+"scale": 1.55819,
+"dx": 93.2,
+"dy": -43.7,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 82,
+"src": "../../reference/apose_turn/frames/f082.png",
+"angle": 126.0,
+"scale": 1.55908,
+"dx": 92.74,
+"dy": -43.62,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 83,
+"src": "../../reference/apose_turn/frames/f083.png",
+"angle": 127.5,
+"scale": 1.55996,
+"dx": 92.28,
+"dy": -43.53,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 84,
+"src": "../../reference/apose_turn/frames/f084.png",
+"angle": 129.5,
+"scale": 1.56085,
+"dx": 91.82,
+"dy": -43.45,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 85,
+"src": "../../reference/apose_turn/frames/f085.png",
+"angle": 131.5,
+"scale": 1.56174,
+"dx": 91.36,
+"dy": -43.36,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 86,
+"src": "../../reference/apose_turn/frames/f086.png",
+"angle": 133.5,
+"scale": 1.56262,
+"dx": 90.91,
+"dy": -43.28,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 87,
+"src": "../../reference/apose_turn/frames/f087.png",
+"angle": 135,
+"scale": 1.56351,
+"dx": 90.45,
+"dy": -43.19,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 88,
+"src": "../../reference/apose_turn/frames/f088.png",
+"angle": 137.5,
+"scale": 1.5644,
+"dx": 89.99,
+"dy": -43.11,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 89,
+"src": "../../reference/apose_turn/frames/f089.png",
+"angle": 139.5,
+"scale": 1.56528,
+"dx": 89.53,
+"dy": -43.02,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 90,
+"src": "../../reference/apose_turn/frames/f090.png",
+"angle": 141.5,
+"scale": 1.56617,
+"dx": 89.07,
+"dy": -42.94,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 91,
+"src": "../../reference/apose_turn/frames/f091.png",
+"angle": 143.5,
+"scale": 1.56706,
+"dx": 88.61,
+"dy": -42.85,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 92,
+"src": "../../reference/apose_turn/frames/f092.png",
+"angle": 145.5,
+"scale": 1.56794,
+"dx": 88.15,
+"dy": -42.77,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 93,
+"src": "../../reference/apose_turn/frames/f093.png",
+"angle": 147.5,
+"scale": 1.56883,
+"dx": 87.7,
+"dy": -42.68,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 94,
+"src": "../../reference/apose_turn/frames/f094.png",
+"angle": 149.5,
+"scale": 1.56971,
+"dx": 87.24,
+"dy": -42.6,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 95,
+"src": "../../reference/apose_turn/frames/f095.png",
+"angle": 151.5,
+"scale": 1.5706,
+"dx": 86.78,
+"dy": -42.51,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 96,
+"src": "../../reference/apose_turn/frames/f096.png",
+"angle": 153.5,
+"scale": 1.57149,
+"dx": 86.32,
+"dy": -42.43,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 97,
+"src": "../../reference/apose_turn/frames/f097.png",
+"angle": 155.5,
+"scale": 1.57237,
+"dx": 85.86,
+"dy": -42.34,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 98,
+"src": "../../reference/apose_turn/frames/f098.png",
+"angle": 157.5,
+"scale": 1.57326,
+"dx": 85.4,
+"dy": -42.26,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 99,
+"src": "../../reference/apose_turn/frames/f099.png",
+"angle": 159.5,
+"scale": 1.57415,
+"dx": 84.95,
+"dy": -42.17,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 100,
+"src": "../../reference/apose_turn/frames/f100.png",
+"angle": 161.5,
+"scale": 1.57503,
+"dx": 84.49,
+"dy": -42.09,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 101,
+"src": "../../reference/apose_turn/frames/f101.png",
+"angle": 163.5,
+"scale": 1.57592,
+"dx": 84.03,
+"dy": -42.0,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 102,
+"src": "../../reference/apose_turn/frames/f102.png",
+"angle": 165.5,
+"scale": 1.57681,
+"dx": 83.57,
+"dy": -41.92,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 103,
+"src": "../../reference/apose_turn/frames/f103.png",
+"angle": 167.5,
+"scale": 1.57769,
+"dx": 83.11,
+"dy": -41.83,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 104,
+"src": "../../reference/apose_turn/frames/f104.png",
+"angle": 169.5,
+"scale": 1.57858,
+"dx": 82.65,
+"dy": -41.75,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 105,
+"src": "../../reference/apose_turn/frames/f105.png",
+"angle": 171.5,
+"scale": 1.57946,
+"dx": 82.19,
+"dy": -41.66,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 106,
+"src": "../../reference/apose_turn/frames/f106.png",
+"angle": 173.5,
+"scale": 1.58035,
+"dx": 81.74,
+"dy": -41.58,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 107,
+"src": "../../reference/apose_turn/frames/f107.png",
+"angle": 175.5,
+"scale": 1.58124,
+"dx": 81.28,
+"dy": -41.49,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 108,
+"src": "../../reference/apose_turn/frames/f108.png",
+"angle": 177.5,
+"scale": 1.58212,
+"dx": 80.82,
+"dy": -41.41,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 109,
+"src": "../../reference/apose_turn/frames/f109.png",
+"angle": 180,
+"scale": 1.58301,
+"dx": 80.36,
+"dy": -41.32,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 110,
+"src": "../../reference/apose_turn/frames/f110.png",
+"angle": 182.5,
+"scale": 1.58227,
+"dx": 80.75,
+"dy": -41.48,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 111,
+"src": "../../reference/apose_turn/frames/f111.png",
+"angle": 184.5,
+"scale": 1.58153,
+"dx": 81.13,
+"dy": -41.65,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 112,
+"src": "../../reference/apose_turn/frames/f112.png",
+"angle": 186.5,
+"scale": 1.58079,
+"dx": 81.52,
+"dy": -41.81,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 113,
+"src": "../../reference/apose_turn/frames/f113.png",
+"angle": 188.5,
+"scale": 1.58004,
+"dx": 81.91,
+"dy": -41.97,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 114,
+"src": "../../reference/apose_turn/frames/f114.png",
+"angle": 190.5,
+"scale": 1.5793,
+"dx": 82.29,
+"dy": -42.13,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 115,
+"src": "../../reference/apose_turn/frames/f115.png",
+"angle": 192.5,
+"scale": 1.57856,
+"dx": 82.68,
+"dy": -42.3,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 116,
+"src": "../../reference/apose_turn/frames/f116.png",
+"angle": 194.5,
+"scale": 1.57782,
+"dx": 83.07,
+"dy": -42.46,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 117,
+"src": "../../reference/apose_turn/frames/f117.png",
+"angle": 196.5,
+"scale": 1.57708,
+"dx": 83.45,
+"dy": -42.62,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 118,
+"src": "../../reference/apose_turn/frames/f118.png",
+"angle": 198.5,
+"scale": 1.57634,
+"dx": 83.84,
+"dy": -42.78,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 119,
+"src": "../../reference/apose_turn/frames/f119.png",
+"angle": 200.5,
+"scale": 1.5756,
+"dx": 84.23,
+"dy": -42.95,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 120,
+"src": "../../reference/apose_turn/frames/f120.png",
+"angle": 202.5,
+"scale": 1.57485,
+"dx": 84.61,
+"dy": -43.11,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 121,
+"src": "../../reference/apose_turn/frames/f121.png",
+"angle": 204.5,
+"scale": 1.57411,
+"dx": 85.0,
+"dy": -43.27,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 122,
+"src": "../../reference/apose_turn/frames/f122.png",
+"angle": 206.5,
+"scale": 1.57337,
+"dx": 85.39,
+"dy": -43.44,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 123,
+"src": "../../reference/apose_turn/frames/f123.png",
+"angle": 208.5,
+"scale": 1.57263,
+"dx": 85.77,
+"dy": -43.6,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 124,
+"src": "../../reference/apose_turn/frames/f124.png",
+"angle": 210.5,
+"scale": 1.57189,
+"dx": 86.16,
+"dy": -43.76,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 125,
+"src": "../../reference/apose_turn/frames/f125.png",
+"angle": 212.5,
+"scale": 1.57115,
+"dx": 86.55,
+"dy": -43.92,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 126,
+"src": "../../reference/apose_turn/frames/f126.png",
+"angle": 214.5,
+"scale": 1.57041,
+"dx": 86.93,
+"dy": -44.09,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 127,
+"src": "../../reference/apose_turn/frames/f127.png",
+"angle": 216.5,
+"scale": 1.56967,
+"dx": 87.32,
+"dy": -44.25,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 128,
+"src": "../../reference/apose_turn/frames/f128.png",
+"angle": 218.5,
+"scale": 1.56892,
+"dx": 87.71,
+"dy": -44.41,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 129,
+"src": "../../reference/apose_turn/frames/f129.png",
+"angle": 220.5,
+"scale": 1.56818,
+"dx": 88.09,
+"dy": -44.57,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 130,
+"src": "../../reference/apose_turn/frames/f130.png",
+"angle": 222.5,
+"scale": 1.56744,
+"dx": 88.48,
+"dy": -44.74,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 131,
+"src": "../../reference/apose_turn/frames/f131.png",
+"angle": 225,
+"scale": 1.5667,
+"dx": 88.87,
+"dy": -44.9,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 132,
+"src": "../../reference/apose_turn/frames/f132.png",
+"angle": 226.5,
+"scale": 1.56596,
+"dx": 89.25,
+"dy": -45.06,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 133,
+"src": "../../reference/apose_turn/frames/f133.png",
+"angle": 228.0,
+"scale": 1.56522,
+"dx": 89.64,
+"dy": -45.23,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 134,
+"src": "../../reference/apose_turn/frames/f134.png",
+"angle": 229.5,
+"scale": 1.56448,
+"dx": 90.03,
+"dy": -45.39,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 135,
+"src": "../../reference/apose_turn/frames/f135.png",
+"angle": 231.0,
+"scale": 1.56373,
+"dx": 90.41,
+"dy": -45.55,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 136,
+"src": "../../reference/apose_turn/frames/f136.png",
+"angle": 232.5,
+"scale": 1.56299,
+"dx": 90.8,
+"dy": -45.71,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 137,
+"src": "../../reference/apose_turn/frames/f137.png",
+"angle": 234.5,
+"scale": 1.56225,
+"dx": 91.19,
+"dy": -45.88,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 138,
+"src": "../../reference/apose_turn/frames/f138.png",
+"angle": 236.0,
+"scale": 1.56151,
+"dx": 91.57,
+"dy": -46.04,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 139,
+"src": "../../reference/apose_turn/frames/f139.png",
+"angle": 237.5,
+"scale": 1.56077,
+"dx": 91.96,
+"dy": -46.2,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 140,
+"src": "../../reference/apose_turn/frames/f140.png",
+"angle": 239.0,
+"scale": 1.56003,
+"dx": 92.35,
+"dy": -46.37,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 141,
+"src": "../../reference/apose_turn/frames/f141.png",
+"angle": 240.5,
+"scale": 1.55929,
+"dx": 92.73,
+"dy": -46.53,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 142,
+"src": "../../reference/apose_turn/frames/f142.png",
+"angle": 242.0,
+"scale": 1.55854,
+"dx": 93.12,
+"dy": -46.69,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 143,
+"src": "../../reference/apose_turn/frames/f143.png",
+"angle": 243.5,
+"scale": 1.5578,
+"dx": 93.51,
+"dy": -46.85,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 144,
+"src": "../../reference/apose_turn/frames/f144.png",
+"angle": 245.0,
+"scale": 1.55706,
+"dx": 93.89,
+"dy": -47.02,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 145,
+"src": "../../reference/apose_turn/frames/f145.png",
+"angle": 246.5,
+"scale": 1.55632,
+"dx": 94.28,
+"dy": -47.18,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 146,
+"src": "../../reference/apose_turn/frames/f146.png",
+"angle": 248.5,
+"scale": 1.55558,
+"dx": 94.67,
+"dy": -47.34,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 147,
+"src": "../../reference/apose_turn/frames/f147.png",
+"angle": 250.0,
+"scale": 1.55484,
+"dx": 95.05,
+"dy": -47.5,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 148,
+"src": "../../reference/apose_turn/frames/f148.png",
+"angle": 251.5,
+"scale": 1.5541,
+"dx": 95.44,
+"dy": -47.67,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 149,
+"src": "../../reference/apose_turn/frames/f149.png",
+"angle": 253.0,
+"scale": 1.55336,
+"dx": 95.83,
+"dy": -47.83,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 150,
+"src": "../../reference/apose_turn/frames/f150.png",
+"angle": 254.5,
+"scale": 1.55261,
+"dx": 96.21,
+"dy": -47.99,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 151,
+"src": "../../reference/apose_turn/frames/f151.png",
+"angle": 256.0,
+"scale": 1.55187,
+"dx": 96.6,
+"dy": -48.16,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 152,
+"src": "../../reference/apose_turn/frames/f152.png",
+"angle": 257.5,
+"scale": 1.55113,
+"dx": 96.99,
+"dy": -48.32,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 153,
+"src": "../../reference/apose_turn/frames/f153.png",
+"angle": 259.0,
+"scale": 1.55039,
+"dx": 97.37,
+"dy": -48.48,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 154,
+"src": "../../reference/apose_turn/frames/f154.png",
+"angle": 260.5,
+"scale": 1.54965,
+"dx": 97.76,
+"dy": -48.64,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 155,
+"src": "../../reference/apose_turn/frames/f155.png",
+"angle": 262.5,
+"scale": 1.54891,
+"dx": 98.15,
+"dy": -48.81,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 156,
+"src": "../../reference/apose_turn/frames/f156.png",
+"angle": 264.0,
+"scale": 1.54817,
+"dx": 98.53,
+"dy": -48.97,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 157,
+"src": "../../reference/apose_turn/frames/f157.png",
+"angle": 265.5,
+"scale": 1.54742,
+"dx": 98.92,
+"dy": -49.13,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 158,
+"src": "../../reference/apose_turn/frames/f158.png",
+"angle": 267.0,
+"scale": 1.54668,
+"dx": 99.31,
+"dy": -49.29,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 159,
+"src": "../../reference/apose_turn/frames/f159.png",
+"angle": 268.5,
+"scale": 1.54594,
+"dx": 99.69,
+"dy": -49.46,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 160,
+"src": "../../reference/apose_turn/frames/f160.png",
+"angle": 270,
+"scale": 1.5452,
+"dx": 100.08,
+"dy": -49.62,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 161,
+"src": "../../reference/apose_turn/frames/f161.png",
+"angle": 271.5,
+"scale": 1.54533,
+"dx": 99.89,
+"dy": -49.67,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 162,
+"src": "../../reference/apose_turn/frames/f162.png",
+"angle": 273.0,
+"scale": 1.54547,
+"dx": 99.69,
+"dy": -49.72,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 163,
+"src": "../../reference/apose_turn/frames/f163.png",
+"angle": 274.5,
+"scale": 1.5456,
+"dx": 99.5,
+"dy": -49.77,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 164,
+"src": "../../reference/apose_turn/frames/f164.png",
+"angle": 276.0,
+"scale": 1.54573,
+"dx": 99.31,
+"dy": -49.82,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 165,
+"src": "../../reference/apose_turn/frames/f165.png",
+"angle": 277.0,
+"scale": 1.54587,
+"dx": 99.12,
+"dy": -49.87,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 166,
+"src": "../../reference/apose_turn/frames/f166.png",
+"angle": 278.5,
+"scale": 1.546,
+"dx": 98.92,
+"dy": -49.92,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 167,
+"src": "../../reference/apose_turn/frames/f167.png",
+"angle": 280.0,
+"scale": 1.54613,
+"dx": 98.73,
+"dy": -49.97,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 168,
+"src": "../../reference/apose_turn/frames/f168.png",
+"angle": 281.5,
+"scale": 1.54627,
+"dx": 98.54,
+"dy": -50.02,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 169,
+"src": "../../reference/apose_turn/frames/f169.png",
+"angle": 283.0,
+"scale": 1.5464,
+"dx": 98.34,
+"dy": -50.07,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 170,
+"src": "../../reference/apose_turn/frames/f170.png",
+"angle": 284.5,
+"scale": 1.54653,
+"dx": 98.15,
+"dy": -50.12,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 171,
+"src": "../../reference/apose_turn/frames/f171.png",
+"angle": 286.0,
+"scale": 1.54666,
+"dx": 97.96,
+"dy": -50.17,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 172,
+"src": "../../reference/apose_turn/frames/f172.png",
+"angle": 287.5,
+"scale": 1.5468,
+"dx": 97.77,
+"dy": -50.22,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-amber d=43 low] her-right(amber)=0@-"
+}
+},
+{
+"f": 173,
+"src": "../../reference/apose_turn/frames/f173.png",
+"angle": 289.0,
+"scale": 1.54693,
+"dx": 97.57,
+"dy": -50.28,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 174,
+"src": "../../reference/apose_turn/frames/f174.png",
+"angle": 290.5,
+"scale": 1.54706,
+"dx": 97.38,
+"dy": -50.33,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 175,
+"src": "../../reference/apose_turn/frames/f175.png",
+"angle": 292.0,
+"scale": 1.5472,
+"dx": 97.19,
+"dy": -50.38,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 176,
+"src": "../../reference/apose_turn/frames/f176.png",
+"angle": 293.0,
+"scale": 1.54733,
+"dx": 96.99,
+"dy": -50.43,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 177,
+"src": "../../reference/apose_turn/frames/f177.png",
+"angle": 294.5,
+"scale": 1.54746,
+"dx": 96.8,
+"dy": -50.48,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 178,
+"src": "../../reference/apose_turn/frames/f178.png",
+"angle": 296.0,
+"scale": 1.5476,
+"dx": 96.61,
+"dy": -50.53,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 179,
+"src": "../../reference/apose_turn/frames/f179.png",
+"angle": 297.5,
+"scale": 1.54773,
+"dx": 96.42,
+"dy": -50.58,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 180,
+"src": "../../reference/apose_turn/frames/f180.png",
+"angle": 299.0,
+"scale": 1.54786,
+"dx": 96.22,
+"dy": -50.63,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 181,
+"src": "../../reference/apose_turn/frames/f181.png",
+"angle": 300.5,
+"scale": 1.548,
+"dx": 96.03,
+"dy": -50.68,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 182,
+"src": "../../reference/apose_turn/frames/f182.png",
+"angle": 302.0,
+"scale": 1.54813,
+"dx": 95.84,
+"dy": -50.73,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 183,
+"src": "../../reference/apose_turn/frames/f183.png",
+"angle": 303.5,
+"scale": 1.54826,
+"dx": 95.64,
+"dy": -50.78,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-amber d=34 low] her-right(amber)=0@-"
+}
+},
+{
+"f": 184,
+"src": "../../reference/apose_turn/frames/f184.png",
+"angle": 305.0,
+"scale": 1.5484,
+"dx": 95.45,
+"dy": -50.83,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 185,
+"src": "../../reference/apose_turn/frames/f185.png",
+"angle": 306.5,
+"scale": 1.54853,
+"dx": 95.26,
+"dy": -50.88,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 186,
+"src": "../../reference/apose_turn/frames/f186.png",
+"angle": 308.0,
+"scale": 1.54866,
+"dx": 95.07,
+"dy": -50.93,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 187,
+"src": "../../reference/apose_turn/frames/f187.png",
+"angle": 309.0,
+"scale": 1.5488,
+"dx": 94.87,
+"dy": -50.98,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 188,
+"src": "../../reference/apose_turn/frames/f188.png",
+"angle": 310.5,
+"scale": 1.54893,
+"dx": 94.68,
+"dy": -51.03,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 189,
+"src": "../../reference/apose_turn/frames/f189.png",
+"angle": 312.0,
+"scale": 1.54906,
+"dx": 94.49,
+"dy": -51.08,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 190,
+"src": "../../reference/apose_turn/frames/f190.png",
+"angle": 313.5,
+"scale": 1.54919,
+"dx": 94.29,
+"dy": -51.13,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 191,
+"src": "../../reference/apose_turn/frames/f191.png",
+"angle": 315,
+"scale": 1.54933,
+"dx": 94.1,
+"dy": -51.18,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 192,
+"src": "../../reference/apose_turn/frames/f192.png",
+"angle": 316.0,
+"scale": 1.54946,
+"dx": 93.91,
+"dy": -51.23,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 193,
+"src": "../../reference/apose_turn/frames/f193.png",
+"angle": 317.0,
+"scale": 1.54959,
+"dx": 93.72,
+"dy": -51.28,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 194,
+"src": "../../reference/apose_turn/frames/f194.png",
+"angle": 318.0,
+"scale": 1.54973,
+"dx": 93.52,
+"dy": -51.33,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 195,
+"src": "../../reference/apose_turn/frames/f195.png",
+"angle": 319.0,
+"scale": 1.54986,
+"dx": 93.33,
+"dy": -51.38,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 196,
+"src": "../../reference/apose_turn/frames/f196.png",
+"angle": 320.0,
+"scale": 1.54999,
+"dx": 93.14,
+"dy": -51.43,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=29 low] her-left(green)=0@-"
+}
+},
+{
+"f": 197,
+"src": "../../reference/apose_turn/frames/f197.png",
+"angle": 321.0,
+"scale": 1.55013,
+"dx": 92.94,
+"dy": -51.49,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 198,
+"src": "../../reference/apose_turn/frames/f198.png",
+"angle": 322.5,
+"scale": 1.55026,
+"dx": 92.75,
+"dy": -51.54,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=34 low] her-left(green)=0@-"
+}
+},
+{
+"f": 199,
+"src": "../../reference/apose_turn/frames/f199.png",
+"angle": 324.0,
+"scale": 1.55039,
+"dx": 92.56,
+"dy": -51.59,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=38 low] her-left(green)=0@-"
+}
+},
+{
+"f": 200,
+"src": "../../reference/apose_turn/frames/f200.png",
+"angle": 325.0,
+"scale": 1.55053,
+"dx": 92.36,
+"dy": -51.64,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=34 low] her-left(green)=0@-"
+}
+},
+{
+"f": 201,
+"src": "../../reference/apose_turn/frames/f201.png",
+"angle": 326.0,
+"scale": 1.55066,
+"dx": 92.17,
+"dy": -51.69,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=41 low] her-left(green)=1@402,199"
+}
+},
+{
+"f": 202,
+"src": "../../reference/apose_turn/frames/f202.png",
+"angle": 327.0,
+"scale": 1.55079,
+"dx": 91.98,
+"dy": -51.74,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=34 low] her-left(green)=0@-"
+}
+},
+{
+"f": 203,
+"src": "../../reference/apose_turn/frames/f203.png",
+"angle": 328.0,
+"scale": 1.55093,
+"dx": 91.79,
+"dy": -51.79,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=46 medium] her-left(green)=0@- | [single-amber d=24 low] her-right(amber)=1@369,186"
+}
+},
+{
+"f": 204,
+"src": "../../reference/apose_turn/frames/f204.png",
+"angle": 329.0,
+"scale": 1.55106,
+"dx": 91.59,
+"dy": -51.84,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-green d=43 low] her-left(green)=0@-"
+}
+},
+{
+"f": 205,
+"src": "../../reference/apose_turn/frames/f205.png",
+"angle": 330.0,
+"scale": 1.55119,
+"dx": 91.4,
+"dy": -51.89,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 206,
+"src": "../../reference/apose_turn/frames/f206.png",
+"angle": 331.0,
+"scale": 1.55132,
+"dx": 91.21,
+"dy": -51.94,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=46 medium] her-left(green)=1@425,186"
+}
+},
+{
+"f": 207,
+"src": "../../reference/apose_turn/frames/f207.png",
+"angle": 332.0,
+"scale": 1.55146,
+"dx": 91.01,
+"dy": -51.99,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=46 medium] her-left(green)=0@-"
+}
+},
+{
+"f": 208,
+"src": "../../reference/apose_turn/frames/f208.png",
+"angle": 333.0,
+"scale": 1.55159,
+"dx": 90.82,
+"dy": -52.04,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=48 medium] her-left(green)=1@424,186"
+}
+},
+{
+"f": 209,
+"src": "../../reference/apose_turn/frames/f209.png",
+"angle": 334.0,
+"scale": 1.55172,
+"dx": 90.63,
+"dy": -52.09,
+"marks": {
+"consistent": "uncertain",
+"confidence": "low",
+"positions": "[single-amber d=22 low] her-right(amber)=1@362,186"
+}
+},
+{
+"f": 210,
+"src": "../../reference/apose_turn/frames/f210.png",
+"angle": 335.0,
+"scale": 1.55186,
+"dx": 90.44,
+"dy": -52.14,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=48 medium] her-left(green)=2@423,186;400,199"
+}
+},
+{
+"f": 211,
+"src": "../../reference/apose_turn/frames/f211.png",
+"angle": 336.0,
+"scale": 1.55199,
+"dx": 90.24,
+"dy": -52.19,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 212,
+"src": "../../reference/apose_turn/frames/f212.png",
+"angle": 337.5,
+"scale": 1.55212,
+"dx": 90.05,
+"dy": -52.24,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=48 medium] her-left(green)=2@422,186;398,199"
+}
+},
+{
+"f": 213,
+"src": "../../reference/apose_turn/frames/f213.png",
+"angle": 339.0,
+"scale": 1.55226,
+"dx": 89.86,
+"dy": -52.29,
+"marks": {
+"consistent": "n/a",
+"confidence": "",
+"positions": ""
+}
+},
+{
+"f": 214,
+"src": "../../reference/apose_turn/frames/f214.png",
+"angle": 340.0,
+"scale": 1.55239,
+"dx": 89.66,
+"dy": -52.34,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@396,200"
+}
+},
+{
+"f": 215,
+"src": "../../reference/apose_turn/frames/f215.png",
+"angle": 341.0,
+"scale": 1.55252,
+"dx": 89.47,
+"dy": -52.39,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@395,200"
+}
+},
+{
+"f": 216,
+"src": "../../reference/apose_turn/frames/f216.png",
+"angle": 342.0,
+"scale": 1.55266,
+"dx": 89.28,
+"dy": -52.44,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@394,200"
+}
+},
+{
+"f": 217,
+"src": "../../reference/apose_turn/frames/f217.png",
+"angle": 343.0,
+"scale": 1.55279,
+"dx": 89.09,
+"dy": -52.49,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-amber d=38 low] her-right(amber)=0@- | [single-green d=53 medium] her-left(green)=1@394,200 | [single-amber d=22 low] her-right(amber)=1@356,186"
+}
+},
+{
+"f": 218,
+"src": "../../reference/apose_turn/frames/f218.png",
+"angle": 344.0,
+"scale": 1.55292,
+"dx": 88.89,
+"dy": -52.54,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=1@419,186"
+}
+},
+{
+"f": 219,
+"src": "../../reference/apose_turn/frames/f219.png",
+"angle": 345.0,
+"scale": 1.55306,
+"dx": 88.7,
+"dy": -52.59,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=50 medium] her-left(green)=2@419,186;392,200"
+}
+},
+{
+"f": 220,
+"src": "../../reference/apose_turn/frames/f220.png",
+"angle": 346.0,
+"scale": 1.55319,
+"dx": 88.51,
+"dy": -52.64,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=3@418,186;384,200;392,200"
+}
+},
+{
+"f": 221,
+"src": "../../reference/apose_turn/frames/f221.png",
+"angle": 347.0,
+"scale": 1.55332,
+"dx": 88.31,
+"dy": -52.7,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=1@391,199 | [single-amber d=22 low] her-right(amber)=1@354,186"
+}
+},
+{
+"f": 222,
+"src": "../../reference/apose_turn/frames/f222.png",
+"angle": 348.0,
+"scale": 1.55346,
+"dx": 88.12,
+"dy": -52.75,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@418,186;391,200 | [single-amber d=24 low] her-right(amber)=1@354,187"
+}
+},
+{
+"f": 223,
+"src": "../../reference/apose_turn/frames/f223.png",
+"angle": 349.0,
+"scale": 1.55359,
+"dx": 87.93,
+"dy": -52.8,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=0@-"
+}
+},
+{
+"f": 224,
+"src": "../../reference/apose_turn/frames/f224.png",
+"angle": 350.0,
+"scale": 1.55372,
+"dx": 87.74,
+"dy": -52.85,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@419,193;390,200 | [single-amber d=34 low] her-right(amber)=1@353,186"
+}
+},
+{
+"f": 225,
+"src": "../../reference/apose_turn/frames/f225.png",
+"angle": 351.0,
+"scale": 1.55385,
+"dx": 87.54,
+"dy": -52.9,
+"marks": {
+"consistent": "false",
+"confidence": "high",
+"positions": "[pair d=45 high] her-left(green)=1@419,193 her-right(amber)=0@-"
+}
+},
+{
+"f": 226,
+"src": "../../reference/apose_turn/frames/f226.png",
+"angle": 352.5,
+"scale": 1.55399,
+"dx": 87.35,
+"dy": -52.95,
+"marks": {
+"consistent": "false",
+"confidence": "high",
+"positions": "[pair d=46 high] her-left(green)=0@- her-right(amber)=1@352,186"
+}
+},
+{
+"f": 227,
+"src": "../../reference/apose_turn/frames/f227.png",
+"angle": 354.0,
+"scale": 1.55412,
+"dx": 87.16,
+"dy": -53.0,
+"marks": {
+"consistent": "false",
+"confidence": "high",
+"positions": "[pair d=45 high] her-left(green)=1@418,193 her-right(amber)=1@352,187"
+}
+},
+{
+"f": 228,
+"src": "../../reference/apose_turn/frames/f228.png",
+"angle": 355.0,
+"scale": 1.55425,
+"dx": 86.96,
+"dy": -53.05,
+"marks": {
+"consistent": "true",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=2@416,186;388,200 | [single-amber d=26 low] her-right(amber)=1@352,186"
+}
+},
+{
+"f": 229,
+"src": "../../reference/apose_turn/frames/f229.png",
+"angle": 356.0,
+"scale": 1.55439,
+"dx": 86.77,
+"dy": -53.1,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=53 medium] her-left(green)=1@416,186 | [single-amber d=36 low] her-right(amber)=1@351,186"
+}
+},
+{
+"f": 230,
+"src": "../../reference/apose_turn/frames/f230.png",
+"angle": 357.0,
+"scale": 1.55452,
+"dx": 86.58,
+"dy": -53.15,
+"marks": {
+"consistent": "false",
+"confidence": "high",
+"positions": "[pair d=45 high] her-left(green)=0@- her-right(amber)=1@351,186"
+}
+},
+{
+"f": 231,
+"src": "../../reference/apose_turn/frames/f231.png",
+"angle": 358.0,
+"scale": 1.55465,
+"dx": 86.39,
+"dy": -53.2,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[pair d=45 medium] her-left(green)=0@- her-right(amber)=1@351,186"
+}
+},
+{
+"f": 232,
+"src": "../../reference/apose_turn/frames/f232.png",
+"angle": 359.0,
+"scale": 1.55479,
+"dx": 86.19,
+"dy": -53.25,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[pair d=45 medium] her-left(green)=1@417,193 her-right(amber)=1@351,187"
+}
+},
+{
+"f": 233,
+"src": "../../reference/apose_turn/frames/f233.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "high",
+"positions": "[pair d=45 high] her-left(green)=1@417,193 her-right(amber)=1@350,186"
+}
+},
+{
+"f": 234,
+"src": "../../reference/apose_turn/frames/f234.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "high",
+"positions": "[pair d=45 high] her-left(green)=1@416,192 her-right(amber)=1@350,186"
+}
+},
+{
+"f": 235,
+"src": "../../reference/apose_turn/frames/f235.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "high",
+"positions": "[pair d=45 high] her-left(green)=1@416,192 her-right(amber)=1@350,186"
+}
+},
+{
+"f": 236,
+"src": "../../reference/apose_turn/frames/f236.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=58 medium] her-left(green)=1@416,192 | [single-amber d=26 low] her-right(amber)=1@350,186"
+}
+},
+{
+"f": 237,
+"src": "../../reference/apose_turn/frames/f237.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=58 medium] her-left(green)=1@416,192 | [single-amber d=26 low] her-right(amber)=1@350,186"
+}
+},
+{
+"f": 238,
+"src": "../../reference/apose_turn/frames/f238.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=58 medium] her-left(green)=1@416,192 | [single-amber d=26 low] her-right(amber)=1@350,186"
+}
+},
+{
+"f": 239,
+"src": "../../reference/apose_turn/frames/f239.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=55 medium] her-left(green)=1@416,192 | [single-amber d=26 low] her-right(amber)=1@350,186"
+}
+},
+{
+"f": 240,
+"src": "../../reference/apose_turn/frames/f240.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=55 medium] her-left(green)=1@416,192 | [single-amber d=26 low] her-right(amber)=1@350,186"
+}
+},
+{
+"f": 241,
+"src": "../../reference/apose_turn/frames/f241.png",
+"angle": 360,
+"scale": 1.55492,
+"dx": 86.0,
+"dy": -53.3,
+"marks": {
+"consistent": "false",
+"confidence": "medium",
+"positions": "[single-green d=55 medium] her-left(green)=1@416,192 | [single-amber d=26 low] her-right(amber)=1@350,186"
+}
+}
+]
+}

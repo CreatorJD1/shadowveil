@@ -1,0 +1,28 @@
+apose anchor (681, 286) bbox [657, 280, 704, 298] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 955, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.014116572324278563, 'worstAt': (661, 278, 0.014), 'meanAlphaErrOnPart': 0.0008792907557627444, 'keyResidual': 1.8368642706755485, 'blue': (0, 0)}
+   smile {'changedPx': 967, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.02810052647925676, 'worstAt': (700, 280, 0.972), 'meanAlphaErrOnPart': 0.0010085110802972145, 'keyResidual': 2.096147130380195, 'blue': (0, 0)}
+   OH {'changedPx': 971, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.03010546284259341, 'worstAt': (673, 298, 0.97), 'meanAlphaErrOnPart': 0.0008881647527882193, 'keyResidual': 2.1767946438008616, 'blue': (0, 0)}
+   AA {'changedPx': 1200, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.03125, 'worstAt': (672, 305, 0.969), 'meanAlphaErrOnPart': 0.0006929309828556645, 'keyResidual': 2.1299878677226625, 'blue': (0, 0)}
+   EE {'changedPx': 960, 'uncoveredLipPx': 0, 'lipPx': 543, 'maxAlphaErr': 0.019724630271680366, 'worstAt': (664, 291, 0.98), 'meanAlphaErrOnPart': 0.0009400698364614797, 'keyResidual': 3.8276512098594355, 'blue': (0, 0)}
+tpose anchor (682, 277) bbox [659, 272, 704, 289] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 920, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.01411599130132515, 'worstAt': (667, 270, 0.014), 'meanAlphaErrOnPart': 0.0009037117148808855, 'keyResidual': 2.0766774760089204, 'blue': (0, 0)}
+   smile {'changedPx': 946, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.08323346000359766, 'worstAt': (659, 271, 0.768), 'meanAlphaErrOnPart': 0.0012186671847340584, 'keyResidual': 2.1095126991523196, 'blue': (0, 0)}
+   OH {'changedPx': 925, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.039791673930716476, 'worstAt': (678, 292, 0.96), 'meanAlphaErrOnPart': 0.0009555367650415516, 'keyResidual': 2.246237082849471, 'blue': (0, 0)}
+   AA {'changedPx': 1086, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.03125, 'worstAt': (667, 290, 0.969), 'meanAlphaErrOnPart': 0.0007928580357891692, 'keyResidual': 2.4411758006500808, 'blue': (0, 0)}
+   EE {'changedPx': 921, 'uncoveredLipPx': 0, 'lipPx': 524, 'maxAlphaErr': 0.02415667977611957, 'worstAt': (706, 272, 0.552), 'meanAlphaErrOnPart': 0.0009387934923532225, 'keyResidual': 2.136786443383651, 'blue': (0, 0)}
+right anchor (760, 274) bbox [760, 263, 782, 286] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 37, 'lipPx': 239, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 459, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.017816600669237716, 'worstAt': (776, 262, 0.018), 'meanAlphaErrOnPart': 0.0007459379041625083, 'keyResidual': 2.2089310562887405, 'blue': (0, 0)}
+   smile {'changedPx': 464, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.026673494214303872, 'worstAt': (764, 270, 0.973), 'meanAlphaErrOnPart': 0.0008428764634385665, 'keyResidual': 2.1873014692706, 'blue': (0, 0)}
+   OH {'changedPx': 509, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.06759315728108983, 'worstAt': (774, 265, 0.654), 'meanAlphaErrOnPart': 0.0009091349162969371, 'keyResidual': 2.0988073558003437, 'blue': (0, 0)}
+   AA {'changedPx': 669, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.07621931439190166, 'worstAt': (773, 266, 0.7), 'meanAlphaErrOnPart': 0.0011815934574666417, 'keyResidual': 2.2222005189224396, 'blue': (0, 0)}
+   EE {'changedPx': 460, 'uncoveredLipPx': 0, 'lipPx': 239, 'maxAlphaErr': 0.038930510187147105, 'worstAt': (766, 282, 0.855), 'meanAlphaErrOnPart': 0.0009935904658809358, 'keyResidual': 3.4526250171506474, 'blue': (0, 0)}
+left anchor (612, 270) bbox [590, 261, 612, 283] base unchanged True
+   rest {'changedPx': 0, 'uncoveredLipPx': 47, 'lipPx': 254, 'maxAlphaErr': 0.0, 'worstAt': (0, 0, 0.0), 'meanAlphaErrOnPart': 0.0, 'keyResidual': 0.0, 'blue': (0, 0)}
+   M {'changedPx': 467, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.015625, 'worstAt': (588, 265, 0.016), 'meanAlphaErrOnPart': 0.0006849198233014477, 'keyResidual': 2.277891164516527, 'blue': (0, 0)}
+   smile {'changedPx': 471, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.04703780306760863, 'worstAt': (606, 265, 0.878), 'meanAlphaErrOnPart': 0.0009724986772449176, 'keyResidual': 2.277891164516527, 'blue': (0, 0)}
+   OH {'changedPx': 529, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.14117647058823535, 'worstAt': (595, 283, 1.0), 'meanAlphaErrOnPart': 0.0012341287339995223, 'keyResidual': 2.532083868444223, 'blue': (0, 0)}
+   AA {'changedPx': 696, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.0561125730894142, 'worstAt': (601, 263, 0.705), 'meanAlphaErrOnPart': 0.0007417261103289984, 'keyResidual': 2.7152494850659403, 'blue': (0, 0)}
+   EE {'changedPx': 467, 'uncoveredLipPx': 0, 'lipPx': 254, 'maxAlphaErr': 0.04352353320826374, 'worstAt': (604, 265, 0.956), 'meanAlphaErrOnPart': 0.0009397872288742483, 'keyResidual': 4.919155828642458, 'blue': (0, 0)}

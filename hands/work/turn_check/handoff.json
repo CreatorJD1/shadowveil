@@ -1,0 +1,202 @@
+{
+ "f001": {
+  "frame": "f001",
+  "map": {
+   "scale": 1.55492,
+   "dx": 86.0,
+   "dy": -53.3
+  },
+  "hands": {
+   "R": {
+    "method": "silhouette (wrist cut + fingertip + centroid), same code both sides",
+    "wrist_dxdy": [
+     -4.3,
+     -5.3
+    ],
+    "tip_dxdy": [
+     -2.0,
+     -5.0
+    ],
+    "centroid_dxdy": [
+     -2.1,
+     -6.5
+    ],
+    "L_frame": 138.0,
+    "L_view": 140.0,
+    "scale_ratio": 0.986,
+    "palm_w_ratio": 0.857,
+    "axis_rot_deg": 0.4,
+    "IoU_mapped": 0.619,
+    "IoU_wrist_aligned": 0.901
+   },
+   "L": {
+    "method": "silhouette (wrist cut + fingertip + centroid), same code both sides",
+    "wrist_dxdy": [
+     1.4,
+     -6.6
+    ],
+    "tip_dxdy": [
+     3.0,
+     -5.0
+    ],
+    "centroid_dxdy": [
+     1.6,
+     -7.3
+    ],
+    "L_frame": 142.0,
+    "L_view": 140.0,
+    "scale_ratio": 1.014,
+    "palm_w_ratio": 0.972,
+    "axis_rot_deg": -0.2,
+    "IoU_mapped": 0.616,
+    "IoU_wrist_aligned": 0.912
+   }
+  }
+ },
+ "f062": {
+  "frame": "f062",
+  "map": {
+   "scale": 1.54135,
+   "dx": 101.91,
+   "dy": -45.32
+  },
+  "hands": {
+   "L": {
+    "method": "manual landmarks on 10 px grid (hand not separable from hip silhouette); +-2 px reading",
+    "frame_tip": [
+     655.5,
+     862.0
+    ],
+    "view_tip": [
+     660,
+     998
+    ],
+    "tip_dxdy": [
+     -4.5,
+     -136.0
+    ],
+    "frame_thumb": [
+     648.5,
+     757.1
+    ],
+    "view_thumb": [
+     637,
+     954
+    ],
+    "thumb_dxdy": [
+     11.5,
+     -196.9
+    ],
+    "tip_to_thumb_frame": 104.9,
+    "tip_to_thumb_view": 44,
+    "front_back_width_frame": 30.0,
+    "front_back_width_view": 68,
+    "width_ratio": 0.441,
+    "pivot": [
+     678.0,
+     852.0
+    ]
+   }
+  }
+ },
+ "f160": {
+  "frame": "f160",
+  "map": {
+   "scale": 1.5452,
+   "dx": 100.08,
+   "dy": -49.62
+  },
+  "hands": {
+   "R": {
+    "method": "manual landmarks on 10 px grid (hand not separable from hip silhouette); +-2 px reading",
+    "frame_tip": [
+     703.7,
+     861.0
+    ],
+    "view_tip": [
+     684,
+     998
+    ],
+    "tip_dxdy": [
+     19.7,
+     -137.0
+    ],
+    "frame_thumb": [
+     709.7,
+     755.2
+    ],
+    "view_thumb": [
+     720,
+     953
+    ],
+    "thumb_dxdy": [
+     -10.3,
+     -197.8
+    ],
+    "tip_to_thumb_frame": 105.8,
+    "tip_to_thumb_view": 45,
+    "front_back_width_frame": 27.0,
+    "front_back_width_view": 69,
+    "width_ratio": 0.391,
+    "pivot": [
+     676.0,
+     857.0
+    ]
+   }
+  }
+ },
+ "f109": {
+  "frame": "f109",
+  "map": {
+   "scale": 1.58301,
+   "dx": 80.36,
+   "dy": -41.32
+  },
+  "hands": {
+   "L": {
+    "method": "silhouette (wrist cut + fingertip + centroid), same code both sides",
+    "wrist_dxdy": [
+     -31.3,
+     6.4
+    ],
+    "tip_dxdy": [
+     -47.0,
+     3.0
+    ],
+    "centroid_dxdy": [
+     -38.1,
+     4.3
+    ],
+    "L_frame": 146.2,
+    "L_view": 141.0,
+    "scale_ratio": 1.037,
+    "palm_w_ratio": 1.037,
+    "axis_rot_deg": 7.9,
+    "IoU_mapped": 0.296,
+    "IoU_wrist_aligned": 0.57
+   },
+   "R": {
+    "method": "silhouette (wrist cut + fingertip + centroid), same code both sides",
+    "wrist_dxdy": [
+     33.4,
+     6.9
+    ],
+    "tip_dxdy": [
+     50.0,
+     0.0
+    ],
+    "centroid_dxdy": [
+     40.5,
+     2.3
+    ],
+    "L_frame": 144.0,
+    "L_view": 140.1,
+    "scale_ratio": 1.028,
+    "palm_w_ratio": 1.081,
+    "axis_rot_deg": -7.8,
+    "IoU_mapped": 0.283,
+    "IoU_wrist_aligned": 0.547
+   }
+  }
+ }
+}

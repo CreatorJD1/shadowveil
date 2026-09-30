@@ -1,0 +1,9712 @@
+{
+"view": "apose",
+"rows": [
+{
+"i": 0,
+"name": "zero",
+"holesTotal": 831,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+},
+{
+"i": 1,
+"name": "rot-90_tw-1",
+"holesTotal": 819,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)",
+"line break knuckle_L +2 piece(s)"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 2,
+"name": "rot-75_tw-1",
+"holesTotal": 832,
+"holesNew": 1,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 3,
+"name": "rot-60_tw-1",
+"holesTotal": 841,
+"holesNew": 10,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 1,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -5,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 1px",
+"line break wrist_L +1 piece(s)"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 4,
+"name": "rot-45_tw-1",
+"holesTotal": 822,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 1
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -4,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap R 1px",
+"line break wrist_L +1 piece(s)"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 5,
+"name": "rot-30_tw-1",
+"holesTotal": 828,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -5,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 6,
+"name": "rot-15_tw-1",
+"holesTotal": 835,
+"holesNew": 4,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 7,
+"name": "rot0_tw-1",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 8,
+"name": "rot15_tw-1",
+"holesTotal": 829,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 9,
+"name": "rot30_tw-1",
+"holesTotal": 841,
+"holesNew": 10,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 1
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -4,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap R 1px"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 10,
+"name": "rot45_tw-1",
+"holesTotal": 823,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 11,
+"name": "rot60_tw-1",
+"holesTotal": 838,
+"holesNew": 7,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 1,
+"R": 3
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 1px",
+"wrist seam gap R 3px"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 12,
+"name": "rot75_tw-1",
+"holesTotal": 832,
+"holesNew": 1,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 13,
+"name": "rot90_tw-1",
+"holesTotal": 819,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -6,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)",
+"line break knuckle_L +2 piece(s)"
+],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 14,
+"name": "rot-90_tw0",
+"holesTotal": 819,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)",
+"line break knuckle_L +2 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 15,
+"name": "rot-75_tw0",
+"holesTotal": 832,
+"holesNew": 1,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+},
+{
+"i": 16,
+"name": "rot-60_tw0",
+"holesTotal": 841,
+"holesNew": 10,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 1,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -5,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 1px",
+"line break wrist_L +1 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 17,
+"name": "rot-45_tw0",
+"holesTotal": 822,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 1
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -4,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap R 1px",
+"line break wrist_L +1 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 18,
+"name": "rot-30_tw0",
+"holesTotal": 828,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -5,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 19,
+"name": "rot-15_tw0",
+"holesTotal": 835,
+"holesNew": 4,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+},
+{
+"i": 20,
+"name": "rot0_tw0",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+},
+{
+"i": 21,
+"name": "rot15_tw0",
+"holesTotal": 829,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+},
+{
+"i": 22,
+"name": "rot30_tw0",
+"holesTotal": 841,
+"holesNew": 10,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 1
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -4,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap R 1px"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 23,
+"name": "rot45_tw0",
+"holesTotal": 823,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+},
+{
+"i": 24,
+"name": "rot60_tw0",
+"holesTotal": 838,
+"holesNew": 7,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 1,
+"R": 3
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 1px",
+"wrist seam gap R 3px"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 25,
+"name": "rot75_tw0",
+"holesTotal": 832,
+"holesNew": 1,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 26,
+"name": "rot90_tw0",
+"holesTotal": 819,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -6,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)",
+"line break knuckle_L +2 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 27,
+"name": "rot-90_tw1",
+"holesTotal": 1596,
+"holesNew": 765,
+"leak": {
+"L": 8,
+"R": 33
+},
+"seam": {
+"L": 30,
+"R": 36
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 5,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -9,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 8px",
+"wrist seam gap L 30px",
+"leak R 33px",
+"wrist seam gap R 36px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 28,
+"name": "rot-75_tw1",
+"holesTotal": 1524,
+"holesNew": 693,
+"leak": {
+"L": 10,
+"R": 31
+},
+"seam": {
+"L": 42,
+"R": 36
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 4,
+"dKinks": -6,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 10px",
+"wrist seam gap L 42px",
+"leak R 31px",
+"wrist seam gap R 36px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 29,
+"name": "rot-60_tw1",
+"holesTotal": 1370,
+"holesNew": 539,
+"leak": {
+"L": 9,
+"R": 34
+},
+"seam": {
+"L": 44,
+"R": 45
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 4,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 4,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 9px",
+"wrist seam gap L 44px",
+"leak R 34px",
+"wrist seam gap R 45px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 30,
+"name": "rot-45_tw1",
+"holesTotal": 1348,
+"holesNew": 517,
+"leak": {
+"L": 10,
+"R": 35
+},
+"seam": {
+"L": 44,
+"R": 41
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 10px",
+"wrist seam gap L 44px",
+"leak R 35px",
+"wrist seam gap R 41px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 31,
+"name": "rot-30_tw1",
+"holesTotal": 1412,
+"holesNew": 581,
+"leak": {
+"L": 10,
+"R": 31
+},
+"seam": {
+"L": 54,
+"R": 45
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 10px",
+"wrist seam gap L 54px",
+"leak R 31px",
+"wrist seam gap R 45px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 32,
+"name": "rot-15_tw1",
+"holesTotal": 1589,
+"holesNew": 758,
+"leak": {
+"L": 10,
+"R": 30
+},
+"seam": {
+"L": 48,
+"R": 48
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 4,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 10px",
+"wrist seam gap L 48px",
+"leak R 30px",
+"wrist seam gap R 48px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 33,
+"name": "rot0_tw1",
+"holesTotal": 1565,
+"holesNew": 734,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 39,
+"R": 39
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 4,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 39px",
+"wrist seam gap R 39px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 34,
+"name": "rot15_tw1",
+"holesTotal": 1532,
+"holesNew": 701,
+"leak": {
+"L": 10,
+"R": 25
+},
+"seam": {
+"L": 45,
+"R": 43
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 4,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 10px",
+"wrist seam gap L 45px",
+"leak R 25px",
+"wrist seam gap R 43px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 35,
+"name": "rot30_tw1",
+"holesTotal": 1403,
+"holesNew": 572,
+"leak": {
+"L": 12,
+"R": 25
+},
+"seam": {
+"L": 43,
+"R": 51
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 5,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 12px",
+"wrist seam gap L 43px",
+"leak R 25px",
+"wrist seam gap R 51px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 36,
+"name": "rot45_tw1",
+"holesTotal": 1343,
+"holesNew": 512,
+"leak": {
+"L": 13,
+"R": 21
+},
+"seam": {
+"L": 50,
+"R": 48
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 13px",
+"wrist seam gap L 50px",
+"leak R 21px",
+"wrist seam gap R 48px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 37,
+"name": "rot60_tw1",
+"holesTotal": 1401,
+"holesNew": 570,
+"leak": {
+"L": 12,
+"R": 22
+},
+"seam": {
+"L": 42,
+"R": 46
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 5,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -9,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 12px",
+"wrist seam gap L 42px",
+"leak R 22px",
+"wrist seam gap R 46px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 38,
+"name": "rot75_tw1",
+"holesTotal": 1552,
+"holesNew": 721,
+"leak": {
+"L": 13,
+"R": 17
+},
+"seam": {
+"L": 35,
+"R": 32
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -9,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 13px",
+"wrist seam gap L 35px",
+"leak R 17px",
+"wrist seam gap R 32px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 39,
+"name": "rot90_tw1",
+"holesTotal": 1588,
+"holesNew": 757,
+"leak": {
+"L": 8,
+"R": 18
+},
+"seam": {
+"L": 31,
+"R": 27
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 8px",
+"wrist seam gap L 31px",
+"leak R 18px",
+"wrist seam gap R 27px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 40,
+"name": "tw-1.000",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -180,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 41,
+"name": "tw-0.875",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -157.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -157.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 42,
+"name": "tw-0.750",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -135,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -135,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 43,
+"name": "tw-0.625",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -112.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -112.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 44,
+"name": "tw-0.500",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -90,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -90,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 45,
+"name": "tw-0.375",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -67.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -67.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 46,
+"name": "tw-0.250",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -45,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -45,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 47,
+"name": "tw-0.125",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 0,
+"want": -22.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+},
+"R": {
+"tau": 0,
+"want": -22.5,
+"clamped": true,
+"show": [
+"apose@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 48,
+"name": "tw0.125",
+"holesTotal": 824,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {
+"L": {
+"tau": 22.5,
+"want": 22.5,
+"clamped": false,
+"show": [
+"apose@1.00/s0.925"
+]
+},
+"R": {
+"tau": 22.5,
+"want": 22.5,
+"clamped": false,
+"show": [
+"apose@1.00/s0.925"
+]
+}
+},
+"issues": []
+},
+{
+"i": 49,
+"name": "tw0.250",
+"holesTotal": 3224,
+"holesNew": 2393,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 31,
+"R": 130
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.83,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": -9,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 31px",
+"wrist seam gap R 130px"
+],
+"twist": {
+"L": {
+"tau": 45,
+"want": 45,
+"clamped": false,
+"show": [
+"apose@1.00/s0.850",
+"left@0.50/s0.850"
+]
+},
+"R": {
+"tau": 45,
+"want": 45,
+"clamped": false,
+"show": [
+"apose@1.00/s0.850",
+"right@0.50/s0.850"
+]
+}
+},
+"issues": []
+},
+{
+"i": 50,
+"name": "tw0.375",
+"holesTotal": 1617,
+"holesNew": 786,
+"leak": {
+"L": 180,
+"R": 191
+},
+"seam": {
+"L": 9,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 180px",
+"wrist seam gap L 9px",
+"leak R 191px"
+],
+"twist": {
+"L": {
+"tau": 67.5,
+"want": 67.5,
+"clamped": false,
+"show": [
+"left@1.00/s0.925"
+]
+},
+"R": {
+"tau": 67.5,
+"want": 67.5,
+"clamped": false,
+"show": [
+"right@1.00/s0.925"
+]
+}
+},
+"issues": []
+},
+{
+"i": 51,
+"name": "tw0.500",
+"holesTotal": 1624,
+"holesNew": 793,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 8,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.83,
+"dEnds": 0,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 8px"
+],
+"twist": {
+"L": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"left@1.00/s1.000"
+]
+},
+"R": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"right@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 52,
+"name": "tw0.625",
+"holesTotal": 1617,
+"holesNew": 786,
+"leak": {
+"L": 180,
+"R": 191
+},
+"seam": {
+"L": 9,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 180px",
+"wrist seam gap L 9px",
+"leak R 191px"
+],
+"twist": {
+"L": {
+"tau": 112.5,
+"want": 112.5,
+"clamped": false,
+"show": [
+"left@1.00/s0.925"
+]
+},
+"R": {
+"tau": 112.5,
+"want": 112.5,
+"clamped": false,
+"show": [
+"right@1.00/s0.925"
+]
+}
+},
+"issues": []
+},
+{
+"i": 53,
+"name": "tw0.750",
+"holesTotal": 1894,
+"holesNew": 1063,
+"leak": {
+"L": 14,
+"R": 24
+},
+"seam": {
+"L": 27,
+"R": 48
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 14px",
+"wrist seam gap L 27px",
+"leak R 24px",
+"wrist seam gap R 48px"
+],
+"twist": {
+"L": {
+"tau": 135,
+"want": 135,
+"clamped": false,
+"show": [
+"left@1.00/s0.850",
+"back@0.50/s0.850"
+]
+},
+"R": {
+"tau": 135,
+"want": 135,
+"clamped": false,
+"show": [
+"right@1.00/s0.850",
+"back@0.50/s0.850"
+]
+}
+},
+"issues": []
+},
+{
+"i": 54,
+"name": "tw0.875",
+"holesTotal": 1383,
+"holesNew": 552,
+"leak": {
+"L": 11,
+"R": 30
+},
+"seam": {
+"L": 32,
+"R": 33
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 4,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 11px",
+"wrist seam gap L 32px",
+"leak R 30px",
+"wrist seam gap R 33px"
+],
+"twist": {
+"L": {
+"tau": 157.5,
+"want": 157.5,
+"clamped": false,
+"show": [
+"back@1.00/s0.925"
+]
+},
+"R": {
+"tau": 157.5,
+"want": 157.5,
+"clamped": false,
+"show": [
+"back@1.00/s0.925"
+]
+}
+},
+"issues": []
+},
+{
+"i": 55,
+"name": "tw1.000",
+"holesTotal": 1565,
+"holesNew": 734,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 39,
+"R": 39
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 4,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 3,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"wrist seam gap L 39px",
+"wrist seam gap R 39px"
+],
+"twist": {
+"L": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+},
+"R": {
+"tau": 180,
+"want": 180,
+"clamped": false,
+"show": [
+"back@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 56,
+"name": "sh-1_el-1_bend",
+"holesTotal": 828,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)",
+"line break wrist_R +1 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 57,
+"name": "sh-1_el-1_bend_wr45_tw.5",
+"holesTotal": 1628,
+"holesNew": 797,
+"leak": {
+"L": 188,
+"R": 194
+},
+"seam": {
+"L": 13,
+"R": 2
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 188px",
+"wrist seam gap L 13px",
+"leak R 194px",
+"wrist seam gap R 2px"
+],
+"twist": {
+"L": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"left@1.00/s1.000"
+]
+},
+"R": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"right@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 58,
+"name": "sh-1_el1_bend",
+"holesTotal": 828,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +2 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 59,
+"name": "sh-1_el1_bend_wr45_tw.5",
+"holesTotal": 1628,
+"holesNew": 797,
+"leak": {
+"L": 188,
+"R": 194
+},
+"seam": {
+"L": 13,
+"R": 2
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 188px",
+"wrist seam gap L 13px",
+"leak R 194px",
+"wrist seam gap R 2px"
+],
+"twist": {
+"L": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"left@1.00/s1.000"
+]
+},
+"R": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"right@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 60,
+"name": "sh1_el-1_bend",
+"holesTotal": 828,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -3,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +1 piece(s)",
+"line break wrist_R +1 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 61,
+"name": "sh1_el-1_bend_wr45_tw.5",
+"holesTotal": 1628,
+"holesNew": 797,
+"leak": {
+"L": 188,
+"R": 194
+},
+"seam": {
+"L": 13,
+"R": 2
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 188px",
+"wrist seam gap L 13px",
+"leak R 194px",
+"wrist seam gap R 2px"
+],
+"twist": {
+"L": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"left@1.00/s1.000"
+]
+},
+"R": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"right@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 62,
+"name": "sh1_el1_bend",
+"holesTotal": 828,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -2,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"line break wrist_L +2 piece(s)"
+],
+"twist": {},
+"issues": []
+},
+{
+"i": 63,
+"name": "sh1_el1_bend_wr45_tw.5",
+"holesTotal": 1628,
+"holesNew": 797,
+"leak": {
+"L": 188,
+"R": 194
+},
+"seam": {
+"L": 13,
+"R": 2
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 1,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 2,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": -1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": -1,
+"dKinks": -3,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 2,
+"dKinks": -10,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [
+"leak L 188px",
+"wrist seam gap L 13px",
+"leak R 194px",
+"wrist seam gap R 2px"
+],
+"twist": {
+"L": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"left@1.00/s1.000"
+]
+},
+"R": {
+"tau": 90,
+"want": 90,
+"clamped": false,
+"show": [
+"right@1.00/s1.000"
+]
+}
+},
+"issues": []
+},
+{
+"i": 64,
+"name": "legneck-1",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+},
+{
+"i": 65,
+"name": "legneck1",
+"holesTotal": 802,
+"holesNew": 0,
+"leak": {
+"L": 0,
+"R": 0
+},
+"seam": {
+"L": 0,
+"R": 0
+},
+"line": {
+"wrist_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -4
+},
+"wrist_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+},
+"forearm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"forearm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 1,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"upperArm_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"thigh_R": {
+"dWmed": 0,
+"dWp90": 0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0,
+"zeroVsRestPieces": 0
+},
+"shin_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"shin_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"foot_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": 0
+},
+"knuckle_L": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -5
+},
+"knuckle_R": {
+"dWmed": 0.0,
+"dWp90": 0.0,
+"dEnds": 0,
+"dKinks": 0,
+"zeroVsRestWmed": 0.0,
+"zeroVsRestPieces": -1
+}
+},
+"fails": [],
+"twist": {},
+"issues": []
+}
+],
+"restLine": {
+"wrist_L": {
+"px": 167,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 9,
+"kinks": 0,
+"comps": 6
+},
+"wrist_R": {
+"px": 174,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 6,
+"kinks": 0,
+"comps": 4
+},
+"forearm_L": {
+"px": 170,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 0,
+"kinks": 0,
+"comps": 2
+},
+"forearm_R": {
+"px": 151,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 0,
+"kinks": 0,
+"comps": 2
+},
+"upperArm_L": {
+"px": 190,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 1,
+"kinks": 5,
+"comps": 3
+},
+"upperArm_R": {
+"px": 189,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 1,
+"kinks": 6,
+"comps": 3
+},
+"thigh_L": {
+"px": 12,
+"wmed": 1.0,
+"wp90": 2.3,
+"ends": 0,
+"kinks": 0,
+"comps": 0
+},
+"thigh_R": {
+"px": 8,
+"wmed": 0,
+"wp90": 0,
+"ends": 0,
+"kinks": 0,
+"comps": 0
+},
+"shin_L": {
+"px": 326,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 8,
+"kinks": 0,
+"comps": 4
+},
+"shin_R": {
+"px": 335,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 10,
+"kinks": 0,
+"comps": 4
+},
+"foot_L": {
+"px": 211,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 2,
+"kinks": 0,
+"comps": 2
+},
+"foot_R": {
+"px": 205,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 8,
+"kinks": 0,
+"comps": 2
+},
+"knuckle_L": {
+"px": 422,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 39,
+"kinks": 4,
+"comps": 11
+},
+"knuckle_R": {
+"px": 453,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 17,
+"kinks": 12,
+"comps": 8
+}
+}
+}

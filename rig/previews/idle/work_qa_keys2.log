@@ -1,0 +1,6 @@
+QA keys_idle_weight_shift_apose ok
+QA keys_idle_weight_shift_tpose ok
+QA keys_idle_weight_shift_left ok
+QA keys_idle_weight_shift_right ok
+QA keys_idle_weight_shift_back ok
+QADONE

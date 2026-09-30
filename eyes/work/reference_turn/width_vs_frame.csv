@@ -1,0 +1,34 @@
+frame_png,approx_yaw_deg,eye,visible,opening_w_px_video,opening_w_px_canvas_x1.56,center_minus_headcenter_px_video,center_over_headwidth,note
+f001,0,R_amber,full,22.5,35,-22.8,-0.21,front
+f001,0,L_green,full,22,34,+23.0,+0.21,front
+f017,~22,R_amber,full,22.5,35,-32.5,-0.30,
+f017,~22,L_green,full,22,34,+12.5,+0.12,
+f029,~41,R_amber,full,17,27,-42.5,-0.39,2 px from face contour
+f029,~41,L_green,full,21,33,-3,-0.03,
+f037,~52,R_amber,clipped,11,17,-48,-0.44,cut by cheek/nose-bridge contour
+f037,~52,L_green,full,20,31,-16,-0.15,
+f041,~58,R_amber,clipped,9,14,-50,-0.46,
+f041,~58,L_green,full,18,28,-20,-0.18,
+f045,~64,R_amber,sliver,5,8,-53,-0.49,
+f045,~64,L_green,full,16,25,-26,-0.24,
+f049,~70,R_amber,gone(1-3px),~2,~3,,,far eye gone behind the nose-bridge contour by f049-f051
+f053,~75,L_green,full,12(bright)/~15(lash),19-23,-36.5,-0.33,
+f057,~80,L_green,full,9(bright)/13.5(lash),14-21,-43,-0.39,front corner ~10 px behind contour
+f061,~87,L_green,profile,7(bright)/12(lash),11-19,-47,-0.41,profile; front gap 4 px
+f065,~93,L_green,profile,6(bright)/11(lash),9-17,-51,-0.44,front gap 1-2 px
+f069,~99,L_green,edge,6/7,9-11,-56,-0.49,at contour
+f073,~105,L_green,gone,0,0,,,near eye gone past profile
+f149,~260,R_amber,lash tick only,0,0,,,amber first reappears
+f153,~265,R_amber,profile,10(lash),16,+50.5,+0.45,front gap ~1
+f157,~270,R_amber,profile,12(lash),19,+49.5,+0.44,profile
+f161,~275,R_amber,near-profile,16(lash),25,+46,+0.41,front gap ~2
+f165,~281,R_amber,full,18,28,+40,+0.36,front gap ~7
+f169,~286,R_amber,full,20,31,+36.5,+0.33,
+f173,~291,R_amber,full,21,33,+32,+0.28,
+f173,~291,L_green,reappears,2-3,4,,,far eye reappears at contour
+f177,~296,R_amber,full,23,36,+27,+0.24,
+f181,~301,L_green,clipped,7,11,+51,+0.45,gap to contour 3
+f193,~316,L_green,clipped/tight,14,22,,,gap 3
+f205,~330,L_green,full,18,28,,,gap 8 (clean)
+f213,~340,L_green,full,20,31,,,
+f229,360,L_green,full,22,34,+23,+0.21,back at front and holds to f241

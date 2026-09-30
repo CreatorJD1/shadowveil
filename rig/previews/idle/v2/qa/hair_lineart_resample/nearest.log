@@ -1,0 +1,5 @@
+nearest apose parts fail ['strand_03_tip', 'strand_06_tip'] joints fail ['strand_03<-hair_front', 'strand_03_tip<-strand_03', 'strand_06_tip<-strand_06']
+nearest tpose parts fail ['strand_01', 'strand_05'] joints fail ['strand_01<-hair_front', 'strand_03<-hair_front']
+nearest left parts fail ['strand_03'] joints fail ['strand_04_tip<-strand_04']
+nearest right parts fail [] joints fail ['strand_02<-hair_front', 'strand_02_tip<-strand_02']
+nearest back parts fail [] joints fail ['strand_04<-hair_back', 'strand_05<-hair_back']

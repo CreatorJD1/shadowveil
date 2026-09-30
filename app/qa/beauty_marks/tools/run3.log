@@ -1,0 +1,22 @@
+0
+/usr/lib/python3/dist-packages/numpy/_core/fromnumeric.py:3860: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/lib/python3/dist-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+/usr/lib/python3/dist-packages/numpy/_core/fromnumeric.py:3860: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/lib/python3/dist-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+200
+400
+600
+800
+1000
+1200
+1400
+1600
+1800
+2000
+2200
+2400
+done

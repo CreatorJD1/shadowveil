@@ -1,0 +1,1037 @@
+{
+  "about": "Master app registry. The app (app/index.html) reads this file. Add entries by hand or run: python3 status/update.py register|scan. Paths are relative to /workspace/shadowveil.",
+  "scan_exclude": [
+    "backup",
+    "old_",
+    "proto_tree",
+    "__pycache__",
+    "node_modules",
+    "/frames/",
+    "(copy",
+    "/tmp/",
+    ".tmp"
+  ],
+  "sections": [
+    {
+      "id": "body",
+      "title": "Body",
+      "owner": "Body",
+      "scan_dirs": [
+        "body_tools"
+      ],
+      "pages": [
+        {
+          "label": "Body rig preview",
+          "path": "body_tools/preview.html",
+          "note": "Base body rig preview (older, pre-v1.6)",
+          "exists": true
+        }
+      ],
+      "reports": [
+        {
+          "label": "Apose turn report",
+          "path": "body_tools/work/apose_turn/report.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Export angle check",
+          "path": "body_tools/work/export_angle_check.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Idle key checks log",
+          "path": "body_tools/idle/checks/run_checks.log",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Body specs",
+          "path": "body_tools/body_specs.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "notes",
+          "path": "body_tools/work/apose_turn/candidates/notes.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "NOTES",
+          "path": "body_tools/actions/NOTES.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "REPORT",
+          "path": "body_tools/idle/checks/REPORT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        }
+      ],
+      "media": [
+        {
+          "label": "Joint zoom sheet",
+          "path": "body_tools/joint_zoom_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Contact sheet",
+          "path": "body_tools/contact_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Skin apose compare",
+          "path": "body_tools/skin_apose_compare.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "skin tpose compare v151",
+          "path": "body_tools/skin_tpose_compare_v151.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "skin left compare v151",
+          "path": "body_tools/skin_left_compare_v151.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "skin apose compare v151",
+          "path": "body_tools/skin_apose_compare_v151.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "skin back compare v151",
+          "path": "body_tools/skin_back_compare_v151.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "skin apose hipR fix",
+          "path": "body_tools/skin_apose_hipR_fix.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "profile underlay flatten",
+          "path": "body_tools/profile_underlay_flatten.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "skin right compare v151",
+          "path": "body_tools/skin_right_compare_v151.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "eyes",
+      "title": "Eyes",
+      "owner": "Eyes",
+      "scan_dirs": [
+        "eyes"
+      ],
+      "pages": [
+        {
+          "label": "Eyes live preview",
+          "path": "eyes/live/index.html",
+          "note": "Blink / gaze / lid-frame live preview",
+          "exists": true
+        }
+      ],
+      "reports": [
+        {
+          "label": "Eyes README",
+          "path": "eyes/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Reference timing summary",
+          "path": "eyes/work/reference_timing/summary.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Reference turn notes",
+          "path": "eyes/work/reference_turn/notes.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Verification",
+          "path": "eyes/verification.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Idle review iris log",
+          "path": "eyes/work/idle_review/iris_log.txt",
+          "note": "",
+          "exists": false
+        },
+        {
+          "label": "Eye showcase",
+          "path": "eyes/showcase/eye_showcase.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "eyes/work/idle_review/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "notes",
+          "path": "eyes/work/idle_review/notes.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        }
+      ],
+      "media": [
+        {
+          "label": "Preview apose",
+          "path": "eyes/preview_apose.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Preview left",
+          "path": "eyes/preview_left.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Preview right",
+          "path": "eyes/preview_right.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Preview tpose",
+          "path": "eyes/preview_tpose.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "rest diff apose",
+          "path": "eyes/rest_diff_apose.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "rest diff right",
+          "path": "eyes/rest_diff_right.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "rest diff tpose",
+          "path": "eyes/rest_diff_tpose.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "rest diff left",
+          "path": "eyes/rest_diff_left.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "mouth",
+      "title": "Mouth",
+      "owner": "Mouth",
+      "scan_dirs": [
+        "mouth"
+      ],
+      "pages": [],
+      "reports": [
+        {
+          "label": "Idle QA run log",
+          "path": "mouth/work/idle_qa/run_all.log",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Reference timing summary",
+          "path": "mouth/work/reference_timing/summary.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Turn ref summary",
+          "path": "mouth/work/turn_ref/summary.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth rig",
+          "path": "mouth/mouth_rig.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Self-check all views",
+          "path": "mouth/selfcheck_all_views.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Crossfade stats v4",
+          "path": "mouth/crossfade_stats_v4.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth actions",
+          "path": "mouth/actions/mouth_actions.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "report stdout",
+          "path": "mouth/work/idle_qa/report_stdout.txt",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Idle mouth QA (v1 renders)",
+          "path": "mouth/work/idle_qa/summary.md",
+          "note": "",
+          "exists": true
+        }
+      ],
+      "media": [
+        {
+          "label": "Review v4 on face",
+          "path": "mouth/review_v4_preview_on_face.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Review v4 contact sheet",
+          "path": "mouth/review_v4_contact_sheet_chroma.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Review v4 crossfade 50%",
+          "path": "mouth/review_v4_crossfade_50.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "review v2 preview on face",
+          "path": "mouth/review_v2_preview_on_face.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "review v3 crossfade 50",
+          "path": "mouth/review_v3_crossfade_50.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "review v2 contact sheet chroma",
+          "path": "mouth/review_v2_contact_sheet_chroma.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "review v3 contact sheet chroma",
+          "path": "mouth/review_v3_contact_sheet_chroma.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "review v3 preview on face",
+          "path": "mouth/review_v3_preview_on_face.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Idle mouth worst frames",
+          "path": "mouth/work/idle_qa/idle_mouth_worst_contact_sheet.png",
+          "note": "",
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "hands",
+      "title": "Hands",
+      "owner": "Hands",
+      "scan_dirs": [
+        "hands"
+      ],
+      "pages": [],
+      "reports": [
+        {
+          "label": "Idle bend REPORT",
+          "path": "hands/work/idle_bend/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hands README",
+          "path": "hands/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Clip gestures",
+          "path": "hands/work/clip_gestures.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Turn check notes",
+          "path": "hands/work/turn_check/notes.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Rig all views",
+          "path": "hands/rig_all_views.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hand actions",
+          "path": "hands/actions/hand_actions.json",
+          "note": "",
+          "exists": true
+        }
+      ],
+      "media": [
+        {
+          "label": "Contact sheet",
+          "path": "hands/contact_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Check all",
+          "path": "hands/previews/check_all.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Apose curl full body",
+          "path": "hands/previews/apose_c_curl_fullbody.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "apose hand erase mask",
+          "path": "hands/apose_hand_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "back hand erase mask",
+          "path": "hands/back_hand_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "left hand erase mask",
+          "path": "hands/left_hand_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "right hand erase mask",
+          "path": "hands/right_hand_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "tpose hand erase mask",
+          "path": "hands/tpose_hand_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "hair",
+      "title": "Hair",
+      "owner": "Hair",
+      "scan_dirs": [
+        "hair"
+      ],
+      "pages": [
+        {
+          "label": "Hair live sway preview",
+          "path": "hair/live/index.html",
+          "note": "Spring sway preview for the 37 hair parts",
+          "exists": true
+        }
+      ],
+      "reports": [
+        {
+          "label": "Grok ref SUMMARY",
+          "path": "hair/qa/grok_ref/SUMMARY.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Export check SUMMARY",
+          "path": "hair/qa/export_check/SUMMARY.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Idle battle run log",
+          "path": "hair/qa/idle_battle/data/run_all.log",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Validation",
+          "path": "hair/validation.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hair actions",
+          "path": "hair/actions/hair_actions.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hair showcase",
+          "path": "hair/showcase/hair_showcase.json",
+          "note": "",
+          "exists": true
+        }
+      ],
+      "media": [
+        {
+          "label": "Quality sheet",
+          "path": "hair/quality_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Preview",
+          "path": "hair/preview.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Ear fill sheet",
+          "path": "hair/ear_fill_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Live check",
+          "path": "hair/live/check.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "tpose hair erase mask",
+          "path": "hair/tpose_hair_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "right hair erase mask",
+          "path": "hair/right_hair_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "left hair erase mask",
+          "path": "hair/left_hair_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "apose hair erase mask",
+          "path": "hair/apose_hair_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "back hair erase mask",
+          "path": "hair/back_hair_erase_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "tpose eye crossing wisp mask",
+          "path": "hair/tpose_eye_crossing_wisp_mask.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "coder",
+      "title": "Coder / Rig",
+      "owner": "Coder",
+      "scan_dirs": [
+        "rig"
+      ],
+      "pages": [
+        {
+          "label": "Live rig (current)",
+          "path": "rig/index.html",
+          "note": "Main rig preview (page says contract v1.6.1); ?view= param",
+          "minw": 1200,
+          "exists": true
+        },
+        {
+          "label": "Rig v1.8 WIP",
+          "path": "rig/index.v18-wip.html",
+          "note": "v1.8 work in progress (auto style, foot plant, hair preset, mouth fade)",
+          "minw": 1200,
+          "exists": true
+        }
+      ],
+      "reports": [
+        {
+          "label": "Runtime contract",
+          "path": "runtime-contract.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Idle QA SUMMARY",
+          "path": "rig/previews/idle/qa/SUMMARY.txt",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Idle QA keys log",
+          "path": "rig/previews/idle/work_qa_keys3.log",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Status (markdown mirror)",
+          "path": "STATUS.md",
+          "note": "",
+          "exists": true
+        }
+      ],
+      "media": [
+        {
+          "label": "Idle keys contact sheet",
+          "path": "rig/previews/idle/keys/idle_keys_contact_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Idle contact sheet",
+          "path": "rig/previews/idle/idle_contact_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Layers panel",
+          "path": "rig/previews/layers_panel.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Rest diff apose",
+          "path": "rig/rest_diff_apose.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "rest diff right",
+          "path": "rig/rest_diff_right.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "rest diff tpose",
+          "path": "rig/rest_diff_tpose.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "rest diff left",
+          "path": "rig/rest_diff_left.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "rest diff back",
+          "path": "rig/rest_diff_back.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "shot apose",
+          "path": "rig/shot_apose.png",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        }
+      ]
+    },
+    {
+      "id": "reference",
+      "title": "Reference",
+      "owner": "",
+      "scan_dirs": [],
+      "pages": [
+        {
+          "label": "Clean room (current, partial)",
+          "path": "reference/grok_build/public/clean-room/index.html",
+          "note": "Uses root-absolute /clean-room/... fetches, so its rig JSON/PNGs 404 under the :8765 server (it expects reference/grok_build/public as web root). Page shell loads; its 3 clips are in Media.",
+          "exists": true,
+          "partial": true
+        },
+        {
+          "label": "Clean room (static)",
+          "path": "reference/grok_build/public/clean-room.html",
+          "note": "Older clean-room page",
+          "exists": true
+        },
+        {
+          "label": "Base model clean room",
+          "path": "reference/grok_build/public/base-model-clean-room.html",
+          "note": "Base model clean room (2.4 MB)",
+          "heavy": true,
+          "exists": true
+        },
+        {
+          "label": "Driver foundation",
+          "path": "reference/grok_build/driver-work/public/driver-foundation/index.html",
+          "note": "Earlier driver prototype, Screen Labels 0.1.2 (4.9 MB)",
+          "heavy": true,
+          "exists": true
+        },
+        {
+          "label": "Interactive master sheet",
+          "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/references/Shadowveil_Interactive_Master_Sheet.html",
+          "note": "Character master sheet (61 MB, slow)",
+          "heavy": true,
+          "exists": true
+        },
+        {
+          "label": "Puppet rig (attachment)",
+          "path": "reference/grok_build/attachments/index-4.html",
+          "note": "Earlier 2D puppet rig attachment",
+          "exists": true
+        },
+        {
+          "label": "Meta AI guide handoff",
+          "path": "reference/grok_build/driver-work/docs/driver/Meta_AI_Guide_Handoff.html",
+          "note": "HTML guide handoff doc",
+          "exists": true
+        }
+      ],
+      "reports": [
+        {
+          "label": "Driver README",
+          "path": "reference/grok_build/driver-work/docs/driver/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Direction fix",
+          "path": "reference/grok_build/driver-work/docs/driver/DIRECTION_FIX.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Freebuff acceptance tests",
+          "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/ACCEPTANCE_TESTS.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Base model rig brief",
+          "path": "reference/grok_build/artifacts/base-model-rig-brief.md",
+          "note": "",
+          "exists": true
+        }
+      ],
+      "media": [
+        {
+          "label": "Clean room: jump",
+          "path": "reference/grok_build/public/clean-room/videos/jump.mp4",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Clean room: kneel",
+          "path": "reference/grok_build/public/clean-room/videos/kneel.mp4",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Clean room: apose turn",
+          "path": "reference/grok_build/public/clean-room/videos/apose-turn.mp4",
+          "note": "",
+          "exists": true
+        }
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "path": "body_tools/preview.html",
+      "title": "Shadowveil body rig preview",
+      "bytes": 11875,
+      "embedded_in": "body",
+      "excluded": false
+    },
+    {
+      "path": "body_tools/work/proto_tree/eyes/live/index.html",
+      "title": "Shadowveil eyes live preview",
+      "bytes": 3525,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "body_tools/work/proto_tree/hair/backup_pre_quality/index.html",
+      "title": "Shadowveil hair live preview",
+      "bytes": 2962,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "body_tools/work/proto_tree/hair/live/index.html",
+      "title": "Shadowveil hair live preview",
+      "bytes": 3837,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "body_tools/work/proto_tree/rig/index.html",
+      "title": "Shadowveil rig preview (contract v1.5.1)",
+      "bytes": 67091,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "eyes/live/index.html",
+      "title": "Shadowveil eyes live preview",
+      "bytes": 3525,
+      "embedded_in": "eyes",
+      "excluded": false
+    },
+    {
+      "path": "hair/backup_pre_quality/index.html",
+      "title": "Shadowveil hair live preview",
+      "bytes": 2962,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "hair/live/index.html",
+      "title": "Shadowveil hair live preview",
+      "bytes": 3837,
+      "embedded_in": "hair",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/artifacts/base-model-clean-room.html",
+      "title": "Base model clean room",
+      "bytes": 2391626,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/artifacts/clean-room.html",
+      "title": "Clean room",
+      "bytes": 962021,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/artifacts/index.html",
+      "title": "Clean room",
+      "bytes": 9235,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/attachments/Shadowveil_Driver_Screen_Labels(2) (2).html",
+      "title": "Shadowveil · Character Animation Studio",
+      "bytes": 99703983,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/attachments/index-4.html",
+      "title": "Shadowveil — 2D Puppet Rig",
+      "bytes": 18402,
+      "embedded_in": "reference",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/driver-work/Shadowveil_Character_Driver_Foundation.html",
+      "title": "Shadowveil · Screen Labels 0.1.2",
+      "bytes": 4943190,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/driver-work/docs/driver/Meta_AI_Guide_Handoff.html",
+      "title": "Shadowveil — HTML guide handoff for Meta AI",
+      "bytes": 7056,
+      "embedded_in": "reference",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/driver-work/public/driver-foundation/index.html",
+      "title": "Shadowveil · Screen Labels 0.1.2",
+      "bytes": 4943190,
+      "embedded_in": "reference",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/baseline/Shadowveil_Driver_Screen_Labels.html",
+      "title": "Shadowveil · Screen Labels 0.1.2",
+      "bytes": 4105708,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/Shadowveil_Character_Driver_Foundation.html",
+      "title": "Shadowveil · Screen Labels 0.1.2",
+      "bytes": 4105708,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/docs/driver/Meta_AI_Guide_Handoff.html",
+      "title": "Shadowveil — HTML guide handoff for Meta AI",
+      "bytes": 7056,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/public/driver-foundation/index.html",
+      "title": "Shadowveil · Screen Labels 0.1.2",
+      "bytes": 4105708,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/prior-reports/Shadowveil_Character_Driver_Direction_Fix.html",
+      "title": "Shadowveil · Direction Fix 0.1.1",
+      "bytes": 4099882,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/references/Shadowveil_Interactive_Master_Sheet.html",
+      "title": "Shadowveil — Character Master Sheet",
+      "bytes": 61096318,
+      "embedded_in": "reference",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/public/base-model-clean-room.html",
+      "title": "Base model clean room",
+      "bytes": 2391626,
+      "embedded_in": "reference",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/public/clean-room.html",
+      "title": "Clean room",
+      "bytes": 9235,
+      "embedded_in": "reference",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/public/clean-room/index.html",
+      "title": "Clean room",
+      "bytes": 46368,
+      "embedded_in": "reference",
+      "excluded": false
+    },
+    {
+      "path": "reference/grok_build/scripts/install-page.html",
+      "title": "Add {{APP_NAME}} to your Home Screen",
+      "bytes": 5658,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
+      "path": "rig/index (copy 1).html",
+      "title": "Shadowveil rig preview (contract v1.5.1)",
+      "bytes": 67091,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/index.html",
+      "title": "Shadowveil rig preview (contract v1.6.1)",
+      "bytes": 84261,
+      "embedded_in": "coder",
+      "excluded": false
+    },
+    {
+      "path": "rig/index.v18-wip.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 98154,
+      "embedded_in": "coder",
+      "excluded": false
+    }
+  ]
+}

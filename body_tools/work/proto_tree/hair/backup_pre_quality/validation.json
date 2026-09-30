@@ -1,0 +1,266 @@
+{
+ "apose": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 25089,
+  "BODY_changed_px_outside_our_erase_mask": 17588,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 1160,
+  "over_base_diff_outside_despill": 1160,
+  "sway_parts_overlap_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 4099,
+  "forbidden_sources": 22,
+  "rest_overlap": {},
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_05": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_06": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_07": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "tpose": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 17303,
+  "BODY_changed_px_outside_our_erase_mask": 8603,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 3030,
+  "over_base_diff_outside_despill": 3030,
+  "sway_parts_overlap_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 3910,
+  "forbidden_sources": 22,
+  "rest_overlap": {},
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_05": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_06": {
+    "maxSwayDeg": 2.8,
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "left": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 19282,
+  "BODY_changed_px_outside_our_erase_mask": 8898,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 922,
+  "over_base_diff_outside_despill": 922,
+  "sway_parts_overlap_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 1830,
+  "forbidden_sources": 14,
+  "rest_overlap": {},
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "right": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 19748,
+  "BODY_changed_px_outside_our_erase_mask": 9250,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 883,
+  "over_base_diff_outside_despill": 883,
+  "sway_parts_overlap_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 1856,
+  "forbidden_sources": 14,
+  "rest_overlap": {},
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ },
+ "back": {
+  "files_unlisted": [],
+  "files_missing": [],
+  "file_problems": [],
+  "rest_vs_BODY_base_body_diff_px": 0,
+  "rest_vs_BODY_diff_outside_despill": 0,
+  "BODY_changed_px": 27546,
+  "BODY_changed_px_outside_our_erase_mask": 16726,
+  "our_erase_px_BODY_did_not_clear": 0,
+  "rest_stack_diff_px": 0,
+  "rest_stack_diff_outside_despill": 0,
+  "despilled_px": 0,
+  "over_base_diff_in_hairmask": 1390,
+  "over_base_diff_outside_despill": 1390,
+  "sway_parts_overlap_px": 0,
+  "erase_mask_vs_sway_union_mismatch_px": 0,
+  "part_px_differing_from_base": 0,
+  "hair_back_under_soft_px": 0,
+  "hair_front_soft_px": 0,
+  "erase_mask_uncovered": 0,
+  "forbidden_px": 0,
+  "forbidden_sources": 0,
+  "rest_overlap": {},
+  "sway": {
+   "bun": {
+    "maxSwayDeg": 4.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_01": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_02": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_03": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_04": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   },
+   "strand_05": {
+    "maxSwayDeg": 10.0,
+    "overlap_px_at_final": 0
+   }
+  },
+  "clamps": [],
+  "PASS": true
+ }
+}

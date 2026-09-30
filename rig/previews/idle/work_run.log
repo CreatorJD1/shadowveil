@@ -1,0 +1,48 @@
+apose f0 apose f30 apose f60 apose f90 apose f120 apose f150 apose f180 apose f210 
+apose done; guard errs 0 issues 0 holds 47 83.3
+PASS: Motion quality (apose)
+[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (339039 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+tpose f0 tpose f30 tpose f60 tpose f90 tpose f120 tpose f150 tpose f180 tpose f210 file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/common/CallbackRegistry.js:97
+    #error = new ProtocolError();
+             ^
+
+ProtocolError: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at <instance_members_initializer> (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/common/CallbackRegistry.js:97:14)
+    at new Callback (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/common/CallbackRegistry.js:101:16)
+    at CallbackRegistry.create (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/common/CallbackRegistry.js:20:26)
+    at Connection._rawSend (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/Connection.js:89:26)
+    at CdpCDPSession.send (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/CDPSession.js:65:33)
+    at #evaluate (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:360:50)
+    at ExecutionContext.evaluate (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:275:36)
+    at IsolatedWorld.evaluate (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:30)
+    at CdpFrame.evaluate (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:345:43)
+    at CdpFrame.<anonymous> (file:///workspace/jt/node_modules/puppeteer-core/lib/esm/puppeteer/util/decorators.js:101:27)
+
+Node.js v20.19.2
+RETRY tpose (1)
+tpose f0 tpose f30 tpose f60 tpose f90 tpose f120 tpose f150 tpose f180 tpose f210 
+tpose done; guard errs 0 issues 0 holds 47 83.3
+PASS: Motion quality (tpose)
+[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (320202 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+left f0 left f30 left f60 left f90 left f120 left f150 left f180 left f210 
+left done; guard errs 0 issues 0 holds 47 83.3
+PASS: Motion quality (left)
+[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (217109 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+right f0 right f30 right f60 right f90 right f120 right f150 right f180 right f210 
+right done; guard errs 0 issues 0 holds 47 83.3
+PASS: Motion quality (right)
+[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (212980 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+back f0 back f30 back f60 back f90 back f120 back f150 back f180 back f210 
+back done; guard errs 0 issues 0 holds 0 -
+PASS: Motion quality (back)
+[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (345016 px region): 0, blinks: 1, mouth switches: 0
+[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 1, mouth switches: 0
+apose f0 apose f30 apose f60 apose f90 apose f120 apose f150 apose f180 apose f210 
+apose done; guard errs 0 issues 0 holds 47 83.3
+apose f0 apose f30 apose f60 apose f90 apose f120 apose f150 apose f180 apose f210 
+apose done; guard errs 0 issues 0 holds 47 83.3
+ALLDONE

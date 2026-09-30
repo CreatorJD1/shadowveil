@@ -1,0 +1,5 @@
+apose {"total": 2, "handMask": 0, "hairMask": 2, "eyeParts": 0, "mouthParts": 0, "bodyParts": 0, "none": 0} excluded {"navyLineArt": 0, "mouthBox": 0, "eyeBox": 0, "darkNavyEdgeBelowB120": 2071}
+tpose {"total": 1, "handMask": 0, "hairMask": 1, "eyeParts": 0, "mouthParts": 0, "bodyParts": 0, "none": 0} excluded {"navyLineArt": 0, "mouthBox": 0, "eyeBox": 0, "darkNavyEdgeBelowB120": 839}
+left {"total": 0, "handMask": 0, "hairMask": 0, "eyeParts": 0, "mouthParts": 0, "bodyParts": 0, "none": 0} excluded {"navyLineArt": 0, "mouthBox": 0, "eyeBox": 0, "darkNavyEdgeBelowB120": 2036}
+right {"total": 0, "handMask": 0, "hairMask": 0, "eyeParts": 0, "mouthParts": 0, "bodyParts": 0, "none": 0} excluded {"navyLineArt": 0, "mouthBox": 0, "eyeBox": 0, "darkNavyEdgeBelowB120": 2063}
+back {"total": 0, "handMask": 0, "hairMask": 0, "eyeParts": 0, "mouthParts": 0, "bodyParts": 0, "none": 0} excluded {"navyLineArt": 0, "mouthBox": 0, "eyeBox": 0, "darkNavyEdgeBelowB120": 2683}

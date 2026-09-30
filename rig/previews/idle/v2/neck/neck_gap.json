@@ -1,0 +1,197 @@
+{
+ "apose": {
+  "zero_vs_rest_px": 0,
+  "tiltP": {
+   "holes": 16,
+   "tears": 49,
+   "seamAlpha": 20,
+   "maxGapWidthPx": 4.0
+  },
+  "tiltM": {
+   "holes": 20,
+   "tears": 44,
+   "seamAlpha": 24,
+   "maxGapWidthPx": 4.0
+  },
+  "nodP": {
+   "holes": 6,
+   "tears": 18,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  },
+  "nodM": {
+   "holes": 6,
+   "tears": 17,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  },
+  "tiltP_leanM": {
+   "holes": 17,
+   "tears": 39,
+   "seamAlpha": 7,
+   "maxGapWidthPx": 4.0
+  },
+  "nodP_leanP": {
+   "holes": 18,
+   "tears": 58,
+   "seamAlpha": 33,
+   "maxGapWidthPx": 4.0
+  }
+ },
+ "tpose": {
+  "zero_vs_rest_px": 0,
+  "tiltP": {
+   "holes": 6,
+   "tears": 46,
+   "seamAlpha": 21,
+   "maxGapWidthPx": 2.0
+  },
+  "tiltM": {
+   "holes": 5,
+   "tears": 44,
+   "seamAlpha": 19,
+   "maxGapWidthPx": 4.0
+  },
+  "nodP": {
+   "holes": 2,
+   "tears": 28,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  },
+  "nodM": {
+   "holes": 2,
+   "tears": 24,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  },
+  "tiltP_leanM": {
+   "holes": 6,
+   "tears": 45,
+   "seamAlpha": 14,
+   "maxGapWidthPx": 4.0
+  },
+  "nodP_leanP": {
+   "holes": 6,
+   "tears": 54,
+   "seamAlpha": 37,
+   "maxGapWidthPx": 4.0
+  }
+ },
+ "left": {
+  "zero_vs_rest_px": 0,
+  "tiltP": {
+   "holes": 0,
+   "tears": 0,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 0.0
+  },
+  "tiltM": {
+   "holes": 0,
+   "tears": 0,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 0.0
+  },
+  "nodP": {
+   "holes": 0,
+   "tears": 28,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 4.0
+  },
+  "nodM": {
+   "holes": 0,
+   "tears": 30,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.8
+  },
+  "tiltP_leanM": {
+   "holes": 0,
+   "tears": 23,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  },
+  "nodP_leanP": {
+   "holes": 0,
+   "tears": 35,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 4.0
+  }
+ },
+ "right": {
+  "zero_vs_rest_px": 0,
+  "tiltP": {
+   "holes": 0,
+   "tears": 0,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 0.0
+  },
+  "tiltM": {
+   "holes": 0,
+   "tears": 0,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 0.0
+  },
+  "nodP": {
+   "holes": 0,
+   "tears": 22,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 4.0
+  },
+  "nodM": {
+   "holes": 0,
+   "tears": 42,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 4.5
+  },
+  "tiltP_leanM": {
+   "holes": 0,
+   "tears": 136,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 6.0
+  },
+  "nodP_leanP": {
+   "holes": 0,
+   "tears": 9,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  }
+ },
+ "back": {
+  "zero_vs_rest_px": 0,
+  "tiltP": {
+   "holes": 0,
+   "tears": 15,
+   "seamAlpha": 64,
+   "maxGapWidthPx": 2.0
+  },
+  "tiltM": {
+   "holes": 0,
+   "tears": 17,
+   "seamAlpha": 63,
+   "maxGapWidthPx": 2.0
+  },
+  "nodP": {
+   "holes": 0,
+   "tears": 17,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  },
+  "nodM": {
+   "holes": 0,
+   "tears": 15,
+   "seamAlpha": 0,
+   "maxGapWidthPx": 2.0
+  },
+  "tiltP_leanM": {
+   "holes": 0,
+   "tears": 18,
+   "seamAlpha": 64,
+   "maxGapWidthPx": 2.0
+  },
+  "nodP_leanP": {
+   "holes": 0,
+   "tears": 17,
+   "seamAlpha": 61,
+   "maxGapWidthPx": 2.0
+  }
+ }
+}

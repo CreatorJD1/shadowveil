@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>Clean room media gallery</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#14161b;--fg:#dde1e8;--mut:#8a93a3;--line:#2a2f39;--acc:#6aa9ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:13px system-ui,sans-serif}
+header{position:sticky;top:0;z-index:2;background:#1a1d24;border-bottom:1px solid var(--line);padding:6px 10px}
+.tabs{display:flex;flex-wrap:wrap;gap:4px}.tabs button{background:#232733;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:3px 8px;cursor:pointer;font-size:12px}
+.tabs button.on{background:var(--acc);color:#081018;border-color:var(--acc)}
+.note{color:var(--mut);font-size:12px;margin:4px 0}
+.pager{display:flex;gap:6px;align-items:center;margin:6px 0}.pager button{background:#232733;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:2px 8px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;padding:10px}
+.it{background:#1c2029;border:1px solid var(--line);border-radius:5px;overflow:hidden;display:flex;flex-direction:column}
+.it .th{height:170px;display:flex;align-items:center;justify-content:center;background:repeating-conic-gradient(#2a2e36 0 25%,#23262d 0 50%) 0 0/16px 16px}
+.it img,.it video{max-width:100%;max-height:170px;display:block}
+.it .cap{padding:4px 6px;font-size:11px;color:var(--mut);word-break:break-all}.it .cap a{color:var(--acc)}
+.it.data .th{background:#1a1d24;color:var(--mut);font-size:11px;padding:8px;overflow:auto;align-items:flex-start;justify-content:flex-start;white-space:pre-wrap;font-family:ui-monospace,monospace}
+input{background:#232733;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:3px 6px}
+</style></head><body>
+<header>
+ <div class="tabs" id="tabs"></div>
+ <div class="note" id="gnote"></div>
+ <div class="pager"><button id="prev">◀</button><span id="pinfo"></span><button id="next">▶</button>
+  <input id="flt" placeholder="filter path…" size="24"> <span class="note" id="tot"></span></div>
+</header>
+<div class="grid" id="grid"></div>
+<script>
+'use strict';
+const PER = 48;
+const $ = s => document.querySelector(s);
+const q = new URLSearchParams(location.search);
+let M = null, gid = q.get('g') || 'turnaround', page = +(q.get('p') || 0), flt = q.get('f') || '';
+// lazy media: images use loading=lazy; videos get their src only while on screen (keeps decoders low)
+const io = new IntersectionObserver(es => { for (const e of es) { const v = e.target;
+  if (e.isIntersecting) { if (!v.getAttribute('src')) { v.src = v.dataset.src; } }
+  else if (v.getAttribute('src') && !v.dataset.keep) { v.pause(); v.removeAttribute('src'); v.load(); } } }, { rootMargin: '200px' });
+function el(t, a = {}, ...c) { const e = document.createElement(t); for (const [k, v] of Object.entries(a)) { if (k.startsWith('on')) e[k] = v; else e.setAttribute(k, v); } e.append(...c); return e; }
+function card(it) {
+  const url = M.base + it.p.split('/').map(encodeURIComponent).join('/');
+  const name = it.p.replace(/^public\/clean-room\//, '');
+  const cap = el('div', { class: 'cap' }, el('a', { href: url, target: '_blank' }, name), ` · ${(it.b / 1024).toFixed(0)} KB`);
+  if (it.k === 'image') {
+    const img = el('img', { loading: 'lazy', alt: name, src: url });
+    img.onerror = () => { img.replaceWith(el('span', {}, 'failed to load')); cap.style.color = '#f66'; };
+    return el('div', { class: 'it', 'data-p': it.p }, el('div', { class: 'th' }, img), cap);
+  }
+  if (it.k === 'video') {
+    const v = el('video', { muted: '', loop: '', playsinline: '', preload: 'metadata', controls: '', 'data-src': url, title: name });
+    v.muted = true; v.onerror = () => { cap.style.color = '#f66'; cap.append(' · failed'); };
+    v.onmouseenter = () => v.play().catch(() => {}); v.onmouseleave = () => v.pause();
+    io.observe(v);
+    return el('div', { class: 'it', 'data-p': it.p }, el('div', { class: 'th' }, v), cap);
+  }
+  const box = el('div', { class: 'th' }, '(text) click to preview');
+  box.onclick = async () => { try { const r = await fetch(url); const t = await r.text(); box.textContent = t.slice(0, 4000); } catch (e) { box.textContent = 'error ' + e; } };
+  return el('div', { class: 'it data', 'data-p': it.p }, box, cap);
+}
+function render() {
+  const g = M.groups.find(x => x.id === gid) || M.groups[0]; gid = g.id;
+  $('#tabs').replaceChildren(...M.groups.map(x => { const b = el('button', { class: x.id === gid ? 'on' : '' }, `${x.title} (${x.items.length})`); b.onclick = () => { gid = x.id; page = 0; sync(); }; return b; }));
+  const list = g.items.filter(i => !flt || i.p.includes(flt));
+  const pages = Math.max(1, Math.ceil(list.length / PER)); page = Math.min(Math.max(0, page), pages - 1);
+  $('#gnote').textContent = g.note;
+  $('#pinfo').textContent = `page ${page + 1} / ${pages} · ${list.length} files`;
+  $('#tot').textContent = `${M.total} Clean room files in ${M.groups.length} groups (every file of public/clean-room and artifacts is in exactly one group)`;
+  $('#grid').replaceChildren(...list.slice(page * PER, page * PER + PER).map(card));
+}
+function sync() { const u = new URLSearchParams({ g: gid, p: page }); if (flt) u.set('f', flt); history.replaceState(null, '', '?' + u); render(); }
+$('#prev').onclick = () => { page--; sync(); }; $('#next').onclick = () => { page++; sync(); };
+$('#flt').value = flt; $('#flt').oninput = e => { flt = e.target.value; page = 0; sync(); };
+fetch('gallery.json', { cache: 'no-store' }).then(r => r.json()).then(j => { M = j; render(); });
+</script></body></html>

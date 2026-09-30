@@ -1,0 +1,129 @@
+path,category,angle,width,height,cheek_visible
+/tmp/gr/base_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),381,518,yes
+/tmp/gr/base_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),385,509,yes
+/tmp/gr/our_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),221,308,yes
+/tmp/gr/our_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),225,299,yes
+/tmp/gr/ours_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),735,500,yes
+/tmp/gr/tile_idle.png,other pose still (action/expression/hand/eye),,1536,876,unknown
+/tmp/gr/tile_run.png,other pose still (action/expression/hand/eye),,1536,876,unknown
+/tmp/gr/tile_walk.png,other pose still (action/expression/hand/eye),,1536,876,unknown
+/tmp/gr/tileb_walk.png,other pose still (action/expression/hand/eye),,1920,486,unknown
+/tmp/sv/cs_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),2184,719,yes
+/tmp/sv_ref/angry_sheet.png,other pose still (action/expression/hand/eye),,1920,729,unknown
+/tmp/sv_ref/jump4.png,other pose still (action/expression/hand/eye),,1800,456,unknown
+/tmp/sv_ref/jump_sheet.png,other pose still (action/expression/hand/eye),,1920,729,unknown
+/tmp/sv_ref/prev_jump.png,other pose still (action/expression/hand/eye),,2695,654,unknown
+/tmp/sv_ref/prev_run.png,other pose still (action/expression/hand/eye),,1960,981,unknown
+/tmp/sv_ref/run_cycle.png,other pose still (action/expression/hand/eye),,2400,304,unknown
+/tmp/sv_ref/run_legs.png,other pose still (action/expression/hand/eye),,2048,200,unknown
+/tmp/sv_ref/run_legs_01.png,other pose still (action/expression/hand/eye),,2048,200,unknown
+/tmp/sv_ref/run_sheet.png,other pose still (action/expression/hand/eye),,1920,729,unknown
+/tmp/svt/views/apose/base.png,turnaround/rotation still,0 (A-pose front),1365,1739,yes
+/tmp/svt/views/back/base.png,turnaround/rotation still,180 (back),1365,1739,no
+/tmp/svt/views/left/base.png,turnaround/rotation still,left profile,1365,1739,unknown
+/tmp/svt/views/right/base.png,turnaround/rotation still,right profile,1365,1739,unknown
+/tmp/svt/views/tpose/base.png,turnaround/rotation still,0 (T-pose front),1365,1739,yes
+/workspace/gb/d_point0.png,other pose still (action/expression/hand/eye),,1048,146,unknown
+/workspace/shadowveil-hair/back.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/body_tools/work/bak_pre_earline_apose_body/head.png,other pose still (action/expression/hand/eye),,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/blink8_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),1292,824,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/blink8_left.png,other pose still (action/expression/hand/eye),left profile,904,332,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/blink8_right.png,other pose still (action/expression/hand/eye),right profile,904,352,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/blink8_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),1292,864,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_apose_a.png,other pose still (action/expression/hand/eye),0 (A-pose front),768,884,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_apose_b.png,other pose still (action/expression/hand/eye),0 (A-pose front),768,884,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_apose_c.png,other pose still (action/expression/hand/eye),0 (A-pose front),768,884,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_apose_d.png,other pose still (action/expression/hand/eye),0 (A-pose front),768,884,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_apose_h.png,other pose still (action/expression/hand/eye),0 (A-pose front),700,830,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_apose_i.png,other pose still (action/expression/hand/eye),0 (A-pose front),700,830,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_tpose_b.png,other pose still (action/expression/hand/eye),0 (T-pose front),768,884,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_tpose_c.png,other pose still (action/expression/hand/eye),0 (T-pose front),768,884,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_tpose_d.png,other pose still (action/expression/hand/eye),0 (T-pose front),768,884,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_tpose_h.png,other pose still (action/expression/hand/eye),0 (T-pose front),720,830,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/c_tpose_i.png,other pose still (action/expression/hand/eye),0 (T-pose front),720,830,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_apose1.png,other pose still (action/expression/hand/eye),0 (A-pose front),1064,272,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_apose2.png,other pose still (action/expression/hand/eye),0 (A-pose front),1064,272,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_apose3.png,other pose still (action/expression/hand/eye),0 (A-pose front),1064,272,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_apose4.png,other pose still (action/expression/hand/eye),0 (A-pose front),1064,272,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_apose5.png,other pose still (action/expression/hand/eye),0 (A-pose front),1064,272,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_apose6.png,other pose still (action/expression/hand/eye),0 (A-pose front),1508,452,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_apose8.png,other pose still (action/expression/hand/eye),0 (A-pose front),1508,524,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_tpose2.png,other pose still (action/expression/hand/eye),0 (T-pose front),1064,272,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_tpose3.png,other pose still (action/expression/hand/eye),0 (T-pose front),1064,272,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/q_tpose7.png,other pose still (action/expression/hand/eye),0 (T-pose front),1508,452,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/src_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/zc2_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),928,208,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/zc2_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),928,208,yes
+/workspace/shadowveil/body_tools/work/proto_tree/eyes/work/zc3_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),928,240,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hair/backup_pre_quality/base_body/apose.png,turnaround/rotation still,0 (A-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hair/backup_pre_quality/base_body/back.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/body_tools/work/proto_tree/hair/backup_pre_quality/base_body/left.png,turnaround/rotation still,left profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/hair/backup_pre_quality/base_body/right.png,turnaround/rotation still,right profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/hair/backup_pre_quality/base_body/tpose.png,turnaround/rotation still,0 (T-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/a_Point.png,other pose still (action/expression/hand/eye),,380,400,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/apose.png,turnaround/rotation still,0 (A-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/back.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/q_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),2604,672,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/q_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),2544,381,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/s_apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),683,870,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/s_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),683,870,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/sm_tpose.png,other pose still (action/expression/hand/eye),0 (T-pose front),669,813,yes
+/workspace/shadowveil/body_tools/work/proto_tree/hands/work/tpose.png,turnaround/rotation still,0 (T-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/mouth/work/apose_small.png,other pose still (action/expression/hand/eye),0 (A-pose front),455,580,yes
+/workspace/shadowveil/body_tools/work/proto_tree/mouth/work/face4x.png,other pose still (action/expression/hand/eye),,800,800,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/mouth/work/faceA_4x.png,other pose still (action/expression/hand/eye),,800,800,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/mouth/work/front.png,turnaround/rotation still,0 (front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/mouth/work/tpose_small.png,other pose still (action/expression/hand/eye),0 (T-pose front),455,580,yes
+/workspace/shadowveil/body_tools/work/proto_tree/reference/REJECTED_walk_sheet.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/apose.png,turnaround/rotation still,0 (A-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/reference/approved_turnaround.jpg,turnaround/rotation still,,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/back.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/apose.png,turnaround/rotation still,0 (A-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/back.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/base_turnaround_e843956d.jpg,turnaround/rotation still,,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/left.png,turnaround/rotation still,left profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/right.png,turnaround/rotation still,right profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/test_sheet_1db5465b.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/test_sheet_9f8eab39.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch1/tpose.png,turnaround/rotation still,0 (T-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch2/test_sheet_19472abf.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch2/test_sheet_aab0551c.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/batch2/test_sheet_d6485cd6.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/left.png,turnaround/rotation still,left profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/right.png,turnaround/rotation still,right profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/test_sheet_expressions.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/test_sheet_face_shapes.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/test_sheet_gestures.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/test_sheet_poses.jpg,other pose still (action/expression/hand/eye),,1792,1008,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/reference/tpose.png,turnaround/rotation still,0 (T-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/views/apose/base.png,turnaround/rotation still,0 (A-pose front),1365,1739,yes
+/workspace/shadowveil/body_tools/work/proto_tree/views/back/base.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/body_tools/work/proto_tree/views/left/base.png,turnaround/rotation still,left profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/views/right/base.png,turnaround/rotation still,right profile,1365,1739,unknown
+/workspace/shadowveil/body_tools/work/proto_tree/views/tpose/base.png,turnaround/rotation still,0 (T-pose front),1365,1739,yes
+/workspace/shadowveil/hair/backup_pre_quality/base_body/apose.png,turnaround/rotation still,0 (A-pose front),1365,1739,yes
+/workspace/shadowveil/hair/backup_pre_quality/base_body/back.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/hair/backup_pre_quality/base_body/left.png,turnaround/rotation still,left profile,1365,1739,unknown
+/workspace/shadowveil/hair/backup_pre_quality/base_body/right.png,turnaround/rotation still,right profile,1365,1739,unknown
+/workspace/shadowveil/hair/backup_pre_quality/base_body/tpose.png,turnaround/rotation still,0 (T-pose front),1365,1739,yes
+/workspace/shadowveil/hands/work/back.png,turnaround/rotation still,180 (back),1365,1739,no
+/workspace/shadowveil/hands/work/idle_bend/renders/data/apose_Gre/rest.png,other pose still (action/expression/hand/eye),,1365,1739,unknown
+/workspace/shadowveil/reference/grok_build/artifacts/eyes/face0-fixed.jpg,other pose still (action/expression/hand/eye),,220,130,unknown
+/workspace/shadowveil/reference/grok_build/artifacts/turn/eye-apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),232,92,yes
+/workspace/shadowveil/reference/grok_build/artifacts/turn/eye-face.png,other pose still (action/expression/hand/eye),,286,96,unknown
+/workspace/shadowveil/reference/grok_build/artifacts/turn/final-apose.png,other pose still (action/expression/hand/eye),0 (A-pose front),252,76,yes
+/workspace/shadowveil/reference/grok_build/artifacts/turn/final-face.png,other pose still (action/expression/hand/eye),,264,68,unknown
+/workspace/shadowveil/reference/grok_build/artifacts/turn/jump-bot.jpg,other pose still (action/expression/hand/eye),,768,90,unknown
+/workspace/shadowveil/reference/grok_build/artifacts/turn/jump-top.jpg,other pose still (action/expression/hand/eye),,768,80,unknown
+/workspace/shadowveil/reference/grok_build/artifacts/turn/smirk-col.jpg,other pose still (action/expression/hand/eye),,150,2100,unknown
+/workspace/shadowveil/reference/grok_build/assets/refs/side.png,turnaround/rotation still,side profile,128,1045,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/anger.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/closed.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/focus.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/joy.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/neutral.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/shock.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/smirk.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/soft.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/reference/grok_build/public/puppet/faces/sorrow.png,other pose still (action/expression/hand/eye),,264,130,unknown
+/workspace/shadowveil/views/back/base.png,turnaround/rotation still,180 (back),1365,1739,no

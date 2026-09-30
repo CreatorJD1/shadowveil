@@ -1,0 +1,191 @@
+{
+ "apose": {
+  "poses": 687,
+  "revealed_total": 811,
+  "in_ear_boxes": 402,
+  "enclosed_ge6": 0,
+  "contour_eq5": 7,
+  "exterior_le4": 395,
+  "line_fill_px": 38,
+  "line_fill_still_revealed": 0,
+  "old_contour_now_fixed": null,
+  "components": [
+   [
+    751,
+    256,
+    753,
+    259,
+    5
+   ],
+   [
+    608,
+    257,
+    608,
+    257,
+    1
+   ],
+   [
+    613,
+    261,
+    613,
+    261,
+    1
+   ]
+  ]
+ },
+ "tpose": {
+  "poses": 687,
+  "revealed_total": 237,
+  "in_ear_boxes": 184,
+  "enclosed_ge6": 2,
+  "contour_eq5": 9,
+  "exterior_le4": 173,
+  "line_fill_px": 24,
+  "line_fill_still_revealed": 0,
+  "old_contour_now_fixed": null,
+  "components": [
+   [
+    767,
+    211,
+    767,
+    211,
+    1
+   ],
+   [
+    594,
+    216,
+    594,
+    216,
+    1
+   ],
+   [
+    598,
+    216,
+    599,
+    216,
+    2
+   ],
+   [
+    597,
+    218,
+    597,
+    218,
+    1
+   ],
+   [
+    750,
+    249,
+    751,
+    253,
+    5
+   ],
+   [
+    749,
+    255,
+    749,
+    255,
+    1
+   ]
+  ]
+ },
+ "left": {
+  "poses": 687,
+  "revealed_total": 26,
+  "in_ear_boxes": 0,
+  "enclosed_ge6": 0,
+  "contour_eq5": 0,
+  "exterior_le4": 0,
+  "line_fill_px": 0,
+  "line_fill_still_revealed": 0,
+  "old_contour_now_fixed": null,
+  "components": []
+ },
+ "right": {
+  "poses": 687,
+  "revealed_total": 18,
+  "in_ear_boxes": 0,
+  "enclosed_ge6": 0,
+  "contour_eq5": 0,
+  "exterior_le4": 0,
+  "line_fill_px": 0,
+  "line_fill_still_revealed": 0,
+  "old_contour_now_fixed": null,
+  "components": []
+ },
+ "back": {
+  "poses": 687,
+  "revealed_total": 64,
+  "in_ear_boxes": 35,
+  "enclosed_ge6": 4,
+  "contour_eq5": 8,
+  "exterior_le4": 23,
+  "line_fill_px": 18,
+  "line_fill_still_revealed": 0,
+  "old_contour_now_fixed": null,
+  "components": [
+   [
+    754,
+    252,
+    754,
+    252,
+    1
+   ],
+   [
+    752,
+    253,
+    752,
+    254,
+    2
+   ],
+   [
+    611,
+    254,
+    612,
+    256,
+    3
+   ],
+   [
+    754,
+    254,
+    754,
+    254,
+    1
+   ],
+   [
+    609,
+    255,
+    609,
+    255,
+    1
+   ],
+   [
+    750,
+    255,
+    750,
+    255,
+    1
+   ],
+   [
+    754,
+    256,
+    754,
+    256,
+    1
+   ],
+   [
+    612,
+    258,
+    612,
+    258,
+    1
+   ],
+   [
+    608,
+    260,
+    608,
+    260,
+    1
+   ]
+  ]
+ }
+}

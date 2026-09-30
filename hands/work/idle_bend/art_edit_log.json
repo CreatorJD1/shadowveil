@@ -1,0 +1,38 @@
+[
+ {
+  "view": "tpose",
+  "file": "L_palm.png",
+  "changedPx": 18,
+  "note": "hidden palm: 14 px poking outside the posed silhouette cleared, 4 gap px filled flat skin, 0 exposed hidden-outline px -> flat skin"
+ },
+ {
+  "view": "tpose",
+  "file": "R_palm.png",
+  "changedPx": 11,
+  "note": "hidden palm: 10 px poking outside the posed silhouette cleared, 1 gap px filled flat skin, 0 exposed hidden-outline px -> flat skin"
+ },
+ {
+  "view": "tpose",
+  "file": "L_Ring1_f1.png",
+  "changedPx": 19,
+  "note": "Ring1 filler trimmed: 19 px that stuck out of the silhouette / showed over the palm"
+ },
+ {
+  "view": "tpose",
+  "file": "L_Ring1_f2.png",
+  "changedPx": 6,
+  "note": "Ring1 filler trimmed: 6 px that stuck out of the silhouette / showed over the palm"
+ },
+ {
+  "view": "tpose",
+  "file": "R_Ring1_f1.png",
+  "changedPx": 19,
+  "note": "Ring1 filler trimmed: 19 px that stuck out of the silhouette / showed over the palm"
+ },
+ {
+  "view": "tpose",
+  "file": "R_Ring1_f2.png",
+  "changedPx": 10,
+  "note": "Ring1 filler trimmed: 10 px that stuck out of the silhouette / showed over the palm"
+ }
+]

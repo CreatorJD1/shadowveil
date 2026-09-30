@@ -1,0 +1,34 @@
+STATUS: PASS: rest vs base.png, 0 px differ (left, skin mesh) | layers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2 | mouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE
+warn: [] skin loaded: True useSkin: True
+far hand ['R'] parts 16 with a file: 0 hidden: True layers [210, 211, 212, 213, 214, 215]
+rest seam band (cleared, light, bluish): {'L': (0, 1, 0)}
+rest rest {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.0)', 'forearm_vs_rigid': '0/974 (mean 0.0)', 'ok': 'PASS'}}
+rest Fist {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.0)', 'forearm_vs_rigid': '0/974 (mean 0.0)', 'ok': 'PASS'}}
+rest Point {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.0)', 'forearm_vs_rigid': '0/974 (mean 0.0)', 'ok': 'PASS'}}
+rest Peace {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.0)', 'forearm_vs_rigid': '0/974 (mean 0.0)', 'ok': 'PASS'}}
+Shoulder+25 rest {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Shoulder+25 Fist {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Shoulder+25 Point {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Shoulder+25 Peace {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Shoulder-25 rest {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Shoulder-25 Fist {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Shoulder-25 Point {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Shoulder-25 Peace {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow+25 rest {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow+25 Fist {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow+25 Point {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow+25 Peace {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow-25 rest {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow-25 Fist {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow-25 Point {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Elbow-25 Peace {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El+25 rest {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El+25 Fist {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El+25 Point {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El+25 Peace {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El-25 rest {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El-25 Fist {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El-25 Point {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+Sh+El-25 Peace {'L': {'cleared': 0, 'light': 0, 'blue': 0, 'strip_vs_rigid': '0/1587 (mean 0.6)', 'forearm_vs_rigid': '0/974 (mean 0.6)', 'ok': 'PASS'}}
+ALLPASS True
+console: ['[.WebGL-0x1dcc00166600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels', '[.WebGL-0x1dcc00166600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels', '[.WebGL-0x1dcc00166600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels', '[.WebGL-0x1dcc00166600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)']

@@ -1,0 +1,74 @@
+{
+ "apose": {
+  "base_body_check": {
+   "base_body_vs_base_px": 25089,
+   "base_body_vs_base_px_inside_eye_parts": 0,
+   "rest_over_base_body_vs_base_inside_eye_parts_px": 0,
+   "rest_over_base_body_vs_base_inside_eye_regions_px": 0,
+   "rest_over_base_body_max_in_eye_regions": 0
+  },
+  "rest_max_full": 0,
+  "rest_mean_full": 0.0,
+  "rest_max_eye": 0,
+  "rest_mean_eye": 0.0,
+  "rest_changed_px": 0,
+  "sweep_combos": 81,
+  "changed_px_outside_eye_openings_max": 0,
+  "parts_checked": 16,
+  "bad_parts": []
+ },
+ "tpose": {
+  "base_body_check": {
+   "base_body_vs_base_px": 17303,
+   "base_body_vs_base_px_inside_eye_parts": 0,
+   "rest_over_base_body_vs_base_inside_eye_parts_px": 0,
+   "rest_over_base_body_vs_base_inside_eye_regions_px": 0,
+   "rest_over_base_body_max_in_eye_regions": 0
+  },
+  "rest_max_full": 0,
+  "rest_mean_full": 0.0,
+  "rest_max_eye": 0,
+  "rest_mean_eye": 0.0,
+  "rest_changed_px": 0,
+  "sweep_combos": 81,
+  "changed_px_outside_eye_openings_max": 0,
+  "parts_checked": 16,
+  "bad_parts": []
+ },
+ "left": {
+  "base_body_check": {
+   "base_body_vs_base_px": 19282,
+   "base_body_vs_base_px_inside_eye_parts": 0,
+   "rest_over_base_body_vs_base_inside_eye_parts_px": 0,
+   "rest_over_base_body_vs_base_inside_eye_regions_px": 0,
+   "rest_over_base_body_max_in_eye_regions": 0
+  },
+  "rest_max_full": 0,
+  "rest_mean_full": 0.0,
+  "rest_max_eye": 0,
+  "rest_mean_eye": 0.0,
+  "rest_changed_px": 0,
+  "sweep_combos": 81,
+  "changed_px_outside_eye_openings_max": 0,
+  "parts_checked": 8,
+  "bad_parts": []
+ },
+ "right": {
+  "base_body_check": {
+   "base_body_vs_base_px": 19748,
+   "base_body_vs_base_px_inside_eye_parts": 0,
+   "rest_over_base_body_vs_base_inside_eye_parts_px": 0,
+   "rest_over_base_body_vs_base_inside_eye_regions_px": 0,
+   "rest_over_base_body_max_in_eye_regions": 0
+  },
+  "rest_max_full": 0,
+  "rest_mean_full": 0.0,
+  "rest_max_eye": 0,
+  "rest_mean_eye": 0.0,
+  "rest_changed_px": 0,
+  "sweep_combos": 81,
+  "changed_px_outside_eye_openings_max": 0,
+  "parts_checked": 8,
+  "bad_parts": []
+ }
+}

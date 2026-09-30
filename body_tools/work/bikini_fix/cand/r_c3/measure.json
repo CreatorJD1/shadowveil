@@ -1,0 +1,2055 @@
+{
+ "view": "apose",
+ "skin": "/workspace/shadowveil/rig/skin_tools/drafts/apose_bk_c3.json",
+ "curvesRest": {
+  "waistband": 79,
+  "legOpen_R": 65,
+  "legOpen_L": 66,
+  "thighOuter_R": 87,
+  "thighOuter_L": 87,
+  "thighInner_R": 25,
+  "thighInner_L": 27
+ },
+ "poses": {
+  "hipL+12": {
+   "params": {
+    "HipL": 0.5
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 0.88,
+     "widthP5": 0.21,
+     "widthP95": 3.35,
+     "breaks": 2,
+     "turnMaxGeomDeg": 48.3,
+     "turnMaxInkDeg": 47.8,
+     "inkOffsetMeanPx": 0.91,
+     "dWidthMaxVsRest": 2.04,
+     "dWidthP95VsRest": 0.18,
+     "newKinkInkDeg": 4.5,
+     "newKinkGeomDeg": 2.9,
+     "newKinkAt": [
+      571.0,
+      722.1
+     ],
+     "newKinkRestAt": [
+      571.0,
+      722.1
+     ],
+     "breakRestAt": [
+      [
+       571,
+       725
+      ],
+      [
+       571,
+       722
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      670,
+      846
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.85,
+     "widthP5": 0.48,
+     "widthP95": 1.95,
+     "breaks": 2,
+     "turnMaxGeomDeg": 58.5,
+     "turnMaxInkDeg": 47.5,
+     "inkOffsetMeanPx": 0.86,
+     "dWidthMaxVsRest": 5.91,
+     "dWidthP95VsRest": 1.14,
+     "newKinkInkDeg": 17.9,
+     "newKinkGeomDeg": 14.3,
+     "newKinkAt": [
+      797.2,
+      735.4
+     ],
+     "newKinkRestAt": [
+      792.0,
+      730.7
+     ],
+     "breakRestAt": [
+      [
+       792,
+       722
+      ],
+      [
+       792,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      692,
+      844
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.12,
+     "widthP5": 0.86,
+     "widthP95": 4.4,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.9,
+     "turnMaxInkDeg": 17.9,
+     "inkOffsetMeanPx": 0.58,
+     "dWidthMaxVsRest": 0.12,
+     "dWidthP95VsRest": 0.06,
+     "newKinkInkDeg": 0.5,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      558.5,
+      740.4
+     ],
+     "newKinkRestAt": [
+      558.5,
+      740.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      572,
+      704
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.14,
+     "widthP5": 0.86,
+     "widthP95": 4.25,
+     "breaks": 0,
+     "turnMaxGeomDeg": 10.9,
+     "turnMaxInkDeg": 16.3,
+     "inkOffsetMeanPx": 0.6,
+     "dWidthMaxVsRest": 0.34,
+     "dWidthP95VsRest": 0.18,
+     "newKinkInkDeg": 5.6,
+     "newKinkGeomDeg": 5.7,
+     "newKinkAt": [
+      811.8,
+      751.1
+     ],
+     "newKinkRestAt": [
+      804.1,
+      740.6
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      800,
+      727
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 1.27,
+     "widthP5": 1.06,
+     "widthP95": 5.47,
+     "breaks": 0,
+     "turnMaxGeomDeg": 30.8,
+     "turnMaxInkDeg": 17.1,
+     "inkOffsetMeanPx": 0.81,
+     "dWidthMaxVsRest": 0.7,
+     "dWidthP95VsRest": 0.65,
+     "newKinkInkDeg": 0.1,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      668.5,
+      875.4
+     ],
+     "newKinkRestAt": [
+      668.5,
+      875.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      681,
+      844
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 1.12,
+     "widthP5": 0.91,
+     "widthP95": 5.93,
+     "breaks": 0,
+     "turnMaxGeomDeg": 96.3,
+     "turnMaxInkDeg": 83.5,
+     "inkOffsetMeanPx": 0.9,
+     "dWidthMaxVsRest": 2.08,
+     "dWidthP95VsRest": 1.42,
+     "newKinkInkDeg": 33.6,
+     "newKinkGeomDeg": 51.0,
+     "newKinkAt": [
+      686.3,
+      839.4
+     ],
+     "newKinkRestAt": [
+      694.1,
+      848.6
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      689,
+      844
+     ]
+    }
+   }
+  },
+  "hipL+25": {
+   "params": {
+    "HipL": 1.0
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 0.88,
+     "widthP5": 0.21,
+     "widthP95": 2.47,
+     "breaks": 2,
+     "turnMaxGeomDeg": 48.3,
+     "turnMaxInkDeg": 47.8,
+     "inkOffsetMeanPx": 0.93,
+     "dWidthMaxVsRest": 6.22,
+     "dWidthP95VsRest": 0.34,
+     "newKinkInkDeg": 4.5,
+     "newKinkGeomDeg": 8.7,
+     "newKinkAt": [
+      571.0,
+      722.1
+     ],
+     "newKinkRestAt": [
+      571.0,
+      722.1
+     ],
+     "breakRestAt": [
+      [
+       571,
+       725
+      ],
+      [
+       571,
+       722
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      670,
+      846
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.78,
+     "widthP5": 0.37,
+     "widthP95": 1.78,
+     "breaks": 2,
+     "turnMaxGeomDeg": 68.2,
+     "turnMaxInkDeg": 58.7,
+     "inkOffsetMeanPx": 1.11,
+     "dWidthMaxVsRest": 8.6,
+     "dWidthP95VsRest": 2.26,
+     "newKinkInkDeg": 31.7,
+     "newKinkGeomDeg": 24.0,
+     "newKinkAt": [
+      800.3,
+      736.6
+     ],
+     "newKinkRestAt": [
+      792.0,
+      727.7
+     ],
+     "breakRestAt": [
+      [
+       792,
+       722
+      ],
+      [
+       792,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      692,
+      844
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.12,
+     "widthP5": 0.86,
+     "widthP95": 4.4,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.9,
+     "turnMaxInkDeg": 17.9,
+     "inkOffsetMeanPx": 0.58,
+     "dWidthMaxVsRest": 0.12,
+     "dWidthP95VsRest": 0.06,
+     "newKinkInkDeg": 0.5,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      558.5,
+      740.4
+     ],
+     "newKinkRestAt": [
+      558.5,
+      740.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      572,
+      704
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.12,
+     "widthP5": 0.86,
+     "widthP95": 4.27,
+     "breaks": 0,
+     "turnMaxGeomDeg": 11.9,
+     "turnMaxInkDeg": 16.3,
+     "inkOffsetMeanPx": 0.67,
+     "dWidthMaxVsRest": 0.22,
+     "dWidthP95VsRest": 0.16,
+     "newKinkInkDeg": 8.6,
+     "newKinkGeomDeg": 8.2,
+     "newKinkAt": [
+      817.3,
+      767.4
+     ],
+     "newKinkRestAt": [
+      804.5,
+      743.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      824,
+      862
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 0.0,
+     "widthP5": 0.0,
+     "widthP95": 3.96,
+     "breaks": 20,
+     "turnMaxGeomDeg": 19.9,
+     "turnMaxInkDeg": null,
+     "inkOffsetMeanPx": 3.28,
+     "dWidthMaxVsRest": 3.74,
+     "dWidthP95VsRest": 2.79,
+     "newKinkInkDeg": null,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": null,
+     "newKinkRestAt": null,
+     "breakRestAt": [
+      [
+       668,
+       849
+      ],
+      [
+       668,
+       852
+      ],
+      [
+       668,
+       855
+      ],
+      [
+       668,
+       857
+      ],
+      [
+       668,
+       860
+      ],
+      [
+       668,
+       863
+      ],
+      [
+       668,
+       866
+      ],
+      [
+       668,
+       869
+      ],
+      [
+       668,
+       872
+      ],
+      [
+       668,
+       875
+      ],
+      [
+       668,
+       878
+      ],
+      [
+       668,
+       881
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      668,
+      849
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 3.49,
+     "widthP5": 0.61,
+     "widthP95": 6.12,
+     "breaks": 0,
+     "turnMaxGeomDeg": 156.9,
+     "turnMaxInkDeg": 160.8,
+     "inkOffsetMeanPx": 1.66,
+     "dWidthMaxVsRest": 5.42,
+     "dWidthP95VsRest": 4.62,
+     "newKinkInkDeg": 110.6,
+     "newKinkGeomDeg": 111.6,
+     "newKinkAt": [
+      680.7,
+      828.8
+     ],
+     "newKinkRestAt": [
+      694.1,
+      848.6
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      694,
+      866
+     ]
+    }
+   }
+  },
+  "hipL-12": {
+   "params": {
+    "HipL": -0.5
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 0.88,
+     "widthP5": 0.21,
+     "widthP95": 2.94,
+     "breaks": 2,
+     "turnMaxGeomDeg": 48.3,
+     "turnMaxInkDeg": 47.8,
+     "inkOffsetMeanPx": 0.93,
+     "dWidthMaxVsRest": 1.78,
+     "dWidthP95VsRest": 0.16,
+     "newKinkInkDeg": 4.5,
+     "newKinkGeomDeg": 0.4,
+     "newKinkAt": [
+      571.0,
+      722.1
+     ],
+     "newKinkRestAt": [
+      571.0,
+      722.1
+     ],
+     "breakRestAt": [
+      [
+       571,
+       725
+      ],
+      [
+       571,
+       722
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      670,
+      846
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.84,
+     "widthP5": 0.19,
+     "widthP95": 3.8,
+     "breaks": 0,
+     "turnMaxGeomDeg": 43.5,
+     "turnMaxInkDeg": 45.3,
+     "inkOffsetMeanPx": 0.92,
+     "dWidthMaxVsRest": 1.62,
+     "dWidthP95VsRest": 0.89,
+     "newKinkInkDeg": 28.7,
+     "newKinkGeomDeg": 14.2,
+     "newKinkAt": [
+      787.4,
+      722.3
+     ],
+     "newKinkRestAt": [
+      792.0,
+      724.7
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      792,
+      722
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.12,
+     "widthP5": 0.86,
+     "widthP95": 4.4,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.9,
+     "turnMaxInkDeg": 17.9,
+     "inkOffsetMeanPx": 0.58,
+     "dWidthMaxVsRest": 0.12,
+     "dWidthP95VsRest": 0.06,
+     "newKinkInkDeg": 0.5,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      558.5,
+      740.4
+     ],
+     "newKinkRestAt": [
+      558.5,
+      740.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      572,
+      704
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.13,
+     "widthP5": 0.88,
+     "widthP95": 4.06,
+     "breaks": 0,
+     "turnMaxGeomDeg": 25.2,
+     "turnMaxInkDeg": 29.0,
+     "inkOffsetMeanPx": 0.52,
+     "dWidthMaxVsRest": 0.64,
+     "dWidthP95VsRest": 0.25,
+     "newKinkInkDeg": 16.3,
+     "newKinkGeomDeg": 21.6,
+     "newKinkAt": [
+      793.4,
+      713.7
+     ],
+     "newKinkRestAt": [
+      794.9,
+      714.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      800,
+      727
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 1.27,
+     "widthP5": 1.06,
+     "widthP95": 5.12,
+     "breaks": 0,
+     "turnMaxGeomDeg": 70.0,
+     "turnMaxInkDeg": 43.4,
+     "inkOffsetMeanPx": 0.95,
+     "dWidthMaxVsRest": 1.33,
+     "dWidthP95VsRest": 0.74,
+     "newKinkInkDeg": 16.7,
+     "newKinkGeomDeg": 21.3,
+     "newKinkAt": [
+      667.5,
+      851.8
+     ],
+     "newKinkRestAt": [
+      667.5,
+      851.8
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      670,
+      847
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 1.28,
+     "widthP5": 0.91,
+     "widthP95": 5.44,
+     "breaks": 0,
+     "turnMaxGeomDeg": 29.8,
+     "turnMaxInkDeg": 32.4,
+     "inkOffsetMeanPx": 1.12,
+     "dWidthMaxVsRest": 0.61,
+     "dWidthP95VsRest": 0.57,
+     "newKinkInkDeg": 2.4,
+     "newKinkGeomDeg": 2.5,
+     "newKinkAt": [
+      708.8,
+      865.4
+     ],
+     "newKinkRestAt": [
+      695.5,
+      857.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      690,
+      844
+     ]
+    }
+   }
+  },
+  "hipL-25": {
+   "params": {
+    "HipL": -1.0
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 0.88,
+     "widthP5": 0.21,
+     "widthP95": 2.99,
+     "breaks": 2,
+     "turnMaxGeomDeg": 48.3,
+     "turnMaxInkDeg": 47.8,
+     "inkOffsetMeanPx": 0.98,
+     "dWidthMaxVsRest": 1.64,
+     "dWidthP95VsRest": 0.26,
+     "newKinkInkDeg": 4.5,
+     "newKinkGeomDeg": 1.1,
+     "newKinkAt": [
+      571.0,
+      722.1
+     ],
+     "newKinkRestAt": [
+      571.0,
+      722.1
+     ],
+     "breakRestAt": [
+      [
+       571,
+       725
+      ],
+      [
+       571,
+       722
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      669,
+      844
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.74,
+     "widthP5": 0.0,
+     "widthP95": 4.62,
+     "breaks": 11,
+     "turnMaxGeomDeg": 49.9,
+     "turnMaxInkDeg": 18.1,
+     "inkOffsetMeanPx": 0.8,
+     "dWidthMaxVsRest": 1.93,
+     "dWidthP95VsRest": 1.53,
+     "newKinkInkDeg": 14.7,
+     "newKinkGeomDeg": 26.6,
+     "newKinkAt": [
+      710.8,
+      846.9
+     ],
+     "newKinkRestAt": [
+      698.2,
+      838.3
+     ],
+     "breakRestAt": [
+      [
+       792,
+       731
+      ],
+      [
+       790,
+       733
+      ],
+      [
+       788,
+       734
+      ],
+      [
+       786,
+       736
+      ],
+      [
+       784,
+       738
+      ],
+      [
+       781,
+       740
+      ],
+      [
+       779,
+       742
+      ],
+      [
+       777,
+       743
+      ],
+      [
+       774,
+       744
+      ],
+      [
+       772,
+       746
+      ],
+      [
+       766,
+       752
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      700,
+      836
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.12,
+     "widthP5": 0.86,
+     "widthP95": 4.4,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.9,
+     "turnMaxInkDeg": 17.9,
+     "inkOffsetMeanPx": 0.58,
+     "dWidthMaxVsRest": 0.12,
+     "dWidthP95VsRest": 0.06,
+     "newKinkInkDeg": 0.5,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      558.5,
+      740.4
+     ],
+     "newKinkRestAt": [
+      558.5,
+      740.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      572,
+      704
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.13,
+     "widthP5": 0.86,
+     "widthP95": 3.57,
+     "breaks": 0,
+     "turnMaxGeomDeg": 53.5,
+     "turnMaxInkDeg": 53.8,
+     "inkOffsetMeanPx": 0.64,
+     "dWidthMaxVsRest": 1.9,
+     "dWidthP95VsRest": 1.46,
+     "newKinkInkDeg": 42.3,
+     "newKinkGeomDeg": 49.9,
+     "newKinkAt": [
+      791.8,
+      713.3
+     ],
+     "newKinkRestAt": [
+      794.9,
+      714.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      802,
+      733
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 1.27,
+     "widthP5": 1.06,
+     "widthP95": 5.46,
+     "breaks": 0,
+     "turnMaxGeomDeg": 84.0,
+     "turnMaxInkDeg": 61.1,
+     "inkOffsetMeanPx": 0.98,
+     "dWidthMaxVsRest": 2.19,
+     "dWidthP95VsRest": 0.54,
+     "newKinkInkDeg": 34.4,
+     "newKinkGeomDeg": 36.8,
+     "newKinkAt": [
+      667.5,
+      851.8
+     ],
+     "newKinkRestAt": [
+      667.5,
+      851.8
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      668,
+      849
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 1.27,
+     "widthP5": 0.9,
+     "widthP95": 5.62,
+     "breaks": 0,
+     "turnMaxGeomDeg": 21.7,
+     "turnMaxInkDeg": 22.0,
+     "inkOffsetMeanPx": 1.21,
+     "dWidthMaxVsRest": 0.88,
+     "dWidthP95VsRest": 0.81,
+     "newKinkInkDeg": 2.8,
+     "newKinkGeomDeg": 3.9,
+     "newKinkAt": [
+      726.0,
+      874.1
+     ],
+     "newKinkRestAt": [
+      695.5,
+      860.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      683,
+      844
+     ]
+    }
+   }
+  },
+  "hipR+12": {
+   "params": {
+    "HipR": 0.5
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 0.9,
+     "widthP5": 0.24,
+     "widthP95": 3.97,
+     "breaks": 0,
+     "turnMaxGeomDeg": 30.9,
+     "turnMaxInkDeg": 32.2,
+     "inkOffsetMeanPx": 1.01,
+     "dWidthMaxVsRest": 3.05,
+     "dWidthP95VsRest": 1.22,
+     "newKinkInkDeg": 15.5,
+     "newKinkGeomDeg": 17.9,
+     "newKinkAt": [
+      574.5,
+      720.2
+     ],
+     "newKinkRestAt": [
+      571.0,
+      722.1
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      670,
+      842
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.78,
+     "widthP5": 0.3,
+     "widthP95": 2.81,
+     "breaks": 2,
+     "turnMaxGeomDeg": 46.3,
+     "turnMaxInkDeg": 32.2,
+     "inkOffsetMeanPx": 0.85,
+     "dWidthMaxVsRest": 5.42,
+     "dWidthP95VsRest": 0.33,
+     "newKinkInkDeg": 6.1,
+     "newKinkGeomDeg": 0.1,
+     "newKinkAt": [
+      697.7,
+      839.0
+     ],
+     "newKinkRestAt": [
+      698.2,
+      838.3
+     ],
+     "breakRestAt": [
+      [
+       792,
+       722
+      ],
+      [
+       792,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      692,
+      844
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.11,
+     "widthP5": 0.84,
+     "widthP95": 4.34,
+     "breaks": 0,
+     "turnMaxGeomDeg": 29.1,
+     "turnMaxInkDeg": 28.0,
+     "inkOffsetMeanPx": 0.52,
+     "dWidthMaxVsRest": 0.82,
+     "dWidthP95VsRest": 0.21,
+     "newKinkInkDeg": 17.5,
+     "newKinkGeomDeg": 23.8,
+     "newKinkAt": [
+      569.0,
+      713.9
+     ],
+     "newKinkRestAt": [
+      568.1,
+      714.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      563,
+      727
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.12,
+     "widthP5": 0.84,
+     "widthP95": 4.26,
+     "breaks": 0,
+     "turnMaxGeomDeg": 10.0,
+     "turnMaxInkDeg": 17.7,
+     "inkOffsetMeanPx": 0.55,
+     "dWidthMaxVsRest": 0.13,
+     "dWidthP95VsRest": 0.07,
+     "newKinkInkDeg": 0.4,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      805.5,
+      746.0
+     ],
+     "newKinkRestAt": [
+      805.5,
+      746.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      800,
+      727
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 1.31,
+     "widthP5": 0.98,
+     "widthP95": 5.31,
+     "breaks": 0,
+     "turnMaxGeomDeg": 34.3,
+     "turnMaxInkDeg": 22.5,
+     "inkOffsetMeanPx": 1.01,
+     "dWidthMaxVsRest": 0.53,
+     "dWidthP95VsRest": 0.44,
+     "newKinkInkDeg": 2.4,
+     "newKinkGeomDeg": 3.2,
+     "newKinkAt": [
+      654.9,
+      865.6
+     ],
+     "newKinkRestAt": [
+      668.5,
+      857.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      681,
+      844
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 1.24,
+     "widthP5": 0.9,
+     "widthP95": 4.56,
+     "breaks": 0,
+     "turnMaxGeomDeg": 68.3,
+     "turnMaxInkDeg": 67.0,
+     "inkOffsetMeanPx": 1.18,
+     "dWidthMaxVsRest": 1.75,
+     "dWidthP95VsRest": 1.13,
+     "newKinkInkDeg": 20.9,
+     "newKinkGeomDeg": 21.6,
+     "newKinkAt": [
+      694.1,
+      848.6
+     ],
+     "newKinkRestAt": [
+      694.1,
+      848.6
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      690,
+      844
+     ]
+    }
+   }
+  },
+  "hipR+25": {
+   "params": {
+    "HipR": 1.0
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 0.85,
+     "widthP5": 0.0,
+     "widthP95": 4.13,
+     "breaks": 8,
+     "turnMaxGeomDeg": 37.5,
+     "turnMaxInkDeg": 18.4,
+     "inkOffsetMeanPx": 1.03,
+     "dWidthMaxVsRest": 2.96,
+     "dWidthP95VsRest": 1.97,
+     "newKinkInkDeg": 15.8,
+     "newKinkGeomDeg": 34.3,
+     "newKinkAt": [
+      598.5,
+      740.9
+     ],
+     "newKinkRestAt": [
+      587.6,
+      745.1
+     ],
+     "breakRestAt": [
+      [
+       585,
+       743
+      ],
+      [
+       583,
+       742
+      ],
+      [
+       581,
+       739
+      ],
+      [
+       578,
+       738
+      ],
+      [
+       576,
+       736
+      ],
+      [
+       574,
+       734
+      ],
+      [
+       572,
+       733
+      ],
+      [
+       571,
+       731
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      670,
+      846
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.78,
+     "widthP5": 0.3,
+     "widthP95": 2.67,
+     "breaks": 2,
+     "turnMaxGeomDeg": 46.3,
+     "turnMaxInkDeg": 32.2,
+     "inkOffsetMeanPx": 0.85,
+     "dWidthMaxVsRest": 6.26,
+     "dWidthP95VsRest": 0.22,
+     "newKinkInkDeg": 8.2,
+     "newKinkGeomDeg": 0.9,
+     "newKinkAt": [
+      697.1,
+      839.5
+     ],
+     "newKinkRestAt": [
+      698.2,
+      838.3
+     ],
+     "breakRestAt": [
+      [
+       792,
+       722
+      ],
+      [
+       792,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      692,
+      844
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.11,
+     "widthP5": 0.84,
+     "widthP95": 3.81,
+     "breaks": 0,
+     "turnMaxGeomDeg": 64.2,
+     "turnMaxInkDeg": 52.7,
+     "inkOffsetMeanPx": 0.61,
+     "dWidthMaxVsRest": 2.23,
+     "dWidthP95VsRest": 0.93,
+     "newKinkInkDeg": 50.8,
+     "newKinkGeomDeg": 58.9,
+     "newKinkAt": [
+      569.9,
+      713.7
+     ],
+     "newKinkRestAt": [
+      568.1,
+      714.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      562,
+      730
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.12,
+     "widthP5": 0.84,
+     "widthP95": 4.26,
+     "breaks": 0,
+     "turnMaxGeomDeg": 10.0,
+     "turnMaxInkDeg": 17.7,
+     "inkOffsetMeanPx": 0.55,
+     "dWidthMaxVsRest": 0.13,
+     "dWidthP95VsRest": 0.07,
+     "newKinkInkDeg": 0.4,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      805.5,
+      746.0
+     ],
+     "newKinkRestAt": [
+      805.5,
+      746.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      800,
+      727
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 1.36,
+     "widthP5": 1.0,
+     "widthP95": 5.49,
+     "breaks": 0,
+     "turnMaxGeomDeg": 26.3,
+     "turnMaxInkDeg": 17.0,
+     "inkOffsetMeanPx": 1.04,
+     "dWidthMaxVsRest": 0.65,
+     "dWidthP95VsRest": 0.44,
+     "newKinkInkDeg": 3.0,
+     "newKinkGeomDeg": 4.6,
+     "newKinkAt": [
+      637.5,
+      874.0
+     ],
+     "newKinkRestAt": [
+      668.5,
+      860.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      675,
+      844
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 1.24,
+     "widthP5": 0.9,
+     "widthP95": 4.52,
+     "breaks": 0,
+     "turnMaxGeomDeg": 80.4,
+     "turnMaxInkDeg": 78.1,
+     "inkOffsetMeanPx": 1.18,
+     "dWidthMaxVsRest": 1.92,
+     "dWidthP95VsRest": 1.44,
+     "newKinkInkDeg": 32.0,
+     "newKinkGeomDeg": 33.7,
+     "newKinkAt": [
+      694.1,
+      848.6
+     ],
+     "newKinkRestAt": [
+      694.1,
+      848.6
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      692,
+      846
+     ]
+    }
+   }
+  },
+  "hipR-12": {
+   "params": {
+    "HipR": -0.5
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 1.02,
+     "widthP5": 0.64,
+     "widthP95": 2.28,
+     "breaks": 1,
+     "turnMaxGeomDeg": 59.4,
+     "turnMaxInkDeg": 51.6,
+     "inkOffsetMeanPx": 1.03,
+     "dWidthMaxVsRest": 1.48,
+     "dWidthP95VsRest": 1.27,
+     "newKinkInkDeg": 11.4,
+     "newKinkGeomDeg": 13.1,
+     "newKinkAt": [
+      566.9,
+      738.5
+     ],
+     "newKinkRestAt": [
+      572.1,
+      733.4
+     ],
+     "breakRestAt": [
+      [
+       571,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      670,
+      846
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.78,
+     "widthP5": 0.3,
+     "widthP95": 3.21,
+     "breaks": 2,
+     "turnMaxGeomDeg": 46.3,
+     "turnMaxInkDeg": 32.2,
+     "inkOffsetMeanPx": 0.77,
+     "dWidthMaxVsRest": 3.18,
+     "dWidthP95VsRest": 0.45,
+     "newKinkInkDeg": 2.4,
+     "newKinkGeomDeg": 8.5,
+     "newKinkAt": [
+      698.5,
+      837.6
+     ],
+     "newKinkRestAt": [
+      698.2,
+      838.3
+     ],
+     "breakRestAt": [
+      [
+       792,
+       722
+      ],
+      [
+       792,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      692,
+      844
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.12,
+     "widthP5": 0.79,
+     "widthP95": 4.44,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.9,
+     "turnMaxInkDeg": 17.6,
+     "inkOffsetMeanPx": 0.65,
+     "dWidthMaxVsRest": 0.39,
+     "dWidthP95VsRest": 0.19,
+     "newKinkInkDeg": 5.9,
+     "newKinkGeomDeg": 3.7,
+     "newKinkAt": [
+      549.5,
+      761.3
+     ],
+     "newKinkRestAt": [
+      556.5,
+      748.5
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      563,
+      727
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.12,
+     "widthP5": 0.84,
+     "widthP95": 4.26,
+     "breaks": 0,
+     "turnMaxGeomDeg": 10.0,
+     "turnMaxInkDeg": 17.7,
+     "inkOffsetMeanPx": 0.55,
+     "dWidthMaxVsRest": 0.13,
+     "dWidthP95VsRest": 0.07,
+     "newKinkInkDeg": 0.4,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      805.5,
+      746.0
+     ],
+     "newKinkRestAt": [
+      805.5,
+      746.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      800,
+      727
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 1.23,
+     "widthP5": 1.02,
+     "widthP95": 5.62,
+     "breaks": 0,
+     "turnMaxGeomDeg": 90.6,
+     "turnMaxInkDeg": 23.7,
+     "inkOffsetMeanPx": 0.74,
+     "dWidthMaxVsRest": 1.07,
+     "dWidthP95VsRest": 0.94,
+     "newKinkInkDeg": 5.6,
+     "newKinkGeomDeg": 46.6,
+     "newKinkAt": [
+      682.0,
+      851.5
+     ],
+     "newKinkRestAt": [
+      668.5,
+      863.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      681,
+      844
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 1.24,
+     "widthP5": 0.9,
+     "widthP95": 6.23,
+     "breaks": 0,
+     "turnMaxGeomDeg": 37.6,
+     "turnMaxInkDeg": 35.2,
+     "inkOffsetMeanPx": 0.92,
+     "dWidthMaxVsRest": 1.24,
+     "dWidthP95VsRest": 0.92,
+     "newKinkInkDeg": 0.1,
+     "newKinkGeomDeg": 12.1,
+     "newKinkAt": [
+      694.5,
+      886.6
+     ],
+     "newKinkRestAt": [
+      694.5,
+      886.6
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      689,
+      844
+     ]
+    }
+   }
+  },
+  "hipR-25": {
+   "params": {
+    "HipR": -1.0
+   },
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.65,
+     "widthP5": 0.39,
+     "widthP95": 0.79,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.2,
+     "inkOffsetMeanPx": 0.51,
+     "dWidthMaxVsRest": 0.19,
+     "dWidthP95VsRest": 0.15,
+     "newKinkInkDeg": 0.6,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      762.4,
+      717.0
+     ],
+     "newKinkRestAt": [
+      762.4,
+      717.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 0.91,
+     "widthP5": 0.34,
+     "widthP95": 1.65,
+     "breaks": 1,
+     "turnMaxGeomDeg": 67.2,
+     "turnMaxInkDeg": 60.9,
+     "inkOffsetMeanPx": 1.15,
+     "dWidthMaxVsRest": 6.05,
+     "dWidthP95VsRest": 2.41,
+     "newKinkInkDeg": 20.6,
+     "newKinkGeomDeg": 20.9,
+     "newKinkAt": [
+      563.0,
+      744.6
+     ],
+     "newKinkRestAt": [
+      572.1,
+      733.4
+     ],
+     "breakRestAt": [
+      [
+       571,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      670,
+      846
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.78,
+     "widthP5": 0.3,
+     "widthP95": 2.68,
+     "breaks": 2,
+     "turnMaxGeomDeg": 50.8,
+     "turnMaxInkDeg": 32.2,
+     "inkOffsetMeanPx": 0.91,
+     "dWidthMaxVsRest": 6.6,
+     "dWidthP95VsRest": 1.23,
+     "newKinkInkDeg": 19.2,
+     "newKinkGeomDeg": 18.6,
+     "newKinkAt": [
+      698.7,
+      836.8
+     ],
+     "newKinkRestAt": [
+      698.2,
+      838.3
+     ],
+     "breakRestAt": [
+      [
+       792,
+       722
+      ],
+      [
+       792,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      692,
+      844
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.13,
+     "widthP5": 0.81,
+     "widthP95": 4.44,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.9,
+     "turnMaxInkDeg": 17.1,
+     "inkOffsetMeanPx": 0.74,
+     "dWidthMaxVsRest": 0.48,
+     "dWidthP95VsRest": 0.22,
+     "newKinkInkDeg": 9.7,
+     "newKinkGeomDeg": 5.7,
+     "newKinkAt": [
+      545.5,
+      775.2
+     ],
+     "newKinkRestAt": [
+      556.5,
+      748.5
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      563,
+      727
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.12,
+     "widthP5": 0.84,
+     "widthP95": 4.26,
+     "breaks": 0,
+     "turnMaxGeomDeg": 10.0,
+     "turnMaxInkDeg": 17.7,
+     "inkOffsetMeanPx": 0.55,
+     "dWidthMaxVsRest": 0.13,
+     "dWidthP95VsRest": 0.07,
+     "newKinkInkDeg": 0.4,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      805.5,
+      746.0
+     ],
+     "newKinkRestAt": [
+      805.5,
+      746.0
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      800,
+      727
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 3.18,
+     "widthP5": 0.7,
+     "widthP95": 6.23,
+     "breaks": 0,
+     "turnMaxGeomDeg": 149.0,
+     "turnMaxInkDeg": 59.1,
+     "inkOffsetMeanPx": 1.39,
+     "dWidthMaxVsRest": 5.08,
+     "dWidthP95VsRest": 4.29,
+     "newKinkInkDeg": 32.4,
+     "newKinkGeomDeg": 105.0,
+     "newKinkAt": [
+      684.2,
+      830.5
+     ],
+     "newKinkRestAt": [
+      667.5,
+      851.8
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      668,
+      866
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 0.0,
+     "widthP5": 0.0,
+     "widthP95": 3.96,
+     "breaks": 21,
+     "turnMaxGeomDeg": 31.8,
+     "turnMaxInkDeg": null,
+     "inkOffsetMeanPx": 3.15,
+     "dWidthMaxVsRest": 4.0,
+     "dWidthP95VsRest": 3.41,
+     "newKinkInkDeg": null,
+     "newKinkGeomDeg": 15.2,
+     "newKinkAt": null,
+     "newKinkRestAt": null,
+     "breakRestAt": [
+      [
+       692,
+       846
+      ],
+      [
+       694,
+       849
+      ],
+      [
+       695,
+       851
+      ],
+      [
+       696,
+       854
+      ],
+      [
+       696,
+       857
+      ],
+      [
+       696,
+       860
+      ],
+      [
+       694,
+       863
+      ],
+      [
+       694,
+       866
+      ],
+      [
+       694,
+       869
+      ],
+      [
+       694,
+       872
+      ],
+      [
+       694,
+       875
+      ],
+      [
+       694,
+       878
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      694,
+      849
+     ]
+    }
+   }
+  },
+  "zero": {
+   "params": {},
+   "curves": {
+    "waistband": {
+     "n": 79,
+     "widthMed": 0.75,
+     "widthP5": 0.46,
+     "widthP95": 0.91,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.1,
+     "turnMaxInkDeg": 5.1,
+     "inkOffsetMeanPx": 0.49,
+     "dWidthMaxVsRest": 0.0,
+     "dWidthP95VsRest": 0.0,
+     "newKinkInkDeg": 0.0,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      588.7,
+      712.1
+     ],
+     "newKinkRestAt": [
+      588.7,
+      712.1
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      704
+     ]
+    },
+    "legOpen_R": {
+     "n": 65,
+     "widthMed": 1.02,
+     "widthP5": 0.23,
+     "widthP95": 3.06,
+     "breaks": 1,
+     "turnMaxGeomDeg": 48.3,
+     "turnMaxInkDeg": 45.4,
+     "inkOffsetMeanPx": 0.88,
+     "dWidthMaxVsRest": 0.0,
+     "dWidthP95VsRest": 0.0,
+     "newKinkInkDeg": 0.0,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      661.5,
+      834.8
+     ],
+     "newKinkRestAt": [
+      661.5,
+      834.8
+     ],
+     "breakRestAt": [
+      [
+       571,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      670,
+      846
+     ]
+    },
+    "legOpen_L": {
+     "n": 66,
+     "widthMed": 0.92,
+     "widthP5": 0.38,
+     "widthP95": 2.93,
+     "breaks": 2,
+     "turnMaxGeomDeg": 46.3,
+     "turnMaxInkDeg": 32.3,
+     "inkOffsetMeanPx": 0.78,
+     "dWidthMaxVsRest": 0.0,
+     "dWidthP95VsRest": 0.0,
+     "newKinkInkDeg": 0.0,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      792.0,
+      721.7
+     ],
+     "newKinkRestAt": [
+      792.0,
+      721.7
+     ],
+     "breakRestAt": [
+      [
+       792,
+       722
+      ],
+      [
+       792,
+       725
+      ]
+     ],
+     "dWidthMaxRestAt": [
+      790,
+      704
+     ]
+    },
+    "thighOuter_R": {
+     "n": 85,
+     "widthMed": 1.16,
+     "widthP5": 0.87,
+     "widthP95": 4.41,
+     "breaks": 0,
+     "turnMaxGeomDeg": 12.9,
+     "turnMaxInkDeg": 17.6,
+     "inkOffsetMeanPx": 0.58,
+     "dWidthMaxVsRest": 0.0,
+     "dWidthP95VsRest": 0.0,
+     "newKinkInkDeg": 0.0,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      568.1,
+      714.4
+     ],
+     "newKinkRestAt": [
+      568.1,
+      714.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      574,
+      699
+     ]
+    },
+    "thighOuter_L": {
+     "n": 87,
+     "widthMed": 1.16,
+     "widthP5": 0.86,
+     "widthP95": 4.28,
+     "breaks": 0,
+     "turnMaxGeomDeg": 10.0,
+     "turnMaxInkDeg": 17.7,
+     "inkOffsetMeanPx": 0.56,
+     "dWidthMaxVsRest": 0.0,
+     "dWidthP95VsRest": 0.0,
+     "newKinkInkDeg": 0.0,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      794.9,
+      714.4
+     ],
+     "newKinkRestAt": [
+      794.9,
+      714.4
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      788,
+      699
+     ]
+    },
+    "thighInner_R": {
+     "n": 25,
+     "widthMed": 1.29,
+     "widthP5": 1.1,
+     "widthP95": 4.88,
+     "breaks": 0,
+     "turnMaxGeomDeg": 48.6,
+     "turnMaxInkDeg": 26.7,
+     "inkOffsetMeanPx": 0.91,
+     "dWidthMaxVsRest": 0.0,
+     "dWidthP95VsRest": 0.0,
+     "newKinkInkDeg": 0.0,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      667.5,
+      851.8
+     ],
+     "newKinkRestAt": [
+      667.5,
+      851.8
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      681,
+      844
+     ]
+    },
+    "thighInner_L": {
+     "n": 27,
+     "widthMed": 1.27,
+     "widthP5": 0.92,
+     "widthP95": 5.09,
+     "breaks": 0,
+     "turnMaxGeomDeg": 46.6,
+     "turnMaxInkDeg": 50.4,
+     "inkOffsetMeanPx": 1.07,
+     "dWidthMaxVsRest": 0.0,
+     "dWidthP95VsRest": 0.0,
+     "newKinkInkDeg": 0.0,
+     "newKinkGeomDeg": 0.0,
+     "newKinkAt": [
+      692.0,
+      846.5
+     ],
+     "newKinkRestAt": [
+      692.0,
+      846.5
+     ],
+     "breakRestAt": [],
+     "dWidthMaxRestAt": [
+      689,
+      844
+     ]
+    }
+   }
+  }
+ }
+}

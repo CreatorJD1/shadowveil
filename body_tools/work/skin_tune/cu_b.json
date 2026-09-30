@@ -1,0 +1,18 @@
+{
+ "view": "apose",
+ "skin": "views/apose/body/skin_b.json",
+ "underlay": {
+  "footprintPx": 8468,
+  "touchTransparent": 0,
+  "touchPartialAlpha": 0,
+  "touchNotAbove": 0,
+  "layer": 200,
+  "ok": true,
+  "image": "views/apose/ul_b.png",
+  "ownMesh": true,
+  "vertices": 3632,
+  "triangles": 5296,
+  "identityUV": true
+ },
+ "map": "rig/skin_tools/drafts/apose_underlay_check.png"
+}

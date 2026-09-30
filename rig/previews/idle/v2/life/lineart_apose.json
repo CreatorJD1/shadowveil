@@ -1,0 +1,333 @@
+{
+"dir": "idle/v2/life/work/life_apose",
+"view": "apose",
+"step": 8,
+"rest": {
+"armpit_L": {
+"px": 190,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 1,
+"kinks": 5,
+"comps": 3
+},
+"elbow_L": {
+"px": 170,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 0,
+"kinks": 0,
+"comps": 2
+},
+"hip_L": {
+"px": 12,
+"wmed": 1.0,
+"wp90": 2.3,
+"ends": 0,
+"kinks": 0,
+"comps": 0
+},
+"knee_L": {
+"px": 326,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 8,
+"kinks": 0,
+"comps": 4
+},
+"ankle_L": {
+"px": 211,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 2,
+"kinks": 0,
+"comps": 2
+},
+"wrist_L": {
+"px": 167,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 9,
+"kinks": 0,
+"comps": 6
+},
+"knuckle_L": {
+"px": 422,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 39,
+"kinks": 4,
+"comps": 11
+},
+"armpit_R": {
+"px": 189,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 1,
+"kinks": 6,
+"comps": 3
+},
+"elbow_R": {
+"px": 151,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 0,
+"kinks": 0,
+"comps": 2
+},
+"hip_R": {
+"px": 8,
+"wmed": 0,
+"wp90": 0,
+"ends": 0,
+"kinks": 0,
+"comps": 0
+},
+"knee_R": {
+"px": 335,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 10,
+"kinks": 0,
+"comps": 4
+},
+"ankle_R": {
+"px": 205,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 8,
+"kinks": 0,
+"comps": 2
+},
+"wrist_R": {
+"px": 174,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 6,
+"kinks": 0,
+"comps": 4
+},
+"knuckle_R": {
+"px": 453,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 17,
+"kinks": 12,
+"comps": 8
+},
+"hairtip_strand_03_tip": {
+"px": 223,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 8,
+"kinks": 0,
+"comps": 4
+},
+"hairtip_strand_06_tip": {
+"px": 184,
+"wmed": 1.0,
+"wp90": 1.0,
+"ends": 8,
+"kinks": 0,
+"comps": 4
+}
+},
+"roi": {
+"armpit_L": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"elbow_L": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"hip_L": {
+"maxAbsDW": 1.0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"knee_L": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"ankle_L": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"wrist_L": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"knuckle_L": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 5,
+"failFrames": []
+},
+"armpit_R": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 2,
+"failFrames": []
+},
+"elbow_R": {
+"maxAbsDW": 0,
+"maxDEnds": 1,
+"maxDKinks": 0,
+"failFrames": [
+[
+192,
+"break +1 piece(s)"
+]
+]
+},
+"hip_R": {
+"maxAbsDW": 1.41,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": [
+[
+48,
+"width +1.41"
+],
+[
+56,
+"width +1.41"
+],
+[
+64,
+"width +1.41"
+],
+[
+72,
+"width +1.41"
+]
+]
+},
+"knee_R": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"ankle_R": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"wrist_R": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"knuckle_R": {
+"maxAbsDW": 0,
+"maxDEnds": 0,
+"maxDKinks": 0,
+"failFrames": []
+},
+"hairtip_strand_03_tip": {
+"maxAbsDW": 0,
+"maxDEnds": 2,
+"maxDKinks": 0,
+"failFrames": [
+[
+8,
+"break +1 piece(s)"
+],
+[
+16,
+"break +1 piece(s)"
+],
+[
+24,
+"break +1 piece(s)"
+],
+[
+40,
+"break +1 piece(s)"
+],
+[
+72,
+"break +1 piece(s)"
+],
+[
+96,
+"break +1 piece(s)"
+],
+[
+104,
+"break +1 piece(s)"
+],
+[
+112,
+"break +1 piece(s)"
+],
+[
+120,
+"break +1 piece(s)"
+],
+[
+152,
+"break +2 piece(s)"
+],
+[
+200,
+"break +1 piece(s)"
+],
+[
+208,
+"break +1 piece(s)"
+]
+]
+},
+"hairtip_strand_06_tip": {
+"maxAbsDW": 0,
+"maxDEnds": 1,
+"maxDKinks": 0,
+"failFrames": [
+[
+8,
+"break +1 piece(s)"
+],
+[
+16,
+"break +1 piece(s)"
+],
+[
+24,
+"break +1 piece(s)"
+],
+[
+32,
+"break +1 piece(s)"
+],
+[
+40,
+"break +1 piece(s)"
+],
+[
+48,
+"break +1 piece(s)"
+],
+[
+72,
+"break +1 piece(s)"
+]
+]
+}
+}
+}

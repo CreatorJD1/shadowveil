@@ -1,0 +1,450 @@
+{
+ "jump": {
+  "kneeBackward": {
+   "apose": "none",
+   "tpose": "none",
+   "left": "none",
+   "right": "none",
+   "back": "none"
+  },
+  "elbowBackward": {
+   "apose": "none",
+   "tpose": "none",
+   "left": "none",
+   "right": "none",
+   "back": "none"
+  },
+  "maxAbs": {
+   "BodyLean": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 2.65,
+    "right": 2.65,
+    "back": 0.0
+   },
+   "ShoulderL": {
+    "apose": 1.8,
+    "tpose": 1.8,
+    "left": 6.0,
+    "right": 6.0,
+    "back": 1.8
+   },
+   "ShoulderR": {
+    "apose": 1.8,
+    "tpose": 1.8,
+    "left": 6.0,
+    "right": 6.0,
+    "back": 1.8
+   },
+   "ElbowL": {
+    "apose": 0.24,
+    "tpose": 0.24,
+    "left": 0.4,
+    "right": 0.4,
+    "back": 0.24
+   },
+   "ElbowR": {
+    "apose": 0.24,
+    "tpose": 0.24,
+    "left": 0.4,
+    "right": 0.4,
+    "back": 0.24
+   },
+   "HipL": {
+    "apose": 0.4,
+    "tpose": 0.4,
+    "left": 2.4,
+    "right": 2.4,
+    "back": 0.4
+   },
+   "HipR": {
+    "apose": 0.4,
+    "tpose": 0.4,
+    "left": 2.4,
+    "right": 2.4,
+    "back": 0.4
+   },
+   "KneeL": {
+    "apose": 0.738,
+    "tpose": 0.746,
+    "left": 3.6,
+    "right": 3.6,
+    "back": 0.729
+   },
+   "KneeR": {
+    "apose": 0.739,
+    "tpose": 0.746,
+    "left": 3.6,
+    "right": 3.6,
+    "back": 0.729
+   },
+   "AnkleL": {
+    "apose": 0.338,
+    "tpose": 0.346,
+    "left": 1.32,
+    "right": 1.447,
+    "back": 0.329
+   },
+   "AnkleR": {
+    "apose": 0.339,
+    "tpose": 0.345,
+    "left": 1.46,
+    "right": 1.308,
+    "back": 0.329
+   },
+   "ToeL": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.8,
+    "right": 0.8,
+    "back": 0.0
+   },
+   "ToeR": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.8,
+    "right": 0.8,
+    "back": 0.0
+   },
+   "RootY": {
+    "apose": 149.77,
+    "tpose": 149.76,
+    "left": 173.39,
+    "right": 177.71,
+    "back": 149.87
+   }
+  },
+  "overLimit": {
+   "apose": {
+    "ShoulderL": 1.8,
+    "ShoulderR": 1.8,
+    "RootY": 149.77
+   },
+   "tpose": {
+    "ShoulderL": 1.8,
+    "ShoulderR": 1.8,
+    "RootY": 149.76
+   },
+   "left": {
+    "BodyLean": 2.65,
+    "ShoulderL": 6.0,
+    "ShoulderR": 6.0,
+    "HipL": 2.4,
+    "HipR": 2.4,
+    "KneeL": 3.6,
+    "KneeR": 3.6,
+    "AnkleL": 1.32,
+    "AnkleR": 1.46,
+    "RootY": 173.39
+   },
+   "right": {
+    "BodyLean": 2.65,
+    "ShoulderL": 6.0,
+    "ShoulderR": 6.0,
+    "HipL": 2.4,
+    "HipR": 2.4,
+    "KneeL": 3.6,
+    "KneeR": 3.6,
+    "AnkleL": 1.447,
+    "AnkleR": 1.308,
+    "RootY": 177.71
+   },
+   "back": {
+    "ShoulderL": 1.8,
+    "ShoulderR": 1.8,
+    "RootY": 149.87
+   }
+  },
+  "startsAtRest": {
+   "apose": true,
+   "tpose": true,
+   "left": true,
+   "right": true,
+   "back": true
+  }
+ },
+ "run": {
+  "kneeBackward": {
+   "apose": "none",
+   "tpose": "none",
+   "left": "none",
+   "right": "none",
+   "back": "none"
+  },
+  "elbowBackward": {
+   "apose": "none",
+   "tpose": "none",
+   "left": "none",
+   "right": "none",
+   "back": "none"
+  },
+  "maxAbs": {
+   "BodyLean": {
+    "apose": 0.05,
+    "tpose": 0.05,
+    "left": 1.579,
+    "right": 1.579,
+    "back": 0.05
+   },
+   "ShoulderL": {
+    "apose": 0.4,
+    "tpose": 0.4,
+    "left": 1.796,
+    "right": 1.796,
+    "back": 0.4
+   },
+   "ShoulderR": {
+    "apose": 0.4,
+    "tpose": 0.4,
+    "left": 1.796,
+    "right": 1.796,
+    "back": 0.4
+   },
+   "ElbowL": {
+    "apose": 0.64,
+    "tpose": 0.64,
+    "left": 3.399,
+    "right": 3.399,
+    "back": 0.64
+   },
+   "ElbowR": {
+    "apose": 0.64,
+    "tpose": 0.64,
+    "left": 3.399,
+    "right": 3.399,
+    "back": 0.64
+   },
+   "HipL": {
+    "apose": 0.32,
+    "tpose": 0.32,
+    "left": 1.563,
+    "right": 1.563,
+    "back": 0.32
+   },
+   "HipR": {
+    "apose": 0.32,
+    "tpose": 0.32,
+    "left": 1.563,
+    "right": 1.563,
+    "back": 0.32
+   },
+   "KneeL": {
+    "apose": 0.591,
+    "tpose": 0.597,
+    "left": 4.199,
+    "right": 4.199,
+    "back": 0.584
+   },
+   "KneeR": {
+    "apose": 0.592,
+    "tpose": 0.597,
+    "left": 4.199,
+    "right": 4.199,
+    "back": 0.584
+   },
+   "AnkleL": {
+    "apose": 0.271,
+    "tpose": 0.277,
+    "left": 3.763,
+    "right": 3.763,
+    "back": 0.264
+   },
+   "AnkleR": {
+    "apose": 0.272,
+    "tpose": 0.277,
+    "left": 3.763,
+    "right": 3.763,
+    "back": 0.264
+   },
+   "ToeL": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.6,
+    "right": 0.6,
+    "back": 0.0
+   },
+   "ToeR": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.6,
+    "right": 0.6,
+    "back": 0.0
+   },
+   "RootY": {
+    "apose": 10.0,
+    "tpose": 10.0,
+    "left": 33.8,
+    "right": 37.21,
+    "back": 10.0
+   }
+  },
+  "overLimit": {
+   "apose": {},
+   "tpose": {},
+   "left": {
+    "BodyLean": 1.579,
+    "ShoulderL": 1.796,
+    "ShoulderR": 1.796,
+    "ElbowL": 3.399,
+    "ElbowR": 3.399,
+    "HipL": 1.563,
+    "HipR": 1.563,
+    "KneeL": 4.199,
+    "KneeR": 4.199,
+    "AnkleL": 3.763,
+    "AnkleR": 3.763
+   },
+   "right": {
+    "BodyLean": 1.579,
+    "ShoulderL": 1.796,
+    "ShoulderR": 1.796,
+    "ElbowL": 3.399,
+    "ElbowR": 3.399,
+    "HipL": 1.563,
+    "HipR": 1.563,
+    "KneeL": 4.199,
+    "KneeR": 4.199,
+    "AnkleL": 3.763,
+    "AnkleR": 3.763
+   },
+   "back": {}
+  },
+  "seamless": {
+   "apose": true,
+   "tpose": true,
+   "left": true,
+   "right": true,
+   "back": true
+  }
+ },
+ "anger": {
+  "kneeBackward": {
+   "apose": "none",
+   "tpose": "none",
+   "left": "none",
+   "right": "none",
+   "back": "none"
+  },
+  "elbowBackward": {
+   "apose": "none",
+   "tpose": "none",
+   "left": "none",
+   "right": "none",
+   "back": "none"
+  },
+  "maxAbs": {
+   "BodyLean": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.866,
+    "right": 0.866,
+    "back": 0.0
+   },
+   "ShoulderL": {
+    "apose": 0.36,
+    "tpose": 0.36,
+    "left": 0.16,
+    "right": 0.16,
+    "back": 0.36
+   },
+   "ShoulderR": {
+    "apose": 0.36,
+    "tpose": 0.36,
+    "left": 0.16,
+    "right": 0.16,
+    "back": 0.36
+   },
+   "ElbowL": {
+    "apose": 0.44,
+    "tpose": 0.44,
+    "left": 0.38,
+    "right": 0.38,
+    "back": 0.44
+   },
+   "ElbowR": {
+    "apose": 0.44,
+    "tpose": 0.44,
+    "left": 0.38,
+    "right": 0.38,
+    "back": 0.44
+   },
+   "HipL": {
+    "apose": 0.084,
+    "tpose": 0.084,
+    "left": 0.084,
+    "right": 0.084,
+    "back": 0.084
+   },
+   "HipR": {
+    "apose": 0.084,
+    "tpose": 0.084,
+    "left": 0.084,
+    "right": 0.084,
+    "back": 0.084
+   },
+   "KneeL": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.0,
+    "right": 0.0,
+    "back": 0.0
+   },
+   "KneeR": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.0,
+    "right": 0.0,
+    "back": 0.0
+   },
+   "AnkleL": {
+    "apose": 0.084,
+    "tpose": 0.084,
+    "left": 0.084,
+    "right": 0.084,
+    "back": 0.084
+   },
+   "AnkleR": {
+    "apose": 0.084,
+    "tpose": 0.084,
+    "left": 0.084,
+    "right": 0.084,
+    "back": 0.084
+   },
+   "ToeL": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.0,
+    "right": 0.0,
+    "back": 0.0
+   },
+   "ToeR": {
+    "apose": 0.0,
+    "tpose": 0.0,
+    "left": 0.0,
+    "right": 0.0,
+    "back": 0.0
+   },
+   "RootY": {
+    "apose": 1.44,
+    "tpose": 0.49,
+    "left": 1.13,
+    "right": 0.19,
+    "back": 1.05
+   }
+  },
+  "overLimit": {
+   "apose": {},
+   "tpose": {},
+   "left": {},
+   "right": {},
+   "back": {}
+  },
+  "startsAtRest": {
+   "apose": true,
+   "tpose": true,
+   "left": true,
+   "right": true,
+   "back": true
+  }
+ }
+}

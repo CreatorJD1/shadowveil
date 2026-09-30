@@ -1,0 +1,3631 @@
+{
+ "idle_breathe_apose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 6.7,
+   "headAngleRange": [
+    -0.964,
+    0.282
+   ],
+   "trackerVsRigHeadPx": 1.41,
+   "minHeadCC": 0.99205,
+   "minMouthCC": 0.91242,
+   "driftFaceMax": 0.38,
+   "driftFaceMaxFrame": 143,
+   "driftNoseMax": 0.288,
+   "driftNoseMaxFrame": 143,
+   "driftFaceP95": 0.283,
+   "bluePx": 0,
+   "blueMaxExcess": -16.0,
+   "sharpHeadAxis": 0.9921,
+   "sharpHeadRot": 0.9128,
+   "sharpLipAxis": 0.9953,
+   "sharpLipRot": 0.9615,
+   "sharpLipRotMin": 0.927,
+   "sharpLipRotMinFrame": 180,
+   "sharpLipRotP5": 0.9318,
+   "driftFaceMaxConfident": 0.38,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.488,
+     "a": 0.969,
+     "tVideoCross": 2.7008,
+     "tAnimCross": 2.7008
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.657,
+     "a": 0.244,
+     "tVideoCross": 4.7793,
+     "tAnimCross": 4.7793
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.081,
+    0.026
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 7.7,
+   "headAngleRange": [
+    -0.957,
+    0.284
+   ],
+   "trackerVsRigHeadPx": 0.42,
+   "minHeadCC": 0.9925,
+   "minMouthCC": 0.92999,
+   "driftFaceMax": 0.393,
+   "driftFaceMaxFrame": 19,
+   "driftNoseMax": 0.191,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.3,
+   "bluePx": 0,
+   "blueMaxExcess": -15.0,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.9067,
+   "sharpLipAxis": 1.0001,
+   "sharpLipRot": 0.9566,
+   "sharpLipRotMin": 0.9197,
+   "sharpLipRotMinFrame": 179,
+   "sharpLipRotP5": 0.923,
+   "driftFaceMaxConfident": 0.393,
+   "driftFaceMaxConfidentFrame": 19,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": -0.028,
+     "a": 0.534,
+     "tVideoCross": 2.698,
+     "tAnimCross": 2.698
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.701,
+     "a": 0.237,
+     "tVideoCross": 4.7811,
+     "tAnimCross": 4.7811
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.083,
+    0.027
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    0,
+    1,
+    2,
+    3,
+    42,
+    104,
+    105,
+    106,
+    119,
+    120,
+    121,
+    239
+   ],
+   "axisRuns": [
+    [
+     0,
+     3
+    ],
+    [
+     42,
+     42
+    ],
+    [
+     104,
+     106
+    ],
+    [
+     119,
+     121
+    ],
+    [
+     239,
+     239
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "idle_weight_shift_apose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 26.53,
+   "headAngleRange": [
+    -3.718,
+    1.763
+   ],
+   "trackerVsRigHeadPx": 1.35,
+   "minHeadCC": 0.99362,
+   "minMouthCC": 0.92733,
+   "driftFaceMax": 0.333,
+   "driftFaceMaxFrame": 120,
+   "driftNoseMax": 0.214,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.198,
+   "bluePx": 0,
+   "blueMaxExcess": -19.0,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.9052,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.9404,
+   "sharpLipRotMin": 0.913,
+   "sharpLipRotMinFrame": 168,
+   "sharpLipRotP5": 0.9179,
+   "driftFaceMaxConfident": 0.333,
+   "driftFaceMaxConfidentFrame": 120,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.007,
+     "a": 0.552,
+     "tVideoCross": 2.6968,
+     "tAnimCross": 2.6968
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.719,
+     "a": 0.204,
+     "tVideoCross": 4.7808,
+     "tAnimCross": 4.7808
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.088,
+    0.018
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 27.52,
+   "headAngleRange": [
+    -3.738,
+    1.788
+   ],
+   "trackerVsRigHeadPx": 0.36,
+   "minHeadCC": 0.99327,
+   "minMouthCC": 0.92995,
+   "driftFaceMax": 0.312,
+   "driftFaceMaxFrame": 0,
+   "driftNoseMax": 0.184,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.214,
+   "bluePx": 0,
+   "blueMaxExcess": -15.0,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.8984,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.933,
+   "sharpLipRotMin": 0.9118,
+   "sharpLipRotMinFrame": 196,
+   "sharpLipRotP5": 0.9139,
+   "driftFaceMaxConfident": 0.312,
+   "driftFaceMaxConfidentFrame": 0,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.007,
+     "a": 0.556,
+     "tVideoCross": 2.6966,
+     "tAnimCross": 2.6966
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.741,
+     "a": 0.242,
+     "tVideoCross": 4.7828,
+     "tAnimCross": 4.7828
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.094,
+    0.02
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [],
+   "axisRuns": [],
+   "sharpToggles": 0
+  }
+ },
+ "idle_arm_settle_apose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 5.53,
+   "headAngleRange": [
+    -0.535,
+    0.567
+   ],
+   "trackerVsRigHeadPx": 1.32,
+   "minHeadCC": 0.99289,
+   "minMouthCC": 0.92741,
+   "driftFaceMax": 0.395,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.361,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.24,
+   "bluePx": 0,
+   "blueMaxExcess": -18.0,
+   "sharpHeadAxis": 0.9907,
+   "sharpHeadRot": 0.9089,
+   "sharpLipAxis": 0.9883,
+   "sharpLipRot": 0.967,
+   "sharpLipRotMin": 0.9416,
+   "sharpLipRotMinFrame": 8,
+   "sharpLipRotP5": 0.9439,
+   "driftFaceMaxConfident": 0.344,
+   "driftFaceMaxConfidentFrame": 94,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.493,
+     "a": 0.999,
+     "tVideoCross": 2.7004,
+     "tAnimCross": 2.7004
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.791,
+     "a": 0.175,
+     "tVideoCross": 4.7824,
+     "tAnimCross": 4.7824
+    }
+   ],
+   "fadeFrames": [
+    81
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.051,
+    0.026
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 4.55,
+   "headAngleRange": [
+    -0.545,
+    0.563
+   ],
+   "trackerVsRigHeadPx": 0.34,
+   "minHeadCC": 0.99345,
+   "minMouthCC": 0.92945,
+   "driftFaceMax": 0.371,
+   "driftFaceMaxFrame": 93,
+   "driftNoseMax": 0.178,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.238,
+   "bluePx": 0,
+   "blueMaxExcess": -15.0,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.9022,
+   "sharpLipAxis": 1.0,
+   "sharpLipRot": 0.962,
+   "sharpLipRotMin": 0.9367,
+   "sharpLipRotMinFrame": 22,
+   "sharpLipRotP5": 0.9428,
+   "driftFaceMaxConfident": 0.371,
+   "driftFaceMaxConfidentFrame": 93,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": -0.028,
+     "a": 0.566,
+     "tVideoCross": 2.6963,
+     "tAnimCross": 2.6963
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.782,
+     "a": 0.231,
+     "tVideoCross": 4.7837,
+     "tAnimCross": 4.7837
+    }
+   ],
+   "fadeFrames": [
+    81
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.069,
+    0.029
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    49,
+    70,
+    142,
+    163,
+    164,
+    165,
+    166,
+    167
+   ],
+   "axisRuns": [
+    [
+     49,
+     49
+    ],
+    [
+     70,
+     70
+    ],
+    [
+     142,
+     142
+    ],
+    [
+     163,
+     167
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "auto_apose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 2.29,
+   "headAngleRange": [
+    -0.295,
+    0.281
+   ],
+   "trackerVsRigHeadPx": 1.2,
+   "minHeadCC": 0.99714,
+   "minMouthCC": 0.79352,
+   "driftFaceMax": 0.655,
+   "driftFaceMaxFrame": 43,
+   "driftNoseMax": 0.751,
+   "driftNoseMaxFrame": 43,
+   "driftFaceP95": 0.313,
+   "bluePx": 0,
+   "blueMaxExcess": -16.0,
+   "sharpHeadAxis": 0.9983,
+   "sharpHeadRot": 0.9317,
+   "sharpLipAxis": 0.9872,
+   "sharpLipRot": 0.9674,
+   "sharpLipRotMin": 0.9534,
+   "sharpLipRotMinFrame": 65,
+   "sharpLipRotP5": 0.8713,
+   "driftFaceMaxConfident": 0.505,
+   "driftFaceMaxConfidentFrame": 96,
+   "lowConfidenceMouthFrames": 22,
+   "rawLabelChanges": 48,
+   "singleFrameLabels": 0,
+   "heldSwitches": 48,
+   "holdsFrames": [
+    36,
+    2,
+    3,
+    3,
+    2,
+    4,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    3,
+    3,
+    2,
+    3,
+    3,
+    4,
+    3,
+    3,
+    24,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    33,
+    4,
+    2,
+    3,
+    2,
+    3,
+    4,
+    3,
+    5,
+    3,
+    3,
+    2,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2,
+    21
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 1.29,
+   "headAngleRange": [
+    -0.317,
+    0.289
+   ],
+   "trackerVsRigHeadPx": 0.21,
+   "minHeadCC": 0.99758,
+   "minMouthCC": 0.7468,
+   "driftFaceMax": 0.502,
+   "driftFaceMaxFrame": 96,
+   "driftNoseMax": 0.358,
+   "driftNoseMaxFrame": 40,
+   "driftFaceP95": 0.3,
+   "bluePx": 0,
+   "blueMaxExcess": -15.0,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.9209,
+   "sharpLipAxis": 0.9972,
+   "sharpLipRot": 0.9575,
+   "sharpLipRotMin": 0.9547,
+   "sharpLipRotMinFrame": 102,
+   "sharpLipRotP5": 0.861,
+   "driftFaceMaxConfident": 0.502,
+   "driftFaceMaxConfidentFrame": 96,
+   "lowConfidenceMouthFrames": 17,
+   "rawLabelChanges": 48,
+   "singleFrameLabels": 0,
+   "heldSwitches": 48,
+   "holdsFrames": [
+    36,
+    2,
+    3,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    3,
+    3,
+    4,
+    3,
+    3,
+    24,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    33,
+    4,
+    2,
+    3,
+    2,
+    3,
+    4,
+    3,
+    5,
+    3,
+    3,
+    2,
+    3,
+    3,
+    2,
+    2,
+    3,
+    2,
+    21
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     35,
+     "rest",
+     "AA_half"
+    ],
+    [
+     37,
+     "AA_half",
+     "AA"
+    ],
+    [
+     40,
+     "AA",
+     "rest"
+    ],
+    [
+     42,
+     "rest",
+     "EE"
+    ],
+    [
+     45,
+     "EE",
+     "smile"
+    ],
+    [
+     48,
+     "smile",
+     "AA_half"
+    ],
+    [
+     51,
+     "AA_half",
+     "rest"
+    ],
+    [
+     54,
+     "rest",
+     "AA_half"
+    ],
+    [
+     57,
+     "AA_half",
+     "rest"
+    ],
+    [
+     60,
+     "rest",
+     "AA_half"
+    ],
+    [
+     63,
+     "AA_half",
+     "rest"
+    ],
+    [
+     66,
+     "rest",
+     "AA_half"
+    ],
+    [
+     68,
+     "AA_half",
+     "rest"
+    ],
+    [
+     71,
+     "rest",
+     "AA_half"
+    ],
+    [
+     73,
+     "AA_half",
+     "OH"
+    ],
+    [
+     76,
+     "OH",
+     "OH_half"
+    ],
+    [
+     78,
+     "OH_half",
+     "M"
+    ],
+    [
+     81,
+     "M",
+     "OH_half"
+    ],
+    [
+     84,
+     "OH_half",
+     "M"
+    ],
+    [
+     87,
+     "M",
+     "OH_half"
+    ],
+    [
+     91,
+     "OH_half",
+     "rest"
+    ],
+    [
+     94,
+     "rest",
+     "AA_half"
+    ],
+    [
+     97,
+     "AA_half",
+     "rest"
+    ],
+    [
+     121,
+     "rest",
+     "EE_half"
+    ],
+    [
+     123,
+     "EE_half",
+     "smile"
+    ],
+    [
+     126,
+     "smile",
+     "EE_half"
+    ],
+    [
+     128,
+     "EE_half",
+     "smile"
+    ],
+    [
+     131,
+     "smile",
+     "AA_half"
+    ],
+    [
+     133,
+     "AA_half",
+     "AA"
+    ],
+    [
+     136,
+     "AA",
+     "rest"
+    ],
+    [
+     169,
+     "rest",
+     "EE_half"
+    ],
+    [
+     173,
+     "EE_half",
+     "smile"
+    ],
+    [
+     175,
+     "smile",
+     "EE_half"
+    ],
+    [
+     178,
+     "EE_half",
+     "AA_half"
+    ],
+    [
+     180,
+     "AA_half",
+     "rest"
+    ],
+    [
+     183,
+     "rest",
+     "OH_half"
+    ],
+    [
+     187,
+     "OH_half",
+     "M"
+    ],
+    [
+     190,
+     "M",
+     "OH_half"
+    ],
+    [
+     195,
+     "OH_half",
+     "rest"
+    ],
+    [
+     198,
+     "rest",
+     "M"
+    ],
+    [
+     201,
+     "M",
+     "OH"
+    ],
+    [
+     203,
+     "OH",
+     "OH_half"
+    ],
+    [
+     206,
+     "OH_half",
+     "AA"
+    ],
+    [
+     208,
+     "AA",
+     "rest"
+    ],
+    [
+     211,
+     "rest",
+     "EE_half"
+    ],
+    [
+     213,
+     "EE_half",
+     "smile"
+    ],
+    [
+     216,
+     "smile",
+     "AA_half"
+    ],
+    [
+     218,
+     "AA_half",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 48,
+   "holdLogLen": 47,
+   "minHoldMs": 83.3,
+   "axisAlignedFrames": [
+    0,
+    67,
+    68,
+    69,
+    136,
+    137,
+    138,
+    224,
+    225,
+    226,
+    227,
+    228
+   ],
+   "axisRuns": [
+    [
+     0,
+     0
+    ],
+    [
+     67,
+     69
+    ],
+    [
+     136,
+     138
+    ],
+    [
+     224,
+     228
+    ]
+   ],
+   "sharpToggles": 7
+  }
+ },
+ "idle_breathe_tpose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 7.66,
+   "headAngleRange": [
+    -0.921,
+    0.256
+   ],
+   "trackerVsRigHeadPx": 1.1,
+   "minHeadCC": 0.99694,
+   "minMouthCC": 0.90916,
+   "driftFaceMax": 0.616,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.6,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.146,
+   "bluePx": 0,
+   "blueMaxExcess": -8.0,
+   "sharpHeadAxis": 0.9865,
+   "sharpHeadRot": 0.9141,
+   "sharpLipAxis": 1.0018,
+   "sharpLipRot": 0.9666,
+   "sharpLipRotMin": 0.929,
+   "sharpLipRotMinFrame": 146,
+   "sharpLipRotP5": 0.9334,
+   "driftFaceMaxConfident": 0.349,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.483,
+     "a": 0.979,
+     "tVideoCross": 2.7012,
+     "tAnimCross": 2.7012
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.662,
+     "a": 0.259,
+     "tVideoCross": 4.7801,
+     "tAnimCross": 4.7801
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.057,
+    0.03
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 7.57,
+   "headAngleRange": [
+    -0.879,
+    0.279
+   ],
+   "trackerVsRigHeadPx": 0.2,
+   "minHeadCC": 0.99775,
+   "minMouthCC": 0.91826,
+   "driftFaceMax": 0.428,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.448,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.131,
+   "bluePx": 0,
+   "blueMaxExcess": -2.4,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.91,
+   "sharpLipAxis": 1.0002,
+   "sharpLipRot": 0.9596,
+   "sharpLipRotMin": 0.9226,
+   "sharpLipRotMinFrame": 171,
+   "sharpLipRotP5": 0.9281,
+   "driftFaceMaxConfident": 0.231,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": -0.023,
+     "a": 0.542,
+     "tVideoCross": 2.6975,
+     "tAnimCross": 2.6975
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.714,
+     "a": 0.254,
+     "tVideoCross": 4.7822,
+     "tAnimCross": 4.7822
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.063,
+    0.028
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    0,
+    1,
+    2,
+    3,
+    42,
+    104,
+    105,
+    106,
+    119,
+    120,
+    121,
+    239
+   ],
+   "axisRuns": [
+    [
+     0,
+     3
+    ],
+    [
+     42,
+     42
+    ],
+    [
+     104,
+     106
+    ],
+    [
+     119,
+     121
+    ],
+    [
+     239,
+     239
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "idle_weight_shift_tpose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 27.14,
+   "headAngleRange": [
+    -3.711,
+    1.686
+   ],
+   "trackerVsRigHeadPx": 1.15,
+   "minHeadCC": 0.99671,
+   "minMouthCC": 0.88559,
+   "driftFaceMax": 0.489,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.499,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.175,
+   "bluePx": 0,
+   "blueMaxExcess": -5.0,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.9123,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.9432,
+   "sharpLipRotMin": 0.9128,
+   "sharpLipRotMinFrame": 171,
+   "sharpLipRotP5": 0.9205,
+   "driftFaceMaxConfident": 0.331,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.493,
+     "a": 0.981,
+     "tVideoCross": 2.7004,
+     "tAnimCross": 2.7004
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.684,
+     "a": 0.231,
+     "tVideoCross": 4.7802,
+     "tAnimCross": 4.7802
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.076,
+    0.017
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 27.18,
+   "headAngleRange": [
+    -3.695,
+    1.687
+   ],
+   "trackerVsRigHeadPx": 0.19,
+   "minHeadCC": 0.99769,
+   "minMouthCC": 0.91886,
+   "driftFaceMax": 0.44,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.468,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.167,
+   "bluePx": 0,
+   "blueMaxExcess": -1.5,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.9045,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.9356,
+   "sharpLipRotMin": 0.9089,
+   "sharpLipRotMinFrame": 194,
+   "sharpLipRotP5": 0.9159,
+   "driftFaceMaxConfident": 0.331,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.003,
+     "a": 0.546,
+     "tVideoCross": 2.6972,
+     "tAnimCross": 2.6972
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.737,
+     "a": 0.229,
+     "tVideoCross": 4.7822,
+     "tAnimCross": 4.7822
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.079,
+    0.019
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [],
+   "axisRuns": [],
+   "sharpToggles": 0
+  }
+ },
+ "idle_arm_settle_tpose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 4.51,
+   "headAngleRange": [
+    -0.441,
+    0.717
+   ],
+   "trackerVsRigHeadPx": 1.11,
+   "minHeadCC": 0.99765,
+   "minMouthCC": 0.9083,
+   "driftFaceMax": 0.58,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.584,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.111,
+   "bluePx": 0,
+   "blueMaxExcess": -2.0,
+   "sharpHeadAxis": 0.9853,
+   "sharpHeadRot": 0.908,
+   "sharpLipAxis": 0.9954,
+   "sharpLipRot": 0.9722,
+   "sharpLipRotMin": 0.9431,
+   "sharpLipRotMinFrame": 24,
+   "sharpLipRotP5": 0.9467,
+   "driftFaceMaxConfident": 0.287,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.492,
+     "a": 1.001,
+     "tVideoCross": 2.7005,
+     "tAnimCross": 2.7005
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.707,
+     "a": 0.226,
+     "tVideoCross": 4.781,
+     "tAnimCross": 4.781
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.044,
+    0.027
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 4.39,
+   "headAngleRange": [
+    -0.457,
+    0.684
+   ],
+   "trackerVsRigHeadPx": 0.16,
+   "minHeadCC": 0.99859,
+   "minMouthCC": 0.91793,
+   "driftFaceMax": 0.462,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.463,
+   "driftNoseMaxFrame": 81,
+   "driftFaceP95": 0.133,
+   "bluePx": 0,
+   "blueMaxExcess": -3.4,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.9028,
+   "sharpLipAxis": 1.0,
+   "sharpLipRot": 0.9633,
+   "sharpLipRotMin": 0.9377,
+   "sharpLipRotMinFrame": 21,
+   "sharpLipRotP5": 0.9439,
+   "driftFaceMaxConfident": 0.234,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": -0.033,
+     "a": 0.557,
+     "tVideoCross": 2.6968,
+     "tAnimCross": 2.6968
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.769,
+     "a": 0.227,
+     "tVideoCross": 4.7832,
+     "tAnimCross": 4.7832
+    }
+   ],
+   "fadeFrames": [
+    81
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.062,
+    0.025
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    49,
+    70,
+    142,
+    163,
+    164,
+    165,
+    166,
+    167
+   ],
+   "axisRuns": [
+    [
+     49,
+     49
+    ],
+    [
+     70,
+     70
+    ],
+    [
+     142,
+     142
+    ],
+    [
+     163,
+     167
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "auto_tpose": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 1.78,
+   "headAngleRange": [
+    -0.21,
+    0.268
+   ],
+   "trackerVsRigHeadPx": 1.06,
+   "minHeadCC": 0.99881,
+   "minMouthCC": 0.78473,
+   "driftFaceMax": 0.664,
+   "driftFaceMaxFrame": 181,
+   "driftNoseMax": 0.69,
+   "driftNoseMaxFrame": 181,
+   "driftFaceP95": 0.356,
+   "bluePx": 0,
+   "blueMaxExcess": -8.0,
+   "sharpHeadAxis": 0.9934,
+   "sharpHeadRot": 0.9264,
+   "sharpLipAxis": 0.9756,
+   "sharpLipRot": 0.9715,
+   "sharpLipRotMin": 0.9512,
+   "sharpLipRotMinFrame": 210,
+   "sharpLipRotP5": 0.8594,
+   "driftFaceMaxConfident": 0.571,
+   "driftFaceMaxConfidentFrame": 219,
+   "lowConfidenceMouthFrames": 20,
+   "rawLabelChanges": 49,
+   "singleFrameLabels": 1,
+   "heldSwitches": 48,
+   "holdsFrames": [
+    36,
+    2,
+    3,
+    2,
+    1,
+    2,
+    4,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    3,
+    3,
+    2,
+    3,
+    3,
+    4,
+    3,
+    3,
+    24,
+    2,
+    3,
+    3,
+    2,
+    2,
+    3,
+    33,
+    4,
+    2,
+    3,
+    3,
+    2,
+    4,
+    3,
+    6,
+    2,
+    3,
+    3,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    21
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 1.46,
+   "headAngleRange": [
+    -0.234,
+    0.268
+   ],
+   "trackerVsRigHeadPx": 0.11,
+   "minHeadCC": 0.99937,
+   "minMouthCC": 0.82188,
+   "driftFaceMax": 0.539,
+   "driftFaceMaxFrame": 61,
+   "driftNoseMax": 0.528,
+   "driftNoseMaxFrame": 61,
+   "driftFaceP95": 0.292,
+   "bluePx": 0,
+   "blueMaxExcess": -4.7,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.9185,
+   "sharpLipAxis": 0.9752,
+   "sharpLipRot": 0.9579,
+   "sharpLipRotMin": 0.9586,
+   "sharpLipRotMinFrame": 33,
+   "sharpLipRotP5": 0.8485,
+   "driftFaceMaxConfident": 0.516,
+   "driftFaceMaxConfidentFrame": 181,
+   "lowConfidenceMouthFrames": 15,
+   "rawLabelChanges": 48,
+   "singleFrameLabels": 0,
+   "heldSwitches": 48,
+   "holdsFrames": [
+    36,
+    2,
+    3,
+    2,
+    3,
+    4,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    3,
+    3,
+    4,
+    3,
+    3,
+    24,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    33,
+    4,
+    2,
+    3,
+    2,
+    3,
+    4,
+    3,
+    5,
+    3,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    21
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     35,
+     "rest",
+     "AA_half"
+    ],
+    [
+     37,
+     "AA_half",
+     "AA"
+    ],
+    [
+     40,
+     "AA",
+     "rest"
+    ],
+    [
+     42,
+     "rest",
+     "EE"
+    ],
+    [
+     45,
+     "EE",
+     "smile"
+    ],
+    [
+     48,
+     "smile",
+     "AA_half"
+    ],
+    [
+     51,
+     "AA_half",
+     "rest"
+    ],
+    [
+     54,
+     "rest",
+     "AA_half"
+    ],
+    [
+     57,
+     "AA_half",
+     "rest"
+    ],
+    [
+     60,
+     "rest",
+     "AA_half"
+    ],
+    [
+     63,
+     "AA_half",
+     "rest"
+    ],
+    [
+     66,
+     "rest",
+     "AA_half"
+    ],
+    [
+     68,
+     "AA_half",
+     "rest"
+    ],
+    [
+     71,
+     "rest",
+     "AA_half"
+    ],
+    [
+     73,
+     "AA_half",
+     "OH"
+    ],
+    [
+     76,
+     "OH",
+     "OH_half"
+    ],
+    [
+     78,
+     "OH_half",
+     "M"
+    ],
+    [
+     81,
+     "M",
+     "OH_half"
+    ],
+    [
+     84,
+     "OH_half",
+     "M"
+    ],
+    [
+     87,
+     "M",
+     "OH_half"
+    ],
+    [
+     91,
+     "OH_half",
+     "rest"
+    ],
+    [
+     94,
+     "rest",
+     "AA_half"
+    ],
+    [
+     97,
+     "AA_half",
+     "rest"
+    ],
+    [
+     121,
+     "rest",
+     "EE_half"
+    ],
+    [
+     123,
+     "EE_half",
+     "smile"
+    ],
+    [
+     126,
+     "smile",
+     "EE_half"
+    ],
+    [
+     128,
+     "EE_half",
+     "smile"
+    ],
+    [
+     131,
+     "smile",
+     "AA_half"
+    ],
+    [
+     133,
+     "AA_half",
+     "AA"
+    ],
+    [
+     136,
+     "AA",
+     "rest"
+    ],
+    [
+     169,
+     "rest",
+     "EE_half"
+    ],
+    [
+     173,
+     "EE_half",
+     "smile"
+    ],
+    [
+     175,
+     "smile",
+     "EE_half"
+    ],
+    [
+     178,
+     "EE_half",
+     "AA_half"
+    ],
+    [
+     180,
+     "AA_half",
+     "rest"
+    ],
+    [
+     183,
+     "rest",
+     "OH_half"
+    ],
+    [
+     187,
+     "OH_half",
+     "M"
+    ],
+    [
+     190,
+     "M",
+     "OH_half"
+    ],
+    [
+     195,
+     "OH_half",
+     "rest"
+    ],
+    [
+     198,
+     "rest",
+     "M"
+    ],
+    [
+     201,
+     "M",
+     "OH"
+    ],
+    [
+     203,
+     "OH",
+     "OH_half"
+    ],
+    [
+     206,
+     "OH_half",
+     "AA"
+    ],
+    [
+     208,
+     "AA",
+     "rest"
+    ],
+    [
+     211,
+     "rest",
+     "EE_half"
+    ],
+    [
+     213,
+     "EE_half",
+     "smile"
+    ],
+    [
+     216,
+     "smile",
+     "AA_half"
+    ],
+    [
+     218,
+     "AA_half",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 48,
+   "holdLogLen": 47,
+   "minHoldMs": 83.3,
+   "axisAlignedFrames": [
+    0,
+    67,
+    68,
+    69,
+    136,
+    137,
+    138,
+    224,
+    225,
+    226,
+    227,
+    228
+   ],
+   "axisRuns": [
+    [
+     0,
+     0
+    ],
+    [
+     67,
+     69
+    ],
+    [
+     136,
+     138
+    ],
+    [
+     224,
+     228
+    ]
+   ],
+   "sharpToggles": 7
+  }
+ },
+ "idle_breathe_left": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 8.51,
+   "headAngleRange": [
+    -1.059,
+    0.216
+   ],
+   "trackerVsRigHeadPx": 0.15,
+   "minHeadCC": 0.9981,
+   "minMouthCC": 0.93154,
+   "driftFaceMax": 0.469,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.459,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.168,
+   "bluePx": 0,
+   "blueMaxExcess": 11.0,
+   "sharpHeadAxis": 0.9881,
+   "sharpHeadRot": 0.8849,
+   "sharpLipAxis": 1.0073,
+   "sharpLipRot": 0.9177,
+   "sharpLipRotMin": 0.8636,
+   "sharpLipRotMinFrame": 213,
+   "sharpLipRotP5": 0.8711,
+   "driftFaceMaxConfident": 0.246,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 2,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.45,
+     "a": 0.923,
+     "tVideoCross": 2.7035,
+     "tAnimCross": 2.7035
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.682,
+     "a": 0.488,
+     "tVideoCross": 4.7979,
+     "tAnimCross": 4.7979
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143,
+    144
+   ],
+   "otherShapeBest": [
+    "M"
+   ],
+   "aNormRange_heldRest": [
+    -0.263,
+    0.051
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 8.51,
+   "headAngleRange": [
+    -1.04,
+    0.232
+   ],
+   "trackerVsRigHeadPx": 0.16,
+   "minHeadCC": 0.99866,
+   "minMouthCC": 0.93283,
+   "driftFaceMax": 0.492,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.461,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.157,
+   "bluePx": 0,
+   "blueMaxExcess": 53.9,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.8806,
+   "sharpLipAxis": 0.9999,
+   "sharpLipRot": 0.9039,
+   "sharpLipRotMin": 0.8471,
+   "sharpLipRotMinFrame": 212,
+   "sharpLipRotP5": 0.8546,
+   "driftFaceMaxConfident": 0.301,
+   "driftFaceMaxConfidentFrame": 81,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.491,
+     "a": 0.937,
+     "tVideoCross": 2.7007,
+     "tAnimCross": 2.7007
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.752,
+     "a": 0.48,
+     "tVideoCross": 4.7975,
+     "tAnimCross": 4.7975
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [
+    "M"
+   ],
+   "aNormRange_heldRest": [
+    -0.262,
+    0.051
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    0,
+    1,
+    2,
+    3,
+    42,
+    104,
+    105,
+    106,
+    119,
+    120,
+    121,
+    239
+   ],
+   "axisRuns": [
+    [
+     0,
+     3
+    ],
+    [
+     42,
+     42
+    ],
+    [
+     104,
+     106
+    ],
+    [
+     119,
+     121
+    ],
+    [
+     239,
+     239
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "idle_weight_shift_left": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 9.09,
+   "headAngleRange": [
+    0.196,
+    1.185
+   ],
+   "trackerVsRigHeadPx": 0.14,
+   "minHeadCC": 0.9973,
+   "minMouthCC": 0.93085,
+   "driftFaceMax": 0.456,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.506,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.166,
+   "bluePx": 0,
+   "blueMaxExcess": 14.0,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.875,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.9109,
+   "sharpLipRotMin": 0.8569,
+   "sharpLipRotMinFrame": 194,
+   "sharpLipRotP5": 0.8684,
+   "driftFaceMaxConfident": 0.29,
+   "driftFaceMaxConfidentFrame": 143,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.05,
+     "a": 0.52,
+     "tVideoCross": 2.6986,
+     "tAnimCross": 2.6986
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.606,
+     "a": -0.013,
+     "tVideoCross": 4.8057,
+     "tAnimCross": 4.8057
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [
+    "M"
+   ],
+   "aNormRange_heldRest": [
+    -0.06,
+    0.118
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 9.1,
+   "headAngleRange": [
+    0.202,
+    1.189
+   ],
+   "trackerVsRigHeadPx": 0.14,
+   "minHeadCC": 0.99891,
+   "minMouthCC": 0.93088,
+   "driftFaceMax": 0.469,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.492,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.155,
+   "bluePx": 0,
+   "blueMaxExcess": 52.0,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.8726,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.8985,
+   "sharpLipRotMin": 0.8443,
+   "sharpLipRotMinFrame": 74,
+   "sharpLipRotP5": 0.8528,
+   "driftFaceMaxConfident": 0.35,
+   "driftFaceMaxConfidentFrame": 81,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.048,
+     "a": 0.578,
+     "tVideoCross": 2.6951,
+     "tAnimCross": 2.6951
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.586,
+     "a": -0.012,
+     "tVideoCross": 4.8048,
+     "tAnimCross": 4.8048
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [
+    "M"
+   ],
+   "aNormRange_heldRest": [
+    -0.068,
+    0.127
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [],
+   "axisRuns": [],
+   "sharpToggles": 0
+  }
+ },
+ "idle_arm_settle_left": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 4.91,
+   "headAngleRange": [
+    -0.431,
+    0.682
+   ],
+   "trackerVsRigHeadPx": 0.15,
+   "minHeadCC": 0.99739,
+   "minMouthCC": 0.92876,
+   "driftFaceMax": 0.388,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.431,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.228,
+   "bluePx": 0,
+   "blueMaxExcess": 18.0,
+   "sharpHeadAxis": 0.983,
+   "sharpHeadRot": 0.8845,
+   "sharpLipAxis": 1.0035,
+   "sharpLipRot": 0.9108,
+   "sharpLipRotMin": 0.8628,
+   "sharpLipRotMinFrame": 37,
+   "sharpLipRotP5": 0.8766,
+   "driftFaceMaxConfident": 0.377,
+   "driftFaceMaxConfidentFrame": 81,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.498,
+     "a": 0.993,
+     "tVideoCross": 2.7002,
+     "tAnimCross": 2.7002
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.592,
+     "a": -0.008,
+     "tVideoCross": 4.8051,
+     "tAnimCross": 4.8051
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [
+    "M"
+   ],
+   "aNormRange_heldRest": [
+    -0.213,
+    0.09
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 4.92,
+   "headAngleRange": [
+    -0.419,
+    0.678
+   ],
+   "trackerVsRigHeadPx": 0.16,
+   "minHeadCC": 0.99884,
+   "minMouthCC": 0.93085,
+   "driftFaceMax": 0.436,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.495,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.185,
+   "bluePx": 0,
+   "blueMaxExcess": 53.9,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.8787,
+   "sharpLipAxis": 1.0,
+   "sharpLipRot": 0.8938,
+   "sharpLipRotMin": 0.8454,
+   "sharpLipRotMinFrame": 37,
+   "sharpLipRotP5": 0.8555,
+   "driftFaceMaxConfident": 0.357,
+   "driftFaceMaxConfidentFrame": 123,
+   "lowConfidenceMouthFrames": 2,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": -0.006,
+     "a": 0.566,
+     "tVideoCross": 2.6961,
+     "tAnimCross": 2.6961
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.583,
+     "a": -0.036,
+     "tVideoCross": 4.8045,
+     "tAnimCross": 4.8045
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [
+    "M"
+   ],
+   "aNormRange_heldRest": [
+    -0.278,
+    0.087
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    49,
+    70,
+    142,
+    163,
+    164,
+    165,
+    166,
+    167
+   ],
+   "axisRuns": [
+    [
+     49,
+     49
+    ],
+    [
+     70,
+     70
+    ],
+    [
+     142,
+     142
+    ],
+    [
+     163,
+     167
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "auto_left": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 1.64,
+   "headAngleRange": [
+    -0.198,
+    0.244
+   ],
+   "trackerVsRigHeadPx": 0.1,
+   "minHeadCC": 0.99826,
+   "minMouthCC": 0.77557,
+   "driftFaceMax": 1.286,
+   "driftFaceMaxFrame": 74,
+   "driftNoseMax": 1.194,
+   "driftNoseMaxFrame": 74,
+   "driftFaceP95": 0.511,
+   "bluePx": 0,
+   "blueMaxExcess": 17.0,
+   "sharpHeadAxis": 0.9944,
+   "sharpHeadRot": 0.9042,
+   "sharpLipAxis": 0.9984,
+   "sharpLipRot": 0.9218,
+   "sharpLipRotMin": 0.8781,
+   "sharpLipRotMinFrame": 97,
+   "sharpLipRotP5": 0.8478,
+   "driftFaceMaxConfident": 0.539,
+   "driftFaceMaxConfidentFrame": 88,
+   "lowConfidenceMouthFrames": 28,
+   "rawLabelChanges": 50,
+   "singleFrameLabels": 4,
+   "heldSwitches": 46,
+   "holdsFrames": [
+    36,
+    2,
+    4,
+    1,
+    1,
+    1,
+    1,
+    4,
+    3,
+    2,
+    4,
+    2,
+    4,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    3,
+    5,
+    2,
+    4,
+    23,
+    2,
+    3,
+    2,
+    3,
+    2,
+    4,
+    32,
+    4,
+    3,
+    2,
+    3,
+    2,
+    5,
+    2,
+    6,
+    2,
+    3,
+    3,
+    2,
+    3,
+    2,
+    2,
+    3,
+    3,
+    20
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 1.65,
+   "headAngleRange": [
+    -0.205,
+    0.245
+   ],
+   "trackerVsRigHeadPx": 0.11,
+   "minHeadCC": 0.99894,
+   "minMouthCC": 0.77435,
+   "driftFaceMax": 1.075,
+   "driftFaceMaxFrame": 74,
+   "driftNoseMax": 1.014,
+   "driftNoseMaxFrame": 74,
+   "driftFaceP95": 0.501,
+   "bluePx": 0,
+   "blueMaxExcess": 53.9,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.8958,
+   "sharpLipAxis": 0.9865,
+   "sharpLipRot": 0.9004,
+   "sharpLipRotMin": 0.8592,
+   "sharpLipRotMinFrame": 97,
+   "sharpLipRotP5": 0.8259,
+   "driftFaceMaxConfident": 0.5,
+   "driftFaceMaxConfidentFrame": 76,
+   "lowConfidenceMouthFrames": 23,
+   "rawLabelChanges": 49,
+   "singleFrameLabels": 2,
+   "heldSwitches": 47,
+   "holdsFrames": [
+    36,
+    2,
+    4,
+    1,
+    1,
+    2,
+    3,
+    4,
+    2,
+    4,
+    2,
+    4,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    3,
+    5,
+    2,
+    4,
+    23,
+    2,
+    3,
+    2,
+    3,
+    2,
+    4,
+    32,
+    4,
+    3,
+    2,
+    3,
+    2,
+    5,
+    2,
+    6,
+    2,
+    3,
+    3,
+    2,
+    3,
+    2,
+    2,
+    3,
+    3,
+    20
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     35,
+     "rest",
+     "AA_half"
+    ],
+    [
+     37,
+     "AA_half",
+     "AA"
+    ],
+    [
+     40,
+     "AA",
+     "rest"
+    ],
+    [
+     42,
+     "rest",
+     "EE"
+    ],
+    [
+     45,
+     "EE",
+     "smile"
+    ],
+    [
+     48,
+     "smile",
+     "AA_half"
+    ],
+    [
+     51,
+     "AA_half",
+     "rest"
+    ],
+    [
+     54,
+     "rest",
+     "AA_half"
+    ],
+    [
+     57,
+     "AA_half",
+     "rest"
+    ],
+    [
+     60,
+     "rest",
+     "AA_half"
+    ],
+    [
+     63,
+     "AA_half",
+     "rest"
+    ],
+    [
+     66,
+     "rest",
+     "AA_half"
+    ],
+    [
+     68,
+     "AA_half",
+     "rest"
+    ],
+    [
+     71,
+     "rest",
+     "AA_half"
+    ],
+    [
+     73,
+     "AA_half",
+     "OH"
+    ],
+    [
+     76,
+     "OH",
+     "OH_half"
+    ],
+    [
+     78,
+     "OH_half",
+     "M"
+    ],
+    [
+     81,
+     "M",
+     "OH_half"
+    ],
+    [
+     84,
+     "OH_half",
+     "M"
+    ],
+    [
+     87,
+     "M",
+     "OH_half"
+    ],
+    [
+     91,
+     "OH_half",
+     "rest"
+    ],
+    [
+     94,
+     "rest",
+     "AA_half"
+    ],
+    [
+     97,
+     "AA_half",
+     "rest"
+    ],
+    [
+     121,
+     "rest",
+     "EE_half"
+    ],
+    [
+     123,
+     "EE_half",
+     "smile"
+    ],
+    [
+     126,
+     "smile",
+     "EE_half"
+    ],
+    [
+     128,
+     "EE_half",
+     "smile"
+    ],
+    [
+     131,
+     "smile",
+     "AA_half"
+    ],
+    [
+     133,
+     "AA_half",
+     "AA"
+    ],
+    [
+     136,
+     "AA",
+     "rest"
+    ],
+    [
+     169,
+     "rest",
+     "EE_half"
+    ],
+    [
+     173,
+     "EE_half",
+     "smile"
+    ],
+    [
+     175,
+     "smile",
+     "EE_half"
+    ],
+    [
+     178,
+     "EE_half",
+     "AA_half"
+    ],
+    [
+     180,
+     "AA_half",
+     "rest"
+    ],
+    [
+     183,
+     "rest",
+     "OH_half"
+    ],
+    [
+     187,
+     "OH_half",
+     "M"
+    ],
+    [
+     190,
+     "M",
+     "OH_half"
+    ],
+    [
+     195,
+     "OH_half",
+     "rest"
+    ],
+    [
+     198,
+     "rest",
+     "M"
+    ],
+    [
+     201,
+     "M",
+     "OH"
+    ],
+    [
+     203,
+     "OH",
+     "OH_half"
+    ],
+    [
+     206,
+     "OH_half",
+     "AA"
+    ],
+    [
+     208,
+     "AA",
+     "rest"
+    ],
+    [
+     211,
+     "rest",
+     "EE_half"
+    ],
+    [
+     213,
+     "EE_half",
+     "smile"
+    ],
+    [
+     216,
+     "smile",
+     "AA_half"
+    ],
+    [
+     218,
+     "AA_half",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 48,
+   "holdLogLen": 47,
+   "minHoldMs": 83.3,
+   "axisAlignedFrames": [
+    0,
+    67,
+    68,
+    69,
+    136,
+    137,
+    138,
+    224,
+    225,
+    226,
+    227,
+    228
+   ],
+   "axisRuns": [
+    [
+     0,
+     0
+    ],
+    [
+     67,
+     69
+    ],
+    [
+     136,
+     138
+    ],
+    [
+     224,
+     228
+    ]
+   ],
+   "sharpToggles": 7
+  }
+ },
+ "idle_breathe_right": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 8.36,
+   "headAngleRange": [
+    -1.084,
+    0.188
+   ],
+   "trackerVsRigHeadPx": 0.18,
+   "minHeadCC": 0.99761,
+   "minMouthCC": 0.91561,
+   "driftFaceMax": 0.608,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.56,
+   "driftNoseMaxFrame": 88,
+   "driftFaceP95": 0.424,
+   "bluePx": 0,
+   "blueMaxExcess": 11.0,
+   "sharpHeadAxis": 0.9826,
+   "sharpHeadRot": 0.8959,
+   "sharpLipAxis": 0.9995,
+   "sharpLipRot": 0.9199,
+   "sharpLipRotMin": 0.8737,
+   "sharpLipRotMinFrame": 219,
+   "sharpLipRotP5": 0.88,
+   "driftFaceMaxConfident": 0.534,
+   "driftFaceMaxConfidentFrame": 132,
+   "lowConfidenceMouthFrames": 2,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.489,
+     "a": 0.977,
+     "tVideoCross": 2.7007,
+     "tAnimCross": 2.7007
+    },
+    {
+     "frame": 144,
+     "dir": "smile->rest",
+     "a_prev": 0.72,
+     "a": 0.486,
+     "tVideoCross": 4.798,
+     "tAnimCross": 4.798
+    }
+   ],
+   "fadeFrames": [
+    81,
+    143,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.226,
+    0.046
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 8.37,
+   "headAngleRange": [
+    -1.072,
+    0.19
+   ],
+   "trackerVsRigHeadPx": 0.17,
+   "minHeadCC": 0.99853,
+   "minMouthCC": 0.9172,
+   "driftFaceMax": 0.563,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.574,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.464,
+   "bluePx": 0,
+   "blueMaxExcess": 40.6,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.8929,
+   "sharpLipAxis": 1.0001,
+   "sharpLipRot": 0.9081,
+   "sharpLipRotMin": 0.8585,
+   "sharpLipRotMinFrame": 69,
+   "sharpLipRotP5": 0.8627,
+   "driftFaceMaxConfident": 0.528,
+   "driftFaceMaxConfidentFrame": 136,
+   "lowConfidenceMouthFrames": 2,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.037,
+     "a": 0.522,
+     "tVideoCross": 2.6985,
+     "tAnimCross": 2.6985
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.506,
+     "a": 0.001,
+     "tVideoCross": 4.8004,
+     "tAnimCross": 4.8004
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.22,
+    0.05
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    0,
+    1,
+    2,
+    3,
+    42,
+    104,
+    105,
+    106,
+    119,
+    120,
+    121,
+    239
+   ],
+   "axisRuns": [
+    [
+     0,
+     3
+    ],
+    [
+     42,
+     42
+    ],
+    [
+     104,
+     106
+    ],
+    [
+     119,
+     121
+    ],
+    [
+     239,
+     239
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "idle_weight_shift_right": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 9.07,
+   "headAngleRange": [
+    -1.202,
+    -0.218
+   ],
+   "trackerVsRigHeadPx": 0.18,
+   "minHeadCC": 0.99745,
+   "minMouthCC": 0.91589,
+   "driftFaceMax": 0.641,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.644,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.491,
+   "bluePx": 0,
+   "blueMaxExcess": 10.0,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.8871,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.9112,
+   "sharpLipRotMin": 0.8667,
+   "sharpLipRotMinFrame": 195,
+   "sharpLipRotP5": 0.8791,
+   "driftFaceMaxConfident": 0.641,
+   "driftFaceMaxConfidentFrame": 81,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.474,
+     "a": 0.929,
+     "tVideoCross": 2.7019,
+     "tAnimCross": 2.7019
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.603,
+     "a": -0.019,
+     "tVideoCross": 4.8055,
+     "tAnimCross": 4.8055
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.108,
+    0.073
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 9.06,
+   "headAngleRange": [
+    -1.18,
+    -0.229
+   ],
+   "trackerVsRigHeadPx": 0.17,
+   "minHeadCC": 0.99871,
+   "minMouthCC": 0.91492,
+   "driftFaceMax": 0.543,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.646,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.492,
+   "bluePx": 0,
+   "blueMaxExcess": 38.8,
+   "sharpHeadAxis": null,
+   "sharpHeadRot": 0.883,
+   "sharpLipAxis": null,
+   "sharpLipRot": 0.9027,
+   "sharpLipRotMin": 0.8594,
+   "sharpLipRotMinFrame": 74,
+   "sharpLipRotP5": 0.863,
+   "driftFaceMaxConfident": 0.537,
+   "driftFaceMaxConfidentFrame": 141,
+   "lowConfidenceMouthFrames": 2,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.027,
+     "a": 0.563,
+     "tVideoCross": 2.6961,
+     "tAnimCross": 2.6961
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.587,
+     "a": -0.011,
+     "tVideoCross": 4.8049,
+     "tAnimCross": 4.8049
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.098,
+    0.079
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [],
+   "axisRuns": [],
+   "sharpToggles": 0
+  }
+ },
+ "idle_arm_settle_right": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 5.05,
+   "headAngleRange": [
+    -0.57,
+    0.574
+   ],
+   "trackerVsRigHeadPx": 0.18,
+   "minHeadCC": 0.99746,
+   "minMouthCC": 0.91736,
+   "driftFaceMax": 0.644,
+   "driftFaceMaxFrame": 81,
+   "driftNoseMax": 0.617,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.465,
+   "bluePx": 0,
+   "blueMaxExcess": 15.0,
+   "sharpHeadAxis": 0.9783,
+   "sharpHeadRot": 0.8989,
+   "sharpLipAxis": 1.0006,
+   "sharpLipRot": 0.9131,
+   "sharpLipRotMin": 0.8664,
+   "sharpLipRotMinFrame": 33,
+   "sharpLipRotP5": 0.8767,
+   "driftFaceMaxConfident": 0.644,
+   "driftFaceMaxConfidentFrame": 81,
+   "lowConfidenceMouthFrames": 1,
+   "switches": [
+    {
+     "frame": 82,
+     "dir": "rest->smile",
+     "a_prev": 0.46,
+     "a": 0.945,
+     "tVideoCross": 2.7027,
+     "tAnimCross": 2.7027
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.582,
+     "a": 0.02,
+     "tVideoCross": 4.8048,
+     "tAnimCross": 4.8048
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.176,
+    0.074
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 5.04,
+   "headAngleRange": [
+    -0.587,
+    0.565
+   ],
+   "trackerVsRigHeadPx": 0.18,
+   "minHeadCC": 0.99831,
+   "minMouthCC": 0.91641,
+   "driftFaceMax": 0.574,
+   "driftFaceMaxFrame": 144,
+   "driftNoseMax": 0.591,
+   "driftNoseMaxFrame": 144,
+   "driftFaceP95": 0.461,
+   "bluePx": 0,
+   "blueMaxExcess": 40.6,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.8945,
+   "sharpLipAxis": 1.0,
+   "sharpLipRot": 0.9018,
+   "sharpLipRotMin": 0.852,
+   "sharpLipRotMinFrame": 179,
+   "sharpLipRotP5": 0.8612,
+   "driftFaceMaxConfident": 0.561,
+   "driftFaceMaxConfidentFrame": 123,
+   "lowConfidenceMouthFrames": 2,
+   "switches": [
+    {
+     "frame": 81,
+     "dir": "rest->smile",
+     "a_prev": 0.024,
+     "a": 0.567,
+     "tVideoCross": 2.6959,
+     "tAnimCross": 2.6959
+    },
+    {
+     "frame": 145,
+     "dir": "smile->rest",
+     "a_prev": 0.573,
+     "a": -0.004,
+     "tVideoCross": 4.8042,
+     "tAnimCross": 4.8042
+    }
+   ],
+   "fadeFrames": [
+    81,
+    144
+   ],
+   "otherShapeBest": [],
+   "aNormRange_heldRest": [
+    -0.221,
+    0.08
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     80,
+     "rest",
+     "smile"
+    ],
+    [
+     143,
+     "smile",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 2,
+   "holdLogLen": 1,
+   "minHoldMs": 2083.3,
+   "axisAlignedFrames": [
+    49,
+    70,
+    142,
+    163,
+    164,
+    165,
+    166,
+    167
+   ],
+   "axisRuns": [
+    [
+     49,
+     49
+    ],
+    [
+     70,
+     70
+    ],
+    [
+     142,
+     142
+    ],
+    [
+     163,
+     167
+    ]
+   ],
+   "sharpToggles": 8
+  }
+ },
+ "auto_right": {
+  "mp4": {
+   "n": 240,
+   "headTravelMaxPx": 1.68,
+   "headAngleRange": [
+    -0.303,
+    0.148
+   ],
+   "trackerVsRigHeadPx": 0.18,
+   "minHeadCC": 0.99729,
+   "minMouthCC": 0.74609,
+   "driftFaceMax": 0.757,
+   "driftFaceMaxFrame": 211,
+   "driftNoseMax": 0.745,
+   "driftNoseMaxFrame": 169,
+   "driftFaceP95": 0.605,
+   "bluePx": 0,
+   "blueMaxExcess": 10.0,
+   "sharpHeadAxis": 0.9914,
+   "sharpHeadRot": 0.9144,
+   "sharpLipAxis": 0.9972,
+   "sharpLipRot": 0.9236,
+   "sharpLipRotMin": 0.8606,
+   "sharpLipRotMinFrame": 97,
+   "sharpLipRotP5": 0.8532,
+   "driftFaceMaxConfident": 0.757,
+   "driftFaceMaxConfidentFrame": 211,
+   "lowConfidenceMouthFrames": 27,
+   "rawLabelChanges": 50,
+   "singleFrameLabels": 4,
+   "heldSwitches": 46,
+   "holdsFrames": [
+    36,
+    2,
+    4,
+    1,
+    1,
+    1,
+    1,
+    4,
+    3,
+    2,
+    4,
+    3,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    3,
+    5,
+    2,
+    4,
+    23,
+    2,
+    3,
+    2,
+    3,
+    2,
+    4,
+    32,
+    4,
+    3,
+    2,
+    3,
+    2,
+    5,
+    2,
+    6,
+    2,
+    3,
+    3,
+    2,
+    3,
+    2,
+    2,
+    3,
+    3,
+    20
+   ]
+  },
+  "png": {
+   "n": 240,
+   "headTravelMaxPx": 1.68,
+   "headAngleRange": [
+    -0.309,
+    0.142
+   ],
+   "trackerVsRigHeadPx": 0.17,
+   "minHeadCC": 0.99874,
+   "minMouthCC": 0.76382,
+   "driftFaceMax": 0.75,
+   "driftFaceMaxFrame": 179,
+   "driftNoseMax": 0.705,
+   "driftNoseMaxFrame": 179,
+   "driftFaceP95": 0.565,
+   "bluePx": 0,
+   "blueMaxExcess": 40.6,
+   "sharpHeadAxis": 1.0,
+   "sharpHeadRot": 0.9067,
+   "sharpLipAxis": 0.9859,
+   "sharpLipRot": 0.9042,
+   "sharpLipRotMin": 0.8502,
+   "sharpLipRotMinFrame": 97,
+   "sharpLipRotP5": 0.8328,
+   "driftFaceMaxConfident": 0.75,
+   "driftFaceMaxConfidentFrame": 179,
+   "lowConfidenceMouthFrames": 21,
+   "rawLabelChanges": 50,
+   "singleFrameLabels": 4,
+   "heldSwitches": 46,
+   "holdsFrames": [
+    36,
+    2,
+    4,
+    1,
+    1,
+    1,
+    1,
+    3,
+    4,
+    2,
+    4,
+    2,
+    4,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    2,
+    3,
+    3,
+    5,
+    2,
+    4,
+    23,
+    2,
+    3,
+    2,
+    3,
+    2,
+    4,
+    32,
+    4,
+    3,
+    2,
+    3,
+    2,
+    5,
+    2,
+    6,
+    2,
+    3,
+    3,
+    2,
+    3,
+    2,
+    2,
+    3,
+    3,
+    20
+   ]
+  },
+  "rig": {
+   "switches": [
+    [
+     35,
+     "rest",
+     "AA_half"
+    ],
+    [
+     37,
+     "AA_half",
+     "AA"
+    ],
+    [
+     40,
+     "AA",
+     "rest"
+    ],
+    [
+     42,
+     "rest",
+     "EE"
+    ],
+    [
+     45,
+     "EE",
+     "smile"
+    ],
+    [
+     48,
+     "smile",
+     "AA_half"
+    ],
+    [
+     51,
+     "AA_half",
+     "rest"
+    ],
+    [
+     54,
+     "rest",
+     "AA_half"
+    ],
+    [
+     57,
+     "AA_half",
+     "rest"
+    ],
+    [
+     60,
+     "rest",
+     "AA_half"
+    ],
+    [
+     63,
+     "AA_half",
+     "rest"
+    ],
+    [
+     66,
+     "rest",
+     "AA_half"
+    ],
+    [
+     68,
+     "AA_half",
+     "rest"
+    ],
+    [
+     71,
+     "rest",
+     "AA_half"
+    ],
+    [
+     73,
+     "AA_half",
+     "OH"
+    ],
+    [
+     76,
+     "OH",
+     "OH_half"
+    ],
+    [
+     78,
+     "OH_half",
+     "M"
+    ],
+    [
+     81,
+     "M",
+     "OH_half"
+    ],
+    [
+     84,
+     "OH_half",
+     "M"
+    ],
+    [
+     87,
+     "M",
+     "OH_half"
+    ],
+    [
+     91,
+     "OH_half",
+     "rest"
+    ],
+    [
+     94,
+     "rest",
+     "AA_half"
+    ],
+    [
+     97,
+     "AA_half",
+     "rest"
+    ],
+    [
+     121,
+     "rest",
+     "EE_half"
+    ],
+    [
+     123,
+     "EE_half",
+     "smile"
+    ],
+    [
+     126,
+     "smile",
+     "EE_half"
+    ],
+    [
+     128,
+     "EE_half",
+     "smile"
+    ],
+    [
+     131,
+     "smile",
+     "AA_half"
+    ],
+    [
+     133,
+     "AA_half",
+     "AA"
+    ],
+    [
+     136,
+     "AA",
+     "rest"
+    ],
+    [
+     169,
+     "rest",
+     "EE_half"
+    ],
+    [
+     173,
+     "EE_half",
+     "smile"
+    ],
+    [
+     175,
+     "smile",
+     "EE_half"
+    ],
+    [
+     178,
+     "EE_half",
+     "AA_half"
+    ],
+    [
+     180,
+     "AA_half",
+     "rest"
+    ],
+    [
+     183,
+     "rest",
+     "OH_half"
+    ],
+    [
+     187,
+     "OH_half",
+     "M"
+    ],
+    [
+     190,
+     "M",
+     "OH_half"
+    ],
+    [
+     195,
+     "OH_half",
+     "rest"
+    ],
+    [
+     198,
+     "rest",
+     "M"
+    ],
+    [
+     201,
+     "M",
+     "OH"
+    ],
+    [
+     203,
+     "OH",
+     "OH_half"
+    ],
+    [
+     206,
+     "OH_half",
+     "AA"
+    ],
+    [
+     208,
+     "AA",
+     "rest"
+    ],
+    [
+     211,
+     "rest",
+     "EE_half"
+    ],
+    [
+     213,
+     "EE_half",
+     "smile"
+    ],
+    [
+     216,
+     "smile",
+     "AA_half"
+    ],
+    [
+     218,
+     "AA_half",
+     "rest"
+    ]
+   ],
+   "nSwitchFrames": 48,
+   "holdLogLen": 47,
+   "minHoldMs": 83.3,
+   "axisAlignedFrames": [
+    0,
+    67,
+    68,
+    69,
+    136,
+    137,
+    138,
+    224,
+    225,
+    226,
+    227,
+    228
+   ],
+   "axisRuns": [
+    [
+     0,
+     0
+    ],
+    [
+     67,
+     69
+    ],
+    [
+     136,
+     138
+    ],
+    [
+     224,
+     228
+    ]
+   ],
+   "sharpToggles": 7
+  }
+ }
+}

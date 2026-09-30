@@ -1,0 +1,147 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Shadowveil body rig preview</title>
+<style>
+body{margin:0;background:#1b1b1b;color:#ddd;font:13px sans-serif;display:flex;height:100vh}
+#side{width:300px;padding:10px;overflow:auto;box-sizing:border-box;border-right:1px solid #333}
+#side label{display:block;margin:4px 0}#side input[type=range]{width:170px;vertical-align:middle}
+.v{display:inline-block;width:46px;text-align:right;font-family:monospace}
+#stage{flex:1;display:flex;align-items:center;justify-content:center}
+canvas{height:calc(100vh - 20px);background:#0000FF}
+button{padding:3px 10px;margin:2px}#info{font-size:11px;color:#9a9;white-space:pre-wrap;margin-top:8px}
+</style></head><body>
+<div id="side">
+<b>Shadowveil — Base Body rig</b><br>
+<label>View <select id="view"><option>apose</option><option>tpose</option><option>left</option><option>right</option><option>back</option></select></label>
+<label>Background <select id="bg"><option value="#0000FF">chroma blue</option><option value="#ffffff">white</option><option value="#202020">dark</option></select></label>
+<label>Compare with base.png <select id="cmp"><option value="off">off (rig)</option><option value="base">base.png only</option><option value="flip">flip rig/base every 0.7s</option><option value="over">base.png 50% over rig</option></select></label>
+<label><input type="checkbox" id="others" checked> other owners' parts (hands, hair, eyes, mouth)</label>
+<label><input type="checkbox" id="auto"> auto (gentle idle)</label>
+<button id="reset">reset to rest</button>
+<div id="sliders"></div>
+<div id="info"></div>
+</div>
+<div id="stage"><canvas id="c" width="1365" height="1739"></canvas></div>
+<script>
+'use strict';
+// Character canvas: only drawImage + transforms (same whitelist as the runtime renderer).
+const ALLOWED=new Set(['drawImage','save','restore','setTransform','translate','rotate','scale','clearRect']);
+function guard(ctx){return new Proxy(ctx,{get(t,k){const v=t[k];if(typeof v==='function'){if(!ALLOWED.has(k))throw new Error('renderer: '+String(k)+' not allowed');return v.bind(t)}return v},
+ set(t,k,v){if(k!=='globalAlpha'&&k!=='globalCompositeOperation')throw new Error('renderer: set '+String(k)+' not allowed');t[k]=v;return true}})}
+const cv=document.getElementById('c'),X=guard(cv.getContext('2d'));
+const PARAMS=['BodyLean','ShoulderL','ShoulderR','ElbowL','ElbowR','HipL','HipR','KneeL','KneeR','AnkleL','AnkleR','ToeL','ToeR'];
+// slider value v in [-1,1] -> degrees; toes are asymmetric (minRotDeg..maxRotDeg, v<0 = toes up) and carry rotDir
+function degOf(p,v){if(!p)return 0;const a=(v<0&&p.minRotDeg!==undefined)?-v*p.minRotDeg:v*p.maxRotDeg;return a*(p.rotDir||1)}
+function anatDeg(p,v){if(!p)return 0;return (v<0&&p.minRotDeg!==undefined)?-v*p.minRotDeg:v*p.maxRotDeg}
+const val={};PARAMS.forEach(p=>val[p]=0);
+const $=id=>document.getElementById(id);
+let S=null; // loaded state for current view
+const imgCache={};
+function img(url){if(imgCache[url])return imgCache[url];const p=new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=url});imgCache[url]=p;return p}
+async function listing(url){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)return new Set();const t=await r.text();
+ return new Set([...t.matchAll(/href="([^"?#]+)"/g)].map(m=>decodeURIComponent(m[1])))}catch(e){return new Set()}}
+async function json(url){try{const r=await fetch(url,{cache:'no-store'});return r.ok?await r.json():null}catch(e){return null}}
+function offscreen(){const c=document.createElement('canvas');c.width=1365;c.height=1739;return c}
+async function loadView(v){
+ const B='../views/'+v+'/', st={v,items:[],body:null,base:null,notes:[]};
+ st.body=await json(B+'body/rig.json');
+ st.base=await img(B+'base.png');
+ if(!st.body){st.notes.push('body rig.json missing');return st}
+ for(const p of st.body.parts){if(p.hidden||!p.file)continue;const im=await img(B+'body/'+p.file);if(im)st.items.push({layer:p.layer,im,att:p.id,src:'body'})}
+ const top=await listing(B);
+ // hands: palms ride on forearm_L/R (wristPivot); fingers at rest follow the palm
+ if(top.has('hands/')){const ls=await listing(B+'hands/');if(ls.has('rig.json')){const r=await json(B+'hands/rig.json');
+  if(r&&r.parts){for(const p of r.parts){if(p.hidden||!p.file||!ls.has(p.file))continue;const im=await img(B+'hands/'+p.file);
+   if(im)st.items.push({layer:p.layer,im,att:'forearm_'+p.id[0],src:'hands'})}st.notes.push('hands: loaded')}}}
+ // hair at rest, riding the head (which rides the torso)
+ if(top.has('hair/')){const ls=await listing(B+'hair/');if(ls.has('rig.json')){let r=await json(B+'hair/rig.json');r=Array.isArray(r)?r:(r&&r.parts)||[];
+  for(const p of r){if(!p.file||!ls.has(p.file))continue;const im=await img(B+'hair/'+p.file);
+   if(im)st.items.push({layer:p.id==='hair_back'?100:(p.layer<200?100+p.layer:p.layer),im,att:'head',src:'hair'})}if(r.length)st.notes.push('hair: loaded')}}
+ // eyes: white, iris source-atop on an offscreen layer, lid_0, lash
+ if(top.has('eyes/')){const ls=await listing(B+'eyes/');if(ls.has('rig.json')){const r=await json(B+'eyes/rig.json');
+  if(r&&r.eyes){for(const E of r.eyes){const w=ls.has(E+'_white.png')?await img(B+'eyes/'+E+'_white.png'):null;
+   if(w){const o=offscreen(),oc=guard(o.getContext('2d'));oc.drawImage(w,0,0);if(ls.has(E+'_iris.png')){const ir=await img(B+'eyes/'+E+'_iris.png');
+    if(ir){oc.globalCompositeOperation='source-atop';oc.drawImage(ir,0,0);oc.globalCompositeOperation='source-over'}}
+    st.items.push({layer:800,im:o,att:'head',src:'eyes'})}
+   for(const [f,l] of [[E+'_lid_0.png',801],[E+'_lash.png',802]])if(ls.has(f)){const im=await img(B+'eyes/'+f);if(im)st.items.push({layer:l,im,att:'head',src:'eyes'})}}
+   st.notes.push('eyes: loaded')}}}
+ if(top.has('mouth/')){const ls=await listing(B+'mouth/');if(ls.has('rest.png')){const im=await img(B+'mouth/rest.png');if(im){st.items.push({layer:850,im,att:'head',src:'mouth'});st.notes.push('mouth: loaded')}}}
+ st.items.sort((a,b)=>a.layer-b.layer);
+ // speed: merge consecutive items that share a transform, then trim each to its opaque bounding box
+ const merged=[];for(const it of st.items){const last=merged[merged.length-1];
+  if(last&&last.att===it.att&&last.src===it.src){last.list.push(it.im)}else merged.push({layer:it.layer,att:it.att,src:it.src,list:[it.im]})}
+ st.items=merged.map(g=>trim(g));
+ return st}
+function trim(g){const o=offscreen(),oc=guard(o.getContext('2d'));for(const im of g.list)oc.drawImage(im,0,0);
+ const d=o.getContext('2d').getImageData(0,0,1365,1739).data;let x0=1365,y0=1739,x1=-1,y1=-1;
+ for(let y=0;y<1739;y++){const r=y*1365*4;for(let x=0;x<1365;x++){if(d[r+x*4+3]){if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y}}}
+ if(x1<0)return{...g,im:null};const w=x1-x0+1,h=y1-y0+1,c=document.createElement('canvas');c.width=w;c.height=h;
+ guard(c.getContext('2d')).drawImage(o,x0,y0,w,h,0,0,w,h);return{...g,im:c,ox:x0,oy:y0}}
+function mul(A,B){return[A[0]*B[0]+A[2]*B[1],A[1]*B[0]+A[3]*B[1],A[0]*B[2]+A[2]*B[3],A[1]*B[2]+A[3]*B[3],A[0]*B[4]+A[2]*B[5]+A[4],A[1]*B[4]+A[3]*B[5]+A[5]]}
+function rotAbout(deg,px,py){const r=deg*Math.PI/180,c=Math.cos(r),s=Math.sin(r);return[c,s,-s,c,px-c*px+s*py,py-s*px-c*py]}
+function worlds(){const P={},W={};for(const p of S.body.parts)P[p.id]=p;
+ const w=id=>{if(W[id])return W[id];const p=P[id];const deg=p.param?degOf(p,val[p.param]||0):0;
+  let m=rotAbout(deg,p.pivotX,p.pivotY);m=mul([1,0,0,1,p.x||0,p.y||0],m);W[id]=p.parent?mul(w(p.parent),m):m;return W[id]};
+ for(const id in P)w(id);return W}
+let flipT=0;
+function draw(){
+ if(!S)return;cv.style.background=$('bg').value;
+ X.setTransform(1,0,0,1,0,0);X.clearRect(0,0,1365,1739);
+ const mode=$('cmp').value,showBase=mode==='base'||(mode==='flip'&&Math.floor(performance.now()/700)%2===1);
+ if(!showBase&&S.body){const W=worlds(),oth=$('others').checked;
+  for(const it of S.items){if(it.src!=='body'&&!oth)continue;const m=W[it.att]||[1,0,0,1,0,0];if(!it.im)continue;X.setTransform(m[0],m[1],m[2],m[3],m[4],m[5]);X.drawImage(it.im,it.ox,it.oy)}
+  X.setTransform(1,0,0,1,0,0)}
+ if(S.base&&(showBase||mode==='over')){X.globalAlpha=mode==='over'?0.5:1;X.drawImage(S.base,0,0);X.globalAlpha=1}
+}
+function buildSliders(){const box=$('sliders');box.textContent='';
+ const map={};if(S&&S.body)for(const p of S.body.parts)if(p.param)map[p.param]=p;
+ for(const k of PARAMS){const p=map[k],l=document.createElement('label'),r=document.createElement('input'),s=document.createElement('span');
+  r.type='range';r.min=-1;r.max=1;r.step=0.01;r.value=val[k];r.id='s_'+k;s.className='v';
+  const upd=()=>{s.textContent=anatDeg(p,val[k]).toFixed(1)+'°'};r._p=p;
+  r.oninput=()=>{val[k]=+r.value;upd();draw()};upd();
+  if(p&&p.hidden){r.disabled=false;l.title=p.notSeparable?'not separable in this view (drawn as part of the foot)':'part hidden in this view'}
+  if(!p){r.disabled=true;l.title='no such part in this rig'}
+  l.append(k.padEnd(10,' ')+' ',r,s);box.append(l)}}
+function showVals(){for(const k of PARAMS){const r=$('s_'+k);if(r){r.value=val[k];r.nextSibling.textContent=anatDeg(r._p,val[k]).toFixed(1)+'°'}}}
+function syncSliders(){showVals()}
+async function setView(){S=null;const v=$('view').value;const st=await loadView(v);if($('view').value!==v)return;S=st;buildSliders();
+ const prof=S.body&&S.body.profile;$('info').textContent=v+': '+(S.body?S.body.parts.filter(p=>!p.hidden).length+' body parts':'no body rig')+
+  (prof?'\nnear side '+prof.nearSide+', far side '+prof.farSide+' (hidden)':'')+'\n'+S.notes.join('\n')+'\nsliders: param value -1..1 × maxRotDeg (toes: -1 = 30° up … +1 = 20° curl)';draw()}
+$('view').onchange=setView;$('bg').onchange=draw;$('cmp').onchange=draw;$('others').onchange=draw;
+$('reset').onclick=()=>{$('auto').checked=false;PARAMS.forEach(k=>val[k]=0);syncSliders();draw()};
+let lastT=0,autoT0=null,blend=0;
+// smooth periodic helpers: eased sine (smootherstep on the phase) so turns at the extremes are soft
+const ease=x=>x*x*x*(x*(x*6-15)+10);
+function wave(t,period,phase){const u=((t/period+phase)%1+1)%1;const tri=u<0.5?u*2:2-u*2;return ease(tri)*2-1}
+function idle(t,view){
+ const prof=view==='left'||view==='right';
+ const breath=wave(t,4.2,0);                    // ~14 breaths/min
+ const shift=wave(t,7.5,0.1);                   // slow weight shift left <-> right
+ const swing=wave(t,3.4,0.25);                  // relaxed arm swing
+ const o={};
+ // breathing: tiny torso lean + shoulders rising with the inhale
+ o.BodyLean=0.10*breath+0.22*shift;
+ const sh=0.035*breath;
+ // arm swing with a slight lag on the elbows (follow-through)
+ const sw2=wave(t,3.4,0.17);
+ if(prof){const s=view==='left'?1:-1;o.ShoulderL=s*(0.14*swing+sh);o.ShoulderR=s*(0.14*swing+sh);o.ElbowL=s*0.07*sw2;o.ElbowR=s*0.07*sw2}
+ else{const s=view==='back'?-1:1;o.ShoulderL=s*(-sh+0.10*swing);o.ShoulderR=s*(sh+0.10*swing);o.ElbowL=s*0.06*sw2;o.ElbowR=s*0.06*sw2}
+ // weight shift: the loaded leg straightens, the free knee softens, hips follow
+ const kb=view==='left'?-1:1;
+ o.HipL=0.05*shift;o.HipR=0.05*shift;
+ o.KneeL=kb*0.12*Math.max(0,shift);o.KneeR=kb*0.12*Math.max(0,-shift);
+ o.AnkleL=-kb*0.05*Math.max(0,shift);o.AnkleR=-kb*0.05*Math.max(0,-shift);
+ // toes: the loaded foot's toes flex up very slightly as weight rolls forward (anatomical sign, v<0 = up)
+ o.ToeL=-0.10*Math.max(0,shift);o.ToeR=-0.10*Math.max(0,-shift);
+ return o}
+function tick(t){
+ const on=$('auto').checked&&S&&S.body;
+ if(on&&autoT0===null)autoT0=t;
+ if(!on)autoT0=null;
+ if(on&&t-lastT>33){lastT=t;
+  blend=Math.min(1,blend+0.04);                 // ease in from the current pose instead of jumping
+  const o=idle((t-autoT0)/1000,S.body.view),k=ease(blend);
+  for(const p of PARAMS)val[p]=val[p]*(1-k)+(o[p]||0)*k;
+  showVals();draw()}
+ else if(!on){blend=0;if($('cmp').value==='flip')draw()}
+ requestAnimationFrame(tick)}
+setView();requestAnimationFrame(tick);
+</script></body></html>

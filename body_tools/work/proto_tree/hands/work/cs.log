@@ -1,0 +1,32 @@
+{
+ "apose": {
+  "status": "PASS: rest vs base.png, 0 px differ (apose)",
+  "frames": 30,
+  "body": true,
+  "warn": []
+ },
+ "tpose": {
+  "status": "PASS: rest vs base.png, 0 px differ (tpose)",
+  "frames": 30,
+  "body": true,
+  "warn": []
+ },
+ "left": {
+  "status": "PASS: rest vs base.png, 0 px differ (left)",
+  "frames": 15,
+  "body": true,
+  "warn": []
+ },
+ "right": {
+  "status": "PASS: rest vs base.png, 0 px differ (right)",
+  "frames": 15,
+  "body": true,
+  "warn": []
+ },
+ "back": {
+  "status": "PASS: rest vs base.png, 0 px differ (back)",
+  "frames": 30,
+  "body": true,
+  "warn": []
+ }
+}

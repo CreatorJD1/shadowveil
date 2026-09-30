@@ -1,0 +1,23 @@
+{
+ "apose": {
+  "diffPx": 0,
+  "problems": []
+ },
+ "tpose": {
+  "diffPx": 0,
+  "problems": []
+ },
+ "left": {
+  "diffPx": 0,
+  "problems": []
+ },
+ "right": {
+  "diffPx": 0,
+  "problems": []
+ },
+ "back": {
+  "diffPx": 0,
+  "problems": []
+ }
+}
+PASS

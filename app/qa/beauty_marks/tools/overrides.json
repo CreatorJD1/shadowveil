@@ -1,0 +1,34 @@
+{
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-000.png": {
+  "consistent": "true",
+  "note": "CANONICAL. Eyeballed: 1 mark under her right (amber) eye, 2 marks under her left (green) eye (viewer-right) plus a faint 1-2 px speck just inside them."
+ },
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-045.png": {
+  "consistent": "false",
+  "note": "Eyeballed: amber side 1 (ok), green side only 1 mark (canonical 2). The eye still artifacts/turn/fix/eyes-045.jpg is a 2x crop of this same still (NCC 0.997) and also shows 1."
+ },
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-090.png": {
+  "consistent": "false",
+  "note": "Eyeballed: profile shows her left (green) cheek with 0 marks (canonical 2)."
+ },
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-135.png": {
+  "consistent": "n/a",
+  "note": "Back three-quarter; face turned away, marks not visible (expected)."
+ },
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-180.png": {
+  "consistent": "n/a",
+  "note": "Back; marks not visible (expected)."
+ },
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-225.png": {
+  "consistent": "n/a",
+  "note": "Back three-quarter; marks not visible (expected)."
+ },
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-270.png": {
+  "consistent": "true",
+  "note": "Eyeballed: profile shows her right (amber) cheek with 1 mark (canonical 1). Detector confidence was low (profile iris), verified by eye."
+ },
+ "/workspace/shadowveil/reference/grok_build/public/clean-room/layers/rotation/turn-315.png": {
+  "consistent": "false",
+  "note": "Eyeballed: amber side 1 (ok), green side only 1 mark (canonical 2)."
+ }
+}

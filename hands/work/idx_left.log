@@ -1,0 +1,7 @@
+404: http://127.0.0.1:9103/views/left/body/skin.json?t=1790731787995
+STATUS: PASS: rest vs base.png, 0 px differ (left) | layers: hair=v1.2, body=v1.2, hands=v1.2, eyes=v1.2, mouth=v1.2 | mouth shapes: rest, M, smile, OH_half, AA_half, EE_half, OH, AA, EE
+frames segments: 15
+hand warnings: []
+console warn/err: ['error: Failed to load resource: the server responded with a status of 404 (File not found)', 'error: Failed to load resource: the server responded with a status of 404 (File not found)']
+joint gaps (index.html handChain), worst px: 0.0
+[('Fist', 0, 0), ('Fist', 0.25, 0.0), ('Fist', 0.5, 0.0), ('Fist', 0.75, 0.0), ('Fist', 1, 0.0), ('Point', 0, 0), ('Point', 0.25, 0.0), ('Point', 0.5, 0.0), ('Point', 0.75, 0.0), ('Point', 1, 0.0), ('Peace', 0, 0), ('Peace', 0.25, 0.0), ('Peace', 0.5, 0.0), ('Peace', 0.75, 0.0), ('Peace', 1, 0.0), ('Half', 0, 0), ('Half', 0.25, 0.0), ('Half', 0.5, 0.0), ('Half', 0.75, 0.0), ('Half', 1, 0.0)]

@@ -1,0 +1,19 @@
+turnaround 64 pages 2 broken so far 0 failed 0
+eyes 288 pages 6 broken so far 0 failed 0
+hands 24 pages 1 broken so far 0 failed 0
+mouth 57 pages 2 broken so far 0 failed 0
+hair 35 pages 1 broken so far 0 failed 0
+videos 38 pages 1 broken so far 0 failed 0
+hires 173 pages 4 broken so far 0 failed 0
+sheets 92 pages 2 broken so far 0 failed 0
+frames 171 pages 4 broken so far 0 failed 0
+layers 638 pages 14 broken so far 0 failed 0
+rig 14 pages 1 broken so far 0 failed 0
+TimeoutError: Navigation timeout of 180000 ms exceeded
+    at new Deferred (/workspace/jt/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:60:34)
+    at Deferred.create (/workspace/jt/node_modules/puppeteer-core/lib/cjs/puppeteer/util/Deferred.js:21:16)
+    at new LifecycleWatcher (/workspace/jt/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/LifecycleWatcher.js:69:60)
+    at CdpFrame.goto (/workspace/jt/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:149:29)
+    at CdpFrame.<anonymous> (/workspace/jt/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:109:27)
+    at CdpPage.goto (/workspace/jt/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:574:43)
+    at /workspace/shadowveil/app/qa/driver/check_gallery.js:17:16

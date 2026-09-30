@@ -1,0 +1,227 @@
+{
+ "apose|current|ref": [
+  1.0,
+  "hinge",
+  4.267
+ ],
+ "apose|A|ref": [
+  0.6115475815309132,
+  "collapse",
+  5.2
+ ],
+ "apose|B|ref": [
+  1.0,
+  "hinge",
+  5.2
+ ],
+ "apose|current|rig8": [
+  1.0,
+  "hinge",
+  4.383
+ ],
+ "apose|A|rig8": [
+  0.5658411993675518,
+  "hinge",
+  4.967
+ ],
+ "apose|B|rig8": [
+  1.0,
+  "reach",
+  5.4
+ ],
+ "apose|current|rig12": [
+  1.0,
+  "hinge",
+  4.35
+ ],
+ "apose|A|rig12": [
+  0.5644571428721543,
+  "hinge",
+  4.95
+ ],
+ "apose|B|rig12": [
+  1.0,
+  "reach",
+  5.367
+ ],
+ "tpose|current|ref": [
+  1.0,
+  "hinge",
+  4.267
+ ],
+ "tpose|A|ref": [
+  0.6109814799033827,
+  "collapse",
+  5.2
+ ],
+ "tpose|B|ref": [
+  1.0,
+  "hinge",
+  5.2
+ ],
+ "tpose|current|rig8": [
+  1.0,
+  "hinge",
+  4.383
+ ],
+ "tpose|A|rig8": [
+  0.5658411993675767,
+  "hinge",
+  4.967
+ ],
+ "tpose|B|rig8": [
+  1.0,
+  "reach",
+  5.4
+ ],
+ "tpose|current|rig12": [
+  1.0,
+  "hinge",
+  4.367
+ ],
+ "tpose|A|rig12": [
+  0.564457142872413,
+  "hinge",
+  4.95
+ ],
+ "tpose|B|rig12": [
+  1.0,
+  "reach",
+  5.383
+ ],
+ "left|current|ref": [
+  1.0,
+  "hinge",
+  4.267
+ ],
+ "left|A|ref": [
+  0.6077915611653758,
+  "collapse",
+  5.2
+ ],
+ "left|B|ref": [
+  1.0,
+  "hinge",
+  5.2
+ ],
+ "left|current|rig8": [
+  1.0,
+  "hinge",
+  4.383
+ ],
+ "left|A|rig8": [
+  0.5658411993675457,
+  "hinge",
+  4.967
+ ],
+ "left|B|rig8": [
+  1.0,
+  "reach",
+  5.4
+ ],
+ "left|current|rig12": [
+  1.0,
+  "hinge",
+  4.35
+ ],
+ "left|A|rig12": [
+  0.5644571428721251,
+  "hinge",
+  4.95
+ ],
+ "left|B|rig12": [
+  1.0,
+  "reach",
+  5.367
+ ],
+ "right|current|ref": [
+  1.0,
+  "hinge",
+  4.267
+ ],
+ "right|A|ref": [
+  0.6147293074224867,
+  "collapse",
+  5.217
+ ],
+ "right|B|ref": [
+  1.0,
+  "hinge",
+  5.2
+ ],
+ "right|current|rig8": [
+  1.0,
+  "hinge",
+  4.383
+ ],
+ "right|A|rig8": [
+  0.5658411993675252,
+  "hinge",
+  4.967
+ ],
+ "right|B|rig8": [
+  1.0,
+  "reach",
+  5.4
+ ],
+ "right|current|rig12": [
+  1.0,
+  "hinge",
+  4.35
+ ],
+ "right|A|rig12": [
+  0.5644571428718523,
+  "hinge",
+  4.95
+ ],
+ "right|B|rig12": [
+  1.0,
+  "reach",
+  5.367
+ ],
+ "back|current|ref": [
+  1.0,
+  "hinge",
+  4.267
+ ],
+ "back|A|ref": [
+  0.6078359480602661,
+  "collapse",
+  5.217
+ ],
+ "back|B|ref": [
+  1.0,
+  "hinge",
+  5.2
+ ],
+ "back|current|rig8": [
+  1.0,
+  "hinge",
+  4.383
+ ],
+ "back|A|rig8": [
+  0.5658411993676937,
+  "hinge",
+  4.967
+ ],
+ "back|B|rig8": [
+  1.0,
+  "reach",
+  5.4
+ ],
+ "back|current|rig12": [
+  1.0,
+  "hinge",
+  4.367
+ ],
+ "back|A|rig12": [
+  0.5644571428736237,
+  "hinge",
+  4.95
+ ],
+ "back|B|rig12": [
+  1.0,
+  "reach",
+  5.383
+ ]
+}

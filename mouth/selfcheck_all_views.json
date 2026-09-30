@@ -1,0 +1,718 @@
+{
+ "apose": {
+  "anchor": [
+   681,
+   286
+  ],
+  "bbox": [
+   657,
+   280,
+   704,
+   298
+  ],
+  "colors": {
+   "skin": "#B88155",
+   "upper": "#523017",
+   "lower": "#633B22",
+   "line": "#220C00",
+   "hl": "#CBA793",
+   "outline": "#220C00",
+   "inner": "#3F2319",
+   "teeth": "#EFE4DA",
+   "tongue": "#9C5A4A"
+  },
+  "checks": {
+   "rest": {
+    "changedPx": 0,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.0,
+    "worstAt": [
+     0,
+     0,
+     0.0
+    ],
+    "meanAlphaErrOnPart": 0.0,
+    "keyResidual": 0.0,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "M": {
+    "changedPx": 945,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.014116572324278563,
+    "worstAt": [
+     661,
+     278,
+     0.014
+    ],
+    "meanAlphaErrOnPart": 0.0008792907557627444,
+    "keyResidual": 1.9889734078832764,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "smile": {
+    "changedPx": 968,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.015625,
+    "worstAt": [
+     653,
+     277,
+     0.984
+    ],
+    "meanAlphaErrOnPart": 0.0009574292224833151,
+    "keyResidual": 2.581479449542867,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH_half": {
+    "changedPx": 955,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.014116572324278563,
+    "worstAt": [
+     661,
+     278,
+     0.014
+    ],
+    "meanAlphaErrOnPart": 0.0008792907557627444,
+    "keyResidual": 2.2516065311967095,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA_half": {
+    "changedPx": 955,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.014116572324278563,
+    "worstAt": [
+     661,
+     278,
+     0.014
+    ],
+    "meanAlphaErrOnPart": 0.0008792907557627444,
+    "keyResidual": 2.135203326543954,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE_half": {
+    "changedPx": 977,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.05132688336662272,
+    "worstAt": [
+     656,
+     280,
+     0.949
+    ],
+    "meanAlphaErrOnPart": 0.0009486253895149206,
+    "keyResidual": 3.336228168796408,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH": {
+    "changedPx": 960,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.05296419786506201,
+    "worstAt": [
+     681,
+     278,
+     0.947
+    ],
+    "meanAlphaErrOnPart": 0.0010437676703214176,
+    "keyResidual": 5.128752278161004,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA": {
+    "changedPx": 1066,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.057458134811936734,
+    "worstAt": [
+     661,
+     289,
+     0.943
+    ],
+    "meanAlphaErrOnPart": 0.00086187559303832,
+    "keyResidual": 5.5895391978879365,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE": {
+    "changedPx": 969,
+    "uncoveredLipPx": 0,
+    "lipPx": 543,
+    "maxAlphaErr": 0.0258069765140736,
+    "worstAt": [
+     703,
+     279,
+     0.884
+    ],
+    "meanAlphaErrOnPart": 0.000946660162722119,
+    "keyResidual": 2.581479449542867,
+    "blue": [
+     0,
+     0
+    ]
+   }
+  },
+  "baseMd5": "3af8a577400300aec9fcefb2f255d455"
+ },
+ "tpose": {
+  "anchor": [
+   682,
+   277
+  ],
+  "bbox": [
+   659,
+   272,
+   704,
+   289
+  ],
+  "colors": {
+   "skin": "#B98155",
+   "upper": "#563519",
+   "lower": "#643D1F",
+   "line": "#311100",
+   "hl": "#C2A387",
+   "outline": "#311100",
+   "inner": "#3F2319",
+   "teeth": "#EFE4DA",
+   "tongue": "#9C5A4A"
+  },
+  "checks": {
+   "rest": {
+    "changedPx": 0,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.0,
+    "worstAt": [
+     0,
+     0,
+     0.0
+    ],
+    "meanAlphaErrOnPart": 0.0,
+    "keyResidual": 0.0,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "M": {
+    "changedPx": 919,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.01411599130132515,
+    "worstAt": [
+     667,
+     270,
+     0.014
+    ],
+    "meanAlphaErrOnPart": 0.0009037117148808855,
+    "keyResidual": 2.828427124746185,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "smile": {
+    "changedPx": 947,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.043210402214472476,
+    "worstAt": [
+     666,
+     272,
+     0.957
+    ],
+    "meanAlphaErrOnPart": 0.000991489808444618,
+    "keyResidual": 2.7965960043652056,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH_half": {
+    "changedPx": 920,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.01411599130132515,
+    "worstAt": [
+     667,
+     270,
+     0.014
+    ],
+    "meanAlphaErrOnPart": 0.0009037117148808855,
+    "keyResidual": 2.111944549849338,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA_half": {
+    "changedPx": 919,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.01411599130132515,
+    "worstAt": [
+     667,
+     270,
+     0.014
+    ],
+    "meanAlphaErrOnPart": 0.0009040930373419396,
+    "keyResidual": 4.515679436998665,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE_half": {
+    "changedPx": 954,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.056698682186231975,
+    "worstAt": [
+     667,
+     272,
+     0.943
+    ],
+    "meanAlphaErrOnPart": 0.0009856338273633752,
+    "keyResidual": 2.543149008961912,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH": {
+    "changedPx": 925,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.058194337412058816,
+    "worstAt": [
+     677,
+     269,
+     0.942
+    ],
+    "meanAlphaErrOnPart": 0.0010260697902182208,
+    "keyResidual": 4.977095147899343,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA": {
+    "changedPx": 968,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.02857831104754438,
+    "worstAt": [
+     663,
+     281,
+     0.83
+    ],
+    "meanAlphaErrOnPart": 0.0008974264503294308,
+    "keyResidual": 5.839785957204586,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE": {
+    "changedPx": 938,
+    "uncoveredLipPx": 0,
+    "lipPx": 524,
+    "maxAlphaErr": 0.05739257731071734,
+    "worstAt": [
+     698,
+     272,
+     0.943
+    ],
+    "meanAlphaErrOnPart": 0.0010957427297257297,
+    "keyResidual": 5.185788421538928,
+    "blue": [
+     0,
+     0
+    ]
+   }
+  },
+  "baseMd5": "48ca865da99761717902dd410abaf22f"
+ },
+ "right": {
+  "anchor": [
+   760,
+   274
+  ],
+  "bbox": [
+   760,
+   263,
+   782,
+   286
+  ],
+  "colors": {
+   "skin": "#B4784C",
+   "upper": "#523218",
+   "lower": "#613919",
+   "line": "#2C0F02",
+   "hl": "#976144",
+   "outline": "#100810",
+   "inner": "#3F2319",
+   "teeth": "#EFE4DA",
+   "tongue": "#9C5A4A"
+  },
+  "checks": {
+   "rest": {
+    "changedPx": 0,
+    "uncoveredLipPx": 37,
+    "lipPx": 239,
+    "maxAlphaErr": 0.0,
+    "worstAt": [
+     0,
+     0,
+     0.0
+    ],
+    "meanAlphaErrOnPart": 0.0,
+    "keyResidual": 0.0,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "M": {
+    "changedPx": 589,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.078125,
+    "worstAt": [
+     780,
+     273,
+     0.922
+    ],
+    "meanAlphaErrOnPart": 0.0011092189610113685,
+    "keyResidual": 5.434774196508279,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "smile": {
+    "changedPx": 589,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.078125,
+    "worstAt": [
+     780,
+     273,
+     0.922
+    ],
+    "meanAlphaErrOnPart": 0.0011382080363855959,
+    "keyResidual": 3.7932115063475083,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH_half": {
+    "changedPx": 598,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.09375,
+    "worstAt": [
+     774,
+     287,
+     0.906
+    ],
+    "meanAlphaErrOnPart": 0.0012712045465629934,
+    "keyResidual": 4.428497441836498,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA_half": {
+    "changedPx": 662,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.09375,
+    "worstAt": [
+     782,
+     271,
+     0.906
+    ],
+    "meanAlphaErrOnPart": 0.0017493967699072526,
+    "keyResidual": 5.65105724141086,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE_half": {
+    "changedPx": 589,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.078125,
+    "worstAt": [
+     780,
+     273,
+     0.922
+    ],
+    "meanAlphaErrOnPart": 0.0012635613583476615,
+    "keyResidual": 4.090533694770267,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH": {
+    "changedPx": 613,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.09375,
+    "worstAt": [
+     783,
+     271,
+     0.906
+    ],
+    "meanAlphaErrOnPart": 0.0012106830580678799,
+    "keyResidual": 5.677307923124611,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA": {
+    "changedPx": 713,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.09710571529263345,
+    "worstAt": [
+     779,
+     289,
+     0.903
+    ],
+    "meanAlphaErrOnPart": 0.0023422445171516963,
+    "keyResidual": 5.796919000122813,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE": {
+    "changedPx": 600,
+    "uncoveredLipPx": 0,
+    "lipPx": 239,
+    "maxAlphaErr": 0.09375,
+    "worstAt": [
+     774,
+     287,
+     0.906
+    ],
+    "meanAlphaErrOnPart": 0.0013415544815094946,
+    "keyResidual": 5.65105724141086,
+    "blue": [
+     0,
+     0
+    ]
+   }
+  },
+  "baseMd5": "0fcd6495c48cb2e99928f9ab8c30ddfc"
+ },
+ "left": {
+  "anchor": [
+   612,
+   270
+  ],
+  "bbox": [
+   590,
+   261,
+   612,
+   283
+  ],
+  "colors": {
+   "skin": "#B77A4D",
+   "upper": "#5C3114",
+   "lower": "#67391C",
+   "line": "#2C0E02",
+   "hl": "#AE795F",
+   "outline": "#170517",
+   "inner": "#3F2319",
+   "teeth": "#EFE4DA",
+   "tongue": "#9C5A4A"
+  },
+  "checks": {
+   "rest": {
+    "changedPx": 0,
+    "uncoveredLipPx": 47,
+    "lipPx": 254,
+    "maxAlphaErr": 0.0,
+    "worstAt": [
+     0,
+     0,
+     0.0
+    ],
+    "meanAlphaErrOnPart": 0.0,
+    "keyResidual": 0.0,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "M": {
+    "changedPx": 616,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.09375,
+    "worstAt": [
+     590,
+     268,
+     0.906
+    ],
+    "meanAlphaErrOnPart": 0.0014898460408725425,
+    "keyResidual": 5.17715287525891,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "smile": {
+    "changedPx": 616,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.09375,
+    "worstAt": [
+     590,
+     268,
+     0.906
+    ],
+    "meanAlphaErrOnPart": 0.0014898460408725425,
+    "keyResidual": 5.17715287525891,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH_half": {
+    "changedPx": 631,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.07627471789751894,
+    "worstAt": [
+     616,
+     270,
+     0.924
+    ],
+    "meanAlphaErrOnPart": 0.0015630220494400819,
+    "keyResidual": 4.986629315346272,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA_half": {
+    "changedPx": 704,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.07627471789751894,
+    "worstAt": [
+     616,
+     270,
+     0.924
+    ],
+    "meanAlphaErrOnPart": 0.002092125518483536,
+    "keyResidual": 5.443874408714057,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE_half": {
+    "changedPx": 616,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.09375,
+    "worstAt": [
+     590,
+     268,
+     0.906
+    ],
+    "meanAlphaErrOnPart": 0.001542502342960611,
+    "keyResidual": 5.17715287525891,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "OH": {
+    "changedPx": 640,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.07627471789751894,
+    "worstAt": [
+     616,
+     270,
+     0.924
+    ],
+    "meanAlphaErrOnPart": 0.001492739244655389,
+    "keyResidual": 4.762900068445999,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "AA": {
+    "changedPx": 780,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.09710571529263345,
+    "worstAt": [
+     594,
+     288,
+     0.903
+    ],
+    "meanAlphaErrOnPart": 0.0018987275323698654,
+    "keyResidual": 4.004971141320844,
+    "blue": [
+     0,
+     0
+    ]
+   },
+   "EE": {
+    "changedPx": 635,
+    "uncoveredLipPx": 0,
+    "lipPx": 254,
+    "maxAlphaErr": 0.07627471789751894,
+    "worstAt": [
+     616,
+     270,
+     0.924
+    ],
+    "meanAlphaErrOnPart": 0.0017585017915169802,
+    "keyResidual": 6.2771538883761835,
+    "blue": [
+     0,
+     0
+    ]
+   }
+  },
+  "baseMd5": "8c44921afcfcbb27dcd9b03ae9c2f0e0"
+ }
+}

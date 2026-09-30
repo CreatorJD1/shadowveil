@@ -1,0 +1,29 @@
+apose 240 done {'c1': {'score': 2, 'frame': 0, 't': 0.03333}, 'c2vid': {'score': 1, 'frame': 0, 't': 0.03333}, 'c1out': {'score': 52, 'frame': 161, 't': 5.4}}
+tpose 240 done {'c2vid': {'score': 2, 'frame': 0, 't': 0.03333}, 'c1out': {'score': 12, 'frame': 130, 't': 4.36667}, 'c1': {'score': 1, 'frame': 52, 't': 1.76667}}
+left 240 done {'c2vid': {'score': 11, 'frame': 0, 't': 0.03333}}
+right 240 done {'c2vid': {'score': 16, 'frame': 0, 't': 0.03333}}
+back 240 done {}
+apose_hair_stiff 240 done {'c1': {'score': 1, 'frame': 0, 't': 0.03333}, 'c2vid': {'score': 3, 'frame': 0, 't': 0.03333}, 'c1out': {'score': 39, 'frame': 45, 't': 1.53333}}
+apose_hair_middle 240 done {'c1': {'score': 2, 'frame': 0, 't': 0.03333}, 'c2vid': {'score': 1, 'frame': 0, 't': 0.03333}, 'c1out': {'score': 38, 'frame': 51, 't': 1.73333}}
+keys_idle_breathe_apose 240 done {'c1': {'score': 1, 'frame': 0, 't': 0}, 'c2vid': {'score': 2, 'frame': 0, 't': 0}, 'c1out': {'score': 40, 'frame': 51, 't': 1.7}}
+keys_idle_breathe_tpose 240 done {'c2vid': {'score': 2, 'frame': 8, 't': 0.26667}, 'c1out': {'score': 14, 'frame': 53, 't': 1.76667}, 'c1': {'score': 1, 'frame': 53, 't': 1.76667}}
+keys_idle_breathe_left 240 done {'c2vid': {'score': 10, 'frame': 0, 't': 0}}
+keys_idle_breathe_right 240 done {'c2vid': {'score': 15, 'frame': 8, 't': 0.26667}}
+keys_idle_breathe_back 240 done {}
+keys_idle_weight_shift_apose 240 done {'c2vid': {'score': 2, 'frame': 191, 't': 6.36667}, 'c1out': {'score': 105, 'frame': 56, 't': 1.86667}, 'c1': {'score': 1, 'frame': 101, 't': 3.36667}}
+keys_idle_weight_shift_tpose 240 done {'c1out': {'score': 46, 'frame': 55, 't': 1.83333}, 'c2vid': {'score': 2, 'frame': 204, 't': 6.8}, 'c1': {'score': 3, 'frame': 36, 't': 1.2}}
+keys_idle_weight_shift_left 240 done {'c2vid': {'score': 4, 'frame': 9, 't': 0.3}}
+keys_idle_weight_shift_right 240 done {'c2vid': {'score': 10, 'frame': 0, 't': 0}}
+keys_idle_weight_shift_back 240 done {'c1': {'score': 1, 'frame': 26, 't': 0.86667}, 'c1out': {'score': 3, 'frame': 47, 't': 1.56667}}
+keys_idle_arm_settle_apose 240 done {'c2vid': {'score': 2, 'frame': 54, 't': 1.8}, 'c1out': {'score': 56, 'frame': 58, 't': 1.93333}}
+keys_idle_arm_settle_tpose 240 done {'c2vid': {'score': 1, 'frame': 0, 't': 0}, 'c1out': {'score': 19, 'frame': 129, 't': 4.3}, 'c1': {'score': 3, 'frame': 165, 't': 5.5}}
+keys_idle_arm_settle_left 240 done {'c2vid': {'score': 5, 'frame': 43, 't': 1.43333}}
+keys_idle_arm_settle_right 240 done {'c2vid': {'score': 14, 'frame': 8, 't': 0.26667}, 'c1': {'score': 1, 'frame': 163, 't': 5.43333}}
+keys_idle_arm_settle_back 240 done {}
+ALLDONE
+idle_all 240 frames done
+idle_breathe_all5 240 frames done
+idle_weight_shift_all5 240 frames done
+idle_arm_settle_all5 240 frames done
+idle_keys_all 240 frames done
+COMPDONE

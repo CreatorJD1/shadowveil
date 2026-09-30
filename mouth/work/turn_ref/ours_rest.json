@@ -1,0 +1,112 @@
+{
+ "apose": {
+  "eyes": {
+   "orange": [
+    646.9,
+    230.5,
+    102
+   ],
+   "green": [
+    714.8,
+    230.1,
+    153
+   ]
+  },
+  "eyeLineY": 230.3,
+  "chinY": 321.0,
+  "CE_px": 90.7,
+  "mouthCx": 681.0,
+  "seamY": 286.38,
+  "mouthL": 656.75,
+  "mouthR": 705.25,
+  "W_px": 48.5,
+  "H_px": 19.0,
+  "W_over_CE": 0.535,
+  "cornerLift_px": 3.09,
+  "cornerLift_over_CE": 0.034,
+  "bothCornersVisible": true,
+  "contourSide": "",
+  "noseX": 681.5263157894736,
+  "noseY": 266.57894736842104,
+  "seam_below_eye_over_CE": 0.618,
+  "chin_below_seam_over_CE": 0.382,
+  "seam_below_nose_over_CE": 0.218,
+  "mouth_dx_from_nose_over_CE": -0.006,
+  "faceL": 634,
+  "faceR": 729,
+  "mouth_pos_in_jaw": 0.495,
+  "closed": true,
+  "sharp": 17.90069121074175,
+  "skinL": 139.13
+ },
+ "left": {
+  "eyes": {
+   "green": [
+    614.9,
+    217.6,
+    44
+   ]
+  },
+  "eyeLineY": 217.6,
+  "chinY": 306.0,
+  "CE_px": 88.4,
+  "mouthCx": 601.12,
+  "seamY": 270.62,
+  "mouthL": 589.25,
+  "mouthR": 613.0,
+  "W_px": 23.75,
+  "H_px": 24.75,
+  "W_over_CE": 0.269,
+  "cornerLift_px": -6.12,
+  "cornerLift_over_CE": -0.069,
+  "bothCornersVisible": false,
+  "contourSide": "left",
+  "noseX": 580.0,
+  "noseY": 238.0,
+  "seam_below_eye_over_CE": 0.6,
+  "chin_below_seam_over_CE": 0.4,
+  "seam_below_nose_over_CE": 0.369,
+  "mouth_dx_from_nose_over_CE": 0.239,
+  "faceL": 595,
+  "faceR": 743,
+  "mouth_pos_in_jaw": 0.041,
+  "closed": true,
+  "sharp": 14.403948294136583,
+  "skinL": 133.821
+ },
+ "right": {
+  "eyes": {
+   "orange": [
+    756.2,
+    220.8,
+    14
+   ]
+  },
+  "eyeLineY": 220.8,
+  "chinY": 310.0,
+  "CE_px": 89.2,
+  "mouthCx": 772.0,
+  "seamY": 273.62,
+  "mouthL": 760.25,
+  "mouthR": 783.75,
+  "W_px": 23.5,
+  "H_px": 22.25,
+  "W_over_CE": 0.263,
+  "cornerLift_px": -5.81,
+  "cornerLift_over_CE": -0.065,
+  "bothCornersVisible": false,
+  "contourSide": "right",
+  "noseX": 793.0,
+  "noseY": 242.0,
+  "seam_below_eye_over_CE": 0.592,
+  "chin_below_seam_over_CE": 0.408,
+  "seam_below_nose_over_CE": 0.355,
+  "mouth_dx_from_nose_over_CE": -0.235,
+  "faceL": 633,
+  "faceR": 778,
+  "mouth_pos_in_jaw": 0.959,
+  "closed": true,
+  "sharp": 14.614195283689911,
+  "skinL": 132.223
+ }
+}

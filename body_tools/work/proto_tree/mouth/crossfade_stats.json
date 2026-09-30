@@ -1,0 +1,122 @@
+{
+ "apose rest->AA": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.42
+ },
+ "apose rest->smile": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.43
+ },
+ "apose AA->EE": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 55,
+  "meanDevFromIdealMix": 13.05
+ },
+ "apose M->OH": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 39,
+  "meanDevFromIdealMix": 11.66
+ },
+ "apose rest->AA_half": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.44
+ },
+ "apose AA_half->AA": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 42,
+  "meanDevFromIdealMix": 9.0
+ },
+ "tpose rest->AA": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.43
+ },
+ "tpose rest->smile": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.44
+ },
+ "tpose AA->EE": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 53,
+  "meanDevFromIdealMix": 13.4
+ },
+ "tpose M->OH": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 44,
+  "meanDevFromIdealMix": 12.08
+ },
+ "tpose rest->AA_half": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.44
+ },
+ "tpose AA_half->AA": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 43,
+  "meanDevFromIdealMix": 10.1
+ },
+ "left rest->AA": {
+  "baseShowThroughOnLips": 0.5,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.44
+ },
+ "left rest->smile": {
+  "baseShowThroughOnLips": 0.5,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.43
+ },
+ "left AA->EE": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 51,
+  "meanDevFromIdealMix": 10.91
+ },
+ "left M->OH": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 34,
+  "meanDevFromIdealMix": 7.61
+ },
+ "left rest->AA_half": {
+  "baseShowThroughOnLips": 0.5,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.43
+ },
+ "left AA_half->AA": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 50,
+  "meanDevFromIdealMix": 8.61
+ },
+ "right rest->AA": {
+  "baseShowThroughOnLips": 0.5,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.42
+ },
+ "right rest->smile": {
+  "baseShowThroughOnLips": 0.5,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.42
+ },
+ "right AA->EE": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 56,
+  "meanDevFromIdealMix": 10.59
+ },
+ "right M->OH": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 34,
+  "meanDevFromIdealMix": 9.77
+ },
+ "right rest->AA_half": {
+  "baseShowThroughOnLips": 0.5,
+  "maxDevFromIdealMix": 0,
+  "meanDevFromIdealMix": 0.42
+ },
+ "right AA_half->AA": {
+  "baseShowThroughOnLips": 0.25,
+  "maxDevFromIdealMix": 56,
+  "meanDevFromIdealMix": 8.9
+ }
+}

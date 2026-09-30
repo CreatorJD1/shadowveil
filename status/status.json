@@ -1,0 +1,1019 @@
+{
+  "title": "Shadowveil — character rig & live driver status",
+  "updated": "2026-09-30T05:10:00-07:00",
+  "updated_pt": "Wed Sep 30 2026, 5:10 AM PT",
+  "progress": {
+    "pct": 45,
+    "label": "roughly 40–50% to a quality live driver",
+    "note": "rough estimate"
+  },
+  "sections": [
+    {
+      "id": "built",
+      "title": "Built & working",
+      "color": "green",
+      "items": [
+        {
+          "text": "Rest is 0 px against her drawing in all 5 views (apose, tpose, left, right, back)",
+          "state": "done"
+        },
+        {
+          "text": "Only her authored PNG parts are rendered; dev guard throws on any shape draw",
+          "state": "done"
+        },
+        {
+          "text": "Layers panel live (eye white + iris rows; single-part hair strands as plain rows)",
+          "state": "done"
+        },
+        {
+          "text": "Hair angle readout live during Play",
+          "state": "done"
+        },
+        {
+          "text": "Eyes blink, gaze and switch lid frames (left-profile gaze reversal fixed, user-approved)",
+          "state": "done"
+        },
+        {
+          "text": "Mouth switches all 9 drawn shapes via MouthOpen / MouthForm",
+          "state": "done"
+        },
+        {
+          "text": "Fingers: 3 joints each + Fist / Point / Peace poses (T-pose half-curl bend fixed by Hands)",
+          "state": "done"
+        },
+        {
+          "text": "Hair spring sway on 37 parts",
+          "state": "done"
+        },
+        {
+          "text": "Runtime contract v1.7.1 (layer order, outfit bands, param names)",
+          "state": "done"
+        },
+        {
+          "text": "Three-quarter reference frames agreed: f033 (45°) and f191 (315°)",
+          "state": "done"
+        },
+        {
+          "text": "Idle test v1 run — findings:",
+          "state": "done",
+          "sub": [
+            {
+              "text": "Auto idle is lifeless (body under 1°)",
+              "state": "blocked"
+            },
+            {
+              "text": "Mouth flickers (47 changes in 8 s)",
+              "state": "blocked"
+            },
+            {
+              "text": "Head flickers sharp/soft",
+              "state": "blocked"
+            },
+            {
+              "text": "Keyed clips: right-view forearm opens 420 px of holes at arm_settle f169",
+              "state": "blocked"
+            },
+            {
+              "text": "Keyed clips: knees kink ~33°, feet lift 14 px",
+              "state": "blocked"
+            },
+            {
+              "text": "Hair at 1.1 Hz / ζ 0.3 pins at its limits; tips overrun (worst +6.1°)",
+              "state": "blocked"
+            }
+          ]
+        },
+        {
+          "text": "Clean room page embed: images and videos fixed in #reference (patched copies app/cleanroom/index.html + static.html via app/cleanroom/build.py; 0 broken imgs/videos in headless check, tunnel OK; turnaround strip + talk clips added to Media)",
+          "state": "done",
+          "sub": [
+            {
+              "text": "Reference media path fix: 0 broken of 52 images and 49 videos (local and tunnel)",
+              "state": "done"
+            }
+          ]
+        },
+        {
+          "text": "DECIDED: hair preset A (spring 4.0 Hz, ζ 0.8) is the default",
+          "state": "done"
+        },
+        {
+          "text": "DECIDED: the anger face uses the Clean room art (authored images only)",
+          "state": "done"
+        },
+        {
+          "text": "Hands: apose + tpose hand rig.json fixes live (rest 0 px)",
+          "state": "done"
+        },
+        {
+          "text": "Remote access: public link via the Cloudflare quick tunnel through the password gate (temporary address)",
+          "state": "done"
+        },
+        {
+          "text": "Pose driver (Clean room): app/driver/ — in-between crossfade of the turnaround stills with idle>turn>hold>drift>idle, scrub, targets, eye/hand stills composited where aligned, hair skin-fill hide, front-only talk clips; beauty-mark audit holds out turn-045/090/315 (app/qa/beauty_marks/REPORT.md)",
+          "state": "done"
+        },
+        {
+          "text": "Body tab: Rig controls panel (app/rigctl.js) embeds the v1.8 WIP rig and drives it via set()+draw(). Live: finger curl L/R, WristL/R, HeadTilt/Nod, body joints, root, hair preset, and a view dial with ◀ ▶ (reloads ?view=). WristRot, twist and split-curl params show as in progress and switch on automatically when the rig's P adds them",
+          "state": "done"
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "title": "In progress — v1.8",
+      "color": "amber",
+      "items": [
+        {
+          "text": "v1.8 (root motion, foot plant, consistent resampling, internal-edge alpha fix) + core fixes",
+          "state": "wip",
+          "sub": [
+            {
+              "text": "Root motion + foot plant",
+              "state": "wip"
+            },
+            {
+              "text": "Sharp/soft flicker fix",
+              "state": "wip"
+            },
+            {
+              "text": "Calm idle mouth + 125 ms talk timing (no EE, no smile)",
+              "state": "wip"
+            },
+            {
+              "text": "Livelier idle body",
+              "state": "wip"
+            },
+            {
+              "text": "Eyes' blink timing",
+              "state": "wip"
+            },
+            {
+              "text": "Per-tip hair clamps",
+              "state": "wip"
+            },
+            {
+              "text": "Hair presets: default / A (4.0 Hz, ζ 0.8, now the default) / B (2.0 Hz, ζ 0.6)",
+              "state": "wip"
+            },
+            {
+              "text": "Hair reacts to vertical motion",
+              "state": "wip"
+            },
+            {
+              "text": "HeadTilt / HeadNod with eyes, mouth and hair parented to the head",
+              "state": "wip"
+            },
+            {
+              "text": "Runtime contract v1.8",
+              "state": "wip"
+            },
+            {
+              "text": "Consistent resampling (ss2 posed filtering on every frame)",
+              "state": "wip"
+            },
+            {
+              "text": "Internal-edge alpha fix (edge seal between parts)",
+              "state": "wip"
+            }
+          ]
+        },
+        {
+          "text": "Owner keys for v1.8",
+          "state": "wip",
+          "sub": [
+            {
+              "text": "Eyes keys ready",
+              "state": "done"
+            },
+            {
+              "text": "Mouth keys ready",
+              "state": "done"
+            },
+            {
+              "text": "Hands keys ready",
+              "state": "done"
+            },
+            {
+              "text": "Body keys pending",
+              "state": "wip"
+            },
+            {
+              "text": "Hair keys pending",
+              "state": "wip"
+            }
+          ]
+        },
+        {
+          "text": "Action clips + showcase",
+          "state": "wip",
+          "sub": [
+            {
+              "text": "Jump / run / anger action clips (clip JSON + stress variants in rig/previews/actions/v1; renders queued)",
+              "state": "wip"
+            },
+            {
+              "text": "Full showcase in 5 views",
+              "state": "todo"
+            },
+            {
+              "text": "Audit against the Clean room clips (idle/jump/run/angry strips prepared)",
+              "state": "wip"
+            }
+          ]
+        },
+        {
+          "text": "Life layer (Jason's request): no breathing; natural standing arm sway, weight shift with planted feet, follow-through, face/hands micro-motion, hair reacting to motion. Pushed to the rig's joint limits. Before/alive/max renders in 5 views go to rig/previews/idle/v2/life/",
+          "state": "wip",
+          "sub": [
+            {
+              "text": "Life-layer idle clip idle_arm_sway (no breathing); Eyes + Mouth QA now run on it",
+              "state": "wip"
+            }
+          ]
+        },
+        {
+          "text": "Hand rotation: WristRot + palm twist via authored hand angles",
+          "state": "wip"
+        },
+        {
+          "text": "Wrist joint block leak fix",
+          "state": "wip"
+        },
+        {
+          "text": "Twist axis on all joints (shoulder, forearm, wrist, hip, knee, ankle, neck)",
+          "state": "wip"
+        },
+        {
+          "text": "Weighted skinning (mesh test to close the flat-limb joint gaps)",
+          "state": "wip"
+        },
+        {
+          "text": "Pose driver: Clean room turnaround in-between driver (idle → turn → hold → drift → idle); blends only between beauty-mark-consistent stills",
+          "state": "wip"
+        },
+        {
+          "text": "Clean room art integration of ALL normal full-figure/face stills: 1,323 counted (123 turnaround + 1,200 pose; layers dropped from the count)",
+          "state": "wip"
+        },
+        {
+          "text": "Beauty mark check across all 1,323 stills (canonical: two marks on her right cheek); mismatches held out of the driver and flagged for regeneration. Report: app/qa/beauty_marks/REPORT.md (pending)",
+          "state": "wip"
+        },
+        {
+          "text": "Hair: tpose wisp fill (hair/qa/wisp_fix)",
+          "state": "wip"
+        },
+        {
+          "text": "Body: profile skin/underlay fix for the armpit hole and hip slit",
+          "state": "wip"
+        }
+      ]
+    },
+    {
+      "id": "blockers",
+      "title": "Blockers & open issues",
+      "color": "red",
+      "items": [
+        {
+          "text": "Joint gaps from flat limbs on pivots: weighted mesh skinning approved and now in progress, no clean mesh test yet (main quality gap)",
+          "state": "blocked"
+        },
+        {
+          "text": "Turning her needs native lossless angle stills at ~22.5° steps (no mirroring)",
+          "state": "blocked"
+        },
+        {
+          "text": "Joint caps (25°) and 8° lean make the run a tight jog",
+          "state": "blocked"
+        },
+        {
+          "text": "Not built: split finger curl (claw)",
+          "state": "todo"
+        },
+        {
+          "text": "Not built: driver system (timeline, reference import, linked motion, lip sync)",
+          "state": "todo"
+        },
+        {
+          "text": "Open: Clean room talk clips are missing layer cuts (held frame 404)",
+          "state": "blocked"
+        },
+        {
+          "text": "Hands: back-view lean still open",
+          "state": "blocked"
+        },
+        {
+          "text": "Hair erase mask proposal on hold until Body posts the profile skin/underlay fix",
+          "state": "blocked"
+        },
+        {
+          "text": "Permanent named Cloudflare tunnel needs a domain",
+          "state": "blocked"
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "title": "Next / estimate (rough)",
+      "color": "blue",
+      "items": [
+        {
+          "text": "v1.8 + action audit — within hours",
+          "state": "todo"
+        },
+        {
+          "text": "Weighted meshes clean in 5 views — a few days",
+          "state": "todo"
+        },
+        {
+          "text": "Angle views — depends on the stills",
+          "state": "todo"
+        },
+        {
+          "text": "Driver system — about a week after that",
+          "state": "todo"
+        },
+        {
+          "text": "Todo: animation states wiring (idle / talk / turn / action state machine in the live driver)",
+          "state": "todo"
+        },
+        {
+          "text": "Todo: manual rotation control (arrow buttons + dial to switch views, no mirroring)",
+          "state": "todo"
+        }
+      ]
+    }
+  ],
+  "owners": [
+    {
+      "name": "Body",
+      "state": "skin fix WIP",
+      "latest": "Profile skin/underlay fix for the armpit hole and hip slit; jump/run/anger action JSON + stress checks (body_tools/actions)"
+    },
+    {
+      "name": "Eyes",
+      "state": "See eyes/HANDOFF.md; lash fix and turn offsets unfinished",
+      "latest": "Stopped, handoff written"
+    },
+    {
+      "name": "Mouth",
+      "state": "keys ready",
+      "latest": "Handoff written (mouth/HANDOFF.md)"
+    },
+    {
+      "name": "Hands",
+      "state": "fixes live",
+      "latest": "Stopped. Handoff in hands/HANDOFF.md; live verified, rest 0 in all views."
+    },
+    {
+      "name": "Hair",
+      "state": "wisp fix WIP",
+      "latest": "Tpose wisp fill live; speck move and line-art check in progress"
+    },
+    {
+      "name": "Coder",
+      "state": "v1.8 WIP",
+      "latest": "Hand rotation (WristRot + palm twist), wrist leak fix, twist axes on all joints, weighted skinning; life idle + action clips"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "Life v1.8 apose before/after",
+      "path": "rig/previews/idle/v2/life/apose_life_before_after.mp4",
+      "exists": true
+    },
+    {
+      "label": "Hands idle bend REPORT",
+      "path": "hands/work/idle_bend/REPORT.md",
+      "exists": true
+    },
+    {
+      "label": "Hair idle battle worst sheet",
+      "path": "hair/qa/idle_battle/worst_sheet.png",
+      "exists": true
+    },
+    {
+      "label": "Hair wisp fix SUMMARY",
+      "path": "hair/qa/wisp_fix/SUMMARY.md",
+      "exists": true
+    },
+    {
+      "label": "Pose driver",
+      "path": "app/driver/index.html",
+      "exists": true
+    },
+    {
+      "label": "Beauty mark REPORT",
+      "path": "app/qa/beauty_marks/REPORT.md",
+      "exists": true
+    },
+    {
+      "label": "All idle keys (5 views)",
+      "path": "rig/previews/idle/keys/idle_keys_all.mp4",
+      "exists": true
+    },
+    {
+      "label": "Idle keys contact sheet",
+      "path": "rig/previews/idle/keys/idle_keys_contact_sheet.png",
+      "exists": true
+    },
+    {
+      "label": "Auto idle v1, all views",
+      "path": "rig/previews/idle/idle_all.mp4",
+      "exists": true
+    },
+    {
+      "label": "Idle contact sheet",
+      "path": "rig/previews/idle/idle_contact_sheet.png",
+      "exists": true
+    },
+    {
+      "label": "Idle QA summary",
+      "path": "rig/previews/idle/qa/SUMMARY.txt",
+      "exists": true
+    },
+    {
+      "label": "Idle QA folder",
+      "path": "rig/previews/idle/qa/",
+      "exists": true
+    },
+    {
+      "label": "Keyed clips folder",
+      "path": "rig/previews/idle/keys/",
+      "exists": true
+    },
+    {
+      "label": "Idle v2 folder",
+      "path": "rig/previews/idle/v2/",
+      "exists": true
+    },
+    {
+      "label": "Actions v1 folder",
+      "path": "rig/previews/actions/v1/",
+      "exists": true
+    },
+    {
+      "label": "Live rig",
+      "path": "rig/index.html",
+      "exists": true
+    },
+    {
+      "label": "Rig v1.8 WIP",
+      "path": "rig/index.v18-wip.html",
+      "exists": true
+    },
+    {
+      "label": "Layers panel screenshot",
+      "path": "rig/previews/layers_panel.png",
+      "exists": true
+    },
+    {
+      "label": "Rest diff (apose)",
+      "path": "rig/rest_diff_apose.png",
+      "exists": true
+    },
+    {
+      "label": "Runtime contract",
+      "path": "runtime-contract.md",
+      "exists": true
+    },
+    {
+      "label": "Hands contact sheet",
+      "path": "hands/contact_sheet.png",
+      "exists": true
+    },
+    {
+      "label": "Body joint zoom sheet",
+      "path": "body_tools/joint_zoom_sheet.png",
+      "exists": true
+    },
+    {
+      "label": "Hair quality sheet",
+      "path": "hair/quality_sheet.png",
+      "exists": true
+    },
+    {
+      "label": "Mouth review v4 (on face)",
+      "path": "mouth/review_v4_preview_on_face.png",
+      "exists": true
+    },
+    {
+      "label": "Eyes live preview",
+      "path": "eyes/live/index.html",
+      "exists": true
+    },
+    {
+      "label": "Hair live preview",
+      "path": "hair/live/index.html",
+      "exists": true
+    },
+    {
+      "label": "Clean room reference",
+      "path": "app/cleanroom/index.html",
+      "exists": true
+    }
+  ],
+  "live_rig": {
+    "sources": [
+      {
+        "label": "Live rig",
+        "path": "rig/index.html",
+        "params": [
+          "view"
+        ]
+      },
+      {
+        "label": "v1.8 WIP",
+        "path": "rig/index.v18-wip.html",
+        "params": [
+          "view",
+          "auto",
+          "footplant",
+          "hair",
+          "mouthfade",
+          "quality"
+        ]
+      }
+    ],
+    "views": [
+      "apose",
+      "tpose",
+      "left",
+      "right",
+      "back"
+    ],
+    "clips": [
+      "idle",
+      "breathe",
+      "weight_shift",
+      "arm_settle",
+      "jump",
+      "anger",
+      "run",
+      "showcase"
+    ],
+    "note": "rig/index.html accepts only ?view=<apose|tpose|left|right|back> (plus ?skin= and #check). It has no clip or autoplay param, so clip tabs fall back to the rendered clip and Play/Auto must be clicked inside the rig. index.v18-wip.html adds ?auto=idle|talk, ?footplant=xy|y|off, ?hair=default|A|B, ?mouthfade=35|0, ?quality= but still no clip/autoplay. Needed for full tabs: ?clip=<idle|breathe|weight_shift|arm_settle|jump|anger|run|showcase> and ?autoplay=1 (tick Auto/Play on load)."
+  },
+  "video_sources": [
+    {
+      "glob": "rig/previews/idle/*_idle.mp4",
+      "group": "Auto idle",
+      "version": "idle v1"
+    },
+    {
+      "glob": "rig/previews/idle/*_idle_*.mp4",
+      "group": "Auto idle (hair variants)",
+      "version": "idle v1"
+    },
+    {
+      "glob": "rig/previews/idle/idle_all.mp4",
+      "group": "Auto idle",
+      "version": "idle v1"
+    },
+    {
+      "glob": "rig/previews/idle/keys/*.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1"
+    },
+    {
+      "glob": "rig/previews/idle/v2/**/*.mp4",
+      "group": "Idle v2",
+      "version": "idle v2"
+    },
+    {
+      "glob": "rig/previews/actions/v1/**/*.mp4",
+      "group": "Actions v1",
+      "version": "actions v1"
+    },
+    {
+      "glob": "rig/previews/wrist/v1/**/*.mp4",
+      "group": "Wrist v1",
+      "version": "wrist v1"
+    },
+    {
+      "glob": "rig/previews/idle/v2/seal/*.mp4",
+      "group": "Idle v2",
+      "version": "idle v2"
+    }
+  ],
+  "videos": [
+    {
+      "path": "rig/previews/idle/apose_idle.mp4",
+      "group": "Auto idle",
+      "version": "idle v1",
+      "name": "apose_idle",
+      "date": "Sep 30 1:51 AM PT",
+      "mtime": "2026-09-30T01:51:58-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 755807
+    },
+    {
+      "path": "rig/previews/idle/back_idle.mp4",
+      "group": "Auto idle",
+      "version": "idle v1",
+      "name": "back_idle",
+      "date": "Sep 30 1:52 AM PT",
+      "mtime": "2026-09-30T01:52:09-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 621398
+    },
+    {
+      "path": "rig/previews/idle/left_idle.mp4",
+      "group": "Auto idle",
+      "version": "idle v1",
+      "name": "left_idle",
+      "date": "Sep 30 1:52 AM PT",
+      "mtime": "2026-09-30T01:52:04-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 447653
+    },
+    {
+      "path": "rig/previews/idle/right_idle.mp4",
+      "group": "Auto idle",
+      "version": "idle v1",
+      "name": "right_idle",
+      "date": "Sep 30 1:52 AM PT",
+      "mtime": "2026-09-30T01:52:06-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 433663
+    },
+    {
+      "path": "rig/previews/idle/tpose_idle.mp4",
+      "group": "Auto idle",
+      "version": "idle v1",
+      "name": "tpose_idle",
+      "date": "Sep 30 1:52 AM PT",
+      "mtime": "2026-09-30T01:52:01-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 536831
+    },
+    {
+      "path": "rig/previews/idle/apose_idle_hair_middle.mp4",
+      "group": "Auto idle (hair variants)",
+      "version": "idle v1",
+      "name": "apose_idle_hair_middle",
+      "date": "Sep 30 1:52 AM PT",
+      "mtime": "2026-09-30T01:52:15-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 754169
+    },
+    {
+      "path": "rig/previews/idle/apose_idle_hair_stiff.mp4",
+      "group": "Auto idle (hair variants)",
+      "version": "idle v1",
+      "name": "apose_idle_hair_stiff",
+      "date": "Sep 30 1:52 AM PT",
+      "mtime": "2026-09-30T01:52:12-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 753462
+    },
+    {
+      "path": "rig/previews/idle/idle_all.mp4",
+      "group": "Auto idle",
+      "version": "idle v1",
+      "name": "idle_all",
+      "date": "Sep 30 1:52 AM PT",
+      "mtime": "2026-09-30T01:52:19-07:00",
+      "duration": 8.0,
+      "size": [
+        3410,
+        870
+      ],
+      "bytes": 695799
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_arm_settle_all5.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_arm_settle_all5",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:39-07:00",
+      "duration": 8.0,
+      "size": [
+        3410,
+        870
+      ],
+      "bytes": 857913
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_arm_settle_apose.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_arm_settle_apose",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:22-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 848186
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_arm_settle_back.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_arm_settle_back",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:34-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 717474
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_arm_settle_left.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_arm_settle_left",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:28-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 568070
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_arm_settle_right.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_arm_settle_right",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:31-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 531389
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_arm_settle_tpose.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_arm_settle_tpose",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:26-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 668065
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_breathe_all5.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_breathe_all5",
+      "date": "Sep 30 2:07 AM PT",
+      "mtime": "2026-09-30T02:07:56-07:00",
+      "duration": 8.0,
+      "size": [
+        3410,
+        870
+      ],
+      "bytes": 790493
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_breathe_apose.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_breathe_apose",
+      "date": "Sep 30 2:07 AM PT",
+      "mtime": "2026-09-30T02:07:38-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 816853
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_breathe_back.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_breathe_back",
+      "date": "Sep 30 2:07 AM PT",
+      "mtime": "2026-09-30T02:07:52-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 679087
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_breathe_left.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_breathe_left",
+      "date": "Sep 30 2:07 AM PT",
+      "mtime": "2026-09-30T02:07:45-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 516699
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_breathe_right.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_breathe_right",
+      "date": "Sep 30 2:07 AM PT",
+      "mtime": "2026-09-30T02:07:48-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 488218
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_breathe_tpose.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_breathe_tpose",
+      "date": "Sep 30 2:07 AM PT",
+      "mtime": "2026-09-30T02:07:42-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 630386
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_keys_all.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_keys_all",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:49-07:00",
+      "duration": 8.0,
+      "size": [
+        3410,
+        2610
+      ],
+      "bytes": 2731018
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_weight_shift_all5.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_weight_shift_all5",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:19-07:00",
+      "duration": 8.0,
+      "size": [
+        3410,
+        870
+      ],
+      "bytes": 1224285
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_weight_shift_apose.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_weight_shift_apose",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:00-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 1372729
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_weight_shift_back.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_weight_shift_back",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:13-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 1156731
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_weight_shift_left.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_weight_shift_left",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:07-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 571793
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_weight_shift_right.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_weight_shift_right",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:10-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 648550
+    },
+    {
+      "path": "rig/previews/idle/keys/idle_weight_shift_tpose.mp4",
+      "group": "Keyed idle clips",
+      "version": "keys v1",
+      "name": "idle_weight_shift_tpose",
+      "date": "Sep 30 2:08 AM PT",
+      "mtime": "2026-09-30T02:08:04-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 1103641
+    },
+    {
+      "path": "rig/previews/idle/v2/life/apose_life_after.mp4",
+      "group": "Idle v2",
+      "version": "idle v2",
+      "name": "apose_life_after",
+      "date": "Sep 30 4:19 AM PT",
+      "mtime": "2026-09-30T04:19:06-07:00",
+      "duration": 8.0,
+      "size": [
+        1366,
+        1740
+      ],
+      "bytes": 1122934
+    },
+    {
+      "path": "rig/previews/idle/v2/life/apose_life_before_after.mp4",
+      "group": "Idle v2",
+      "version": "idle v2",
+      "name": "apose_life_before_after",
+      "date": "Sep 30 4:18 AM PT",
+      "mtime": "2026-09-30T04:18:40-07:00",
+      "duration": 8.0,
+      "size": [
+        2048,
+        1304
+      ],
+      "bytes": 1147355
+    }
+  ],
+  "build_lines": {
+    "status": "Build: rig v1.8 WIP (life idle, hand rotation, twist axes, skinning); pose driver + Clean room integration in progress",
+    "preview": "Build: live rig = rig/index.html; v1.8 WIP = rig/index.v18-wip.html; renders: idle v1, keys v1, idle v2 life",
+    "body": "Build: stopped; see body_tools/HANDOFF.md",
+    "eyes": "Build: keys ready; idle QA now on idle_arm_sway",
+    "mouth": "Stopped. Handoff in mouth/HANDOFF.md; anger colour decision pending",
+    "hands": "Build: apose/tpose finger fixes live (rest 0 px); back lean + lineart check in progress",
+    "hair": "Stopped. Handoff: hair/HANDOFF.md. Live and verified (rest 0 px, springs A, tpose wisp fill). Unfinished: speck move (staged, waits on Body), line-art joint fixes, turn handoff offsets (first pass).",
+    "coder": "Build: v1.8 WIP: hand rotation, wrist leak fix, twist axes, weighted skinning, life idle, actions v1",
+    "reference": "Build: Clean room media fixed (0 broken / 52 img + 49 video); 1,323-still integration + beauty mark check WIP"
+  }
+}

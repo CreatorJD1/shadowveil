@@ -1,0 +1,6 @@
+b75cbd974fe88cf185f2d04bfd418579  views/apose/hands/rig.json
+2249f6e70477e586e81e7cf7fd4cb128  views/back/hands/rig.json
+06f2e8c6ac11be9276e808764c7340f4  views/left/hands/rig.json
+70c4d335fc6a5873fada84e7820cf2c5  views/right/hands/rig.json
+11ce3fc1bb3aabaa9b6470cb31a17e98  views/tpose/hands/rig.json
+85e76250f61a9a530c50ec3e7fdbf602  rig/index.html

@@ -1,0 +1,142 @@
+{
+ "apose": {
+  "filled_px": 365,
+  "ears": [
+   {
+    "box": [
+     570,
+     195,
+     628,
+     280
+    ],
+    "px": 179,
+    "new_px": 12,
+    "replaced_old_hair_fill_px": 167,
+    "colour": "#966A4A",
+    "skin_samples": 118
+   },
+   {
+    "box": [
+     735,
+     195,
+     795,
+     280
+    ],
+    "px": 186,
+    "new_px": 52,
+    "replaced_old_hair_fill_px": 134,
+    "colour": "#9C6F4D",
+    "skin_samples": 150
+   }
+  ],
+  "unsafe_skipped": 0,
+  "exposed_in_ear_boxes": 822,
+  "enclosed_candidates": 393
+ },
+ "tpose": {
+  "filled_px": 448,
+  "ears": [
+   {
+    "box": [
+     575,
+     190,
+     632,
+     280
+    ],
+    "px": 191,
+    "new_px": 0,
+    "replaced_old_hair_fill_px": 191,
+    "colour": "#986C4C",
+    "skin_samples": 109
+   },
+   {
+    "box": [
+     730,
+     190,
+     790,
+     280
+    ],
+    "px": 257,
+    "new_px": 40,
+    "replaced_old_hair_fill_px": 217,
+    "colour": "#986B52",
+    "skin_samples": 103
+   }
+  ],
+  "unsafe_skipped": 0,
+  "exposed_in_ear_boxes": 704,
+  "enclosed_candidates": 481
+ },
+ "left": {
+  "filled_px": 0,
+  "ears": [
+   {
+    "box": [
+     675,
+     185,
+     730,
+     262
+    ],
+    "px": 0
+   }
+  ],
+  "unsafe_skipped": 0,
+  "exposed_in_ear_boxes": 0,
+  "enclosed_candidates": 0
+ },
+ "right": {
+  "filled_px": 10,
+  "ears": [
+   {
+    "box": [
+     640,
+     190,
+     690,
+     262
+    ],
+    "px": 10,
+    "new_px": 0,
+    "replaced_old_hair_fill_px": 10,
+    "colour": "#A97A58",
+    "skin_samples": 37
+   }
+  ],
+  "unsafe_skipped": 0,
+  "exposed_in_ear_boxes": 16,
+  "enclosed_candidates": 16
+ },
+ "back": {
+  "filled_px": 28,
+  "ears": [
+   {
+    "box": [
+     585,
+     195,
+     632,
+     272
+    ],
+    "px": 12,
+    "new_px": 2,
+    "replaced_old_hair_fill_px": 10,
+    "colour": "#AA7650",
+    "skin_samples": 24
+   },
+   {
+    "box": [
+     735,
+     195,
+     782,
+     272
+    ],
+    "px": 16,
+    "new_px": 5,
+    "replaced_old_hair_fill_px": 11,
+    "colour": "#AC784D",
+    "skin_samples": 33
+   }
+  ],
+  "unsafe_skipped": 0,
+  "exposed_in_ear_boxes": 130,
+  "enclosed_candidates": 44
+ }
+}

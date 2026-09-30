@@ -1,0 +1,58 @@
+{
+ "apose": {
+  "view": "apose",
+  "transform": {
+   "scale": 0.5,
+   "scaleX": 0.5,
+   "scaleY": 0.5,
+   "rotationDeg": 0.0,
+   "srcCentre": [
+    371.0,
+    436.5
+   ],
+   "dstCentre": [
+    681.0,
+    286.5
+   ],
+   "note": "dst = dstCentre + scale*(src - srcCentre) in pixel-edge coordinates (src px i spans [i,i+1))"
+  },
+  "restDrawnBBox": [
+   657,
+   279,
+   704,
+   298
+  ],
+  "restSeamY": 286.5,
+  "maxAlphaErr": 0.007781155343362662,
+  "uncoveredRestLipPx": 0,
+  "restLipPx": 543
+ },
+ "tpose": {
+  "view": "tpose",
+  "transform": {
+   "scale": 0.5,
+   "scaleX": 0.5,
+   "scaleY": 0.5,
+   "rotationDeg": 0.0,
+   "srcCentre": [
+    371.0,
+    436.5
+   ],
+   "dstCentre": [
+    682.0,
+    277.5
+   ],
+   "note": "dst = dstCentre + scale*(src - srcCentre) in pixel-edge coordinates (src px i spans [i,i+1))"
+  },
+  "restDrawnBBox": [
+   658,
+   272,
+   705,
+   290
+  ],
+  "restSeamY": 277.5,
+  "maxAlphaErr": 0.0051911021178718715,
+  "uncoveredRestLipPx": 0,
+  "restLipPx": 524
+ }
+}
