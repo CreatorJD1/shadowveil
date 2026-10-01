@@ -1,0 +1,50 @@
+{
+  "45_L": {
+    "length": 94.99999999999997,
+    "width": 64.11484844410438,
+    "wristWidth": 26.40070800851809,
+    "source": "reference/apose_turn/frames/f035.png"
+  },
+  "45_R": {
+    "length": 72.99999999999996,
+    "width": 53.10056165824045,
+    "wristWidth": 25.797756670985954,
+    "source": "reference/apose_turn/frames/f035.png"
+  },
+  "135_L": {
+    "length": 96.14872288599297,
+    "width": 67.71459398861415,
+    "wristWidth": 26.907248087227853,
+    "source": "reference/apose_turn/frames/f086.png"
+  },
+  "135_R": {
+    "length": 60.99999999999998,
+    "width": 46.823911741503395,
+    "wristWidth": 30.528520660870907,
+    "source": "reference/apose_turn/frames/f086.png"
+  },
+  "225_L": {
+    "length": 64.99999999999999,
+    "width": 45.30005376749736,
+    "wristWidth": 27.78252191408836,
+    "source": "reference/apose_turn/frames/f133.png"
+  },
+  "225_R": {
+    "length": 98.19748232621073,
+    "width": 73.07020615697847,
+    "wristWidth": 26.148472578211756,
+    "source": "reference/apose_turn/frames/f133.png"
+  },
+  "315_L": {
+    "length": 69.0,
+    "width": 53.917750673416634,
+    "wristWidth": 27.65185129402234,
+    "source": "reference/apose_turn/frames/f189.png"
+  },
+  "315_R": {
+    "length": 90.99999999999997,
+    "width": 64.69695299281648,
+    "wristWidth": 26.399699721023158,
+    "source": "reference/apose_turn/frames/f189.png"
+  }
+}

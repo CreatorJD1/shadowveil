@@ -1,10 +1,10 @@
 {
-  "title": "Shadowveil — character rig & live driver status",
+  "title": "Shadowveil \u2014 character rig & live driver status",
   "updated": "2026-09-30T05:10:00-07:00",
   "updated_pt": "Wed Sep 30 2026, 5:10 AM PT",
   "progress": {
     "pct": 45,
-    "label": "roughly 40–50% to a quality live driver",
+    "label": "roughly 40\u201350% to a quality live driver",
     "note": "rough estimate"
   },
   "sections": [
@@ -50,15 +50,15 @@
           "state": "done"
         },
         {
-          "text": "Three-quarter reference frames agreed: f033 (45°) and f191 (315°)",
+          "text": "Three-quarter reference frames agreed: f033 (45\u00b0) and f191 (315\u00b0)",
           "state": "done"
         },
         {
-          "text": "Idle test v1 run — findings:",
+          "text": "Idle test v1 run \u2014 findings:",
           "state": "done",
           "sub": [
             {
-              "text": "Auto idle is lifeless (body under 1°)",
+              "text": "Auto idle is lifeless (body under 1\u00b0)",
               "state": "blocked"
             },
             {
@@ -74,11 +74,11 @@
               "state": "blocked"
             },
             {
-              "text": "Keyed clips: knees kink ~33°, feet lift 14 px",
+              "text": "Keyed clips: knees kink ~33\u00b0, feet lift 14 px",
               "state": "blocked"
             },
             {
-              "text": "Hair at 1.1 Hz / ζ 0.3 pins at its limits; tips overrun (worst +6.1°)",
+              "text": "Hair at 1.1 Hz / \u03b6 0.3 pins at its limits; tips overrun (worst +6.1\u00b0)",
               "state": "blocked"
             }
           ]
@@ -94,7 +94,7 @@
           ]
         },
         {
-          "text": "DECIDED: hair preset A (spring 4.0 Hz, ζ 0.8) is the default",
+          "text": "DECIDED: hair preset A (spring 4.0 Hz, \u03b6 0.8) is the default",
           "state": "done"
         },
         {
@@ -110,18 +110,18 @@
           "state": "done"
         },
         {
-          "text": "Pose driver (Clean room): app/driver/ — in-between crossfade of the turnaround stills with idle>turn>hold>drift>idle, scrub, targets, eye/hand stills composited where aligned, hair skin-fill hide, front-only talk clips; beauty-mark audit holds out turn-045/090/315 (app/qa/beauty_marks/REPORT.md)",
+          "text": "Pose driver (Clean room): app/driver/ \u2014 in-between crossfade of the turnaround stills with idle>turn>hold>drift>idle, scrub, targets, eye/hand stills composited where aligned, hair skin-fill hide, front-only talk clips; beauty-mark audit holds out turn-045/090/315 (app/qa/beauty_marks/REPORT.md)",
           "state": "done"
         },
         {
-          "text": "Body tab: Rig controls panel (app/rigctl.js) embeds the v1.8 WIP rig and drives it via set()+draw(). Live: finger curl L/R, WristL/R, HeadTilt/Nod, body joints, root, hair preset, and a view dial with ◀ ▶ (reloads ?view=). WristRot, twist and split-curl params show as in progress and switch on automatically when the rig's P adds them",
+          "text": "Body tab: Rig controls panel (app/rigctl.js) embeds the v1.8 WIP rig and drives it via set()+draw(). Live: finger curl L/R, WristL/R, HeadTilt/Nod, body joints, root, hair preset, and a view dial with \u25c0 \u25b6 (reloads ?view=). WristRot, twist and split-curl params show as in progress and switch on automatically when the rig's P adds them",
           "state": "done"
         }
       ]
     },
     {
       "id": "progress",
-      "title": "In progress — v1.8",
+      "title": "In progress \u2014 v1.8",
       "color": "amber",
       "items": [
         {
@@ -153,7 +153,7 @@
               "state": "wip"
             },
             {
-              "text": "Hair presets: default / A (4.0 Hz, ζ 0.8, now the default) / B (2.0 Hz, ζ 0.6)",
+              "text": "Hair presets: default / A (4.0 Hz, \u03b6 0.8, now the default) / B (2.0 Hz, \u03b6 0.6)",
               "state": "wip"
             },
             {
@@ -249,7 +249,7 @@
           "state": "wip"
         },
         {
-          "text": "Pose driver: Clean room turnaround in-between driver (idle → turn → hold → drift → idle); blends only between beauty-mark-consistent stills",
+          "text": "Pose driver: Clean room turnaround in-between driver (idle \u2192 turn \u2192 hold \u2192 drift \u2192 idle); blends only between beauty-mark-consistent stills",
           "state": "wip"
         },
         {
@@ -280,11 +280,11 @@
           "state": "blocked"
         },
         {
-          "text": "Turning her needs native lossless angle stills at ~22.5° steps (no mirroring)",
+          "text": "Turning her needs native lossless angle stills at ~22.5\u00b0 steps (no mirroring)",
           "state": "blocked"
         },
         {
-          "text": "Joint caps (25°) and 8° lean make the run a tight jog",
+          "text": "Joint caps (25\u00b0) and 8\u00b0 lean make the run a tight jog",
           "state": "blocked"
         },
         {
@@ -319,19 +319,19 @@
       "color": "blue",
       "items": [
         {
-          "text": "v1.8 + action audit — within hours",
+          "text": "v1.8 + action audit \u2014 within hours",
           "state": "todo"
         },
         {
-          "text": "Weighted meshes clean in 5 views — a few days",
+          "text": "Weighted meshes clean in 5 views \u2014 a few days",
           "state": "todo"
         },
         {
-          "text": "Angle views — depends on the stills",
+          "text": "Angle views \u2014 depends on the stills",
           "state": "todo"
         },
         {
-          "text": "Driver system — about a week after that",
+          "text": "Driver system \u2014 about a week after that",
           "state": "todo"
         },
         {
@@ -520,7 +520,9 @@
         "label": "Live rig",
         "path": "rig/index.html",
         "params": [
-          "view"
+          "view",
+          "clip",
+          "autoplay"
         ]
       },
       {
@@ -532,7 +534,9 @@
           "footplant",
           "hair",
           "mouthfade",
-          "quality"
+          "quality",
+          "clip",
+          "autoplay"
         ]
       }
     ],
@@ -553,7 +557,7 @@
       "run",
       "showcase"
     ],
-    "note": "rig/index.html accepts only ?view=<apose|tpose|left|right|back> (plus ?skin= and #check). It has no clip or autoplay param, so clip tabs fall back to the rendered clip and Play/Auto must be clicked inside the rig. index.v18-wip.html adds ?auto=idle|talk, ?footplant=xy|y|off, ?hair=default|A|B, ?mouthfade=35|0, ?quality= but still no clip/autoplay. Needed for full tabs: ?clip=<idle|breathe|weight_shift|arm_settle|jump|anger|run|showcase> and ?autoplay=1 (tick Auto/Play on load)."
+    "note": "Clip and autoplay parameters are supported by the hosted rig. Existing authored keyframes drive body clips; idle uses procedural animation. Breathe uses archived authored keys. Pose driver has its own Auto and Talk controls."
   },
   "video_sources": [
     {

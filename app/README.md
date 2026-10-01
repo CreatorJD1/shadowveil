@@ -58,3 +58,9 @@ Each tab shows a one-line build status (top right of the nav), read from `status
     python3 status/update.py build hands "Build: back-view lean fixed"
 
 Live Preview shows a **pose driver ↗** link automatically once `app/driver/index.html` exists.
+
+## Current posing and live hand updates
+
+The master preview includes collapsible controls, zoom and pan, whole-body joint nodes, wrist twist, per-finger controls and articulated rotating hand variants. New hand artwork and its calibration metadata live in `rig/hand_angles/`; reproducible atlas inputs and Python generators live in `tools/`. To regenerate the reconstructed hands, install NumPy, Pillow and SciPy, then run `python tools/install-hd-hands.py`. This changes the reconstructed assets only. The reference extraction generator is retained separately.
+
+The Clean Room reference is linked at `reference/grok_build` as a Git submodule. After cloning, run `git submodule update --init --recursive` to fetch the reference assets. Serve the repository root with `python -m http.server 8765` and open `http://localhost:8765/app/`. Serve Clean Room's `public` directory when opening its native `/clean-room/` page.

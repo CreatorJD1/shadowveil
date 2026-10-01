@@ -100,8 +100,8 @@
         {
           "label": "Idle resim final summary",
           "path": "body_tools/idle/resim/final_summary.json",
-          "note": "added in the Sep 30 4:25 AM PT refresh",
-          "exists": true
+          "note": "Unavailable in the current source snapshot.",
+          "exists": false
         },
         {
           "label": "Idle clips definition",
@@ -615,7 +615,7 @@
           "exists": true
         },
         {
-          "label": "Turn video mouth, 0-360°",
+          "label": "Turn video mouth, 0-360\u00b0",
           "path": "mouth/work/turn_ref/turn_mouth_contact_sheet.png",
           "note": "",
           "exists": true
@@ -647,7 +647,14 @@
       "scan_dirs": [
         "hands"
       ],
-      "pages": [],
+      "pages": [
+        {
+          "label": "Intermediate hand meshes",
+          "path": "rig/hand_angles/manifest.json",
+          "note": "Created from the authored turn frames; three joints per finger",
+          "exists": true
+        }
+      ],
       "reports": [
         {
           "label": "Idle bend REPORT",
@@ -847,6 +854,72 @@
           "label": "data_back_check",
           "path": "hands/work/idle_bend/sheets/data_back_check.png",
           "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hand turn: intermediate angles",
+          "path": "hands/work/turn_check/turn_hands_sheet.png",
+          "note": "Authored turn reference",
+          "exists": true
+        },
+        {
+          "label": "Hand turn: first half",
+          "path": "hands/work/turn_check/turn_sweep_a.png",
+          "note": "Authored turn reference",
+          "exists": true
+        },
+        {
+          "label": "Hand turn: second half",
+          "path": "hands/work/turn_check/turn_sweep_b.png",
+          "note": "Authored turn reference",
+          "exists": true
+        },
+        {
+          "label": "New rig: 45\u00b0 left hand",
+          "path": "rig/hand_angles/45_L.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "New rig: 45\u00b0 right hand",
+          "path": "rig/hand_angles/45_R.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "New rig: 135\u00b0 left hand",
+          "path": "rig/hand_angles/135_L.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "New rig: 135\u00b0 right hand",
+          "path": "rig/hand_angles/135_R.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "New rig: 225\u00b0 left hand",
+          "path": "rig/hand_angles/225_L.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "New rig: 225\u00b0 right hand",
+          "path": "rig/hand_angles/225_R.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "New rig: 315\u00b0 left hand",
+          "path": "rig/hand_angles/315_L.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "New rig: 315\u00b0 right hand",
+          "path": "rig/hand_angles/315_R.png",
+          "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         }
       ]
@@ -1416,8 +1489,8 @@
         {
           "label": "Base model rig brief",
           "path": "reference/grok_build/artifacts/base-model-rig-brief.md",
-          "note": "",
-          "exists": true
+          "note": "Unavailable in the current source snapshot.",
+          "exists": false
         },
         {
           "label": "Clean room media check (final)",
@@ -1464,51 +1537,51 @@
           "exists": true
         },
         {
-          "label": "Turnaround 0°",
+          "label": "Turnaround 0\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-000.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 45°",
+          "label": "Turnaround 45\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-045.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 90°",
+          "label": "Turnaround 90\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-090.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 135°",
+          "label": "Turnaround 135\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-135.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 180°",
+          "label": "Turnaround 180\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-180.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 225°",
+          "label": "Turnaround 225\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-225.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 270°",
+          "label": "Turnaround 270\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-270.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 315°",
+          "label": "Turnaround 315\u00b0",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-315.png",
-          "note": "clean-room rotation strip (45° steps)",
+          "note": "clean-room rotation strip (45\u00b0 steps)",
           "exists": true
         },
         {
@@ -1606,95 +1679,101 @@
       "title": "Base model clean room",
       "bytes": 2391626,
       "embedded_in": "",
-      "excluded": false
+      "excluded": false,
+      "exists": false,
+      "note": "Unavailable in the current source snapshot."
     },
     {
       "path": "reference/grok_build/artifacts/clean-room.html",
       "title": "Clean room",
       "bytes": 962021,
       "embedded_in": "",
-      "excluded": false
+      "excluded": false,
+      "exists": false,
+      "note": "Unavailable in the current source snapshot."
     },
     {
       "path": "reference/grok_build/artifacts/index.html",
       "title": "Clean room",
       "bytes": 9235,
       "embedded_in": "",
-      "excluded": false
+      "excluded": false,
+      "exists": false,
+      "note": "Unavailable in the current source snapshot."
     },
     {
       "path": "reference/grok_build/attachments/Shadowveil_Driver_Screen_Labels(2) (2).html",
-      "title": "Shadowveil · Character Animation Studio",
+      "title": "Shadowveil \u00b7 Character Animation Studio",
       "bytes": 99703983,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/attachments/index-4.html",
-      "title": "Shadowveil — 2D Puppet Rig",
+      "title": "Shadowveil \u2014 2D Puppet Rig",
       "bytes": 18402,
       "embedded_in": "reference",
       "excluded": false
     },
     {
       "path": "reference/grok_build/driver-work/Shadowveil_Character_Driver_Foundation.html",
-      "title": "Shadowveil · Screen Labels 0.1.2",
+      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
       "bytes": 4943190,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/driver-work/docs/driver/Meta_AI_Guide_Handoff.html",
-      "title": "Shadowveil — HTML guide handoff for Meta AI",
+      "title": "Shadowveil \u2014 HTML guide handoff for Meta AI",
       "bytes": 7056,
       "embedded_in": "reference",
       "excluded": false
     },
     {
       "path": "reference/grok_build/driver-work/public/driver-foundation/index.html",
-      "title": "Shadowveil · Screen Labels 0.1.2",
+      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
       "bytes": 4943190,
       "embedded_in": "reference",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/baseline/Shadowveil_Driver_Screen_Labels.html",
-      "title": "Shadowveil · Screen Labels 0.1.2",
+      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
       "bytes": 4105708,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/Shadowveil_Character_Driver_Foundation.html",
-      "title": "Shadowveil · Screen Labels 0.1.2",
+      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
       "bytes": 4105708,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/docs/driver/Meta_AI_Guide_Handoff.html",
-      "title": "Shadowveil — HTML guide handoff for Meta AI",
+      "title": "Shadowveil \u2014 HTML guide handoff for Meta AI",
       "bytes": 7056,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/public/driver-foundation/index.html",
-      "title": "Shadowveil · Screen Labels 0.1.2",
+      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
       "bytes": 4105708,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/prior-reports/Shadowveil_Character_Driver_Direction_Fix.html",
-      "title": "Shadowveil · Direction Fix 0.1.1",
+      "title": "Shadowveil \u00b7 Direction Fix 0.1.1",
       "bytes": 4099882,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/references/Shadowveil_Interactive_Master_Sheet.html",
-      "title": "Shadowveil — Character Master Sheet",
+      "title": "Shadowveil \u2014 Character Master Sheet",
       "bytes": 61096318,
       "embedded_in": "reference",
       "excluded": false

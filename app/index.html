@@ -22,7 +22,7 @@ header{position:sticky;top:0;z-index:5;background:#0b0d11;border-bottom:1px soli
 nav{display:flex;gap:2px;margin-top:6px;flex-wrap:wrap}
 nav a{padding:4px 10px;border-radius:6px 6px 0 0;color:var(--dim);border:1px solid transparent;border-bottom:none}
 nav a.on{background:var(--panel);color:var(--text);border-color:var(--line)}nav a:hover{color:var(--text);text-decoration:none}
-main{height:calc(100vh - 86px);padding:10px 14px;overflow:hidden}
+main{height:calc(100vh - 130px);padding:10px 14px;overflow:hidden}
 .route{display:none;height:100%}.route.on{display:block}
 .cols{display:grid;gap:10px;height:100%}
 .scroll{overflow:auto;min-height:0}
@@ -70,6 +70,11 @@ table.inv th{color:var(--dim);position:sticky;top:0;background:var(--panel)}
 .pill{font-size:10px;border-radius:3px;padding:0 5px;background:#2a2f3b;color:var(--dim)}.pill.g{background:#1d3a28;color:#7fe0a0}.pill.a{background:#3d2f12;color:#f1c56a}
 .empty{padding:20px;color:var(--dim);text-align:center}
 .bl{margin-left:12px;flex:1 1 0;min-width:0;text-align:right;align-self:center;font-size:11px;color:#f1c56a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+@media(max-width:760px){
+html,body{height:auto;min-height:100%}.top{flex-wrap:wrap;gap:8px}.prog{min-width:0;flex-basis:100%;order:3}.upd{white-space:normal;margin-left:auto}.brand{white-space:normal}main{height:auto;overflow:visible;padding:8px}.route.on{min-height:80vh}.cols{grid-template-columns:minmax(0,1fr)!important;height:auto}.panel{min-width:0}.cards{grid-template-columns:1fr}.note{overflow-wrap:anywhere}#r-preview>.panel{height:auto!important}#rigwrap{flex:none;height:700px;min-height:700px}#r-preview .cols>.scroll{max-height:500px}.fw{min-height:600px}#botbody{min-height:700px}#minibody{height:650px}.gal{--gw:150px!important}.owners{grid-template-columns:1fr}.links{columns:1}.bl{flex-basis:100%;margin-left:0;text-align:left}#r-bot .cols{gap:8px}
+}
+#workspace-tools{padding:8px 14px;background:#172434;color:#fff;font-size:14px}
 </style></head>
 <body>
 <header>
@@ -81,6 +86,7 @@ table.inv th{color:var(--dim);position:sticky;top:0;background:var(--panel)}
  </div>
  <nav id="nav"></nav>
 </header>
+<div id="workspace-tools" aria-label="Show or hide panels"><strong>Show / hide panels</strong></div>
 <main>
  <section class="route" id="r-status"><div class="cols" style="grid-template-columns:430px 1fr">
   <div class="panel" id="minipv"><h3>Live preview<span class="sp"></span>
@@ -132,9 +138,13 @@ function setBuild(){const r=(location.hash.slice(1).split('?')[0]||'status');con
 
 /* ---------- iframe fit (scale wide tool pages down to the panel) ---------- */
 const fitters=new Map();
-function fitFrame(wrap,fr,minw){const f=()=>{const w=wrap.clientWidth,hh=wrap.clientHeight;if(!w||!hh)return;const s=Math.min(1,w/(minw||w));fr.style.width=(w/s)+'px';fr.style.height=(hh/s)+'px';fr.style.transform=s<1?`scale(${s})`:''};
+function fitFrame(wrap,fr,minw){const f=()=>{const w=wrap.clientWidth,hh=wrap.clientHeight;if(!w||!hh)return;const s=Math.min(1,w/((innerWidth<=760||/\/rig\/index(?:\.v18-wip)?\.html/.test(fr.src)?0:minw)||w));fr.style.width=(w/s)+'px';fr.style.height=(hh/s)+'px';fr.style.transform=s<1?`scale(${s})`:''};
  if(fitters.has(wrap))fitters.get(wrap).disconnect();const ro=new ResizeObserver(f);ro.observe(wrap);fitters.set(wrap,ro);f()}
-function frame(wrap,src,minw){let fr=wrap.querySelector('iframe');if(!fr||fr.dataset.src!==src){wrap.replaceChildren();fr=h('iframe',{src,title:src,allow:'autoplay; fullscreen'});fr.dataset.src=src;wrap.append(fr)}fitFrame(wrap,fr,minw);return fr}
+let poseSnapshot=null;try{poseSnapshot=JSON.parse(sessionStorage.getItem('shadowveil.manual.pose.v1')||'null')}catch{}
+function stashFrame(fr){try{if(!fr?.contentWindow.eval('!!R&&!R.loading'))return;const snapshot=fr.contentWindow.PoseEditor?.exportState();if(!snapshot)return;poseSnapshot={...snapshot,values:snapshot.manual?snapshot.values:(poseSnapshot?.values||snapshot.values),manual:snapshot.manual,hasManual:snapshot.manual||poseSnapshot?.hasManual,source:fr.dataset.src};sessionStorage.setItem('shadowveil.manual.pose.v1',JSON.stringify(poseSnapshot))}catch{}}
+function restoreFrame(fr,src){const snapshot=poseSnapshot;if(!snapshot)return;let tries=0;const restore=()=>{if(!fr.isConnected)return;try{const win=fr.contentWindow,editor=win.PoseEditor;if(editor&&win.eval('!!R&&!R.loading')){const incoming=new URL(src,location.href),previous=new URL(snapshot.source||src,location.href),clip=incoming.searchParams.get('clip');editor.importState({...snapshot,manual:snapshot.resumePlayback?false:((!clip||clip==='all')?!!snapshot.hasManual:snapshot.manual)},{pose:!clip||clip==='all'||clip===previous.searchParams.get('clip')});if(snapshot.resumePlayback)win.SVPlayback?.play();return}}catch{}if(++tries<480)setTimeout(restore,250)};restore()}
+window.addEventListener('shadowveil-playback-change',()=>{const fr=document.querySelector('#rigwrap iframe');stashFrame(fr);if(poseSnapshot){poseSnapshot.resumePlayback=!!fr?.contentWindow.SVPlayback?.state.playing;sessionStorage.setItem('shadowveil.manual.pose.v1',JSON.stringify(poseSnapshot))}});
+function frame(wrap,src,minw){let fr=wrap.querySelector('iframe');if(!fr||fr.dataset.src!==src){stashFrame(fr);wrap.replaceChildren();fr=h('iframe',{src,title:src,allow:'autoplay; fullscreen'});fr.dataset.src=src;fr.addEventListener('load',()=>restoreFrame(fr,src));wrap.append(fr)}fitFrame(wrap,fr,minw);return fr}
 
 /* ---------- lazy autoplay for galleries ---------- */
 // only on-screen clips hold a decoder: attach src when visible, detach when scrolled away / route hidden (keeps memory low)
@@ -162,7 +172,7 @@ function renderMini(){const mode=store.get('minimode','renders');document.queryS
  $('#mininote').textContent=v?`${v.path} · ${v.version} · ${v.date}${v.duration?' · '+v.duration+' s':''}`:''}
 
 /* ---------- live preview ---------- */
-function pvState(){const q=new URLSearchParams(location.hash.split('?')[1]||'');const st=store.get('pv',{src:0,view:'apose',clip:'all',group:'all',hair:'',auto:''});
+function pvState(){const q=new URLSearchParams(location.hash.split('?')[1]||'');const st=store.get('pv',{src:0,view:'apose',clip:'idle',group:'all',hair:'',auto:''});
  for(const k of['view','clip','src','hair','auto'])if(q.has(k))st[k]=k==='src'?(q.get(k)==='drv'?'drv':+q.get(k)):q.get(k);return st}
 function renderPreview(){const st=pvState(),save=p=>{Object.assign(st,p);store.set('pv',st);renderPreview()};const LR=S.live_rig,src=LR.sources[st.src]||LR.sources[0];const V=vids();
  const top=$('#pvtop');top.replaceChildren(h('span',{class:'lbl'},'rig'),...LR.sources.map((s,i)=>h('button',{class:'tab'+(i===st.src?' on':''),on:{click:()=>save({src:i})}},s.label)),h('button',{class:'tab'+(st.src==='drv'?' on':''),title:'In-between pose driver on the Clean room turnaround stills (app/driver/)',on:{click:()=>save({src:'drv'})}},'Pose driver (Clean room)'),
@@ -173,14 +183,15 @@ function renderPreview(){const st=pvState(),save=p=>{Object.assign(st,p);store.s
  // pose driver link (app/driver/) only when it exists
  {const dl=h('a',{href:'driver/',target:'_blank',id:'drvlink',style:'display:none;margin-left:12px;font-size:12px;font-weight:600'},'pose driver ↗');top.append(dl);fetch('driver/',{cache:'no-store'}).then(r=>r.ok?r.text():'').then(t=>{if(t&&(!t.includes('Directory listing for')||/href="index\.html"/.test(t)))dl.style.display=''}).catch(()=>{})}
  const clipsAvail=new Set(V.map(v=>v.clip));const clips=['all',...LR.clips,'keys'];
- $('#pvclips').replaceChildren(h('span',{class:'lbl'},'clip'),...clips.map(c=>h('button',{class:'tab'+(c===st.clip?' on':''),disabled:c!=='all'&&!clipsAvail.has(c),title:c!=='all'&&!clipsAvail.has(c)?'not rendered yet':'',on:{click:()=>save({clip:c})}},c.replace('_',' '))));
+ $('#pvclips').replaceChildren(h('span',{class:'lbl'},'clip'),...clips.map(c=>h('button',{class:'tab'+(c===st.clip?' on':''),disabled:c!=='all'&&!clipsAvail.has(c)&&!['idle','breathe','weight_shift','arm_settle','keys','showcase','jump','anger','run'].includes(c),title:c!=='all'&&!clipsAvail.has(c)?'not rendered yet':'',on:{click:()=>{if(c===st.clip&&c!=='all'){try{$('#rigwrap iframe')?.contentWindow.SVClip?.replay()}catch{}}else save({clip:c})}}},c.replace('_',' '))));
  const q=new URLSearchParams();if(st.view!=='all')q.set('view',st.view);if(src.params.includes('hair')&&st.hair)q.set('hair',st.hair);if(src.params.includes('auto')&&st.auto)q.set('auto',st.auto);
+ if(st.src!=='drv'&&st.clip!=='all'){q.set('clip',st.clip);q.set('autoplay','1')}
  const url=st.src==='drv'?'driver/index.html':U(src.path)+(q.toString()?'?'+q:'');frame($('#rigwrap'),url,st.src==='drv'?1100:1200);$('#rigopen').href=url;
  const groups=['all',...new Set(V.map(v=>v.group))];if(!groups.includes(st.group))st.group='all';
  $('#pvgroups').replaceChildren(h('span',{class:'lbl'},'renders'),...groups.map(g=>h('button',{class:'tab'+(g===st.group?' on':''),on:{click:()=>save({group:g})}},g)));
  const list=V.filter(v=>(st.group==='all'||v.group===st.group)&&(st.clip==='all'||v.clip===st.clip)&&(st.view==='all'||v.view===st.view||v.view==='all'));
  const gal=$('#pvgal');gal.style.setProperty('--gw','200px');gal.replaceChildren(...(list.length?list.map(v=>vidCard(v)):[h('div',{class:'empty'},'No rendered clip for this view/clip yet')]));
- $('#pvnote').innerHTML=`<b>Rig URL params:</b> ${esc(LR.note)} &nbsp;Showing <b>${list.length}</b> of ${V.length} rendered clips.`}
+ $('#pvnote').innerHTML=`<b>Rig URL params:</b> ${st.src==='drv'?'Clip tabs filter the videos below. Use Auto, target and Talk inside the pose driver.':'Clip tabs select live animation and filter rendered videos. All returns to manual control; use Auto inside the rig for procedural idle. Hair and Auto settings apply to the selected rig.'} &nbsp;Showing <b>${list.length}</b> of ${V.length} rendered clips.`}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ---------- bot sections ---------- */
@@ -193,6 +204,7 @@ function mediaGrid(sec){const m=sec.media.filter(e=>e.exists!==false);if(!m.leng
  return h('div',{class:'gal',style:'--gw:260px'},m.map(e=>/\.(mp4|webm)$/i.test(e.path)?vidCard({path:e.path,clip:'',view:'',version:sec.title,date:'',name:e.label},e.label):
   h('div',{class:'vid'},h('a',{href:U(e.path),target:'_blank'},h('img',{src:U(e.path),loading:'lazy',alt:e.label,onerror:"this.closest('.vid').remove()"})),h('div',{class:'cap'},h('b',{},e.label),e.auto?h('span',{class:'pill'},'auto'):null))))}
 function renderBot(id){const sec=R.sections.find(s=>s.id===id);if(!sec)return;const pages=sec.pages.filter(e=>e.exists!==false),reps=sec.reports.filter(e=>e.exists!==false);
+ const absent=sec.reports.filter(e=>e.exists===false);
  const key='bot.'+id,cur=store.get(key,id==='body'&&window.RigCtl?'rigctl':pages.length?'p0':'media');window.RigCtl?.unmount();const body=$('#botbody'),set=t=>{store.set(key,t);renderBot(id)};
  const tabs=[...(id==='body'&&window.RigCtl?[['rigctl','🎛 Rig controls']]:[]),...pages.map((p,i)=>['p'+i,'▣ '+p.label]),['media','Media ('+sec.media.filter(e=>e.exists!==false).length+')'],['report','Report viewer']];
  $('#bottabs').replaceChildren(h('b',{style:'margin-right:8px'},sec.title),...tabs.map(([k,t])=>h('button',{class:'tab'+(k===cur?' on':''),on:{click:()=>set(k)}},t)));
@@ -209,13 +221,14 @@ function renderBot(id){const sec=R.sections.find(s=>s.id===id);if(!sec)return;co
   o?h('div',{class:'card blue',style:'margin:8px;'},h('h2',{},sec.owner,h('span',{class:'n'},o.state||'')),o.latest):null,
   h('h3',{},'Tool pages'),h('div',{class:'reports'},pages.length?pages.map((p,i)=>h('a',{class:cur==='p'+i?'on':'',on:{click:()=>set('p'+i)}},p.label,h('span',{class:'x'},p.path))):h('div',{class:'empty'},'none')),
   h('h3',{},'Reports & QA'),h('div',{class:'reports'},reps.length?reps.map(r=>h('a',{class:cur==='report'&&(rp||reps[0].path)===r.path?'on':'',on:{click:()=>{store.set(key+'.rep',r.path);set('report')}}},r.label,h('span',{class:'x'},r.path.split('/').pop()),r.auto?h('span',{class:'pill',style:'margin-left:4px'},'auto'):null)):h('div',{class:'empty'},'none')),
+  ...absent.map(r=>h('div',{class:'note'},r.label+' — unavailable in this source version')),
   h('h3',{},'Media'),h('div',{class:'reports'},sec.media.filter(e=>e.exists!==false).map(m=>h('a',{href:U(m.path),target:'_blank'},m.label,h('span',{class:'x'},m.path.split('/').pop()))))].filter(Boolean))}
 
 /* ---------- inventory ---------- */
 function renderInv(){const secs=Object.fromEntries(R.sections.map(s=>[s.id,s.title]));
  $('#invbody').replaceChildren(h('h3',{},`All HTML pages under /workspace/shadowveil (${R.inventory.length}, node_modules excluded) — from registry.json, refresh with status/update.py scan`),
   h('table',{class:'inv'},h('tr',{},h('th',{},'Page'),h('th',{},'Title'),h('th',{},'Size'),h('th',{},'In app')),
-   R.inventory.map(p=>h('tr',{},h('td',{},h('a',{href:U(p.path),target:'_blank'},p.path)),h('td',{},p.title),h('td',{},(p.bytes/1024>1024?(p.bytes/1048576).toFixed(1)+' MB':Math.round(p.bytes/1024)+' KB')),
+   R.inventory.map(p=>h('tr',{},h('td',{},p.exists===false?h('span',{title:'Not included in this source version'},p.path+' — unavailable'):h('a',{href:U(p.path),target:'_blank'},p.path)),h('td',{},p.title),h('td',{},(p.bytes/1024>1024?(p.bytes/1048576).toFixed(1)+' MB':Math.round(p.bytes/1024)+' KB')),
     h('td',{},p.embedded_in?h('a',{href:'#'+p.embedded_in},h('span',{class:'pill g'},secs[p.embedded_in])):h('span',{class:'pill'+(p.excluded?'':' a')},p.excluded?'backup / copy — not embedded':'not embedded'))))))}
 
 /* ---------- router ---------- */
@@ -224,15 +237,34 @@ function route(){const r=(location.hash.slice(1).split('?')[0]||'status');const 
  document.querySelectorAll('.route').forEach(e=>e.classList.remove('on'));
  const el=bot?'#r-bot':('#r-'+(['status','preview','inventory'].includes(r)?r:'status'));$(el).classList.add('on');
  // drop iframes of hidden routes so tool pages don't keep running in the background
- document.querySelectorAll('.route:not(.on) .fw').forEach(w=>{if(w.querySelector('iframe'))w.replaceChildren()});
+ document.querySelectorAll('.route:not(.on) .fw').forEach(w=>{if(w.querySelector('iframe')){stashFrame(w.querySelector('iframe'));w.replaceChildren()}});
  if(r==='preview')renderPreview();else if(bot)renderBot(r);else if(r==='inventory')renderInv();else{renderStatus();renderMini()}
  setBuild();document.title='Shadowveil — '+(bot?R.sections.find(s=>s.id===r).title:r)}
 async function boot(){try{await loadData()}catch(e){document.body.innerHTML='<p style="padding:20px">Could not load data: '+esc(e.message)+'</p>';return}header();route()}
-window.addEventListener('hashchange',route);
+window.addEventListener('hashchange',route);window.addEventListener('pagehide',()=>stashFrame(document.querySelector('.route.on iframe')));
 // 60 s refresh: on #status reload the page (same as a meta refresh); elsewhere refresh data softly so embedded tools aren't reset.
 setInterval(async()=>{const r=location.hash.slice(1).split('?')[0]||'status';if(r==='status'){location.reload();return}
  try{await loadData();header();document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.r===r))}catch{}},60000);
 boot();
 </script>
 <noscript><meta http-equiv="refresh" content="60"><p>This dashboard needs JavaScript. Plain-text mirror: <a href="../STATUS.md">STATUS.md</a></p></noscript>
-</body></html>
+<script>
+(() => {
+const style=document.createElement('style');style.textContent=`
+#workspace-tools{display:flex;flex-wrap:wrap;gap:5px;align-items:center;position:sticky;top:0;z-index:30;padding:8px 14px;background:#172434;border-bottom:1px solid var(--line);font-size:14px}#workspace-tools button{background:#252b35;color:#e3e6ec;border:1px solid #425063;border-radius:5px;padding:7px 10px;min-height:34px;font-size:14px;cursor:pointer}#workspace-tools button[aria-pressed=true]{border-color:#72c8ff;background:#1e3a50}
+body.workspace-hide-gallery #r-preview .cols{grid-template-columns:minmax(0,1fr)!important}body.workspace-hide-gallery #r-preview .cols>.scroll{display:none}body.workspace-hide-sidebar #botside{display:none}body.workspace-hide-sidebar #r-bot .cols{grid-template-columns:minmax(0,1fr)!important}body.workspace-hide-sliders .rc{grid-template-columns:minmax(0,1fr)!important}body.workspace-hide-sliders .rc .rp{display:none}body.workspace-hide-preview-controls #pvtop,body.workspace-hide-preview-controls #pvclips{display:none}body.workspace-hide-notes .note{display:none}
+body.workspace-focus>header,body.workspace-focus #pvtop,body.workspace-focus #pvclips,body.workspace-focus #r-preview .cols>.scroll,body.workspace-focus #pvnote{display:none}body.workspace-focus #r-preview .cols{grid-template-columns:minmax(0,1fr)!important}body.workspace-focus main{height:calc(100vh - 44px)}body.workspace-focus #workspace-tools{height:auto;min-height:44px}
+.card.folded>:not(h2){display:none}.card h2{cursor:pointer}.card h2:after{content:' ▾';margin-left:auto;color:#8bd7ff}.card.folded h2:after{content:' ▸'}@media(max-width:760px){#workspace-tools{padding:5px 8px}body.workspace-focus main{height:auto}body.workspace-focus #rigwrap{height:80vh;min-height:650px}}
+`;document.head.append(style);
+let pref={};try{pref=JSON.parse(localStorage.getItem('shadowveil.master.workspace.v1')||'{}')}catch{}
+const tools=document.getElementById('workspace-tools')||document.createElement('div');tools.replaceChildren();const caption=document.createElement('strong');caption.textContent='Show / hide panels';tools.append(caption);tools.id='workspace-tools';tools.setAttribute('aria-label','Workspace panels');document.querySelector('header').after(tools);
+function activeEditor(){try{return document.querySelector('.route.on iframe')?.contentWindow.PoseEditor}catch{return null}}
+function syncRigButtons(){const state=activeEditor()?.state;for(const b of tools.querySelectorAll('[data-rig-panel]'))if(state)b.textContent=(state[b.dataset.rigPanel==='controls'?'hideControls':'hideLayers']?'Show ':'Hide ')+(b.dataset.rigPanel==='controls'?'rig controls':'layers');const b=tools.querySelector('[data-rig-twist]');if(b&&state)b.textContent=state.twistMode?'Bend handles':'Twist handles'}window.addEventListener('shadowveil-workspace-change',syncRigButtons);
+const playback=document.createElement('button');playback.type='button';playback.dataset.playback='true';playback.textContent='Play motion';tools.insertBefore(playback,caption);function activePlayback(){try{return document.querySelector('.route.on iframe')?.contentWindow.SVPlayback}catch{return null}}function syncPlayback(){const p=activePlayback();playback.textContent=p?.state.playing?'Pause motion':'Play motion';playback.setAttribute('aria-pressed',String(!!p?.state.playing))}playback.onclick=()=>{const p=activePlayback();if(p?.state.ready){if(p.state.playing)p.pause();else p.play();syncPlayback()}else{playback.textContent='Rig loading…'}};setInterval(syncPlayback,500);
+const buttons=[['gallery','Videos'],['preview-controls','Preview controls'],['sidebar','Reports'],['sliders','Sliders'],['notes','Notes'],['focus','Focus pose']];
+function apply(){for(const [key,label]of buttons){const on=!!pref[key];const button=tools.querySelector('[data-panel="'+key+'"]');if(button)button.textContent=key==='focus'?(on?'Exit focus':'Focus pose'):(on?'Show ':'Hide ')+label.toLowerCase();document.body.classList.toggle(key==='focus'?'workspace-focus':'workspace-hide-'+key,on);tools.querySelector('[data-panel="'+key+'"]')?.setAttribute('aria-pressed',String(key==='focus'?on:!on));}requestAnimationFrame(()=>window.dispatchEvent(new Event('resize')));}
+for(const [key,label]of buttons){const b=document.createElement('button');b.type='button';b.textContent=label;b.dataset.panel=key;b.addEventListener('click',()=>{pref[key]=!pref[key];try{localStorage.setItem('shadowveil.master.workspace.v1',JSON.stringify(pref))}catch{}apply();});tools.append(b);}const restore=document.createElement('button');restore.type='button';restore.textContent='Show all';restore.onclick=()=>{pref={};activeEditor()?.showAll();try{localStorage.setItem('shadowveil.pose.workspace.v1',JSON.stringify({hideControls:false,hideLayers:false,nodes:true}))}catch{}for(const card of document.querySelectorAll('.card.folded')){card.classList.remove('folded');card.querySelector('h2')?.setAttribute('aria-expanded','true')}syncRigButtons();try{localStorage.removeItem('shadowveil.master.workspace.v1')}catch{}apply();};tools.append(restore);for(const [panel,label]of [['controls','Hide rig controls'],['layers','Hide layers']]){const button=document.createElement('button');button.type='button';button.textContent=label;button.dataset.rigPanel=panel;button.onclick=()=>{try{const editor=activeEditor();if(editor){editor.togglePanel(panel);syncRigButtons();}else{button.textContent='Rig loading…';setTimeout(()=>button.textContent=label,1500)}}catch{button.textContent='Open Live rig first';setTimeout(()=>button.textContent=label,1500)}};tools.append(button);}const twists=document.createElement('button');twists.type='button';twists.textContent='Twist handles';twists.dataset.rigTwist='true';twists.onclick=()=>{try{const editor=activeEditor();if(editor){const mode=!editor.state.twistMode;editor.setTwistMode(mode);twists.textContent=mode?'Bend handles':'Twist handles';}else{twists.textContent='Open Live rig first';setTimeout(()=>twists.textContent='Twist handles',1500)}}catch{}};tools.append(twists);apply();
+new MutationObserver(()=>{for(const h of document.querySelectorAll('.card h2:not([data-fold-ready])')){h.dataset.foldReady='true';h.tabIndex=0;h.setAttribute('role','button');h.setAttribute('aria-expanded','true');const toggle=()=>{const collapsed=h.parentElement.classList.toggle('folded');h.setAttribute('aria-expanded',String(!collapsed));};h.addEventListener('click',e=>{if(!e.target.closest('a'))toggle();});h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}});}}).observe(document.querySelector('main'),{childList:true,subtree:true});
+})();
+
+</script></body></html>

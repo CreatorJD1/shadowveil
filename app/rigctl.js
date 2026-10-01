@@ -27,14 +27,15 @@ window.RigCtl = (() => {
   .rc .row{display:grid;grid-template-columns:78px 1fr 34px;gap:4px;align-items:center;padding:1px 0}.rc .row input{width:100%}.rc .row .val{color:var(--dim);font-size:10px;text-align:right}
   .rc .row.off{opacity:.45}.rc .ip{font-size:9px;background:#3d2f12;color:#f1c56a;border-radius:3px;padding:0 4px;white-space:nowrap}
   .rc .live{font-size:9px;background:#1d3a28;color:#7fe0a0;border-radius:3px;padding:0 4px}
+  @media(max-width:760px){.rc{grid-template-columns:1fr!important;overflow:auto!important}.rc .rf{min-height:700px}.rc .rp{max-height:500px}}
   .rc .dial{display:flex;align-items:center;gap:6px;justify-content:center}.rc .dial svg{width:132px;height:132px}
   .rc .dial svg text{font:10px system-ui;fill:#cfd5df;cursor:pointer;text-anchor:middle;dominant-baseline:middle}.rc .dial svg .on{fill:#fff;font-weight:700}
   .rc-wide{grid-template-columns:1fr!important}.rc-wide>#botside{display:none}
-  .rc .btns{display:flex;gap:4px;flex-wrap:wrap}.rc .msg{color:var(--dim);font-size:11px;margin:4px 0}`;
+  .rc .btns{display:flex;gap:4px;flex-wrap:wrap}.rc [hidden]{display:none!important}.rc h4{cursor:pointer}.rc .msg{color:var(--dim);font-size:11px;margin:4px 0}`;
   function ensureCss() { if (!document.getElementById('rigctl-css')) document.head.append($h('style', { id: 'rigctl-css' }, css)) }
 
   function fit(wrap, fr, minw) {
-    const f = () => { const w = wrap.clientWidth, h = wrap.clientHeight; if (!w || !h) return; const s = Math.min(1, w / minw); fr.style.width = (w / s) + 'px'; fr.style.height = (h / s) + 'px'; fr.style.transform = s < 1 ? `scale(${s})` : '' };
+    const f = () => { const w = wrap.clientWidth, h = wrap.clientHeight; if (!w || !h) return; const s = Math.min(1, w / w); fr.style.width = (w / s) + 'px'; fr.style.height = (h / s) + 'px'; fr.style.transform = s < 1 ? `scale(${s})` : '' };
     if (st?.ro) st.ro.disconnect(); const ro = new ResizeObserver(f); ro.observe(wrap); f(); return ro;
   }
   const ev = (cw, js) => cw.eval(js);  // same-origin: read the rig's lexical globals (P, v, inputs)
@@ -69,12 +70,12 @@ window.RigCtl = (() => {
     let ready = false; try { ready = ev(my.cw, 'Object.keys(inputs).length>0') && my.cw.document.getElementById('view') } catch { }
     if (!ready && n < 60) { setTimeout(() => st === my && waitReady(n + 1), 100); return }
     build();
-    my.cw.document.addEventListener('input', sync, true); my.cw.document.addEventListener('click', () => setTimeout(sync, 30), true);
+    my.cw.document.addEventListener('rig-controls-change',sync);my.cw.document.addEventListener('input', sync, true); my.cw.document.addEventListener('click', () => setTimeout(sync, 30), true);
     waitParts();
   }
   // the rig's part images / skin mesh (R) can take many seconds; params only render once R exists
   function waitParts(n = 0) {
-    const my = st; if (!my) return; let ok = false; try { ok = ev(my.cw, 'typeof R!=="undefined"&&!!R') } catch { }
+    const my = st; if (!my) return; let ok = false; try { ok = ev(my.cw, 'typeof R!=="undefined"&&!!R&&!R.loading') } catch { }
     const ban = my.panel.querySelector('#rc-loading');
     if (!ok) { if (ban) ban.textContent = `rig parts loading… ${Math.round(n / 4)} s (sliders apply once loaded)`; if (n < 720) setTimeout(() => st === my && waitParts(n + 1), 250); return }
     for (const [k, x] of Object.entries(saved.vals)) setParam(k, x, false);   // restore values from before a view reload
@@ -84,7 +85,7 @@ window.RigCtl = (() => {
   function P() { return ev(st.cw, 'P') }
   function vals() { return ev(st.cw, 'v') }
   function setParam(k, x, redraw = true) {
-    const cw = st.cw; const P_ = P(); if (!(k in P_)) return;
+    const cw = st.cw; const P_ = P(); if (!(k in P_)) return;if(redraw){if(ev(cw,'inputs')[k]?.disabled)return;cw.RigManual?.()}
     x = Math.min(P_[k][1], Math.max(P_[k][0], +x));
     try { cw.set(k, x) } catch { ev(cw, 'v')[k] = x }        // set() also moves the rig's own slider
     if (x === P_[k][2]) delete saved.vals[k]; else saved.vals[k] = x;
@@ -149,6 +150,7 @@ window.RigCtl = (() => {
     const other = take(k => !/^(Eye|Mouth|HairSway)/.test(k));
     if (other.length) panel.append(...group('Other params (new in the rig)', other, P_));
     panel.append($h('div', { class: 'msg' }, 'Eyes, mouth and hair sway sliders stay in the rig\'s own panel (left). This panel only sets rig params via set()+draw(); double-click a slider to reset it.'));
+    for(const heading of panel.querySelectorAll('h4')){heading.tabIndex=0;heading.setAttribute('role','button');heading.setAttribute('aria-expanded','true');const toggle=()=>{const open=heading.getAttribute('aria-expanded')!=='false';heading.setAttribute('aria-expanded',String(!open));let row=heading.nextElementSibling;while(row&&row.tagName!=='H4'){row.hidden=open;row=row.nextElementSibling;}};heading.addEventListener('click',toggle);heading.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle();}});}
     sync();
     const live = Object.keys(st.els).length, pend = panel.querySelectorAll('.row.pend').length;
     if (st.note) st.note.textContent = `Rig controls: ${live} live params from ${st.src} (auto-detected from P), ${pend} in progress. Views reload ?view=.`;
