@@ -55,3 +55,7 @@ no new shading or folds; outline within 1 px; no visible shape change; 0 overlap
   hairless_division_staged/*/, regen_staged/**, diag_body_fix/{045,315}/pieces/.
 - Soft edges: 131,030 px, the same in live and staged (pre-existing in the live textures, not a regression). Needs a gate exemption or a decision on snapping their alpha.
 - mesh_outside_mask is 3,762 on live: a skin.json item (Coder).
+
+## Soft edges, new vs live (Coder, 05:00 PT)
+- Staged hairless foot_L (left view) has 401 new soft px and foot_R (right view) has 318. They're her own antialiased foot edge, kept from the cut.
+  They're held for the user's exempt-or-snap decision. If it's snap, snap them to her line and skin tones for that view and recheck that rest is still 0 px (with and without ?hairless=1).
