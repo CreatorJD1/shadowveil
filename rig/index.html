@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>Shadowveil rig preview (contract v1.8)</title>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="data:,"><title>Shadowveil rig preview (contract v1.8)</title>
 <style>body{margin:0;background:#2a2a30;color:#ddd;font:13px system-ui;display:flex;height:100vh}
 #ui{width:300px;overflow:auto;padding:10px;background:#1c1c22}#ui h3{margin:12px 0 4px;font-size:13px;color:#fff}
 label{display:flex;justify-content:space-between;gap:6px;margin:2px 0}input[type=range]{width:150px}
@@ -9,7 +9,7 @@ button,select{margin:2px;background:#333;color:#eee;border:1px solid #555;paddin
 .lrow{display:flex;align-items:center;gap:4px;white-space:nowrap;line-height:18px;border:1px solid transparent}.lrow.grp .lab{color:#fff;font-weight:600}.lrow.hov{border-color:#6af;background:#223}
 .lrow.hid .lab{opacity:.4;text-decoration:line-through}.lrow .exp{width:10px;cursor:pointer;color:#aaa}.lrow .solo{padding:0 4px;margin:0;font-size:10px}.lrow .solo.on{background:#a70;color:#fff}
 .lrow .lz{color:#8cf;margin-left:4px}.lrow .inf{color:#bbb;overflow:hidden;text-overflow:ellipsis}.lrow input{margin:0}
-#lpbadge{background:#a30;color:#fff;padding:1px 6px;border-radius:3px;font-weight:600}#lpnote{color:#999;font-size:11px}@media(max-width:1100px){body{display:flex;flex-direction:column;height:auto;min-height:100vh}#stage{order:0;flex:none;min-height:420px;height:55vh}canvas{max-height:55vh}#ui{order:1;width:100%;overflow:visible;box-sizing:border-box}#layers{order:2;width:100%;border-left:0;box-sizing:border-box}label{gap:12px}input[type=range]{width:50%;min-width:0}#ui label{align-items:center}#ui label>span{flex:1;min-width:0}#ui select{max-width:100%}#ui label>select{width:50%;min-width:0}#layers{overflow:auto}}#loadpreview{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;z-index:1}#loadpreview[hidden]{display:none}#loadcaption{position:absolute;bottom:8px;left:8px;right:8px;padding:6px 10px;background:#151820e8;color:#fff;z-index:2;border-radius:4px;font-size:13px}#loadcaption[hidden]{display:none}</style></head>
+#lpbadge{background:#a30;color:#fff;padding:1px 6px;border-radius:3px;font-weight:600}#lpnote{color:#999;font-size:11px}@media(max-width:1100px){html,body{width:100%;max-width:100%;overflow-x:hidden}body{display:flex;flex-direction:column;height:100dvh;min-height:0;overflow:hidden;padding-top:48px;box-sizing:border-box}#stage{order:0;flex:0 0 auto;height:auto;min-height:0;width:100%;overflow:visible}#pose-viewport{flex:none!important;height:36dvh;min-height:200px}#pose-toolbar{margin:4px}canvas{max-height:none;max-width:100%}#ui{order:1;width:100%;flex:1 1 auto;min-height:0;overflow:auto;box-sizing:border-box}#layers{order:2;width:100%;flex:0 0 auto;max-height:18dvh;min-height:0;overflow:auto;border-left:0;box-sizing:border-box}label{gap:12px}input[type=range]{width:46%;min-width:0}#ui label{align-items:center}#ui label>span{flex:1;min-width:0}#ui select,#ui button{max-width:100%}#ui label>select{width:46%;min-width:0}}#loadpreview{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;z-index:1}#loadpreview[hidden]{display:none}#loadcaption{position:absolute;bottom:8px;left:8px;right:8px;padding:6px 10px;background:#151820e8;color:#fff;z-index:2;border-radius:4px;font-size:13px}#loadcaption[hidden]{display:none}</style></head>
 <body><div id="ui">
 <b>Shadowveil rig preview</b> (contract v1.8)<br>
 <select id="view"><option>apose</option><option>tpose</option><option>left</option><option>right</option><option>back</option></select>
@@ -376,8 +376,11 @@ function glInit(){if(SKGL.gl)return SKGL.gl;const cv=document.createElement('can
  gl.linkProgram(pr);if(!gl.getProgramParameter(pr,gl.LINK_STATUS))throw new Error(gl.getProgramInfoLog(pr));
  Object.assign(SKGL,{gl,cv,pr,aPos:gl.getAttribLocation(pr,'aPos'),aUV:gl.getAttribLocation(pr,'aUV'),uSize:gl.getUniformLocation(pr,'uSize')});return gl}
 // LBS: posed vertex = sum_i w_i * M_i * rest vertex; fills Mh.def (per vertex) and Mh.pos (expanded per triangle corner)
-function meshDeform(Mh,BM,bones){const n=Mh.nv,V=Mh.V,D=Mh.def,wb=Mh.wb,ww=Mh.ww;const Ms=bones.map(b=>BM[b.id]||I);const TF=TWS&&Mh.twf,TE=TF&&R.twist.E;
- for(let i=0;i<n;i++){let x=V[2*i],y=V[2*i+1];if(TF){const q=TF.tw[i];if(q>=0&&TWS[q]){const e=TE[q],w=TF.tw8[i],sh=w*(TF.tn[i]*(TWS[q][0]-1)+TWS[q][1]);x+=sh*e.nx;y+=sh*e.ny}}let ox=0,oy=0;for(let k=0;k<4;k++){const w=ww[i*4+k];if(!w)continue;const M=Ms[wb[i*4+k]];ox+=w*(M[0]*x+M[2]*y+M[4]);oy+=w*(M[1]*x+M[3]*y+M[5])}D[2*i]=ox;D[2*i+1]=oy}
+function meshDeform(Mh,BM,bones){const n=Mh.nv,V=Mh.V,D=Mh.def,wb=Mh.wb,ww=Mh.ww;const Ms=bones.map(b=>BM[b.id]||I);const TF=TWS&&Mh.twf,TE=TF&&R.twist.E;const tapers=R&&R._taper&&Mh.nv>8000?R._taper:null;const clips=R&&R._clip&&R.skin&&(Mh===R.skin||Mh===R.skin.underlay)?R._clip:null;
+ for(let i=0;i<n;i++){let x=V[2*i],y=V[2*i+1];if(TF){const q=TF.tw[i];if(q>=0&&TWS[q]){const e=TE[q],w=TF.tw8[i],sh=w*(TF.tn[i]*(TWS[q][0]-1)+TWS[q][1]);x+=sh*e.nx;y+=sh*e.ny}}
+ if(clips){for(const t of clips){const dx=x-t.wp[0],dy=y-t.wp[1],d=dx*t.ax+dy*t.ay;if(d<=0||d>42)continue;const lat=dx*t.nx+dy*t.ny;if(lat*lat>3600)continue;x-=d*t.ax;y-=d*t.ay;x-=lat*.22*t.nx;y-=lat*.22*t.ny;break}}
+ else if(tapers){for(const t of tapers){const d=(x-t.wp[0])*t.ax+(y-t.wp[1])*t.ay;if(d<-42||d>28)continue;const lat=(x-t.wp[0])*t.nx+(y-t.wp[1])*t.ny;if(lat*lat>6400)continue;const u=d>=-2?1:clamp((d+42)/40,0,1),k=u*u*(3-2*u),s=1+(t.scale-1)*k;x+=lat*(s-1)*t.nx;y+=lat*(s-1)*t.ny;break}}
+ let ox=0,oy=0;for(let k=0;k<4;k++){const w=ww[i*4+k];if(!w)continue;const M=Ms[wb[i*4+k]];ox+=w*(M[0]*x+M[2]*y+M[4]);oy+=w*(M[1]*x+M[3]*y+M[5])}D[2*i]=ox;D[2*i+1]=oy}
  const P=Mh.pos,idx=Mh.idx;for(let k=0;k<idx.length;k++){P[2*k]=D[2*idx[k]];P[2*k+1]=D[2*idx[k]+1]}Mh.dirty=true}
 function meshDraw(Mh,ranges,filt,S){const gl=SKGL.gl,cv=SKGL.cv;if(cv.width!==W*S||cv.height!==H*S){cv.width=W*S;cv.height=H*S}
  gl.viewport(0,0,cv.width,cv.height);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.useProgram(SKGL.pr);gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);
@@ -390,48 +393,95 @@ function meshReadAlpha(Mh,ranges){meshDraw(Mh,ranges,'nearest',1);const gl=SKGL.
  const a=new Uint8Array(W*H);for(let y=0;y<H;y++){const src=(H-1-y)*W*4,dst=y*W;for(let x=0;x<W;x++)a[dst+x]=px[src+x*4+3]}return a}
 function blitGL(g){g.save();g.setTransform(1,0,0,1,0,0);g.globalAlpha=DIM;g.imageSmoothingEnabled=false;g.drawImage(SKGL.cv,0,0);g.restore()}
 let SKIN_FORCE_GL=false; // test hook: draw rest through the GL path too
-function poseIdent(pose){if(pose.ident==null)pose.ident=(!TWS||pose.rest)&&R.skin.bones.every(b=>{const M=pose.BM[b.id];return isAxis(M)&&M[4]===0&&M[5]===0});return pose.ident}
+function poseStill(pose){if(pose.still==null)pose.still=(!TWS||pose.rest)&&R.skin.bones.every(b=>{const M=pose.BM[b.id];return isAxis(M)&&M[4]===0&&M[5]===0});return pose.still}
+function poseIdent(pose){if(pose.ident==null)pose.ident=poseStill(pose)&&!R._taper&&!R._clip;return pose.ident}
 function skinPass(g,grs,pose){const Sk=R.skin;
  if(poseIdent(pose)&&grs.length===Sk.groups.length&&!SKIN_FORCE_GL){drawM(g,Sk.img,I);return} // rest: exact copy of the authored image
  if(pose.def!==Sk){meshDeform(Sk,pose.BM,Sk.bones);pose.def=Sk}
- meshDraw(Sk,grs,(pose.rest||QUAL==='nearest')?'nearest':'linear',g.__S||1);blitGL(g)}
+ meshDraw(Sk,grs,(pose.rest||QUAL==='nearest'||poseStill(pose))?'nearest':'linear',g.__S||1);blitGL(g)}
 function underlayPass(g,pose){const U=R.skin.underlay;if(pose.defU!==U){meshDeform(U,pose.BM,R.skin.bones);pose.defU=U}
  meshDraw(U,[{start:0,count:U.nt}],(pose.rest||QUAL==='nearest')?'nearest':'linear',g.__S||1);blitGL(g)}
 function handRoot(p,BM,rest,TWH){return palmExt(p,BM,rest)}
 // Compose source parts and its mask once at authored resolution, then sample the whole hand once per pose.
-function composeHand(parts,mask){const c=document.createElement('canvas');c.width=W;c.height=H;const q=c.getContext('2d');q.imageSmoothingEnabled=false;for(const p of parts)q.drawImage(p.im,p.im.ox||0,p.im.oy||0);if(mask){q.globalCompositeOperation='destination-in';q.drawImage(mask,mask.ox||0,mask.oy||0)}return trim(c)}
+// Lift the dark crust on a hard-alpha sprite toward the skin tone. Finger creases stay; they are not on the rim.
+// An axis limits this to the wrist band so a painted hand keeps its fingertip line.
+function softenWristRim(c,axis){const q=c.getContext('2d'),w=c.width,h=c.height;if(!q||!w||!h)return c;const img=q.getImageData(0,0,w,h),p=img.data,n=w*h,solid=new Uint8Array(n);let r=0,g=0,b=0,cnt=0;
+ for(let i=0;i<n;i++)if(p[i*4+3]>=200){solid[i]=1;r+=p[i*4];g+=p[i*4+1];b+=p[i*4+2];cnt++}if(!cnt)return c;r/=cnt;g/=cnt;b/=cnt;const skin=r+g+b,near=new Uint8Array(n);
+ for(let y=1;y<h-1;y++)for(let x=1;x<w-1;x++){const i=y*w+x;if(solid[i]&&!(solid[i-1]&&solid[i+1]&&solid[i-w]&&solid[i+w]))near[i]=1}
+ for(let pass=0;pass<2;pass++){const add=[];for(let y=1;y<h-1;y++)for(let x=1;x<w-1;x++){const i=y*w+x;if(!solid[i]||near[i])continue;if(near[i-1]||near[i+1]||near[i-w]||near[i+w])add.push(i)}for(const i of add)near[i]=1}
+ const cax=axis?Math.cos(axis.a):0,sax=axis?Math.sin(axis.a):0,ox=c.ox||0,oy=c.oy||0,ps=c.pixelScale||1;
+ for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=y*w+x;if(!near[i])continue;if(axis){const depth=(ox+x/ps-axis.wp[0])*cax+(oy+y/ps-axis.wp[1])*sax;if(depth>16||depth<-40)continue}const luma=p[i*4]+p[i*4+1]+p[i*4+2];if(luma>skin*.82)continue;const t=.82;p[i*4]=p[i*4]*(1-t)+r*t;p[i*4+1]=p[i*4+1]*(1-t)+g*t;p[i*4+2]=p[i*4+2]*(1-t)+b*t}
+ q.putImageData(img,0,0);return c}
+function composeHand(parts,mask,axis){const c=document.createElement('canvas');c.width=W;c.height=H;const q=c.getContext('2d');q.imageSmoothingEnabled=false;for(const p of parts)q.drawImage(p.im,p.im.ox||0,p.im.oy||0);if(mask){q.globalCompositeOperation='destination-in';q.drawImage(mask,mask.ox||0,mask.oy||0)}if(axis)softenWristRim(c,axis);return trim(matte(c))}
 function intermediateHandImage(e){const signature=e.rig.parts.map(p=>fingerCurl(p)).join(',')+['L','R'].map(h=>':'+v['Hand'+h+'Spread']+':'+v['Hand'+h+'ThumbSpread']).join('');if(signature===e.poseSignature)return e.poseImage;
  const M=handChain(e.rig.parts,handAngle(e.rig),()=>I,false,{}),Mh=e.mesh;
  const neutral=e.rig.parts.every(p=>Math.abs(handAngle(e.rig)(p))<1e-8);
  if(neutral){e.poseSignature=signature;return e.poseImage=e.image}
  meshDeform(Mh,M,Mh.bones);meshDraw(Mh,[{start:0,count:Mh.nt}],'linear',2);
  const D=Mh.def,xs=[],ys=[];for(let k=0;k<D.length;k+=2){xs.push(D[k]);ys.push(D[k+1])}const x=Math.floor(Math.min(...xs))-2,y=Math.floor(Math.min(...ys))-2,w=Math.ceil(Math.max(...xs))-x+3,h=Math.ceil(Math.max(...ys))-y+3;
- const c=e.poseCanvas||(e.poseCanvas=document.createElement('canvas'));c.width=w*2;c.height=h*2;c.ox=x;c.oy=y;c.pixelScale=2;c.getContext('2d').drawImage(SKGL.cv,x*2,y*2,w*2,h*2,0,0,w*2,h*2);e.poseSignature=signature;return e.poseImage=c}
+ const c=e.poseCanvas||(e.poseCanvas=document.createElement('canvas'));c.width=w*2;c.height=h*2;c.ox=x;c.oy=y;c.pixelScale=2;c.getContext('2d').drawImage(SKGL.cv,x*2,y*2,w*2,h*2,0,0,w*2,h*2);matte(c);e.poseSignature=signature;return e.poseImage=c}
 async function loadIntermediateHandAngles(r,vw,H,tA,ownImage){const nativeTheta={apose:0,back:180,left:90,right:270,tpose:H==='L'?90:270}[vw],wrap=d=>((d+180)%360+360)%360-180;
  const files=[45,135,225,315];const loaded=await Promise.all(files.map(async angle=>{const base='hand_angles/'+angle+'_'+H;const j=await json(base+'.json');if(!j)return null;const im=await img('hand_angles/'+j.image);if(!im)return null;
-  const canvas=document.createElement('canvas');canvas.width=im.naturalWidth;canvas.height=im.naturalHeight;canvas.ox=j.origin[0];canvas.oy=j.origin[1];canvas.pixelScale=1/(j.textureScale||1);canvas.getContext('2d').drawImage(im,0,0);
+  const canvas=document.createElement('canvas');canvas.width=im.naturalWidth;canvas.height=im.naturalHeight;canvas.ox=j.origin[0];canvas.oy=j.origin[1];canvas.pixelScale=1/(j.textureScale||1);canvas.getContext('2d').drawImage(im,0,0);softenWristRim(canvas);matte(canvas);
   const gl=glInit(),nv=j.vertices.length,nt=j.triangles.length,idx=new Uint32Array(j.triangles.flat()),V=new Float32Array(j.vertices.flat()),uv=new Float32Array(nt*6);for(let k=0;k<idx.length;k++){uv[k*2]=(V[idx[k]*2]-j.origin[0])/j.size[0];uv[k*2+1]=(V[idx[k]*2+1]-j.origin[1])/j.size[1]}
-  const parsed=parseWeights(j.weights,nv,j.parts.length,m=>{throw Error(m)},'hand angle ');const mesh={nv,nt,V,idx,wb:parsed.wb,ww:parsed.ww,bones:j.parts,def:new Float32Array(nv*2),pos:new Float32Array(nt*6),posBuf:gl.createBuffer(),uvBuf:glBuf(gl,uv,gl.STATIC_DRAW),tex:glTex(gl,im)};
-  const target=handOpening(ownImage,tA,HAND_ATTACH[vw][H]),donor={wrist:j.wristEdges,length:j.physicalLength,center:[(j.wristEdges[0][0]+j.wristEdges[1][0])/2,(j.wristEdges[0][1]+j.wristEdges[1][1])/2]},axis={wp:j.wrist,a:j.axis};
-  const A=fitHand(target,donor,tA,axis),deg=wrap((H==='L'?1:-1)*(angle-nativeTheta));
-  return {deg,src:'turn-'+angle,referenceAngle:angle,generated:true,image:canvas,A,mesh,rig:{parts:j.parts,spread:j.spread,wristMaxDeg:25},frames:{},parts:[],attachment:{target,donor}};
+  const parsed=parseWeights(j.weights,nv,j.parts.length,m=>{throw Error(m)},'hand angle ');const mesh={nv,nt,V,idx,wb:parsed.wb,ww:parsed.ww,bones:j.parts,def:new Float32Array(nv*2),pos:new Float32Array(nt*6),posBuf:gl.createBuffer(),uvBuf:glBuf(gl,uv,gl.STATIC_DRAW),tex:glTex(gl,canvas)};
+  const target=handOpening(ownImage,tA,HAND_ATTACH[vw][H]),axis={wp:j.wrist,a:j.axis},donor=handOpening(canvas,axis,{wrist:j.wristEdges,length:j.physicalLength},true);const A=fitHand(target,donor,tA,axis),deg=wrap((H==='L'?1:-1)*(angle-nativeTheta));
+  clipWristFlare(canvas,axis,A.sN);matte(canvas);mesh.tex=glTex(gl,canvas);
+  return {deg,src:'turn-'+angle,referenceAngle:angle,generated:true,image:canvas,A,skinScale:A.skinScale,mesh,rig:{parts:j.parts,spread:j.spread,wristMaxDeg:25},frames:{},parts:[],attachment:{target,donor}};
  }));return loaded.filter(Boolean)}
-function donorHandImage(e){if(e.mesh)return intermediateHandImage(e);if(!e.rig)return e.image;const signature=e.rig.parts.map(p=>p.id+':'+fingerCurl(p)).join('|')+['L','R'].map(h=>':'+v['Hand'+h+'Spread']+':'+v['Hand'+h+'ThumbSpread']).join('');if(signature===e.poseSignature)return e.poseImage;const o=e.poseCanvas||(e.poseCanvas=document.createElement('canvas'));o.width=W;o.height=H;const q=o.getContext('2d');const M=handChain(e.rig.parts,handAngle(e.rig),()=>I,false,e.frames);const by=Object.fromEntries(e.parts.map(p=>[p.id,p.im]));const sorted=[...e.rig.parts].sort((a,b)=>{const z=p=>{const f=frameOf(p,false,e.frames);return f?.layer??(fingerCurl(p)>=(p.curlLayerAt??.5)?p.layerCurled??p.layer:p.layer)};return z(a)-z(b)});const oldDim=DIM;try{DIM=1;for(const p of sorted){const f=frameOf(p,false,e.frames);drawM(q,f?.img||by[p.id],M[p.id])}}finally{DIM=oldDim}if(e.mask){q.setTransform(1,0,0,1,0,0);q.globalCompositeOperation='destination-in';q.drawImage(e.mask,e.mask.ox||0,e.mask.oy||0);q.globalCompositeOperation='source-over'}e.poseSignature=signature;return e.poseImage=trim(o)}
+function donorHandImage(e){if(e.mesh)return intermediateHandImage(e);if(!e.rig)return e.image;const signature=e.rig.parts.map(p=>p.id+':'+fingerCurl(p)).join('|')+['L','R'].map(h=>':'+v['Hand'+h+'Spread']+':'+v['Hand'+h+'ThumbSpread']).join('');if(signature===e.poseSignature)return e.poseImage;const o=e.poseCanvas||(e.poseCanvas=document.createElement('canvas'));o.width=W;o.height=H;const q=o.getContext('2d');const M=handChain(e.rig.parts,handAngle(e.rig),()=>I,false,e.frames);const by=Object.fromEntries(e.parts.map(p=>[p.id,p.im]));const sorted=[...e.rig.parts].sort((a,b)=>{const z=p=>{const f=frameOf(p,false,e.frames);return f?.layer??(fingerCurl(p)>=(p.curlLayerAt??.5)?p.layerCurled??p.layer:p.layer)};return z(a)-z(b)});const oldDim=DIM;try{DIM=1;for(const p of sorted){const f=frameOf(p,false,e.frames);drawM(q,f?.img||by[p.id],M[p.id])}}finally{DIM=oldDim}if(e.mask){q.setTransform(1,0,0,1,0,0);q.globalCompositeOperation='destination-in';q.drawImage(e.mask,e.mask.ox||0,e.mask.oy||0);q.globalCompositeOperation='source-over'}e.poseSignature=signature;return e.poseImage=trim(matte(o))}
 function drawDonor(g,e,Mr){const M=mul(Mr,e.A),im=donorHandImage(e),S=g.__S||1,ps=im.pixelScale||1,ox=im.ox||0,oy=im.oy||0;
  const corners=[[ox,oy],[ox+im.width/ps,oy],[ox,oy+im.height/ps],[ox+im.width/ps,oy+im.height/ps]].map(([x,y])=>[M[0]*x+M[2]*y+M[4],M[1]*x+M[3]*y+M[5]]),x=Math.floor(Math.min(...corners.map(p=>p[0])))-2,y=Math.floor(Math.min(...corners.map(p=>p[1])))-2,w=Math.ceil(Math.max(...corners.map(p=>p[0])))-x+2,h=Math.ceil(Math.max(...corners.map(p=>p[1])))-y+2;
  if(!e.raster)e.raster=document.createElement('canvas');const c=e.raster;c.width=w*S;c.height=h*S;const q=c.getContext('2d');q.setTransform(S*M[0],S*M[1],S*M[2],S*M[3],S*(M[4]-x),S*(M[5]-y));q.imageSmoothingEnabled=QUAL!=='nearest';q.imageSmoothingQuality='high';q.drawImage(im,ox,oy,im.width/ps,im.height/ps);
  // Upscale exact samples into the body supersample buffer; never filter the hand a second time.
  g.save();g.setTransform(S,0,0,S,S*x,S*y);g.imageSmoothingEnabled=false;g.globalAlpha=DIM;g.drawImage(c,0,0,w,h);g.restore()}
 
-// Read the visible, opaque wrist edges from the composed artwork, not just its pivot metadata.
-function handOpening(image,axis,authored){const q=image.getContext('2d'),px=q.getImageData(0,0,image.width,image.height).data,c=Math.cos(axis.a),n=Math.sin(axis.a),nx=-n,ny=c;
- const samples=[],radius=Math.ceil(Math.hypot(authored.wrist[1][0]-authored.wrist[0][0],authored.wrist[1][1]-authored.wrist[0][1])*.8);
- for(const d of [-1,0,1,2]){const hits=[];for(let u=-radius;u<=radius;u+=.5){const x=Math.round(axis.wp[0]+d*c+u*nx-(image.ox||0)),y=Math.round(axis.wp[1]+d*n+u*ny-(image.oy||0));if(x<0||y<0||x>=image.width||y>=image.height)continue;if(px[(y*image.width+x)*4+3]>=240)hits.push(u)}if(hits.length>8)samples.push([hits[0],hits[hits.length-1]])}
- if(!samples.length)return{...authored,center:axis.wp};const median=k=>samples.map(s=>s[k]).sort((a,b)=>a-b)[samples.length>>1];const lo=median(0),hi=median(1);return{...authored,wrist:[[axis.wp[0]+lo*nx,axis.wp[1]+lo*ny],[axis.wp[0]+hi*nx,axis.wp[1]+hi*ny]],center:[axis.wp[0]+(lo+hi)/2*nx,axis.wp[1]+(lo+hi)/2*ny]}}
-// Map both opaque wrist edges and authored hand length, with a positive determinant (never mirror).
-function fitHand(target,donor,tA,dA){const span=(s,a)=>{let x=s.wrist[1][0]-s.wrist[0][0],y=s.wrist[1][1]-s.wrist[0][1];if(x*Math.sin(a)-y*Math.cos(a)<0){x=-x;y=-y}return[x,y]};const t=span(target,tA.a),d=span(donor,dA.a),tx=Math.cos(tA.a)*target.length,ty=Math.sin(tA.a)*target.length,dx=Math.cos(dA.a)*donor.length,dy=Math.sin(dA.a)*donor.length,det=d[0]*dy-d[1]*dx;
- if(Math.abs(det)<1e-6)throw new Error('Invalid hand attachment');const a=(t[0]*dy-tx*d[1])/det,b=(t[1]*dy-ty*d[1])/det,c=(tx*d[0]-t[0]*dx)/det,f=(ty*d[0]-t[1]*dx)/det,tc=target.center||tA.wp,dc=donor.center||dA.wp;
- return[a,b,c,f,tc[0]-a*dc[0]-c*dc[1],tc[1]-b*dc[0]-f*dc[1]]}
+// Opaque wrist chord in reference space. A single sample on the pivot grazes a slanted cut and
+// reports a narrow, off-center opening, which then scales the whole hand to the wrong size.
+function handOpening(image,axis,authored,proximal){const q=image.getContext&&image.getContext('2d');if(!q)return{...authored,center:axis.wp};
+ const px=q.getImageData(0,0,image.width,image.height).data,w=image.width,h=image.height,c=Math.cos(axis.a),n=Math.sin(axis.a),nx=-n,ny=c,ps=image.pixelScale||1,ox=image.ox||0,oy=image.oy||0;
+ const solid=(d,u)=>{const x=Math.round((axis.wp[0]+d*c+u*nx-ox)*ps),y=Math.round((axis.wp[1]+d*n+u*ny-oy)*ps);if(x<0||y<0||x>=w||y>=h)return false;return px[(y*w+x)*4+3]>=200};
+ const chords=[];
+ for(const d of [0,1,2,3,4,5,6,8]){const hits=[];for(let u=-90;u<=90;u+=.5)if(solid(d,u))hits.push(u);if(hits.length<8)continue;
+  const runs=[];let st=hits[0],prev=hits[0];for(let i=1;i<hits.length;i++){const u=hits[i];if(u>prev+1.6){runs.push([st,prev]);st=u}prev=u}runs.push([st,prev]);
+  const run=runs.slice().sort((A,B)=>{const ca=A[0]<=0&&A[1]>=0?0:1,cb=B[0]<=0&&B[1]>=0?0:1;if(ca!==cb)return ca-cb;const ma=Math.abs(A[0]+A[1]),mb=Math.abs(B[0]+B[1]);if(ma!==mb)return ma-mb;return (B[1]-B[0])-(A[1]-A[0])})[0];
+  chords.push({d,w:run[1]-run[0],mid:(run[0]+run[1])/2,lo:run[0],hi:run[1]})}
+ // A turned sprite's palm is much wider than its wrist cut. The median chord is the palm,
+ // and pinning that to the forearm puts the joint in the middle of the hand.
+ if(proximal){const hit=chords.find(s=>s.lo<=0&&s.hi>=0&&s.w>=16)||chords.find(s=>s.w>=16);if(hit){const p=u=>[axis.wp[0]+hit.d*c+u*nx,axis.wp[1]+hit.d*n+u*ny];return{...authored,wrist:[p(hit.lo),p(hit.hi)],center:p(0)}}}
+ const centered=chords.filter(s=>Math.abs(s.mid)<=Math.max(6,s.w*.25)&&s.w>=12),pool=centered.length?centered:chords;
+ if(!pool.length){const mid=[(authored.wrist[0][0]+authored.wrist[1][0])/2,(authored.wrist[0][1]+authored.wrist[1][1])/2];return{...authored,center:mid}}
+ const widths=pool.map(s=>s.w).sort((a,b)=>a-b),med=widths[widths.length>>1];let best=pool[0],err=1e9;
+ for(const s of pool){const e=Math.abs(s.w-med)+s.d*.02;if(e<err){err=e;best=s}}
+ const p=u=>[axis.wp[0]+best.d*c+u*nx,axis.wp[1]+best.d*n+u*ny];
+ return{...authored,wrist:[p(best.lo),p(best.hi)],center:p(best.mid)}}
+// Shave the flat geometric corners on a turn sprite. They sit beside the forearm
+// and read as a block once the hand is scaled up to the painted length.
+function clipWristFlare(c,axis,sN){const q=c.getContext('2d'),w=c.width,h=c.height;if(!q||!w)return c;const img=q.getImageData(0,0,w,h),p=img.data,ps=c.pixelScale||1,ox=c.ox||0,oy=c.oy||0,cd=Math.cos(axis.a),sd=Math.sin(axis.a),nx=-sd,ny=cd,s=sN||1;
+ for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=(y*w+x)*4;if(p[i+3]<8)continue;const bx=ox+x/ps,by=oy+y/ps,dx=bx-axis.wp[0],dy=by-axis.wp[1],d=dx*cd+dy*sd;if(d>22)continue;const lat=dx*nx+dy*ny,allow=(18+Math.max(0,d)*.85)/s;if(Math.abs(lat)>allow+1.2)p[i+3]=0}
+ q.putImageData(img,0,0);return c}
+// Match painted length along the fingers and widen only up to the forearm, so the
+// palm is not scaled by the same factor as the length (that balloons the cuff).
+function openingWidth(s){return Math.hypot(s.wrist[1][0]-s.wrist[0][0],s.wrist[1][1]-s.wrist[0][1])}
+function fitHand(target,donor,tA,dA){const sLen=donor.length>1e-3?target.length/donor.length:1,tw=openingWidth(target),dw=openingWidth(donor),sWrist=tw>1&&dw>1?tw/dw:sLen;
+ const axial=sLen>1.25;let sL,sN;
+ if(axial){sL=Math.min(1.72,Math.max(1,sLen));sN=Math.min(1.35,Math.max(1,sWrist))}
+ else{const s=Math.min(1.15,Math.max(.9,Math.min(sLen,Math.max(sWrist,.94))));sL=s;sN=s}
+ const cd=Math.cos(dA.a),sd=Math.sin(dA.a),ct=Math.cos(tA.a),st=Math.sin(tA.a);
+ const a=sL*ct*cd+sN*st*sd,b=sL*st*cd-sN*ct*sd,c=sL*ct*sd-sN*st*cd,f=sL*st*sd+sN*ct*cd;
+ const tc=target.center||tA.wp,dc=donor.center||dA.wp;
+ const A=[a,b,c,f,tc[0]-a*dc[0]-c*dc[1],tc[1]-b*dc[0]-f*dc[1]],ax=Math.cos(tA.a),ay=Math.sin(tA.a),seat=axial?4:8;
+ A[4]-=seat*ax;A[5]-=seat*ay;A.sL=sL;A.sN=sN;
+ const meet=tw>1&&dw>1?dw*sN/tw:1;A.skinScale=Math.min(1,Math.max(.84,meet));return A}
+function matte(c){const q=c.getContext('2d'),w=c.width,h=c.height;if(!q||!w||!h)return c;const d=q.getImageData(0,0,w,h),p=d.data,n=w*h,mask=new Uint8Array(n);
+ for(let i=0;i<n;i++)mask[i]=p[i*4+3]>=200?1:0;const qx=new Int32Array(n),qy=new Int32Array(n),dist=new Uint8Array(n);let qs=0,qe=0;
+ for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=y*w+x;if(mask[i])continue;let s=-1;if(x&&mask[i-1])s=i-1;else if(x+1<w&&mask[i+1])s=i+1;else if(y&&mask[i-w])s=i-w;else if(y+1<h&&mask[i+w])s=i+w;if(s<0)continue;
+  p[i*4]=p[s*4];p[i*4+1]=p[s*4+1];p[i*4+2]=p[s*4+2];mask[i]=2;dist[i]=1;qx[qe]=x;qy[qe++]=y}
+ while(qs<qe){const x=qx[qs],y=qy[qs],i=y*w+x,nd=dist[i];qs++;if(nd>=2)continue;const nb=[[1,0],[-1,0],[0,1],[0,-1]];
+  for(let k=0;k<4;k++){const X=x+nb[k][0],Y=y+nb[k][1];if(X<0||Y<0||X>=w||Y>=h)continue;const j=Y*w+X;if(mask[j])continue;p[j*4]=p[i*4];p[j*4+1]=p[i*4+1];p[j*4+2]=p[i*4+2];mask[j]=2;dist[j]=nd+1;qx[qe]=X;qy[qe++]=Y}}
+ for(let i=0;i<n;i++)if(p[i*4+3]<200&&mask[i]!==2)p[i*4]=p[i*4+1]=p[i*4+2]=0;q.putImageData(d,0,0);return c}
+function setWristTaper(TWH){const list=[];if(R&&R.wrist)for(const H of['L','R']){const e=TWH[H]&&TWH[H].L[0].e,sc=e&&!e.native?e.skinScale:0;if(!sc||Math.abs(sc-1)<.02)continue;const w=R.wrist[H];if(!w)continue;list.push({wp:w.wp,ax:w.axis[0],ay:w.axis[1],nx:-w.axis[1],ny:w.axis[0],scale:sc})}R._taper=list.length?list:null}
+function setWristClip(TWH){const list=[];if(R&&R.wrist)for(const H of['L','R']){const e=TWH[H]&&TWH[H].L[0]&&TWH[H].L[0].e;if(!e||e.native)continue;const w=R.wrist[H];if(!w)continue;list.push({wp:w.wp,ax:w.axis[0],ay:w.axis[1],nx:-w.axis[1],ny:w.axis[0]})}R._clip=list.length?list:null}
 // Join existing outline pixels at the skin/hand attachment. No new hand drawing or asset edits.
 function contourPixels(im){const c=document.createElement('canvas');c.width=im.naturalWidth||im.width;c.height=im.naturalHeight||im.height;c.getContext('2d').drawImage(im,0,0);return{im,data:c.getContext('2d').getImageData(0,0,c.width,c.height).data,width:c.width,height:c.height,ox:im.ox||0,oy:im.oy||0,scale:im.pixelScale||1}}
 function contourSample(P,x,y){x=Math.round((x-P.ox)*(P.scale||1));y=Math.round((y-P.oy)*(P.scale||1));if(x<0||y<0||x>=P.width||y>=P.height)return false;const k=4*(y*P.width+x);return P.data[k+3]>=230&&P.data[k]+P.data[k+1]+P.data[k+2]<240}
@@ -457,10 +507,11 @@ async function loadHandAngles(r,vw,hands){const out={};const D=WT_DONORS[vw]||{}
    const dp=ps.find(p=>p.id===H+'_palm'&&p.file&&!p.hidden);const dA=faAxis(bj,H);if(!dp||!dA)continue;const parts=[];
    const donorParts=byLayer(ps.filter(p=>p.file&&!p.hidden&&p.id.startsWith(H+'_')));for(let n=0;n<donorParts.length;n+=6){const loaded=await Promise.all(donorParts.slice(n,n+6).map(async p=>({id:p.id,im:await img(b+'hands/'+p.file)})));for(const p of loaded)if(p.im)parts.push({id:p.id,im:trim(p.im)})}if(parts.length!==donorParts.length){r.warn.push('Incomplete hand angle '+dv+' '+H+'; using delivered angles only');continue}
    let mask=null;if(dv==='left'||dv==='right'){const mi=await img('twist_masks/'+dv+'_'+H+'.png');if(mi)mask=trim(mi)}
-   const th=tA.a-dA.a;const target=HAND_ATTACH[vw]?.[H],donor=HAND_ATTACH[dv]?.[H];if(!target||!donor){r.warn.push('No authored attachment for '+dv+' '+H);continue}const image=composeHand(parts,mask);const targetOpening=handOpening(ownImage,tA,target),donorOpening=handOpening(image,dA,donor);const A=fitHand(targetOpening,donorOpening,tA,dA);
+   const th=tA.a-dA.a;const target=HAND_ATTACH[vw]?.[H],donor=HAND_ATTACH[dv]?.[H];if(!target||!donor){r.warn.push('No authored attachment for '+dv+' '+H);continue}const image=composeHand(parts,mask,dA);const targetOpening=handOpening(ownImage,tA,target),donorOpening=handOpening(image,dA,donor);const A=fitHand(targetOpening,donorOpening,tA,dA);
    const frames={};for(const part of donorParts){if(!Array.isArray(part.frames)||!part.frames.length)continue;const loaded=await Promise.all(part.frames.map(async f=>{const meta=typeof f==='string'?{file:f}:f;const url=b+'hands/'+meta.file;const im=await img(url);const result=im?{img:trim(im),file:meta.file,pivot:pt(meta.pivot),childPivot:pt(meta.childPivot),layer:meta.layer}:null;delete cache[url];return result}));if(loaded.every(Boolean))frames[part.id]=loaded;else r.warn.push('Incomplete finger frames '+dv+' '+part.id)}
-   E.push({deg,src:dv,parts,mask,image,A,rig:{...hj,parts:donorParts},frames,attachment:{target:targetOpening,donor:donorOpening},rotDeg:+(th*180/Math.PI).toFixed(1)})}
-  E.push(...await loadIntermediateHandAngles(r,vw,H,tA,ownImage));const opening=handOpening(ownImage,tA,HAND_ATTACH[vw][H]);for(const e of E)e.contours=handContours(r,H,e.native?ownImage:e.image,e.native?I:e.A,opening,tA);E.sort((a,b)=>a.deg-b.deg);out[H]={E,axis:tA.a,wp:tA.wp,min:E[0].deg,max:E[E.length-1].deg}}return out}
+   E.push({deg,src:dv,parts,mask,image,A,skinScale:A.skinScale,rig:{...hj,parts:donorParts},frames,attachment:{target:targetOpening,donor:donorOpening},rotDeg:+(th*180/Math.PI).toFixed(1)})}
+  E.push(...await loadIntermediateHandAngles(r,vw,H,tA,ownImage));
+  const opening=handOpening(ownImage,tA,HAND_ATTACH[vw][H]);for(const e of E)e.contours=[];E.sort((a,b)=>a.deg-b.deg);out[H]={E,axis:tA.a,wp:tA.wp,min:E[0].deg,max:E[E.length-1].deg}}return out}
 // Opaque nearest authored hand angle: no overlapping images, opacity fades, or scale animation.
 function twistState(H,rest){const S=R&&R.handAngles&&R.handAngles[H];if(rest||!S)return null;const x=clamp(+v['WristTwist'+H]||0,-1,1);if(!x)return null;
  const want=x*WT_FULL,wraps=S.max-S.min>=270,tau=wraps?want:clamp(want,S.min,S.max),distance=d=>wraps?Math.abs(((d+180)%360+360)%360-180):Math.abs(d);let selected=S.E[0];for(const e of S.E)if(distance(e.deg-tau)<distance(selected.deg-tau))selected=e;
@@ -490,14 +541,20 @@ function stepHandOrientation(dt){if(!R||R.loading||!document.getElementById('aut
  }}
 window.RigHandOrientation={update:stepHandOrientation,get state(){return R?.autoHandState||{}}};
 // posed frames may be rendered at 2x and downsampled ("2x supersampled"); rest is always rendered 1:1
-let SS=null;
+let SS=null,SSB=null;
+function bleedRGB(src){const w=src.width,h=src.height,q=src.getContext('2d'),img=q.getImageData(0,0,w,h),p=img.data,n=w*h;
+ for(let y=1;y<h-1;y++){const row=y*w;for(let x=1;x<w;x++){const i=row+x,a=p[i*4+3];if(a>=250||!a)continue;let s=-1;
+  if(p[(i-1)*4+3]>=250)s=i-1;else if(p[(i+1)*4+3]>=250)s=i+1;else if(p[(i-w)*4+3]>=250)s=i-w;else if(p[(i+w)*4+3]>=250)s=i+w;
+  if(s<0)continue;p[i*4]=p[s*4];p[i*4+1]=p[s*4+1];p[i*4+2]=p[s*4+2]}}
+ if(!SSB)SSB=document.createElement('canvas');if(SSB.width!==w||SSB.height!==h){SSB.width=w;SSB.height=h}SSB.getContext('2d').putImageData(img,0,0);return SSB}
 function renderFinal(g,rest){if(rest||QUAL!=='ss2'){g.__S=1;render(g,rest);return}
  if(!SS){SS=document.createElement('canvas');SS.width=2*W;SS.height=2*H}const q=guard(SS.getContext('2d'));q.__S=2;render(q,false);
- g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.clearRect(0,0,W,H);g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';g.drawImage(SS,0,0,2*W,2*H,0,0,W,H)}
+ g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.clearRect(0,0,W,H);g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';g.drawImage(SS,0,0,2*W,2*H,0,0,W,H);
+ const bled=bleedRGB(g.canvas);g.setTransform(1,0,0,1,0,0);g.imageSmoothingEnabled=false;g.drawImage(bled,0,0)}
 
 const STEP={hair_back:0,body:1,hands:2,eyes:3,mouth:4,hair_front:5};
 const eyeCanvas={};
-function render(g,rest){POSED=!rest;TWS=twistAmounts(rest);const TWH={L:twistState('L',rest),R:twistState('R',rest)};const im=R.im,Z=R.z;g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.clearRect(0,0,g.canvas.width,g.canvas.height);const items=[];let seq=0;
+function render(g,rest){POSED=!rest;TWS=twistAmounts(rest);const TWH={L:twistState('L',rest),R:twistState('R',rest)};if(rest){R._taper=null;R._clip=null}else{setWristTaper(TWH);setWristClip(TWH)}const im=R.im,Z=R.z;g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.clearRect(0,0,g.canvas.width,g.canvas.height);const items=[];let seq=0;
  const add=(z,step,fn,m)=>items.push({z:Number.isFinite(z)?z:[150,220,300,400,500,650][step],step,seq:seq++,fn,m});const LPA=LP.active;const f1=x=>(+x).toFixed(2);
  // body: jointed parts if delivered, else base_body.png as in v1.1
  let BM={},headM=I;
@@ -519,8 +576,8 @@ function render(g,rest){POSED=!rest;TWS=twistAmounts(rest);const TWH={L:twistSta
  // hands: palms parent to the body forearm (at wristPivot) when the body rig is active
  if(R.hands){const M=handChain(R.hands.parts,rest?()=>0:handAngle(R.hands),p=>handRoot(p,BM,rest,TWH),rest);
   for(const H of['L','R']){const st=TWH[H];if(!st)continue;const pm=R.hands.parts.find(p=>p.id===H+'_palm'&&p.file);if(!pm)continue;const root0=palmExt(pm,BM,rest);
-   for(const it of st.L){if(it.e.native)continue;const Mr=root0;const e=it.e,al=it.alpha;add(R.z['hands:'+pm.id],STEP.hands,g=>{drawDonor(g,e,Mr,al);drawHandContours(g,e,BM,root0,H)},{id:'hands:'+H+':twist:'+e.src,gid:'hands:'+H,glabel:(H==='L'?'left':'right')+' hand ('+H+')',sys:'hands',label:'authored angle '+e.src+' ('+e.deg+'°)',info:'Requested '+st.tau.toFixed(0)+'° · authored '+st.selectedDeg+'° · opaque, fitted wrist'+(st.clamped?' · CLAMPED (no art past '+st.S.min+'..'+st.S.max+'°)':'')})}}
-  for(const p of R.hands.parts)if(p.file){if(TWH[p.id[0]]&&!TWH[p.id[0]].L.some(q=>q.e.native))continue;const f=frameOf(p,rest);const H0=p.id[0];let info='',ginfo;if(LPA){const fr=R.frames[p.id];const fm=p.id.match(/^([LR])_(\w+?)\d$/);const cu=fm?clamp(v['Hand'+fm[1]+fm[2]]||0,0,1):null;info=(fr?'frame f'+fr.indexOf(f)+'/'+(fr.length-1)+' '+(f.file||''):(fm?'no frames':''))+(cu!=null?' · curl '+f1(cu):'');ginfo=['Thumb','Index','Middle','Ring','Pinky'].map(n=>n[0]+' '+f1(v['Hand'+H0+n]||0)).join(' ')+' · wrist '+f1(v['Wrist'+H0]||0)}add(handLayer(p,rest),STEP.hands,g=>{drawM(g,need('hands:'+p.id,f?f.img:im['hands:'+p.id]),M[p.id]);if(!rest&&/_palm$/.test(p.id)){const e=R.handAngles?.[H0]?.E.find(e=>e.native);if(e)drawHandContours(g,e,BM,palmExt(p,BM,rest),H0)}},{id:'hands:'+p.id,gid:'hands:'+H0,glabel:(H0==='L'?'left':'right')+' hand ('+H0+')',sys:'hands',label:p.id,info,ginfo})}}
+   for(const it of st.L){if(it.e.native)continue;const Mr=root0;const e=it.e,al=it.alpha;add(R.z['hands:'+pm.id],STEP.hands,g=>{drawDonor(g,e,Mr,al)},{id:'hands:'+H+':twist:'+e.src,gid:'hands:'+H,glabel:(H==='L'?'left':'right')+' hand ('+H+')',sys:'hands',label:'authored angle '+e.src+' ('+e.deg+'°)',info:'Requested '+st.tau.toFixed(0)+'° · authored '+st.selectedDeg+'° · opaque, fitted wrist'+(st.clamped?' · CLAMPED (no art past '+st.S.min+'..'+st.S.max+'°)':'')})}}
+  for(const p of R.hands.parts)if(p.file){if(TWH[p.id[0]]&&!TWH[p.id[0]].L.some(q=>q.e.native))continue;const f=frameOf(p,rest);const H0=p.id[0];let info='',ginfo;if(LPA){const fr=R.frames[p.id];const fm=p.id.match(/^([LR])_(\w+?)\d$/);const cu=fm?clamp(v['Hand'+fm[1]+fm[2]]||0,0,1):null;info=(fr?'frame f'+fr.indexOf(f)+'/'+(fr.length-1)+' '+(f.file||''):(fm?'no frames':''))+(cu!=null?' · curl '+f1(cu):'');ginfo=['Thumb','Index','Middle','Ring','Pinky'].map(n=>n[0]+' '+f1(v['Hand'+H0+n]||0)).join(' ')+' · wrist '+f1(v['Wrist'+H0]||0)}add(handLayer(p,rest),STEP.hands,g=>{drawM(g,need('hands:'+p.id,f?f.img:im['hands:'+p.id]),M[p.id])},{id:'hands:'+p.id,gid:'hands:'+H0,glabel:(H0==='L'?'left':'right')+' hand ('+H0+')',sys:'hands',label:p.id,info,ginfo})}}
  if(R.eyes){const j=R.eyes,L=j.irisLimitsPx;const X=rest?0:clamp(v.EyeBallX,-1,1),Y=rest?0:clamp(v.EyeBallY,-1,1);const dx=Math.round(X*(X>0?L.dxAtXplus1:-L.dxAtXminus1)),dy=Math.round(Y*(Y>0?L.dyAtYplus1:-L.dyAtYminus1));
   for(const E of j.eyes){const rl=id=>{const q=(j.parts||[]).find(x=>x.id===id);return q&&q.layer!=null?q.layer:'—'}; // layer as written in the eyes' rig.json (panel label only)
    const zW=Z['eyes:'+E+'_white'],zI=Z['eyes:'+E+'_iris']??zW;
@@ -1028,6 +1085,7 @@ body.pose-hide-controls #ui,body.pose-hide-layers #layers{display:none!important
 const surface=document.createElement('div');surface.id='pose-surface';stage.insertBefore(surface,canvas);surface.append(canvas);const viewport=document.createElement('div');viewport.id='pose-viewport';stage.insertBefore(viewport,surface);viewport.append(surface);
 const ns='http://www.w3.org/2000/svg';const svg=document.createElementNS(ns,'svg');svg.id='pose-nodes';svg.setAttribute('aria-label','Draggable pose joints');surface.append(svg);
 let pref={};try{pref=JSON.parse(localStorage.getItem('shadowveil.pose.workspace.v1')||'{}')}catch{}
+if(matchMedia('(max-width:1100px)').matches&&!('hideLayers'in pref))pref.hideLayers=true;
 let zoom=1,panX=0,panY=0,nodesOn=pref.nodes!==false,panMode=false,twistMode=false,handFocusSide='',drag=null,selected='',nodes=[];
 const toolbar=document.createElement('div');toolbar.id='pose-toolbar';toolbar.innerHTML='<button type="button" data-action="playback">Play motion</button><button type="button" data-action="controls">Controls</button><button type="button" data-action="layers">Layers</button><button type="button" data-action="nodes">Nodes</button><button type="button" data-action="twist">Twist handles</button><button type="button" data-action="handL">Left hand</button><button type="button" data-action="handR">Right hand</button><button type="button" data-action="pan">Pan</button><button type="button" data-action="out" aria-label="Zoom out">−</button><label>Zoom <input id="pose-zoom" aria-label="Pose zoom" type="range" min="0.5" max="4" step="0.1" value="1"></label><output id="pose-percent">100%</output><button type="button" data-action="in" aria-label="Zoom in">+</button><button type="button" data-action="fit">Fit</button><div id="pose-readout" role="status">Drag a joint handle to pose. Use Pan to move the view.</div>';stage.insertBefore(toolbar,viewport);
 const readout=toolbar.querySelector('#pose-readout');
