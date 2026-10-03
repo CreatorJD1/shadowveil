@@ -1,6 +1,6 @@
 # Shadowveil — character rig & live driver status
 
-Last updated: Sat Oct 3 2026, 4:04 AM PT
+Last updated: Sat Oct 3 2026, 4:59 AM PT
 
 Overall: ~45% — roughly 40–50% to a quality live driver (rough estimate)
 
@@ -61,6 +61,7 @@ Dashboard: http://127.0.0.1:8765/app/#status (master app; /status/ redirects the
 - [x] Hairless rest check (Oct 2, 10:54 PM PT): ?hairless=1 = 0 px in apose/tpose/left/right/back at linear (Body's speck-cleared base_body/base_body_skin copies, Body apose order with hands under forearms + Hands F7 palms, Hair's full staged set; eyes/mouth live). Default (no flag) still 0 px in all 5. Test: http://127.0.0.1:8765/rig/?view=apose&hairless=1&quality=linear (swap view=)
 - [x] Part mesh format v0.2 written (rig/partmesh/FORMAT.md): matches the schema the renderer reads behind ?partmesh=1; requirements (a)-(l) incl. child-under-parent order, 8-angle turn, Eyes G1-G14, Mouth's mesh-bend needs (OH/EE stay swaps), head-group rule. Ready for Hair and Hands; Mouth/Eyes/Body need clip/flap/lid/sampling fields built next
 - [x] Part mesh pilot, hair (apose strand_03 + tip): PASS at iteration 1 (width p95 0.43 px, 0 breaks, 0 new holes, browser vs Python mirror within 2 ink px); rest 0 px in all 5 views with ?partmesh=1; flag-off default byte-identical (30/30 frame hashes)
+- [x] Full project push + master HANDOFF.md (commit e0df3a1, PR #2)
 
 ## In progress — v1.8
 
@@ -104,7 +105,8 @@ Dashboard: http://127.0.0.1:8765/app/#status (master app; /status/ redirects the
 - [~] Coder: head-group hair/bun sub-offsets wired behind ?headgroup=1 (rig/partmesh/staged/headgroup.json sub.hair/sub.bun, Base Hair values); left/right edge distance improves, back gets worse and the bun shows a ring + see-through gaps, so it waits on Base Hair (rig/work/hgsubhair/)
 - [~] Coder: ?hairless=1 confirmed working (no regression; at rest it matches live by design). tpose hairless fails 181 px from Body's 02:01 eye-corner fill. index.html now 562c32a7 (handorder + armsub, flags only, default 30/30 identical). qa_gates.py baseline, crotch candidates, arm handoff proto, diag iris limits, hair/bun sub-offsets staged.
 - [~] Coder: rig/poser.html unified poser + keyframe timeline (staged; drives live rig/index.html via iframe, no rig edits). Hooks proposed in rig/poser/HOOKS.md. Benchmark plan parked in rig/benchmarks/PLAN.md.
-- [~] Full project push + master HANDOFF.md (commit e0df3a1, PR #2)
+- [~] Follow-up merged to main: chroma rule v2, bend check, weight-bleed fix, Body diag fix + HANDOFF (PR #3, merge d8a8331)
+- [x] qa_gates glob fixes: staged sweep reads each system's staged dirs; diagonals read hair v4 / mouth diag_posable / eyes / hands f8+f12 / body diag_fix; leak v2 all 0/0 (body PASS False only from mesh_outside_mask 3,762)
 
 ## Blockers & open issues
 
@@ -131,6 +133,7 @@ Dashboard: http://127.0.0.1:8765/app/#status (master app; /status/ redirects the
 - [?] **USER DECISION** Coder: rig/poser.html (Poser unified) as the main driver, replacing simple.html. Rest matches index.html exactly, scrub = playback, 0 console errors. Diagonal angles view-only for now.
 - [?] **USER DECISION** Body + Hair pair (one line, live together or not at all): Body's masked hairless live patch (left/right/back) + Hair's new hair_front (hair/staged/ear_strands/<view>/.../hair_front.png). Together rest 0/0/0 px; either alone is 378-640 px off.
 - [?] **USER DECISION** Body crotch notch: ulnb skin (--crotch 0, no --bgk). Rest 0, reduces wide-stance notch (apose 778->366, tpose 1033->731) but doesn't fully close it; small new dark-edge px (78/18). Sheet: body_tools/work/crotch_candidates/sheet_crotch_before_after.png
+- [?] **USER DECISION** USER DECISION: soft edges in her live textures (body 131,030 / hands 22,362 / mouth 8,655 / hair 7,385 px): exempt her own antialiasing (report-only, current) or snap alpha? qa_gates reports them as pre-existing vs new; never fail PASS (HANDOFF.md section 8)
 
 ## Next / estimate (rough)
 

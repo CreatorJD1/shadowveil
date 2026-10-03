@@ -1,4 +1,4 @@
-# Shadowveil: master handoff (Oct 3, 2026, ~4:00 AM PT; chroma/bend/weight-bleed status updated ~4:45 AM PT)
+# Shadowveil: master handoff (Oct 3, 2026, ~4:00 AM PT; chroma/bend/weight-bleed status updated ~4:45 AM PT; qa_gates glob fixes + Body regression tasks ~5:00 AM PT)
 
 For any coding agent picking this up (Codex, Freebuff, or anyone else). Everything here comes from the five bot handoffs, `STATUS.md` / `status/status.json`, `CODER_HANDOFF.md`, `rig/poser/HOOKS.md` and the rig files as they were when this was pushed. Where something wasn't checked, this file says so.
 
@@ -71,6 +71,7 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
 - **Iris limits v4** (`?irislimits=diag`, `rig/work/irislimits/diag_irislimits_v4.json`) for 045/315. Wider sideways reach (315 near EyeR −2/+4, 045 near EyeL −3/+2), eyes linked, 0 leaks, rest 0 px. **Trade-off:** up-left/up-right and 045 down-right glances go straight up (0 sideways; up to 2 px today). Eyes' verification: `eyes/qa/irislimits_diag/v4/sheet_v4.png`.
 - **Hair:** tone fix (`hair/staged/tone_fix/`), hair_front 2 px hole fills (`hair/staged/hairfront_holes/`), line-art fixes (`hair/staged/lineart_fix/`), and the ear fixes (A-pose ear_strands + merged strand_04, T-pose eye-corner 181 px, and the paired item above). The speck fix needs a choice: a chroma exception for base.png copies, or Body keeps the specks.
 - **Mouth:** the tone snap (`mouth/staged/tone_fix/`) and the doubled-outline fix `?mouthfix=1` (suggested as the default).
+- **Soft edges (new decision):** exempt her own antialiasing (report-only, current) or snap alpha. See section 8, 'USER DECISION: soft edges'.
 - Also on the list: the Eyes lash fix, closed-frame crease, 2 px/column diagonal lid rule and side-glance white tones; Hands F5 line-art and the A-pose wrist flaps (F7), plus F10/F11 together with `?handorder=1`; Body round-2 right-view underlay, hairless bases, A-pose neck extension, T-pose eye-corner/ear fill, and the line-tone snap; the scale rule (base views are the truth); Coder `?handangles=off` (generated turned hands off by default), `?ss2rest=1` (exact rest at default quality), wiring the driver to the head group, and the Mouth lip-bend extras.
 
 ## 6. Paused / dropped work
@@ -99,6 +100,15 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
     - The blue that shows comes from the stale renders `rig/work/diag_rig/renders/d045/*.png` (03:43 PT, before the slots were rebuilt at 03:48 PT): 5–23 near-frame navy px per render at the hair/jaw/neck edge, e.g. (7,16,121) ≈ frame (8,17,120). The diag worker kept these as "fringe 25<b−max≤60".
     - The turn frame itself has 70 enclosed bluish px near the 045 neck, 64 of them uncovered by any layer.
     - Re-render with the current slots. Anything left there is counted as `frame_fringe` by the new chroma rule.
+- **Body diag_body_fix regressions (4 tasks, details and fixes in [body_tools/work/HANDOFF_BODY.md](body_tools/work/HANDOFF_BODY.md)).**
+  - Waist bulge: the step is fixed, but a new 6–7 px bulge pokes past her outline.
+  - 045 hip_L corner: −25 step 1.41→3.16 px.
+  - 045 head-neck gap: −25 gap 88→128 px, because the head pivot moved up.
+  - shoulder_L armpit flap: −25 step +1–2 px at both angles.
+  - **Pass rule for each one:** no worse than `diag_body/` on `python3 rig/qa_gates.py --gate bend` (`--bend-check`), with rest 0 px (and holes 0, lock overlap 0).
+- **Superseded staged sets** (kept for reference only; don't gate or ship them):
+  - Hair `hair/staged/diagonals/` (v1), `diagonals_v2/` and `diagonals_v3/` are superseded. **Current: `hair/staged/diagonals_v4/`.** The 1 chroma px in v1 `315/hair/strand_04.png` (and its 144/209 off-palette px) is in a superseded set, so it doesn't count against v4.
+  - Mouth `mouth/staged/diagonals/` and `diagonals_snap/` are superseded. **Current: `mouth/staged/diag_posable/<ang>/frame_scale/`** (the old `diagonals/` renders showed 65 off-palette px from pre-snap blends).
 - **The smooth mesh** (`body_tools/work/natural_bend_proto/`, not pushed) **and the knuckle mesh were dropped.**
 - **Hair v4 diagonals** (`hair/staged/diagonals_v4/`) have one-sided sway caps (`sway_caps.json`) that need `degAtPlus1`/`degAtMinus1` support for hair in `rig/index.html`. That's not done. Without it, 045 `strand_03`/`strand_03_tip` and 315 `strand_06` can swing over the eye or mouth.
 - **Benchmarks** (`reference/benchmarks/`, `rig/benchmarks/PLAN.md`), **outfit work** (`reference/outfit/`, `body_tools/work/outfit_staged/`) **and Massfront are parked.**
@@ -122,7 +132,7 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
      - Files: `browser_live_vs_fix.json`, `sheet_live_vs_fix.png`.
      - Compare: Body's `--zero-cross-limb` was rejected for 31 px moves and 48 holes.
    - **Still open:** the user must OK the right-elbow outline change. A ≤1 px fix there needs a mesh change (split the x=688 vertices), not weights.
-2. **Handorder wrist rows.** Left: 53 px at y852–853. Right: 24 px at y856–857. *Fix:* draw the palm over the forearm on those rows only, clipped to `hands/<view>_hand_erase_mask.png`. Don't trim the body skin (Body's trim was rejected). Staged work: `rig/work/handorder/wristrows/` (`apply_wristrows.py`, `index.wr.html`, `ho_check_wr.json`). *Status (04:45 PT):* the patch gives rest 0 px left and right (was 53 / 24 px), restCheck PASS and 0 errors, with the clip at 74 px left / 35 px right. Still to do: the 5-view check, the underlay check and the default 30/30 hash check. It is **not** swapped into `rig/index.html`.
+2. **Handorder wrist rows.** Left: 53 px at y852–853. Right: 24 px at y856–857. *Fix:* draw the palm over the forearm on those rows only, clipped to `hands/<view>_hand_erase_mask.png`. Don't trim the body skin (Body's trim was rejected). Staged work: `rig/work/handorder/wristrows/` (`apply_wristrows.py`, `index.wr.html`, `ho_check_wr.json`). *Status (04:45 PT):* the patch gives rest 0 px left and right (was 53 / 24 px), restCheck PASS and 0 errors, with the clip at 74 px left / 35 px right. Still to do: the 5-view check, the underlay check and the default 30/30 hash check. It is **not** swapped into `rig/index.html`. **This blocks the Hands F7/F10 wrist flaps:** they go live with `?handorder=1` as one item, and that item can't be OK'd until the wrist rows are fixed.
 3. **`?palsnap=1` palette snap is in progress.** It's in `rig/work/palsnap/` (`apply_palsnap.py` is an idempotent patcher and `index.palsnap.html` is the staged copy). Each posed item's non-exact texels snap to that item's own source tones, and rest frames are never touched. *To finish:* run `ps_check.js` with `cases_full.json`, confirm the default is byte-identical (`default_same_ab.js`), and check that 1–2 px hair tips don't vanish at full sway. The mouth palette must include teeth #efe4da, tongue #9c5a4a and profile interior #3f2319. Then rerun qa_gates for hair and mouth. The render output in `palsnap/out/` wasn't pushed.
 4. **hgSub hair/bun offsets.** Keep them at (0,0) in left, right and back while the posed bodies still have baked-in hair. Re-tune from `hair/qa/turn_handoff/subofs_v2/` once they don't (`rig/work/hgsubhair/`).
 5. **NeckTwist doesn't actually turn the head.** It only reprojects neck skin. *Fix:* a real head turn has to switch between her drawn angles (the 8-angle plan, which is paused), not warp the neck.
@@ -130,7 +140,7 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
 7. **The Mouth talk driver drops M.** M shows in 4 of 240 frames instead of 22, because the M press lands on the rest/M tie. *Fix (rig side):* push MouthForm to about −0.6 for M presses, and use posed frames during handoffs.
 8. **The 150 Mouth render PNGs question.** Last push, `.gitignore` (`*/renders/`) silently dropped 150 Mouth PNGs. Mouth's handoff says the real shapes are in `mouth/staged/{diagonals,diagonals_snap}/{045,315}/renders/`. This push force-adds every file in `mouth/push_manifest.txt`. Someone should still confirm with Mouth that those PNGs are real shapes and not scratch.
 9. **Local main is behind origin.** Local `main` is 6d5b239 and origin/main is 3515d57 (Eyes PR #1 merge). The work tree has uncommitted changes. Don't `reset --hard`. Fast-forward main only after the PR is merged, with a clean or stashed work tree.
-10. Also open (from STATUS.md): joint gaps from flat limbs (the main quality gap); the default `quality=ss2` display at rest differs from base.png by 149k–235k px (the Rest check uses the non-ss2 path; `?ss2rest=1` is staged); the generated turned hands in `rig/hand_angles/` break "authored art only" (needs a decision); qa_gates known bugs (the `045` key skips `45_*.png`, and staged lookup can't find flat layouts); the Body spot-1 armpit/hip ~650 px; the Hands fist and thumb issues (see Hands' handoff); and the Hair renderer smoothing (bilinear adds off-palette px).
+10. Also open (from STATUS.md): joint gaps from flat limbs (the main quality gap); the default `quality=ss2` display at rest differs from base.png by 149k–235k px (the Rest check uses the non-ss2 path; `?ss2rest=1` is staged); the generated turned hands in `rig/hand_angles/` break "authored art only" (needs a decision); qa_gates glob bugs (fixed ~4:55 AM PT; see section 8, 'Gate coverage'); the Body spot-1 armpit/hip ~650 px; the Hands fist and thumb issues (see Hands' handoff); and the Hair renderer smoothing (bilinear adds off-palette px).
 
 ## 8. Checks to run before anything goes live
 - **md5 first:** the served `rig/index.html` must match the file on disk (`rig/work/md5gate.sh`). Render on a per-bot port, never on 8765/8766.
@@ -144,9 +154,37 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
   - G2 **leak / colour sweep**: off-palette (more than `--tol` from any of her tones for that part/view), chroma, soft edges (info only), and the mesh_outside_mask pose sweep.
   - G3 **scale**: hand and foot length vs head and forearm. More than 1 px drift fails, and the base views are the truth.
   - **The required chroma rules:** exact `#0000FF` always fails. Her own blue-ish colours are allowlisted only from 1 px-eroded silhouette art pixels. Frame-edge fringe is counted separately. This is now the default in `qa_gates.py` (`--chroma-rule v2`). A px that exactly matches the frame at the same position is `frame_match_rest` at rest and `frame_fringe` when posed; neither fails. `--chroma-rule old` keeps the old heuristic (`blue > max(r,g)+60 and blue > 120`) for comparison, and both counts are in every file report. Before/after on the live rig (all 5 views), both rules give identical results (`rig/work/qa_gates/out/leak_live_chroma_{old,v2}.json`):
-    - Chroma: live 0, staged 0, diagonals 1. The 1 is a real fail: `hair/staged/diagonals/315/hair/strand_04.png`.
-    - Off-palette: 0 / 0 / 209.
+    - Chroma: live 0, staged 0, diagonals 1 (before the glob fix). The 1 was `hair/staged/diagonals/315/hair/strand_04.png`, in the superseded v1 set. After the glob fix, diagonals read v4 and show 0.
+    - Off-palette: 0 / 0 / 209 (209 = superseded v1 hair + old mouth renders).
     - mesh_outside_mask: 3762 (pre-existing).
+  - **Gate coverage (glob fixes, ~4:55 AM PT; backups `rig/work/qa_gates/qa_gates_pre_globs_0451.py`):**
+    - Diagonal sweep:
+      - hair reads `hair/staged/diagonals_v4/<ang>/hair/`
+      - mouth reads `mouth/staged/diag_posable/<ang>/frame_scale/`
+      - eyes reads `eyes/staged/diagonals/{045,315}/` (skipping `*_chroma.png` on-key copies)
+      - hands reads `rig/hand_angles` (the `045` key now also finds `45_*.png`) plus `hands/staged/f8_diagonals/<ang>/` and `hands/staged/f12_wrist_diag/<ang>/`
+      - body reads `body_tools/work/diag_body_fix/{045,315}/pieces/`
+    - Staged sweep: with no `--staged-dir`, each system now reads its own staged folders instead of re-reading live.
+      - hands: `hands/staged/*/**` (flat F5 v2, F7, F10, F11 layouts)
+      - body: `body_tools/work/hairless_division_staged/<view>/**` and `regen_staged/**`
+      - hair: `hair/staged/{tone_fix,hairfront_holes,lineart_fix,ear_strands,merged,speck_fix}/**`
+      - mouth: `mouth/staged/tone_fix/**`
+      - Superseded, pre_*, backup, rejected, prev_lock and scratch folders are skipped. The view comes from a folder named after the view, or a token like `f7_wrist_apose`. If several staged copies exist, the newest file wins (e.g. tpose `hair_front`: lineart_fix vs ear_strands).
+      - Passing `--staged-dir` uses only those dirs, as before.
+    - Soft edges (0<α<255) are never snapped and never fail. Staged reports now split them into `soft_edge_preexisting_live` (same position and alpha as the live file) and `soft_edge_new`.
+  - **Leak results after the fix** (`--gate leak --chroma-rule v2 --part <p>`, all 5 views, ~4:58 AM PT). Each row is off-palette / chroma, by file set, then the soft edges:
+
+    | part | live | staged (files from staged) | diagonals (files) | soft edges live → staged (pre-existing / new) | PASS |
+    |---|---|---|---|---|---|
+    | eyes | 0/0 | 0/0 (42) | 0/0 (44) | 3,530 → 341 (341 / 0) | True |
+    | hands | 0/0 | 0/0 (16) | 0/0 (80) | 22,362 → 22,299 (22,295 / 4) | True |
+    | hair | 0/0 | 0/0 (31) | 0/0 (34, v4) | 7,385 → 9,142 (7,332 / 1,810) | True |
+    | mouth | 0/0 | 0/0 (32) | 0/0 (18, diag_posable) | 8,655 → 8,655 (8,655 / 0) | True |
+    | body | 0/0 | 0/0 (53) | 0/0 (28, diag_body_fix) | 131,030 → 119,042 (118,323 / 719) | **False** |
+
+    - **Body PASS=False comes only from `mesh_outside_mask` = 3,762** on the live `skin.json` (pre-existing). Soft edges don't affect PASS. This is a `skin.json` item for the Coder: posed skin vertices land more than 1 px outside their own part's hull. Fix it in a staged candidate skin checked with `--skin`, never by writing `skin.json`.
+    - The new soft px come from the staged hair_front ear strands (left 611, right 576, back 392), a few hair strands (speck/lineart fixes), Body's hairless `foot_L` (left, 401) / `foot_R` (right, 318) pieces, and Hands F5 Ring1 (2+2).
+  - **USER DECISION: soft edges.** Live has 131,030 (body), 7,385 (hair), 8,655 (mouth) and 22,362 (hands) soft-edge px from her existing textures. Either **exempt her own antialiasing** (treat them like her art allowlist; the current behaviour is report-only), or **snap their alpha** to 0/255. Snapping changes her line edges and would need its own rest/line-art check. Nothing is snapped until the user decides.
   - **Bend check:** `--bend-check` (or `--gate bend`) measures waist side-step, hip dent, shoulder/elbow outline spikes and the head-neck gap. Output goes to `rig/work/bend_check/`. It is info only and never changes PASS.
     - Live A-pose baseline (nearest), posed vs rest:
       - waist step +3 px at BodyLean±1;

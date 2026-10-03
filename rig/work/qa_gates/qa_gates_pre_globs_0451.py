@@ -18,7 +18,6 @@ SYSTEMS = ['body', 'eyes', 'mouth', 'hands', 'hair']
 BODY_LIMIT_DEFAULT = {'toes_L': [20, -30], 'toes_R': [20, -30]}  # mirrors rig/index.html line 52
 DIAG_FRAME = {'045': 'f033', '135': 'f087', '225': 'f131', '315': 'f191'}
 STAGED_TONE = ['eyes/work/lashfix/staged', 'hair/staged/tone_fix', 'mouth/staged/tone_fix']
-EXPLICIT_STAGED = False   # True when --staged-dir is passed: then only those dirs are used
 
 def P(*a): return os.path.join(ROOT, *a)
 
@@ -233,11 +232,6 @@ def chroma_count(img, alpha_min=1):
     return int(((a >= alpha_min) & (b > np.maximum(r, g) + 60) & (b > 120)).sum())
 
 def soft_count(img): a = img[..., 3]; return int(((a > 0) & (a < 255)).sum())
-def soft_split(staged_f, live_f):
-    st = rgba(staged_f)[..., 3]; sm = (st > 0) & (st < 255); n = int(sm.sum())
-    lv = rgba(live_f)[..., 3]
-    if lv.shape != st.shape: return 0, n
-    pre = int((sm & (lv == st)).sum()); return pre, n - pre
 
 # ---- chroma rule v2 (default; --chroma-rule old = the plain bluish test above, for comparison)
 #  * exact #0000FF (the key) always fails ('key_exact')
@@ -297,37 +291,7 @@ def live_files(view, system):
             fs += [P('views', view, x) for x in ims if x and os.path.exists(P('views', view, x))]
     return fs
 
-# Staged sweep: each system's own staged fix folders (globbed), so `staged` reads staged files instead of re-reading live.
-#   hands: hands/staged/*/** (flat per-fix layouts f5_lineart/v2_ring_width/<view>/, f7_wrist_apose/, f10_wrist_tpose/, f11_wrist_profile_back/<view>/)
-#   body:  body_tools/work/hairless_division_staged/<view>/**, body_tools/work/regen_staged/**
-#   hair:  hair/staged/{tone_fix,hairfront_holes,lineart_fix,ear_strands,merged,speck_fix}/**
-#   mouth: mouth/staged/tone_fix/**
-# The view comes from a path component named after the view, else a folder name token (f7_wrist_apose -> apose,
-# spot1_right_hip_armpit -> right). Superseded / scratch / rejected folders are skipped. If several staged copies exist, the newest file wins.
-STAGED_GLOBS = {
-    'hands': ['hands/staged/*'],
-    'body': ['body_tools/work/hairless_division_staged', 'body_tools/work/regen_staged'],
-    'hair': ['hair/staged/' + d for d in ('tone_fix', 'hairfront_holes', 'lineart_fix', 'ear_strands', 'merged', 'speck_fix')],
-    'mouth': ['mouth/staged/tone_fix'],
-}
-STAGED_SKIP = re.compile(r'(^|/)(f8_diagonals|f12_wrist_diag|f6_overlap|f9_partmesh_specks|backups?[^/]*|pre_[^/]*|[^/]*_pre_[^/]*|[^/]*prev_lock[^/]*|[^/]*rejected[^/]*|'
-                         r'alt_[^/]*|crops|frame_scale|for_base_body|work|tools|out|tmp|renders?|scratch|sheets?)(/|$)', re.I)
-def glob_staged_lookup(view, system, fname):
-    best = None
-    for root in STAGED_GLOBS.get(system, []):
-        for c in glob.glob(P(root, '**', fname), recursive=True):
-            rel = os.path.relpath(c, P(root.split('*')[0]))   # relative to the staged root, so 'body_tools/work' itself isn't skipped
-            if STAGED_SKIP.search(rel): continue
-            comps = rel.split(os.sep)[:-1]
-            cv = [x for x in comps if x in VIEWS]
-            ok = (cv[-1] == view) if cv else any(view in x.split('_') for x in comps)
-            if ok and (best is None or os.path.getmtime(c) > os.path.getmtime(best)): best = c
-    return best
-
 def staged_lookup(sdirs, view, system, fname):
-    if EXPLICIT_STAGED is False:   # no --staged-dir given: use the per-system staged globs
-        h = glob_staged_lookup(view, system, fname)
-        if h: return h
     for s in sdirs:
         s = s if os.path.isabs(s) else P(s)
         for c in (os.path.join(s, view, system, fname), os.path.join(s, 'views', view, system, fname), os.path.join(s, view, fname)):
@@ -340,17 +304,9 @@ def staged_lookup(sdirs, view, system, fname):
 def diag_sets(part_filter):
     out = []
     for ang in sorted(DIAG_FRAME):
-        # current staged diagonal sets (superseded: hair/staged/diagonals v1-v3, mouth/staged/diagonals + diagonals_snap)
-        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'hair') if 'hair' in SYS_DIR else P('hair/staged/diagonals_v4', ang, 'hair'), '*.png'))): out.append((ang, 'hair', f))
-        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'mouth') if 'mouth' in SYS_DIR else P('mouth/staged/diag_posable', ang, 'frame_scale'), '*.png'))): out.append((ang, 'mouth', f))
-        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'eyes') if 'eyes' in SYS_DIR else P('eyes/staged/diagonals', ang), '*.png'))):
-            if not f.endswith('_chroma.png'): out.append((ang, 'eyes', f))   # *_chroma.png = on-key build copies, not parts
-        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'body') if 'body' in SYS_DIR else P('body_tools/work/diag_body_fix', ang, 'pieces'), '*.png'))): out.append((ang, 'body', f))
-        a2 = ang.lstrip('0')   # hands use 45/135/225/315 (fixes the '045' key skipping 45_*.png)
-        for f in sorted(set(glob.glob(P('rig/hand_angles', ang + '_*.png')) + glob.glob(P('rig/hand_angles', a2 + '_*.png')))): out.append((ang, 'hands', f))
-        if 'hands' not in SYS_DIR:
-            for d in ('hands/staged/f8_diagonals', 'hands/staged/f12_wrist_diag'):
-                for f in sorted(glob.glob(P(d, a2, '*.png'))): out.append((ang, 'hands', f))
+        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'hair') if 'hair' in SYS_DIR else P('hair/staged/diagonals', ang, 'hair'), '*.png'))): out.append((ang, 'hair', f))
+        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'mouth') if 'mouth' in SYS_DIR else P('mouth/staged/diagonals', ang, 'renders'), '*.png'))): out.append((ang, 'mouth', f))
+        for f in sorted(glob.glob(P('rig/hand_angles', ang + '_*.png'))): out.append((ang, 'hands', f))
     return [o for o in out if part_filter(o[1], os.path.basename(o[2]))]
 
 def file_report(view, system, f, tol, pal_view=None, posed=False):
@@ -492,7 +448,6 @@ def main():
     for sy in SYSTEMS:
         if getattr(a, f'{sy}_dir'): SYS_DIR[sy] = getattr(a, f'{sy}_dir')
     views = [v for v in a.view.split(',') if v]; gates = VIEWS and (['weights', 'leak', 'scale'] if a.gate == 'all' else a.gate.split(','))
-    global EXPLICIT_STAGED; EXPLICIT_STAGED = a.staged_dir is not None
     sdirs = a.staged_dir if a.staged_dir is not None else STAGED_TONE
     psys, ppat = (a.part.split('/', 1) + ['*'])[:2] if a.part else ('', '*')
     if psys and psys not in SYSTEMS: psys, ppat = '', a.part
@@ -511,22 +466,15 @@ def main():
                     r = file_report(v, s, f, a.tol); L['live'].setdefault(v, {}).setdefault(s, []).append(r)
                     sf = staged_lookup(sdirs, v, s, fn)
                     rs = file_report(v, s, sf, a.tol) if sf else dict(r, file=r['file'] + ' (no staged fix; live)')
-                    # soft edges (0<alpha<255) are never snapped and never fail. Split staged soft px into pre-existing in live
-                    # (same position and alpha as the live file) vs new, so her own antialiasing doesn't read as staged work.
-                    rs['soft_edge_preexisting_live'], rs['soft_edge_new'] = soft_split(sf, f) if sf else (r['soft_edge'], 0)
                     L['staged'].setdefault(v, {}).setdefault(s, []).append(rs)
             if body_sel and not a.no_mesh: L['mesh_outside_mask'][v] = mesh_outside(v, a.skin)
         if not a.no_diagonals:
             for ang, s, f in diag_sets(pf): L['diagonals'].setdefault(ang, {}).setdefault(s, []).append(file_report(ang, s, f, a.tol, posed=True))
         def tot(tree):
             t = {'off_palette': 0, 'chroma': 0, 'chroma_old_rule': 0, 'frame_fringe': 0, 'soft_edge': 0, 'files': 0}
-            sp = any('soft_edge_new' in r for vv in tree.values() for lst in vv.values() for r in lst)
-            if sp: t.update(soft_edge_preexisting_live=0, soft_edge_new=0, files_from_staged=0)
             for vv in tree.values():
                 for lst in vv.values():
-                    for r in lst:
-                        t['files'] += 1; t['off_palette'] += r['off_palette']; t['chroma'] += r['chroma']; t['chroma_old_rule'] += r['chroma_old_rule']; t['frame_fringe'] += r.get('frame_fringe', 0); t['soft_edge'] += r['soft_edge']
-                        if sp: t['soft_edge_preexisting_live'] += r.get('soft_edge_preexisting_live', 0); t['soft_edge_new'] += r.get('soft_edge_new', 0); t['files_from_staged'] += int('(no staged fix; live)' not in r['file'])
+                    for r in lst: t['files'] += 1; t['off_palette'] += r['off_palette']; t['chroma'] += r['chroma']; t['chroma_old_rule'] += r['chroma_old_rule']; t['frame_fringe'] += r.get('frame_fringe', 0); t['soft_edge'] += r['soft_edge']
             return t
         L['totals'] = {k: tot(L[k]) for k in ('live', 'staged', 'diagonals')}
         L['totals']['mesh_outside_mask'] = sum(x[next(iter(x))] for vv in L['mesh_outside_mask'].values() for x in vv.values())
