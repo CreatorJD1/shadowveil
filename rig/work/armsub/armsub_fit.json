@@ -1,0 +1,78 @@
+{
+ "table": {
+  "upperArm_L": {
+   "left": -15.9,
+   "back": 5.4
+  },
+  "forearm_L": {
+   "left": 30.0,
+   "back": -1.8
+  },
+  "upperArm_R": {
+   "back": -5.4,
+   "right": 14.5
+  },
+  "forearm_R": {
+   "back": 1.9,
+   "right": -29.4
+  }
+ },
+ "fit": {
+  "left/L": {
+   "want_wrist_move": {
+    "dx": 5,
+    "dy": -37
+   },
+   "ncc": 0.213,
+   "two_bone_residual_px": 14.6,
+   "two_bone_deg": [
+    -15.9,
+    30.0
+   ],
+   "forearm_only_deg": 0.4,
+   "forearm_only_residual_px": 37.3
+  },
+  "back/L": {
+   "want_wrist_move": {
+    "dx": -34,
+    "dy": -5
+   },
+   "ncc": 0.241,
+   "two_bone_residual_px": 18.2,
+   "two_bone_deg": [
+    5.4,
+    -1.8
+   ],
+   "forearm_only_deg": 7.4,
+   "forearm_only_residual_px": 20.1
+  },
+  "back/R": {
+   "want_wrist_move": {
+    "dx": 30,
+    "dy": -9
+   },
+   "ncc": 0.251,
+   "two_bone_residual_px": 12.5,
+   "two_bone_deg": [
+    -5.4,
+    1.9
+   ],
+   "forearm_only_deg": -7.5,
+   "forearm_only_residual_px": 14.5
+  },
+  "right/R": {
+   "want_wrist_move": {
+    "dx": 5,
+    "dy": -17
+   },
+   "ncc": 0.122,
+   "two_bone_residual_px": 0.1,
+   "two_bone_deg": [
+    14.5,
+    -29.4
+   ],
+   "forearm_only_deg": -1.8,
+   "forearm_only_residual_px": 16.4
+  }
+ }
+}

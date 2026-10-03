@@ -1,0 +1,258 @@
+{
+ "ctrl": {
+  "R rest": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "width": 2.087
+  },
+  "R wrist_Rp1": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.082
+  },
+  "R wrist_Rm1": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.186
+  },
+  "R anger+0.14": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.043
+  },
+  "R jump-0.2": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.114
+  },
+  "R jump+0.2969": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.064
+  },
+  "R run-0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.112
+  },
+  "R run+0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.033
+  }
+ },
+ "r20": {
+  "metrics": {
+   "R rest": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "width": 2.087
+   },
+   "R wrist_Rp1": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.142
+   },
+   "R wrist_Rm1": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.266
+   },
+   "R anger+0.14": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.025
+   },
+   "R jump-0.2": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.084
+   },
+   "R jump+0.2969": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.044
+   },
+   "R run-0.12": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.091
+   },
+   "R run+0.12": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.022
+   }
+  },
+  "px_vs_ctrl": {
+   "rest": 0,
+   "pose_Fist": 0,
+   "pose_Point": 0,
+   "pose_Peace": 0,
+   "wrist_Lp1": 0,
+   "wrist_Lm1": 0,
+   "wrist_Rp1": 1541,
+   "wrist_Rm1": 1498,
+   "anger+0.14": 1288,
+   "jump-0.2": 1209,
+   "jump+0.2969": 1294,
+   "run-0.12": 1077,
+   "run+0.12": 1039
+  },
+  "worse_than_ctrl": [],
+  "max_abs_dw": 0.266,
+  "abs_holes_breaks": []
+ },
+ "r20d5": {
+  "metrics": {
+   "R rest": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "width": 2.087
+   },
+   "R wrist_Rp1": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.092
+   },
+   "R wrist_Rm1": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.154
+   },
+   "R anger+0.14": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.032
+   },
+   "R jump-0.2": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.061
+   },
+   "R jump+0.2969": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.101
+   },
+   "R run-0.12": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.072
+   },
+   "R run+0.12": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.033
+   }
+  },
+  "px_vs_ctrl": {
+   "rest": 0,
+   "pose_Fist": 0,
+   "pose_Point": 0,
+   "pose_Peace": 0,
+   "wrist_Lp1": 0,
+   "wrist_Lm1": 0,
+   "wrist_Rp1": 747,
+   "wrist_Rm1": 849,
+   "anger+0.14": 519,
+   "jump-0.2": 647,
+   "jump+0.2969": 776,
+   "run-0.12": 741,
+   "run+0.12": 727
+  },
+  "worse_than_ctrl": [],
+  "max_abs_dw": 0.154,
+  "abs_holes_breaks": []
+ }
+}

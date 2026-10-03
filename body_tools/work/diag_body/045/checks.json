@@ -1,0 +1,2518 @@
+{
+ "angle": "045",
+ "frame": "f033",
+ "rest": {
+  "diff_px_vs_frame_on_body_px": 0,
+  "body_px_outside_body_area": 0,
+  "body_px": 114439,
+  "note": "composite of the 14 pieces (layer order, flaps hidden) vs her frame px; body area = her keyed figure minus teammates rest px",
+  "figure_px_covered_by_nobody": 0,
+  "teammate_px_outside_her_keyed_figure": {
+   "hand_L": 0,
+   "hand_R": 0,
+   "eyes": 10,
+   "hair": 1410,
+   "mouth": 0
+  }
+ },
+ "hers_allowlist_key25": {
+  "px": 0,
+  "colours": [],
+  "note": "body px whose exact RGB is her frame px but B-max(R,G)>25 (enclosed ink islands < 6 px kept as figure); NOT snapped or removed; qa_gates chroma (b>max+60 & b>120) = 0"
+ },
+ "pieces": {
+  "foot_L": {
+   "opaque": 5256,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "foot_R": {
+   "opaque": 4413,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "shin_L": {
+   "opaque": 10687,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "shin_R": {
+   "opaque": 9277,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "thigh_L": {
+   "opaque": 23978,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "thigh_R": {
+   "opaque": 20798,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "forearm_L": {
+   "opaque": 4424,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "forearm_R": {
+   "opaque": 3485,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "upper_arm_L": {
+   "opaque": 7258,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "upper_arm_R": {
+   "opaque": 9206,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "neck": {
+   "opaque": 4959,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "torso": {
+   "opaque": 25991,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  },
+  "head": {
+   "opaque": 6045,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 115,
+   "her_exact_px_tripping_key25": 0
+  },
+  "pelvis": {
+   "opaque": 8406,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft": 0,
+   "overlap_teammates_rest": 0,
+   "overlap_teammates_incl_lid_and_mouth_states": 0,
+   "her_exact_px_tripping_key25": 0
+  }
+ },
+ "totals": {
+  "off_palette": 0,
+  "chroma": 0,
+  "soft": 0,
+  "overlap_teammates_rest": 0
+ },
+ "palette_rule": "off-palette = opaque px whose exact RGB (tol 0) does not occur in her keyed figure px of this frame; chroma = qa_gates rule b>max(r,g)+60 & b>120",
+ "overlap_by_teammate": {
+  "hand_L": 0,
+  "hand_L_wristflap_all_states": 364,
+  "hand_R": 0,
+  "hand_R_wristflap_all_states": 331,
+  "eyes": 0,
+  "eyes_all_states": 0,
+  "hair": 0,
+  "mouth": 0,
+  "mouth_all_states": 115
+ },
+ "joint_test_25": {
+  "shoulder_R": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 40
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 13
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 20
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 40
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 12
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 20
+    }
+   }
+  },
+  "shoulder_L": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 31
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 16
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 17
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 31
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 17
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 19
+    }
+   }
+  },
+  "elbow_R": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 32
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 17
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 16
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 32
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 22
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 21
+    }
+   }
+  },
+  "elbow_L": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 35
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 19
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 21
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 35
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 29
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 21
+    }
+   }
+  },
+  "hip_R": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 9
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 8
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 10
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 9
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 5
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 8
+    }
+   }
+  },
+  "hip_L": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 17
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 38
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 2
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 17
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 18
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 7
+    }
+   }
+  },
+  "knee_R": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 5
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 4
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 4
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 5
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 3
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 3
+    }
+   }
+  },
+  "knee_L": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 14
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 10
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 6
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 14
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 10
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 9
+    }
+   }
+  },
+  "ankle_R": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 19
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 10
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 13
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 19
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 11
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 17
+    }
+   }
+  },
+  "ankle_L": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 15
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 8
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 11
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 15
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 9
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 14
+    }
+   }
+  },
+  "waist": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 10
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 8
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 8
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 10
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 7
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 8
+    }
+   }
+  },
+  "neck_base": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 52,
+     "holes_seethrough_lt128": 52,
+     "holes_alpha0": 52,
+     "crack1": 77
+    },
+    "-25": {
+     "holes_enclosed": 52,
+     "holes_seethrough_lt128": 52,
+     "holes_alpha0": 52,
+     "crack1": 65,
+     "holes_not_at_rest": 52,
+     "holes_not_at_rest_xy": [
+      [
+       387,
+       210,
+       0
+      ],
+      [
+       388,
+       210,
+       0
+      ],
+      [
+       385,
+       211,
+       0
+      ],
+      [
+       386,
+       211,
+       0
+      ],
+      [
+       387,
+       211,
+       0
+      ],
+      [
+       388,
+       211,
+       0
+      ],
+      [
+       385,
+       212,
+       0
+      ],
+      [
+       386,
+       212,
+       0
+      ],
+      [
+       387,
+       212,
+       0
+      ],
+      [
+       388,
+       212,
+       0
+      ],
+      [
+       389,
+       212,
+       0
+      ],
+      [
+       386,
+       213,
+       0
+      ],
+      [
+       387,
+       213,
+       0
+      ],
+      [
+       388,
+       213,
+       0
+      ],
+      [
+       389,
+       213,
+       0
+      ],
+      [
+       386,
+       214,
+       0
+      ],
+      [
+       387,
+       214,
+       0
+      ],
+      [
+       387,
+       215,
+       0
+      ],
+      [
+       388,
+       215,
+       0
+      ],
+      [
+       390,
+       215,
+       0
+      ],
+      [
+       387,
+       216,
+       0
+      ],
+      [
+       388,
+       216,
+       0
+      ],
+      [
+       389,
+       216,
+       0
+      ],
+      [
+       390,
+       216,
+       0
+      ],
+      [
+       391,
+       216,
+       0
+      ],
+      [
+       388,
+       217,
+       0
+      ],
+      [
+       389,
+       217,
+       0
+      ],
+      [
+       390,
+       217,
+       0
+      ],
+      [
+       391,
+       217,
+       0
+      ],
+      [
+       388,
+       218,
+       0
+      ],
+      [
+       389,
+       218,
+       0
+      ],
+      [
+       390,
+       218,
+       0
+      ],
+      [
+       391,
+       218,
+       0
+      ],
+      [
+       392,
+       218,
+       0
+      ],
+      [
+       389,
+       219,
+       0
+      ],
+      [
+       390,
+       219,
+       0
+      ],
+      [
+       391,
+       219,
+       0
+      ],
+      [
+       392,
+       219,
+       0
+      ],
+      [
+       389,
+       220,
+       0
+      ],
+      [
+       390,
+       220,
+       0
+      ]
+     ]
+    },
+    "+25": {
+     "holes_enclosed": 53,
+     "holes_seethrough_lt128": 53,
+     "holes_alpha0": 53,
+     "crack1": 71,
+     "holes_not_at_rest": 53,
+     "holes_not_at_rest_xy": [
+      [
+       428,
+       223,
+       0
+      ],
+      [
+       429,
+       223,
+       0
+      ],
+      [
+       430,
+       223,
+       0
+      ],
+      [
+       428,
+       224,
+       0
+      ],
+      [
+       429,
+       224,
+       0
+      ],
+      [
+       430,
+       224,
+       0
+      ],
+      [
+       431,
+       224,
+       0
+      ],
+      [
+       427,
+       225,
+       0
+      ],
+      [
+       428,
+       225,
+       0
+      ],
+      [
+       429,
+       225,
+       0
+      ],
+      [
+       430,
+       225,
+       0
+      ],
+      [
+       431,
+       225,
+       0
+      ],
+      [
+       427,
+       226,
+       0
+      ],
+      [
+       428,
+       226,
+       0
+      ],
+      [
+       429,
+       226,
+       0
+      ],
+      [
+       430,
+       226,
+       0
+      ],
+      [
+       426,
+       227,
+       0
+      ],
+      [
+       427,
+       227,
+       0
+      ],
+      [
+       428,
+       227,
+       0
+      ],
+      [
+       430,
+       227,
+       0
+      ],
+      [
+       426,
+       228,
+       0
+      ],
+      [
+       427,
+       228,
+       0
+      ],
+      [
+       425,
+       229,
+       0
+      ],
+      [
+       426,
+       229,
+       0
+      ],
+      [
+       427,
+       229,
+       0
+      ],
+      [
+       428,
+       229,
+       0
+      ],
+      [
+       429,
+       229,
+       0
+      ],
+      [
+       425,
+       230,
+       0
+      ],
+      [
+       426,
+       230,
+       0
+      ],
+      [
+       427,
+       230,
+       0
+      ],
+      [
+       428,
+       230,
+       0
+      ],
+      [
+       424,
+       231,
+       0
+      ],
+      [
+       425,
+       231,
+       0
+      ],
+      [
+       426,
+       231,
+       0
+      ],
+      [
+       427,
+       231,
+       0
+      ],
+      [
+       428,
+       231,
+       0
+      ],
+      [
+       424,
+       232,
+       0
+      ],
+      [
+       425,
+       232,
+       0
+      ],
+      [
+       426,
+       232,
+       0
+      ],
+      [
+       427,
+       232,
+       0
+      ]
+     ]
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 52,
+     "holes_seethrough_lt128": 52,
+     "holes_alpha0": 52,
+     "crack1": 77
+    },
+    "-25": {
+     "holes_enclosed": 139,
+     "holes_seethrough_lt128": 54,
+     "holes_alpha0": 32,
+     "crack1": 154,
+     "holes_not_at_rest": 139,
+     "holes_not_at_rest_xy": [
+      [
+       386,
+       210,
+       88
+      ],
+      [
+       387,
+       210,
+       0
+      ],
+      [
+       388,
+       210,
+       56
+      ],
+      [
+       383,
+       211,
+       205
+      ],
+      [
+       384,
+       211,
+       234
+      ],
+      [
+       385,
+       211,
+       24
+      ],
+      [
+       386,
+       211,
+       0
+      ],
+      [
+       387,
+       211,
+       0
+      ],
+      [
+       388,
+       211,
+       0
+      ],
+      [
+       389,
+       211,
+       179
+      ],
+      [
+       377,
+       212,
+       218
+      ],
+      [
+       378,
+       212,
+       232
+      ],
+      [
+       384,
+       212,
+       207
+      ],
+      [
+       385,
+       212,
+       88
+      ],
+      [
+       386,
+       212,
+       0
+      ],
+      [
+       387,
+       212,
+       0
+      ],
+      [
+       388,
+       212,
+       0
+      ],
+      [
+       389,
+       212,
+       71
+      ],
+      [
+       376,
+       213,
+       237
+      ],
+      [
+       377,
+       213,
+       252
+      ],
+      [
+       378,
+       213,
+       230
+      ],
+      [
+       384,
+       213,
+       199
+      ],
+      [
+       385,
+       213,
+       196
+      ],
+      [
+       386,
+       213,
+       0
+      ],
+      [
+       387,
+       213,
+       0
+      ],
+      [
+       388,
+       213,
+       0
+      ],
+      [
+       389,
+       213,
+       104
+      ],
+      [
+       390,
+       213,
+       245
+      ],
+      [
+       376,
+       214,
+       214
+      ],
+      [
+       377,
+       214,
+       229
+      ],
+      [
+       378,
+       214,
+       242
+      ],
+      [
+       385,
+       214,
+       220
+      ],
+      [
+       386,
+       214,
+       72
+      ],
+      [
+       387,
+       214,
+       0
+      ],
+      [
+       388,
+       214,
+       120
+      ],
+      [
+       375,
+       215,
+       253
+      ],
+      [
+       376,
+       215,
+       221
+      ],
+      [
+       377,
+       215,
+       219
+      ],
+      [
+       385,
+       215,
+       232
+      ],
+      [
+       386,
+       215,
+       180
+      ]
+     ]
+    },
+    "+25": {
+     "holes_enclosed": 139,
+     "holes_seethrough_lt128": 50,
+     "holes_alpha0": 32,
+     "crack1": 153,
+     "holes_not_at_rest": 118,
+     "holes_not_at_rest_xy": [
+      [
+       421,
+       217,
+       229
+      ],
+      [
+       422,
+       217,
+       210
+      ],
+      [
+       418,
+       218,
+       248
+      ],
+      [
+       419,
+       218,
+       228
+      ],
+      [
+       420,
+       218,
+       217
+      ],
+      [
+       421,
+       218,
+       250
+      ],
+      [
+       422,
+       218,
+       215
+      ],
+      [
+       415,
+       219,
+       223
+      ],
+      [
+       416,
+       219,
+       243
+      ],
+      [
+       417,
+       219,
+       217
+      ],
+      [
+       418,
+       219,
+       253
+      ],
+      [
+       419,
+       219,
+       250
+      ],
+      [
+       420,
+       219,
+       217
+      ],
+      [
+       421,
+       219,
+       238
+      ],
+      [
+       422,
+       219,
+       238
+      ],
+      [
+       416,
+       220,
+       254
+      ],
+      [
+       417,
+       220,
+       218
+      ],
+      [
+       418,
+       220,
+       223
+      ],
+      [
+       419,
+       220,
+       248
+      ],
+      [
+       415,
+       221,
+       218
+      ],
+      [
+       416,
+       221,
+       253
+      ],
+      [
+       428,
+       221,
+       232
+      ],
+      [
+       427,
+       222,
+       193
+      ],
+      [
+       428,
+       222,
+       195
+      ],
+      [
+       429,
+       222,
+       176
+      ],
+      [
+       427,
+       223,
+       221
+      ],
+      [
+       428,
+       223,
+       65
+      ],
+      [
+       429,
+       223,
+       0
+      ],
+      [
+       430,
+       223,
+       23
+      ],
+      [
+       426,
+       224,
+       211
+      ],
+      [
+       427,
+       224,
+       188
+      ],
+      [
+       428,
+       224,
+       0
+      ],
+      [
+       429,
+       224,
+       0
+      ],
+      [
+       430,
+       224,
+       0
+      ],
+      [
+       431,
+       224,
+       0
+      ],
+      [
+       432,
+       224,
+       202
+      ],
+      [
+       426,
+       225,
+       221
+      ],
+      [
+       427,
+       225,
+       81
+      ],
+      [
+       428,
+       225,
+       0
+      ],
+      [
+       429,
+       225,
+       0
+      ]
+     ]
+    }
+   }
+  },
+  "head_neck": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 56,
+     "holes_seethrough_lt128": 56,
+     "holes_alpha0": 56,
+     "crack1": 63
+    },
+    "-25": {
+     "holes_enclosed": 33,
+     "holes_seethrough_lt128": 33,
+     "holes_alpha0": 33,
+     "crack1": 34,
+     "holes_not_at_rest": 33,
+     "holes_not_at_rest_xy": [
+      [
+       397,
+       202,
+       0
+      ],
+      [
+       397,
+       203,
+       0
+      ],
+      [
+       398,
+       203,
+       0
+      ],
+      [
+       397,
+       204,
+       0
+      ],
+      [
+       398,
+       204,
+       0
+      ],
+      [
+       395,
+       205,
+       0
+      ],
+      [
+       396,
+       205,
+       0
+      ],
+      [
+       397,
+       205,
+       0
+      ],
+      [
+       398,
+       205,
+       0
+      ],
+      [
+       399,
+       205,
+       0
+      ],
+      [
+       396,
+       206,
+       0
+      ],
+      [
+       397,
+       206,
+       0
+      ],
+      [
+       398,
+       206,
+       0
+      ],
+      [
+       399,
+       206,
+       0
+      ],
+      [
+       396,
+       207,
+       0
+      ],
+      [
+       397,
+       207,
+       0
+      ],
+      [
+       398,
+       207,
+       0
+      ],
+      [
+       399,
+       207,
+       0
+      ],
+      [
+       400,
+       207,
+       0
+      ],
+      [
+       397,
+       208,
+       0
+      ],
+      [
+       398,
+       208,
+       0
+      ],
+      [
+       397,
+       209,
+       0
+      ],
+      [
+       398,
+       209,
+       0
+      ],
+      [
+       399,
+       209,
+       0
+      ],
+      [
+       401,
+       209,
+       0
+      ],
+      [
+       399,
+       210,
+       0
+      ],
+      [
+       400,
+       210,
+       0
+      ],
+      [
+       401,
+       210,
+       0
+      ],
+      [
+       399,
+       211,
+       0
+      ],
+      [
+       400,
+       211,
+       0
+      ],
+      [
+       401,
+       211,
+       0
+      ],
+      [
+       402,
+       211,
+       0
+      ],
+      [
+       399,
+       212,
+       0
+      ]
+     ]
+    },
+    "+25": {
+     "holes_enclosed": 55,
+     "holes_seethrough_lt128": 55,
+     "holes_alpha0": 55,
+     "crack1": 65,
+     "holes_not_at_rest": 55,
+     "holes_not_at_rest_xy": [
+      [
+       419,
+       222,
+       0
+      ],
+      [
+       416,
+       223,
+       0
+      ],
+      [
+       419,
+       223,
+       0
+      ],
+      [
+       420,
+       223,
+       0
+      ],
+      [
+       416,
+       224,
+       0
+      ],
+      [
+       417,
+       224,
+       0
+      ],
+      [
+       418,
+       224,
+       0
+      ],
+      [
+       419,
+       224,
+       0
+      ],
+      [
+       416,
+       225,
+       0
+      ],
+      [
+       417,
+       225,
+       0
+      ],
+      [
+       418,
+       225,
+       0
+      ],
+      [
+       419,
+       225,
+       0
+      ],
+      [
+       415,
+       226,
+       0
+      ],
+      [
+       416,
+       226,
+       0
+      ],
+      [
+       417,
+       226,
+       0
+      ],
+      [
+       418,
+       226,
+       0
+      ],
+      [
+       415,
+       227,
+       0
+      ],
+      [
+       416,
+       227,
+       0
+      ],
+      [
+       417,
+       227,
+       0
+      ],
+      [
+       418,
+       227,
+       0
+      ],
+      [
+       414,
+       228,
+       0
+      ],
+      [
+       415,
+       228,
+       0
+      ],
+      [
+       418,
+       228,
+       0
+      ],
+      [
+       414,
+       229,
+       0
+      ],
+      [
+       415,
+       229,
+       0
+      ],
+      [
+       413,
+       230,
+       0
+      ],
+      [
+       414,
+       230,
+       0
+      ],
+      [
+       415,
+       230,
+       0
+      ],
+      [
+       416,
+       230,
+       0
+      ],
+      [
+       417,
+       230,
+       0
+      ],
+      [
+       413,
+       231,
+       0
+      ],
+      [
+       414,
+       231,
+       0
+      ],
+      [
+       415,
+       231,
+       0
+      ],
+      [
+       416,
+       231,
+       0
+      ],
+      [
+       412,
+       232,
+       0
+      ],
+      [
+       413,
+       232,
+       0
+      ],
+      [
+       414,
+       232,
+       0
+      ],
+      [
+       415,
+       232,
+       0
+      ],
+      [
+       416,
+       232,
+       0
+      ],
+      [
+       412,
+       233,
+       0
+      ]
+     ]
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 56,
+     "holes_seethrough_lt128": 56,
+     "holes_alpha0": 56,
+     "crack1": 63
+    },
+    "-25": {
+     "holes_enclosed": 105,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 112,
+     "holes_not_at_rest": 105,
+     "holes_not_at_rest_xy": [
+      [
+       387,
+       193,
+       233
+      ],
+      [
+       388,
+       193,
+       211
+      ],
+      [
+       387,
+       194,
+       218
+      ],
+      [
+       388,
+       194,
+       239
+      ],
+      [
+       389,
+       194,
+       248
+      ],
+      [
+       390,
+       194,
+       219
+      ],
+      [
+       387,
+       195,
+       191
+      ],
+      [
+       389,
+       195,
+       203
+      ],
+      [
+       390,
+       195,
+       213
+      ],
+      [
+       387,
+       196,
+       239
+      ],
+      [
+       388,
+       196,
+       249
+      ],
+      [
+       390,
+       196,
+       222
+      ],
+      [
+       391,
+       196,
+       201
+      ],
+      [
+       388,
+       197,
+       202
+      ],
+      [
+       389,
+       197,
+       197
+      ],
+      [
+       391,
+       197,
+       205
+      ],
+      [
+       387,
+       198,
+       217
+      ],
+      [
+       389,
+       198,
+       246
+      ],
+      [
+       390,
+       198,
+       242
+      ],
+      [
+       392,
+       198,
+       208
+      ],
+      [
+       387,
+       199,
+       193
+      ],
+      [
+       389,
+       199,
+       197
+      ],
+      [
+       390,
+       199,
+       254
+      ],
+      [
+       392,
+       199,
+       198
+      ],
+      [
+       387,
+       200,
+       195
+      ],
+      [
+       389,
+       200,
+       216
+      ],
+      [
+       393,
+       200,
+       222
+      ],
+      [
+       388,
+       201,
+       225
+      ],
+      [
+       389,
+       201,
+       202
+      ],
+      [
+       390,
+       201,
+       240
+      ],
+      [
+       392,
+       201,
+       200
+      ],
+      [
+       387,
+       202,
+       209
+      ],
+      [
+       388,
+       202,
+       237
+      ],
+      [
+       389,
+       202,
+       197
+      ],
+      [
+       392,
+       202,
+       239
+      ],
+      [
+       393,
+       202,
+       248
+      ],
+      [
+       387,
+       203,
+       193
+      ],
+      [
+       389,
+       203,
+       217
+      ],
+      [
+       390,
+       203,
+       239
+      ],
+      [
+       393,
+       203,
+       192
+      ]
+     ]
+    },
+    "+25": {
+     "holes_enclosed": 114,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 122,
+     "holes_not_at_rest": 88,
+     "holes_not_at_rest_xy": [
+      [
+       369,
+       196,
+       216
+      ],
+      [
+       370,
+       197,
+       199
+      ],
+      [
+       371,
+       197,
+       207
+      ],
+      [
+       371,
+       198,
+       222
+      ],
+      [
+       372,
+       199,
+       196
+      ],
+      [
+       373,
+       199,
+       211
+      ],
+      [
+       374,
+       200,
+       202
+      ],
+      [
+       375,
+       200,
+       233
+      ],
+      [
+       374,
+       201,
+       239
+      ],
+      [
+       375,
+       201,
+       216
+      ],
+      [
+       360,
+       202,
+       191
+      ],
+      [
+       376,
+       202,
+       199
+      ],
+      [
+       377,
+       202,
+       208
+      ],
+      [
+       360,
+       203,
+       212
+      ],
+      [
+       378,
+       203,
+       205
+      ],
+      [
+       379,
+       203,
+       201
+      ],
+      [
+       380,
+       203,
+       194
+      ],
+      [
+       381,
+       203,
+       192
+      ],
+      [
+       382,
+       203,
+       248
+      ],
+      [
+       361,
+       204,
+       203
+      ],
+      [
+       380,
+       204,
+       248
+      ],
+      [
+       382,
+       204,
+       202
+      ],
+      [
+       361,
+       205,
+       199
+      ],
+      [
+       362,
+       205,
+       254
+      ],
+      [
+       378,
+       205,
+       206
+      ],
+      [
+       379,
+       205,
+       238
+      ],
+      [
+       380,
+       205,
+       213
+      ],
+      [
+       381,
+       205,
+       204
+      ],
+      [
+       382,
+       205,
+       208
+      ],
+      [
+       361,
+       206,
+       217
+      ],
+      [
+       362,
+       206,
+       212
+      ],
+      [
+       374,
+       206,
+       245
+      ],
+      [
+       375,
+       206,
+       225
+      ],
+      [
+       376,
+       206,
+       196
+      ],
+      [
+       377,
+       206,
+       227
+      ],
+      [
+       378,
+       206,
+       243
+      ],
+      [
+       379,
+       206,
+       213
+      ],
+      [
+       380,
+       206,
+       203
+      ],
+      [
+       382,
+       206,
+       230
+      ],
+      [
+       363,
+       207,
+       201
+      ]
+     ]
+    }
+   }
+  },
+  "wrist_R": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 44
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 25
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 28
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 44
+    },
+    "-25": {
+     "holes_enclosed": 1,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 44,
+     "holes_not_at_rest": 1,
+     "holes_not_at_rest_xy": [
+      [
+       203,
+       486,
+       249
+      ]
+     ]
+    },
+    "+25": {
+     "holes_enclosed": 16,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 50,
+     "holes_not_at_rest": 16,
+     "holes_not_at_rest_xy": [
+      [
+       203,
+       486,
+       247
+      ],
+      [
+       204,
+       487,
+       192
+      ],
+      [
+       204,
+       488,
+       217
+      ],
+      [
+       205,
+       488,
+       232
+      ],
+      [
+       204,
+       489,
+       238
+      ],
+      [
+       205,
+       489,
+       207
+      ],
+      [
+       206,
+       490,
+       194
+      ],
+      [
+       206,
+       491,
+       200
+      ],
+      [
+       207,
+       491,
+       244
+      ],
+      [
+       206,
+       492,
+       225
+      ],
+      [
+       207,
+       492,
+       232
+      ],
+      [
+       207,
+       493,
+       194
+      ],
+      [
+       207,
+       494,
+       229
+      ],
+      [
+       208,
+       494,
+       250
+      ],
+      [
+       207,
+       495,
+       238
+      ],
+      [
+       208,
+       495,
+       193
+      ]
+     ]
+    }
+   }
+  },
+  "wrist_L": {
+   "nearest": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 35
+    },
+    "-25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 22
+    },
+    "+25": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 25
+    }
+   },
+   "bilinear": {
+    "+0": {
+     "holes_enclosed": 0,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 35
+    },
+    "-25": {
+     "holes_enclosed": 5,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 36,
+     "holes_not_at_rest": 5,
+     "holes_not_at_rest_xy": [
+      [
+       596,
+       494,
+       241
+      ],
+      [
+       595,
+       495,
+       191
+      ],
+      [
+       594,
+       496,
+       195
+      ],
+      [
+       595,
+       496,
+       219
+      ],
+      [
+       594,
+       497,
+       226
+      ]
+     ]
+    },
+    "+25": {
+     "holes_enclosed": 1,
+     "holes_seethrough_lt128": 0,
+     "holes_alpha0": 0,
+     "crack1": 38,
+     "holes_not_at_rest": 1,
+     "holes_not_at_rest_xy": [
+      [
+       596,
+       494,
+       243
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "joint_test_note": "child subtree (incl. F8 hands under forearms; hair/eyes/mouth with head) rotated +-25 deg about the pivot, nearest and premultiplied bilinear; holes_enclosed = px with alpha<255 fully enclosed by the joint pieces within joint radius+15 px; crack1 = same after a 1 px closing (outline notches). Teammate rest px count as cover (green in the sheet)."
+}

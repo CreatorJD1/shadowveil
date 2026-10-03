@@ -1,0 +1,1901 @@
+{
+"apose": [
+{
+"name": "hL_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_fist",
+"p": {
+"HandLThumb": 1,
+"HandLIndex": 1,
+"HandLMiddle": 1,
+"HandLRing": 1,
+"HandLPinky": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_spread",
+"p": {
+"HandLSpread": 1,
+"HandLThumbSpread": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist45",
+"p": {
+"WristTwistL": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist135",
+"p": {
+"WristTwistL": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_curl",
+"p": {
+"HandLThumb": 0.5,
+"HandLIndex": 0.5,
+"HandLMiddle": 0.5,
+"HandLRing": 0.5,
+"HandLPinky": 0.5,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_fist",
+"p": {
+"HandRThumb": 1,
+"HandRIndex": 1,
+"HandRMiddle": 1,
+"HandRRing": 1,
+"HandRPinky": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_spread",
+"p": {
+"HandRSpread": 1,
+"HandRThumbSpread": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist45",
+"p": {
+"WristTwistR": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist135",
+"p": {
+"WristTwistR": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_curl",
+"p": {
+"HandRThumb": 0.5,
+"HandRIndex": 0.5,
+"HandRMiddle": 0.5,
+"HandRRing": 0.5,
+"HandRPinky": 0.5,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hair_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway+1",
+"p": {
+"HairSwayX": 1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway-1",
+"p": {
+"HairSwayX": -1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "mouth_AA_tilt+0",
+"p": {},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+0",
+"p": {},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+0",
+"p": {},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+0",
+"p": {},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+0",
+"p": {},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "eye_gx+0_tilt+0",
+"p": {
+"EyeBallX": 0
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt+1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt-1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+0",
+"p": {
+"EyeBallX": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt-1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+0",
+"p": {
+"EyeBallX": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt-1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+}
+],
+"tpose": [
+{
+"name": "hL_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_fist",
+"p": {
+"HandLThumb": 1,
+"HandLIndex": 1,
+"HandLMiddle": 1,
+"HandLRing": 1,
+"HandLPinky": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_spread",
+"p": {
+"HandLSpread": 1,
+"HandLThumbSpread": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist45",
+"p": {
+"WristTwistL": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist135",
+"p": {
+"WristTwistL": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_curl",
+"p": {
+"HandLThumb": 0.5,
+"HandLIndex": 0.5,
+"HandLMiddle": 0.5,
+"HandLRing": 0.5,
+"HandLPinky": 0.5,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_fist",
+"p": {
+"HandRThumb": 1,
+"HandRIndex": 1,
+"HandRMiddle": 1,
+"HandRRing": 1,
+"HandRPinky": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_spread",
+"p": {
+"HandRSpread": 1,
+"HandRThumbSpread": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist45",
+"p": {
+"WristTwistR": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist135",
+"p": {
+"WristTwistR": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_curl",
+"p": {
+"HandRThumb": 0.5,
+"HandRIndex": 0.5,
+"HandRMiddle": 0.5,
+"HandRRing": 0.5,
+"HandRPinky": 0.5,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hair_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway+1",
+"p": {
+"HairSwayX": 1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway-1",
+"p": {
+"HairSwayX": -1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "mouth_AA_tilt+0",
+"p": {},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+0",
+"p": {},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+0",
+"p": {},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+0",
+"p": {},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+0",
+"p": {},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "eye_gx+0_tilt+0",
+"p": {
+"EyeBallX": 0
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt+1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt-1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+0",
+"p": {
+"EyeBallX": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt-1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+0",
+"p": {
+"EyeBallX": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt-1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+}
+],
+"left": [
+{
+"name": "hL_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_fist",
+"p": {
+"HandLThumb": 1,
+"HandLIndex": 1,
+"HandLMiddle": 1,
+"HandLRing": 1,
+"HandLPinky": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_spread",
+"p": {
+"HandLSpread": 1,
+"HandLThumbSpread": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist45",
+"p": {
+"WristTwistL": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist135",
+"p": {
+"WristTwistL": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_curl",
+"p": {
+"HandLThumb": 0.5,
+"HandLIndex": 0.5,
+"HandLMiddle": 0.5,
+"HandLRing": 0.5,
+"HandLPinky": 0.5,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_fist",
+"p": {
+"HandRThumb": 1,
+"HandRIndex": 1,
+"HandRMiddle": 1,
+"HandRRing": 1,
+"HandRPinky": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_spread",
+"p": {
+"HandRSpread": 1,
+"HandRThumbSpread": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist45",
+"p": {
+"WristTwistR": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist135",
+"p": {
+"WristTwistR": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_curl",
+"p": {
+"HandRThumb": 0.5,
+"HandRIndex": 0.5,
+"HandRMiddle": 0.5,
+"HandRRing": 0.5,
+"HandRPinky": 0.5,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hair_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway+1",
+"p": {
+"HairSwayX": 1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway-1",
+"p": {
+"HairSwayX": -1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "mouth_AA_tilt+0",
+"p": {},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+0",
+"p": {},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+0",
+"p": {},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+0",
+"p": {},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+0",
+"p": {},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "eye_gx+0_tilt+0",
+"p": {
+"EyeBallX": 0
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt+1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt-1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+0",
+"p": {
+"EyeBallX": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt-1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+0",
+"p": {
+"EyeBallX": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt-1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+}
+],
+"right": [
+{
+"name": "hL_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_fist",
+"p": {
+"HandLThumb": 1,
+"HandLIndex": 1,
+"HandLMiddle": 1,
+"HandLRing": 1,
+"HandLPinky": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_spread",
+"p": {
+"HandLSpread": 1,
+"HandLThumbSpread": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist45",
+"p": {
+"WristTwistL": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist135",
+"p": {
+"WristTwistL": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_curl",
+"p": {
+"HandLThumb": 0.5,
+"HandLIndex": 0.5,
+"HandLMiddle": 0.5,
+"HandLRing": 0.5,
+"HandLPinky": 0.5,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_fist",
+"p": {
+"HandRThumb": 1,
+"HandRIndex": 1,
+"HandRMiddle": 1,
+"HandRRing": 1,
+"HandRPinky": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_spread",
+"p": {
+"HandRSpread": 1,
+"HandRThumbSpread": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist45",
+"p": {
+"WristTwistR": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist135",
+"p": {
+"WristTwistR": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_curl",
+"p": {
+"HandRThumb": 0.5,
+"HandRIndex": 0.5,
+"HandRMiddle": 0.5,
+"HandRRing": 0.5,
+"HandRPinky": 0.5,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hair_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway+1",
+"p": {
+"HairSwayX": 1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway-1",
+"p": {
+"HairSwayX": -1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "mouth_AA_tilt+0",
+"p": {},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_AA_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_AA",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+0",
+"p": {},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_OH_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_OH",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+0",
+"p": {},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_M_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_M",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+0",
+"p": {},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_anger_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_anger",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+0",
+"p": {},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt+1",
+"p": {
+"HeadTilt": 1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "mouth_rest_tilt-1",
+"p": {
+"HeadTilt": -1
+},
+"mouth": "mouth_rest",
+"solo": [
+"full",
+"sys:mouth"
+]
+},
+{
+"name": "eye_gx+0_tilt+0",
+"p": {
+"EyeBallX": 0
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt+1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+0_tilt-1",
+"p": {
+"EyeBallX": 0,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+0",
+"p": {
+"EyeBallX": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt+1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx+1_tilt-1",
+"p": {
+"EyeBallX": 1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+0",
+"p": {
+"EyeBallX": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt+1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": 1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+},
+{
+"name": "eye_gx-1_tilt-1",
+"p": {
+"EyeBallX": -1,
+"HeadTilt": -1
+},
+"solo": [
+"eyes:EyeR",
+"eyes:EyeL"
+]
+}
+],
+"back": [
+{
+"name": "hL_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_fist",
+"p": {
+"HandLThumb": 1,
+"HandLIndex": 1,
+"HandLMiddle": 1,
+"HandLRing": 1,
+"HandLPinky": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_spread",
+"p": {
+"HandLSpread": 1,
+"HandLThumbSpread": 1,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist45",
+"p": {
+"WristTwistL": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_twist135",
+"p": {
+"WristTwistL": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hL_curl",
+"p": {
+"HandLThumb": 0.5,
+"HandLIndex": 0.5,
+"HandLMiddle": 0.5,
+"HandLRing": 0.5,
+"HandLPinky": 0.5,
+"ElbowL": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_fist",
+"p": {
+"HandRThumb": 1,
+"HandRIndex": 1,
+"HandRMiddle": 1,
+"HandRRing": 1,
+"HandRPinky": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_spread",
+"p": {
+"HandRSpread": 1,
+"HandRThumbSpread": 1,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist45",
+"p": {
+"WristTwistR": 0.25
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_twist135",
+"p": {
+"WristTwistR": 0.75
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hR_curl",
+"p": {
+"HandRThumb": 0.5,
+"HandRIndex": 0.5,
+"HandRMiddle": 0.5,
+"HandRRing": 0.5,
+"HandRPinky": 0.5,
+"ElbowR": 0.5
+},
+"solo": [
+"full",
+"sys:hands"
+]
+},
+{
+"name": "hair_rest",
+"p": {},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway+1",
+"p": {
+"HairSwayX": 1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+},
+{
+"name": "hair_sway-1",
+"p": {
+"HairSwayX": -1
+},
+"solo": [
+"full",
+"sys:hair_front",
+"sys:hair_back",
+"hair:strand_03_tip",
+"hair:strand_06_tip"
+]
+}
+]
+}

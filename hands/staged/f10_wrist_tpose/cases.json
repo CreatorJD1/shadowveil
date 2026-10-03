@@ -1,0 +1,110 @@
+[
+{
+"name": "rest",
+"rest": true
+},
+{
+"name": "wrist_Lp1",
+"vals": {
+"WristL": 1
+}
+},
+{
+"name": "wrist_Lm1",
+"vals": {
+"WristL": -1
+}
+},
+{
+"name": "wrist_Rp1",
+"vals": {
+"WristR": 1
+}
+},
+{
+"name": "wrist_Rm1",
+"vals": {
+"WristR": -1
+}
+},
+{
+"name": "anger+0.14",
+"vals": {
+"WristL": 0.14,
+"WristR": 0.14
+}
+},
+{
+"name": "jump-0.2",
+"vals": {
+"WristL": -0.2,
+"WristR": -0.2
+}
+},
+{
+"name": "jump+0.2969",
+"vals": {
+"WristL": 0.2969,
+"WristR": 0.2969
+}
+},
+{
+"name": "run-0.12",
+"vals": {
+"WristL": -0.12,
+"WristR": -0.12
+}
+},
+{
+"name": "run+0.12",
+"vals": {
+"WristL": 0.12,
+"WristR": 0.12
+}
+},
+{
+"name": "pose_Fist",
+"vals": {
+"HandLThumb": 1,
+"HandLIndex": 1,
+"HandLMiddle": 1,
+"HandLRing": 1,
+"HandLPinky": 1,
+"HandRThumb": 1,
+"HandRIndex": 1,
+"HandRMiddle": 1,
+"HandRRing": 1,
+"HandRPinky": 1
+}
+},
+{
+"name": "pose_Point",
+"vals": {
+"HandLThumb": 1,
+"HandLIndex": 0,
+"HandLMiddle": 1,
+"HandLRing": 1,
+"HandLPinky": 1,
+"HandRThumb": 1,
+"HandRIndex": 0,
+"HandRMiddle": 1,
+"HandRRing": 1,
+"HandRPinky": 1
+}
+},
+{
+"name": "pose_Peace",
+"vals": {
+"HandLThumb": 1,
+"HandLIndex": 0,
+"HandLMiddle": 0,
+"HandLRing": 1,
+"HandLPinky": 1,
+"HandRThumb": 1,
+"HandRIndex": 0,
+"HandRMiddle": 0,
+"HandRRing": 1,
+"HandRPinky": 1
+}
+}
+]

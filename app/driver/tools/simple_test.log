@@ -1,0 +1,224 @@
+{
+ "pass": [
+  "loads at exact rest",
+  "rig own panels hidden inside the stage",
+  "hair preset A by default",
+  "range p:BodyLean moves BodyLean [BodyLean]",
+  "reset after p:BodyLean",
+  "range weight moves HipL/HipR/KneeL/KneeR/AnkleL/AnkleR/RootX/RootY [HipL,HipR,KneeL,KneeR,AnkleL,AnkleR,RootX,RootY]",
+  "reset after weight",
+  "range p:ShoulderL moves ShoulderL [ShoulderL]",
+  "reset after p:ShoulderL",
+  "range p:ShoulderR moves ShoulderR [ShoulderR]",
+  "reset after p:ShoulderR",
+  "range p:ElbowL moves ElbowL [ElbowL]",
+  "reset after p:ElbowL",
+  "range p:ElbowR moves ElbowR [ElbowR]",
+  "reset after p:ElbowR",
+  "range p:HipL moves HipL [HipL]",
+  "reset after p:HipL",
+  "range p:HipR moves HipR [HipR]",
+  "reset after p:HipR",
+  "range p:KneeL moves KneeL [KneeL]",
+  "reset after p:KneeL",
+  "range p:KneeR moves KneeR [KneeR]",
+  "reset after p:KneeR",
+  "range p:HeadTilt moves HeadTilt [HeadTilt]",
+  "reset after p:HeadTilt",
+  "range p:HeadNod moves HeadNod [HeadNod]",
+  "reset after p:HeadNod",
+  "range blink moves EyeLOpen/EyeROpen [EyeLOpen,EyeROpen]",
+  "reset after blink",
+  "range lidL moves EyeLOpen [EyeLOpen]",
+  "reset after lidL",
+  "range lidR moves EyeROpen [EyeROpen]",
+  "reset after lidR",
+  "range p:MouthOpen moves MouthOpen [MouthOpen]",
+  "reset after p:MouthOpen",
+  "range p:MouthForm moves MouthForm [MouthForm]",
+  "reset after p:MouthForm",
+  "range curlL moves HandLIndex/HandLMiddle/HandLRing/HandLPinky [HandLIndex,HandLMiddle,HandLRing,HandLPinky]",
+  "reset after curlL",
+  "range p:HandLSpread moves HandLSpread [HandLSpread]",
+  "reset after p:HandLSpread",
+  "range p:HandLThumb moves HandLThumb [HandLThumb]",
+  "reset after p:HandLThumb",
+  "range p:WristL moves WristL [WristL]",
+  "reset after p:WristL",
+  "range curlR moves HandRIndex/HandRMiddle/HandRRing/HandRPinky [HandRIndex,HandRMiddle,HandRRing,HandRPinky]",
+  "reset after curlR",
+  "range p:HandRSpread moves HandRSpread [HandRSpread]",
+  "reset after p:HandRSpread",
+  "range p:HandRThumb moves HandRThumb [HandRThumb]",
+  "reset after p:HandRThumb",
+  "range p:WristR moves WristR [WristR]",
+  "reset after p:WristR",
+  "range p:ShoulderTwistL moves ShoulderTwistL [ShoulderTwistL]",
+  "reset after p:ShoulderTwistL",
+  "range p:ShoulderTwistR moves ShoulderTwistR [ShoulderTwistR]",
+  "reset after p:ShoulderTwistR",
+  "range p:ForearmTwistL moves ForearmTwistL [ForearmTwistL]",
+  "reset after p:ForearmTwistL",
+  "range p:ForearmTwistR moves ForearmTwistR [ForearmTwistR]",
+  "reset after p:ForearmTwistR",
+  "range p:HipTwistL moves HipTwistL [HipTwistL]",
+  "reset after p:HipTwistL",
+  "range p:HipTwistR moves HipTwistR [HipTwistR]",
+  "reset after p:HipTwistR",
+  "range p:KneeTwistL moves KneeTwistL [KneeTwistL]",
+  "reset after p:KneeTwistL",
+  "range p:KneeTwistR moves KneeTwistR [KneeTwistR]",
+  "reset after p:KneeTwistR",
+  "range p:AnkleTwistL moves AnkleTwistL [AnkleTwistL]",
+  "reset after p:AnkleTwistL",
+  "range p:AnkleTwistR moves AnkleTwistR [AnkleTwistR]",
+  "reset after p:AnkleTwistR",
+  "range p:NeckTwist moves NeckTwist [NeckTwist]",
+  "reset after p:NeckTwist",
+  "range p:WristTwistL moves WristTwistL [WristTwistL]",
+  "reset after p:WristTwistL",
+  "range p:WristTwistR moves WristTwistR [WristTwistR]",
+  "reset after p:WristTwistR",
+  "range p:RootX moves RootX [RootX]",
+  "reset after p:RootX",
+  "range p:RootY moves RootY [RootY]",
+  "reset after p:RootY",
+  "range p:HandLIndex moves HandLIndex [HandLIndex]",
+  "reset after p:HandLIndex",
+  "range p:HandLMiddle moves HandLMiddle [HandLMiddle]",
+  "reset after p:HandLMiddle",
+  "range p:HandLRing moves HandLRing [HandLRing]",
+  "reset after p:HandLRing",
+  "range p:HandLPinky moves HandLPinky [HandLPinky]",
+  "reset after p:HandLPinky",
+  "range p:HandRIndex moves HandRIndex [HandRIndex]",
+  "reset after p:HandRIndex",
+  "range p:HandRMiddle moves HandRMiddle [HandRMiddle]",
+  "reset after p:HandRMiddle",
+  "range p:HandRRing moves HandRRing [HandRRing]",
+  "reset after p:HandRRing",
+  "range p:HandRPinky moves HandRPinky [HandRPinky]",
+  "reset after p:HandRPinky",
+  "range p:AnkleL moves AnkleL [AnkleL]",
+  "reset after p:AnkleL",
+  "range p:AnkleR moves AnkleR [AnkleR]",
+  "reset after p:AnkleR",
+  "range p:ToeL moves ToeL [ToeL]",
+  "reset after p:ToeL",
+  "range p:ToeR moves ToeR [ToeR]",
+  "reset after p:ToeR",
+  "range p:HandLThumbSpread moves HandLThumbSpread [HandLThumbSpread]",
+  "reset after p:HandLThumbSpread",
+  "range p:HandRThumbSpread moves HandRThumbSpread [HandRThumbSpread]",
+  "reset after p:HandRThumbSpread",
+  "range p:HairSwayX moves HairSwayX [HairSwayX]",
+  "reset after p:HairSwayX",
+  "range p:HairSwayY moves HairSwayY [HairSwayY]",
+  "reset after p:HairSwayY",
+  "gaze pad moves EyeBallX/Y [X 0.90 Y -0.80]",
+  "gaze dblclick centres",
+  "reset after gaze",
+  "expression Smile sets MouthOpen/Form (0,1) [0,1 shape mouth_smile]",
+  "expression Anger sets MouthOpen/Form (0.25,-1) [0.25,-1 shape mouth_anger]",
+  "expression Neutral sets MouthOpen/Form (0,0) [0,0 shape mouth_rest]",
+  "reset after expressions",
+  "hand pose Fist",
+  "hand pose Point",
+  "hand pose Peace",
+  "hand pose Open",
+  "reset after hand pose",
+  "auto-blink closes lids [min open 0.12]",
+  "auto-talk opens mouth [max MouthOpen 0.31]",
+  "auto-talk never picks EE/smile/anger [mouth_rest,mouth_M]",
+  "auto-talk off restores mouth",
+  "physics on: strands driven [sum|drive| 1.935]",
+  "sway amount 0 zeroes all strands [sum 0]",
+  "sway amount 1.5 scales strands up [sum 2.207]",
+  "spring preset B reaches rig",
+  "physics off clears drive",
+  "no-param controls disabled [missing:Per-strand angles:true missing:Bun offset:true]",
+  "posed before reset",
+  "Reset to rest: every param at rest (with physics/blink/talk on)",
+  "on-screen frame after Reset == frame of a fresh rest load [-1585150188 vs -1585150188]",
+  "rig Rest check [PASS: rest vs base.png, 0 px differ (apose, skin mesh)]",
+  "view dial -> tpose (pose carried) [{\"src\":\"?view=tpose&hair=A\",\"lean\":0.5,\"viewSel\":\"tpose\"}]",
+  "reset at tpose",
+  "motion jump plays live clip [{\"clip\":{\"name\":\"jump\",\"ready\":true,\"time\":0.5167000000000007,\"error\":\"\"},\"auto\":true,\"src\":\"?view=tpose&hair=A&clip=jump&autoplay=1\"} moving 19]",
+  "motion idle plays [29 moving]",
+  "Reset from motion -> manual + rest"
+ ],
+ "fail": []
+}
+per-control:
+p:BodyLean -> -1: BodyLean 0.00→-1.00
+weight -> -1: HipL 0.00→-0.27, HipR 0.00→0.16, KneeL 0.00→0.33, KneeR 0.00→-0.46, AnkleL 0.00→-0.06, AnkleR 0.00→0.30, RootX 0.00→-30.00, RootY 0.00→3.75
+p:ShoulderL -> -1: ShoulderL 0.00→-1.00
+p:ShoulderR -> -1: ShoulderR 0.00→-1.00
+p:ElbowL -> -1: ElbowL 0.00→-1.00
+p:ElbowR -> -1: ElbowR 0.00→-1.00
+p:HipL -> -1: HipL 0.00→-1.00
+p:HipR -> -1: HipR 0.00→-1.00
+p:KneeL -> -1: KneeL 0.00→-1.00
+p:KneeR -> -1: KneeR 0.00→-1.00
+p:HeadTilt -> -1: HeadTilt 0.00→-1.00
+p:HeadNod -> -1: HeadNod 0.00→-1.00
+blink -> 1: EyeLOpen 1.00→0.00, EyeROpen 1.00→0.00
+lidL -> 0: EyeLOpen 1.00→0.00
+lidR -> 0: EyeROpen 1.00→0.00
+p:MouthOpen -> 1: MouthOpen 0.00→1.00
+p:MouthForm -> -1: MouthForm 0.00→-1.00
+curlL -> 1: HandLIndex 0.00→1.00, HandLMiddle 0.00→1.00, HandLRing 0.00→1.00, HandLPinky 0.00→1.00
+p:HandLSpread -> 1: HandLSpread 0.00→1.00
+p:HandLThumb -> 1: HandLThumb 0.00→1.00
+p:WristL -> -1: WristL 0.00→-1.00
+curlR -> 1: HandRIndex 0.00→1.00, HandRMiddle 0.00→1.00, HandRRing 0.00→1.00, HandRPinky 0.00→1.00
+p:HandRSpread -> 1: HandRSpread 0.00→1.00
+p:HandRThumb -> 1: HandRThumb 0.00→1.00
+p:WristR -> -1: WristR 0.00→-1.00
+p:ShoulderTwistL -> -1: ShoulderTwistL 0.00→-1.00
+p:ShoulderTwistR -> -1: ShoulderTwistR 0.00→-1.00
+p:ForearmTwistL -> -1: ForearmTwistL 0.00→-1.00
+p:ForearmTwistR -> -1: ForearmTwistR 0.00→-1.00
+p:HipTwistL -> -1: HipTwistL 0.00→-1.00
+p:HipTwistR -> -1: HipTwistR 0.00→-1.00
+p:KneeTwistL -> -1: KneeTwistL 0.00→-1.00
+p:KneeTwistR -> -1: KneeTwistR 0.00→-1.00
+p:AnkleTwistL -> -1: AnkleTwistL 0.00→-1.00
+p:AnkleTwistR -> -1: AnkleTwistR 0.00→-1.00
+p:NeckTwist -> -1: NeckTwist 0.00→-1.00
+p:WristTwistL -> -1: WristTwistL 0.00→-1.00
+p:WristTwistR -> -1: WristTwistR 0.00→-1.00
+p:RootX -> -40: RootX 0.00→-40.00
+p:RootY -> -40: RootY 0.00→-40.00
+p:HandLIndex -> 1: HandLIndex 0.00→1.00
+p:HandLMiddle -> 1: HandLMiddle 0.00→1.00
+p:HandLRing -> 1: HandLRing 0.00→1.00
+p:HandLPinky -> 1: HandLPinky 0.00→1.00
+p:HandRIndex -> 1: HandRIndex 0.00→1.00
+p:HandRMiddle -> 1: HandRMiddle 0.00→1.00
+p:HandRRing -> 1: HandRRing 0.00→1.00
+p:HandRPinky -> 1: HandRPinky 0.00→1.00
+p:AnkleL -> -1: AnkleL 0.00→-1.00
+p:AnkleR -> -1: AnkleR 0.00→-1.00
+p:ToeL -> -1: ToeL 0.00→-1.00
+p:ToeR -> -1: ToeR 0.00→-1.00
+p:HandLThumbSpread -> -1: HandLThumbSpread 0.00→-1.00
+p:HandRThumbSpread -> -1: HandRThumbSpread 0.00→-1.00
+p:HairSwayX -> -1: HairSwayX 0.00→-1.00
+p:HairSwayY -> -1: HairSwayY 0.00→-1.00
+gaze -> EyeBallX 0.90, EyeBallY -0.80
+expr Smile -> MouthOpen 0, MouthForm 1, shape mouth_smile
+expr Anger -> MouthOpen 0.25, MouthForm -1, shape mouth_anger
+expr Neutral -> MouthOpen 0, MouthForm 0, shape mouth_rest
+handpose Fist -> 1/1 1/1 1/1 1/1 1/1
+handpose Point -> 1/1 0/0 1/1 1/1 1/1
+handpose Peace -> 1/1 0/0 0/0 1/1 1/1
+handpose Open -> 0/0 0/0 0/0 0/0 0/0
+autoblink -> min EyeL/ROpen over 7 s 0.12
+autotalk -> max MouthOpen 0.31, shapes mouth_rest,mouth_M
+physics+sway -> sum|hairDrive| at 1.0: 1.935, 0: 0, 1.5: 2.207
+motion jump -> 19 params moving, ?view=tpose&hair=A&clip=jump&autoplay=1
+motion idle -> 29 params moving
+counts {"all":76,"missing":2,"adv":33}
+console errors []
+warnings ["[.WebGL-0x399400ec3c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels","[.WebGL-0x399400ec3c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently","Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"]

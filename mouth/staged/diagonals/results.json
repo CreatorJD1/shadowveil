@@ -1,0 +1,502 @@
+{
+ "_note": "STAGED PROPOSAL - reuses FRONT apose art bent to the diagonal rest lips; not her diagonal drawing.",
+ "job_a_config": "it16 it15 with a narrower spread (k=1): keeps the comb fix but gives back silhouette IoU lost by k=3 lifting whole edge runs",
+ "supersample": 4,
+ "g_grid_step_px": 2,
+ "045": {
+  "iou_rest": {
+   "affine": 0.875,
+   "homography": 0.860813704496788,
+   "homography_plus_mesh": 0.9336283185840708,
+   "homography_plus_mesh_soft": 0.9120522424552552
+  },
+  "front_skin_pad_minus_frame_skin_rgb": [
+   -2.0,
+   1.0,
+   0.0
+  ],
+  "H": [
+   [
+    0.19020302051554708,
+    -0.5700179836541006,
+    372.0147311793875
+   ],
+   [
+    -0.08940808371317996,
+    0.18749301215667735,
+    153.1325633034936
+   ],
+   [
+    -0.0003286809509746032,
+    -0.0008417218843429583,
+    1.0
+   ]
+  ],
+  "affine": [
+   [
+    0.7395371657151435,
+    -0.24935404459635416,
+    201.5630817902398
+   ],
+   [
+    -0.008465693547175572,
+    0.8233311971028646,
+    42.366320879031505
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "mesh_flipped_tris": 0,
+  "residual_px_max": {
+   "top": 2.8572271356846817,
+   "seam": 0.8433382108009866,
+   "bottom": 1.8981550688305497
+  },
+  "feature_err_median_px": {
+   "top": 0.26653766166698034,
+   "seam": 0.13428628543237053,
+   "bottom": 0.11621767265180694
+  },
+  "proposal_rest_stats": {
+   "width": 38,
+   "height": 19,
+   "edge2080_top_median": 1.136580589744062,
+   "edge2080_bot_median": 1.1260587565086193,
+   "seam_fwhm_median": 3.0,
+   "seam_dark_median": 39.12048300870421,
+   "lip_rgb_mean": [
+    117.40730100424015,
+    77.00208625500817,
+    48.66034337367909
+   ]
+  },
+  "her_rest_stats": {
+   "width": 40,
+   "height": 18,
+   "edge2080_top_median": 1.2373337989110658,
+   "edge2080_bot_median": 1.3408539649205604,
+   "seam_fwhm_median": 3.0,
+   "seam_dark_median": 35.075158096671096,
+   "lip_rgb_mean": [
+    96.89257431030273,
+    54.54120562098543,
+    33.36790452224593
+   ]
+  },
+  "lip_colour_mae_inside_both": 25.518334022376543,
+  "box": [
+   595,
+   250,
+   675,
+   308
+  ],
+  "talking_grid": {
+   "cells": {
+    "o0_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.75_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.75_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.75_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.75_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 1,
+     "holes_at": []
+    },
+    "o0.75_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o1_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 4,
+     "holes_at": []
+    },
+    "o1_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 4,
+     "holes_at": []
+    },
+    "o1_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 7,
+     "holes_at": []
+    },
+    "o1_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 9,
+     "holes_at": []
+    },
+    "o1_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 15,
+     "holes_at": []
+    }
+   },
+   "blue_spill_max": 0,
+   "holes_max": 0,
+   "past_jaw_before_clip_max": 15
+  }
+ },
+ "315": {
+  "iou_rest": {
+   "affine": 0.8952164009111617,
+   "homography": 0.8906605922551253,
+   "homography_plus_mesh": 0.92,
+   "homography_plus_mesh_soft": 0.9142087379199493
+  },
+  "front_skin_pad_minus_frame_skin_rgb": [
+   -3.0,
+   2.0,
+   0.0
+  ],
+  "H": [
+   [
+    0.4857445600606991,
+    -0.8999480171638835,
+    399.95646477714735
+   ],
+   [
+    -0.004243262038694657,
+    0.12141459755865544,
+    145.12987241185397
+   ],
+   [
+    8.81659084259805e-05,
+    -0.001464575748927533,
+    1.0
+   ]
+  ],
+  "affine": [
+   [
+    0.6521043043870182,
+    0.30193837483723956,
+    207.8949070465877
+   ],
+   [
+    -0.05228306696965145,
+    0.8309338887532552,
+    74.18554736406375
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "mesh_flipped_tris": 0,
+  "residual_px_max": {
+   "top": 2.1143729370672553,
+   "seam": 2.6375811913202236,
+   "bottom": 1.0830862739923788
+  },
+  "feature_err_median_px": {
+   "top": 0.25699500914621254,
+   "seam": 0.1976316432866625,
+   "bottom": 0.12493578759848134
+  },
+  "proposal_rest_stats": {
+   "width": 34,
+   "height": 20,
+   "edge2080_top_median": 1.076505204497396,
+   "edge2080_bot_median": 1.1418921843144938,
+   "seam_fwhm_median": 3.0,
+   "seam_dark_median": 40.61064762031508,
+   "lip_rgb_mean": [
+    117.06832950133179,
+    76.7285663776242,
+    48.681869083959825
+   ]
+  },
+  "her_rest_stats": {
+   "width": 37,
+   "height": 20,
+   "edge2080_top_median": 1.2248388946400532,
+   "edge2080_bot_median": 1.4184187447314782,
+   "seam_fwhm_median": 3.0,
+   "seam_dark_median": 29.541449459075928,
+   "lip_rgb_mean": [
+    98.7779631164403,
+    56.75620848676483,
+    31.086137870177808
+   ]
+  },
+  "lip_colour_mae_inside_both": 24.52433296395824,
+  "box": [
+   698,
+   253,
+   775,
+   313
+  ],
+  "talking_grid": {
+   "cells": {
+    "o0_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 1,
+     "holes_at": []
+    },
+    "o0.25_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.25_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 1,
+     "holes_at": []
+    },
+    "o0.5_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 0,
+     "holes_at": []
+    },
+    "o0.5_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 1,
+     "holes_at": []
+    },
+    "o0.5_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 2,
+     "holes_at": []
+    },
+    "o0.75_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 11,
+     "holes_at": []
+    },
+    "o0.75_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 12,
+     "holes_at": []
+    },
+    "o0.75_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 22,
+     "holes_at": []
+    },
+    "o0.75_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 21,
+     "holes_at": []
+    },
+    "o0.75_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 21,
+     "holes_at": []
+    },
+    "o1_f-1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 35,
+     "holes_at": []
+    },
+    "o1_f-0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 44,
+     "holes_at": []
+    },
+    "o1_f0": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 52,
+     "holes_at": []
+    },
+    "o1_f0.5": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 53,
+     "holes_at": []
+    },
+    "o1_f1": {
+     "blue_spill_px": 0,
+     "holes_px": 0,
+     "past_jaw_before_clip_px": 53,
+     "holes_at": []
+    }
+   },
+   "blue_spill_max": 0,
+   "holes_max": 0,
+   "past_jaw_before_clip_max": 53
+  }
+ }
+}

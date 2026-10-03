@@ -1,0 +1,132 @@
+{
+ "contract": "v1.3-diag (staged)",
+ "owner": "Base Mouth",
+ "view": "d315",
+ "staged": true,
+ "source": "reference/apose_turn/frames/f191.png",
+ "coordinateSpace": "PRIMARY = her turn-frame px (768x1168, full-canvas PNGs in frame_scale/). viewFile = same part in view px (1365x1739, base = scale*frame + (dx,dy)), secondary.",
+ "viewFit": {
+  "scale": 1.54468,
+  "dx": 104.47,
+  "dy": -52.68,
+  "source": "body_tools/work/apose_turn/diagonals/diagonals.json"
+ },
+ "anchor": {
+  "x": 409.5,
+  "y": 212.53,
+  "viewX": 737.02,
+  "viewY": 275.62,
+  "desc": "lip-seam centre (midpoint of her seam corners, median seam row) in her frame lips"
+ },
+ "params": {
+  "MouthOpen": {
+   "min": 0,
+   "max": 1,
+   "default": 0
+  },
+  "MouthForm": {
+   "min": -1,
+   "max": 1,
+   "default": 0
+  }
+ },
+ "grid": {
+  "rest": {
+   "MouthOpen": 0,
+   "MouthForm": 0
+  },
+  "M": {
+   "MouthOpen": 0,
+   "MouthForm": -1
+  },
+  "smile": {
+   "MouthOpen": 0,
+   "MouthForm": 1
+  },
+  "OH_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": -1
+  },
+  "AA_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": 0
+  },
+  "EE_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": 1
+  },
+  "OH": {
+   "MouthOpen": 1,
+   "MouthForm": -1
+  },
+  "AA": {
+   "MouthOpen": 1,
+   "MouthForm": 0
+  },
+  "EE": {
+   "MouthOpen": 1,
+   "MouthForm": 1
+  }
+ },
+ "selection": {
+  "mode": "nearest",
+  "metric": "euclidean on (MouthOpen, MouthForm), both clamped",
+  "tieBreak": "prefer rest, then closed shapes (MouthOpen=0)",
+  "crossfadeMs": 60,
+  "crossfade": "opacity only: outgoing 1->0, incoming 0->1, drawImage + globalAlpha",
+  "flagOff": "with ?diagmouth=1 absent the diagonal mouth ALWAYS shows rest (every non-rest part has requiresFlag)"
+ },
+ "requiresFlag": {
+  "flag": "diagmouth",
+  "default": false,
+  "parts": [
+   "mouth_M",
+   "mouth_smile",
+   "mouth_OH_half",
+   "mouth_AA_half",
+   "mouth_EE_half",
+   "mouth_OH",
+   "mouth_AA",
+   "mouth_EE"
+  ],
+  "note": "flag name is a proposal; Coder picks the real one"
+ },
+ "headGroup": {
+  "parent": "head",
+  "note": "mouth is a head-group member like the live mouth; no sub-offset at diagonals (none measured)"
+ },
+ "chroma": {
+  "key": "#0000FF",
+  "convention": "as live mouth/<view>/<shape>_chroma.png: the part composited over pure #0000FF, RGB, same canvas"
+ },
+ "colors": {
+  "teeth": "#EFE4DA",
+  "tongue": "#9C5A4A",
+  "inner": "#3F2319",
+  "lip": "her f191 lip tones"
+ },
+ "noAnger": "no anger shape at diagonals (none drawn)",
+ "canvas": {
+  "width": 1365,
+  "height": 1739
+ },
+ "source_rig": "mouth/staged/diag_posable/315/rig.json",
+ "parts": [
+  {
+   "id": "mouth_rest",
+   "file": "rest.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 409.5,
+   "pivotY": 212.53,
+   "parent": "base",
+   "parentGroup": "headGroup",
+   "layer": 500,
+   "MouthOpen": 0,
+   "MouthForm": 0,
+   "requiresFlag": null,
+   "note": "HER closed lips cut from 191 (RGB = her frame px, hard alpha). Over her frame: 0 px diff."
+  }
+ ],
+ "note": "default: her rest lips only"
+}

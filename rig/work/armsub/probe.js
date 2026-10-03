@@ -1,0 +1,4 @@
+const pp=require('/workspace/jt/node_modules/puppeteer-core');(async()=>{const b=await pp.launch({executablePath:'/usr/bin/google-chrome',headless:'new',protocolTimeout:1800000,args:['--no-sandbox','--disable-dev-shm-usage']});const p=await b.newPage();const e=[];p.on('pageerror',x=>e.push(x.message));p.on('console',m=>{if(m.type()==='error')e.push('console: '+m.text())});
+await p.goto(`http://127.0.0.1:${process.argv[2]}/rig/index.html?view=back&armsub=1&quality=linear`,{waitUntil:'domcontentloaded',timeout:900000});const t0=Date.now();
+for(let i=0;i<60;i++){const s=await p.evaluate('typeof R!=="undefined"&&R?(R.loading?"loading":"ready"):"noR"');if(s==='ready'){console.log('ready after',Date.now()-t0,'ms');break}await new Promise(r=>setTimeout(r,5000))}
+console.log(JSON.stringify(e.slice(0,5)));await b.close()})();

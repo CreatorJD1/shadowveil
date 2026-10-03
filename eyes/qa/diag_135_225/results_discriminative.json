@@ -1,0 +1,203 @@
+{
+ "_method": "Stage 2 (read-only): discriminative test. A pixel is an eye candidate only if its tone is closer to the eye palette\n(white / amber iris / green iris / lash+lid line from the 045/315 + live parts) than to her NON-eye head tones in\nf033/f191 (skin, hair, ear, outline AA; eye-part alphas dilated 3 px excluded), is within TH of the eye palette,\npasses cut_diag.classes() for white/iris, and is not on the silhouette AA band (2 px from #0000FF key).\nValidation: same detector on f033/f191 (where the eyes are known) must find the eyes.",
+ "_threshold_rgb": 16,
+ "_crop_frame_px": [
+  290,
+  40,
+  480,
+  250
+ ],
+ "_non_eye_tones": 8541,
+ "_palette_sizes": {
+  "white": 880,
+  "amber": 357,
+  "green": 517,
+  "lash": 1805
+ },
+ "135": {
+  "frame": "reference/apose_turn/frames/f087.png",
+  "white": {
+   "px": 2,
+   "components": 2,
+   "largest": 1,
+   "bbox_frame": [
+    335,
+    163,
+    337,
+    171
+   ]
+  },
+  "amber": {
+   "px": 11,
+   "components": 8,
+   "largest": 3,
+   "bbox_frame": [
+    327,
+    170,
+    381,
+    226
+   ]
+  },
+  "green": {
+   "px": 0,
+   "components": 0,
+   "largest": 0,
+   "bbox_frame": null
+  },
+  "lash": {
+   "px": 234,
+   "components": 113,
+   "largest": 9,
+   "bbox_frame": [
+    321,
+    60,
+    448,
+    230
+   ]
+  }
+ },
+ "225": {
+  "frame": "reference/apose_turn/frames/f131.png",
+  "white": {
+   "px": 5,
+   "components": 3,
+   "largest": 3,
+   "bbox_frame": [
+    421,
+    163,
+    433,
+    181
+   ]
+  },
+  "amber": {
+   "px": 42,
+   "components": 10,
+   "largest": 11,
+   "bbox_frame": [
+    408,
+    165,
+    435,
+    233
+   ]
+  },
+  "green": {
+   "px": 0,
+   "components": 0,
+   "largest": 0,
+   "bbox_frame": null
+  },
+  "lash": {
+   "px": 174,
+   "components": 93,
+   "largest": 8,
+   "bbox_frame": [
+    326,
+    60,
+    442,
+    225
+   ]
+  }
+ },
+ "045_validation": {
+  "frame": "reference/apose_turn/frames/f033.png",
+  "white": {
+   "px": 89,
+   "components": 4,
+   "largest": 34,
+   "bbox_frame": [
+    333,
+    171,
+    386,
+    181
+   ],
+   "px_inside_known_eye_parts": 89
+  },
+  "amber": {
+   "px": 37,
+   "components": 3,
+   "largest": 35,
+   "bbox_frame": [
+    336,
+    172,
+    347,
+    182
+   ],
+   "px_inside_known_eye_parts": 37
+  },
+  "green": {
+   "px": 94,
+   "components": 1,
+   "largest": 94,
+   "bbox_frame": [
+    370,
+    170,
+    383,
+    179
+   ],
+   "px_inside_known_eye_parts": 94
+  },
+  "lash": {
+   "px": 212,
+   "components": 20,
+   "largest": 60,
+   "bbox_frame": [
+    324,
+    162,
+    393,
+    183
+   ],
+   "px_inside_known_eye_parts": 197
+  }
+ },
+ "315_validation": {
+  "frame": "reference/apose_turn/frames/f191.png",
+  "white": {
+   "px": 70,
+   "components": 9,
+   "largest": 30,
+   "bbox_frame": [
+    374,
+    159,
+    434,
+    181
+   ],
+   "px_inside_known_eye_parts": 68
+  },
+  "amber": {
+   "px": 52,
+   "components": 5,
+   "largest": 48,
+   "bbox_frame": [
+    385,
+    170,
+    429,
+    185
+   ],
+   "px_inside_known_eye_parts": 51
+  },
+  "green": {
+   "px": 46,
+   "components": 1,
+   "largest": 46,
+   "bbox_frame": [
+    420,
+    174,
+    429,
+    181
+   ],
+   "px_inside_known_eye_parts": 46
+  },
+  "lash": {
+   "px": 188,
+   "components": 25,
+   "largest": 61,
+   "bbox_frame": [
+    372,
+    159,
+    435,
+    186
+   ],
+   "px_inside_known_eye_parts": 177
+  }
+ }
+}

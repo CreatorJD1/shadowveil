@@ -1,0 +1,86 @@
+{
+ "contract": "benchmark preset v0 (PARKED)",
+ "benchmark": "6_sad",
+ "reference": "reference/benchmarks/6_sad.jpg",
+ "view": "apose",
+ "note": "Signs inferred from rig.json rotSign (+ = clockwise on screen) and part pivots; NOT render-verified (benchmark work parked before screenshots). Body joints clamp to +-1 = +-25 deg (BodyLean 8 deg, HeadTilt 8 deg, HeadNod 6 deg).",
+ "apply": {
+  "MouthOpen": 0,
+  "MouthForm": -0.5,
+  "EyeROpen": 0.6,
+  "EyeLOpen": 0.6,
+  "EyeBallY": 0.6,
+  "HeadNod": 0.6,
+  "HeadTilt": -0.3,
+  "ShoulderR": -0.2,
+  "ShoulderL": 0.2,
+  "HandRMiddle": 0.4,
+  "HandLMiddle": 0.4
+ },
+ "controls": {
+  "MouthOpen": {
+   "value": 0,
+   "status": "reachable",
+   "note": ""
+  },
+  "MouthForm": {
+   "value": -0.5,
+   "status": "blocked",
+   "note": "closed frown: no drawing at (0,-0.5)"
+  },
+  "EyeROpen": {
+   "value": 0.6,
+   "status": "reachable",
+   "note": ""
+  },
+  "EyeLOpen": {
+   "value": 0.6,
+   "status": "reachable",
+   "note": ""
+  },
+  "EyeBallY": {
+   "value": 0.6,
+   "status": "reachable",
+   "note": "gaze down"
+  },
+  "Brows": {
+   "value": null,
+   "status": "blocked",
+   "note": "inner brows up: no brow controls"
+  },
+  "HeadNod": {
+   "value": 0.6,
+   "status": "reachable",
+   "note": ""
+  },
+  "HeadTilt": {
+   "value": -0.3,
+   "status": "reachable",
+   "note": ""
+  },
+  "ShoulderR": {
+   "value": -0.2,
+   "status": "reachable",
+   "note": "arms in"
+  },
+  "ShoulderL": {
+   "value": 0.2,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRMiddle": {
+   "value": 0.4,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLMiddle": {
+   "value": 0.4,
+   "status": "reachable",
+   "note": ""
+  }
+ },
+ "outfit": {
+  "status": "blocked",
+  "note": "bodysuit + heeled sandals: Body owns this layer on skin.json meshes; not built. Dominates any silhouette score."
+ }
+}

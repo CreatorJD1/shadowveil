@@ -1,0 +1,603 @@
+{
+ "views": [
+  "apose"
+ ],
+ "part": "body",
+ "staged_dirs": [
+  "eyes/work/lashfix/staged",
+  "hair/staged/tone_fix",
+  "mouth/staged/tone_fix"
+ ],
+ "tol": 2.0,
+ "weights": {
+  "apose": {
+   "skin": "rig/work/crotch_weights/apose_skin_cb24ulnb.json",
+   "meshes": {
+    "skin": {
+     "vertices": 37631,
+     "bleed_vs_dominant_bone": {
+      "vertices": 0,
+      "pairs": {}
+     },
+     "bleed_vs_texel_owner": {
+      "pairs": {},
+      "vertices_total": 0
+     },
+     "isolation": {
+      "torso": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 886
+      },
+      "upperArm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 578
+      },
+      "upperArm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 601
+      },
+      "forearm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 121
+      },
+      "forearm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 143
+      },
+      "thigh_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 1131
+      },
+      "thigh_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 1204
+      },
+      "shin_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 200
+      },
+      "shin_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 202
+      },
+      "foot_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 139
+      },
+      "foot_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 142
+      },
+      "toes_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "toes_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      }
+     },
+     "pass": true
+    },
+    "underlay": {
+     "vertices": 4980,
+     "bleed_vs_dominant_bone": {
+      "vertices": 0,
+      "pairs": {}
+     },
+     "bleed_vs_texel_owner": {
+      "pairs": {},
+      "vertices_total": 0
+     },
+     "isolation": {
+      "torso": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "upperArm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "upperArm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "forearm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "forearm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "thigh_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "thigh_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "shin_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "shin_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "foot_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "foot_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "toes_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "toes_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      }
+     },
+     "pass": true
+    }
+   },
+   "pass": true
+  }
+ },
+ "leak": {
+  "live": {
+   "apose": {
+    "body": [
+     {
+      "file": "views/apose/body/foot_L.png",
+      "opaque": 8553,
+      "off_palette": 1,
+      "chroma": 0,
+      "soft_edge": 334
+     },
+     {
+      "file": "views/apose/body/foot_R.png",
+      "opaque": 8574,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 339
+     },
+     {
+      "file": "views/apose/body/forearm_L.png",
+      "opaque": 10991,
+      "off_palette": 1,
+      "chroma": 0,
+      "soft_edge": 376
+     },
+     {
+      "file": "views/apose/body/forearm_R.png",
+      "opaque": 11047,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 373
+     },
+     {
+      "file": "views/apose/body/head.png",
+      "opaque": 34961,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 1037
+     },
+     {
+      "file": "views/apose/body/pelvis.png",
+      "opaque": 15961,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 80
+     },
+     {
+      "file": "views/apose/body/shin_L.png",
+      "opaque": 27224,
+      "off_palette": 184,
+      "chroma": 0,
+      "soft_edge": 929
+     },
+     {
+      "file": "views/apose/body/shin_R.png",
+      "opaque": 27105,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 932
+     },
+     {
+      "file": "views/apose/body/thigh_L.png",
+      "opaque": 45511,
+      "off_palette": 4,
+      "chroma": 0,
+      "soft_edge": 881
+     },
+     {
+      "file": "views/apose/body/thigh_R.png",
+      "opaque": 46181,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 874
+     },
+     {
+      "file": "views/apose/body/torso.png",
+      "opaque": 81928,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 769
+     },
+     {
+      "file": "views/apose/body/upperArm_L.png",
+      "opaque": 10961,
+      "off_palette": 4,
+      "chroma": 0,
+      "soft_edge": 358
+     },
+     {
+      "file": "views/apose/body/upperArm_R.png",
+      "opaque": 10951,
+      "off_palette": 2,
+      "chroma": 0,
+      "soft_edge": 357
+     },
+     {
+      "file": "views/apose/base_body_skin.png",
+      "opaque": 309803,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 6584
+     },
+     {
+      "file": "views/apose/base_body_underlay.png",
+      "opaque": 7664,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   }
+  },
+  "staged": {
+   "apose": {
+    "body": [
+     {
+      "file": "views/apose/body/foot_L.png (no staged fix; live)",
+      "opaque": 8553,
+      "off_palette": 1,
+      "chroma": 0,
+      "soft_edge": 334
+     },
+     {
+      "file": "views/apose/body/foot_R.png (no staged fix; live)",
+      "opaque": 8574,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 339
+     },
+     {
+      "file": "views/apose/body/forearm_L.png (no staged fix; live)",
+      "opaque": 10991,
+      "off_palette": 1,
+      "chroma": 0,
+      "soft_edge": 376
+     },
+     {
+      "file": "views/apose/body/forearm_R.png (no staged fix; live)",
+      "opaque": 11047,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 373
+     },
+     {
+      "file": "views/apose/body/head.png (no staged fix; live)",
+      "opaque": 34961,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 1037
+     },
+     {
+      "file": "views/apose/body/pelvis.png (no staged fix; live)",
+      "opaque": 15961,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 80
+     },
+     {
+      "file": "views/apose/body/shin_L.png (no staged fix; live)",
+      "opaque": 27224,
+      "off_palette": 184,
+      "chroma": 0,
+      "soft_edge": 929
+     },
+     {
+      "file": "views/apose/body/shin_R.png (no staged fix; live)",
+      "opaque": 27105,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 932
+     },
+     {
+      "file": "views/apose/body/thigh_L.png (no staged fix; live)",
+      "opaque": 45511,
+      "off_palette": 4,
+      "chroma": 0,
+      "soft_edge": 881
+     },
+     {
+      "file": "views/apose/body/thigh_R.png (no staged fix; live)",
+      "opaque": 46181,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 874
+     },
+     {
+      "file": "views/apose/body/torso.png (no staged fix; live)",
+      "opaque": 81928,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 769
+     },
+     {
+      "file": "views/apose/body/upperArm_L.png (no staged fix; live)",
+      "opaque": 10961,
+      "off_palette": 4,
+      "chroma": 0,
+      "soft_edge": 358
+     },
+     {
+      "file": "views/apose/body/upperArm_R.png (no staged fix; live)",
+      "opaque": 10951,
+      "off_palette": 2,
+      "chroma": 0,
+      "soft_edge": 357
+     },
+     {
+      "file": "views/apose/base_body_skin.png (no staged fix; live)",
+      "opaque": 309803,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 6584
+     },
+     {
+      "file": "views/apose/base_body_underlay.png (no staged fix; live)",
+      "opaque": 7664,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   }
+  },
+  "diagonals": {},
+  "mesh_outside_mask": {
+   "apose": {
+    "rest": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "BodyLean+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "BodyLean-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ShoulderL+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ShoulderL-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ShoulderR+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ShoulderR-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ElbowL+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ElbowL-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ElbowR+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ElbowR-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "HipL+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "HipL-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "HipR+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "HipR-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "KneeL+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "KneeL-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "KneeR+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "KneeR-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "AnkleL+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "AnkleL-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "AnkleR+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "AnkleR-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ToeL+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ToeL-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ToeR+1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "ToeR-1": {
+     "vertices_outside_own_mask_gt_1px": 0,
+     "max_px": 0.0,
+     "triangles_touched": 0
+    },
+    "all+1": {
+     "vertices_outside_own_mask_gt_1px": 112,
+     "max_px": 2.03,
+     "triangles_touched": 406
+    },
+    "all-1": {
+     "vertices_outside_own_mask_gt_1px": 108,
+     "max_px": 2.03,
+     "triangles_touched": 390
+    }
+   }
+  },
+  "totals": {
+   "live": {
+    "off_palette": 196,
+    "chroma": 0,
+    "soft_edge": 14223,
+    "files": 15
+   },
+   "staged": {
+    "off_palette": 196,
+    "chroma": 0,
+    "soft_edge": 14223,
+    "files": 15
+   },
+   "diagonals": {
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 0,
+    "files": 0
+   },
+   "mesh_outside_mask": 220
+  },
+  "pass_live": false,
+  "pass_staged": false,
+  "note": "soft_edge (0<alpha<255) is reported separately and does not fail the gate; off-palette counts opaque px only."
+ },
+ "pass": false
+}

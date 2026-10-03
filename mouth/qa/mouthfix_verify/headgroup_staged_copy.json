@@ -1,0 +1,68 @@
+{
+ "contract": "partmesh v0.2 headGroup",
+ "status": "staged; read only with ?headgroup=1 via RigHeadGroup.applyHandoff(view)",
+ "pivot": [
+  681.5,
+  318
+ ],
+ "members": [
+  "body head piece (head bone)",
+  "eyes",
+  "brows",
+  "mouth",
+  "hair"
+ ],
+ "source": "settled 23:39 PT: silhouette fit (rig/work/headgroup/handoff_offsets_sil.json) + Eyes' residuals (eyes/qa/headgroup_handoff/report.json, fit on the eyes); back unchanged. Previous: apose (0,-10), left (-2,1), right (5,-6)",
+ "note": "dx,dy = move the live head group to where the turn frame's head is (canvas px, +y down). Single correction path: mouth/eyes/hair handoff offsets must subtract these.",
+ "handoffs": {
+  "apose": {
+   "frame": 1,
+   "dx": 0,
+   "dy": -9,
+   "rot": 0,
+   "scale": 1
+  },
+  "left": {
+   "frame": 62,
+   "dx": 0,
+   "dy": 11,
+   "rot": 0,
+   "scale": 1
+  },
+  "back": {
+   "frame": 109,
+   "dx": 2,
+   "dy": 11,
+   "rot": 0,
+   "scale": 1
+  },
+  "right": {
+   "frame": 160,
+   "dx": 3,
+   "dy": 5,
+   "rot": 0,
+   "scale": 1
+  }
+ },
+ "sub": {
+  "_note": "per-system sub-offsets inside the head group, canvas px, applied on top of the group offset, posed frames only (never at rest), eased with the group weight w (RigHeadGroup.easeTo). Hair to be added by Base Hair.",
+  "mouth": {
+   "_source": "mouth/qa/rerun_shadowveil/REPORT.md (seam chamfer, mouth residual on top of the 23:39 head group)",
+   "apose": {
+    "frame": 1,
+    "dx": 0,
+    "dy": 0
+   },
+   "left": {
+    "frame": 62,
+    "dx": 6,
+    "dy": 1
+   },
+   "right": {
+    "frame": 160,
+    "dx": -5,
+    "dy": 0
+   }
+  }
+ }
+}

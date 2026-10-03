@@ -1,0 +1,7 @@
+QA gates  views=['apose'] part=body  PASS=False
+  G1 apose  skin     bleed_verts=0 texel-owner_bleed=0 isolation_fail={}
+  G1 apose  underlay bleed_verts=0 texel-owner_bleed=0 isolation_fail={}
+  G2 live      {'off_palette': 196, 'chroma': 0, 'soft_edge': 14223, 'files': 15}
+  G2 staged    {'off_palette': 196, 'chroma': 0, 'soft_edge': 14223, 'files': 15}
+  G2 diagonals {'off_palette': 0, 'chroma': 0, 'soft_edge': 0, 'files': 0}
+  G2 mesh_outside_mask total=392

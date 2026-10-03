@@ -1,0 +1,910 @@
+{
+ "rig_md5": "562c32a70c4fe5aeba6b278976b45c81",
+ "qa_gates_md5": "6a5427aeb33e36e6644d922152b558f1",
+ "files": [
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/AA.png",
+   "opaque": 281,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 23,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/AA_half.png",
+   "opaque": 249,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 23,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/EE.png",
+   "opaque": 297,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 26,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/EE_half.png",
+   "opaque": 262,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 26,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/M.png",
+   "opaque": 247,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 22,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/OH.png",
+   "opaque": 270,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 22,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/OH_half.png",
+   "opaque": 248,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 20,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/rest.png",
+   "opaque": 189,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ]
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/frame_scale/smile.png",
+   "opaque": 253,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 26,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/AA.png",
+   "opaque": 618,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 37,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/AA_half.png",
+   "opaque": 533,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 36,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/EE.png",
+   "opaque": 659,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 41,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/EE_half.png",
+   "opaque": 570,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 41,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/M.png",
+   "opaque": 532,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 34,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/OH.png",
+   "opaque": 593,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 33,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/OH_half.png",
+   "opaque": 534,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 32,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/rest.png",
+   "opaque": 439,
+   "off_palette": 21,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 372,
+   "strict_px": 387,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ]
+  },
+  {
+   "file": "mouth/staged/diag_posable/045/smile.png",
+   "opaque": 548,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 41,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/AA.png",
+   "opaque": 255,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 23,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/AA_half.png",
+   "opaque": 220,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 21,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/EE.png",
+   "opaque": 266,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 25,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/EE_half.png",
+   "opaque": 228,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 22,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/M.png",
+   "opaque": 219,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 20,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/OH.png",
+   "opaque": 244,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 18,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/OH_half.png",
+   "opaque": 221,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 17,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/rest.png",
+   "opaque": 177,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ]
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/frame_scale/smile.png",
+   "opaque": 223,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "frame",
+   "size": [
+    768,
+    1168
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "opaque_on_key_blue_px": 0,
+   "opaque_outside_silhouette_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 26,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/AA.png",
+   "opaque": 587,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 34,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/AA_half.png",
+   "opaque": 503,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 33,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/EE.png",
+   "opaque": 623,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 36,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/EE_half.png",
+   "opaque": 533,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 36,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/M.png",
+   "opaque": 500,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 34,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/OH.png",
+   "opaque": 562,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 32,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/OH_half.png",
+   "opaque": 505,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 31,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/rest.png",
+   "opaque": 425,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 354,
+   "strict_px": 373,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ]
+  },
+  {
+   "file": "mouth/staged/diag_posable/315/smile.png",
+   "opaque": 509,
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "scale": "view",
+   "size": [
+    1365,
+    1739
+   ],
+   "strict_not_in_her_frame_or_interior": 0,
+   "strict_px": 0,
+   "outside_face_px": 0,
+   "alpha_values": [
+    0,
+    255
+   ],
+   "line": {
+    "px": 39,
+    "components": 1,
+    "blocks_2x2": 0
+   }
+  }
+ ],
+ "totals": {
+  "off_palette": 21,
+  "chroma": 0,
+  "soft_edge": 0,
+  "strict_px": 760,
+  "outside_face_px": 0,
+  "opaque_on_key_blue_px": 0,
+  "opaque_outside_silhouette_px": 0,
+  "frame": {
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 0,
+   "strict_px": 0,
+   "outside_face_px": 0
+  },
+  "view": {
+   "off_palette": 21,
+   "chroma": 0,
+   "soft_edge": 0,
+   "strict_px": 760,
+   "outside_face_px": 0
+  }
+ },
+ "n_files": 36
+}

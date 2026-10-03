@@ -1,0 +1,58 @@
+{
+ "view": "apose",
+ "hair_mask_px": 21104,
+ "components": {
+  "visible_hair_part_px": 19919,
+  "specks_px": 58,
+  "residual_hair_px": 828,
+  "hairline_fringe_px": 299,
+  "erase_mask_extra": 0
+ },
+ "sweep_mask": false,
+ "changed_px_total": 25648,
+ "changed_outside_hair_mask": 4544,
+ "changed_outside_hair_mask_and_forehead_clean": 0,
+ "hair_handoff": {
+  "crescent_px": 241,
+  "crescent_to_skin": 207,
+  "crescent_kept_in_locks": 34,
+  "flyaway_px": 35,
+  "flyaway_alpha0_after": 35,
+  "flyaway_changed_vs_base": 35,
+  "brow_above_px": 24,
+  "brow_to_skin": 24,
+  "brow_in_locks": 0
+ },
+ "forehead_clean": {
+  "cleared_to_flat_skin_px": 4316,
+  "of_which_outside_hair_mask": 4316,
+  "components": 37,
+  "kept_far_from_hair_px": 27,
+  "flattened_skin_noise_px": 3447,
+  "ear_top_row": 216,
+  "eye_lock_px": 4489
+ },
+ "lock_changed": {
+  "eye_brow": 0,
+  "mouth": 0,
+  "hand": 0,
+  "nose": 0,
+  "beauty_marks": 0,
+  "face_oval_nonhair": 0
+ },
+ "face_lock_total_changed": 0,
+ "filled_skin_px": 6255,
+ "cranium_line_px": 290,
+ "ear_line_px": 45,
+ "cleared_to_alpha0_px": 14529,
+ "skin_rgb": [
+  186,
+  129,
+  85
+ ],
+ "line_rgb": [
+  13,
+  11,
+  29
+ ]
+}

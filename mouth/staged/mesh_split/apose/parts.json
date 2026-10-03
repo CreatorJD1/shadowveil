@@ -1,0 +1,654 @@
+{
+ "status": "STAGED - not live, not referenced by rig/ or views/*/mouth/rig.json",
+ "view": "apose",
+ "canvas": {
+  "width": 1365,
+  "height": 1739
+ },
+ "anchor": {
+  "x": 681,
+  "y": 286,
+  "desc": "front: lip-seam centre; profile: back corner of the mouth (seam end)"
+ },
+ "source": {
+  "lips": "views/apose/base.png (located by views/apose/mouth/rest.png alpha)",
+  "interior": "views/apose/mouth/AA.png"
+ },
+ "drawOrder": [
+  "interior",
+  "lower_lip",
+  "upper_lip"
+ ],
+ "seam": {
+  "rule": "per column: darkest pixel in rows 280..289, extended to its contiguous run with luminance < 43; the whole dark run goes to upper_lip",
+  "polyline_centre": [
+   [
+    654,
+    283.0
+   ],
+   [
+    656,
+    283.0
+   ],
+   [
+    659,
+    283.0
+   ],
+   [
+    662,
+    284.5
+   ],
+   [
+    665,
+    285.0
+   ],
+   [
+    668,
+    285.0
+   ],
+   [
+    671,
+    285.0
+   ],
+   [
+    674,
+    285.5
+   ],
+   [
+    677,
+    286.0
+   ],
+   [
+    680,
+    286.5
+   ],
+   [
+    683,
+    286.5
+   ],
+   [
+    686,
+    286.0
+   ],
+   [
+    689,
+    286.0
+   ],
+   [
+    692,
+    285.5
+   ],
+   [
+    695,
+    285.5
+   ],
+   [
+    698,
+    285.0
+   ],
+   [
+    701,
+    284.0
+   ],
+   [
+    704,
+    283.5
+   ],
+   [
+    707,
+    283.5
+   ]
+  ],
+  "boundary_firstLowerRow": [
+   [
+    654,
+    284
+   ],
+   [
+    655,
+    284
+   ],
+   [
+    656,
+    284
+   ],
+   [
+    657,
+    284
+   ],
+   [
+    658,
+    284
+   ],
+   [
+    659,
+    284
+   ],
+   [
+    660,
+    285
+   ],
+   [
+    661,
+    285
+   ],
+   [
+    662,
+    285
+   ],
+   [
+    663,
+    286
+   ],
+   [
+    664,
+    285
+   ],
+   [
+    665,
+    286
+   ],
+   [
+    666,
+    286
+   ],
+   [
+    667,
+    286
+   ],
+   [
+    668,
+    286
+   ],
+   [
+    669,
+    286
+   ],
+   [
+    670,
+    286
+   ],
+   [
+    671,
+    286
+   ],
+   [
+    672,
+    286
+   ],
+   [
+    673,
+    286
+   ],
+   [
+    674,
+    286
+   ],
+   [
+    675,
+    287
+   ],
+   [
+    676,
+    287
+   ],
+   [
+    677,
+    287
+   ],
+   [
+    678,
+    287
+   ],
+   [
+    679,
+    287
+   ],
+   [
+    680,
+    287
+   ],
+   [
+    681,
+    287
+   ],
+   [
+    682,
+    287
+   ],
+   [
+    683,
+    287
+   ],
+   [
+    684,
+    287
+   ],
+   [
+    685,
+    287
+   ],
+   [
+    686,
+    287
+   ],
+   [
+    687,
+    287
+   ],
+   [
+    688,
+    287
+   ],
+   [
+    689,
+    287
+   ],
+   [
+    690,
+    286
+   ],
+   [
+    691,
+    286
+   ],
+   [
+    692,
+    286
+   ],
+   [
+    693,
+    286
+   ],
+   [
+    694,
+    286
+   ],
+   [
+    695,
+    286
+   ],
+   [
+    696,
+    286
+   ],
+   [
+    697,
+    286
+   ],
+   [
+    698,
+    286
+   ],
+   [
+    699,
+    286
+   ],
+   [
+    700,
+    286
+   ],
+   [
+    701,
+    285
+   ],
+   [
+    702,
+    285
+   ],
+   [
+    703,
+    285
+   ],
+   [
+    704,
+    284
+   ],
+   [
+    705,
+    284
+   ],
+   [
+    706,
+    284
+   ],
+   [
+    707,
+    284
+   ]
+  ],
+  "darkSeamColumns": [
+   657,
+   704
+  ],
+  "columnsWithoutDarkSeam_extended": [
+   654,
+   655,
+   656,
+   705,
+   706,
+   707
+  ]
+ },
+ "parts": {
+  "upper_lip": {
+   "file": "upper_lip.png",
+   "bbox": [
+    654,
+    276,
+    707,
+    288
+   ],
+   "opaquePx": 481,
+   "flap": {
+    "px": 96,
+    "rows": "2 px below the seam",
+    "kind": "coincident: exact copy of the lower lip pixels it covers, so it is invisible at rest whichever part is on top; shows as lower-lip colour under the line only if lips separate before the interior appears"
+   },
+   "bendAxes": [
+    {
+     "name": "seam_arc",
+     "type": "polyline",
+     "points": [
+      [
+       654,
+       283.0
+      ],
+      [
+       656,
+       283.0
+      ],
+      [
+       659,
+       283.0
+      ],
+      [
+       662,
+       284.5
+      ],
+      [
+       665,
+       285.0
+      ],
+      [
+       668,
+       285.0
+      ],
+      [
+       671,
+       285.0
+      ],
+      [
+       674,
+       285.5
+      ],
+      [
+       677,
+       286.0
+      ],
+      [
+       680,
+       286.5
+      ],
+      [
+       683,
+       286.5
+      ],
+      [
+       686,
+       286.0
+      ],
+      [
+       689,
+       286.0
+      ],
+      [
+       692,
+       285.5
+      ],
+      [
+       695,
+       285.5
+      ],
+      [
+       698,
+       285.0
+      ],
+      [
+       701,
+       284.0
+      ],
+      [
+       704,
+       283.5
+      ],
+      [
+       707,
+       283.5
+      ]
+     ],
+     "use": "MouthForm: bend corners up (smile) / down (frown) about the seam; keep the seam row rigid against lower_lip"
+    },
+    {
+     "name": "centre_vertical",
+     "type": "line",
+     "points": [
+      [
+       681,
+       276
+      ],
+      [
+       681,
+       288
+      ]
+     ],
+     "use": "pucker/OH: squeeze width toward x=681"
+    },
+    {
+     "name": "lift",
+     "type": "line",
+     "points": [
+      [
+       657,
+       286
+      ],
+      [
+       704,
+       286
+      ]
+     ],
+     "use": "MouthOpen: translate up ~1-2 px max, pivot at corners (657,283)-(704,283)"
+    }
+   ]
+  },
+  "lower_lip": {
+   "file": "lower_lip.png",
+   "bbox": [
+    655,
+    282,
+    707,
+    301
+   ],
+   "opaquePx": 569,
+   "flap": {
+    "px": 96,
+    "rows": "2 px above the seam boundary",
+    "kind": "hidden: lower lip top-row colour (per column) extended up under upper_lip opaque pixels",
+    "fullyCoveredByUpper": true
+   },
+   "bendAxes": [
+    {
+     "name": "seam_arc",
+     "type": "polyline",
+     "points": [
+      [
+       654,
+       284
+      ],
+      [
+       657,
+       284
+      ],
+      [
+       660,
+       285
+      ],
+      [
+       663,
+       286
+      ],
+      [
+       666,
+       286
+      ],
+      [
+       669,
+       286
+      ],
+      [
+       672,
+       286
+      ],
+      [
+       675,
+       287
+      ],
+      [
+       678,
+       287
+      ],
+      [
+       681,
+       287
+      ],
+      [
+       684,
+       287
+      ],
+      [
+       687,
+       287
+      ],
+      [
+       690,
+       286
+      ],
+      [
+       693,
+       286
+      ],
+      [
+       696,
+       286
+      ],
+      [
+       699,
+       286
+      ],
+      [
+       702,
+       285
+      ],
+      [
+       705,
+       284
+      ]
+     ],
+     "use": "MouthForm: corners follow upper seam_arc"
+    },
+    {
+     "name": "centre_vertical",
+     "type": "line",
+     "points": [
+      [
+       681,
+       282
+      ],
+      [
+       681,
+       301
+      ]
+     ],
+     "use": "pucker/OH squeeze"
+    },
+    {
+     "name": "drop",
+     "type": "line",
+     "points": [
+      [
+       657,
+       284
+      ],
+      [
+       704,
+       284
+      ]
+     ],
+     "use": "MouthOpen: hinge at the corners, centre drops most (jaw)"
+    }
+   ]
+  },
+  "interior": {
+   "file": "interior.png",
+   "bbox": [
+    661,
+    283,
+    700,
+    299
+   ],
+   "opaquePx": 431,
+   "colourCounts": {
+    "skin": 2,
+    "upper": 2,
+    "lower": 15,
+    "hl": 39,
+    "inner": 268,
+    "teeth": 13,
+    "tongue": 92
+   },
+   "teethRows": [
+    284,
+    285
+   ],
+   "pxOutsideRestLips": 5,
+   "note": "cavity of AA.png (inner dark + teeth strip + tongue) at AA geometry; set opacity 0 at MouthOpen=0 or clip to the gap between lips",
+   "bendAxes": [
+    {
+     "name": "open_stretch",
+     "type": "line",
+     "points": [
+      [
+       681,
+       283
+      ],
+      [
+       681,
+       299
+      ]
+     ],
+     "use": "MouthOpen: scale vertically from the top edge (teeth stay under upper lip)"
+    },
+    {
+     "name": "width",
+     "type": "line",
+     "points": [
+      [
+       661,
+       291
+      ],
+      [
+       700,
+       291
+      ]
+     ],
+     "use": "MouthForm: widen (EE) / narrow (OH)"
+    }
+   ]
+  }
+ },
+ "proof": {
+  "upper_over_lower_over_base_changed_px": 0,
+  "lower_over_upper_over_base_changed_px": 96,
+  "upper_union_lower_equals_rest_mask": true
+ }
+}

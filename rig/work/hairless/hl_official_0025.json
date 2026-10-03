@@ -1,0 +1,92 @@
+{
+ "apose": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/apose/hair/rig.json",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body.png",
+   "200 http://127.0.0.1:8795/hands/staged/f7_wrist_apose/L_palm.png",
+   "200 http://127.0.0.1:8795/hands/staged/f7_wrist_apose/R_palm.png",
+   "200 http://127.0.0.1:8795/hair/staged/tone_fix/apose/hair/hair_back.png",
+   "200 http://127.0.0.1:8795/hair/staged/hairfront_holes/apose/hair/hair_front.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/apose/hair/strand_01.png",
+   "200 http://127.0.0.1:8795/hair/staged/ear_strands/apose/views/apose/hair/strand_03_tip.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/apose/hair/strand_02.png",
+   "200 http://127.0.0.1:8795/hair/staged/merged/apose/hair/strand_04.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/apose/hair/strand_05.png",
+   "200 http://127.0.0.1:8795/hair/staged/ear_strands/apose/views/apose/hair/strand_06_tip.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/apose/hair/strand_07.png",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body_skin.png"
+  ],
+  "errors": []
+ },
+ "tpose": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/tpose/hair/rig.json",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body.png",
+   "200 http://127.0.0.1:8795/hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/tpose/hair/strand_01.png",
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/tpose/hair/hair_front.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/tpose/hair/strand_02.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/tpose/hair/strand_03.png",
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/tpose/hair/strand_04.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/tpose/hair/strand_06.png",
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/tpose/hair/strand_05.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/tpose/hair/strand_06_tip.png",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body_skin.png"
+  ],
+  "errors": []
+ },
+ "left": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/left/hair/rig.json",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/left/live_patch_staged/base_body.png",
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/left/hair/hair_front.png",
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/left/hair/strand_01.png",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/left/live_patch_staged/base_body_skin.png"
+  ],
+  "errors": []
+ },
+ "right": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/right/live_patch_staged/base_body.png",
+   "200 http://127.0.0.1:8795/hair/staged/tone_fix/right/hair/hair_back.png",
+   "200 http://127.0.0.1:8795/hair/staged/hairfront_holes/right/hair/hair_front.png",
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/right/hair/strand_01.png",
+   "200 http://127.0.0.1:8795/hair/staged/lineart_fix/views/right/hair/strand_03.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/right/hair/strand_04.png",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/right/live_patch_staged/base_body_skin.png"
+  ],
+  "errors": []
+ },
+ "back": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (back, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/back/live_patch_staged/base_body.png",
+   "200 http://127.0.0.1:8795/hair/staged/tone_fix/back/hair/hair_back.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/back/hair/strand_01.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/back/hair/strand_04.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/back/hair/strand_05.png",
+   "200 http://127.0.0.1:8795/hair/staged/speck_fix/views/back/hair/strand_02.png",
+   "200 http://127.0.0.1:8795/body_tools/work/hairless_division_staged/back/live_patch_staged/base_body_skin.png"
+  ],
+  "errors": []
+ }
+}

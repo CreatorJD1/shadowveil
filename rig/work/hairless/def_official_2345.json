@@ -1,0 +1,42 @@
+{
+ "apose": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [],
+  "errors": []
+ },
+ "tpose": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [],
+  "errors": []
+ },
+ "left": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [],
+  "errors": []
+ },
+ "right": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [],
+  "errors": []
+ },
+ "back": {
+  "restCheck": "PASS: rest vs base.png, 0 px differ (back, skin mesh)",
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "fallbacks": [],
+  "stagedLoaded": [],
+  "errors": []
+ }
+}

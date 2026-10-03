@@ -1,0 +1,622 @@
+{
+ "45": {
+  "R": {
+   "kind": "far",
+   "parts": 1,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 129,
+   "frame_px": 2123,
+   "view_px": 5562,
+   "edge_soft_band_px": 2.36,
+   "scale": 1.54468,
+   "lineless_outline": 0.279,
+   "caps": {},
+   "pivots_view": {
+    "palm": [
+     395.08,
+     698.55
+    ]
+   }
+  },
+  "L": {
+   "kind": "near",
+   "parts": 16,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 144,
+   "frame_px": 3157,
+   "view_px": 8288,
+   "edge_soft_band_px": 2.34,
+   "scale": 1.54468,
+   "lineless_outline": 0.261,
+   "caps": {
+    "Pinky1": 171,
+    "palm<Pinky1": 63,
+    "Pinky2": 65,
+    "Pinky1<Pinky2": 46,
+    "Pinky3": 44,
+    "Pinky2<Pinky3": 25,
+    "Ring1": 194,
+    "palm<Ring1": 77,
+    "Ring2": 76,
+    "Ring1<Ring2": 42,
+    "Ring3": 44,
+    "Ring2<Ring3": 27,
+    "Middle1": 194,
+    "palm<Middle1": 58,
+    "Middle2": 87,
+    "Middle1<Middle2": 40,
+    "Middle3": 61,
+    "Middle2<Middle3": 27,
+    "Index1": 157,
+    "palm<Index1": 47,
+    "Index2": 81,
+    "Index1<Index2": 41,
+    "Index3": 51,
+    "Index2<Index3": 30,
+    "Thumb1": 102,
+    "palm<Thumb1": 144,
+    "Thumb2": 158,
+    "Thumb1<Thumb2": 54,
+    "Thumb3": 82,
+    "Thumb2<Thumb3": 34
+   },
+   "pivots_view": {
+    "palm": [
+     1007.76,
+     710.74
+    ],
+    "Index1": [
+     1071.44,
+     759.05
+    ],
+    "Index2": [
+     1086.74,
+     781.29
+    ],
+    "Index3": [
+     1096.93,
+     796.12
+    ],
+    "Index_tip": [
+     1105.43,
+     808.48
+    ],
+    "Middle1": [
+     1062.17,
+     777.58
+    ],
+    "Middle2": [
+     1074.69,
+     802.61
+    ],
+    "Middle3": [
+     1083.03,
+     819.29
+    ],
+    "Middle_tip": [
+     1089.98,
+     833.19
+    ],
+    "Ring1": [
+     1048.27,
+     786.85
+    ],
+    "Ring2": [
+     1058.7,
+     807.71
+    ],
+    "Ring3": [
+     1065.65,
+     821.61
+    ],
+    "Ring_tip": [
+     1071.44,
+     833.19
+    ],
+    "Pinky1": [
+     1029.74,
+     786.85
+    ],
+    "Pinky2": [
+     1035.99,
+     806.32
+    ],
+    "Pinky3": [
+     1040.16,
+     819.29
+    ],
+    "Pinky_tip": [
+     1043.64,
+     830.1
+    ],
+    "Thumb1": [
+     1021.24,
+     708.93
+    ],
+    "Thumb2": [
+     1047.5,
+     719.09
+    ],
+    "Thumb3": [
+     1069.16,
+     727.48
+    ],
+    "Thumb_tip": [
+     1086.89,
+     734.33
+    ]
+   }
+  }
+ },
+ "135": {
+  "R": {
+   "kind": "far",
+   "parts": 1,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 37,
+   "frame_px": 1816,
+   "view_px": 4832,
+   "edge_soft_band_px": 2.15,
+   "scale": 1.57033,
+   "lineless_outline": 0.294,
+   "caps": {},
+   "pivots_view": {
+    "palm": [
+     999.02,
+     737.49
+    ]
+   }
+  },
+  "L": {
+   "kind": "near",
+   "parts": 16,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 132,
+   "frame_px": 3516,
+   "view_px": 9324,
+   "edge_soft_band_px": 2.49,
+   "scale": 1.57033,
+   "lineless_outline": 0.206,
+   "caps": {
+    "Pinky1": 103,
+    "palm<Pinky1": 18,
+    "Pinky2": 97,
+    "Pinky1<Pinky2": 55,
+    "Pinky3": 85,
+    "Pinky2<Pinky3": 34,
+    "Ring1": 251,
+    "palm<Ring1": 74,
+    "Ring2": 140,
+    "Ring1<Ring2": 58,
+    "Ring3": 95,
+    "Ring2<Ring3": 43,
+    "Middle1": 246,
+    "palm<Middle1": 79,
+    "Middle2": 114,
+    "Middle1<Middle2": 54,
+    "Middle3": 83,
+    "Middle2<Middle3": 39,
+    "Index1": 157,
+    "palm<Index1": 56,
+    "Index2": 80,
+    "Index1<Index2": 45,
+    "Index3": 62,
+    "Index2<Index3": 27,
+    "Thumb1": 88,
+    "palm<Thumb1": 152,
+    "Thumb2": 166,
+    "Thumb1<Thumb2": 54,
+    "Thumb3": 90,
+    "Thumb2<Thumb3": 43
+   },
+   "pivots_view": {
+    "palm": [
+     371.5,
+     744.04
+    ],
+    "Index1": [
+     309.98,
+     807.1
+    ],
+    "Index2": [
+     293.72,
+     823.36
+    ],
+    "Index3": [
+     282.89,
+     834.19
+    ],
+    "Index_tip": [
+     273.86,
+     843.22
+    ],
+    "Middle1": [
+     328.82,
+     807.1
+    ],
+    "Middle2": [
+     308.33,
+     836.08
+    ],
+    "Middle3": [
+     294.67,
+     855.39
+    ],
+    "Middle_tip": [
+     283.28,
+     871.49
+    ],
+    "Ring1": [
+     346.09,
+     808.67
+    ],
+    "Ring2": [
+     326.31,
+     836.94
+    ],
+    "Ring3": [
+     313.12,
+     855.78
+    ],
+    "Ring_tip": [
+     302.12,
+     871.49
+    ],
+    "Pinky1": [
+     361.8,
+     811.81
+    ],
+    "Pinky2": [
+     344.84,
+     835.84
+    ],
+    "Pinky3": [
+     333.53,
+     851.86
+    ],
+    "Pinky_tip": [
+     324.11,
+     865.21
+    ],
+    "Thumb1": [
+     359.76,
+     739.73
+    ],
+    "Thumb2": [
+     326.65,
+     752.23
+    ],
+    "Thumb3": [
+     299.34,
+     762.55
+    ],
+    "Thumb_tip": [
+     277.0,
+     770.99
+    ]
+   }
+  }
+ },
+ "225": {
+  "R": {
+   "kind": "near",
+   "parts": 16,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 156,
+   "frame_px": 3564,
+   "view_px": 9685,
+   "edge_soft_band_px": 2.41,
+   "scale": 1.57335,
+   "lineless_outline": 0.2,
+   "caps": {
+    "Pinky1": 102,
+    "palm<Pinky1": 58,
+    "Pinky2": 59,
+    "Pinky1<Pinky2": 32,
+    "Pinky3": 41,
+    "Pinky2<Pinky3": 17,
+    "Ring1": 202,
+    "palm<Ring1": 62,
+    "Ring2": 75,
+    "Ring1<Ring2": 35,
+    "Ring3": 50,
+    "Ring2<Ring3": 19,
+    "Middle1": 196,
+    "palm<Middle1": 66,
+    "Middle2": 95,
+    "Middle1<Middle2": 47,
+    "Middle3": 70,
+    "Middle2<Middle3": 33,
+    "Index1": 159,
+    "palm<Index1": 68,
+    "Index2": 90,
+    "Index1<Index2": 51,
+    "Index3": 80,
+    "Index2<Index3": 34,
+    "Thumb1": 90,
+    "palm<Thumb1": 151,
+    "Thumb2": 159,
+    "Thumb1<Thumb2": 63,
+    "Thumb3": 89,
+    "Thumb2<Thumb3": 39
+   },
+   "pivots_view": {
+    "palm": [
+     992.48,
+     738.77
+    ],
+    "Index1": [
+     1058.32,
+     793.64
+    ],
+    "Index2": [
+     1078.5,
+     812.4
+    ],
+    "Index3": [
+     1091.95,
+     824.91
+    ],
+    "Index_tip": [
+     1103.16,
+     835.33
+    ],
+    "Middle1": [
+     1047.31,
+     804.65
+    ],
+    "Middle2": [
+     1065.36,
+     831.2
+    ],
+    "Middle3": [
+     1077.4,
+     848.9
+    ],
+    "Middle_tip": [
+     1087.43,
+     863.65
+    ],
+    "Ring1": [
+     1035.51,
+     816.45
+    ],
+    "Ring2": [
+     1051.79,
+     837.69
+    ],
+    "Ring3": [
+     1062.65,
+     851.85
+    ],
+    "Ring_tip": [
+     1071.7,
+     863.65
+    ],
+    "Pinky1": [
+     1022.92,
+     829.04
+    ],
+    "Pinky2": [
+     1032.13,
+     841.78
+    ],
+    "Pinky3": [
+     1038.26,
+     850.28
+    ],
+    "Pinky_tip": [
+     1043.38,
+     857.36
+    ],
+    "Thumb1": [
+     1005.35,
+     734.53
+    ],
+    "Thumb2": [
+     1040.7,
+     744.64
+    ],
+    "Thumb3": [
+     1069.86,
+     752.98
+    ],
+    "Thumb_tip": [
+     1093.72,
+     759.81
+    ]
+   }
+  },
+  "L": {
+   "kind": "far",
+   "parts": 1,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 67,
+   "frame_px": 1949,
+   "view_px": 5314,
+   "edge_soft_band_px": 2.29,
+   "scale": 1.57335,
+   "lineless_outline": 0.271,
+   "caps": {},
+   "pivots_view": {
+    "palm": [
+     367.43,
+     734.93
+    ]
+   }
+  }
+ },
+ "315": {
+  "R": {
+   "kind": "near",
+   "parts": 16,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 112,
+   "frame_px": 3196,
+   "view_px": 8294,
+   "edge_soft_band_px": 2.28,
+   "scale": 1.54468,
+   "lineless_outline": 0.276,
+   "caps": {
+    "Pinky1": 193,
+    "palm<Pinky1": 52,
+    "Pinky2": 63,
+    "Pinky1<Pinky2": 46,
+    "Pinky3": 45,
+    "Pinky2<Pinky3": 18,
+    "Ring1": 197,
+    "palm<Ring1": 63,
+    "Ring2": 98,
+    "Ring1<Ring2": 42,
+    "Ring3": 62,
+    "Ring2<Ring3": 25,
+    "Middle1": 197,
+    "palm<Middle1": 66,
+    "Middle2": 75,
+    "Middle1<Middle2": 41,
+    "Middle3": 57,
+    "Middle2<Middle3": 33,
+    "Index1": 141,
+    "palm<Index1": 48,
+    "Index2": 83,
+    "Index1<Index2": 46,
+    "Index3": 61,
+    "Index2<Index3": 25,
+    "Thumb1": 100,
+    "palm<Thumb1": 145,
+    "Thumb2": 156,
+    "Thumb1<Thumb2": 60,
+    "Thumb3": 80,
+    "Thumb2<Thumb3": 33
+   },
+   "pivots_view": {
+    "palm": [
+     360.65,
+     716.68
+    ],
+    "Index1": [
+     292.15,
+     776.04
+    ],
+    "Index2": [
+     281.72,
+     793.42
+    ],
+    "Index3": [
+     274.77,
+     805.0
+    ],
+    "Index_tip": [
+     268.98,
+     814.66
+    ],
+    "Middle1": [
+     304.51,
+     791.49
+    ],
+    "Middle2": [
+     294.08,
+     813.04
+    ],
+    "Middle3": [
+     287.13,
+     827.4
+    ],
+    "Middle_tip": [
+     281.34,
+     839.37
+    ],
+    "Ring1": [
+     321.5,
+     796.12
+    ],
+    "Ring2": [
+     313.16,
+     816.97
+    ],
+    "Ring3": [
+     307.6,
+     830.88
+    ],
+    "Ring_tip": [
+     302.96,
+     842.46
+    ],
+    "Pinky1": [
+     343.12,
+     789.94
+    ],
+    "Pinky2": [
+     336.17,
+     810.8
+    ],
+    "Pinky3": [
+     331.54,
+     824.7
+    ],
+    "Pinky_tip": [
+     327.68,
+     836.28
+    ],
+    "Thumb1": [
+     347.1,
+     715.04
+    ],
+    "Thumb2": [
+     322.03,
+     725.23
+    ],
+    "Thumb3": [
+     301.35,
+     733.63
+    ],
+    "Thumb_tip": [
+     284.43,
+     740.51
+    ]
+   }
+  },
+  "L": {
+   "kind": "far",
+   "parts": 1,
+   "frame_rebuild_px": 0,
+   "view_rebuild_px": 0,
+   "blue_frame": 0,
+   "blue_view": 0,
+   "her_px_changed_by_rematte": 86,
+   "frame_px": 2173,
+   "view_px": 5661,
+   "edge_soft_band_px": 2.35,
+   "scale": 1.54468,
+   "lineless_outline": 0.208,
+   "caps": {},
+   "pivots_view": {
+    "palm": [
+     973.45,
+     702.65
+    ]
+   }
+  }
+ }
+}

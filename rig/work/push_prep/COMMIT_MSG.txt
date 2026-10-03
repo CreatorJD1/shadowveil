@@ -1,0 +1,31 @@
+Staged combined update, Oct 3, 2026: Body, Hands, Hair, Mouth, Eyes and Coder (all staged, awaiting the user's OK)
+
+Built on origin/main 3515d57 (Eyes PR #1). Local main 6d5b239 was its ancestor, so nothing was rebased and no commits were lost.
+2045 files, about 145 MB. Each owner's share is taken from that owner's push manifest.
+
+Base Body (497 files, body_tools/): body_tools/work/push_manifest.txt
+  - hairless division staging, joint tests, contact sheets, HANDOFF.md
+Base Hands (268 files, hands/): hands/push_manifest.txt
+  - qa/gates, qa/scale_audit, staged F5-F11 wrist flaps and draw-order notes
+Base Hair (741 files, hair/): hair/push_manifest.txt (748 entries; 7 gitignored render/pycache files left out)
+  - actions, diagonals_v2, subofs_v2, tone/lineart/speck fixes, QA
+Mouth (216 files, mouth/): mouth/push_manifest.txt (365 entries; 150 gitignored */renders/ PNGs left out)
+  - actions, tone_fix, diagonals, mesh_bend, reviews
+Base Eyes (195 files, eyes/): changes since 3515d57
+  - v4 iris QA, diagonal blue (chroma) fix, hairless handoff locks, headgroup handoff QA
+Coder (128 files):
+  - rig/index.html (md5 562c32a7). Every new path is behind a flag and the default renders 30/30 identical:
+    ?mouthfix=1, ?hairless=1, ?headgroup=1 (+ hair/bun sub-offsets), ?handorder=1 (Hands F10/F11), ?armsub=1 (RigArmSub)
+  - rig/poser.html, rig/poser/ (HOOKS.md, shot.png, verify.json, tools)
+  - rig/qa_gates.py (weights / leak / scale gates; usage in rig/work/qa_gates/README.md)
+  - rig/partmesh/staged/headgroup.json, armsub.json
+  - rig/work/{qa_gates,crotch_weights,armsub,handorder,irislimits,hgsubhair,hairless}/ (READMEs, scripts, json, small sheets)
+  - rig/benchmarks/ (PARKED plan)
+  - status/
+
+Left out:
+  - backups (eyes/staged/diagonals/backups_chroma_fix/*, rig/work/backup_*)
+  - files over 50 MB (eyes/qa/headgroup_handoff/{,invalid_tmpsv_tree/}work/vis.npy)
+  - per-pose scratch renders, logs, .err files, index.html working copies, and candidate skin json over 1 MB (regenerable)
+  - gitignored render dirs listed in the manifests
+  - no secret-looking files matched

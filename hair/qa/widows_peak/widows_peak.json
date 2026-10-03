@@ -1,0 +1,288 @@
+{
+ "apose": {
+  "px": 53,
+  "bbox": [
+   665,
+   157,
+   698,
+   174
+  ],
+  "rgba_range": {
+   "min": [
+    189,
+    159,
+    121,
+    255
+   ],
+   "max": [
+    255,
+    219,
+    187,
+    255
+   ]
+  },
+  "staged_files_checked": 15,
+  "staged_files_with_diff": [],
+  "files": {
+   "hair/staged/brow_strand/apose/variant_above_only/views/apose/hair/strand_04.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/brow_strand/apose/views/apose/hair/strand_04.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/ear_strands/apose/views/apose/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/ear_strands/apose/views/apose/hair/strand_03_tip.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/ear_strands/apose/views/apose/hair/strand_06_tip.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/hairfront_holes/apose/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/apose/hair/strand_04.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/merged/apose/hair/strand_04.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/apose/hair/strand_01.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/apose/hair/strand_02.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/apose/hair/strand_03_tip.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/apose/hair/strand_05.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/apose/hair/strand_06_tip.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/apose/hair/strand_07.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/tone_fix/apose/hair/hair_back.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   }
+  }
+ },
+ "tpose": {
+  "px": 42,
+  "bbox": [
+   668,
+   155,
+   698,
+   170
+  ],
+  "rgba_range": {
+   "min": [
+    194,
+    157,
+    118,
+    255
+   ],
+   "max": [
+    245,
+    214,
+    181,
+    255
+   ]
+  },
+  "staged_files_checked": 10,
+  "staged_files_with_diff": [],
+  "files": {
+   "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/tpose/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/tpose/hair/strand_04.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/tpose/hair/strand_05.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/tpose/hair/strand_01.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/tpose/hair/strand_02.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/tpose/hair/strand_03.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/tpose/hair/strand_06.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/tpose/hair/strand_06_tip.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/tone_fix/tpose/hair/hair_back.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   }
+  }
+ },
+ "left": {
+  "px": 0,
+  "bbox": null,
+  "rgba_range": null,
+  "staged_files_checked": 4,
+  "staged_files_with_diff": [],
+  "files": {
+   "hair/staged/ear_strands/left/views/left/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/left/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/left/hair/strand_01.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/left/hair/strand_01.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   }
+  }
+ },
+ "right": {
+  "px": 0,
+  "bbox": null,
+  "rgba_range": null,
+  "staged_files_checked": 6,
+  "staged_files_with_diff": [],
+  "files": {
+   "hair/staged/ear_strands/right/views/right/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/hairfront_holes/right/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/right/hair/strand_01.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/lineart_fix/views/right/hair/strand_03.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/right/hair/strand_04.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/tone_fix/right/hair/hair_back.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   }
+  }
+ },
+ "back": {
+  "px": 0,
+  "bbox": null,
+  "rgba_range": null,
+  "staged_files_checked": 6,
+  "staged_files_with_diff": [],
+  "files": {
+   "hair/staged/ear_strands/back/views/back/hair/hair_front.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/back/hair/strand_01.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/back/hair/strand_02.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/back/hair/strand_04.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/speck_fix/views/back/hair/strand_05.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   },
+   "hair/staged/tone_fix/back/hair/hair_back.png": {
+    "diff_in_region": 0,
+    "alpha_on_mask": 0,
+    "live_alpha_on_mask": 0
+   }
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+  "apose": {
+    "bbox": {
+      "x0": 647,
+      "y0": 266,
+      "x1": 714,
+      "y1": 310,
+      "note": "inclusive, view px"
+    },
+    "pixelCount": 2407
+  },
+  "tpose": {
+    "bbox": {
+      "x0": 648,
+      "y0": 257,
+      "x1": 715,
+      "y1": 301,
+      "note": "inclusive, view px"
+    },
+    "pixelCount": 2373
+  },
+  "left": {
+    "bbox": {
+      "x0": 583,
+      "y0": 248,
+      "x1": 623,
+      "y1": 299,
+      "note": "inclusive, view px"
+    },
+    "pixelCount": 1512
+  },
+  "right": {
+    "bbox": {
+      "x0": 749,
+      "y0": 251,
+      "x1": 790,
+      "y1": 301,
+      "note": "inclusive, view px"
+    },
+    "pixelCount": 1466
+  }
+}

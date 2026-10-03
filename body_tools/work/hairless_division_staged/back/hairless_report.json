@@ -1,0 +1,345 @@
+{
+ "view": "back",
+ "hair_mask_px": 32310,
+ "components": {
+  "visible_hair_part_px": 31772,
+  "specks_px": 0,
+  "residual_hair_px": 538,
+  "hairline_fringe_px": 0,
+  "erase_mask_extra": 0
+ },
+ "sweep_mask": false,
+ "changed_px_total": 29252,
+ "changed_outside_hair_mask": 3458,
+ "changed_outside_hair_mask_and_forehead_clean": 3458,
+ "hair_handoff": {
+  "crescent_px": 0,
+  "crescent_to_skin": 0,
+  "crescent_kept_in_locks": 0,
+  "flyaway_px": 0,
+  "flyaway_alpha0_after": 0,
+  "flyaway_changed_vs_base": 0,
+  "brow_above_px": 0,
+  "brow_to_skin": 0,
+  "brow_in_locks": 0
+ },
+ "forehead_clean": {
+  "cleared_to_flat_skin_px": 0,
+  "of_which_outside_hair_mask": 0,
+  "components": 0,
+  "kept_far_from_hair_px": 0,
+  "flattened_skin_noise_px": 0,
+  "ear_top_row": 205,
+  "eye_lock_px": null
+ },
+ "lock_changed": {
+  "hand": 0,
+  "nose": 0,
+  "beauty_marks": 0,
+  "face_oval_nonhair": 0,
+  "ear_L_img": 0,
+  "ear_R_img": 0
+ },
+ "face_lock_total_changed": 0,
+ "filled_skin_px": 24296,
+ "cranium_line_px": 308,
+ "ear_line_fill_dropped_floating": 0,
+ "ear_fill_poly_px": 0,
+ "ear_line_px": 0,
+ "cleared_to_alpha0_px": 7706,
+ "kept_ink_other_views": {
+  "listed_px_in_source": 504,
+  "cut_into_staged_hair_part_px": 0,
+  "kept_as_drawn_px": 504,
+  "kept_components": [
+   {
+    "kind": "thick",
+    "px": 53,
+    "x": [
+     603,
+     621
+    ],
+    "y": [
+     112,
+     136
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 60,
+    "x": [
+     747,
+     761
+    ],
+    "y": [
+     113,
+     136
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 107,
+    "x": [
+     590,
+     601
+    ],
+    "y": [
+     141,
+     206
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 101,
+    "x": [
+     763,
+     770
+    ],
+    "y": [
+     141,
+     208
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 8,
+    "x": [
+     766,
+     769
+    ],
+    "y": [
+     114,
+     118
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 27,
+    "x": [
+     590,
+     595
+    ],
+    "y": [
+     137,
+     149
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     769,
+     771
+    ],
+    "y": [
+     145,
+     147
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     155,
+     158
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     773,
+     775
+    ],
+    "y": [
+     158,
+     159
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 14,
+    "x": [
+     774,
+     776
+    ],
+    "y": [
+     161,
+     165
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     589,
+     592
+    ],
+    "y": [
+     167,
+     170
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 7,
+    "x": [
+     770,
+     770
+    ],
+    "y": [
+     167,
+     173
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     773,
+     775
+    ],
+    "y": [
+     167,
+     168
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 8,
+    "x": [
+     772,
+     774
+    ],
+    "y": [
+     171,
+     173
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     583,
+     585
+    ],
+    "y": [
+     183,
+     184
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 47,
+    "x": [
+     582,
+     592
+    ],
+    "y": [
+     186,
+     204
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 11,
+    "x": [
+     774,
+     780
+    ],
+    "y": [
+     199,
+     202
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     768,
+     768
+    ],
+    "y": [
+     217,
+     219
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 9,
+    "x": [
+     607,
+     607
+    ],
+    "y": [
+     250,
+     258
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     616,
+     618
+    ],
+    "y": [
+     258,
+     258
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     745,
+     747
+    ],
+    "y": [
+     258,
+     258
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 21,
+    "x": [
+     611,
+     613
+    ],
+    "y": [
+     321,
+     328
+    ]
+   }
+  ]
+ },
+ "skin_rgb": [
+  183,
+  122,
+  77
+ ],
+ "skin_detect_ref_rgb": [
+  182,
+  122,
+  77
+ ],
+ "skin_rgb_sampled": [
+  182,
+  122,
+  77
+ ],
+ "fill_px_written_in_skin_rgb": 24296,
+ "native_px_in_detect_ref_colour_kept": 348,
+ "source": "body_tools/work/hairless_division_staged/back/live_patch_staged/base_body.png",
+ "keep_boxes": [],
+ "line_rgb": [
+  13,
+  11,
+  29
+ ]
+}

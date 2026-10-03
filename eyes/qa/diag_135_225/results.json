@@ -1,0 +1,129 @@
+{
+ "135": {
+  "frame": "reference/apose_turn/frames/f087.png",
+  "crop_frame_px": [
+   290,
+   40,
+   480,
+   250
+  ],
+  "white": {
+   "px": 33,
+   "components": 17,
+   "bbox_frame": [
+    331,
+    162,
+    405,
+    249
+   ],
+   "largest": 8
+  },
+  "amber": {
+   "px": 683,
+   "components": 31,
+   "bbox_frame": [
+    327,
+    169,
+    396,
+    232
+   ],
+   "largest": 564
+  },
+  "green": {
+   "px": 0,
+   "components": 0,
+   "bbox_frame": null,
+   "largest": 0
+  },
+  "lash_line": {
+   "px": 260,
+   "components": 12,
+   "bbox_frame": [
+    324,
+    166,
+    395,
+    233
+   ],
+   "largest": 132
+  },
+  "palette_only_px": {
+   "white": 122,
+   "amber": 2425,
+   "green": 1270,
+   "lash": 15742
+  },
+  "skin_px": 2826,
+  "face_edge_skin_px": 244
+ },
+ "225": {
+  "frame": "reference/apose_turn/frames/f131.png",
+  "crop_frame_px": [
+   290,
+   40,
+   480,
+   250
+  ],
+  "white": {
+   "px": 40,
+   "components": 21,
+   "bbox_frame": [
+    354,
+    163,
+    433,
+    247
+   ],
+   "largest": 6
+  },
+  "amber": {
+   "px": 716,
+   "components": 41,
+   "bbox_frame": [
+    358,
+    165,
+    435,
+    249
+   ],
+   "largest": 503
+  },
+  "green": {
+   "px": 0,
+   "components": 0,
+   "bbox_frame": null,
+   "largest": 0
+  },
+  "lash_line": {
+   "px": 232,
+   "components": 15,
+   "bbox_frame": [
+    364,
+    169,
+    434,
+    232
+   ],
+   "largest": 105
+  },
+  "palette_only_px": {
+   "white": 131,
+   "amber": 2526,
+   "green": 1473,
+   "lash": 15414
+  },
+  "skin_px": 2982,
+  "face_edge_skin_px": 261
+ },
+ "_palette_sizes": {
+  "white": 880,
+  "amber": 357,
+  "green": 517,
+  "lash": 1805
+ },
+ "_threshold_rgb": 16,
+ "_palette_sources": [
+  "eyes/staged/diagonals/045",
+  "eyes/staged/diagonals/315",
+  "views/apose/eyes",
+  "views/tpose/eyes",
+  "views/left/eyes",
+  "views/right/eyes"
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "contract": "partmesh v0.1",
+ "files": [
+  {
+   "file": "apose_hair_strand_03.json",
+   "view": "apose",
+   "system": "hair",
+   "parts": [
+    "strand_03",
+    "strand_03_tip"
+   ]
+  },
+  {
+   "file": "tpose_hands_R_Middle.json",
+   "view": "tpose",
+   "system": "hands",
+   "parts": [
+    "R_Middle1",
+    "R_Middle2",
+    "R_Middle3"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "apose": {
+  "hg_source": "/workspace/shadowveil/mouth/qa/mouthfix_verify/headgroup_staged_0104_copy.json",
+  "capture": "hgfix",
+  "frame": 1,
+  "headgroup_offset": [
+   0,
+   -9
+  ],
+  "hg_render_mouth_shift_vs_live": [
+   0.0,
+   -9.0
+  ],
+  "old_offset_vs_live": [
+   0,
+   -9
+  ],
+  "old_minus_head": [
+   0,
+   0
+  ],
+  "residual": {
+   "A_lip_masked_ncc": [
+    0,
+    0,
+    0.923
+   ],
+   "A2_window_ncc_oldstyle": [
+    0,
+    0,
+    0.958
+   ],
+   "B_seam_chamfer": [
+    0,
+    0,
+    0.12
+   ],
+   "B2_lip_outline_chamfer": [
+    0,
+    0,
+    0.26
+   ],
+   "C_lip_centroid": [
+    0.2,
+    0.1
+   ],
+   "C2_seam_centroid": [
+    -0.3,
+    -0.1
+   ],
+   "corner_front": [
+    0.0,
+    0.0
+   ],
+   "corner_back": [
+    1.0,
+    0.0
+   ]
+  },
+  "lower_face_crosscheck": {
+   "D_noseChin_ncc_lipsmasked": [
+    0,
+    0,
+    0.97
+   ],
+   "D2_silhouette_edge_chamfer": [
+    1,
+    0,
+    0.63
+   ]
+  },
+  "upper_face_eye_ncc": [
+   0,
+   0,
+   0.95
+  ],
+  "lip_px": {
+   "live": 478,
+   "frame": 460
+  },
+  "seam_px": {
+   "live": 113,
+   "frame": 167
+  },
+  "lip_height_px": {
+   "live": 18,
+   "frame": 18
+  },
+  "lip_width_px": {
+   "live": 48,
+   "frame": 48
+  },
+  "seam_ends_live": {
+   "front": [
+    703.25,
+    274.0
+   ],
+   "back": [
+    657.5,
+    273.5
+   ]
+  },
+  "seam_ends_frame": {
+   "front": [
+    703.25,
+    274.0
+   ],
+   "back": [
+    658.5,
+    273.5
+   ]
+  },
+  "anchor": [
+   681,
+   277
+  ],
+  "box": [
+   643,
+   257,
+   719,
+   304
+  ]
+ },
+ "left": {
+  "hg_source": "/workspace/shadowveil/mouth/qa/mouthfix_verify/headgroup_staged_0104_copy.json",
+  "capture": "hgfix",
+  "frame": 62,
+  "headgroup_offset": [
+   0,
+   11
+  ],
+  "hg_render_mouth_shift_vs_live": [
+   2.9,
+   11.62
+  ],
+  "old_offset_vs_live": [
+   8,
+   13
+  ],
+  "old_minus_head": [
+   8,
+   2
+  ],
+  "residual": {
+   "A_lip_masked_ncc": [
+    -15,
+    -11,
+    0.44
+   ],
+   "A2_window_ncc_oldstyle": [
+    8,
+    3,
+    0.854
+   ],
+   "B_seam_chamfer": [
+    -1,
+    0,
+    0.62
+   ],
+   "B2_lip_outline_chamfer": [
+    4,
+    0,
+    2.94
+   ],
+   "C_lip_centroid": [
+    4.4,
+    0.6
+   ],
+   "C2_seam_centroid": [
+    -2.1,
+    -0.4
+   ],
+   "corner_front": [
+    -0.8,
+    -2.7
+   ],
+   "corner_back": [
+    -4.0,
+    -1.0
+   ]
+  },
+  "lower_face_crosscheck": {
+   "D_noseChin_ncc_lipsmasked": [
+    1,
+    0,
+    0.801
+   ],
+   "D2_silhouette_edge_chamfer": [
+    6,
+    -1,
+    2.02
+   ]
+  },
+  "upper_face_eye_ncc": [
+   -4,
+   2,
+   0.66
+  ],
+  "lip_px": {
+   "live": 280,
+   "frame": 82
+  },
+  "seam_px": {
+   "live": 29,
+   "frame": 36
+  },
+  "lip_height_px": {
+   "live": 20,
+   "frame": 15
+  },
+  "lip_width_px": {
+   "live": 29,
+   "frame": 16
+  },
+  "seam_ends_live": {
+   "front": [
+    602.5,
+    282.0
+   ],
+   "back": [
+    616.5,
+    282.0
+   ]
+  },
+  "seam_ends_frame": {
+   "front": [
+    601.6666666666666,
+    279.3333333333333
+   ],
+   "back": [
+    612.5,
+    281.0
+   ]
+  },
+  "anchor": [
+   612,
+   281
+  ],
+  "box": [
+   576,
+   258,
+   627,
+   309
+  ]
+ },
+ "right": {
+  "hg_source": "/workspace/shadowveil/mouth/qa/mouthfix_verify/headgroup_staged_0104_copy.json",
+  "capture": "hgfix",
+  "frame": 160,
+  "headgroup_offset": [
+   3,
+   5
+  ],
+  "hg_render_mouth_shift_vs_live": [
+   0.75,
+   4.86
+  ],
+  "old_offset_vs_live": [
+   -7,
+   6
+  ],
+  "old_minus_head": [
+   -10,
+   1
+  ],
+  "residual": {
+   "A_lip_masked_ncc": [
+    2,
+    1,
+    0.464
+   ],
+   "A2_window_ncc_oldstyle": [
+    -8,
+    5,
+    0.867
+   ],
+   "B_seam_chamfer": [
+    0,
+    0,
+    0.68
+   ],
+   "B2_lip_outline_chamfer": [
+    -7,
+    1,
+    2.96
+   ],
+   "C_lip_centroid": [
+    -7.7,
+    1.3
+   ],
+   "C2_seam_centroid": [
+    -1.3,
+    0.6
+   ],
+   "corner_front": [
+    -1.8,
+    -1.3
+   ],
+   "corner_back": [
+    0.0,
+    -1.0
+   ]
+  },
+  "lower_face_crosscheck": {
+   "D_noseChin_ncc_lipsmasked": [
+    -1,
+    0,
+    0.804
+   ],
+   "D2_silhouette_edge_chamfer": [
+    -8,
+    -1,
+    1.86
+   ]
+  },
+  "upper_face_eye_ncc": [
+   1,
+   0,
+   0.572
+  ],
+  "lip_px": {
+   "live": 264,
+   "frame": 84
+  },
+  "seam_px": {
+   "live": 33,
+   "frame": 39
+  },
+  "lip_height_px": {
+   "live": 19,
+   "frame": 14
+  },
+  "lip_width_px": {
+   "live": 27,
+   "frame": 15
+  },
+  "seam_ends_live": {
+   "front": [
+    774.3333333333334,
+    278.3333333333333
+   ],
+   "back": [
+    759.5,
+    278.5
+   ]
+  },
+  "seam_ends_frame": {
+   "front": [
+    772.5,
+    277.0
+   ],
+   "back": [
+    759.5,
+    277.5
+   ]
+  },
+  "anchor": [
+   763,
+   279
+  ],
+  "box": [
+   749,
+   254,
+   800,
+   306
+  ]
+ }
+}

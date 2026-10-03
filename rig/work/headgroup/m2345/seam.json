@@ -1,0 +1,122 @@
+{
+ "apose:posed": {
+  "offset": [
+   0,
+   -9
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 6287,
+  "neck_gap_px": 166,
+  "neck_new_coverage_px": 220,
+  "neck_band_changed_px": 2516,
+  "neck_rows_changed": [
+   300,
+   362
+  ]
+ },
+ "apose:rest": {
+  "offset": [
+   0,
+   -9
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 6182,
+  "neck_gap_px": 166,
+  "neck_new_coverage_px": 204,
+  "neck_band_changed_px": 2456,
+  "neck_rows_changed": [
+   300,
+   357
+  ]
+ },
+ "left:posed": {
+  "offset": [
+   0,
+   11
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 7022,
+  "neck_gap_px": 222,
+  "neck_new_coverage_px": 718,
+  "neck_band_changed_px": 3435,
+  "neck_rows_changed": [
+   290,
+   396
+  ]
+ },
+ "left:rest": {
+  "offset": [
+   0,
+   11
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 6161,
+  "neck_gap_px": 221,
+  "neck_new_coverage_px": 718,
+  "neck_band_changed_px": 3396,
+  "neck_rows_changed": [
+   290,
+   393
+  ]
+ },
+ "back:posed": {
+  "offset": [
+   2,
+   11
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 15109,
+  "neck_gap_px": 204,
+  "neck_new_coverage_px": 569,
+  "neck_band_changed_px": 3204,
+  "neck_rows_changed": [
+   280,
+   348
+  ]
+ },
+ "back:rest": {
+  "offset": [
+   2,
+   11
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 12872,
+  "neck_gap_px": 202,
+  "neck_new_coverage_px": 570,
+  "neck_band_changed_px": 3177,
+  "neck_rows_changed": [
+   280,
+   345
+  ]
+ },
+ "right:posed": {
+  "offset": [
+   3,
+   5
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 6766,
+  "neck_gap_px": 207,
+  "neck_new_coverage_px": 551,
+  "neck_band_changed_px": 2565,
+  "neck_rows_changed": [
+   290,
+   393
+  ]
+ },
+ "right:rest": {
+  "offset": [
+   3,
+   5
+  ],
+  "face_px_not_moved_exactly": 0,
+  "a0_vs_base_px": 5958,
+  "neck_gap_px": 207,
+  "neck_new_coverage_px": 552,
+  "neck_band_changed_px": 2466,
+  "neck_rows_changed": [
+   290,
+   389
+  ]
+ }
+}

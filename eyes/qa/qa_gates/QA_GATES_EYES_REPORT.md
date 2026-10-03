@@ -49,7 +49,7 @@ These checks only read files. Writes went only to eyes/qa/qa_gates/.
     - These are green, iris-like tones inside a hair strand.
 - These 11 px are in hair files (Hair's). They overlap the eyes' area, but they are not eye-part px. Nothing was fixed.
 
-## Update: chroma fix on the staged diagonal far-eye files (Base Eyes, Sat Oct 3 2026, ~3:10 AM PT)
+## Update: chroma fix on the staged diagonal far-eye files (Base Eyes, Sat Oct 3 2026, ~2:58 AM PT)
 - **Files changed:**
   - `eyes/staged/diagonals/045/EyeR_{lash,lid_0}.png` and `315/EyeL_{lash,lid_0}.png`
   - their `_chroma.png` files, regenerated exactly as before: part RGB where α>0, (0,0,255) elsewhere
@@ -88,3 +88,37 @@ These checks only read files. Writes went only to eyes/qa/qa_gates/.
   - They show as a faint navy edge in the sheet. The near eyes have 0. They were not changed, because this fix covered the 167 px only. The same rule can be applied to them on request.
 - **Iris-limit checker rerun:** 0 px outside the opening and 0 on the lid line or lash, in all 288 renders. Diag vs current at rest is still 0 px.
 - **Sheet:** `diag_chroma_fix.png`. Each file shows before and after on grey and on a checker, the frame, and a change map (red = cleared, green = set to palette tone).
+
+## Update 2: navy fringe pass 2 (Base Eyes, Sat Oct 3 2026, ~3:05 AM PT): run, but NOT applied
+- **Script:** `fix_diag_fringe_pass2.py`, log in `fix_diag_fringe_pass2.json`.
+  - Same unmix rule as pass 1.
+  - Targets: px with b − max(r,g) > 30.
+  - Palette restricted to tones with b − max(r,g) ≤ 30.
+  - Continuity guard on the file itself and on lid_k ∪ lash for k0..7.
+- **Backup of the pass-1 state:** `eyes/staged/diagonals/backups_chroma_fix/pass2/`.
+- **Result on the 62 fringe px:**
+  - All 62 have t_blue between 0.02 and 0.46, so every one was set to a palette tone; none were cleared.
+  - 3 of them are pass-1 edge px, re-toned.
+  - 0 were kept for continuity, and 0 fringe px were left.
+  - Components were unchanged on all 8 lid frames: 045 EyeR [1,4 | 1,2,2,2,2,2,2,2], 315 EyeL [1,2 | 1,1,1,1,1,1,1,1].
+- **Why it was rolled back:**
+  - Those 62 px are the frame's own px, copied 1:1. The frame has the navy tint there too, with b − max(r,g) of 35–130.
+  - Changing them makes the rest rebuild differ from the frame **inside the face by 59 px**: 045 22, 315 37.
+  - The 315 px lie 7–13 px from the nearest pure-key px, i.e. inside the far eye, not on the silhouette edge.
+  - That breaks the hard rule that rest inside the face must be 0 px. So the staged files were restored to the pass-1 state.
+  - The pass-2 output is kept as a candidate in `backups_chroma_fix/pass2_candidate/`. To apply it, copy it into `eyes/staged/diagonals/{045,315}/`; doing so accepts the 59-px inside-face rest diff.
+- **Staged state now** (pass 1 only):
+  - `rest_check.json` was refreshed: 045 inside_face 0, outside_face_edge 6; 315 inside_face 0, outside_face_edge 5. That is 11 total, the kept palette-tone edge px.
+  - Supplement: 44 files, chroma 0, off-palette 0.
+  - Iris-limit checker: 0 px outside the opening and 0 on ink.
+  - Grey composite chroma: 0.
+  - Navy fringe left: 62 (unchanged).
+- **Sheet:** `diag_chroma_fix.png` was regenerated with an extra "pass-2 candidate (NOT applied)" panel.
+
+## Diagonal iris limits v4 (Coder): independent check, see `eyes/qa/irislimits_diag/v4/`
+- 288 eye-renders.
+- Outside the opening: 0. Lid/lash crossings: 0. Rest v4 vs current: 0 px. Rest vs frame: inside face 0, edge 6 / 5.
+- Both eyes move in the same direction, within 1 px, at all 9 gaze positions in both angles.
+- **Up-left and up-right have 0 sideways travel for all 4 eyes. This is confirmed.**
+- At 045, down-right is also 0 for both eyes.
+- Details are in `verify_v4_independent.json` and `sheet_v4.png`.

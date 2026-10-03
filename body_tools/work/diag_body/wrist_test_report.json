@@ -1,0 +1,282 @@
+{
+ "045_L": {
+  "skin": [
+   188,
+   128,
+   85
+  ],
+  "line": [
+   44,
+   18,
+   54
+  ],
+  "variants": {
+   "cap_depth_0": {
+    "cap_px": 0,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 2
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 2
+    }
+   },
+   "cap_depth_3": {
+    "cap_px": 70,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 2
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 2
+    }
+   },
+   "cap_depth_6": {
+    "cap_px": 155,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 1,
+     "end_notch": 3
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 1
+    }
+   },
+   "cap_depth_10": {
+    "cap_px": 279,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 1,
+     "end_notch": 3
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 3
+    }
+   }
+  }
+ },
+ "045_R": {
+  "skin": [
+   186,
+   128,
+   87
+  ],
+  "line": [
+   36,
+   8,
+   59
+  ],
+  "variants": {
+   "cap_depth_0": {
+    "cap_px": 0,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 6
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 6
+    }
+   },
+   "cap_depth_3": {
+    "cap_px": 74,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 6
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 10
+    }
+   },
+   "cap_depth_6": {
+    "cap_px": 154,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 6
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 6
+    }
+   },
+   "cap_depth_10": {
+    "cap_px": 279,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 6
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 6
+    }
+   }
+  }
+ },
+ "315_L": {
+  "skin": [
+   190,
+   130,
+   87
+  ],
+  "line": [
+   59,
+   23,
+   47
+  ],
+  "variants": {
+   "cap_depth_0": {
+    "cap_px": 0,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 3
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 4
+    }
+   },
+   "cap_depth_3": {
+    "cap_px": 75,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 7
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 4
+    }
+   },
+   "cap_depth_6": {
+    "cap_px": 161,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 5
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 5
+    }
+   },
+   "cap_depth_10": {
+    "cap_px": 286,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 5
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 1,
+     "end_notch": 5
+    }
+   }
+  }
+ },
+ "315_R": {
+  "skin": [
+   189,
+   129,
+   86
+  ],
+  "line": [
+   49,
+   23,
+   53
+  ],
+  "variants": {
+   "cap_depth_0": {
+    "cap_px": 0,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 3
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 4
+    }
+   },
+   "cap_depth_3": {
+    "cap_px": 69,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 3
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 4
+    }
+   },
+   "cap_depth_6": {
+    "cap_px": 150,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 2,
+     "end_notch": 3
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 4
+    }
+   },
+   "cap_depth_10": {
+    "cap_px": 272,
+    "rest_change_px": 0,
+    "+25": {
+     "seam_gap": 0,
+     "holes": 2,
+     "end_notch": 3
+    },
+    "-25": {
+     "seam_gap": 0,
+     "holes": 0,
+     "end_notch": 4
+    }
+   }
+  }
+ }
+}

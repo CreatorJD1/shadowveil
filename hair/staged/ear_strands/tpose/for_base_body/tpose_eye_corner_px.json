@@ -1,0 +1,830 @@
+{
+"view": "tpose",
+"source": "views/tpose/base.png (copied unchanged; no new paint)",
+"starts_from": "hair/staged/lineart_fix/views/tpose/hair/hair_front.png",
+"selection": "tpose_eye_brow_lock_v1.png minus tpose_eye_brow_lock.png (3,425 px); x741 y209-211 (lash) excluded; 0 px in either eye or mouth lock",
+"base_body_must": "turn every listed px to flat skin (186,129,86,255) in base_body.png and base_body_skin.png (hair_front, layer 600, covers them)",
+"counts": {
+"image_left_eye_corner": 39,
+"image_right_eye_corner": 29
+},
+"total": 68,
+"pixels": [
+{
+"x": 622,
+"y": 206,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+131,
+89,
+63,
+255
+]
+},
+{
+"x": 619,
+"y": 209,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+27,
+10,
+6,
+255
+]
+},
+{
+"x": 620,
+"y": 209,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+47,
+23,
+16,
+255
+]
+},
+{
+"x": 744,
+"y": 209,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+121,
+82,
+52,
+255
+]
+},
+{
+"x": 745,
+"y": 209,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+41,
+18,
+5,
+255
+]
+},
+{
+"x": 619,
+"y": 210,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+20,
+1,
+2,
+255
+]
+},
+{
+"x": 620,
+"y": 210,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+63,
+37,
+31,
+255
+]
+},
+{
+"x": 744,
+"y": 210,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+122,
+85,
+54,
+255
+]
+},
+{
+"x": 745,
+"y": 210,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+43,
+22,
+7,
+255
+]
+},
+{
+"x": 746,
+"y": 210,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+24,
+21,
+21,
+255
+]
+},
+{
+"x": 619,
+"y": 211,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+25,
+5,
+1,
+255
+]
+},
+{
+"x": 620,
+"y": 211,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+68,
+42,
+30,
+255
+]
+},
+{
+"x": 744,
+"y": 211,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+126,
+91,
+60,
+255
+]
+},
+{
+"x": 745,
+"y": 211,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+40,
+22,
+5,
+255
+]
+},
+{
+"x": 746,
+"y": 211,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+23,
+20,
+16,
+255
+]
+},
+{
+"x": 618,
+"y": 212,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+50,
+36,
+25,
+255
+]
+},
+{
+"x": 619,
+"y": 212,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+38,
+19,
+5,
+255
+]
+},
+{
+"x": 620,
+"y": 212,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+68,
+44,
+26,
+255
+]
+},
+{
+"x": 621,
+"y": 212,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+120,
+90,
+67,
+255
+]
+},
+{
+"x": 744,
+"y": 212,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+129,
+93,
+66,
+255
+]
+},
+{
+"x": 745,
+"y": 212,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+46,
+26,
+10,
+255
+]
+},
+{
+"x": 618,
+"y": 213,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+55,
+40,
+26,
+255
+]
+},
+{
+"x": 619,
+"y": 213,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+36,
+18,
+1,
+255
+]
+},
+{
+"x": 620,
+"y": 213,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+84,
+61,
+40,
+255
+]
+},
+{
+"x": 744,
+"y": 213,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+127,
+94,
+70,
+255
+]
+},
+{
+"x": 745,
+"y": 213,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+49,
+25,
+12,
+255
+]
+},
+{
+"x": 746,
+"y": 213,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+22,
+9,
+4,
+255
+]
+},
+{
+"x": 618,
+"y": 214,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+60,
+46,
+32,
+255
+]
+},
+{
+"x": 619,
+"y": 214,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+29,
+11,
+0,
+255
+]
+},
+{
+"x": 620,
+"y": 214,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+82,
+60,
+42,
+255
+]
+},
+{
+"x": 744,
+"y": 214,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+122,
+89,
+68,
+255
+]
+},
+{
+"x": 745,
+"y": 214,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+51,
+28,
+15,
+255
+]
+},
+{
+"x": 746,
+"y": 214,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+27,
+14,
+5,
+255
+]
+},
+{
+"x": 618,
+"y": 215,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+67,
+50,
+35,
+255
+]
+},
+{
+"x": 619,
+"y": 215,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+31,
+11,
+4,
+255
+]
+},
+{
+"x": 620,
+"y": 215,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+57,
+34,
+26,
+255
+]
+},
+{
+"x": 744,
+"y": 215,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+97,
+67,
+50,
+255
+]
+},
+{
+"x": 745,
+"y": 215,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+42,
+23,
+10,
+255
+]
+},
+{
+"x": 746,
+"y": 215,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+36,
+25,
+18,
+255
+]
+},
+{
+"x": 618,
+"y": 216,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+69,
+51,
+36,
+255
+]
+},
+{
+"x": 619,
+"y": 216,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+33,
+12,
+6,
+255
+]
+},
+{
+"x": 620,
+"y": 216,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+49,
+26,
+20,
+255
+]
+},
+{
+"x": 744,
+"y": 216,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+72,
+43,
+29,
+255
+]
+},
+{
+"x": 745,
+"y": 216,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+25,
+5,
+2,
+255
+]
+},
+{
+"x": 746,
+"y": 216,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+31,
+22,
+15,
+255
+]
+},
+{
+"x": 618,
+"y": 217,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+68,
+50,
+35,
+255
+]
+},
+{
+"x": 619,
+"y": 217,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+35,
+16,
+6,
+255
+]
+},
+{
+"x": 620,
+"y": 217,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+50,
+29,
+18,
+255
+]
+},
+{
+"x": 621,
+"y": 217,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+134,
+102,
+76,
+255
+]
+},
+{
+"x": 744,
+"y": 217,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+70,
+40,
+24,
+255
+]
+},
+{
+"x": 745,
+"y": 217,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+22,
+1,
+0,
+255
+]
+},
+{
+"x": 746,
+"y": 217,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+27,
+17,
+8,
+255
+]
+},
+{
+"x": 619,
+"y": 218,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+33,
+18,
+8,
+255
+]
+},
+{
+"x": 620,
+"y": 218,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+41,
+22,
+13,
+255
+]
+},
+{
+"x": 621,
+"y": 218,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+130,
+99,
+71,
+255
+]
+},
+{
+"x": 744,
+"y": 218,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+80,
+49,
+29,
+255
+]
+},
+{
+"x": 745,
+"y": 218,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+29,
+9,
+0,
+255
+]
+},
+{
+"x": 746,
+"y": 218,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+30,
+19,
+9,
+255
+]
+},
+{
+"x": 620,
+"y": 219,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+33,
+16,
+9,
+255
+]
+},
+{
+"x": 621,
+"y": 219,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+118,
+88,
+62,
+255
+]
+},
+{
+"x": 744,
+"y": 219,
+"group": "image_right_eye_corner",
+"part": "hair_front",
+"rgba": [
+82,
+54,
+32,
+255
+]
+},
+{
+"x": 621,
+"y": 220,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+111,
+81,
+56,
+255
+]
+},
+{
+"x": 621,
+"y": 221,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+113,
+81,
+57,
+255
+]
+},
+{
+"x": 621,
+"y": 222,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+110,
+77,
+57,
+255
+]
+},
+{
+"x": 621,
+"y": 223,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+117,
+82,
+64,
+255
+]
+},
+{
+"x": 621,
+"y": 224,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+120,
+85,
+64,
+255
+]
+},
+{
+"x": 621,
+"y": 225,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+118,
+84,
+63,
+255
+]
+},
+{
+"x": 621,
+"y": 226,
+"group": "image_left_eye_corner",
+"part": "hair_front",
+"rgba": [
+111,
+79,
+59,
+255
+]
+}
+]
+}

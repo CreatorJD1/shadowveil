@@ -1,0 +1,125 @@
+{
+ "PASS": true,
+ "rows": {
+  "curl_0.13": {
+   "width_max_abs_dw": 0.08,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 3.249,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "curl_0.20": {
+   "width_max_abs_dw": 0.07,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 4.987,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "curl_0.30": {
+   "width_max_abs_dw": 0.05,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 7.442,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "curl_0.50": {
+   "width_max_abs_dw": 0.11,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 11.259,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "curl_0.70": {
+   "width_max_abs_dw": 0.06,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 14.784,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "curl_0.87": {
+   "width_max_abs_dw": 0.62,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 17.865,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "curl_1.00": {
+   "width_max_abs_dw": 0.31,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 16.651,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "pose_Fist": {
+   "width_max_abs_dw": 0.42,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 16.651,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "pose_Point": {
+   "width_max_abs_dw": 0.6,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 16.651,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  },
+  "pose_Peace": {
+   "width_max_abs_dw": 0.02,
+   "middle_breaks": 0,
+   "middle_new_sharp": 0,
+   "new_hole_px_in_reach": 0,
+   "new_hole_px_outside": 0,
+   "changed_px_outside_middle_reach": 0,
+   "vertex_disp_outside_blend": 0,
+   "vertex_disp_in_blend_max": 0,
+   "new_stray_ink_px": 0,
+   "PASS": true
+  }
+ }
+}

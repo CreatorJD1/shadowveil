@@ -1,0 +1,185 @@
+{
+ "rule": "Corners (X+-1, Y+-1): start from the v3 oval offset dx = round(0.7071*range) (dy stays whole: +-1); per eye reduce |dx|\none px at a time (down to 0) until iris lost (shifted core px outside the white; the same for every lid frame, so it is the\nworst-frame value) <= that eye's Y+-1 baseline. Then link (v2 rule) per corner: same direction, |a| <= |b|+1, and 0 if the\nother eye is 0; capping repeats until stable. Read-only on eyes/.",
+ "angles": {
+  "045": {
+   "eyes": {
+    "EyeR": {
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 1,
+      "dxAtXminus1": -3,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 8,
+     "corners": {
+      "-1,-1": {
+       "v3_dx": -2,
+       "dx": 0,
+       "dy": -1,
+       "lost": 8,
+       "baseline": 8,
+       "lost_v3": 1
+      },
+      "-1,+1": {
+       "v3_dx": -2,
+       "dx": -2,
+       "dy": 1,
+       "lost": 6,
+       "baseline": 8,
+       "lost_v3": 6
+      },
+      "+1,-1": {
+       "v3_dx": 1,
+       "dx": 0,
+       "dy": -1,
+       "lost": 8,
+       "baseline": 8,
+       "lost_v3": 14
+      },
+      "+1,+1": {
+       "v3_dx": 1,
+       "dx": 0,
+       "dy": 1,
+       "lost": 7,
+       "baseline": 8,
+       "lost_v3": 10
+      }
+     }
+    },
+    "EyeL": {
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 2,
+      "dxAtXminus1": -3,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 14,
+     "corners": {
+      "-1,-1": {
+       "v3_dx": -2,
+       "dx": 0,
+       "dy": -1,
+       "lost": 14,
+       "baseline": 14,
+       "lost_v3": 22
+      },
+      "-1,+1": {
+       "v3_dx": -2,
+       "dx": -2,
+       "dy": 1,
+       "lost": 8,
+       "baseline": 14,
+       "lost_v3": 8
+      },
+      "+1,-1": {
+       "v3_dx": 1,
+       "dx": 0,
+       "dy": -1,
+       "lost": 14,
+       "baseline": 14,
+       "lost_v3": 13
+      },
+      "+1,+1": {
+       "v3_dx": 1,
+       "dx": 0,
+       "dy": 1,
+       "lost": 6,
+       "baseline": 14,
+       "lost_v3": 8
+      }
+     }
+    }
+   }
+  },
+  "315": {
+   "eyes": {
+    "EyeR": {
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 4,
+      "dxAtXminus1": -2,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 13,
+     "corners": {
+      "-1,-1": {
+       "v3_dx": -1,
+       "dx": 0,
+       "dy": -1,
+       "lost": 13,
+       "baseline": 13,
+       "lost_v3": 11
+      },
+      "-1,+1": {
+       "v3_dx": -1,
+       "dx": -1,
+       "dy": 1,
+       "lost": 9,
+       "baseline": 13,
+       "lost_v3": 9
+      },
+      "+1,-1": {
+       "v3_dx": 3,
+       "dx": 0,
+       "dy": -1,
+       "lost": 13,
+       "baseline": 13,
+       "lost_v3": 19
+      },
+      "+1,+1": {
+       "v3_dx": 3,
+       "dx": 3,
+       "dy": 1,
+       "lost": 12,
+       "baseline": 13,
+       "lost_v3": 12
+      }
+     }
+    },
+    "EyeL": {
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 3,
+      "dxAtXminus1": -1,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 10,
+     "corners": {
+      "-1,-1": {
+       "v3_dx": -1,
+       "dx": 0,
+       "dy": -1,
+       "lost": 10,
+       "baseline": 10,
+       "lost_v3": 15
+      },
+      "-1,+1": {
+       "v3_dx": -1,
+       "dx": -1,
+       "dy": 1,
+       "lost": 9,
+       "baseline": 10,
+       "lost_v3": 9
+      },
+      "+1,-1": {
+       "v3_dx": 2,
+       "dx": 0,
+       "dy": -1,
+       "lost": 10,
+       "baseline": 10,
+       "lost_v3": 7
+      },
+      "+1,+1": {
+       "v3_dx": 2,
+       "dx": 2,
+       "dy": 1,
+       "lost": 10,
+       "baseline": 10,
+       "lost_v3": 10
+      }
+     }
+    }
+   }
+  }
+ }
+}

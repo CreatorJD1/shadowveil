@@ -1,0 +1,324 @@
+{
+ "rig_md5": "562c32a70c4fe5aeba6b278976b45c81",
+ "qa_gates_md5": "6a5427aeb33e36e6644d922152b558f1",
+ "tool_verdict_pass": true,
+ "gates": {
+  "G1_weights": "N/A for mouth (body skin.json only); tool ran it with --gate all, no mouth output",
+  "G3_scale": "N/A for mouth (hands/feet only)",
+  "G2_leak_mesh_outside_mask": "0 (rigid drawImage part; by construction)"
+ },
+ "G2_leak_per_view": {
+  "apose": {
+   "live": {
+    "files": 10,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 2582,
+    "anger_included": true
+   },
+   "staged": {
+    "files": 10,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 2582,
+    "anger_included": true
+   },
+   "info_strict_excluding_her_live_files": 74
+  },
+  "tpose": {
+   "live": {
+    "files": 10,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 2523,
+    "anger_included": true
+   },
+   "staged": {
+    "files": 10,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 2523,
+    "anger_included": true
+   },
+   "info_strict_excluding_her_live_files": 42
+  },
+  "left": {
+   "live": {
+    "files": 9,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 1785,
+    "anger_included": false
+   },
+   "staged": {
+    "files": 9,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 1785,
+    "anger_included": false
+   },
+   "info_strict_excluding_her_live_files": 80
+  },
+  "right": {
+   "live": {
+    "files": 9,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 1765,
+    "anger_included": false
+   },
+   "staged": {
+    "files": 9,
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 1765,
+    "anger_included": false
+   },
+   "info_strict_excluding_her_live_files": 17
+  }
+ },
+ "G2_diagonals_mouth": {
+  "total_off_palette": 65,
+  "chroma": 0,
+  "soft_edge": 13067,
+  "by_angle": {
+   "045": {
+    "files": 25,
+    "off_palette": 31,
+    "chroma": 0,
+    "per_file": {
+     "o0.75_f-0.5.png": 3,
+     "o0.75_f-1.png": 1,
+     "o0.75_f0.5.png": 2,
+     "o0.75_f0.png": 1,
+     "o0.75_f1.png": 2,
+     "o1_f-0.5.png": 5,
+     "o1_f-1.png": 4,
+     "o1_f0.5.png": 5,
+     "o1_f0.png": 4,
+     "o1_f1.png": 4
+    }
+   },
+   "315": {
+    "files": 25,
+    "off_palette": 34,
+    "chroma": 0,
+    "per_file": {
+     "o0.75_f-0.5.png": 1,
+     "o0.75_f-1.png": 2,
+     "o0.75_f0.5.png": 3,
+     "o0.75_f1.png": 2,
+     "o1_f-0.5.png": 4,
+     "o1_f-1.png": 5,
+     "o1_f0.5.png": 7,
+     "o1_f0.png": 4,
+     "o1_f1.png": 6
+    }
+   }
+  },
+  "crosscheck_vs_coder_baseline_and_eyes": "65 = 65, per-file identical (rig/work/qa_gates/out/baseline_leak.json; Eyes report total)",
+  "owner": "ours (mouth/staged/diagonals, Base Mouth diag.py)",
+  "cause": "bilinear warp blends of two palette tones, dist 2.24-4.12 (tol 2), only in open shapes o0.75/o1; rest 0"
+ },
+ "diagonals_snap": {
+  "dir": "mouth/staged/diagonals_snap",
+  "px_snapped": 65,
+  "max_rgb_change": 3,
+  "alpha_changed": 0,
+  "files_changed": 19,
+  "gate_rerun": {
+   "off_palette": 0,
+   "chroma": 0,
+   "soft_edge": 13067
+  },
+  "rest_files_byte_identical": true
+ },
+ "blue_background_fault": {
+  "visible_px_per_file": {
+   "mouth/staged/diagonals/045/renders/o0.25_f-0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.25_f-1.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.25_f0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.25_f0.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.25_f1.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.5_f-0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.5_f-1.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.5_f0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.5_f0.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.5_f1.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.75_f-0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.75_f-1.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.75_f0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.75_f0.png": 0,
+   "mouth/staged/diagonals/045/renders/o0.75_f1.png": 0,
+   "mouth/staged/diagonals/045/renders/o0_f-0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0_f-1.png": 0,
+   "mouth/staged/diagonals/045/renders/o0_f0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o0_f0.png": 0,
+   "mouth/staged/diagonals/045/renders/o0_f1.png": 0,
+   "mouth/staged/diagonals/045/renders/o1_f-0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o1_f-1.png": 0,
+   "mouth/staged/diagonals/045/renders/o1_f0.5.png": 0,
+   "mouth/staged/diagonals/045/renders/o1_f0.png": 0,
+   "mouth/staged/diagonals/045/renders/o1_f1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.25_f-0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.25_f-1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.25_f0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.25_f0.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.25_f1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.5_f-0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.5_f-1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.5_f0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.5_f0.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.5_f1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.75_f-0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.75_f-1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.75_f0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.75_f0.png": 0,
+   "mouth/staged/diagonals/315/renders/o0.75_f1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0_f-0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0_f-1.png": 0,
+   "mouth/staged/diagonals/315/renders/o0_f0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o0_f0.png": 0,
+   "mouth/staged/diagonals/315/renders/o0_f1.png": 0,
+   "mouth/staged/diagonals/315/renders/o1_f-0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o1_f-1.png": 0,
+   "mouth/staged/diagonals/315/renders/o1_f0.5.png": 0,
+   "mouth/staged/diagonals/315/renders/o1_f0.png": 0,
+   "mouth/staged/diagonals/315/renders/o1_f1.png": 0,
+   "mouth/staged/diagonals/diag_045_rest_lips.png": 0,
+   "mouth/staged/diagonals/diag_315_rest_lips.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.25_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.25_f-1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.25_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.25_f0.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.25_f1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.5_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.5_f-1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.5_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.5_f0.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.5_f1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.75_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.75_f-1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.75_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.75_f0.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0.75_f1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0_f-1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0_f0.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o0_f1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o1_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o1_f-1.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o1_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o1_f0.png": 0,
+   "mouth/staged/diagonals_snap/045/renders/o1_f1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.25_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.25_f-1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.25_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.25_f0.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.25_f1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.5_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.5_f-1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.5_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.5_f0.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.5_f1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.75_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.75_f-1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.75_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.75_f0.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0.75_f1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0_f-1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0_f0.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o0_f1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o1_f-0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o1_f-1.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o1_f0.5.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o1_f0.png": 0,
+   "mouth/staged/diagonals_snap/315/renders/o1_f1.png": 0
+  },
+  "total_visible": 0,
+  "files_checked": 102,
+  "hidden_alpha0_rgb": {
+   "diag_045_rest_lips.png": 1759044,
+   "diag_315_rest_lips.png": 1757206
+  },
+  "note": "rest_lips intermediates keep the frame RGB (incl. blue key) under alpha 0: invisible, not in the rig, cannot reach screen with premultiplied drawImage. Staged clean copies with RGB zeroed under alpha 0 in diagonals_snap/ (visible px & alpha unchanged)."
+ },
+ "mesh_bend": {
+  "by_view": {
+   "apose": {
+    "parts_off": 0,
+    "renders_off": 179,
+    "chroma": 0,
+    "rest_o0_f0_off": 0,
+    "per_file": {
+     "o0.25_f-0.5.png": 4,
+     "o0.25_f-1.png": 2,
+     "o0.25_f0.5.png": 3,
+     "o0.25_f0.png": 4,
+     "o0.25_f1.png": 1,
+     "o0.5_f-0.5.png": 5,
+     "o0.5_f-1.png": 2,
+     "o0.5_f0.5.png": 5,
+     "o0.5_f0.png": 5,
+     "o0.5_f1.png": 5,
+     "o0.75_f-0.5.png": 9,
+     "o0.75_f-1.png": 9,
+     "o0.75_f0.5.png": 8,
+     "o0.75_f0.png": 7,
+     "o0.75_f1.png": 8,
+     "o0_f-0.5.png": 4,
+     "o0_f0.5.png": 1,
+     "o0_f1.png": 3,
+     "o1_f-0.5.png": 19,
+     "o1_f-1.png": 19,
+     "o1_f0.5.png": 20,
+     "o1_f0.png": 18,
+     "o1_f1.png": 18
+    }
+   },
+   "tpose": {
+    "parts_off": 0,
+    "renders_off": 249,
+    "chroma": 0,
+    "rest_o0_f0_off": 0,
+    "per_file": {
+     "o0.25_f-0.5.png": 6,
+     "o0.25_f-1.png": 6,
+     "o0.25_f0.5.png": 5,
+     "o0.25_f0.png": 6,
+     "o0.25_f1.png": 5,
+     "o0.5_f-0.5.png": 5,
+     "o0.5_f-1.png": 2,
+     "o0.5_f0.5.png": 7,
+     "o0.5_f0.png": 5,
+     "o0.5_f1.png": 4,
+     "o0.75_f-0.5.png": 12,
+     "o0.75_f-1.png": 9,
+     "o0.75_f0.5.png": 12,
+     "o0.75_f0.png": 15,
+     "o0.75_f1.png": 20,
+     "o0_f-0.5.png": 4,
+     "o0_f-1.png": 2,
+     "o0_f0.5.png": 3,
+     "o0_f1.png": 4,
+     "o1_f-0.5.png": 20,
+     "o1_f-1.png": 26,
+     "o1_f0.5.png": 23,
+     "o1_f0.png": 21,
+     "o1_f1.png": 27
+    }
+   }
+  },
+  "owner": "ours (mouth/staged/mesh_bend)",
+  "not_in_tool_file_sets": true,
+  "cause": "bilinear mesh warp blends in preview renders; parts are clean"
+ },
+ "flags": {
+  "mouthfix_headgroup": "qa_gates.py takes no URL flags (file-level only). Rendered coverage of ?mouthfix=1 / &headgroup=1 incl. 0 blue spill is in mouth/qa/mouthfix_verify/REPORT.md (rig 00892ccb; mouth code unchanged in 562c32a7)"
+ },
+ "hairless": "?hairless=1 not used in any qa_gates or mouthfix_verify result; heads-up does not apply",
+ "her_art_info": "strict check excluding her live files from palette: 213 px in 25 live files (she drew them; leave as drawn, info only)"
+}

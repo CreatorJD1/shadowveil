@@ -1,0 +1,61 @@
+{
+ "view": "right",
+ "roi": [
+  540,
+  400,
+  840,
+  920
+ ],
+ "cand": "body_tools/work/weight_bleed/right_skin_xlimb.json",
+ "poses": {
+  "rest": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "holes_filled": 0,
+   "dark_line_px_live": 20455,
+   "dark_line_px_cand": 20455
+  },
+  "ShoulderR+1": {
+   "px_changed": 178,
+   "new_holes": 0,
+   "holes_filled": 0,
+   "dark_line_px_live": 24138,
+   "dark_line_px_cand": 24131
+  },
+  "ElbowR+1": {
+   "px_changed": 98,
+   "new_holes": 0,
+   "holes_filled": 0,
+   "dark_line_px_live": 18818,
+   "dark_line_px_cand": 18818
+  },
+  "ShoulderR+1,ElbowR+1": {
+   "px_changed": 859,
+   "new_holes": 47,
+   "holes_filled": 0,
+   "dark_line_px_live": 23871,
+   "dark_line_px_cand": 23853
+  },
+  "ShoulderR-1": {
+   "px_changed": 103,
+   "new_holes": 0,
+   "holes_filled": 0,
+   "dark_line_px_live": 21769,
+   "dark_line_px_cand": 21759
+  },
+  "ElbowR-1": {
+   "px_changed": 70,
+   "new_holes": 0,
+   "holes_filled": 0,
+   "dark_line_px_live": 18783,
+   "dark_line_px_cand": 18777
+  },
+  "ShoulderR-1,ElbowR-1": {
+   "px_changed": 270,
+   "new_holes": 0,
+   "holes_filled": 0,
+   "dark_line_px_live": 21507,
+   "dark_line_px_cand": 21503
+  }
+ }
+}

@@ -1,0 +1,1002 @@
+{
+ "views": [
+  "apose",
+  "tpose",
+  "left",
+  "right",
+  "back"
+ ],
+ "part": "hair",
+ "staged_dirs": [
+  "eyes/work/lashfix/staged",
+  "hair/staged/tone_fix",
+  "mouth/staged/tone_fix"
+ ],
+ "tol": 2.0,
+ "leak": {
+  "live": {
+   "apose": {
+    "hair": [
+     {
+      "file": "views/apose/hair/bun.png",
+      "opaque": 4724,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 372
+     },
+     {
+      "file": "views/apose/hair/hair_back.png",
+      "opaque": 17828,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/hair_front.png",
+      "opaque": 12418,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_01.png",
+      "opaque": 204,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 188
+     },
+     {
+      "file": "views/apose/hair/strand_02.png",
+      "opaque": 68,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 51
+     },
+     {
+      "file": "views/apose/hair/strand_03.png",
+      "opaque": 143,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_03_tip.png",
+      "opaque": 302,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 217
+     },
+     {
+      "file": "views/apose/hair/strand_04.png",
+      "opaque": 287,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_05.png",
+      "opaque": 65,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 64
+     },
+     {
+      "file": "views/apose/hair/strand_06.png",
+      "opaque": 196,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_06_tip.png",
+      "opaque": 382,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 212
+     },
+     {
+      "file": "views/apose/hair/strand_07.png",
+      "opaque": 50,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 56
+     }
+    ]
+   },
+   "tpose": {
+    "hair": [
+     {
+      "file": "views/tpose/hair/bun.png",
+      "opaque": 4371,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 1196
+     },
+     {
+      "file": "views/tpose/hair/hair_back.png",
+      "opaque": 16011,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/hair_front.png",
+      "opaque": 10462,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/strand_01.png",
+      "opaque": 243,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 374
+     },
+     {
+      "file": "views/tpose/hair/strand_02.png",
+      "opaque": 19,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 139
+     },
+     {
+      "file": "views/tpose/hair/strand_03.png",
+      "opaque": 116,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 487
+     },
+     {
+      "file": "views/tpose/hair/strand_04.png",
+      "opaque": 343,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/strand_05.png",
+      "opaque": 165,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/strand_06.png",
+      "opaque": 244,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 346
+     },
+     {
+      "file": "views/tpose/hair/strand_06_tip.png",
+      "opaque": 205,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 488
+     }
+    ]
+   },
+   "left": {
+    "hair": [
+     {
+      "file": "views/left/hair/bun.png",
+      "opaque": 8576,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 633
+     },
+     {
+      "file": "views/left/hair/hair_back.png",
+      "opaque": 26952,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/hair_front.png",
+      "opaque": 18233,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_01.png",
+      "opaque": 39,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 289
+     },
+     {
+      "file": "views/left/hair/strand_02.png",
+      "opaque": 138,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_03.png",
+      "opaque": 316,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_04.png",
+      "opaque": 239,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_04_tip.png",
+      "opaque": 195,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "right": {
+    "hair": [
+     {
+      "file": "views/right/hair/bun.png",
+      "opaque": 8552,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 711
+     },
+     {
+      "file": "views/right/hair/hair_back.png",
+      "opaque": 28052,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/hair_front.png",
+      "opaque": 19254,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_01.png",
+      "opaque": 232,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_01_tip.png",
+      "opaque": 205,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_02.png",
+      "opaque": 259,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_02_tip.png",
+      "opaque": 165,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_03.png",
+      "opaque": 202,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_04.png",
+      "opaque": 54,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 172
+     }
+    ]
+   },
+   "back": {
+    "hair": [
+     {
+      "file": "views/back/hair/bun.png",
+      "opaque": 9063,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 704
+     },
+     {
+      "file": "views/back/hair/hair_back.png",
+      "opaque": 30120,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/back/hair/hair_front.png",
+      "opaque": 0,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/back/hair/strand_01.png",
+      "opaque": 29,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 129
+     },
+     {
+      "file": "views/back/hair/strand_02.png",
+      "opaque": 72,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 210
+     },
+     {
+      "file": "views/back/hair/strand_03.png",
+      "opaque": 165,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/back/hair/strand_04.png",
+      "opaque": 72,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 239
+     },
+     {
+      "file": "views/back/hair/strand_05.png",
+      "opaque": 29,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 108
+     }
+    ]
+   }
+  },
+  "staged": {
+   "apose": {
+    "hair": [
+     {
+      "file": "views/apose/hair/bun.png (no staged fix; live)",
+      "opaque": 4724,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 372
+     },
+     {
+      "file": "hair/staged/tone_fix/apose/hair/hair_back.png",
+      "opaque": 17828,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/hair_front.png (no staged fix; live)",
+      "opaque": 12418,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_01.png (no staged fix; live)",
+      "opaque": 204,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 188
+     },
+     {
+      "file": "views/apose/hair/strand_02.png (no staged fix; live)",
+      "opaque": 68,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 51
+     },
+     {
+      "file": "views/apose/hair/strand_03.png (no staged fix; live)",
+      "opaque": 143,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_03_tip.png (no staged fix; live)",
+      "opaque": 302,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 217
+     },
+     {
+      "file": "views/apose/hair/strand_04.png (no staged fix; live)",
+      "opaque": 287,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_05.png (no staged fix; live)",
+      "opaque": 65,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 64
+     },
+     {
+      "file": "views/apose/hair/strand_06.png (no staged fix; live)",
+      "opaque": 196,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/hair/strand_06_tip.png (no staged fix; live)",
+      "opaque": 382,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 212
+     },
+     {
+      "file": "views/apose/hair/strand_07.png (no staged fix; live)",
+      "opaque": 50,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 56
+     }
+    ]
+   },
+   "tpose": {
+    "hair": [
+     {
+      "file": "views/tpose/hair/bun.png (no staged fix; live)",
+      "opaque": 4371,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 1196
+     },
+     {
+      "file": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+      "opaque": 16011,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/hair_front.png (no staged fix; live)",
+      "opaque": 10462,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/strand_01.png (no staged fix; live)",
+      "opaque": 243,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 374
+     },
+     {
+      "file": "views/tpose/hair/strand_02.png (no staged fix; live)",
+      "opaque": 19,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 139
+     },
+     {
+      "file": "views/tpose/hair/strand_03.png (no staged fix; live)",
+      "opaque": 116,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 487
+     },
+     {
+      "file": "views/tpose/hair/strand_04.png (no staged fix; live)",
+      "opaque": 343,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/strand_05.png (no staged fix; live)",
+      "opaque": 165,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/hair/strand_06.png (no staged fix; live)",
+      "opaque": 244,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 346
+     },
+     {
+      "file": "views/tpose/hair/strand_06_tip.png (no staged fix; live)",
+      "opaque": 205,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 488
+     }
+    ]
+   },
+   "left": {
+    "hair": [
+     {
+      "file": "views/left/hair/bun.png (no staged fix; live)",
+      "opaque": 8576,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 633
+     },
+     {
+      "file": "views/left/hair/hair_back.png (no staged fix; live)",
+      "opaque": 26952,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/hair_front.png (no staged fix; live)",
+      "opaque": 18233,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_01.png (no staged fix; live)",
+      "opaque": 39,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 289
+     },
+     {
+      "file": "views/left/hair/strand_02.png (no staged fix; live)",
+      "opaque": 138,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_03.png (no staged fix; live)",
+      "opaque": 316,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_04.png (no staged fix; live)",
+      "opaque": 239,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/hair/strand_04_tip.png (no staged fix; live)",
+      "opaque": 195,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "right": {
+    "hair": [
+     {
+      "file": "views/right/hair/bun.png (no staged fix; live)",
+      "opaque": 8552,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 711
+     },
+     {
+      "file": "hair/staged/tone_fix/right/hair/hair_back.png",
+      "opaque": 28052,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/hair_front.png (no staged fix; live)",
+      "opaque": 19254,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_01.png (no staged fix; live)",
+      "opaque": 232,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_01_tip.png (no staged fix; live)",
+      "opaque": 205,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_02.png (no staged fix; live)",
+      "opaque": 259,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_02_tip.png (no staged fix; live)",
+      "opaque": 165,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_03.png (no staged fix; live)",
+      "opaque": 202,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/hair/strand_04.png (no staged fix; live)",
+      "opaque": 54,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 172
+     }
+    ]
+   },
+   "back": {
+    "hair": [
+     {
+      "file": "views/back/hair/bun.png (no staged fix; live)",
+      "opaque": 9063,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 704
+     },
+     {
+      "file": "hair/staged/tone_fix/back/hair/hair_back.png",
+      "opaque": 30120,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/back/hair/hair_front.png (no staged fix; live)",
+      "opaque": 0,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/back/hair/strand_01.png (no staged fix; live)",
+      "opaque": 29,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 129
+     },
+     {
+      "file": "views/back/hair/strand_02.png (no staged fix; live)",
+      "opaque": 72,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 210
+     },
+     {
+      "file": "views/back/hair/strand_03.png (no staged fix; live)",
+      "opaque": 165,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/back/hair/strand_04.png (no staged fix; live)",
+      "opaque": 72,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 239
+     },
+     {
+      "file": "views/back/hair/strand_05.png (no staged fix; live)",
+      "opaque": 29,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 108
+     }
+    ]
+   }
+  },
+  "diagonals": {
+   "045": {
+    "hair": [
+     {
+      "file": "hair/staged/diagonals/045/hair/bun.png",
+      "opaque": 6680,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 1403
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/extra_1.png",
+      "opaque": 8,
+      "off_palette": 6,
+      "chroma": 0,
+      "soft_edge": 144
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/hair_back.png",
+      "opaque": 4433,
+      "off_palette": 7,
+      "chroma": 0,
+      "soft_edge": 2204
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/hair_front.png",
+      "opaque": 7766,
+      "off_palette": 24,
+      "chroma": 0,
+      "soft_edge": 3514
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/strand_03.png",
+      "opaque": 0,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 142
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/strand_03_tip.png",
+      "opaque": 60,
+      "off_palette": 5,
+      "chroma": 0,
+      "soft_edge": 2144
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/strand_04.png",
+      "opaque": 83,
+      "off_palette": 2,
+      "chroma": 0,
+      "soft_edge": 252
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/strand_06.png",
+      "opaque": 1,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 58
+     },
+     {
+      "file": "hair/staged/diagonals/045/hair/strand_06_tip.png",
+      "opaque": 23,
+      "off_palette": 10,
+      "chroma": 0,
+      "soft_edge": 597
+     }
+    ]
+   },
+   "135": {
+    "hair": [
+     {
+      "file": "hair/staged/diagonals/135/hair/bun.png",
+      "opaque": 7515,
+      "off_palette": 2,
+      "chroma": 0,
+      "soft_edge": 636
+     },
+     {
+      "file": "hair/staged/diagonals/135/hair/extra_1.png",
+      "opaque": 3,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 635
+     },
+     {
+      "file": "hair/staged/diagonals/135/hair/extra_2.png",
+      "opaque": 0,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 381
+     },
+     {
+      "file": "hair/staged/diagonals/135/hair/hair_back.png",
+      "opaque": 26187,
+      "off_palette": 9,
+      "chroma": 0,
+      "soft_edge": 6043
+     },
+     {
+      "file": "hair/staged/diagonals/135/hair/hair_front.png",
+      "opaque": 0,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "hair/staged/diagonals/135/hair/strand_06.png",
+      "opaque": 7,
+      "off_palette": 2,
+      "chroma": 0,
+      "soft_edge": 492
+     },
+     {
+      "file": "hair/staged/diagonals/135/hair/strand_06_tip.png",
+      "opaque": 107,
+      "off_palette": 15,
+      "chroma": 0,
+      "soft_edge": 2082
+     }
+    ]
+   },
+   "225": {
+    "hair": [
+     {
+      "file": "hair/staged/diagonals/225/hair/bun.png",
+      "opaque": 8266,
+      "off_palette": 5,
+      "chroma": 0,
+      "soft_edge": 839
+     },
+     {
+      "file": "hair/staged/diagonals/225/hair/extra_1.png",
+      "opaque": 4,
+      "off_palette": 1,
+      "chroma": 0,
+      "soft_edge": 614
+     },
+     {
+      "file": "hair/staged/diagonals/225/hair/extra_2.png",
+      "opaque": 0,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 120
+     },
+     {
+      "file": "hair/staged/diagonals/225/hair/hair_back.png",
+      "opaque": 25646,
+      "off_palette": 20,
+      "chroma": 0,
+      "soft_edge": 5694
+     },
+     {
+      "file": "hair/staged/diagonals/225/hair/hair_front.png",
+      "opaque": 0,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "hair/staged/diagonals/225/hair/strand_01.png",
+      "opaque": 25,
+      "off_palette": 4,
+      "chroma": 0,
+      "soft_edge": 1747
+     },
+     {
+      "file": "hair/staged/diagonals/225/hair/strand_03.png",
+      "opaque": 82,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 80
+     },
+     {
+      "file": "hair/staged/diagonals/225/hair/strand_03_tip.png",
+      "opaque": 60,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 856
+     }
+    ]
+   },
+   "315": {
+    "hair": [
+     {
+      "file": "hair/staged/diagonals/315/hair/bun.png",
+      "opaque": 6825,
+      "off_palette": 2,
+      "chroma": 0,
+      "soft_edge": 1310
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/extra_1.png",
+      "opaque": 13,
+      "off_palette": 3,
+      "chroma": 0,
+      "soft_edge": 115
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/hair_back.png",
+      "opaque": 1476,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 1503
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/hair_front.png",
+      "opaque": 11499,
+      "off_palette": 10,
+      "chroma": 0,
+      "soft_edge": 3579
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/strand_03.png",
+      "opaque": 9,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 97
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/strand_03_tip.png",
+      "opaque": 37,
+      "off_palette": 5,
+      "chroma": 0,
+      "soft_edge": 538
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/strand_04.png",
+      "opaque": 121,
+      "off_palette": 0,
+      "chroma": 1,
+      "soft_edge": 248
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/strand_05.png",
+      "opaque": 72,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 195
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/strand_06.png",
+      "opaque": 130,
+      "off_palette": 11,
+      "chroma": 0,
+      "soft_edge": 2210
+     },
+     {
+      "file": "hair/staged/diagonals/315/hair/strand_06_tip.png",
+      "opaque": 17,
+      "off_palette": 1,
+      "chroma": 0,
+      "soft_edge": 735
+     }
+    ]
+   }
+  },
+  "mesh_outside_mask": {},
+  "totals": {
+   "live": {
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 7385,
+    "files": 47
+   },
+   "staged": {
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 7385,
+    "files": 47
+   },
+   "diagonals": {
+    "off_palette": 144,
+    "chroma": 1,
+    "soft_edge": 41207,
+    "files": 34
+   },
+   "mesh_outside_mask": 0
+  },
+  "pass_live": true,
+  "pass_staged": true,
+  "note": "soft_edge (0<alpha<255) is reported separately and does not fail the gate; off-palette counts opaque px only."
+ },
+ "pass": true
+}

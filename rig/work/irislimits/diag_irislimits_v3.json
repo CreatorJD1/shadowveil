@@ -1,0 +1,46 @@
+{
+ "rule": "v3 = v2 limits + oval gaze clamp: r=hypot(gx,gy); if r>1: gx,gy=gx/r,gy/r; then dx=round(gx*range_x), dy=round(gy*range_y) (round = floor(z+0.5)). Staged only.",
+ "limits": {
+  "045": {
+   "eyes": {
+    "EyeR": {
+     "irislimits_diag": {
+      "dxAtXplus1": 1,
+      "dxAtXminus1": -3,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     }
+    },
+    "EyeL": {
+     "irislimits_diag": {
+      "dxAtXplus1": 2,
+      "dxAtXminus1": -3,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     }
+    }
+   }
+  },
+  "315": {
+   "eyes": {
+    "EyeR": {
+     "irislimits_diag": {
+      "dxAtXplus1": 4,
+      "dxAtXminus1": -2,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     }
+    },
+    "EyeL": {
+     "irislimits_diag": {
+      "dxAtXplus1": 3,
+      "dxAtXminus1": -1,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     }
+    }
+   }
+  }
+ },
+ "verify": "verify_v3/verify_irislimits.json"
+}

@@ -1,0 +1,24 @@
+{
+ "live": {
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "errs": [],
+  "bodyUrls": [
+   "200 /views/apose/base_body.png",
+   "200 /views/apose/base_body_skin.png",
+   "200 /views/apose/base_body_underlay.png"
+  ]
+ },
+ "hairless": {
+  "restPixels_vs_base": 0,
+  "liveFR_vs_base": 0,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "errs": [],
+  "bodyUrls": [
+   "200 /body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body.png?v=1791005772867",
+   "200 /body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body_skin.png?v=1791005772867",
+   "200 /views/apose/base_body_underlay.png"
+  ]
+ }
+}

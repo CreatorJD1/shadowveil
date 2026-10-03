@@ -1,0 +1,788 @@
+{
+ "contract": "runtime-contract v1.2 (staged diagonal; per-iris limits)",
+ "workRegion": [
+  374,
+  162,
+  439,
+  187
+ ],
+ "view": "d315",
+ "canvas": [
+  1365,
+  1739
+ ],
+ "units": "FRAME pixels of the turn frame, origin top-left; all parts are full-canvas (x=y=0), in drawn position. Map to the 1365x1739 view space with viewFit.",
+ "viewFit": {
+  "scale": 1.54468,
+  "dx": 104.47,
+  "dy": -52.68,
+  "rule": "base_x = scale*frame_x + dx; base_y = scale*frame_y + dy",
+  "source": "body_tools/work/apose_turn/diagonals/diagonals.json"
+ },
+ "angleDeg": 315,
+ "frameSource": "reference/apose_turn/frames/f191.png",
+ "chromaKey": "#0000FF",
+ "eyes": [
+  "EyeR",
+  "EyeL"
+ ],
+ "nearEye": "EyeR",
+ "eyeIdentity": {
+  "EyeR": "her right eye, amber",
+  "EyeL": "her left eye, green"
+ },
+ "baseSource": "reference/apose_turn/frames/f191.png (parts cut from it; rest compared against it)",
+ "drawOrderPerEye": [
+  "white",
+  "iris (source-atop on white, offscreen layer)",
+  "lid frame",
+  "lash"
+ ],
+ "params": {
+  "EyeLOpen": {
+   "range": [
+    0,
+    1
+   ],
+   "default": 1,
+   "frames": "frame=round((1-EyeLOpen)*7); 0=open(exact) .. 7=closed"
+  },
+  "EyeROpen": {
+   "range": [
+    0,
+    1
+   ],
+   "default": 1,
+   "frames": "frame=round((1-EyeROpen)*7)"
+  },
+  "EyeBallX": {
+   "range": [
+    -1,
+    1
+   ],
+   "default": 0,
+   "note": "-1 = her right (viewer-left in these frames)"
+  },
+  "EyeBallY": {
+   "range": [
+    -1,
+    1
+   ],
+   "default": 0,
+   "note": "-1 up, 1 down"
+  }
+ },
+ "irisLimitsPx": {
+  "dxAtXplus1": 3,
+  "dxAtXminus1": -1,
+  "dyAtYplus1": 1,
+  "dyAtYminus1": -1
+ },
+ "irisOffsetRule": "per iris (this angle): dx = round(X*(dxAtXplus1 if X>0 else -dxAtXminus1)); dy = round(Y*(dyAtYplus1 if Y>0 else -dyAtYminus1)); irisLimitsPx is keyed by eye here (views use one set for both eyes); frame px - multiply by viewFit.scale for view px",
+ "parts": [
+  {
+   "id": "EyeR_white",
+   "file": "EyeR_white.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 175.5,
+   "parent": null,
+   "layer": 400,
+   "composite": "source-over",
+   "note": "offscreen eye layer; cut from the frame, iris footprint backfilled with her own sclera pixels"
+  },
+  {
+   "id": "EyeR_iris",
+   "file": "EyeR_iris.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 389.6,
+   "pivotY": 175.2,
+   "parent": "EyeR_white",
+   "layer": 401,
+   "composite": "source-atop",
+   "drive": {
+    "EyeBallX": [
+     -2,
+     2
+    ],
+    "EyeBallY": [
+     -1,
+     1
+    ],
+    "rule": "dx = round(X*(EyeBallX[1] if X>0 else -EyeBallX[0])); dy = round(Y*(EyeBallY[1] if Y>0 else -EyeBallY[0])) - per iris at this angle"
+   }
+  },
+  {
+   "id": "EyeR_lid_0",
+   "file": "EyeR_lid_0.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 0,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==0"
+  },
+  {
+   "id": "EyeR_lid_1",
+   "file": "EyeR_lid_1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 1,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==1"
+  },
+  {
+   "id": "EyeR_lid_2",
+   "file": "EyeR_lid_2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 2,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==2"
+  },
+  {
+   "id": "EyeR_lid_3",
+   "file": "EyeR_lid_3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 3,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==3"
+  },
+  {
+   "id": "EyeR_lid_4",
+   "file": "EyeR_lid_4.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 4,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==4"
+  },
+  {
+   "id": "EyeR_lid_5",
+   "file": "EyeR_lid_5.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 5,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==5"
+  },
+  {
+   "id": "EyeR_lid_6",
+   "file": "EyeR_lid_6.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 6,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==6"
+  },
+  {
+   "id": "EyeR_lid_7",
+   "file": "EyeR_lid_7.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 171.0,
+   "parent": "EyeR_white",
+   "layer": 402,
+   "frame": 7,
+   "param": "EyeROpen",
+   "showWhen": "round((1-EyeROpen)*7)==7"
+  },
+  {
+   "id": "EyeR_lash",
+   "file": "EyeR_lash.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 390.5,
+   "pivotY": 175.5,
+   "parent": "EyeR_white",
+   "layer": 403,
+   "composite": "source-over"
+  },
+  {
+   "id": "EyeL_white",
+   "file": "EyeL_white.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 177.5,
+   "parent": null,
+   "layer": 410,
+   "composite": "source-over",
+   "note": "offscreen eye layer; cut from the frame, iris footprint backfilled with her own sclera pixels"
+  },
+  {
+   "id": "EyeL_iris",
+   "file": "EyeL_iris.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.8,
+   "pivotY": 177.8,
+   "parent": "EyeL_white",
+   "layer": 411,
+   "composite": "source-atop",
+   "drive": {
+    "EyeBallX": [
+     0,
+     2
+    ],
+    "EyeBallY": [
+     -1,
+     1
+    ],
+    "rule": "dx = round(X*(EyeBallX[1] if X>0 else -EyeBallX[0])); dy = round(Y*(EyeBallY[1] if Y>0 else -EyeBallY[0])) - per iris at this angle"
+   }
+  },
+  {
+   "id": "EyeL_lid_0",
+   "file": "EyeL_lid_0.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 0,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==0"
+  },
+  {
+   "id": "EyeL_lid_1",
+   "file": "EyeL_lid_1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 1,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==1"
+  },
+  {
+   "id": "EyeL_lid_2",
+   "file": "EyeL_lid_2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 2,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==2"
+  },
+  {
+   "id": "EyeL_lid_3",
+   "file": "EyeL_lid_3.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 3,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==3"
+  },
+  {
+   "id": "EyeL_lid_4",
+   "file": "EyeL_lid_4.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 4,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==4"
+  },
+  {
+   "id": "EyeL_lid_5",
+   "file": "EyeL_lid_5.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 5,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==5"
+  },
+  {
+   "id": "EyeL_lid_6",
+   "file": "EyeL_lid_6.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 6,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==6"
+  },
+  {
+   "id": "EyeL_lid_7",
+   "file": "EyeL_lid_7.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 174.0,
+   "parent": "EyeL_white",
+   "layer": 412,
+   "frame": 7,
+   "param": "EyeLOpen",
+   "showWhen": "round((1-EyeLOpen)*7)==7"
+  },
+  {
+   "id": "EyeL_lash",
+   "file": "EyeL_lash.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 424.5,
+   "pivotY": 177.5,
+   "parent": "EyeL_white",
+   "layer": 413,
+   "composite": "source-over"
+  }
+ ],
+ "measurements": {
+  "EyeR": {
+   "near": true,
+   "skin": "#BA8060",
+   "skin_ring_px": 58,
+   "iris_bbox": [
+    384,
+    172,
+    396,
+    180
+   ],
+   "iris_w": 13,
+   "iris_h": 9,
+   "iris_center": [
+    389.6,
+    175.2
+   ],
+   "opening_bbox": [
+    381,
+    171,
+    400,
+    180
+   ],
+   "opening_w": 20,
+   "room_px": {
+    "left": 3,
+    "right": 3,
+    "top_at_center": 0,
+    "bottom_at_center": -1
+   },
+   "mask_px": 131,
+   "iris_px": 85,
+   "lash_px": 38,
+   "lid_travel_px_per_frame": {
+    "1": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "2": [
+     0,
+     1,
+     2,
+     2,
+     2,
+     2,
+     3,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     1,
+     0
+    ],
+    "3": [
+     0,
+     2,
+     3,
+     3,
+     3,
+     3,
+     4,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     2,
+     0
+    ],
+    "4": [
+     0,
+     2,
+     3,
+     3,
+     4,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     4,
+     3,
+     3,
+     2,
+     0
+    ],
+    "5": [
+     0,
+     2,
+     4,
+     4,
+     5,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     5,
+     4,
+     4,
+     2,
+     0
+    ],
+    "6": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     6,
+     5,
+     4,
+     2,
+     0
+    ],
+    "7": [
+     0,
+     2,
+     4,
+     5,
+     6,
+     7,
+     8,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     6,
+     5,
+     4,
+     2,
+     0
+    ]
+   }
+  },
+  "EyeL": {
+   "near": false,
+   "skin": "#BD8158",
+   "skin_ring_px": 36,
+   "iris_bbox": [
+    420,
+    174,
+    429,
+    181
+   ],
+   "iris_w": 10,
+   "iris_h": 8,
+   "iris_center": [
+    424.8,
+    177.8
+   ],
+   "opening_bbox": [
+    419,
+    174,
+    430,
+    181
+   ],
+   "opening_w": 12,
+   "room_px": {
+    "left": 0,
+    "right": 3,
+    "top_at_center": -1,
+    "bottom_at_center": 0
+   },
+   "mask_px": 66,
+   "iris_px": 51,
+   "lash_px": 93,
+   "lid_travel_px_per_frame": {
+    "1": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "2": [
+     0,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     0
+    ],
+    "3": [
+     0,
+     1,
+     1,
+     2,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     2,
+     0
+    ],
+    "4": [
+     0,
+     1,
+     2,
+     3,
+     3,
+     4,
+     4,
+     4,
+     4,
+     4,
+     2,
+     0
+    ],
+    "5": [
+     0,
+     1,
+     2,
+     4,
+     4,
+     5,
+     5,
+     5,
+     5,
+     4,
+     2,
+     0
+    ],
+    "6": [
+     0,
+     2,
+     3,
+     4,
+     5,
+     6,
+     6,
+     6,
+     6,
+     4,
+     2,
+     0
+    ],
+    "7": [
+     0,
+     1,
+     2,
+     4,
+     5,
+     6,
+     6,
+     6,
+     6,
+     4,
+     2,
+     0
+    ]
+   }
+  }
+ },
+ "layerScheme": "v1.2 global layers, eyes band 400-499 (EyeR 400-403, EyeL 410-413: white 0, iris 1, lid frame 2, lash 3)",
+ "lidFrames": 8,
+ "lidFrameFiles": {
+  "EyeR": [
+   "EyeR_lid_0.png",
+   "EyeR_lid_1.png",
+   "EyeR_lid_2.png",
+   "EyeR_lid_3.png",
+   "EyeR_lid_4.png",
+   "EyeR_lid_5.png",
+   "EyeR_lid_6.png",
+   "EyeR_lid_7.png"
+  ],
+  "EyeL": [
+   "EyeL_lid_0.png",
+   "EyeL_lid_1.png",
+   "EyeL_lid_2.png",
+   "EyeL_lid_3.png",
+   "EyeL_lid_4.png",
+   "EyeL_lid_5.png",
+   "EyeL_lid_6.png",
+   "EyeL_lid_7.png"
+  ]
+ },
+ "lidFrameSelection": "frame = Math.round((1-<E>Open)*(lidFrames-1)) = Math.round((1-<E>Open)*7); lid_0 = open (exact drawing), lid_7 = closed",
+ "notes": {
+  "lid_0": "her exact pixels around the opening (binary alpha)",
+  "lid_1..7": "upper lid only: her lash band rows moved down as her own pixels (integer per column, slope <= 2 px/col, corners fixed); vacated rows = flat skin (median of her skin ring); eye shows below; lid_7 = flat skin down to her lower line",
+  "softness": "eyes are 12-21 px wide in the frame and soft/anti-aliased: opening, iris and band edges are approximate (1 px); at view scale (x1.54) they are softer than the views' parts",
+  "farEye": "kept whole (no cheek clipping applied)"
+ },
+ "irisLimitsPxPerEye": {
+  "EyeR": {
+   "dxAtXplus1": 4,
+   "dxAtXminus1": -2,
+   "dyAtYplus1": 1,
+   "dyAtYminus1": -1,
+   "corners": {
+    "-1,-1": [
+     0,
+     -1
+    ],
+    "-1,+1": [
+     -1,
+     1
+    ],
+    "+1,-1": [
+     0,
+     -1
+    ],
+    "+1,+1": [
+     3,
+     1
+    ]
+   }
+  },
+  "EyeL": {
+   "dxAtXplus1": 3,
+   "dxAtXminus1": -1,
+   "dyAtYplus1": 1,
+   "dyAtYminus1": -1,
+   "corners": {
+    "-1,-1": [
+     0,
+     -1
+    ],
+    "-1,+1": [
+     -1,
+     1
+    ],
+    "+1,-1": [
+     0,
+     -1
+    ],
+    "+1,+1": [
+     2,
+     1
+    ]
+   }
+  }
+ },
+ "irisLimitsSource": "rig/work/irislimits/diag_irislimits_v4.json (per eye, read when ?diag=1; irisLimitsPx = the common fallback)"
+}

@@ -1,0 +1,464 @@
+{
+ "apose": {
+  "clipState": {
+   "name": "anger",
+   "ready": true,
+   "time": 0,
+   "error": ""
+  },
+  "shapes": [
+   "rest",
+   "M",
+   "smile",
+   "OH_half",
+   "AA_half",
+   "EE_half",
+   "OH",
+   "AA",
+   "EE",
+   "anger"
+  ],
+  "anger": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "stressFlag": true,
+  "anger_stress": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "talkPicks": [
+   "mouth_M",
+   "mouth_rest",
+   "mouth_AA_half",
+   "mouth_OH_half",
+   "mouth_OH",
+   "mouth_AA"
+  ],
+  "talkPicksAnger": false,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "errors": []
+ },
+ "tpose": {
+  "clipState": {
+   "name": "anger",
+   "ready": true,
+   "time": 0,
+   "error": ""
+  },
+  "shapes": [
+   "rest",
+   "M",
+   "smile",
+   "OH_half",
+   "AA_half",
+   "EE_half",
+   "OH",
+   "AA",
+   "EE",
+   "anger"
+  ],
+  "anger": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "stressFlag": true,
+  "anger_stress": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_anger",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "talkPicks": [
+   "mouth_M",
+   "mouth_rest",
+   "mouth_AA_half",
+   "mouth_OH_half",
+   "mouth_OH",
+   "mouth_AA"
+  ],
+  "talkPicksAnger": false,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)",
+  "errors": []
+ },
+ "left": {
+  "clipState": {
+   "name": "anger",
+   "ready": true,
+   "time": 0,
+   "error": ""
+  },
+  "shapes": [
+   "rest",
+   "M",
+   "smile",
+   "OH_half",
+   "AA_half",
+   "EE_half",
+   "OH",
+   "AA",
+   "EE"
+  ],
+  "anger": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "stressFlag": true,
+  "anger_stress": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "talkPicks": [
+   "mouth_M",
+   "mouth_rest",
+   "mouth_AA_half",
+   "mouth_OH_half",
+   "mouth_OH",
+   "mouth_AA"
+  ],
+  "talkPicksAnger": false,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "errors": []
+ },
+ "right": {
+  "clipState": {
+   "name": "anger",
+   "ready": true,
+   "time": 0,
+   "error": ""
+  },
+  "shapes": [
+   "rest",
+   "M",
+   "smile",
+   "OH_half",
+   "AA_half",
+   "EE_half",
+   "OH",
+   "AA",
+   "EE"
+  ],
+  "anger": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "stressFlag": true,
+  "anger_stress": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_M",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "talkPicks": [
+   "mouth_M",
+   "mouth_rest",
+   "mouth_AA_half",
+   "mouth_OH_half",
+   "mouth_OH",
+   "mouth_AA"
+  ],
+  "talkPicksAnger": false,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "errors": []
+ },
+ "back": {
+  "clipState": {
+   "name": "anger",
+   "ready": true,
+   "time": 0,
+   "error": ""
+  },
+  "shapes": [],
+  "anger": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "stressFlag": true,
+  "anger_stress": {
+   "0": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "1": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "2": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "3": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   },
+   "0.2": {
+    "pick": "mouth_rest",
+    "MouthForm": 0,
+    "MouthOpen": 0
+   },
+   "0.3": {
+    "pick": "mouth_rest",
+    "MouthForm": -1,
+    "MouthOpen": 0.25
+   }
+  },
+  "talkPicks": [
+   "mouth_rest"
+  ],
+  "talkPicksAnger": false,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (back, skin mesh)",
+  "errors": []
+ }
+}

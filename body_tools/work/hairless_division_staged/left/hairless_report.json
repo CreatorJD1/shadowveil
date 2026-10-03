@@ -1,0 +1,490 @@
+{
+ "view": "left",
+ "hair_mask_px": 29370,
+ "components": {
+  "visible_hair_part_px": 28685,
+  "specks_px": 0,
+  "residual_hair_px": 457,
+  "hairline_fringe_px": 228,
+  "erase_mask_extra": 0
+ },
+ "sweep_mask": false,
+ "changed_px_total": 26421,
+ "changed_outside_hair_mask": 3423,
+ "changed_outside_hair_mask_and_forehead_clean": 1604,
+ "hair_handoff": {
+  "crescent_px": 0,
+  "crescent_to_skin": 0,
+  "crescent_kept_in_locks": 0,
+  "flyaway_px": 0,
+  "flyaway_alpha0_after": 0,
+  "flyaway_changed_vs_base": 0,
+  "brow_above_px": 0,
+  "brow_to_skin": 0,
+  "brow_in_locks": 0
+ },
+ "forehead_clean": {
+  "cleared_to_flat_skin_px": 1819,
+  "of_which_outside_hair_mask": 1819,
+  "components": 29,
+  "kept_far_from_hair_px": 0,
+  "flattened_skin_noise_px": 1136,
+  "ear_top_row": 205,
+  "eye_lock_px": 1803
+ },
+ "lock_changed": {
+  "eye_brow": 0,
+  "mouth": 21,
+  "hand": 0,
+  "nose": 6,
+  "beauty_marks": 0,
+  "face_oval_nonhair": 0,
+  "ear": 0
+ },
+ "face_lock_total_changed": 26,
+ "filled_skin_px": 20188,
+ "cranium_line_px": 476,
+ "ear_line_fill_dropped_floating": 0,
+ "ear_fill_poly_px": 0,
+ "ear_line_px": 0,
+ "cleared_to_alpha0_px": 8706,
+ "kept_ink_other_views": {
+  "listed_px_in_source": 642,
+  "cut_into_staged_hair_part_px": 0,
+  "kept_as_drawn_px": 642,
+  "kept_components": [
+   {
+    "kind": "thick",
+    "px": 125,
+    "x": [
+     605,
+     687
+    ],
+    "y": [
+     84,
+     114
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 52,
+    "x": [
+     593,
+     603
+    ],
+    "y": [
+     115,
+     140
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 130,
+    "x": [
+     786,
+     796
+    ],
+    "y": [
+     143,
+     217
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 29,
+    "x": [
+     590,
+     598
+    ],
+    "y": [
+     148,
+     158
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 35,
+    "x": [
+     777,
+     786
+    ],
+    "y": [
+     218,
+     237
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 21,
+    "x": [
+     772,
+     778
+    ],
+    "y": [
+     239,
+     247
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 48,
+    "x": [
+     734,
+     760
+    ],
+    "y": [
+     253,
+     273
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 16,
+    "x": [
+     727,
+     729
+    ],
+    "y": [
+     278,
+     283
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     671,
+     675
+    ],
+    "y": [
+     82,
+     82
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     680,
+     684
+    ],
+    "y": [
+     82,
+     82
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 17,
+    "x": [
+     637,
+     644
+    ],
+    "y": [
+     83,
+     87
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     626,
+     628
+    ],
+    "y": [
+     89,
+     91
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     630,
+     632
+    ],
+    "y": [
+     90,
+     91
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     616,
+     620
+    ],
+    "y": [
+     95,
+     99
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     609,
+     611
+    ],
+    "y": [
+     106,
+     108
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     594,
+     597
+    ],
+    "y": [
+     110,
+     113
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 15,
+    "x": [
+     587,
+     592
+    ],
+    "y": [
+     115,
+     126
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     589,
+     590
+    ],
+    "y": [
+     132,
+     134
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     790,
+     792
+    ],
+    "y": [
+     146,
+     148
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     792,
+     795
+    ],
+    "y": [
+     157,
+     160
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     794,
+     794
+    ],
+    "y": [
+     167,
+     169
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 37,
+    "x": [
+     800,
+     802
+    ],
+    "y": [
+     171,
+     183
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 8,
+    "x": [
+     796,
+     796
+    ],
+    "y": [
+     176,
+     183
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 13,
+    "x": [
+     794,
+     794
+    ],
+    "y": [
+     211,
+     223
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     787,
+     789
+    ],
+    "y": [
+     235,
+     237
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     784,
+     786
+    ],
+    "y": [
+     239,
+     241
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     767,
+     769
+    ],
+    "y": [
+     255,
+     256
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 11,
+    "x": [
+     754,
+     758
+    ],
+    "y": [
+     266,
+     268
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     747,
+     749
+    ],
+    "y": [
+     268,
+     269
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 7,
+    "x": [
+     749,
+     755
+    ],
+    "y": [
+     273,
+     279
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     735,
+     739
+    ],
+    "y": [
+     274,
+     274
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     731,
+     734
+    ],
+    "y": [
+     279,
+     280
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 9,
+    "x": [
+     740,
+     742
+    ],
+    "y": [
+     282,
+     285
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     729,
+     730
+    ],
+    "y": [
+     284,
+     286
+    ]
+   }
+  ]
+ },
+ "skin_rgb": [
+  185,
+  122,
+  78
+ ],
+ "skin_detect_ref_rgb": [
+  180,
+  119,
+  75
+ ],
+ "skin_rgb_sampled": [
+  180,
+  119,
+  75
+ ],
+ "fill_px_written_in_skin_rgb": 22007,
+ "native_px_in_detect_ref_colour_kept": 135,
+ "source": "body_tools/work/hairless_division_staged/left/live_patch_staged/base_body.png",
+ "keep_boxes": [],
+ "line_rgb": [
+  13,
+  11,
+  29
+ ]
+}

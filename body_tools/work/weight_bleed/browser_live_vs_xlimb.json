@@ -1,0 +1,170 @@
+{
+ "left": {
+  "rest_px_vs_base": {
+   "live": 0,
+   "xlimb": 0
+  },
+  "skin": "views/left/body/cand_skin_xlimb.json",
+  "poses": {
+   "rest": {
+    "px_changed": 0,
+    "new_holes": 0,
+    "bbox": null
+   },
+   "ShoulderL+1": {
+    "px_changed": 68,
+    "new_holes": 0,
+    "bbox": [
+     604,
+     611,
+     629,
+     620
+    ]
+   },
+   "ElbowL+1": {
+    "px_changed": 15,
+    "new_holes": 0,
+    "bbox": [
+     684,
+     637,
+     688,
+     641
+    ]
+   },
+   "ShoulderL+1_ElbowL+1": {
+    "px_changed": 103,
+    "new_holes": 0,
+    "bbox": [
+     608,
+     608,
+     679,
+     640
+    ]
+   },
+   "HipL+1": {
+    "px_changed": 0,
+    "new_holes": 0,
+    "bbox": null
+   },
+   "ShoulderL-1": {
+    "px_changed": 175,
+    "new_holes": 0,
+    "bbox": [
+     744,
+     627,
+     788,
+     638
+    ]
+   },
+   "ElbowL-1": {
+    "px_changed": 45,
+    "new_holes": 0,
+    "bbox": [
+     683,
+     640,
+     690,
+     650
+    ]
+   },
+   "ShoulderL-1_ElbowL-1": {
+    "px_changed": 458,
+    "new_holes": 48,
+    "bbox": [
+     685,
+     629,
+     791,
+     643
+    ]
+   },
+   "HipL-1": {
+    "px_changed": 0,
+    "new_holes": 0,
+    "bbox": null
+   }
+  }
+ },
+ "right": {
+  "rest_px_vs_base": {
+   "live": 0,
+   "xlimb": 0
+  },
+  "skin": "views/right/body/cand_skin_xlimb.json",
+  "poses": {
+   "rest": {
+    "px_changed": 0,
+    "new_holes": 0,
+    "bbox": null
+   },
+   "ShoulderR+1": {
+    "px_changed": 254,
+    "new_holes": 0,
+    "bbox": [
+     582,
+     630,
+     639,
+     642
+    ]
+   },
+   "ElbowR+1": {
+    "px_changed": 114,
+    "new_holes": 0,
+    "bbox": [
+     682,
+     611,
+     689,
+     653
+    ]
+   },
+   "ShoulderR+1_ElbowR+1": {
+    "px_changed": 882,
+    "new_holes": 48,
+    "bbox": [
+     580,
+     611,
+     671,
+     648
+    ]
+   },
+   "HipR+1": {
+    "px_changed": 0,
+    "new_holes": 0,
+    "bbox": null
+   },
+   "ShoulderR-1": {
+    "px_changed": 130,
+    "new_holes": 0,
+    "bbox": [
+     732,
+     609,
+     769,
+     624
+    ]
+   },
+   "ElbowR-1": {
+    "px_changed": 80,
+    "new_holes": 0,
+    "bbox": [
+     683,
+     628,
+     689,
+     643
+    ]
+   },
+   "ShoulderR-1_ElbowR-1": {
+    "px_changed": 267,
+    "new_holes": 0,
+    "bbox": [
+     712,
+     603,
+     765,
+     635
+    ]
+   },
+   "HipR-1": {
+    "px_changed": 0,
+    "new_holes": 0,
+    "bbox": null
+   }
+  }
+ }
+}

@@ -1,6 +1,6 @@
 # Read-only QA: live rest hair vs hair drawn in the A-pose turn frames at the 4 handoff frames.
 # Writes only under hair/qa/turn_handoff/. Run one view at a time: python3 measure.py <view>
-import json,sys,os,glob,gc
+import json,sys,os,glob,gc  # measure.py v2
 import numpy as np, cv2
 from PIL import Image
 R='/workspace/shadowveil'; OUT=R+'/hair/qa/turn_handoff'
@@ -11,13 +11,17 @@ W,Hh=1365,1739
 def A(p): return np.asarray(Image.open(p).getchannel('A'))
 # ---------- live visible hair mask (rest composite == base.png) ----------
 rig=json.load(open(f'{R}/views/{v}/hair/rig.json'))['parts']
-parts={}; lo=np.zeros((Hh,W),bool); hi=np.zeros((Hh,W),bool)
+# v2 (Oct 2 2026): a hair part below the body (layer<200) is visible where base_body is transparent OR where base_body carries the
+# identical pixel (back view: hair_back's mass is duplicated on base_body, 20.8k px; v1 treated it as hidden -> IoU 0.27).
+BB=np.asarray(Image.open(f'{R}/views/{v}/base_body.png').convert('RGBA'))
+parts={}; lo=np.zeros((Hh,W),bool); hi=np.zeros((Hh,W),bool); dup=np.zeros((Hh,W),bool)
 for p in rig:
-    a=A(f'{R}/views/{v}/hair/{p["file"]}')>127
+    im=np.asarray(Image.open(f'{R}/views/{v}/hair/{p["file"]}').convert('RGBA')); a=im[...,3]>127
     parts[p['id']]=(a,p['layer'])
-    if p['layer']<200: lo|=a
+    if p['layer']<200: lo|=a; dup|=a&(BB==im).all(-1)
     else: hi|=a
-occ=A(f'{R}/views/{v}/base_body.png')>127
+occ=(BB[...,3]>127)&~dup
+del BB
 for sub in ['hands','mouth']:
     for f in glob.glob(f'{R}/views/{v}/{sub}/*.png'):
         if 'chroma' in f: continue

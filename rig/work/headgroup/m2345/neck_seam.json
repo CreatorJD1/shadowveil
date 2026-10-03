@@ -1,0 +1,70 @@
+{
+ "apose": {
+  "frame": 1,
+  "offset_dx_dy": [
+   0,
+   -9
+  ],
+  "neck_gap_px": 3,
+  "neck_gap_px_whole_figure": 371,
+  "neck_interior_semitransparent_px": [
+   0,
+   0
+  ],
+  "neck_stretch_px": 9,
+  "neck_shear_px": 0,
+  "neck_overlap_px": 0,
+  "note": "skin mesh: neck skin stretches (dy<0) or compresses (dy>0) by the offset; no cut"
+ },
+ "left": {
+  "frame": 62,
+  "offset_dx_dy": [
+   0,
+   11
+  ],
+  "neck_gap_px": 0,
+  "neck_gap_px_whole_figure": 119,
+  "neck_interior_semitransparent_px": [
+   39,
+   37
+  ],
+  "neck_stretch_px": -11,
+  "neck_shear_px": 0,
+  "neck_overlap_px": 0,
+  "note": "skin mesh: neck skin stretches (dy<0) or compresses (dy>0) by the offset; no cut"
+ },
+ "back": {
+  "frame": 109,
+  "offset_dx_dy": [
+   2,
+   11
+  ],
+  "neck_gap_px": 0,
+  "neck_gap_px_whole_figure": 0,
+  "neck_interior_semitransparent_px": [
+   40,
+   44
+  ],
+  "neck_stretch_px": -11,
+  "neck_shear_px": 2,
+  "neck_overlap_px": 0,
+  "note": "skin mesh: neck skin stretches (dy<0) or compresses (dy>0) by the offset; no cut"
+ },
+ "right": {
+  "frame": 160,
+  "offset_dx_dy": [
+   3,
+   5
+  ],
+  "neck_gap_px": 0,
+  "neck_gap_px_whole_figure": 202,
+  "neck_interior_semitransparent_px": [
+   34,
+   41
+  ],
+  "neck_stretch_px": -5,
+  "neck_shear_px": 3,
+  "neck_overlap_px": 0,
+  "note": "skin mesh: neck skin stretches (dy<0) or compresses (dy>0) by the offset; no cut"
+ }
+}

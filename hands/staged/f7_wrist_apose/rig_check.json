@@ -1,0 +1,214 @@
+{
+ "hl2": {
+  "rest_vs_hairless_apose": {
+   "total": 29828,
+   "hand_mask": 799,
+   "wrist_boxes": 163,
+   "hand_mask_or_boxes": 894
+  },
+  "L wrist_Lp1": {
+   "holes": 0,
+   "tears": 2,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L wrist_Lm1": {
+   "holes": 0,
+   "tears": -1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.005
+  },
+  "L anger+0.14": {
+   "holes": 0,
+   "tears": -1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L jump-0.2": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L jump+0.2969": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.006
+  },
+  "L run-0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.012
+  },
+  "L run+0.12": {
+   "holes": 0,
+   "tears": -1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.012
+  },
+  "R wrist_Rp1": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.01
+  },
+  "R wrist_Rm1": {
+   "holes": 0,
+   "tears": 3,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.01
+  },
+  "R anger+0.14": {
+   "holes": 0,
+   "tears": 2,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.019
+  },
+  "R jump-0.2": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.006
+  },
+  "R jump+0.2969": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.006
+  },
+  "R run-0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.012
+  },
+  "R run+0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.03
+  }
+ },
+ "plain2": {
+  "rest_vs_hairless_apose": {
+   "total": 29828,
+   "hand_mask": 799,
+   "wrist_boxes": 163,
+   "hand_mask_or_boxes": 894
+  },
+  "L wrist_Lp1": {
+   "holes": 0,
+   "tears": 2,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L wrist_Lm1": {
+   "holes": 0,
+   "tears": 3,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L anger+0.14": {
+   "holes": 0,
+   "tears": -1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L jump-0.2": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L jump+0.2969": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.012
+  },
+  "L run-0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "L run+0.12": {
+   "holes": 0,
+   "tears": -1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.006
+  },
+  "R wrist_Rp1": {
+   "holes": 0,
+   "tears": 3,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.005
+  },
+  "R wrist_Rm1": {
+   "holes": 0,
+   "tears": 4,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.0
+  },
+  "R anger+0.14": {
+   "holes": 0,
+   "tears": 2,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.019
+  },
+  "R jump-0.2": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.006
+  },
+  "R jump+0.2969": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.006
+  },
+  "R run-0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.006
+  },
+  "R run+0.12": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "dw": 0.03
+  }
+ }
+}

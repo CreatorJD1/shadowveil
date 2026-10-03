@@ -1,0 +1,68 @@
+{
+ "left": {
+  "rest_FR_vs_control": 0,
+  "restPixels_vs_control": 0,
+  "restPixels_vs_base": {
+   "control": 0,
+   "handorder": 0
+  },
+  "restCheck": {
+   "control": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+   "handorder": "PASS: rest vs base.png, 0 px differ (left, skin mesh)"
+  },
+  "z_handorder": {
+   "body:forearm_L": 250,
+   "body:forearm_R": 205,
+   "body:thigh_L": 242,
+   "body:thigh_R": 203,
+   "hands:L_palm": 246,
+   "hands:R_palm": 210
+  },
+  "z_control": {
+   "body:forearm_L": 250,
+   "body:forearm_R": 205,
+   "body:thigh_L": 242,
+   "body:thigh_R": 203,
+   "hands:L_palm": 320,
+   "hands:R_palm": 210
+  },
+  "scheme": "staged handorder: hands 243-248 (thigh 242 < hands < forearm 250)",
+  "staged_handorder": [
+   "200 hands/staged/f11_wrist_profile_back/left/L_palm.png"
+  ],
+  "errors": []
+ },
+ "right": {
+  "rest_FR_vs_control": 0,
+  "restPixels_vs_control": 0,
+  "restPixels_vs_base": {
+   "control": 0,
+   "handorder": 0
+  },
+  "restCheck": {
+   "control": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+   "handorder": "PASS: rest vs base.png, 0 px differ (right, skin mesh)"
+  },
+  "z_handorder": {
+   "body:forearm_L": 205,
+   "body:forearm_R": 250,
+   "body:thigh_L": 203,
+   "body:thigh_R": 242,
+   "hands:L_palm": 210,
+   "hands:R_palm": 243
+  },
+  "z_control": {
+   "body:forearm_L": 205,
+   "body:forearm_R": 250,
+   "body:thigh_L": 203,
+   "body:thigh_R": 242,
+   "hands:L_palm": 210,
+   "hands:R_palm": 300
+  },
+  "scheme": "staged handorder: hands 243-248 (thigh 242 < hands < forearm 250)",
+  "staged_handorder": [
+   "200 hands/staged/f11_wrist_profile_back/right/R_palm.png"
+  ],
+  "errors": []
+ }
+}

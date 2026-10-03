@@ -1,0 +1,287 @@
+{
+ "view": "apose",
+ "roi": [
+  560,
+  760,
+  800,
+  1000
+ ],
+ "crotch_box": [
+  640,
+  820,
+  722,
+  900
+ ],
+ "poses": [
+  "rest",
+  "HipL+1",
+  "HipL-1",
+  "HipR+1",
+  "HipR-1",
+  "Hips+1",
+  "Hips-1",
+  "HipL+1,HipR-1",
+  "HipL-1,HipR+1"
+ ],
+ "angles": {
+  "rest": {},
+  "HipL+1": {
+   "thigh_L": 25
+  },
+  "HipL-1": {
+   "thigh_L": -25
+  },
+  "HipR+1": {
+   "thigh_R": 25
+  },
+  "HipR-1": {
+   "thigh_R": -25
+  },
+  "Hips+1": {
+   "thigh_L": 25,
+   "thigh_R": 25
+  },
+  "Hips-1": {
+   "thigh_L": -25,
+   "thigh_R": -25
+  },
+  "HipL+1,HipR-1": {
+   "thigh_L": 25,
+   "thigh_R": -25
+  },
+  "HipL-1,HipR+1": {
+   "thigh_L": -25,
+   "thigh_R": 25
+  }
+ },
+ "result": {
+  "live": {
+   "skin": "views/apose/body/skin.json",
+   "rest": {
+    "holes_roi": 0,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL+1": {
+    "holes_roi": 5138,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL-1": {
+    "holes_roi": 8139,
+    "holes_crotch_box": 1105,
+    "holes_above_apex_y875": 430,
+    "notch_top_y": 851
+   },
+   "HipR+1": {
+    "holes_roi": 8271,
+    "holes_crotch_box": 1203,
+    "holes_above_apex_y875": 468,
+    "notch_top_y": 852
+   },
+   "HipR-1": {
+    "holes_roi": 5741,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "Hips+1": {
+    "holes_roi": 9254,
+    "holes_crotch_box": 402,
+    "holes_above_apex_y875": 194,
+    "notch_top_y": 848
+   },
+   "Hips-1": {
+    "holes_roi": 9705,
+    "holes_crotch_box": 322,
+    "holes_above_apex_y875": 177,
+    "notch_top_y": 846
+   },
+   "HipL+1,HipR-1": {
+    "holes_roi": 9790,
+    "holes_crotch_box": 3,
+    "holes_above_apex_y875": 3,
+    "notch_top_y": 829
+   },
+   "HipL-1,HipR+1": {
+    "holes_roi": 16318,
+    "holes_crotch_box": 2216,
+    "holes_above_apex_y875": 806,
+    "notch_top_y": 856
+   }
+  },
+  "cb24": {
+   "skin": "rig/work/crotch_weights/apose_skin_cb24.json",
+   "rest": {
+    "holes_roi": 0,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL+1": {
+    "holes_roi": 5140,
+    "holes_crotch_box": 2,
+    "holes_above_apex_y875": 2,
+    "notch_top_y": 844
+   },
+   "HipL-1": {
+    "holes_roi": 7000,
+    "holes_crotch_box": 815,
+    "holes_above_apex_y875": 292,
+    "notch_top_y": 847
+   },
+   "HipR+1": {
+    "holes_roi": 7055,
+    "holes_crotch_box": 811,
+    "holes_above_apex_y875": 315,
+    "notch_top_y": 847
+   },
+   "HipR-1": {
+    "holes_roi": 5748,
+    "holes_crotch_box": 7,
+    "holes_above_apex_y875": 7,
+    "notch_top_y": 844
+   },
+   "Hips+1": {
+    "holes_roi": 8429,
+    "holes_crotch_box": 396,
+    "holes_above_apex_y875": 256,
+    "notch_top_y": 846
+   },
+   "Hips-1": {
+    "holes_roi": 8962,
+    "holes_crotch_box": 417,
+    "holes_above_apex_y875": 246,
+    "notch_top_y": 845
+   },
+   "HipL+1,HipR-1": {
+    "holes_roi": 9787,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL-1,HipR+1": {
+    "holes_roi": 14045,
+    "holes_crotch_box": 1616,
+    "holes_above_apex_y875": 597,
+    "notch_top_y": 849
+   }
+  },
+  "ulnb": {
+   "skin": "rig/work/crotch_weights/apose_skin_ulnb.json",
+   "rest": {
+    "holes_roi": 0,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL+1": {
+    "holes_roi": 5138,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL-1": {
+    "holes_roi": 7875,
+    "holes_crotch_box": 841,
+    "holes_above_apex_y875": 183,
+    "notch_top_y": 851
+   },
+   "HipR+1": {
+    "holes_roi": 8060,
+    "holes_crotch_box": 992,
+    "holes_above_apex_y875": 257,
+    "notch_top_y": 852
+   },
+   "HipR-1": {
+    "holes_roi": 5741,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "Hips+1": {
+    "holes_roi": 9141,
+    "holes_crotch_box": 289,
+    "holes_above_apex_y875": 81,
+    "notch_top_y": 848
+   },
+   "Hips-1": {
+    "holes_roi": 9550,
+    "holes_crotch_box": 167,
+    "holes_above_apex_y875": 22,
+    "notch_top_y": 871
+   },
+   "HipL+1,HipR-1": {
+    "holes_roi": 9790,
+    "holes_crotch_box": 3,
+    "holes_above_apex_y875": 3,
+    "notch_top_y": 829
+   },
+   "HipL-1,HipR+1": {
+    "holes_roi": 15872,
+    "holes_crotch_box": 1770,
+    "holes_above_apex_y875": 377,
+    "notch_top_y": 856
+   }
+  },
+  "cb24ulnb": {
+   "skin": "rig/work/crotch_weights/apose_skin_cb24ulnb.json",
+   "rest": {
+    "holes_roi": 0,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL+1": {
+    "holes_roi": 5140,
+    "holes_crotch_box": 2,
+    "holes_above_apex_y875": 2,
+    "notch_top_y": 844
+   },
+   "HipL-1": {
+    "holes_roi": 6856,
+    "holes_crotch_box": 671,
+    "holes_above_apex_y875": 165,
+    "notch_top_y": 847
+   },
+   "HipR+1": {
+    "holes_roi": 6926,
+    "holes_crotch_box": 682,
+    "holes_above_apex_y875": 186,
+    "notch_top_y": 847
+   },
+   "HipR-1": {
+    "holes_roi": 5748,
+    "holes_crotch_box": 7,
+    "holes_above_apex_y875": 7,
+    "notch_top_y": 844
+   },
+   "Hips+1": {
+    "holes_roi": 8301,
+    "holes_crotch_box": 268,
+    "holes_above_apex_y875": 128,
+    "notch_top_y": 846
+   },
+   "Hips-1": {
+    "holes_roi": 8820,
+    "holes_crotch_box": 275,
+    "holes_above_apex_y875": 119,
+    "notch_top_y": 845
+   },
+   "HipL+1,HipR-1": {
+    "holes_roi": 9787,
+    "holes_crotch_box": 0,
+    "holes_above_apex_y875": 0,
+    "notch_top_y": null
+   },
+   "HipL-1,HipR+1": {
+    "holes_roi": 13772,
+    "holes_crotch_box": 1343,
+    "holes_above_apex_y875": 341,
+    "notch_top_y": 849
+   }
+  }
+ }
+}

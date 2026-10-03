@@ -1,0 +1,42 @@
+{
+  "selection": "/workspace/shadowveil/hair/staged/ear_strands/tpose/for_base_body/tpose_eye_corner_px_combined.json",
+  "selection_entries": 181,
+  "skin_rgba": [
+    186,
+    129,
+    86,
+    255
+  ],
+  "targets": {
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/hairless_tpose.png": {
+      "listed": 181,
+      "changed": 181,
+      "already_skin": 0,
+      "outside_changes": 0
+    },
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/pieces/head.png": {
+      "listed": 181,
+      "changed": 181,
+      "already_skin": 0,
+      "outside_changes": 0
+    },
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body.png": {
+      "listed": 181,
+      "changed": 181,
+      "already_skin": 0,
+      "outside_changes": 0
+    },
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body_skin.png": {
+      "listed": 181,
+      "changed": 181,
+      "already_skin": 0,
+      "outside_changes": 0
+    }
+  },
+  "backups": [
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/pre_eye_corner_fill/hairless_tpose.png",
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/pre_eye_corner_fill/pieces/head.png",
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/pre_eye_corner_fill/live_patch_staged/base_body.png",
+    "/workspace/shadowveil/body_tools/work/hairless_division_staged/tpose/pre_eye_corner_fill/live_patch_staged/base_body_skin.png"
+  ]
+}

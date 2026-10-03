@@ -1,0 +1,5 @@
+QA gates  views=['apose', 'tpose', 'left', 'right', 'back'] part=hair  PASS=True
+  G2 live      {'off_palette': 0, 'chroma': 0, 'soft_edge': 7385, 'files': 47}
+  G2 staged    {'off_palette': 0, 'chroma': 0, 'soft_edge': 7385, 'files': 47}
+  G2 diagonals {'off_palette': 0, 'chroma': 0, 'soft_edge': 0, 'files': 34}
+  G2 mesh_outside_mask total=0

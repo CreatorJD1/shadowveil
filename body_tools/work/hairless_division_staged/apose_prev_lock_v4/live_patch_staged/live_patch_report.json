@@ -1,0 +1,17 @@
+{
+ "note": "STAGED copies of views/apose/base_body.png + base_body_skin.png (live untouched). Flyaway px -> alpha 0; eye-corner crescent px -> skin (186,129,85,255) except px inside the eye/brow lock (kept as drawn, covered by hair_front at rest).",
+ "base_body.png": {
+  "flyaway_alpha0": 35,
+  "crescent_to_skin": 207,
+  "crescent_kept_in_eye_lock": 34,
+  "px_changed_vs_live": 242,
+  "flyaway_alpha_before_max": 79
+ },
+ "base_body_skin.png": {
+  "flyaway_alpha0": 35,
+  "crescent_to_skin": 207,
+  "crescent_kept_in_eye_lock": 34,
+  "px_changed_vs_live": 242,
+  "flyaway_alpha_before_max": 79
+ }
+}

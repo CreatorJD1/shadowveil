@@ -1,0 +1,47 @@
+{
+ "view": "apose",
+ "hair_mask_px": 21032,
+ "components": {
+  "visible_hair_part_px": 19919,
+  "specks_px": 58,
+  "residual_hair_px": 828,
+  "hairline_fringe_px": 227,
+  "erase_mask_extra": 0
+ },
+ "sweep_mask": false,
+ "changed_px_total": 24930,
+ "changed_outside_hair_mask": 3898,
+ "changed_outside_hair_mask_and_forehead_clean": 0,
+ "forehead_clean": {
+  "cleared_to_flat_skin_px": 3898,
+  "of_which_outside_hair_mask": 3898,
+  "components": 35,
+  "kept_far_from_hair_px": 30,
+  "flattened_skin_noise_px": 3321,
+  "ear_top_row": 216,
+  "eye_lock_px": 4810
+ },
+ "lock_changed": {
+  "eye_brow": 0,
+  "mouth": 0,
+  "hand": 0,
+  "nose": 0,
+  "beauty_marks": 0,
+  "face_oval_nonhair": 0
+ },
+ "face_lock_total_changed": 0,
+ "filled_skin_px": 6183,
+ "cranium_line_px": 290,
+ "ear_line_px": 45,
+ "cleared_to_alpha0_px": 14529,
+ "skin_rgb": [
+  186,
+  129,
+  85
+ ],
+ "line_rgb": [
+  13,
+  11,
+  29
+ ]
+}

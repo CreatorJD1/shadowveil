@@ -1,0 +1,153 @@
+{
+ "view": "diagonal_225",
+ "frame": "f131",
+ "source": "reference/apose_turn/frames/f131.png",
+ "canvas": [
+  768,
+  1168
+ ],
+ "units": "FRAME px of the turn frame, origin top-left; parts full-canvas (x=y=0) in drawn position. Map to view space with viewFit.",
+ "viewFit": {
+  "scale": 1.57335,
+  "dx": 56.1,
+  "dy": -44.96,
+  "rule": "base_x = scale*frame_x + dx; base_y = scale*frame_y + dy"
+ },
+ "headGroup": {
+  "note": "root hair parts (parent null) are carried by the head bone / HEAD GROUP, as in views/*/hair/rig.json",
+  "pivot_view": [
+   681.5,
+   318
+  ],
+  "pivot_frame": [
+   397.5,
+   230.69
+  ]
+ },
+ "swayYMaxPx": 1.91,
+ "swayYMaxPx_note": "view value 3 px / scale",
+ "springBones": [
+  "strand_01",
+  "strand_03_tip",
+  "strand_03",
+  "bun"
+ ],
+ "parts": [
+  {
+   "id": "hair_back",
+   "file": "hair_back.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 396.29,
+   "pivotY": 123.53,
+   "parent": null,
+   "layer": 100,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0,
+   "px": 11179,
+   "parentGroup": "head"
+  },
+  {
+   "id": "hair_front",
+   "file": "hair_front.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 396.29,
+   "pivotY": 123.53,
+   "parent": null,
+   "layer": 600,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0,
+   "px": 0,
+   "parentGroup": "head"
+  },
+  {
+   "id": "strand_01",
+   "file": "strand_01.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 447.07,
+   "pivotY": 109.3,
+   "parent": "hair_back",
+   "layer": 601,
+   "swayWeight": 1.0,
+   "maxSwayDeg": 10.0,
+   "swayY": 1.0,
+   "px": 145
+  },
+  {
+   "id": "strand_03_tip",
+   "file": "strand_03_tip.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 427.81,
+   "pivotY": 195.74,
+   "parent": "strand_03",
+   "layer": 607,
+   "swayWeight": 0.95,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.9,
+   "px": 85
+  },
+  {
+   "id": "strand_03",
+   "file": "strand_03.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 425.14,
+   "pivotY": 182.39,
+   "parent": "hair_back",
+   "layer": 608,
+   "swayWeight": 0.57,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.9,
+   "px": 50
+  },
+  {
+   "id": "extra_1",
+   "file": "extra_1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 352.05,
+   "pivotY": 211.62,
+   "parent": "hair_back",
+   "layer": 621,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0,
+   "note": "no front-view strand at this angle; static",
+   "px": 19
+  },
+  {
+   "id": "extra_2",
+   "file": "extra_2.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 321.54,
+   "pivotY": 178.57,
+   "parent": "hair_back",
+   "layer": 622,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0,
+   "note": "no front-view strand at this angle; static",
+   "px": 0
+  },
+  {
+   "id": "bun",
+   "file": "bun.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 344.42,
+   "pivotY": 118.83,
+   "parent": "hair_back",
+   "layer": 650,
+   "swayWeight": 0.3,
+   "maxSwayDeg": 4.0,
+   "swayY": 0.3,
+   "px": 3503
+  }
+ ]
+}

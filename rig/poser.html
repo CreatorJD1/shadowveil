@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>Shadowveil poser (unified)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Unified poser + animator (staged). Drives the REAL renderer rig/index.html in an iframe through its existing globals
+     (P / v / inputs, set(k,x), draw(), RigManual(), mouthPick(), makeAnim(), stepHair(), hairDrive, coeff(), bodyParamOf(), R).
+     rig/index.html is never edited, and nothing is drawn on the character here: every pixel of her comes from the rig's own render.
+     Hooks that would replace the eval-based access are listed in rig/poser/HOOKS.md. -->
+<style>
+:root{--bg:#14161b;--fg:#e2e6ee;--mut:#8f98a8;--line:#2b303b;--acc:#6aa9ff;--warn:#d9a93a;--panel:#191c23;--key:#ffcf5a}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:14px system-ui,sans-serif}
+#app{display:grid;grid-template-columns:minmax(320px,1fr) 420px;height:100%}
+#left{display:grid;grid-template-rows:1fr auto;min-width:0;min-height:0}
+#stagewrap{position:relative;min-height:0;background:#2a2a30;overflow:hidden}
+#stagewrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#turnstill{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff}#turnstill[hidden]{display:none}
+#loading{position:absolute;left:10px;top:10px;background:#000c;padding:6px 12px;border-radius:5px;font-size:13px;color:#f1c56a}#loading:empty{display:none}
+#stagelabel{position:absolute;right:10px;top:10px;background:#000a;padding:4px 10px;border-radius:5px;font-size:12px;color:#cfd6e2}
+aside{overflow:auto;border-left:1px solid var(--line);background:var(--panel);padding:8px 12px 30px}
+h1{font-size:16px;margin:2px 0 8px}
+.bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0}
+details{border-top:1px solid var(--line);padding:2px 0 8px}
+details>summary{cursor:pointer;font-size:15px;font-weight:600;padding:8px 0 6px;color:#fff}
+details details>summary{font-size:13px;font-weight:600;color:#b9c3d3;padding:6px 0 4px}
+details details{border-top:1px dashed var(--line);margin-left:2px}
+h4{margin:10px 0 4px;font-size:13px;color:#cbd3e0}
+.row{display:grid;grid-template-columns:132px 1fr 62px;gap:8px;align-items:center;padding:2px 0}.row input[type=range]{width:100%}
+.row .val{color:var(--mut);font-size:11px;text-align:right;font-variant-numeric:tabular-nums}
+.row.off{opacity:.4}.note{font-size:11px;color:var(--mut);margin:1px 0 4px;line-height:1.35}.warn{color:var(--warn)}
+button,select,input[type=number]{background:#242936;color:var(--fg);border:1px solid #39404e;border-radius:5px;padding:5px 10px;cursor:pointer;font-size:13px}
+input[type=number]{width:70px;cursor:text}
+button.on{background:var(--acc);color:#081018;border-color:var(--acc)}button:disabled,select:disabled{opacity:.4;cursor:not-allowed}
+button.big{font-size:14px;padding:7px 14px;font-weight:600}
+.sw{display:flex;align-items:center;gap:8px;padding:3px 0}
+.pad{position:relative;background:#0f1115;border:1px solid var(--line);border-radius:7px;cursor:crosshair;touch-action:none;user-select:none}
+.pad:before,.pad:after{content:'';position:absolute;background:#262b35}.pad:before{left:50%;top:0;bottom:0;width:1px}.pad:after{top:50%;left:0;right:0;height:1px}
+.pad .dot{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 2px #0008;z-index:2}
+.pad .mk{position:absolute;font-size:10px;color:#7f8aa0;transform:translate(-50%,-50%);pointer-events:none;white-space:nowrap}
+.pad .mk.act{color:#fff;font-weight:700}.pad.off{opacity:.35;pointer-events:none}
+#mpad{width:100%;height:150px}#mpad:after{display:none}#gpad{width:180px;height:110px}
+.shape{font-size:13px;margin:4px 0}.shape b{color:var(--key)}
+.dial svg{width:204px;height:170px}.dial text{font:11px system-ui;fill:#cfd5df;cursor:pointer;text-anchor:middle;dominant-baseline:middle}
+.dial text.on{fill:#fff;font-weight:700}.dial text.still{fill:#8a93a3}
+#timeline{border-top:1px solid var(--line);background:#171a20;padding:8px 12px}
+#tlrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+#scrubwrap{position:relative;margin:8px 0 2px;height:34px}
+#scrub{position:absolute;left:0;right:0;top:12px;width:100%}
+#keymarks{position:absolute;left:8px;right:8px;top:0;height:12px;pointer-events:none}
+#keymarks i{position:absolute;top:0;width:10px;height:10px;margin-left:-5px;transform:rotate(45deg);background:var(--key);pointer-events:auto;cursor:pointer}
+#keymarks i.sel{background:#fff;outline:2px solid var(--key)}
+#tlinfo{font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums}
+</style></head>
+<body><div id="app">
+<div id="left">
+  <div id="stagewrap"><iframe id="rig" title="live rig"></iframe><img id="turnstill" alt="authored turn frame" hidden><div id="loading">loading rig…</div><div id="stagelabel"></div></div>
+  <div id="timeline">
+    <div id="tlrow">
+      <button id="tl-play" class="big" title="Play / pause (Space)">▶ Play</button>
+      <label class="sw"><input type="checkbox" id="tl-loop" checked>Loop</label>
+      <button id="tl-prev" title="previous key">⏮ key</button><button id="tl-next" title="next key">key ⏭</button>
+      <button id="tl-key" class="big" title="Store the current pose as a key at the playhead (K)">◆ Set key</button>
+      <button id="tl-del" title="delete the selected key">Delete key</button>
+      <label class="sw">Ease <select id="tl-ease" title="ease from the selected key to the next one"><option value="linear">linear</option><option value="in">ease in</option><option value="out">ease out</option><option value="inout" selected>ease in/out</option><option value="hold">hold (step)</option></select></label>
+      <label class="sw">Mouth <select id="tl-mouth" title="mouth from the selected key to the next one"><option value="step" selected>stepped (hold)</option><option value="smooth">smooth tween</option></select></label>
+    </div>
+    <div id="scrubwrap"><div id="keymarks"></div><input type="range" id="scrub" min="0" max="120" step="1" value="0" aria-label="timeline playhead"></div>
+    <div id="tlrow">
+      <span id="tlinfo"></span>
+      <label class="sw">Length (s) <input type="number" id="tl-dur" min="0.5" max="60" step="0.5" value="4"></label>
+      <label class="sw">FPS <select id="tl-fps"><option>24</option><option selected>30</option><option>60</option></select></label>
+      <label class="sw">Seed <input type="number" id="tl-seed" value="1337" step="1"></label>
+      <button id="tl-export">Export timeline</button><button id="tl-import">Import timeline</button><button id="tl-clear">Clear keys</button>
+    </div>
+  </div>
+</div>
+<aside id="panel">
+  <h1>Shadowveil poser</h1>
+  <div class="bar"><button id="reset" class="big" title="Every control to rest; hair spring zeroed; 0 px against the rig default">⟲ Reset to rest</button>
+    <button id="undo" title="Undo (Ctrl+Z)">↶ Undo</button><button id="redo" title="Redo (Ctrl+Shift+Z / Ctrl+Y)">↷ Redo</button>
+    <button id="save">Save pose</button><button id="load">Load pose</button><input type="file" id="file" accept=".json,application/json" hidden></div>
+  <div id="msg" class="note"></div>
+
+  <details open><summary>View and turn</summary>
+    <div class="bar"><select id="view" aria-label="view"></select><span class="note" id="viewnote"></span></div>
+    <div class="dial" id="dial"></div>
+  </details>
+
+  <details open id="sec-face"><summary>Face</summary>
+    <h4>Eyes</h4>
+    <div class="note">Gaze: drag the pad (Her right ← → Her left; up / down). Double-click to centre. <span id="gazepx"></span></div>
+    <div class="pad" id="gpad"><i class="dot"></i></div>
+    <div id="eyes-blink"></div>
+    <label class="sw"><input type="checkbox" id="eyelink" checked>Link both lids</label>
+    <label class="sw"><input type="checkbox" id="autoblink">Auto-blink (≈333 ms, every 2.5–5 s, upper lid; seeded)</label>
+    <label class="sw"><input type="checkbox" id="headlead" checked>Eyes lead head turns (timeline; follows the head's on-screen motion), blink on a reversal</label>
+    <div id="eyes-lead"></div>
+    <h4>Mouth</h4>
+    <div class="note">Drag: MouthForm across (−1 … +1), MouthOpen up (0 … 1). The rig shows the nearest drawn shape.</div>
+    <div class="pad" id="mpad"><i class="dot"></i></div>
+    <div class="shape">Drawn shape: <b id="mshape">rest</b></div>
+    <div class="bar" id="mquick"></div>
+    <details><summary>Fine mouth sliders</summary><div id="mouth-fine"></div></details>
+  </details>
+
+  <details open id="sec-body"><summary>Body</summary><div id="body"></div></details>
+  <details open id="sec-hands"><summary>Hands</summary><div id="hands"></div></details>
+  <details open id="sec-hair"><summary>Hair</summary><div id="hair"></div></details>
+  <details id="sec-adv"><summary>Advanced</summary><div id="adv"></div></details>
+</aside>
+</div>
+<script>
+'use strict';
+(() => {
+const $ = s => document.querySelector(s);
+const h = (t, a = {}, ...c) => { const e = document.createElement(t); for (const [k, x] of Object.entries(a)) { if (k === 'on') for (const [ev, f] of Object.entries(x)) e.addEventListener(ev, f); else if (x !== false && x != null) e.setAttribute(k, x === true ? '' : x) } for (const y of c.flat()) if (y != null) e.append(y.nodeType ? y : document.createTextNode(y)); return e };
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+const RIG = 'index.html';
+const VIEWS = ['apose', 'tpose', 'left', 'right', 'back'];
+// 8-angle turn (rig/partmesh/FORMAT.md 3.6): 0 apose, 90 left, 180 back, 270 right are live views; the diagonals have no posable
+// rig slot yet, so they show her authored turn frame (reference/apose_turn, body_tools/work/apose_turn/angle_map.json anchors).
+const TURN = [[0, 'apose'], [45, 33], [90, 'left'], [135, 87], [180, 'back'], [225, 131], [270, 'right'], [315, 191]];
+const HER = s => s === 'L' ? 'Her left' : 'Her right';
+const FING = ['Index', 'Middle', 'Ring', 'Pinky'], ALLF = ['Thumb', ...FING];
+// Advanced flags: '' = the live default (the URL parameter is omitted entirely)
+const FLAGS = [
+  ['quality', 'Posed filtering', [['', 'live default (2× supersampled)'], ['linear', 'linear'], ['nearest', 'nearest']]],
+  ['seal', 'Edge seal', [['', 'live default (on)'], ['0', 'off']]],
+  ['footplant', 'Foot plant (root)', [['', 'live default (foot line + x)'], ['y', 'foot line only'], ['off', 'off']]],
+  ['mouthfade', 'Mouth switch', [['', 'live default (35 ms crossfade)'], ['0', 'hard cut']]],
+  ['mouthfix', 'Mouth fix (staged)', [['', 'off (live)'], ['1', 'on']]],
+  ['headgroup', 'Head group (staged)', [['', 'off (live)'], ['1', 'on']]],
+  ['partmesh', 'Part mesh (staged)', [['', 'off (live)'], ['1', 'on']]],
+  ['hairless', 'Hairless division (staged)', [['', 'off (live)'], ['1', 'on']]],
+  ['hlhandcut', 'Hairless hand cut (staged)', [['', 'off (live)'], ['1', 'on']]],
+  ['handangles', 'Generated hand angles', [['', 'live default (on)'], ['off', 'off']]],
+  ['ss2rest', 'ss2 exact rest (staged)', [['', 'off (live)'], ['1', 'on']]],
+];
+const BLINK0 = { close: 0.042, hold: 0.165, open: 0.125, min: 2.5, max: 5.0, turnGap: 2.5 };   // = rig BLINK (eyes/work/reference_timing)
+
+const S = { view: 'apose', turn: 0, cw: null, ready: false, gen: 0, flags: {}, P: null, vals: {}, eyeLink: true, handLink: false,
+  autoBlink: false, headLead: true, leadMs: 150, hair: { on: false, sway: 1, preset: 'A' }, ik: { L: null, R: null },
+  tl: { keys: [], dur: 4, fps: 30, loop: true, frame: 0, playing: false, sel: -1, seed: 1337, t0: 0, f0: 0 },
+  undo: [], redo: [], dirty: false, live: { hairA: null, blink: null, last: 0 }, bake: null, eyeBake: null, lastPick: '' };
+const ctls = [];
+const ev = js => S.cw.eval(js);
+const has = k => S.ready && S.P && k in S.P;
+const enabled = k => { if (!has(k)) return false; try { const i = ev('inputs')[k]; return !(i && i.disabled) } catch { return false } };
+const noFace = () => { try { return !!ev('!!(R&&R.noFace)') } catch { return true } };
+const isStill = () => typeof TURN.find(t => t[0] === S.turn)?.[1] === 'number';
+const msg = (t, warn) => { const m = $('#msg'); m.textContent = t || ''; m.classList.toggle('warn', !!warn) };
+
+/* ---------------- parameter writes ---------------- */
+function defaults() { const o = {}; for (const k in S.P) o[k] = S.P[k][2]; return o }
+function setV(k, x, push = true) {
+  if (!S.P || !(k in S.P)) return; const p = S.P[k]; x = clamp(+x, p[0], p[1]); S.vals[k] = x;
+  if (push && S.ready && enabled(k)) { try { S.cw.set(k, x) } catch { } }
+  S.dirty = true;
+}
+function pushAll(vals) {   // write a full value map into the rig (disabled params stay at their default, as the rig requires)
+  if (!S.ready) return; const v = ev('v'), inp = ev('inputs');
+  for (const k in S.P) { const x = vals[k] ?? S.P[k][2]; const off = inp[k] && inp[k].disabled; v[k] = off ? S.P[k][2] : x; if (inp[k]) inp[k].value = v[k] }
+  S.dirty = true;
+}
+function draw() { if (!S.ready) return; try { S.cw.draw() } catch (e) { console.warn('rig draw failed', e) } S.dirty = false }
+
+/* ---------------- generic controls ---------------- */
+function slider(sec, id, label, o) {
+  const i = h('input', { type: 'range', min: o.min, max: o.max, step: o.step ?? 0.01, value: 0, 'aria-label': label, 'data-ctl': id });
+  const val = h('span', { class: 'val' }), row = h('div', { class: 'row', title: (o.keys || []).join(', ') }, h('span', {}, label), i, val);
+  const c = { id, el: i, row, val, kind: 'range', ...o };
+  i.addEventListener('input', () => { c.set(+i.value); val.textContent = (c.fmt || fmt2)(+i.value); afterEdit() });
+  i.addEventListener('change', commit);
+  i.addEventListener('dblclick', () => { c.set(c.rest ?? 0); afterEdit(); commit() });
+  sec.append(row); if (o.note) sec.append(h('div', { class: 'note' }, o.note)); ctls.push(c); return c;
+}
+const fmt2 = x => (+x).toFixed(2);
+function param(sec, k, label, o = {}) {
+  const c = slider(sec, 'p:' + k, label, { keys: [k], min: o.min ?? -1, max: o.max ?? 1, get: () => S.vals[k], set: x => { if (!isIK(k)) setV(k, x) }, en: () => enabled(k) && !isIK(k), rest: o.rest ?? 0, ...o });
+  return c;
+}
+function check(el, on) { el.addEventListener('change', () => { on(el.checked); commit() }) }
+
+/* ---------------- degrees / tested ranges from the rig ---------------- */
+function boneOf(k) { try { const bs = ev('R.skin?R.skin.bones:(R.body?R.body.parts:[])'); return bs.find(b => S.cw.bodyParamOf(b) === k) || null } catch { return null } }
+function degCoeff(k) {   // [deg at +1, deg at -1]
+  if (k === 'HeadTilt') return [8, -8]; if (k === 'HeadNod') return [6, -6];
+  if (/^Wrist[LR]$/.test(k)) { let mx = 25; try { mx = +(ev('R.hands&&R.hands.wristMaxDeg') || 25) } catch { } return [mx, -mx] }
+  if (/Twist/.test(k)) { let mx = 0; try { mx = S.cw.RigTwist.maxDegrees(k) } catch { } return [mx, -mx] }
+  const b = boneOf(k); if (!b) return null; try { return S.cw.coeff(b, k) } catch { return null }
+}
+const degOf = (k, x) => { const c = degCoeff(k); if (!c) return null; return x >= 0 ? x * c[0] : Math.abs(x) * c[1] };
+function jointFmt(k) { return x => { const d = degOf(k, x); return d == null ? fmt2(x) : (d >= 0 ? '+' : '') + d.toFixed(1) + '°' } }
+function rangeNote(k) { const c = degCoeff(k); if (!c) return ''; const a = Math.abs(c[0]), b = Math.abs(c[1]); return a === b ? `±${a}°` : `+${c[0]}° / ${c[1]}°` }
+
+/* ---------------- Foot IK (2-bone, heel planted at heelRest + offset; ankle keeps the sole level) ---------------- */
+const isIK = k => { for (const s of ['L', 'R']) if (S.ik[s] && ['Hip' + s, 'Knee' + s, 'Ankle' + s].includes(k)) return true; return false };
+function legGeo(s) {
+  try {
+    const bs = ev('R.skin?R.skin.bones:(R.body?R.body.parts:[])'); const g = id => { const b = bs.find(q => q.id === id); return b ? [b.pivotX, b.pivotY] : null };
+    const Hp = g('thigh_' + s), K = g('shin_' + s), A = g('foot_' + s); if (!Hp || !K || !A) return null;
+    const F = ev('R.feet&&R.feet.' + s); let heel = null;
+    if (F && F.pts && F.pts.length) { const ymax = Math.max(...F.pts.map(p => p.y)); const low = F.pts.filter(p => p.y >= ymax - 2); heel = [low.reduce((a, p) => a + p.x, 0) / low.length, ymax] }
+    if (!heel) heel = [A[0], A[1] + 40];
+    return { H: Hp, K, A, heel };
+  } catch { return null }
+}
+function toParam(k, deg) { const c = degCoeff(k); if (!c) return { x: 0, clipped: true }; const [up, dn] = c; let x = 0;
+  if (Math.abs(deg) < 1e-9) x = 0; else if (up && deg / up > 0) x = deg / up; else if (dn && deg / dn > 0) x = -deg / dn; else return { x: 0, clipped: true };
+  const xc = clamp(x, -1, 1); return { x: xc, clipped: Math.abs(x - xc) > 1e-6 } }
+function solveIK(s) {
+  const ik = S.ik[s]; if (!ik) return; const G = legGeo(s); if (!G) { ik.note = 'no leg bones in this view'; return }
+  const rx = S.vals.RootX || 0, ry = S.vals.RootY || 0; const H = [G.H[0] + rx, G.H[1] + ry];
+  const a2h = [G.heel[0] - G.A[0], G.heel[1] - G.A[1]]; const T = [G.heel[0] + ik.dx - a2h[0], G.heel[1] + ik.dy - a2h[1]];
+  const L1 = Math.hypot(G.K[0] - G.H[0], G.K[1] - G.H[1]), L2 = Math.hypot(G.A[0] - G.K[0], G.A[1] - G.K[1]);
+  let d = Math.hypot(T[0] - H[0], T[1] - H[1]); const dC = clamp(d, Math.abs(L1 - L2) + 1e-3, L1 + L2 - 1e-3); const reach = Math.abs(d - dC) < 0.5;
+  const base = Math.atan2(T[1] - H[1], T[0] - H[0]); const cosA = clamp((L1 * L1 + dC * dC - L2 * L2) / (2 * L1 * dC), -1, 1); const al = Math.acos(cosA);
+  const r1 = Math.atan2(G.K[1] - G.H[1], G.K[0] - G.H[0]), r2 = Math.atan2(G.A[1] - G.K[1], G.A[0] - G.K[0]);
+  const wrap = a => { while (a > Math.PI) a -= 2 * Math.PI; while (a < -Math.PI) a += 2 * Math.PI; return a };
+  let best = null;
+  for (const sg of [1, -1]) { const t1 = base + sg * al; const Kp = [H[0] + L1 * Math.cos(t1), H[1] + L1 * Math.sin(t1)]; const t2 = Math.atan2(T[1] - Kp[1], T[0] - Kp[0]);
+    const d1 = wrap(t1 - r1), d2 = wrap(t2 - r2) - d1; const cost = d1 * d1 + d2 * d2; if (!best || cost < best.cost) best = { d1, d2, cost } }
+  const R2D = 180 / Math.PI, hip = toParam('Hip' + s, best.d1 * R2D), knee = toParam('Knee' + s, best.d2 * R2D), ank = toParam('Ankle' + s, -(best.d1 + best.d2) * R2D);
+  setV('Hip' + s, hip.x); setV('Knee' + s, knee.x); setV('Ankle' + s, ank.x);
+  ik.note = `heelRest (${G.heel[0].toFixed(0)}, ${G.heel[1].toFixed(0)}) px · ` + ((hip.clipped || knee.clipped || ank.clipped || !reach) ? 'target outside the tested ±25° range: clamped' : 'within the tested range');
+}
+
+/* ---------------- deterministic helpers ---------------- */
+function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296 } }
+const EASE = { linear: u => u, in: u => u * u * u, out: u => 1 - Math.pow(1 - u, 3), inout: u => u < .5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2, hold: () => 0 };
+const MOUTH = ['MouthOpen', 'MouthForm'];
+function pickShape(o, f) { try { const v = ev('v'); const a = v.MouthOpen, b = v.MouthForm; v.MouthOpen = o; v.MouthForm = f; const r = S.cw.mouthPick(); v.MouthOpen = a; v.MouthForm = b; return r } catch { return '' } }
+// keyed pose at time t (no blink / lead / hair overlays). Mouth: stepped by default; 'smooth' never shows a drawn shape that is not one of the two keys'.
+function poseAt(t) {
+  const K = S.tl.keys; if (!K.length) return { ...S.vals };
+  if (t <= K[0].t) return { ...K[0].values }; const last = K[K.length - 1]; if (t >= last.t) return { ...last.values };
+  let i = 0; while (i < K.length - 1 && !(t >= K[i].t && t < K[i + 1].t)) i++;
+  const a = K[i], b = K[i + 1], u = (t - a.t) / (b.t - a.t), e = (EASE[a.ease] || EASE.inout)(u), o = {};
+  for (const k in S.P) { const x = a.values[k] ?? S.P[k][2], y = b.values[k] ?? S.P[k][2]; o[k] = x + (y - x) * e }
+  if (a.mouth !== 'smooth') { for (const k of MOUTH) o[k] = a.values[k] ?? 0 }
+  else { const sa = pickShape(a.values.MouthOpen ?? 0, a.values.MouthForm ?? 0), sb = pickShape(b.values.MouthOpen ?? 0, b.values.MouthForm ?? 0), sm = pickShape(o.MouthOpen, o.MouthForm);
+    if (sm !== sa && sm !== sb) { const src = e < 0.5 ? a : b; for (const k of MOUTH) o[k] = src.values[k] ?? 0 } }
+  return o;
+}
+const nFrames = () => Math.max(1, Math.round(S.tl.dur * S.tl.fps));
+// eyes bake: seeded blink schedule + reversal blinks on the keyed head turn (NeckTwist), simulated frame by frame at the fixed step
+// the head's on-screen x (canvas px) for a pose, from the rig's own headPose() (body chain + head tilt/nod + root).
+// NeckTwist is a neck-skin projection only (renders: the head does not move), so it is not used as the turn signal.
+const HEADK = () => Object.keys(S.P).filter(k => /^(BodyLean|Shoulder|Elbow|Hip|Knee|Ankle|Toe|Root|Head)/.test(k));
+function headX(o) { const v = ev('v'), ks = HEADK(), sv = {}; for (const k of ks) { sv[k] = v[k]; v[k] = o[k] ?? S.P[k][2] } let x = 0; try { x = S.cw.headPose().x } catch { } for (const k of ks) v[k] = sv[k]; return x }
+function headSpan() { const x0 = headX({}), x1 = headX({ BodyLean: 1 }); return { x0, full: Math.abs(x1 - x0) || 1 } }
+function bakeEyes() {
+  const N = nFrames(), fps = S.tl.fps, dt = 1 / fps, r = rng(S.tl.seed), B = BLINK0, lead = S.leadMs / 1000;
+  const hs = headSpan(), hx = Array.from({ length: N + 1 }, (_, f) => (headX(poseAt(f * dt)) - hs.x0) / hs.full), yaw = f => hx[clamp(f, 0, N)];
+  const req = new Set(); if (S.headLead) { let dir = 0, ext = yaw(0); for (let f = 1; f <= N; f++) { const d = yaw(f) - yaw(f - 1), s = Math.sign(Math.abs(d) < 1e-6 ? 0 : d);
+    if (s && s !== dir) { if (dir && Math.abs(yaw(f - 1) - ext) >= 0.05) req.add(Math.max(0, f - 1 - Math.round(lead * fps))); dir = s; ext = yaw(f - 1) } } }
+  const open = new Float32Array(N + 1); let next = 0.8 + r() * 2, t0 = -1, lastEnd = -10, want = false;
+  for (let f = 0; f <= N; f++) { const t = f * dt; if (req.has(f)) want = true;
+    if (t0 < 0 && (t >= next || (want && t - lastEnd >= B.turnGap))) { t0 = t; want = false }
+    let o = 1; if (t0 >= 0) { const u = t - t0; if (u < B.close) o = 1 - u / B.close; else if (u < B.close + B.hold) o = 0; else if (u < B.close + B.hold + B.open) { const q = (u - B.close - B.hold) / B.open; o = q * q } else { t0 = -1; lastEnd = t; next = t + B.min + r() * (B.max - B.min) } }
+    open[f] = o }
+  S.eyeBake = { open, req: [...req], hx };
+}
+// hair bake: the rig's own stepHair, stepped from frame 0 at the fixed step with each frame's keyed pose; cached per frame
+function invalidate() { S.bake = null; S.eyeBake = null }
+function bakeHairTo(f) {
+  if (!S.hair.on || !S.ready) return null;
+  if (!S.bake) { S.bake = { A: S.cw.makeAnim(S.tl.seed), drives: [] } }
+  const B = S.bake, dt = 1 / S.tl.fps;
+  while (B.drives.length <= f) { const i = B.drives.length; pushAll(poseAt(i * dt)); B.A.t = i * dt; S.cw.stepHair(B.A, dt);
+    B.drives.push(JSON.parse(JSON.stringify(ev('hairDrive') || {}))) }
+  return B.drives[f];
+}
+function applyHair(drive) {   // scale the spring output by the sway amount (cap 1.0); off = no drive and 0 sway (exactly rest)
+  if (!S.hair.on || !drive) { S.cw.__poserDrive = null; ev('hairDrive=window.__poserDrive'); const v = ev('v'); v.HairSwayX = S.vals.HairSwayX ?? 0; v.HairSwayY = S.vals.HairSwayY ?? 0; return }
+  const s = S.hair.sway, o = {}; let sx = 0, sy = 0, n = 0; const info = ev('R.hairInfo||{}');
+  for (const id in drive) { o[id] = { x: clamp(drive[id].x * s, -1, 1), y: clamp(drive[id].y * s, -1, 1) }; if (info[id] && !info[id].parent) { sx += o[id].x; sy += o[id].y; n++ } }
+  S.cw.__poserDrive = o; ev('hairDrive=window.__poserDrive'); const v = ev('v'); v.HairSwayX = n ? sx / n : 0; v.HairSwayY = n ? sy / n : 0;
+}
+// one timeline frame, fully determined by (keys, seed, fps, toggles): scrub == playback
+function frameState(f) {
+  const t = f / S.tl.fps, o = poseAt(t);
+  if (S.autoBlink) { if (!S.eyeBake) bakeEyes(); const b = S.eyeBake.open[Math.min(f, S.eyeBake.open.length - 1)]; o.EyeLOpen = Math.min(o.EyeLOpen, b); o.EyeROpen = Math.min(o.EyeROpen, b) }
+  // eyes lead the head: EyeBallX + = screen right (her left), head x + = screen right; the gaze jumps ~0.4 toward where the head will be
+  if (S.headLead) { if (!S.eyeBake) bakeEyes(); const H = S.eyeBake.hx, fl = clamp(f + Math.round(S.leadMs / 1000 * S.tl.fps), 0, H.length - 1); o.EyeBallX = clamp(o.EyeBallX + 0.4 * clamp(H[fl], -1, 1), -1, 1) }
+  return o;
+}
+function applyFrame(f) {
+  if (!S.ready) return; f = clamp(Math.round(f), 0, nFrames()); S.tl.frame = f; syncFade();
+  const keyed = poseAt(f / S.tl.fps); const drive = bakeHairTo(f);
+  pushAll(frameState(f)); applyHair(drive);
+  for (const k in keyed) S.vals[k] = keyed[k];          // the panel shows the keyed pose (overlays are not stored)
+  draw(); syncUI(); syncTL();
+}
+
+/* ---------------- undo / redo, pose JSON ---------------- */
+const snap = () => JSON.stringify({ vals: S.vals, hair: S.hair, ik: S.ik, eyeLink: S.eyeLink, handLink: S.handLink });
+function commit() { const s = snap(); if (S.undo[S.undo.length - 1] !== s) { S.undo.push(s); if (S.undo.length > 300) S.undo.shift(); S.redo = [] } syncButtons() }
+function restore(s) { const o = JSON.parse(s); S.vals = o.vals; S.hair = o.hair; S.ik = o.ik; S.eyeLink = o.eyeLink; S.handLink = o.handLink; S.live.hairA = null; invalidate(); applyManual(); syncUI() }
+function undo() { if (S.undo.length < 2) return; S.redo.push(S.undo.pop()); restore(S.undo[S.undo.length - 1]); syncButtons() }
+function redo() { if (!S.redo.length) return; const s = S.redo.pop(); S.undo.push(s); restore(s); syncButtons() }
+function syncButtons() { $('#undo').disabled = S.undo.length < 2; $('#redo').disabled = !S.redo.length }
+function nonDefault(vals) { const o = {}; for (const k in S.P) if (Math.abs((vals[k] ?? S.P[k][2]) - S.P[k][2]) > 1e-9) o[k] = +(+vals[k]).toFixed(4); return o }
+function download(name, obj) { const a = h('a', { href: URL.createObjectURL(new Blob([JSON.stringify(obj, null, 1)], { type: 'application/json' })), download: name }); document.body.append(a); a.click(); a.remove() }
+function poseJSON() { return { contract: 'shadowveil poser pose v1', view: S.view, values: nonDefault(S.vals), hair: { ...S.hair }, footIK: S.ik } }
+function loadPose(o) {
+  if (!o || !o.values) throw new Error('not a pose file (no "values")'); const d = defaults(); S.vals = { ...d };
+  for (const k in o.values) if (k in S.P) S.vals[k] = clamp(+o.values[k], S.P[k][0], S.P[k][1]);
+  if (o.hair) S.hair = { on: !!o.hair.on, sway: clamp(+o.hair.sway || 0, 0, 1), preset: o.hair.preset === 'B' ? 'B' : 'A' };
+  S.ik = o.footIK && typeof o.footIK === 'object' ? { L: o.footIK.L || null, R: o.footIK.R || null } : { L: null, R: null };
+  invalidate(); applyManual(); commit(); syncUI();
+}
+let fileMode = 'pose';
+function openFile(mode) { fileMode = mode; $('#file').value = ''; $('#file').click() }
+
+/* ---------------- manual (non-timeline) apply ---------------- */
+function applyManual() {
+  if (!S.ready) return; for (const s of ['L', 'R']) if (S.ik[s]) solveIK(s);
+  pushAll(S.vals); if (!S.hair.on) { S.live.hairA = null; applyHair(null) }
+  draw(); syncUI();
+}
+function afterEdit() { if (S.tl.playing) stopPlay(); for (const s of ['L', 'R']) if (S.ik[s]) solveIK(s); invalidate(); if (S.ready) { pushAll(S.vals); if (!S.hair.on) applyHair(null) } syncUI(true) }
+
+/* ---------------- reset ---------------- */
+function resetRest() {
+  stopPlay(); S.vals = defaults(); S.ik = { L: null, R: null }; S.hair.on = false; S.hair.sway = 1; S.autoBlink = false; S.live = { hairA: null, blink: null, last: 0 }; invalidate();
+  $('#autoblink').checked = false;
+  if (S.ready) { try { S.cw.document.getElementById('rest').click() } catch { pushAll(S.vals) } applyHair(null); draw() }   // the rig's own Reset: every P to default, hairDrive=null
+  commit(); syncUI(); msg('Rest: every control at its default, hair spring zeroed and off.');
+}
+
+/* ---------------- build panel ---------------- */
+function build() {
+  // view + dial
+  for (const v of VIEWS) $('#view').append(h('option', { value: v }, v));
+  $('#view').addEventListener('change', e => { const d = TURN.find(t => t[1] === e.target.value)?.[0]; goView(e.target.value, d ?? null) });
+  // eyes
+  gazePad(); blinkUI();
+  check($('#eyelink'), on => { S.eyeLink = on; if (on) { const x = Math.min(S.vals.EyeLOpen, S.vals.EyeROpen); setV('EyeLOpen', x); setV('EyeROpen', x); afterEdit() } blinkUI(); syncUI() });
+  check($('#autoblink'), on => { S.autoBlink = on; S.live.blink = null; invalidate(); if (!on) applyManual() });
+  check($('#headlead'), on => { S.headLead = on; invalidate() });
+  slider($('#eyes-lead'), 'lead', 'Eye lead (ms)', { min: 80, max: 250, step: 10, get: () => S.leadMs, set: x => { S.leadMs = x; invalidate() }, en: () => S.headLead, rest: 150, fmt: x => x.toFixed(0) + ' ms' });
+  // mouth
+  mouthPad();
+  for (const [n, o, f] of [['rest', 0, 0], ['AA', 1, 0], ['EE', 1, 1], ['OH', 1, -1], ['M', 0, -1], ['smile', 0, 1], ['anger', 0.25, -1]])
+    $('#mquick').append(h('button', { 'data-shape': n, on: { click: () => { setV('MouthOpen', o); setV('MouthForm', f); afterEdit(); commit() } } }, n));
+  slider($('#mouth-fine'), 'p:MouthForm', 'MouthForm', { keys: ['MouthForm'], min: -1, max: 1, get: () => S.vals.MouthForm, set: x => setV('MouthForm', x), en: () => !noFace() });
+  slider($('#mouth-fine'), 'p:MouthOpen', 'MouthOpen', { keys: ['MouthOpen'], min: 0, max: 1, get: () => S.vals.MouthOpen, set: x => setV('MouthOpen', x), en: () => !noFace() });
+  // body
+  const B = $('#body');
+  const grp = (title, open = true) => { const d = h('details', open ? { open: true } : {}, h('summary', {}, title)); B.append(d); return d };
+  const T = grp('Torso and head');
+  for (const [k, l] of [['BodyLean', 'Lean'], ['HeadTilt', 'Head tilt'], ['HeadNod', 'Head nod'], ['NeckTwist', 'Head turn (neck twist)']]) jointRow(T, k, l);
+  for (const s of ['L', 'R']) { const A = grp(HER(s) + ' arm'); jointRow(A, 'Shoulder' + s, 'Shoulder'); jointRow(A, 'Elbow' + s, 'Elbow');
+    const tw = h('details', {}, h('summary', {}, 'Twists')); A.append(tw); jointRow(tw, 'ShoulderTwist' + s, 'Shoulder twist'); jointRow(tw, 'ForearmTwist' + s, 'Forearm twist') }
+  for (const s of ['L', 'R']) { const Lg = grp(HER(s) + ' leg'); jointRow(Lg, 'Hip' + s, 'Hip'); jointRow(Lg, 'Knee' + s, 'Knee'); jointRow(Lg, 'Ankle' + s, 'Ankle'); jointRow(Lg, 'Toe' + s, 'Toes');
+    const ik = h('details', {}, h('summary', {}, 'Foot IK (heel planted)')); Lg.append(ik); ikUI(ik, s);
+    const tw = h('details', {}, h('summary', {}, 'Twists')); Lg.append(tw); for (const j of ['Hip', 'Knee', 'Ankle']) jointRow(tw, j + 'Twist' + s, j + ' twist') }
+  const Rt = grp('Root (px)', false); param(Rt, 'RootX', 'Root X', { min: -40, max: 40, step: 1, fmt: x => x.toFixed(0) + ' px' }); param(Rt, 'RootY', 'Root Y', { min: -40, max: 40, step: 1, fmt: x => x.toFixed(0) + ' px' });
+  // hands
+  handsUI();
+  // hair
+  hairUI();
+  // advanced
+  advUI();
+  // top bar
+  $('#reset').onclick = resetRest; $('#undo').onclick = undo; $('#redo').onclick = redo;
+  $('#save').onclick = () => download('pose_' + S.view + '.json', poseJSON()); $('#load').onclick = () => openFile('pose');
+  $('#file').addEventListener('change', async e => { const f = e.target.files[0]; if (!f) return; try { const o = JSON.parse(await f.text()); if (fileMode === 'pose') { loadPose(o); msg('Pose loaded: ' + f.name) } else { importTL(o); msg('Timeline loaded: ' + f.name) } } catch (er) { msg('Could not load ' + f.name + ': ' + er.message, true) } });
+  document.addEventListener('keydown', e => { if (e.target.tagName === 'INPUT' && e.target.type !== 'range' && e.target.type !== 'checkbox') return;
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { e.preventDefault(); e.shiftKey ? redo() : undo() } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') { e.preventDefault(); redo() }
+    else if (e.key === ' ' && e.target.tagName !== 'BUTTON') { e.preventDefault(); togglePlay() } else if (e.key.toLowerCase() === 'k' && !e.ctrlKey && !e.metaKey) setKey() });
+  timelineUI();
+}
+function jointRow(sec, k, label) {
+  const c = param(sec, k, label, { fmt: x => jointFmt(k)(x) });
+  const n = h('div', { class: 'note', 'data-range': k }); sec.append(n); c.rangeEl = n; return c;
+}
+function gazePad() {
+  const pad = $('#gpad'), dot = pad.querySelector('.dot'); let drag = false;
+  const put = e => { const r = pad.getBoundingClientRect(); const x = clamp(((e.clientX - r.left) / r.width) * 2 - 1, -1, 1), y = clamp(((e.clientY - r.top) / r.height) * 2 - 1, -1, 1); setV('EyeBallX', x); setV('EyeBallY', y); afterEdit() };
+  pad.addEventListener('pointerdown', e => { drag = true; pad.setPointerCapture(e.pointerId); put(e) });
+  pad.addEventListener('pointermove', e => { if (drag) put(e) });
+  pad.addEventListener('pointerup', () => { drag = false; commit() });
+  pad.addEventListener('dblclick', () => { setV('EyeBallX', 0); setV('EyeBallY', 0); afterEdit(); commit() });
+  ctls.push({ id: 'gaze', kind: 'pad', el: pad, keys: ['EyeBallX', 'EyeBallY'], en: () => !noFace(), sync: () => { dot.style.left = ((S.vals.EyeBallX + 1) / 2 * 100) + '%'; dot.style.top = ((S.vals.EyeBallY + 1) / 2 * 100) + '%' } });
+}
+function blinkUI() {
+  const E = $('#eyes-blink'); for (let i = ctls.length - 1; i >= 0; i--) if (/^lid/.test(ctls[i].id)) ctls.splice(i, 1); E.replaceChildren();
+  if (S.eyeLink) slider(E, 'lid', 'Blink (both lids)', { keys: ['EyeLOpen', 'EyeROpen'], min: 0, max: 1, get: () => 1 - Math.min(S.vals.EyeLOpen, S.vals.EyeROpen), set: x => { setV('EyeLOpen', 1 - x); setV('EyeROpen', 1 - x) }, en: () => !noFace(), rest: 0, fmt: x => x.toFixed(2) + ' shut' });
+  else { slider(E, 'lidL', 'Her left lid (green)', { keys: ['EyeLOpen'], min: 0, max: 1, get: () => 1 - S.vals.EyeLOpen, set: x => setV('EyeLOpen', 1 - x), en: () => !noFace(), rest: 0, fmt: x => x.toFixed(2) + ' shut' });
+    slider(E, 'lidR', 'Her right lid (amber)', { keys: ['EyeROpen'], min: 0, max: 1, get: () => 1 - S.vals.EyeROpen, set: x => setV('EyeROpen', 1 - x), en: () => !noFace(), rest: 0, fmt: x => x.toFixed(2) + ' shut' }) }
+  if (S.ready) syncUI();
+}
+function mouthPad() {
+  const pad = $('#mpad'), dot = pad.querySelector('.dot'); let drag = false;
+  const put = e => { const r = pad.getBoundingClientRect(); setV('MouthForm', clamp(((e.clientX - r.left) / r.width) * 2 - 1, -1, 1)); setV('MouthOpen', clamp(1 - (e.clientY - r.top) / r.height, 0, 1)); afterEdit() };
+  pad.addEventListener('pointerdown', e => { drag = true; pad.setPointerCapture(e.pointerId); put(e) });
+  pad.addEventListener('pointermove', e => { if (drag) put(e) });
+  pad.addEventListener('pointerup', () => { drag = false; commit() });
+  pad.addEventListener('dblclick', () => { setV('MouthForm', 0); setV('MouthOpen', 0); afterEdit(); commit() });
+  ctls.push({ id: 'mouth', kind: 'pad', el: pad, keys: MOUTH, en: () => !noFace(), sync: () => { dot.style.left = ((S.vals.MouthForm + 1) / 2 * 100) + '%'; dot.style.top = ((1 - S.vals.MouthOpen) * 100) + '%' } });
+}
+function mouthMarks() {   // label every drawn shape at its grid point (from the rig's own R.mouthShapes)
+  const pad = $('#mpad'); pad.querySelectorAll('.mk').forEach(m => m.remove()); let shapes = []; try { shapes = ev('(R.mouthShapes||[]).map(s=>({id:s.id,name:s.name,open:s.open,form:s.form}))') } catch { }
+  for (const s of shapes) { const tx = s.form <= -0.99 ? '0' : s.form >= 0.99 ? '-100%' : '-50%', ty = s.open >= 0.99 ? '0' : s.open <= 0.01 ? '-100%' : '-50%';
+    pad.append(h('span', { class: 'mk', 'data-id': s.id, style: `left:${(s.form + 1) / 2 * 100}%;top:${(1 - s.open) * 100}%;transform:translate(${tx},${ty});padding:0 3px` }, s.name)) }
+  for (const b of document.querySelectorAll('[data-shape]')) { const n = b.dataset.shape; const there = shapes.some(s => s.name === n); const profile = S.view === 'left' || S.view === 'right';
+    b.disabled = !there || noFace() || (n === 'anger' && profile); b.title = n === 'anger' && profile ? 'anger is front-only (greyed out in left / right)' : there ? '' : 'not drawn in this view' }
+}
+function ikUI(sec, s) {
+  const tog = h('input', { type: 'checkbox', 'data-ctl': 'ik' + s }); sec.append(h('label', { class: 'sw' }, tog, 'Drive hip / knee / ankle from the heel target'));
+  check(tog, on => { S.ik[s] = on ? { dx: 0, dy: 0 } : null; if (!on) { setV('Hip' + s, 0); setV('Knee' + s, 0); setV('Ankle' + s, 0) } afterEdit(); syncUI() });
+  ctls.push({ id: 'ik' + s, kind: 'check', el: tog, sync: () => { tog.checked = !!S.ik[s] } });
+  slider(sec, 'ikx' + s, 'Heel X', { min: -80, max: 80, step: 1, get: () => S.ik[s]?.dx ?? 0, set: x => { if (S.ik[s]) S.ik[s].dx = x }, en: () => !!S.ik[s], fmt: x => x.toFixed(0) + ' px' });
+  slider(sec, 'iky' + s, 'Heel Y (− = lift)', { min: -120, max: 20, step: 1, get: () => S.ik[s]?.dy ?? 0, set: x => { if (S.ik[s]) S.ik[s].dy = x }, en: () => !!S.ik[s], fmt: x => x.toFixed(0) + ' px' });
+  const n = h('div', { class: 'note', 'data-iknote': s }); sec.append(n);
+}
+const HAND_PRESETS = { rest: null, Fist: { c: [1, 1, 1, 1, 1] }, Point: { c: [1, 0, 1, 1, 1] }, Peace: { c: [1, 0, 0, 1, 1] }, Open: { c: [0, 0, 0, 0, 0], spread: 0.35 }, Spread: { c: [0, 0, 0, 0, 0], spread: 1, thumb: 0.5 } };
+function handKeys(s) { const ks = ['Hand' + s + 'Spread', 'Hand' + s + 'ThumbSpread', 'Wrist' + s, 'WristTwist' + s, 'PalmTwist' + s]; for (const f of ALLF) { ks.push('Hand' + s + f); for (let n = 1; n <= 3; n++) ks.push('Hand' + s + f + n) } return ks }
+function handPreset(n, s) {
+  for (const side of S.handLink ? ['L', 'R'] : [s]) {
+    const p = HAND_PRESETS[n];
+    if (!p) { for (const k of handKeys(side)) if (!/^(Wrist|Palm)/.test(k)) setV(k, 0); continue }   // rest: her painted hand (fingers), wrist untouched
+    ALLF.forEach((f, i) => { setV('Hand' + side + f, p.c[i]); for (let j = 1; j <= 3; j++) setV('Hand' + side + f + j, 0) });
+    setV('Hand' + side + 'Spread', p.spread ?? 0); setV('Hand' + side + 'ThumbSpread', p.thumb ?? 0);
+  }
+  afterEdit(); commit();
+}
+function handsUI() {
+  const Hs = $('#hands');
+  const link = h('input', { type: 'checkbox', 'data-ctl': 'handlink' }); Hs.append(h('label', { class: 'sw' }, link, 'Link both hands (presets and sliders apply to both)'));
+  check(link, on => { S.handLink = on }); ctls.push({ id: 'handlink', kind: 'check', el: link, sync: () => { link.checked = S.handLink } });
+  for (const s of ['L', 'R']) {
+    const d = h('details', { open: true }, h('summary', {}, HER(s) + ' hand')); Hs.append(d);
+    const bar = h('div', { class: 'bar' }); for (const n of Object.keys(HAND_PRESETS)) bar.append(h('button', { on: { click: () => handPreset(n, s) } }, n)); d.append(bar);
+    const both = (fn) => x => { for (const side of S.handLink ? ['L', 'R'] : [s]) fn(side, x) };
+    slider(d, 'curl' + s, 'Curl (4 fingers)', { keys: FING.map(f => 'Hand' + s + f), min: 0, max: 1, get: () => FING.reduce((a, f) => a + S.vals['Hand' + s + f], 0) / 4, set: both((side, x) => FING.forEach(f => setV('Hand' + side + f, x))), en: () => FING.some(f => enabled('Hand' + s + f)) });
+    slider(d, 'spread' + s, 'Spread', { keys: ['Hand' + s + 'Spread'], min: 0, max: 1, get: () => S.vals['Hand' + s + 'Spread'], set: both((side, x) => setV('Hand' + side + 'Spread', x)), en: () => enabled('Hand' + s + 'Spread') });
+    slider(d, 'thumb' + s, 'Thumb curl', { keys: ['Hand' + s + 'Thumb'], min: 0, max: 1, get: () => S.vals['Hand' + s + 'Thumb'], set: both((side, x) => setV('Hand' + side + 'Thumb', x)), en: () => enabled('Hand' + s + 'Thumb') });
+    slider(d, 'tswing' + s, 'Thumb swing', { keys: ['Hand' + s + 'ThumbSpread'], min: -1, max: 1, get: () => S.vals['Hand' + s + 'ThumbSpread'], set: both((side, x) => setV('Hand' + side + 'ThumbSpread', x)), en: () => enabled('Hand' + s + 'ThumbSpread') });
+    const wb = slider(d, 'wrist' + s, 'Wrist bend', { keys: ['Wrist' + s], min: -1, max: 1, get: () => S.vals['Wrist' + s], set: both((side, x) => setV('Wrist' + side, x)), en: () => enabled('Wrist' + s), fmt: x => jointFmt('Wrist' + s)(x) });
+    d.append(h('div', { class: 'note', 'data-range': 'Wrist' + s }));
+    slider(d, 'wtw' + s, 'Wrist twist', { keys: ['WristTwist' + s, 'PalmTwist' + s], min: -1, max: 1, get: () => S.vals['WristTwist' + s], set: both((side, x) => { setV('WristTwist' + side, x); setV('PalmTwist' + side, x) }), en: () => enabled('WristTwist' + s), fmt: x => (x * 180).toFixed(0) + '°',
+      note: 'Snaps to her authored hand angles (±180°); the forearm seam is skinned.' });
+    const ff = h('details', {}, h('summary', {}, 'Per finger')); d.append(ff);
+    for (const f of ALLF) { slider(ff, 'f' + s + f, f + ' curl', { keys: ['Hand' + s + f], min: 0, max: 1, get: () => S.vals['Hand' + s + f], set: both((side, x) => setV('Hand' + side + f, x)), en: () => enabled('Hand' + s + f) });
+      for (let n = 1; n <= 3; n++) slider(ff, 'f' + s + f + n, '  · joint ' + n, { keys: ['Hand' + s + f + n], min: -1, max: 1, get: () => S.vals['Hand' + s + f + n], set: both((side, x) => setV('Hand' + side + f + n, x)), en: () => enabled('Hand' + s + f + n), note: n === 3 ? '' : undefined }) }
+  }
+}
+function hairUI() {
+  const Hr = $('#hair');
+  const on = h('input', { type: 'checkbox', 'data-ctl': 'hairon' }); Hr.append(h('label', { class: 'sw' }, on, 'Sway on (springs follow head turns and tilts)'));
+  check(on, x => { S.hair.on = x; S.live.hairA = null; invalidate(); if (!x) applyManual() }); ctls.push({ id: 'hairon', kind: 'check', el: on, sync: () => { on.checked = S.hair.on } });
+  slider(Hr, 'sway', 'Sway amount', { min: 0, max: 1, step: 0.05, get: () => S.hair.sway, set: x => { S.hair.sway = x; invalidate() }, en: () => S.hair.on, rest: 1, note: 'Scales the spring output; 1.0 is the cap. Off = exactly 0 px at rest.' });
+  const sp = h('select', { 'data-ctl': 'preset' }, h('option', { value: 'A' }, 'A · 4.0 Hz / ζ 0.8 (default)'), h('option', { value: 'B' }, 'B · 2.0 Hz / ζ 0.6 (looser)'));
+  sp.addEventListener('change', () => { S.hair.preset = sp.value; setRigPreset(); S.live.hairA = null; invalidate(); commit() });
+  Hr.append(h('div', { class: 'sw' }, h('span', {}, 'Spring'), sp)); ctls.push({ id: 'preset', kind: 'select', el: sp, sync: () => { sp.value = S.hair.preset } });
+  Hr.append(h('div', { class: 'note' }, 'No hair bones to pose: the rig\'s springs react to the head. Reset zeroes the spring state.'));
+}
+function setRigPreset() { try { const e = S.cw.document.getElementById('hairpreset'); if (e.value !== S.hair.preset) { e.value = S.hair.preset; e.dispatchEvent(new Event('change', { bubbles: true })) } } catch { } }
+function advUI() {
+  const A = $('#adv');
+  A.append(h('div', { class: 'note' }, 'Experimental rig flags. Each defaults to the live default; changing one reloads the rig with that URL flag (the pose is kept).'));
+  for (const [k, label, opts] of FLAGS) { const sel = h('select', { 'data-flag': k }, opts.map(([v, t]) => h('option', { value: v }, t)));
+    sel.addEventListener('change', () => { if (sel.value) S.flags[k] = sel.value; else delete S.flags[k]; loadRig() });
+    A.append(h('div', { class: 'row' }, h('span', {}, label), sel, h('span', { class: 'val' }, k))) }
+  const bm = h('select', { 'data-ctl': 'bodymode' }, h('option', { value: 'auto' }, 'auto (skin if delivered)'), h('option', { value: 'cut' }, 'cut parts'), h('option', { value: 'skin' }, 'skin mesh'));
+  bm.addEventListener('change', () => { try { const e = S.cw.document.getElementById('bodymode'); e.value = bm.value; e.dispatchEvent(new Event('change', { bubbles: true })) } catch { } draw() });
+  A.append(h('div', { class: 'row' }, h('span', {}, 'Body render'), bm, h('span', { class: 'val' }, 'bodymode')));
+  const ul = h('input', { type: 'checkbox', checked: true }); ul.addEventListener('change', () => { try { const e = S.cw.document.getElementById('underlay'); e.checked = ul.checked; e.dispatchEvent(new Event('change', { bubbles: true })) } catch { } draw() });
+  A.append(h('label', { class: 'sw' }, ul, 'Skin underlay (live default on)'));
+  A.append(h('div', { class: 'bar' }, h('a', { href: RIG + '?view=' + S.view, target: '_blank', style: 'color:#8cf' }, 'Open the full rig debug page (QA tools, layers)')));
+}
+
+/* ---------------- sync ---------------- */
+function syncUI(skipFocused) {
+  if (!S.ready) return; const face = !noFace();
+  for (const c of ctls) {
+    const on = !isStill() && (c.en ? c.en() : true);
+    if (c.kind === 'range') { c.el.disabled = !on; c.row.classList.toggle('off', !on); if (!(skipFocused && document.activeElement === c.el)) { const x = c.get(); if (Number.isFinite(x)) { c.el.value = x; c.val.textContent = (c.fmt || fmt2)(x) } } }
+    else if (c.kind === 'pad') { c.el.classList.toggle('off', !on); c.sync() } else if (c.sync) c.sync();
+  }
+  for (const n of document.querySelectorAll('[data-range]')) { const k = n.dataset.range; const r = rangeNote(k); n.textContent = !enabled(k) ? 'not driven in this view' : r ? `tested hole-free range ${r}${/Twist/.test(k) ? ' (projection)' : ''}` : '' }
+  for (const n of document.querySelectorAll('[data-iknote]')) { const s = n.dataset.iknote; n.textContent = S.ik[s] ? (S.ik[s].note || '') : 'off: the joint sliders drive the leg' }
+  // mouth label + gaze px
+  let id = ''; try { id = S.cw.mouthPick() } catch { } $('#mshape').textContent = face ? (id || '').replace(/^mouth_/, '') : 'no face in this view';
+  for (const m of document.querySelectorAll('#mpad .mk')) m.classList.toggle('act', m.dataset.id === id);
+  let L = null; try { L = ev('R.eyes&&R.eyes.irisLimitsPx') } catch { }
+  const px = (x, p, m) => x >= 0 ? x * p : -x * m;
+  $('#gazepx').textContent = L && face ? `Iris ${px(S.vals.EyeBallX, L.dxAtXplus1, L.dxAtXminus1).toFixed(1)} px, ${px(S.vals.EyeBallY, L.dyAtYplus1, L.dyAtYminus1).toFixed(1)} px (limits x ${L.dxAtXminus1}…+${L.dxAtXplus1}, y ${L.dyAtYminus1}…+${L.dyAtYplus1})` : face ? '' : '(no face in this view)';
+  $('#autoblink').disabled = !face; $('#autoblink').checked = S.autoBlink;
+}
+function dial() {
+  const NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', '-96 -80 192 160');
+  const a0 = S.turn; svg.innerHTML = `<circle r="70" fill="#1c2029" stroke="#2a2f3b"/><circle r="18" fill="#232838" stroke="#2a2f3b"/>` + (S.view === 'tpose' ? '' : `<line x1="0" y1="0" x2="${(Math.sin(a0 * Math.PI / 180) * 44).toFixed(1)}" y2="${(-Math.cos(a0 * Math.PI / 180) * 44).toFixed(1)}" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>`);
+  const add = (x, y, label, on, cls, fn, title) => { const t = document.createElementNS(NS, 'text'); t.setAttribute('x', x); t.setAttribute('y', y); t.textContent = label; t.setAttribute('class', (on ? 'on ' : '') + (cls || '')); t.addEventListener('click', fn); const tt = document.createElementNS(NS, 'title'); tt.textContent = title; t.append(tt); svg.append(t) };
+  for (const [deg, tgt] of TURN) { const x = (Math.sin(deg * Math.PI / 180) * 57).toFixed(1), y = (-Math.cos(deg * Math.PI / 180) * 57).toFixed(1); const still = typeof tgt === 'number';
+    add(x, y, still ? deg + '°' : tgt + ' ' + deg + '°', S.view !== 'tpose' && S.turn === deg, still ? 'still' : '', () => goView(still ? S.view : tgt, deg), still ? 'authored turn frame f' + String(tgt).padStart(3, '0') + ' (not posable yet)' : 'live view ' + tgt) }
+  add(0, 0, 'T-pose', S.view === 'tpose', '', () => goView('tpose', null), 'live T-pose view');
+  $('#dial').replaceChildren(svg);
+}
+function goView(view, deg) {
+  const still = deg != null && typeof TURN.find(t => t[0] === deg)?.[1] === 'number';
+  S.turn = deg ?? 0;
+  if (still) { const f = TURN.find(t => t[0] === deg)[1]; const img = $('#turnstill'); img.src = '../reference/apose_turn/frames/f' + String(f).padStart(3, '0') + '.png'; img.hidden = false;
+    $('#stagelabel').textContent = `${deg}°: her authored turn frame f${String(f).padStart(3, '0')} (view only, controls paused)`; dial(); syncUI(); return }
+  $('#turnstill').hidden = true;
+  if (view !== S.view || !S.ready) { S.view = view; loadRig() } else { $('#stagelabel').textContent = 'live rig · ' + S.view; dial(); syncUI() }
+}
+
+/* ---------------- rig iframe ---------------- */
+const HIDE = '#ui,#layers,#pose-toolbar,#pose-nodes,#lpbadge{display:none!important}body{padding-top:0!important}';
+function hideRigUi(fr) { try { const d = fr.contentDocument; if (d && d.head && !d.getElementById('sv-poser-hide')) { const s = d.createElement('style'); s.id = 'sv-poser-hide'; s.textContent = HIDE; d.head.append(s) } } catch { } }
+function rigURL() { const q = new URLSearchParams({ view: S.view, hair: S.hair.preset }); for (const k in S.flags) q.set(k, S.flags[k]); return RIG + '?' + q }
+// while the timeline has keys the mouth switch is a hard cut (the 35 ms crossfade is wall-clock driven, so scrub would differ from playback)
+function syncFade() { if (!S.ready) return; try { const e = S.cw.document.getElementById('mouthfade'); const want = S.tl.keys.length ? '0' : (S.flags.mouthfade || '35'); if (e.value !== want) { e.value = want; e.dispatchEvent(new Event('change', { bubbles: true })) } } catch { } }
+function loadRig() {
+  const gen = ++S.gen; S.ready = false; S.live.hairA = null; invalidate(); dial(); $('#view').value = S.view;
+  const fr = $('#rig'); $('#loading').textContent = 'loading ' + S.view + ' rig…'; $('#stagelabel').textContent = 'live rig · ' + S.view;
+  const early = setInterval(() => { if (S.gen !== gen) return clearInterval(early); hideRigUi(fr) }, 30);
+  fr.onload = () => { hideRigUi(fr); clearInterval(early); S.cw = fr.contentWindow;
+    const wait = (n = 0) => { if (S.gen !== gen) return; let ok = false; try { ok = S.cw.eval('typeof R!=="undefined"&&!!R&&!R.loading&&typeof set==="function"') } catch { }
+      if (!ok) { $('#loading').textContent = `loading ${S.view} rig parts… ${Math.round(n / 4)} s`; if (n < 1200) setTimeout(() => wait(n + 1), 250); else $('#loading').textContent = 'rig did not load'; return }
+      onReady(gen) };
+    wait() };
+  fr.src = rigURL();
+}
+function onReady(gen) {
+  if (S.gen !== gen) return; S.P = JSON.parse(JSON.stringify(S.cw.eval('P')));
+  if (!Object.keys(S.vals).length) S.vals = defaults(); else for (const k in S.P) if (!(k in S.vals)) S.vals[k] = S.P[k][2];
+  try { S.cw.RigManual() } catch { } S.ready = true; $('#loading').textContent = ''; setRigPreset();
+  mouthMarks(); syncFade(); applyManual(); if (!S.undo.length) commit(); syncButtons(); syncTL();
+  window.SVPoser.ready = true; window.SVPoser.loads++;
+}
+
+/* ---------------- timeline ---------------- */
+function syncTL() {
+  const N = nFrames(), sc = $('#scrub'); sc.max = N; if (document.activeElement !== sc) sc.value = S.tl.frame;
+  const km = $('#keymarks'); km.replaceChildren(...S.tl.keys.map((k, i) => { const m = h('i', { class: i === S.tl.sel ? 'sel' : '', title: `key ${i + 1} at ${k.t.toFixed(2)} s · ${k.ease} · mouth ${k.mouth}`, style: `left:${(k.t / S.tl.dur) * 100}%` });
+    m.addEventListener('click', () => { S.tl.sel = i; applyFrame(Math.round(k.t * S.tl.fps)) }); return m }));
+  const k = S.tl.keys[S.tl.sel]; $('#tl-ease').value = k ? k.ease : 'inout'; $('#tl-mouth').value = k ? k.mouth : 'step'; $('#tl-ease').disabled = $('#tl-mouth').disabled = $('#tl-del').disabled = !k;
+  $('#tl-play').textContent = S.tl.playing ? '⏸ Pause' : '▶ Play';
+  $('#tlinfo').textContent = `frame ${S.tl.frame} / ${N} · ${(S.tl.frame / S.tl.fps).toFixed(2)} s · ${S.tl.keys.length} key${S.tl.keys.length === 1 ? '' : 's'}${S.tl.keys.length ? ' · mouth switches are hard cuts while keyed (deterministic)' : ''}`;
+}
+function keyIndexAt(t) { return S.tl.keys.findIndex(k => Math.abs(k.t - t) < 0.5 / S.tl.fps) }
+function setKey() {
+  const t = S.tl.frame / S.tl.fps; const had = S.tl.keys.length; let i = keyIndexAt(t); const values = { ...S.vals };
+  if (i >= 0) S.tl.keys[i].values = values; else { S.tl.keys.push({ t, ease: 'inout', mouth: 'step', values }); S.tl.keys.sort((a, b) => a.t - b.t); i = keyIndexAt(t) }
+  S.tl.sel = i; invalidate(); syncFade(); syncTL(); msg(`Key set at ${t.toFixed(2)} s.`);
+}
+function delKey() { if (S.tl.sel < 0) return; S.tl.keys.splice(S.tl.sel, 1); S.tl.sel = -1; invalidate(); syncFade(); syncTL() }
+function togglePlay() { if (S.tl.playing) stopPlay(); else { if (!S.tl.keys.length) { msg('Set at least one key first.', true); return } if (S.tl.frame >= nFrames()) S.tl.frame = 0; S.tl.playing = true; S.tl.t0 = performance.now(); S.tl.f0 = S.tl.frame } syncTL() }
+function stopPlay() { if (S.tl.playing) { S.tl.playing = false; syncTL() } }
+function tlJSON() { return { contract: 'shadowveil poser timeline v1', view: S.view, fps: S.tl.fps, duration: S.tl.dur, loop: S.tl.loop, seed: S.tl.seed, hair: { ...S.hair }, autoBlink: S.autoBlink, headLead: S.headLead, leadMs: S.leadMs,
+  keys: S.tl.keys.map(k => ({ t: +k.t.toFixed(4), ease: k.ease, mouth: k.mouth, values: nonDefault(k.values) })) } }
+function importTL(o) {
+  if (!o || !Array.isArray(o.keys)) throw new Error('not a timeline file (no "keys")'); const d = defaults();
+  S.tl.fps = [24, 30, 60].includes(+o.fps) ? +o.fps : 30; S.tl.dur = clamp(+o.duration || 4, 0.5, 60); S.tl.loop = o.loop !== false; S.tl.seed = Number.isFinite(+o.seed) ? +o.seed : 1337;
+  if (o.hair) S.hair = { on: !!o.hair.on, sway: clamp(+o.hair.sway || 0, 0, 1), preset: o.hair.preset === 'B' ? 'B' : 'A' };
+  S.autoBlink = !!o.autoBlink; S.headLead = o.headLead !== false; S.leadMs = clamp(+o.leadMs || 150, 80, 250);
+  S.tl.keys = o.keys.map(k => { const values = { ...d }; for (const p in k.values || {}) if (p in S.P) values[p] = clamp(+k.values[p], S.P[p][0], S.P[p][1]);
+    return { t: clamp(+k.t || 0, 0, S.tl.dur), ease: EASE[k.ease] ? k.ease : 'inout', mouth: k.mouth === 'smooth' ? 'smooth' : 'step', values } }).sort((a, b) => a.t - b.t);
+  $('#tl-fps').value = String(S.tl.fps); $('#tl-dur').value = S.tl.dur; $('#tl-loop').checked = S.tl.loop; $('#tl-seed').value = S.tl.seed; $('#headlead').checked = S.headLead;
+  S.tl.sel = -1; invalidate(); setRigPreset(); syncFade(); applyFrame(0);
+}
+function timelineUI() {
+  $('#tl-play').onclick = togglePlay; $('#tl-key').onclick = setKey; $('#tl-del').onclick = delKey;
+  $('#tl-loop').onchange = e => { S.tl.loop = e.target.checked };
+  $('#tl-prev').onclick = () => { const t = S.tl.frame / S.tl.fps; const k = [...S.tl.keys].reverse().find(k => k.t < t - 1e-6); if (k) { S.tl.sel = S.tl.keys.indexOf(k); applyFrame(Math.round(k.t * S.tl.fps)) } };
+  $('#tl-next').onclick = () => { const t = S.tl.frame / S.tl.fps; const k = S.tl.keys.find(k => k.t > t + 1e-6); if (k) { S.tl.sel = S.tl.keys.indexOf(k); applyFrame(Math.round(k.t * S.tl.fps)) } };
+  $('#tl-ease').onchange = e => { const k = S.tl.keys[S.tl.sel]; if (k) { k.ease = e.target.value; invalidate(); applyFrame(S.tl.frame) } };
+  $('#tl-mouth').onchange = e => { const k = S.tl.keys[S.tl.sel]; if (k) { k.mouth = e.target.value; invalidate(); applyFrame(S.tl.frame) } };
+  $('#scrub').addEventListener('input', e => { stopPlay(); const f = +e.target.value; S.tl.sel = keyIndexAt(f / S.tl.fps); if (S.tl.keys.length) applyFrame(f); else { S.tl.frame = f; syncTL() } });
+  $('#tl-dur').onchange = e => { S.tl.dur = clamp(+e.target.value || 4, 0.5, 60); S.tl.keys = S.tl.keys.filter(k => k.t <= S.tl.dur); invalidate(); S.tl.frame = Math.min(S.tl.frame, nFrames()); syncTL() };
+  $('#tl-fps').onchange = e => { const t = S.tl.frame / S.tl.fps; S.tl.fps = +e.target.value; S.tl.frame = Math.round(t * S.tl.fps); invalidate(); syncTL() };
+  $('#tl-seed').onchange = e => { S.tl.seed = Math.round(+e.target.value || 0); invalidate(); if (S.tl.keys.length) applyFrame(S.tl.frame) };
+  $('#tl-export').onclick = () => download('timeline.json', tlJSON()); $('#tl-import').onclick = () => openFile('timeline');
+  $('#tl-clear').onclick = () => { S.tl.keys = []; S.tl.sel = -1; S.tl.frame = 0; stopPlay(); invalidate(); syncFade(); syncTL() };
+}
+
+/* ---------------- main loop ---------------- */
+function tick(now) {
+  requestAnimationFrame(tick);
+  if (!S.ready || isStill()) { S.live.last = now; return }
+  if (S.tl.playing) {
+    const N = nFrames(); let f = S.tl.f0 + Math.floor((now - S.tl.t0) / 1000 * S.tl.fps);
+    if (f > N) { if (S.tl.loop) { S.tl.t0 = now; S.tl.f0 = 0; f = 0 } else { f = N; S.tl.playing = false } }
+    if (f !== S.tl.frame || !S.tl.playing) applyFrame(f); S.live.last = now; return;
+  }
+  // keyed timeline: the shown frame is the baked, seeded frame (hair, blink, lead); no wall-clock overlays, so scrub == playback
+  if (S.tl.keys.length) { S.live.last = now; if (S.dirty) draw(); return }
+  // manual live preview (not keyed): hair spring + seeded auto-blink in real time
+  const dt = clamp((now - (S.live.last || now)) / 1000, 0.001, 0.1); S.live.last = now; let live = false;
+  if (S.hair.on) { try { if (!S.live.hairA) S.live.hairA = S.cw.makeAnim(S.tl.seed); const A = S.live.hairA; A.t += dt; S.cw.stepHair(A, dt); applyHair(JSON.parse(JSON.stringify(ev('hairDrive') || {}))); live = true } catch (e) { console.warn('hair spring unavailable', e); S.hair.on = false } }
+  if (S.autoBlink && !noFace()) { const B = BLINK0; const L = S.live.blink || (S.live.blink = { r: rng(S.tl.seed), t: 0, next: 0, t0: -1 }); if (!L.next) L.next = 0.8 + L.r() * 2; L.t += dt; let o = 1;
+    if (L.t0 < 0 && L.t >= L.next) L.t0 = L.t; if (L.t0 >= 0) { const u = L.t - L.t0; if (u < B.close) o = 1 - u / B.close; else if (u < B.close + B.hold) o = 0; else if (u < B.close + B.hold + B.open) { const q = (u - B.close - B.hold) / B.open; o = q * q } else { L.t0 = -1; L.next = L.t + B.min + L.r() * (B.max - B.min) } }
+    const v = ev('v'); v.EyeLOpen = Math.min(S.vals.EyeLOpen, o); v.EyeROpen = Math.min(S.vals.EyeROpen, o); live = true }
+  if (live || S.dirty) draw();
+}
+
+window.SVPoser = { ready: false, loads: 0, state: S, applyFrame, frameState, poseAt, setKey, resetRest, loadPose, importTL, tlJSON, poseJSON, bakeHairTo, invalidate, setV, afterEdit, commit, undo, redo };
+build(); dial(); loadRig(); requestAnimationFrame(tick);
+})();
+</script>
+</body></html>

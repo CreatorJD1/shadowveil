@@ -1,0 +1,22 @@
+totals {'eye_renders': 288, 'max_outside': 0, 'sum_outside': 0, 'max_on_ink': 0}
+045 rest {'v4_vs_current_px': 0, 'v4_vs_frame_inside_face_px': 0, 'v4_vs_frame_outside_face_edge_px': 6}
+  EyeR base Y-1/Y+1 8 7 lost X-1/X+1 Y0 {'X-1': 3, 'X+1': 8} 
+    corners {'-1,-1': {'dx': 0, 'dy': -1, 'lost': 8, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '-1,+1': {'dx': -2, 'dy': 1, 'lost': 6, 'vs_sameY_baseline': -1, 'vs_max_baseline': -2}, '+1,-1': {'dx': 0, 'dy': -1, 'lost': 8, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '+1,+1': {'dx': 0, 'dy': 1, 'lost': 7, 'vs_sameY_baseline': 0, 'vs_max_baseline': -1}} 
+    Xtravel v4 {'-1,-1': 0, '-1,+0': -3, '-1,+1': -2, '+1,-1': 0, '+1,+0': 1, '+1,+1': 0} 
+    Xtravel cur {'-1,-1': -2, '-1,+0': -2, '-1,+1': -2, '+1,-1': 0, '+1,+0': 0, '+1,+1': 0}
+  EyeL base Y-1/Y+1 14 6 lost X-1/X+1 Y0 {'X-1': 14, 'X+1': 5} 
+    corners {'-1,-1': {'dx': 0, 'dy': -1, 'lost': 14, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '-1,+1': {'dx': -2, 'dy': 1, 'lost': 8, 'vs_sameY_baseline': 2, 'vs_max_baseline': -6}, '+1,-1': {'dx': 0, 'dy': -1, 'lost': 14, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '+1,+1': {'dx': 0, 'dy': 1, 'lost': 6, 'vs_sameY_baseline': 0, 'vs_max_baseline': -8}} 
+    Xtravel v4 {'-1,-1': 0, '-1,+0': -3, '-1,+1': -2, '+1,-1': 0, '+1,+0': 2, '+1,+1': 0} 
+    Xtravel cur {'-1,-1': 0, '-1,+0': 0, '-1,+1': 0, '+1,-1': 1, '+1,+0': 1, '+1,+1': 1}
+  direction {'-1,-1': (0, 0, True), '+0,-1': (0, 0, True), '+1,-1': (0, 0, True), '-1,+0': (-3, -3, True), '+0,+0': (0, 0, True), '+1,+0': (1, 2, True), '-1,+1': (-2, -2, True), '+0,+1': (0, 0, True), '+1,+1': (0, 0, True)}
+315 rest {'v4_vs_current_px': 0, 'v4_vs_frame_inside_face_px': 0, 'v4_vs_frame_outside_face_edge_px': 5}
+  EyeR base Y-1/Y+1 13 8 lost X-1/X+1 Y0 {'X-1': 5, 'X+1': 12} 
+    corners {'-1,-1': {'dx': 0, 'dy': -1, 'lost': 13, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '-1,+1': {'dx': -1, 'dy': 1, 'lost': 9, 'vs_sameY_baseline': 1, 'vs_max_baseline': -4}, '+1,-1': {'dx': 0, 'dy': -1, 'lost': 13, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '+1,+1': {'dx': 3, 'dy': 1, 'lost': 12, 'vs_sameY_baseline': 4, 'vs_max_baseline': -1}} 
+    Xtravel v4 {'-1,-1': 0, '-1,+0': -2, '-1,+1': -1, '+1,-1': 0, '+1,+0': 4, '+1,+1': 3} 
+    Xtravel cur {'-1,-1': -2, '-1,+0': -2, '-1,+1': -2, '+1,-1': 2, '+1,+0': 2, '+1,+1': 2}
+  EyeL base Y-1/Y+1 10 7 lost X-1/X+1 Y0 {'X-1': 7, 'X+1': 10} 
+    corners {'-1,-1': {'dx': 0, 'dy': -1, 'lost': 10, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '-1,+1': {'dx': -1, 'dy': 1, 'lost': 9, 'vs_sameY_baseline': 2, 'vs_max_baseline': -1}, '+1,-1': {'dx': 0, 'dy': -1, 'lost': 10, 'vs_sameY_baseline': 0, 'vs_max_baseline': 0}, '+1,+1': {'dx': 2, 'dy': 1, 'lost': 10, 'vs_sameY_baseline': 3, 'vs_max_baseline': 0}} 
+    Xtravel v4 {'-1,-1': 0, '-1,+0': -1, '-1,+1': -1, '+1,-1': 0, '+1,+0': 3, '+1,+1': 2} 
+    Xtravel cur {'-1,-1': 0, '-1,+0': 0, '-1,+1': 0, '+1,-1': 2, '+1,+0': 2, '+1,+1': 2}
+  direction {'-1,-1': (0, 0, True), '+0,-1': (0, 0, True), '+1,-1': (0, 0, True), '-1,+0': (-2, -1, True), '+0,+0': (0, 0, True), '+1,+0': (4, 3, True), '-1,+1': (-1, -1, True), '+0,+1': (0, 0, True), '+1,+1': (3, 2, True)}
+wrote sheet_v4.png

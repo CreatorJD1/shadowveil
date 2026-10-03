@@ -1,0 +1,20 @@
+tpose L curl_0.13 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose L curl_0.20 | width>1: - | fingerW>1: - | breaks: [('L_Thumb3', 2)] | new sharp: -
+tpose L curl_0.30 | width>1: - | fingerW>1: - | breaks: [('L_Thumb3', 7)] | new sharp: -
+tpose L curl_0.50 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose L curl_0.70 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose L curl_0.87 | width>1: - | fingerW>1: - | breaks: [('L_Middle1', 5)] | new sharp: -
+tpose L curl_1.00 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose L pose_Fist | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose L pose_Point | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose L pose_Peace | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R curl_0.13 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R curl_0.20 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R curl_0.30 | width>1: - | fingerW>1: - | breaks: [('R_Thumb3', 6)] | new sharp: -
+tpose R curl_0.50 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R curl_0.70 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R curl_0.87 | width>1: - | fingerW>1: - | breaks: [('R_Middle1', 6)] | new sharp: -
+tpose R curl_1.00 | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R pose_Fist | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R pose_Point | width>1: - | fingerW>1: - | breaks: - | new sharp: -
+tpose R pose_Peace | width>1: - | fingerW>1: - | breaks: - | new sharp: -

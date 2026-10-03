@@ -1,0 +1,45 @@
+{
+ "view": "tpose",
+ "note": "STAGED copies, live untouched",
+ "locks_checked": [
+  "eye_brow",
+  "hand",
+  "mouth"
+ ],
+ "base_body.png": {
+  "speck_px": 54,
+  "speck_px_alpha_before": {
+   "255": 31,
+   "lt255": 23
+  },
+  "px_changed_vs_source": 54,
+  "speck_alpha0_after": 54,
+  "changed_inside_locks": {
+   "eye_brow": 0,
+   "mouth": 0,
+   "hand": 0
+  },
+  "src": "views/tpose/base_body.png",
+  "dst": "body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body.png"
+ },
+ "base_body_skin.png": {
+  "speck_px": 54,
+  "speck_px_alpha_before": {
+   "255": 31,
+   "lt255": 23
+  },
+  "hand_cut_px": 8603,
+  "hand_cut_opaque_before": 1369,
+  "hand_cut_rgba_changed": 1369,
+  "hand_mask": "body_tools/work/hairless_division_staged/tpose/hand_mask.png",
+  "px_changed_vs_source": 1423,
+  "speck_alpha0_after": 54,
+  "changed_inside_locks": {
+   "eye_brow": 0,
+   "mouth": 0,
+   "hand": 1369
+  },
+  "src": "views/tpose/base_body_skin.png",
+  "dst": "body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body_skin.png"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "view": "right",
+ "headgroup": {
+  "dx": 3,
+  "dy": 5,
+  "rot": 0,
+  "scale": 1,
+  "w": 1,
+  "sub": {
+   "mouth": {
+    "dx": -5,
+    "dy": 0
+   }
+  }
+ },
+ "hair_ids": [
+  "hair:hair_back",
+  "hair:hair_front",
+  "hair:bun",
+  "hair:strand_01",
+  "hair:strand_01_tip",
+  "hair:strand_02",
+  "hair:strand_02_tip",
+  "hair:strand_03",
+  "hair:strand_04"
+ ],
+ "index_md5": "0ce6fecc8592296204284389ae0bcb87",
+ "port": 8795
+}

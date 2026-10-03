@@ -1,0 +1,138 @@
+{
+ "left L r20": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Lp1": {
+   "changed_gt8": 282,
+   "gt8_outside_forearm": 3,
+   "gt8_over_thigh_outside_forearm": 3
+  },
+  "wrist_Lm1": {
+   "changed_gt8": 283,
+   "gt8_outside_forearm": 53,
+   "gt8_over_thigh_outside_forearm": 53
+  }
+ },
+ "left L r20d5": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Lp1": {
+   "changed_gt8": 89,
+   "gt8_outside_forearm": 2,
+   "gt8_over_thigh_outside_forearm": 2
+  },
+  "wrist_Lm1": {
+   "changed_gt8": 105,
+   "gt8_outside_forearm": 13,
+   "gt8_over_thigh_outside_forearm": 13
+  }
+ },
+ "right R r20": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Rp1": {
+   "changed_gt8": 304,
+   "gt8_outside_forearm": 1,
+   "gt8_over_thigh_outside_forearm": 1
+  },
+  "wrist_Rm1": {
+   "changed_gt8": 331,
+   "gt8_outside_forearm": 24,
+   "gt8_over_thigh_outside_forearm": 24
+  }
+ },
+ "right R r20d5": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Rp1": {
+   "changed_gt8": 95,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Rm1": {
+   "changed_gt8": 132,
+   "gt8_outside_forearm": 13,
+   "gt8_over_thigh_outside_forearm": 13
+  }
+ },
+ "back L r20": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Lp1": {
+   "changed_gt8": 314,
+   "gt8_outside_forearm": 54,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Lm1": {
+   "changed_gt8": 306,
+   "gt8_outside_forearm": 84,
+   "gt8_over_thigh_outside_forearm": 0
+  }
+ },
+ "back L r20d5": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Lp1": {
+   "changed_gt8": 101,
+   "gt8_outside_forearm": 18,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Lm1": {
+   "changed_gt8": 105,
+   "gt8_outside_forearm": 40,
+   "gt8_over_thigh_outside_forearm": 0
+  }
+ },
+ "back R r20": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Rp1": {
+   "changed_gt8": 321,
+   "gt8_outside_forearm": 78,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Rm1": {
+   "changed_gt8": 310,
+   "gt8_outside_forearm": 71,
+   "gt8_over_thigh_outside_forearm": 0
+  }
+ },
+ "back R r20d5": {
+  "rest": {
+   "changed_gt8": 0,
+   "gt8_outside_forearm": 0,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Rp1": {
+   "changed_gt8": 129,
+   "gt8_outside_forearm": 44,
+   "gt8_over_thigh_outside_forearm": 0
+  },
+  "wrist_Rm1": {
+   "changed_gt8": 128,
+   "gt8_outside_forearm": 32,
+   "gt8_over_thigh_outside_forearm": 0
+  }
+ }
+}

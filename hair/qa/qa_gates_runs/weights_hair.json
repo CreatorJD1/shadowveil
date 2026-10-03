@@ -1,0 +1,17 @@
+{
+ "views": [
+  "apose",
+  "tpose",
+  "left",
+  "right",
+  "back"
+ ],
+ "part": "hair",
+ "staged_dirs": [
+  "eyes/work/lashfix/staged",
+  "hair/staged/tone_fix",
+  "mouth/staged/tone_fix"
+ ],
+ "tol": 2.0,
+ "pass": true
+}

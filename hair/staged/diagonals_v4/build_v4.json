@@ -1,0 +1,362 @@
+{
+ "045": {
+  "frame": "f033",
+  "view_scale": {
+   "hair_mask_px": 29512,
+   "uncovered_mask_v3": 6378,
+   "uncovered_mask_v4": 6192,
+   "her_hair_view_px": 22319,
+   "uncovered_her_hair_v3": 259,
+   "uncovered_her_hair_v4": 0,
+   "added": 259,
+   "added_outside_mask": 0,
+   "added_outside_her_hair": 0,
+   "left_out_mask_px_not_her_hair": 6192,
+   "hair_over_white_iris_or_mouth": 0,
+   "hair_over_eye_zone_ink": 0,
+   "cleared_over_eye_zone_ink": 73,
+   "added_over_lash": 41,
+   "add_unassigned": 0,
+   "eyes_lash_trim_view_px": 45,
+   "trim_view_hole": 0,
+   "trim_view_outside_mask": 0,
+   "parts": {
+    "bun.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 2,
+     "added_over_lash": 0
+    },
+    "extra_1.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 14,
+     "added_over_lash": 0
+    },
+    "hair_back.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 90,
+     "added_over_lash": 0
+    },
+    "hair_front.png": {
+     "cleared_over_eye_zone_ink": 19,
+     "added": 71,
+     "added_over_lash": 13
+    },
+    "strand_03.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "strand_03_tip.png": {
+     "cleared_over_eye_zone_ink": 9,
+     "added": 62,
+     "added_over_lash": 28
+    },
+    "strand_04.png": {
+     "cleared_over_eye_zone_ink": 45,
+     "added": 9,
+     "added_over_lash": 0
+    },
+    "strand_06.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "strand_06_tip.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 11,
+     "added_over_lash": 0
+    }
+   }
+  },
+  "frame_scale": {
+   "her_hair_px": 9367,
+   "parts": {
+    "bun.png": 3012,
+    "extra_1.png": 24,
+    "hair_back.png": 2211,
+    "hair_front.png": 3841,
+    "strand_03.png": 0,
+    "strand_03_tip.png": 138,
+    "strand_04.png": 63,
+    "strand_06.png": 1,
+    "strand_06_tip.png": 77
+   },
+   "overlap_px": 0,
+   "rest_composite_vs_her_frame_hair_px": 0,
+   "keyblue_hair_px_excluded": 345,
+   "eyes_lash_trim_px": 20,
+   "trim_px_covered": 20,
+   "trim_px_hole": 0,
+   "her_hair_px_over_white_iris_mouth_excluded": 0,
+   "lash_px_with_hair": 17,
+   "eye_zone_lash_ink_px_excluded": 56
+  }
+ },
+ "135": {
+  "frame": "f087",
+  "view_scale": {
+   "hair_mask_px": 44088,
+   "uncovered_mask_v3": 6268,
+   "uncovered_mask_v4": 6087,
+   "her_hair_view_px": 36991,
+   "uncovered_her_hair_v3": 181,
+   "uncovered_her_hair_v4": 0,
+   "added": 181,
+   "added_outside_mask": 0,
+   "added_outside_her_hair": 0,
+   "left_out_mask_px_not_her_hair": 6087,
+   "hair_over_white_iris_or_mouth": 0,
+   "hair_over_eye_zone_ink": 0,
+   "cleared_over_eye_zone_ink": 0,
+   "added_over_lash": 0,
+   "add_unassigned": 0,
+   "eyes_lash_trim_view_px": 0,
+   "trim_view_hole": 0,
+   "trim_view_outside_mask": 0,
+   "parts": {
+    "bun.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 2,
+     "added_over_lash": 0
+    },
+    "extra_1.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 3,
+     "added_over_lash": 0
+    },
+    "extra_2.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "hair_back.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 152,
+     "added_over_lash": 0
+    },
+    "hair_front.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "strand_06.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 2,
+     "added_over_lash": 0
+    },
+    "strand_06_tip.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 22,
+     "added_over_lash": 0
+    }
+   }
+  },
+  "frame_scale": {
+   "her_hair_px": 14993,
+   "parts": {
+    "bun.png": 3189,
+    "extra_1.png": 29,
+    "extra_2.png": 4,
+    "hair_back.png": 11500,
+    "hair_front.png": 0,
+    "strand_06.png": 55,
+    "strand_06_tip.png": 216
+   },
+   "overlap_px": 0,
+   "rest_composite_vs_her_frame_hair_px": 0,
+   "keyblue_hair_px_excluded": 332,
+   "eyes_lash_trim_px": 0,
+   "trim_px_covered": 0,
+   "trim_px_hole": 0,
+   "her_hair_px_over_white_iris_mouth_excluded": 0,
+   "lash_px_with_hair": 0,
+   "eye_zone_lash_ink_px_excluded": 0
+  }
+ },
+ "225": {
+  "frame": "f131",
+  "view_scale": {
+   "hair_mask_px": 44033,
+   "uncovered_mask_v3": 6149,
+   "uncovered_mask_v4": 5969,
+   "her_hair_view_px": 37073,
+   "uncovered_her_hair_v3": 180,
+   "uncovered_her_hair_v4": 0,
+   "added": 180,
+   "added_outside_mask": 0,
+   "added_outside_her_hair": 0,
+   "left_out_mask_px_not_her_hair": 5969,
+   "hair_over_white_iris_or_mouth": 0,
+   "hair_over_eye_zone_ink": 0,
+   "cleared_over_eye_zone_ink": 0,
+   "added_over_lash": 0,
+   "add_unassigned": 0,
+   "eyes_lash_trim_view_px": 0,
+   "trim_view_hole": 0,
+   "trim_view_outside_mask": 0,
+   "parts": {
+    "bun.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "extra_1.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 5,
+     "added_over_lash": 0
+    },
+    "extra_2.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "hair_back.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 156,
+     "added_over_lash": 0
+    },
+    "hair_front.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "strand_01.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 10,
+     "added_over_lash": 0
+    },
+    "strand_03.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 6,
+     "added_over_lash": 0
+    },
+    "strand_03_tip.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 3,
+     "added_over_lash": 0
+    }
+   }
+  },
+  "frame_scale": {
+   "her_hair_px": 14981,
+   "parts": {
+    "bun.png": 3503,
+    "extra_1.png": 19,
+    "extra_2.png": 0,
+    "hair_back.png": 11179,
+    "hair_front.png": 0,
+    "strand_01.png": 145,
+    "strand_03.png": 50,
+    "strand_03_tip.png": 85
+   },
+   "overlap_px": 0,
+   "rest_composite_vs_her_frame_hair_px": 0,
+   "keyblue_hair_px_excluded": 333,
+   "eyes_lash_trim_px": 0,
+   "trim_px_covered": 0,
+   "trim_px_hole": 0,
+   "her_hair_px_over_white_iris_mouth_excluded": 0,
+   "lash_px_with_hair": 0,
+   "eye_zone_lash_ink_px_excluded": 0
+  }
+ },
+ "315": {
+  "frame": "f191",
+  "view_scale": {
+   "hair_mask_px": 30729,
+   "uncovered_mask_v3": 6819,
+   "uncovered_mask_v4": 6553,
+   "her_hair_view_px": 23240,
+   "uncovered_her_hair_v3": 302,
+   "uncovered_her_hair_v4": 0,
+   "added": 302,
+   "added_outside_mask": 0,
+   "added_outside_her_hair": 0,
+   "left_out_mask_px_not_her_hair": 6553,
+   "hair_over_white_iris_or_mouth": 0,
+   "hair_over_eye_zone_ink": 0,
+   "cleared_over_eye_zone_ink": 36,
+   "added_over_lash": 44,
+   "add_unassigned": 0,
+   "eyes_lash_trim_view_px": 42,
+   "trim_view_hole": 0,
+   "trim_view_outside_mask": 0,
+   "parts": {
+    "bun.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 1,
+     "added_over_lash": 0
+    },
+    "extra_1.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 10,
+     "added_over_lash": 0
+    },
+    "hair_back.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 4,
+     "added_over_lash": 0
+    },
+    "hair_front.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 127,
+     "added_over_lash": 0
+    },
+    "strand_03.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 0,
+     "added_over_lash": 0
+    },
+    "strand_03_tip.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 12,
+     "added_over_lash": 0
+    },
+    "strand_04.png": {
+     "cleared_over_eye_zone_ink": 33,
+     "added": 31,
+     "added_over_lash": 0
+    },
+    "strand_05.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 24,
+     "added_over_lash": 0
+    },
+    "strand_06.png": {
+     "cleared_over_eye_zone_ink": 3,
+     "added": 91,
+     "added_over_lash": 44
+    },
+    "strand_06_tip.png": {
+     "cleared_over_eye_zone_ink": 0,
+     "added": 2,
+     "added_over_lash": 0
+    }
+   }
+  },
+  "frame_scale": {
+   "her_hair_px": 9728,
+   "parts": {
+    "bun.png": 3059,
+    "extra_1.png": 22,
+    "hair_back.png": 750,
+    "hair_front.png": 5396,
+    "strand_03.png": 27,
+    "strand_03_tip.png": 59,
+    "strand_04.png": 83,
+    "strand_05.png": 66,
+    "strand_06.png": 233,
+    "strand_06_tip.png": 33
+   },
+   "overlap_px": 0,
+   "rest_composite_vs_her_frame_hair_px": 0,
+   "keyblue_hair_px_excluded": 342,
+   "eyes_lash_trim_px": 18,
+   "trim_px_covered": 18,
+   "trim_px_hole": 0,
+   "her_hair_px_over_white_iris_mouth_excluded": 4,
+   "lash_px_with_hair": 19,
+   "eye_zone_lash_ink_px_excluded": 48
+  }
+ }
+}

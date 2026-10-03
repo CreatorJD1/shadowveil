@@ -1,0 +1,8987 @@
+{
+ "method": "Base Eyes independent check of rig/work/irislimits diag irisLimitsPx (read-only on rig/ and eyes/staged/).\nOwn compositor (premultiplied over / source-atop; no import of render_eyes or render_diag_limits).\nFor 045/315, X,Y in {-1,0,1}, lid k 0..7, limits in {current, diag}:\n  iris_px   = px whose final RGBA differs from the same render with the iris removed (where iris actually shows)\n  outside   = iris_px outside opening_k = white & ~lid_k & ~lash   (must be 0)\n  on_ink    = iris_px on lid_k or lash ink (must be 0)\n  clipped   = shifted iris core (a>=128) px lost because they fall outside the white (iris cut by the corner / lid edge)\nRest: (0,0,k0) diag vs current vs frame. Corner reach: gap (px) from iris leading edge to white extreme on iris rows.",
+ "angles": {
+  "045": {
+   "cases": [
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 49,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 25,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 15,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 9,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 15,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 4,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 1,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 48,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 107,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 47,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 40,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 71,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 32,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 22,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 36,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 15,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 9,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 6,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 78,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 37,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 65,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 20,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 15,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 4,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 50,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 107,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 71,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 36,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 6,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 78,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 65,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 94,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 81,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 58,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 16,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 4,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 1,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 50,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 105,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 71,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 38,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 2,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 99,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 98,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 77,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 64,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 31,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 12,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 15,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 4,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 47,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 47,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 60,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 37,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 48,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 21,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 16,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 6,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 3,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 99,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 71,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 37,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 38,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 20,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 7,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 15,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 4,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 50,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 107,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 71,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 36,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 6,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 78,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 65,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 93,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 15,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 4,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 14,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 102,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 92,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 28,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 71,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 21,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 16,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 39,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 12,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 28,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 12,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 80
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 153
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 70
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 101,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 134
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 60
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 78,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 109
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 51
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 65,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 90
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 34
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 28
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 26
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 6,
+       "opening_px": 0
+      }
+     }
+    }
+   ],
+   "eyes": {
+    "EyeR": {
+     "limits": {
+      "current": {
+       "dxAtXminus1": -2,
+       "dxAtXplus1": 0,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1
+      },
+      "diag": {
+       "dxAtXminus1": -3,
+       "dxAtXplus1": 1,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1,
+       "_c": {
+        "-1,-1": {
+         "v3_dx": -2,
+         "dx": 0,
+         "dy": -1,
+         "lost": 8,
+         "baseline": 8,
+         "lost_v3": 1
+        },
+        "-1,+1": {
+         "v3_dx": -2,
+         "dx": -2,
+         "dy": 1,
+         "lost": 6,
+         "baseline": 8,
+         "lost_v3": 6
+        },
+        "+1,-1": {
+         "v3_dx": 1,
+         "dx": 0,
+         "dy": -1,
+         "lost": 8,
+         "baseline": 8,
+         "lost_v3": 14
+        },
+        "+1,+1": {
+         "v3_dx": 1,
+         "dx": 0,
+         "dy": 1,
+         "lost": 7,
+         "baseline": 8,
+         "lost_v3": 10
+        }
+       }
+      }
+     },
+     "white_px": 80,
+     "iris_core_px": 50,
+     "corner_gap_px_on_iris_rows": {
+      "current": {
+       "X+1": 0,
+       "X-1": 1
+      },
+      "diag": {
+       "X+1": -1,
+       "X-1": 0
+      }
+     },
+     "corner_gap_rest": {
+      "X+1 side": 0,
+      "X-1 side": 3
+     },
+     "move_px_Xplus1": {
+      "current": 0,
+      "diag": 1
+     },
+     "move_px_Xminus1": {
+      "current": -2,
+      "diag": -3
+     }
+    },
+    "EyeL": {
+     "limits": {
+      "current": {
+       "dxAtXminus1": 0,
+       "dxAtXplus1": 1,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1
+      },
+      "diag": {
+       "dxAtXminus1": -3,
+       "dxAtXplus1": 2,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1,
+       "_c": {
+        "-1,-1": {
+         "v3_dx": -2,
+         "dx": 0,
+         "dy": -1,
+         "lost": 14,
+         "baseline": 14,
+         "lost_v3": 22
+        },
+        "-1,+1": {
+         "v3_dx": -2,
+         "dx": -2,
+         "dy": 1,
+         "lost": 8,
+         "baseline": 14,
+         "lost_v3": 8
+        },
+        "+1,-1": {
+         "v3_dx": 1,
+         "dx": 0,
+         "dy": -1,
+         "lost": 14,
+         "baseline": 14,
+         "lost_v3": 13
+        },
+        "+1,+1": {
+         "v3_dx": 1,
+         "dx": 0,
+         "dy": 1,
+         "lost": 6,
+         "baseline": 14,
+         "lost_v3": 8
+        }
+       }
+      }
+     },
+     "white_px": 153,
+     "iris_core_px": 107,
+     "corner_gap_px_on_iris_rows": {
+      "current": {
+       "X+1": 2,
+       "X-1": 4
+      },
+      "diag": {
+       "X+1": 1,
+       "X-1": 1
+      }
+     },
+     "corner_gap_rest": {
+      "X+1 side": 3,
+      "X-1 side": 4
+     },
+     "move_px_Xplus1": {
+      "current": 1,
+      "diag": 2
+     },
+     "move_px_Xminus1": {
+      "current": 0,
+      "diag": -3
+     }
+    }
+   },
+   "rest": {
+    "diag_vs_current_px": 0,
+    "diag_vs_frame_px": 6,
+    "all_k_X0_diag_vs_current_px": 0
+   },
+   "workRegion": [
+    9,
+    9,
+    85,
+    39
+   ],
+   "workRegion_frame": [
+    326,
+    163,
+    396,
+    187
+   ]
+  },
+  "315": {
+   "cases": [
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 72,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 59,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 46,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 20,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 11,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 11,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 5,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 4,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 1,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 51,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 70,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 29,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 20,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 7,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 73,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 73,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 62,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 37,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 50,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 23,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 23,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": -1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 72,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 59,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 46,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 11,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 9,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 5,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 1,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 85,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 51,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 72,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 58,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 46,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 20,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 7,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 77,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 77,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 63,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 37,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 50,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 23,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 0,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 68,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 56,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 38,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 31,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 1,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 17,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 47,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 67,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 45,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 54,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 40,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 25,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 16,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 22,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 7,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 4,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 76,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 73,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 59,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 39,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 47,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 28,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 29,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 18,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 23,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 18,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "current",
+     "X": 1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 72,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 59,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 46,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 11,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 9,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 5,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 1,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 80,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 70,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 37,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 29,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 22,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 29,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 16,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 11,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 5,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 5,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 76,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 42,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 76,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 39,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 64,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 32,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 51,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 25,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 32,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 18,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 21,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 13,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 7,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": -1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 9,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 72,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 59,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 46,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 11,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 9,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 5,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 1,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 85,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 51,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 72,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 43,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 58,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 34,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 46,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 27,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 20,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 14,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 7,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 0,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 77,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 77,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 44,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 63,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 37,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 50,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 30,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 23,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 19,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 8,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 10,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 0,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 8,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 7,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 72,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 59,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 33,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 46,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 24,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 11,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 9,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 5,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 1,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": -1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 13,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 73,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 62,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 40,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 51,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 36,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 40,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 31,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 25,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 26,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 16,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 21,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 7,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 17,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 0,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 0,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 73,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 131
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 66
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 1,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 70,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 113
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 41,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 58
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 2,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 57,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 96
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 39,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 49
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 3,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 45,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 78
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 35,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 42
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 4,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 28,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 57
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 29,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 35
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 5,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 18,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 41
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 23,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 29
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 6,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 9,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 26
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 18,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 22
+      }
+     }
+    },
+    {
+     "lim": "diag",
+     "X": 1,
+     "Y": 1,
+     "k": 7,
+     "eyes": {
+      "EyeR": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 12,
+       "opening_px": 0
+      },
+      "EyeL": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px": 0,
+       "outside": 0,
+       "on_ink": 0,
+       "clipped": 10,
+       "opening_px": 0
+      }
+     }
+    }
+   ],
+   "eyes": {
+    "EyeR": {
+     "limits": {
+      "current": {
+       "dxAtXminus1": -2,
+       "dxAtXplus1": 2,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1
+      },
+      "diag": {
+       "dxAtXminus1": -2,
+       "dxAtXplus1": 4,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1,
+       "_c": {
+        "-1,-1": {
+         "v3_dx": -1,
+         "dx": 0,
+         "dy": -1,
+         "lost": 13,
+         "baseline": 13,
+         "lost_v3": 11
+        },
+        "-1,+1": {
+         "v3_dx": -1,
+         "dx": -1,
+         "dy": 1,
+         "lost": 9,
+         "baseline": 13,
+         "lost_v3": 9
+        },
+        "+1,-1": {
+         "v3_dx": 3,
+         "dx": 0,
+         "dy": -1,
+         "lost": 13,
+         "baseline": 13,
+         "lost_v3": 19
+        },
+        "+1,+1": {
+         "v3_dx": 3,
+         "dx": 3,
+         "dy": 1,
+         "lost": 12,
+         "baseline": 13,
+         "lost_v3": 12
+        }
+       }
+      }
+     },
+     "white_px": 131,
+     "iris_core_px": 85,
+     "corner_gap_px_on_iris_rows": {
+      "current": {
+       "X+1": 2,
+       "X-1": 1
+      },
+      "diag": {
+       "X+1": 0,
+       "X-1": 1
+      }
+     },
+     "corner_gap_rest": {
+      "X+1 side": 4,
+      "X-1 side": 3
+     },
+     "move_px_Xplus1": {
+      "current": 2,
+      "diag": 4
+     },
+     "move_px_Xminus1": {
+      "current": -2,
+      "diag": -2
+     }
+    },
+    "EyeL": {
+     "limits": {
+      "current": {
+       "dxAtXminus1": 0,
+       "dxAtXplus1": 2,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1
+      },
+      "diag": {
+       "dxAtXminus1": -1,
+       "dxAtXplus1": 3,
+       "dyAtYminus1": -1,
+       "dyAtYplus1": 1,
+       "_c": {
+        "-1,-1": {
+         "v3_dx": -1,
+         "dx": 0,
+         "dy": -1,
+         "lost": 10,
+         "baseline": 10,
+         "lost_v3": 15
+        },
+        "-1,+1": {
+         "v3_dx": -1,
+         "dx": -1,
+         "dy": 1,
+         "lost": 9,
+         "baseline": 10,
+         "lost_v3": 9
+        },
+        "+1,-1": {
+         "v3_dx": 2,
+         "dx": 0,
+         "dy": -1,
+         "lost": 10,
+         "baseline": 10,
+         "lost_v3": 7
+        },
+        "+1,+1": {
+         "v3_dx": 2,
+         "dx": 2,
+         "dy": 1,
+         "lost": 10,
+         "baseline": 10,
+         "lost_v3": 10
+        }
+       }
+      }
+     },
+     "white_px": 66,
+     "iris_core_px": 51,
+     "corner_gap_px_on_iris_rows": {
+      "current": {
+       "X+1": -1,
+       "X-1": 1
+      },
+      "diag": {
+       "X+1": -2,
+       "X-1": 0
+      }
+     },
+     "corner_gap_rest": {
+      "X+1 side": 1,
+      "X-1 side": 1
+     },
+     "move_px_Xplus1": {
+      "current": 2,
+      "diag": 3
+     },
+     "move_px_Xminus1": {
+      "current": 0,
+      "diag": -1
+     }
+    }
+   },
+   "rest": {
+    "diag_vs_current_px": 0,
+    "diag_vs_frame_px": 5,
+    "all_k_X0_diag_vs_current_px": 0
+   },
+   "workRegion": [
+    9,
+    9,
+    80,
+    40
+   ],
+   "workRegion_frame": [
+    374,
+    162,
+    439,
+    187
+   ]
+  }
+ }
+}

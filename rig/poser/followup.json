@@ -1,0 +1,83 @@
+{
+ "lead": {
+  "headCentroidX": {
+   "rest": 680.7,
+   "bodyLeanPlus1": 751.02,
+   "neckTwistPlus1": 680.7
+  },
+  "leanKeys_frame_gazeX_lean": [
+   [
+    0,
+    0.007,
+    0
+   ],
+   [
+    10,
+    0.2,
+    0.148
+   ],
+   [
+    15,
+    0.341,
+    0.5
+   ],
+   [
+    20,
+    0.393,
+    0.852
+   ],
+   [
+    26,
+    0.4,
+    0.991
+   ],
+   [
+    30,
+    0.385,
+    1
+   ],
+   [
+    40,
+    0,
+    0.704
+   ],
+   [
+    45,
+    -0.282,
+    0
+   ],
+   [
+    50,
+    -0.385,
+    -0.704
+   ],
+   [
+    56,
+    -0.4,
+    -0.981
+   ],
+   [
+    60,
+    -0.4,
+    -1
+   ]
+  ],
+  "neckOnlyKey_gazeX": [
+   0,
+   0,
+   0
+  ]
+ },
+ "clear": {
+  "markersBefore": 3,
+  "markersAfter": 0,
+  "keys": 0,
+  "fade": "35",
+  "info": "frame 0 / 90 · 0.00 s · 0 keys"
+ },
+ "labels": [],
+ "poserRest": "0263bb5264e14e70c1a136f3",
+ "indexDefault": "0263bb5264e14e70c1a136f3",
+ "restIdentical": true,
+ "errors": []
+}
