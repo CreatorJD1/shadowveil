@@ -1,0 +1,1237 @@
+{
+ "generated": "2026-10-03 PT by Eyes",
+ "params_rule": "lid frame = round((1-Open)*7); iris offset per rig.json irisOffsetRule (diagonals: per-eye limits, frame px)",
+ "benchmarks": [
+  {
+   "n": 1,
+   "name": "laugh",
+   "view": "315",
+   "view_note": "head turned to her left (her right ear shows) and tilted back; 315 diagonal (near eye = EyeR). No tilted view exists.",
+   "params": {
+    "EyeLOpen": 0,
+    "EyeROpen": 0,
+    "EyeBallX": 0,
+    "EyeBallY": 0
+   },
+   "gaps": [
+    {
+     "shape": "happy_closed_curve",
+     "what": "happy upward closed arch (lid_7 closes flat onto the lower line)",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1012,
+         165,
+         1192,
+         265
+        ],
+        "what": "top row, 3rd face (joy): both eyes closed in an upward ^ arch with lashes, front"
+       }
+      ],
+      "clean_room": [],
+      "clean_room_note": "none found. Only relaxed/downward closed eyes: clean-room/sheets/faces-locked.jpg [568,191,788,296], puppet/blink/closed.png [180,220,520,380], wink in clean-room/sheets/reactions-2.jpg [68,147,288,252]. eyes/work/ref_closed_*.png / ref_wink_*.png are also relaxed closes, not the happy arch.",
+      "views": "front only",
+      "to_be_made": "315/045 diagonals and left/right profiles: new keyed lid part on #0000FF, flat colour, her exact base.png tones, her lid/lash line weight, same size in every view, staged only"
+     }
+    },
+    {
+     "shape": "lower_lid_squint",
+     "what": "lower lid / cheek pushed up under the closed eye",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1441,
+         165,
+         1621,
+         265
+        ],
+        "what": "top row, 4th face (anger): tightened, raised lower lid"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         775,
+         147,
+         995,
+         252
+        ],
+        "what": "3rd face (laugh): happy squint, lower lid pushed up"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/focus.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "focus: lower-lid squint (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/smirk.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "smirk: smug lower-lid rise"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed lower-lid part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only (rig has no lower-lid param either)"
+     }
+    },
+    {
+     "shape": "brow_raise",
+     "what": "brows lifted (no brow param)",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1012,
+         635,
+         1192,
+         735
+        ],
+        "what": "bottom row, 3rd face: brows raised with the wide eyes"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         75,
+         147,
+         295,
+         252
+        ],
+        "what": "shock: brows up"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: brow part as above, staged only"
+     }
+    },
+    {
+     "shape": "head_tilt",
+     "what": "head tilted back (not an eye control)",
+     "source_art": {
+      "status": "not_eyes",
+      "note": "head tilted back is head/body pose, not an eye control; outside Eyes scope"
+     }
+    }
+   ],
+   "benchmark": {
+    "file": "/home/box/agent-data/agents/206a2578-0898-4eea-b85a-d95ac9bd9da0/attachments/ab144dd433c54f34d5cb8438cf38bf70e1c2ce7bf3b91f8891c36357b1272dfc.jpg",
+    "crop_box": [
+     456,
+     211,
+     656,
+     321
+    ],
+    "zoom": 2,
+    "note": "target only; pixels never used in any part"
+   },
+   "tiles": {
+    "bench": "eyes/qa/benchmark_targets/tiles/1_laugh_bench.png",
+    "rig": "eyes/qa/benchmark_targets/tiles/1_laugh_rig.png"
+   }
+  },
+  {
+   "n": 2,
+   "name": "hand-on-hip side-eye, annoyed",
+   "view": "315",
+   "view_note": "three-quarter toward her left; near eye = her right (amber)",
+   "params": {
+    "EyeLOpen": 0.71,
+    "EyeROpen": 0.71,
+    "EyeBallX": 1,
+    "EyeBallY": 0
+   },
+   "gaps": [
+    {
+     "shape": "flat_annoyed_brow",
+     "what": "flat, lowered annoyed brow (her right)",
+     "source_art": {
+      "status": "clean_room",
+      "her_art": [],
+      "her_art_note": "not on test_sheet_expressions.jpg (its only lowered brow is the anger down/in)",
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+        "box": [
+         715,
+         47,
+         815,
+         112
+        ],
+        "what": "3rd figure (arms crossed): flat, lowered annoyed brows; small head"
+       },
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/emo-2.jpg",
+        "box": [
+         1023,
+         208,
+         1243,
+         313
+        ],
+        "what": "3rd face: one brow flat/low, one raised (skeptical)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/focus.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "focus: flat lowered brows (puppet style)"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed brow part on #0000FF, flat colour, her base.png brow tone, her brow stroke weight, same size in every view, staged only"
+     }
+    },
+    {
+     "shape": "brow_down_in",
+     "what": "brow pulled down/in with furrow (her left)",
+     "source_art": {
+      "status": "her_sheet",
+      "needs_user_ok": "anger eyes/brows need the user's OK",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1441,
+         165,
+         1621,
+         265
+        ],
+        "what": "top row, 4th face: brows down and in, furrow"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions-2.jpg",
+        "box": [
+         429,
+         147,
+         649,
+         252
+        ],
+        "what": "2nd face (angry)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/anger.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "anger (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+        "box": [
+         98,
+         47,
+         198,
+         112
+        ],
+        "what": "1st figure, small head"
+       },
+       {
+        "file": "reference/grok_build/screenshots/expr-anger.png",
+        "box": [
+         155,
+         0,
+         210,
+         20
+        ],
+        "what": "tiny, clipped at top, joint dot over the forehead: not usable"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed brow part on #0000FF, flat colour, her base.png brow tone, her brow stroke weight, same size in every view, staged only; needs the user's OK"
+     }
+    },
+    {
+     "shape": "lower_lid_squint",
+     "what": "lower lid raised (squint)",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1441,
+         165,
+         1621,
+         265
+        ],
+        "what": "top row, 4th face (anger): tightened, raised lower lid"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         775,
+         147,
+         995,
+         252
+        ],
+        "what": "3rd face (laugh): happy squint, lower lid pushed up"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/focus.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "focus: lower-lid squint (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/smirk.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "smirk: smug lower-lid rise"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed lower-lid part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only (rig has no lower-lid param either)"
+     }
+    },
+    {
+     "shape": "gaze_range",
+     "what": "iris pinned in the far corner: X=+1 moves only 2 frame px",
+     "source_art": {
+      "status": "rig_limit",
+      "note": "not art: 315 diagonal iris travel is only +2 frame px (~3 view px) at X=+1; the side-eye pins the iris in the corner. Needs a wider irisLimitsPx (staged diagonal rig.json change), Coder/user call."
+     }
+    }
+   ],
+   "benchmark": {
+    "file": "/home/box/agent-data/agents/206a2578-0898-4eea-b85a-d95ac9bd9da0/attachments/12901b7ca3021e69921d261e9279c581d145f54f855a6065c25c01066adbdeea.jpg",
+    "crop_box": [
+     496,
+     213,
+     696,
+     323
+    ],
+    "zoom": 2,
+    "note": "target only; pixels never used in any part"
+   },
+   "tiles": {
+    "bench": "eyes/qa/benchmark_targets/tiles/2_sideeye_bench.png",
+    "rig": "eyes/qa/benchmark_targets/tiles/2_sideeye_rig.png"
+   }
+  },
+  {
+   "n": 3,
+   "name": "smirk",
+   "view": "apose",
+   "view_note": "front",
+   "params": {
+    "EyeLOpen": 0.86,
+    "EyeROpen": 0.86,
+    "EyeBallX": 0,
+    "EyeBallY": 0
+   },
+   "gaps": [
+    {
+     "shape": "lower_lid_squint",
+     "what": "smug lower-lid rise",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1441,
+         165,
+         1621,
+         265
+        ],
+        "what": "top row, 4th face (anger): tightened, raised lower lid"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         775,
+         147,
+         995,
+         252
+        ],
+        "what": "3rd face (laugh): happy squint, lower lid pushed up"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/focus.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "focus: lower-lid squint (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/smirk.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "smirk: smug lower-lid rise"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed lower-lid part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only (rig has no lower-lid param either)"
+     }
+    }
+   ],
+   "benchmark": {
+    "file": "/home/box/agent-data/agents/206a2578-0898-4eea-b85a-d95ac9bd9da0/attachments/b0810c3d09f6a3992e66f2c4f526b3bbf6c57ede872877fe06157478ba13dfca.jpg",
+    "crop_box": [
+     468,
+     209,
+     668,
+     319
+    ],
+    "zoom": 2,
+    "note": "target only; pixels never used in any part"
+   },
+   "tiles": {
+    "bench": "eyes/qa/benchmark_targets/tiles/3_smirk_bench.png",
+    "rig": "eyes/qa/benchmark_targets/tiles/3_smirk_rig.png"
+   }
+  },
+  {
+   "n": 4,
+   "name": "cheering, fists up",
+   "view": "315",
+   "view_note": "three-quarter toward her left",
+   "params": {
+    "EyeLOpen": 1,
+    "EyeROpen": 1,
+    "EyeBallX": 1,
+    "EyeBallY": 0
+   },
+   "gaps": [
+    {
+     "shape": "wider_open",
+     "what": "eyes wider than rest (lid_0 is the max)",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1012,
+         635,
+         1192,
+         735
+        ],
+        "what": "bottom row, 3rd face: eyes wider than rest, white all round the iris"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         75,
+         147,
+         295,
+         252
+        ],
+        "what": "1st face (shock)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/shock.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "shock (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/faces-locked.jpg",
+        "box": [
+         1421,
+         652,
+         1641,
+         757
+        ],
+        "what": "bottom-right face (gasp)"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed wide-open lid/white part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only"
+     }
+    },
+    {
+     "shape": "brow_raise",
+     "what": "brows lifted (no brow param)",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1012,
+         635,
+         1192,
+         735
+        ],
+        "what": "bottom row, 3rd face: brows raised with the wide eyes"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         75,
+         147,
+         295,
+         252
+        ],
+        "what": "shock: brows up"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: brow part as above, staged only"
+     }
+    }
+   ],
+   "benchmark": {
+    "file": "/home/box/agent-data/agents/206a2578-0898-4eea-b85a-d95ac9bd9da0/attachments/3b58b0c3df59994781ce43eb8152b4afb5195a68e74e40f58b043626de14ea6b.jpg",
+    "crop_box": [
+     445,
+     299,
+     645,
+     409
+    ],
+    "zoom": 2,
+    "note": "target only; pixels never used in any part"
+   },
+   "tiles": {
+    "bench": "eyes/qa/benchmark_targets/tiles/4_cheer_bench.png",
+    "rig": "eyes/qa/benchmark_targets/tiles/4_cheer_rig.png"
+   }
+  },
+  {
+   "n": 5,
+   "name": "angry yell",
+   "view": "apose",
+   "view_note": "front",
+   "params": {
+    "EyeLOpen": 1,
+    "EyeROpen": 1,
+    "EyeBallX": 0,
+    "EyeBallY": -0.5
+   },
+   "gaps": [
+    {
+     "shape": "brow_down_in",
+     "what": "brows down and in + furrow (needs user's OK)",
+     "source_art": {
+      "status": "her_sheet",
+      "needs_user_ok": "anger eyes/brows need the user's OK",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1441,
+         165,
+         1621,
+         265
+        ],
+        "what": "top row, 4th face: brows down and in, furrow"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions-2.jpg",
+        "box": [
+         429,
+         147,
+         649,
+         252
+        ],
+        "what": "2nd face (angry)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/anger.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "anger (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+        "box": [
+         98,
+         47,
+         198,
+         112
+        ],
+        "what": "1st figure, small head"
+       },
+       {
+        "file": "reference/grok_build/screenshots/expr-anger.png",
+        "box": [
+         155,
+         0,
+         210,
+         20
+        ],
+        "what": "tiny, clipped at top, joint dot over the forehead: not usable"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed brow part on #0000FF, flat colour, her base.png brow tone, her brow stroke weight, same size in every view, staged only; needs the user's OK"
+     }
+    },
+    {
+     "shape": "lid_angle_in",
+     "what": "upper lid slanted toward the nose (lid only drops evenly)",
+     "source_art": {
+      "status": "her_sheet",
+      "needs_user_ok": "part of the anger look",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1441,
+         165,
+         1621,
+         265
+        ],
+        "what": "anger: upper lid slanted down toward the nose"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions-2.jpg",
+        "box": [
+         429,
+         147,
+         649,
+         252
+        ],
+        "what": "angry"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: extra slanted lid frame, keyed on #0000FF, flat skin + her lash tone and weight, same size in every view, staged only; needs the user's OK"
+     }
+    },
+    {
+     "shape": "lower_lid_squint",
+     "what": "tense, raised lower lid",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1441,
+         165,
+         1621,
+         265
+        ],
+        "what": "top row, 4th face (anger): tightened, raised lower lid"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         775,
+         147,
+         995,
+         252
+        ],
+        "what": "3rd face (laugh): happy squint, lower lid pushed up"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/focus.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "focus: lower-lid squint (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/smirk.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "smirk: smug lower-lid rise"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed lower-lid part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only (rig has no lower-lid param either)"
+     }
+    },
+    {
+     "shape": "wider_open",
+     "what": "glare with white under the iris (wider than rest)",
+     "source_art": {
+      "status": "her_sheet",
+      "her_art": [
+       {
+        "file": "reference/test_sheet_expressions.jpg",
+        "box": [
+         1012,
+         635,
+         1192,
+         735
+        ],
+        "what": "bottom row, 3rd face: eyes wider than rest, white all round the iris"
+       }
+      ],
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         75,
+         147,
+         295,
+         252
+        ],
+        "what": "1st face (shock)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/shock.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "shock (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/faces-locked.jpg",
+        "box": [
+         1421,
+         652,
+         1641,
+         757
+        ],
+        "what": "bottom-right face (gasp)"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed wide-open lid/white part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only"
+     }
+    }
+   ],
+   "benchmark": {
+    "file": "/home/box/agent-data/agents/206a2578-0898-4eea-b85a-d95ac9bd9da0/attachments/546a9d80a001d7f2c9d50d6312fab8cb198b6cfb6514310fb726d0a648b37458.jpg",
+    "crop_box": [
+     456,
+     223,
+     656,
+     333
+    ],
+    "zoom": 2,
+    "note": "target only; pixels never used in any part"
+   },
+   "tiles": {
+    "bench": "eyes/qa/benchmark_targets/tiles/5_angry_bench.png",
+    "rig": "eyes/qa/benchmark_targets/tiles/5_angry_rig.png"
+   }
+  },
+  {
+   "n": 6,
+   "name": "sad",
+   "view": "apose",
+   "view_note": "front (slight turn to her left, small enough for apose)",
+   "params": {
+    "EyeLOpen": 0.43,
+    "EyeROpen": 0.43,
+    "EyeBallX": 0.5,
+    "EyeBallY": 1
+   },
+   "gaps": [
+    {
+     "shape": "brow_inner_up",
+     "what": "inner brows up (no brow param)",
+     "source_art": {
+      "status": "clean_room",
+      "her_art": [],
+      "her_art_note": "not on test_sheet_expressions.jpg or the expr-*.png screenshots",
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/emo-2.jpg",
+        "box": [
+         115,
+         208,
+         335,
+         313
+        ],
+        "what": "1st face (worried/sad): inner brows up"
+       },
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+        "box": [
+         415,
+         151,
+         635,
+         256
+        ],
+        "what": "2nd face (worried)"
+       },
+       {
+        "file": "reference/grok_build/public/puppet/emotions/sorrow.png",
+        "box": [
+         180,
+         220,
+         520,
+         380
+        ],
+        "what": "sorrow (puppet style)"
+       },
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+        "box": [
+         83,
+         756,
+         183,
+         821
+        ],
+        "what": "5th figure: sad/tired, heavy lids, small head"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles: new keyed brow part on #0000FF, flat colour, her base.png brow tone, her brow stroke weight, same size in every view, staged only"
+     }
+    },
+    {
+     "shape": "lid_droop_outer",
+     "what": "lid droops at the outer corner (lid drops evenly)",
+     "source_art": {
+      "status": "clean_room",
+      "her_art": [],
+      "her_art_note": "not on her sheet",
+      "clean_room": [
+       {
+        "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+        "box": [
+         83,
+         756,
+         183,
+         821
+        ],
+        "what": "heavy lids with outer droop, small head (low res)"
+       }
+      ],
+      "views": "front only",
+      "to_be_made": "diagonals/profiles (and a usable front size): extra drooped lid frame, keyed on #0000FF, flat skin + her lash tone and weight, same size in every view, staged only"
+     }
+    }
+   ],
+   "benchmark": {
+    "file": "/home/box/agent-data/agents/206a2578-0898-4eea-b85a-d95ac9bd9da0/attachments/1ef68fbe4d8401fbc0646ce21ff5532bb85436d09d1d964b220f8aff0f55b4f4.jpg",
+    "crop_box": [
+     498,
+     255,
+     698,
+     365
+    ],
+    "zoom": 2,
+    "note": "target only; pixels never used in any part"
+   },
+   "tiles": {
+    "bench": "eyes/qa/benchmark_targets/tiles/6_sad_bench.png",
+    "rig": "eyes/qa/benchmark_targets/tiles/6_sad_rig.png"
+   }
+  }
+ ],
+ "source_art": {
+  "happy_closed_curve": {
+   "status": "her_sheet",
+   "her_art": [
+    {
+     "file": "reference/test_sheet_expressions.jpg",
+     "box": [
+      1012,
+      165,
+      1192,
+      265
+     ],
+     "what": "top row, 3rd face (joy): both eyes closed in an upward ^ arch with lashes, front"
+    }
+   ],
+   "clean_room": [],
+   "clean_room_note": "none found. Only relaxed/downward closed eyes: clean-room/sheets/faces-locked.jpg [568,191,788,296], puppet/blink/closed.png [180,220,520,380], wink in clean-room/sheets/reactions-2.jpg [68,147,288,252]. eyes/work/ref_closed_*.png / ref_wink_*.png are also relaxed closes, not the happy arch.",
+   "views": "front only",
+   "to_be_made": "315/045 diagonals and left/right profiles: new keyed lid part on #0000FF, flat colour, her exact base.png tones, her lid/lash line weight, same size in every view, staged only"
+  },
+  "lower_lid_squint": {
+   "status": "her_sheet",
+   "her_art": [
+    {
+     "file": "reference/test_sheet_expressions.jpg",
+     "box": [
+      1441,
+      165,
+      1621,
+      265
+     ],
+     "what": "top row, 4th face (anger): tightened, raised lower lid"
+    }
+   ],
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+     "box": [
+      775,
+      147,
+      995,
+      252
+     ],
+     "what": "3rd face (laugh): happy squint, lower lid pushed up"
+    },
+    {
+     "file": "reference/grok_build/public/puppet/emotions/focus.png",
+     "box": [
+      180,
+      220,
+      520,
+      380
+     ],
+     "what": "focus: lower-lid squint (puppet style)"
+    },
+    {
+     "file": "reference/grok_build/public/puppet/emotions/smirk.png",
+     "box": [
+      180,
+      220,
+      520,
+      380
+     ],
+     "what": "smirk: smug lower-lid rise"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles: new keyed lower-lid part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only (rig has no lower-lid param either)"
+  },
+  "wider_open": {
+   "status": "her_sheet",
+   "her_art": [
+    {
+     "file": "reference/test_sheet_expressions.jpg",
+     "box": [
+      1012,
+      635,
+      1192,
+      735
+     ],
+     "what": "bottom row, 3rd face: eyes wider than rest, white all round the iris"
+    }
+   ],
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+     "box": [
+      75,
+      147,
+      295,
+      252
+     ],
+     "what": "1st face (shock)"
+    },
+    {
+     "file": "reference/grok_build/public/puppet/emotions/shock.png",
+     "box": [
+      180,
+      220,
+      520,
+      380
+     ],
+     "what": "shock (puppet style)"
+    },
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/faces-locked.jpg",
+     "box": [
+      1421,
+      652,
+      1641,
+      757
+     ],
+     "what": "bottom-right face (gasp)"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles: new keyed wide-open lid/white part on #0000FF, flat colour, her base.png tones, her line weight, same size in every view, staged only"
+  },
+  "brow_down_in": {
+   "status": "her_sheet",
+   "needs_user_ok": "anger eyes/brows need the user's OK",
+   "her_art": [
+    {
+     "file": "reference/test_sheet_expressions.jpg",
+     "box": [
+      1441,
+      165,
+      1621,
+      265
+     ],
+     "what": "top row, 4th face: brows down and in, furrow"
+    }
+   ],
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/reactions-2.jpg",
+     "box": [
+      429,
+      147,
+      649,
+      252
+     ],
+     "what": "2nd face (angry)"
+    },
+    {
+     "file": "reference/grok_build/public/puppet/emotions/anger.png",
+     "box": [
+      180,
+      220,
+      520,
+      380
+     ],
+     "what": "anger (puppet style)"
+    },
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+     "box": [
+      98,
+      47,
+      198,
+      112
+     ],
+     "what": "1st figure, small head"
+    },
+    {
+     "file": "reference/grok_build/screenshots/expr-anger.png",
+     "box": [
+      155,
+      0,
+      210,
+      20
+     ],
+     "what": "tiny, clipped at top, joint dot over the forehead: not usable"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles: new keyed brow part on #0000FF, flat colour, her base.png brow tone, her brow stroke weight, same size in every view, staged only; needs the user's OK"
+  },
+  "brow_inner_up": {
+   "status": "clean_room",
+   "her_art": [],
+   "her_art_note": "not on test_sheet_expressions.jpg or the expr-*.png screenshots",
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/emo-2.jpg",
+     "box": [
+      115,
+      208,
+      335,
+      313
+     ],
+     "what": "1st face (worried/sad): inner brows up"
+    },
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+     "box": [
+      415,
+      151,
+      635,
+      256
+     ],
+     "what": "2nd face (worried)"
+    },
+    {
+     "file": "reference/grok_build/public/puppet/emotions/sorrow.png",
+     "box": [
+      180,
+      220,
+      520,
+      380
+     ],
+     "what": "sorrow (puppet style)"
+    },
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+     "box": [
+      83,
+      756,
+      183,
+      821
+     ],
+     "what": "5th figure: sad/tired, heavy lids, small head"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles: new keyed brow part on #0000FF, flat colour, her base.png brow tone, her brow stroke weight, same size in every view, staged only"
+  },
+  "flat_annoyed_brow": {
+   "status": "clean_room",
+   "her_art": [],
+   "her_art_note": "not on test_sheet_expressions.jpg (its only lowered brow is the anger down/in)",
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+     "box": [
+      715,
+      47,
+      815,
+      112
+     ],
+     "what": "3rd figure (arms crossed): flat, lowered annoyed brows; small head"
+    },
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/emo-2.jpg",
+     "box": [
+      1023,
+      208,
+      1243,
+      313
+     ],
+     "what": "3rd face: one brow flat/low, one raised (skeptical)"
+    },
+    {
+     "file": "reference/grok_build/public/puppet/emotions/focus.png",
+     "box": [
+      180,
+      220,
+      520,
+      380
+     ],
+     "what": "focus: flat lowered brows (puppet style)"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles: new keyed brow part on #0000FF, flat colour, her base.png brow tone, her brow stroke weight, same size in every view, staged only"
+  },
+  "brow_raise": {
+   "status": "her_sheet",
+   "her_art": [
+    {
+     "file": "reference/test_sheet_expressions.jpg",
+     "box": [
+      1012,
+      635,
+      1192,
+      735
+     ],
+     "what": "bottom row, 3rd face: brows raised with the wide eyes"
+    }
+   ],
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/reactions.jpg",
+     "box": [
+      75,
+      147,
+      295,
+      252
+     ],
+     "what": "shock: brows up"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles: brow part as above, staged only"
+  },
+  "lid_angle_in": {
+   "status": "her_sheet",
+   "needs_user_ok": "part of the anger look",
+   "her_art": [
+    {
+     "file": "reference/test_sheet_expressions.jpg",
+     "box": [
+      1441,
+      165,
+      1621,
+      265
+     ],
+     "what": "anger: upper lid slanted down toward the nose"
+    }
+   ],
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/reactions-2.jpg",
+     "box": [
+      429,
+      147,
+      649,
+      252
+     ],
+     "what": "angry"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles: extra slanted lid frame, keyed on #0000FF, flat skin + her lash tone and weight, same size in every view, staged only; needs the user's OK"
+  },
+  "lid_droop_outer": {
+   "status": "clean_room",
+   "her_art": [],
+   "her_art_note": "not on her sheet",
+   "clean_room": [
+    {
+     "file": "reference/grok_build/public/clean-room/sheets/emotions.jpg",
+     "box": [
+      83,
+      756,
+      183,
+      821
+     ],
+     "what": "heavy lids with outer droop, small head (low res)"
+    }
+   ],
+   "views": "front only",
+   "to_be_made": "diagonals/profiles (and a usable front size): extra drooped lid frame, keyed on #0000FF, flat skin + her lash tone and weight, same size in every view, staged only"
+  },
+  "gaze_range": {
+   "status": "rig_limit",
+   "note": "not art: 315 diagonal iris travel is only +2 frame px (~3 view px) at X=+1; the side-eye pins the iris in the corner. Needs a wider irisLimitsPx (staged diagonal rig.json change), Coder/user call."
+  },
+  "head_tilt": {
+   "status": "not_eyes",
+   "note": "head tilted back is head/body pose, not an eye control; outside Eyes scope"
+  }
+ }
+}

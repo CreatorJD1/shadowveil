@@ -1,0 +1,530 @@
+{
+ "method": {
+  "urls": "http://127.0.0.1:8765/rig/?view=<view>&quality=linear[&hairless=1]",
+  "renderer": "headless Chrome (puppeteer-core), rig render(g,rest) like rig/work/hairless/hl_render.js; rest = render(g,true); other poses = render(g,false) with params set",
+  "region": "eyes/handoff_hairless/<view>_eye_brow_lock.png dilated by 6 px (disk)",
+  "diff": "any RGBA channel differs (px transparent in both ignored)",
+  "base": "base.png compared after the same canvas round-trip as the renders (renders/<view>_base_canvas.png, drawn from the rig R.im.base); raw-PNG counts also given"
+ },
+ "views": {
+  "apose": {
+   "lockPx": 4455,
+   "regionPx": 6957,
+   "regionBBox_xyxy": [
+    610,
+    188,
+    754,
+    257
+   ],
+   "poses": {
+    "rest": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 0,
+     "hairless_vs_base_wholeFrame": 0,
+     "hairless_vs_rawBasePNG_inRegion": 0,
+     "hairless_vs_rawBasePNG_wholeFrame": 6182,
+     "live_vs_base_inRegion": 0,
+     "live_vs_base_wholeFrame": 0,
+     "live_vs_rawBasePNG_inRegion": 0,
+     "live_vs_rawBasePNG_wholeFrame": 6182
+    },
+    "posed_default": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 0,
+     "hairless_vs_base_wholeFrame": 378,
+     "hairless_vs_rawBasePNG_inRegion": 0,
+     "hairless_vs_rawBasePNG_wholeFrame": 6287,
+     "live_vs_base_inRegion": 0,
+     "live_vs_base_wholeFrame": 378,
+     "live_vs_rawBasePNG_inRegion": 0,
+     "live_vs_rawBasePNG_wholeFrame": 6287
+    },
+    "blink0.5": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "blink0": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    }
+   },
+   "stagedHairlessBodyVsLive": {
+    "base_body.png": {
+     "changedWhole": 334,
+     "changedInRegion": 204,
+     "changedInLock": 0,
+     "inRegionBBox_xyxy": [
+      612,
+      214,
+      752,
+      238
+     ],
+     "inRegionComponents": [
+      {
+       "bbox_xyxy": [
+        746,
+        214,
+        752,
+        238
+       ],
+       "px": 114
+      },
+      {
+       "bbox_xyxy": [
+        612,
+        216,
+        619,
+        235
+       ],
+       "px": 90
+      }
+     ]
+    },
+    "base_body_skin.png": {
+     "changedWhole": 2540,
+     "changedInRegion": 204,
+     "changedInLock": 0,
+     "inRegionBBox_xyxy": [
+      612,
+      214,
+      752,
+      238
+     ],
+     "inRegionComponents": [
+      {
+       "bbox_xyxy": [
+        746,
+        214,
+        752,
+        238
+       ],
+       "px": 114
+      },
+      {
+       "bbox_xyxy": [
+        612,
+        216,
+        619,
+        235
+       ],
+       "px": 90
+      }
+     ]
+    }
+   }
+  },
+  "tpose": {
+   "lockPx": 3425,
+   "regionPx": 5717,
+   "regionBBox_xyxy": [
+    615,
+    186,
+    750,
+    251
+   ],
+   "poses": {
+    "rest": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 0,
+     "hairless_vs_base_wholeFrame": 0,
+     "hairless_vs_rawBasePNG_inRegion": 0,
+     "hairless_vs_rawBasePNG_wholeFrame": 11445,
+     "live_vs_base_inRegion": 0,
+     "live_vs_base_wholeFrame": 0,
+     "live_vs_rawBasePNG_inRegion": 0,
+     "live_vs_rawBasePNG_wholeFrame": 11445
+    },
+    "posed_default": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 0,
+     "hairless_vs_base_wholeFrame": 2362,
+     "hairless_vs_rawBasePNG_inRegion": 0,
+     "hairless_vs_rawBasePNG_wholeFrame": 13214,
+     "live_vs_base_inRegion": 0,
+     "live_vs_base_wholeFrame": 2362,
+     "live_vs_rawBasePNG_inRegion": 0,
+     "live_vs_rawBasePNG_wholeFrame": 13214
+    },
+    "blink0.5": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "blink0": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    }
+   },
+   "stagedHairlessBodyVsLive": {
+    "base_body.png": {
+     "changedWhole": 54,
+     "changedInRegion": 0,
+     "changedInLock": 0
+    },
+    "base_body_skin.png": {
+     "changedWhole": 54,
+     "changedInRegion": 0,
+     "changedInLock": 0
+    }
+   }
+  },
+  "left": {
+   "lockPx": 1803,
+   "regionPx": 3028,
+   "regionBBox_xyxy": [
+    593,
+    167,
+    650,
+    237
+   ],
+   "poses": {
+    "rest": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 0,
+     "hairless_vs_base_wholeFrame": 0,
+     "hairless_vs_rawBasePNG_inRegion": 21,
+     "hairless_vs_rawBasePNG_wholeFrame": 4557,
+     "hairless_vs_rawBasePNG_note": "only semi-transparent px (alpha 3-253), alpha equal, max RGB delta 22: canvas premultiplied-alpha rounding, not a content difference",
+     "live_vs_base_inRegion": 0,
+     "live_vs_base_wholeFrame": 0,
+     "live_vs_rawBasePNG_inRegion": 21,
+     "live_vs_rawBasePNG_wholeFrame": 4557,
+     "live_vs_rawBasePNG_note": "only semi-transparent px (alpha 3-253), alpha equal, max RGB delta 22: canvas premultiplied-alpha rounding, not a content difference"
+    },
+    "posed_default": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 4,
+     "hairless_vs_base_wholeFrame": 1095,
+     "hairless_vs_rawBasePNG_inRegion": 24,
+     "hairless_vs_rawBasePNG_wholeFrame": 5418,
+     "hairless_vs_rawBasePNG_note": "only semi-transparent px (alpha 3-253), alpha equal, max RGB delta 22: canvas premultiplied-alpha rounding, not a content difference",
+     "live_vs_base_inRegion": 4,
+     "live_vs_base_wholeFrame": 1095,
+     "live_vs_rawBasePNG_inRegion": 24,
+     "live_vs_rawBasePNG_wholeFrame": 5418,
+     "live_vs_rawBasePNG_note": "only semi-transparent px (alpha 3-253), alpha equal, max RGB delta 22: canvas premultiplied-alpha rounding, not a content difference"
+    },
+    "blink0.5": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "blink0": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    }
+   },
+   "stagedHairlessBodyVsLive": {
+    "base_body.png": {
+     "changedWhole": 68,
+     "changedInRegion": 0,
+     "changedInLock": 0
+    },
+    "base_body_skin.png": {
+     "changedWhole": 68,
+     "changedInRegion": 0,
+     "changedInLock": 0
+    }
+   }
+  },
+  "right": {
+   "lockPx": 1892,
+   "regionPx": 3129,
+   "regionBBox_xyxy": [
+    717,
+    173,
+    779,
+    239
+   ],
+   "poses": {
+    "rest": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 0,
+     "hairless_vs_base_wholeFrame": 0,
+     "hairless_vs_rawBasePNG_inRegion": 8,
+     "hairless_vs_rawBasePNG_wholeFrame": 4359,
+     "hairless_vs_rawBasePNG_note": "only semi-transparent px (alpha 7-190), alpha equal, max RGB delta 13: canvas premultiplied-alpha rounding, not a content difference",
+     "live_vs_base_inRegion": 0,
+     "live_vs_base_wholeFrame": 0,
+     "live_vs_rawBasePNG_inRegion": 8,
+     "live_vs_rawBasePNG_wholeFrame": 4359,
+     "live_vs_rawBasePNG_note": "only semi-transparent px (alpha 7-190), alpha equal, max RGB delta 13: canvas premultiplied-alpha rounding, not a content difference"
+    },
+    "posed_default": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0,
+     "hairless_vs_base_inRegion": 6,
+     "hairless_vs_base_wholeFrame": 1008,
+     "hairless_vs_rawBasePNG_inRegion": 14,
+     "hairless_vs_rawBasePNG_wholeFrame": 5167,
+     "hairless_vs_rawBasePNG_note": "only semi-transparent px (alpha 7-253), alpha equal, max RGB delta 13: canvas premultiplied-alpha rounding, not a content difference",
+     "live_vs_base_inRegion": 6,
+     "live_vs_base_wholeFrame": 1008,
+     "live_vs_rawBasePNG_inRegion": 14,
+     "live_vs_rawBasePNG_wholeFrame": 5167,
+     "live_vs_rawBasePNG_note": "only semi-transparent px (alpha 7-253), alpha equal, max RGB delta 13: canvas premultiplied-alpha rounding, not a content difference"
+    },
+    "blink0.5": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "blink0": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gy-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx+1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "gx-1y-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx+1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    },
+    "closed_gx-1": {
+     "diffInRegion": 0,
+     "diffInLock": 0,
+     "diffWholeFrame": 0
+    }
+   },
+   "stagedHairlessBodyVsLive": {
+    "base_body.png": {
+     "changedWhole": 23,
+     "changedInRegion": 0,
+     "changedInLock": 0
+    },
+    "base_body_skin.png": {
+     "changedWhole": 23,
+     "changedInRegion": 0,
+     "changedInLock": 0
+    }
+   }
+  },
+  "back": {
+   "note": "no face (eyes not drawn); no eye lock; rest only",
+   "rest": {
+    "diffWholeFrame_hairless_vs_live": 0,
+    "hairless_vs_base_wholeFrame": 0,
+    "live_vs_base_wholeFrame": 0
+   }
+  }
+ },
+ "summary": {
+  "totalDiffInRegion": 0,
+  "allZero": true,
+  "restHairlessMatchesBaseInRegion": true
+ },
+ "notes": [
+  "Whole-frame hairless vs live diff is also 0 px at every pose in every view: with hair drawn, the staged hairless skin is fully covered (by hair/eye parts), so this test proves the eye area is unchanged in the composited rig, not that the hairless skin itself would be clean with hair hidden.",
+  "apose: the staged hairless base_body/base_body_skin change 204 px inside the 6 px ring around the lock (0 inside the lock itself); they are covered in every render (0 px render diff). tpose/left/right: 0 changed px in the region.",
+  "Raw base.png vs render differs only in semi-transparent pixels (canvas premultiplied-alpha rounding, alpha equal); against base.png drawn through the same canvas (what the rig Rest check does) the diff is 0. Rig Rest check: PASS 0 px for all 5 views, live and hairless.",
+  "Lock used: eyes/handoff_hairless/<view>_eye_brow_lock.png (apose = v4 content, tpose = trimmed). back: no face, no lock; rest whole-frame hairless vs live 0 px."
+ ]
+}

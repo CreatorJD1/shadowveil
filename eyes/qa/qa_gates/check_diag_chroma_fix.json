@@ -1,0 +1,331 @@
+{
+ "doc": "Post-fix checks for the diagonal far-eye chroma fix (read-only).\nrest_on_frame: composite (white, iris, lid_0, lash per eye; gaze 0) on the turn frame vs the frame.\n  face px = frame px that are NOT key-blue by the qa_gates chroma rule. Reports diff px in face / outside face.\ngrey: composite of the eye parts alone over neutral grey (128,128,128), 9 gaze x 8 lid frames x {current, diag} limits:\n  chroma px (qa_gates rule) anywhere; before (backups) vs after.\ncontinuity: 8-connected components of (lid_k U lash) per eye per k, before vs after.",
+ "045": {
+  "before": {
+   "rest_on_frame_diff_px": 0,
+   "rest_diff_in_face_px": 0,
+   "rest_diff_outside_face_px": 0,
+   "rest_diff_xy_frame": [],
+   "grey_chroma_px_total_144_renders": 5760,
+   "grey_cases_with_chroma": 144,
+   "grey_worst": [
+    [
+     "current",
+     -1,
+     -1,
+     0,
+     82
+    ],
+    [
+     "current",
+     -1,
+     0,
+     0,
+     82
+    ],
+    [
+     "current",
+     -1,
+     1,
+     0,
+     82
+    ]
+   ],
+   "components_lid_k_union_lash": {
+    "EyeR": [
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "EyeL": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "after": {
+   "rest_on_frame_diff_px": 6,
+   "rest_diff_in_face_px": 0,
+   "rest_diff_outside_face_px": 6,
+   "rest_diff_xy_frame": [
+    [
+     326,
+     168,
+     [
+      7,
+      0,
+      127
+     ],
+     [
+      8,
+      0,
+      48
+     ]
+    ],
+    [
+     327,
+     168,
+     [
+      6,
+      0,
+      126
+     ],
+     [
+      6,
+      0,
+      44
+     ]
+    ],
+    [
+     326,
+     169,
+     [
+      8,
+      1,
+      128
+     ],
+     [
+      10,
+      2,
+      24
+     ]
+    ],
+    [
+     327,
+     169,
+     [
+      9,
+      2,
+      129
+     ],
+     [
+      12,
+      4,
+      20
+     ]
+    ],
+    [
+     330,
+     179,
+     [
+      4,
+      0,
+      134
+     ],
+     [
+      6,
+      0,
+      44
+     ]
+    ],
+    [
+     331,
+     179,
+     [
+      11,
+      5,
+      141
+     ],
+     [
+      22,
+      11,
+      15
+     ]
+    ]
+   ],
+   "grey_chroma_px_total_144_renders": 0,
+   "grey_cases_with_chroma": 0,
+   "grey_worst": [],
+   "components_lid_k_union_lash": {
+    "EyeR": [
+     1,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "EyeL": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   }
+  }
+ },
+ "315": {
+  "before": {
+   "rest_on_frame_diff_px": 0,
+   "rest_diff_in_face_px": 0,
+   "rest_diff_outside_face_px": 0,
+   "rest_diff_xy_frame": [],
+   "grey_chroma_px_total_144_renders": 6570,
+   "grey_cases_with_chroma": 144,
+   "grey_worst": [
+    [
+     "current",
+     -1,
+     -1,
+     0,
+     85
+    ],
+    [
+     "current",
+     -1,
+     0,
+     0,
+     85
+    ],
+    [
+     "current",
+     -1,
+     1,
+     0,
+     85
+    ]
+   ],
+   "components_lid_k_union_lash": {
+    "EyeR": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "EyeL": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "after": {
+   "rest_on_frame_diff_px": 5,
+   "rest_diff_in_face_px": 0,
+   "rest_diff_outside_face_px": 5,
+   "rest_diff_xy_frame": [
+    [
+     432,
+     180,
+     [
+      34,
+      28,
+      139
+     ],
+     [
+      61,
+      50,
+      47
+     ]
+    ],
+    [
+     432,
+     181,
+     [
+      34,
+      28,
+      139
+     ],
+     [
+      61,
+      50,
+      47
+     ]
+    ],
+    [
+     432,
+     182,
+     [
+      32,
+      17,
+      124
+     ],
+     [
+      58,
+      31,
+      17
+     ]
+    ],
+    [
+     432,
+     186,
+     [
+      20,
+      8,
+      129
+     ],
+     [
+      40,
+      16,
+      4
+     ]
+    ],
+    [
+     433,
+     186,
+     [
+      16,
+      4,
+      125
+     ],
+     [
+      28,
+      7,
+      27
+     ]
+    ]
+   ],
+   "grey_chroma_px_total_144_renders": 0,
+   "grey_cases_with_chroma": 0,
+   "grey_worst": [],
+   "components_lid_k_union_lash": {
+    "EyeR": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "EyeL": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "apose/EyeR X=-1": {
+  "exposedPx": 42,
+  "liveLum": 215.1,
+  "stagedLum": 208.5,
+  "herDrawnWhiteSameRowsLum": 205.2,
+  "changedPx": 21
+ },
+ "apose/EyeR X=+1": {
+  "exposedPx": 14,
+  "liveLum": 229.9,
+  "stagedLum": 216.5,
+  "herDrawnWhiteSameRowsLum": 205.2,
+  "changedPx": 11
+ },
+ "apose/EyeL X=-1": {
+  "exposedPx": 41,
+  "liveLum": 202.7,
+  "stagedLum": 196.6,
+  "herDrawnWhiteSameRowsLum": 205.9,
+  "changedPx": 21
+ },
+ "apose/EyeL X=+1": {
+  "exposedPx": 15,
+  "liveLum": 189.3,
+  "stagedLum": 188.1,
+  "herDrawnWhiteSameRowsLum": 205.9,
+  "changedPx": 3
+ },
+ "tpose/EyeR X=-1": {
+  "exposedPx": 28,
+  "liveLum": 213.8,
+  "stagedLum": 213.5,
+  "herDrawnWhiteSameRowsLum": 196.9,
+  "changedPx": 2
+ },
+ "tpose/EyeR X=+1": {
+  "exposedPx": 14,
+  "liveLum": 218.6,
+  "stagedLum": 208.6,
+  "herDrawnWhiteSameRowsLum": 196.9,
+  "changedPx": 9
+ },
+ "tpose/EyeL X=-1": {
+  "exposedPx": 27,
+  "liveLum": 199.4,
+  "stagedLum": 189.3,
+  "herDrawnWhiteSameRowsLum": 195.3,
+  "changedPx": 16
+ },
+ "tpose/EyeL X=+1": {
+  "exposedPx": 14,
+  "liveLum": 202.9,
+  "stagedLum": 196.3,
+  "herDrawnWhiteSameRowsLum": 195.3,
+  "changedPx": 6
+ },
+ "left/EyeL X=+1": {
+  "exposedPx": 18,
+  "liveLum": 86.4,
+  "stagedLum": 84.7,
+  "herDrawnWhiteSameRowsLum": 211.5,
+  "changedPx": 2
+ },
+ "right/EyeR X=-1": {
+  "exposedPx": 28,
+  "liveLum": 150.4,
+  "stagedLum": 147.7,
+  "herDrawnWhiteSameRowsLum": 214.4,
+  "changedPx": 12
+ }
+}
