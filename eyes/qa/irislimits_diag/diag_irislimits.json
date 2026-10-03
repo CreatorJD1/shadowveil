@@ -1,0 +1,168 @@
+{
+ "rule": "Draw order is white, iris source-atop on white, lid_k, lash, so the iris is always clipped to her eye-white mask and drawn\nunder her lid line and lash. A shift d (frame px) is allowed when, on every lid frame k = 0..7:\n  (1) the iris bbox leading edge stays within the eye corner (the extreme column/row of the eye lock E = white U rest iris), and\n  (2) the visible iris (shifted core alpha>=128, inside E, not under lid_k or lash ink) keeps >= KEEP of what the\n      centred iris shows on that frame. Frames where the centred iris is already < 4 px visible are skipped (closed).\nThe limit is the largest |d| reached stepping out 1 px at a time; the failing frame and rule are recorded.",
+ "KEEP": 0.75,
+ "045": {
+  "rig": "eyes/staged/diagonals/045/rig.json",
+  "frame": "reference/apose_turn/frames/f033.png",
+  "viewFitScale": 1.54468,
+  "eyes": {
+   "EyeR": {
+    "current": {
+     "dxAtXminus1": -2,
+     "dxAtXplus1": 0,
+     "dyAtYminus1": -1,
+     "dyAtYplus1": 1
+    },
+    "irislimits_diag": {
+     "dxAtXplus1": 0,
+     "dxAtXminus1": 0,
+     "dyAtYplus1": 0,
+     "dyAtYminus1": 0
+    },
+    "limited_by": {
+     "dxAtXplus1": "stops at 1: iris edge passes the eye corner",
+     "dxAtXminus1": "stops at 1: lid_6: visible iris 6 < 75% of 10 (would slide under lid line/lash)",
+     "dyAtYplus1": "stops at 1: iris edge passes the eye corner",
+     "dyAtYminus1": "stops at 1: lid_3: visible iris 19 < 75% of 26 (would slide under lid line/lash)"
+    },
+    "visible_iris_px_per_lid_frame_centred": [
+     50,
+     42,
+     34,
+     26,
+     19,
+     14,
+     10,
+     0
+    ],
+    "view_px": {
+     "dxAtXplus1": 0.0,
+     "dxAtXminus1": 0.0,
+     "dyAtYplus1": 0.0,
+     "dyAtYminus1": 0.0
+    }
+   },
+   "EyeL": {
+    "current": {
+     "dxAtXminus1": 0,
+     "dxAtXplus1": 1,
+     "dyAtYminus1": -1,
+     "dyAtYplus1": 1
+    },
+    "irislimits_diag": {
+     "dxAtXplus1": 3,
+     "dxAtXminus1": -4,
+     "dyAtYplus1": 0,
+     "dyAtYminus1": 0
+    },
+    "limited_by": {
+     "dxAtXplus1": "stops at 4: iris edge passes the eye corner",
+     "dxAtXminus1": "stops at 5: iris edge passes the eye corner",
+     "dyAtYplus1": "stops at 1: iris edge passes the eye corner",
+     "dyAtYminus1": "stops at 1: iris edge passes the eye corner"
+    },
+    "visible_iris_px_per_lid_frame_centred": [
+     107,
+     93,
+     71,
+     57,
+     36,
+     24,
+     6,
+     0
+    ],
+    "view_px": {
+     "dxAtXplus1": 4.63,
+     "dxAtXminus1": -6.18,
+     "dyAtYplus1": 0.0,
+     "dyAtYminus1": 0.0
+    }
+   }
+  }
+ },
+ "315": {
+  "rig": "eyes/staged/diagonals/315/rig.json",
+  "frame": "reference/apose_turn/frames/f191.png",
+  "viewFitScale": 1.54468,
+  "eyes": {
+   "EyeR": {
+    "current": {
+     "dxAtXminus1": -2,
+     "dxAtXplus1": 2,
+     "dyAtYminus1": -1,
+     "dyAtYplus1": 1
+    },
+    "irislimits_diag": {
+     "dxAtXplus1": 4,
+     "dxAtXminus1": -3,
+     "dyAtYplus1": 0,
+     "dyAtYminus1": 0
+    },
+    "limited_by": {
+     "dxAtXplus1": "stops at 5: iris edge passes the eye corner",
+     "dxAtXminus1": "stops at 4: iris edge passes the eye corner",
+     "dyAtYplus1": "stops at 1: iris edge passes the eye corner",
+     "dyAtYminus1": "stops at 1: lid_4: visible iris 17 < 75% of 27 (would slide under lid line/lash)"
+    },
+    "visible_iris_px_per_lid_frame_centred": [
+     85,
+     72,
+     58,
+     46,
+     27,
+     17,
+     8,
+     0
+    ],
+    "view_px": {
+     "dxAtXplus1": 6.18,
+     "dxAtXminus1": -4.63,
+     "dyAtYplus1": 0.0,
+     "dyAtYminus1": 0.0
+    }
+   },
+   "EyeL": {
+    "current": {
+     "dxAtXminus1": 0,
+     "dxAtXplus1": 2,
+     "dyAtYminus1": -1,
+     "dyAtYplus1": 1
+    },
+    "irislimits_diag": {
+     "dxAtXplus1": 1,
+     "dxAtXminus1": 0,
+     "dyAtYplus1": 0,
+     "dyAtYminus1": 0
+    },
+    "limited_by": {
+     "dxAtXplus1": "stops at 2: iris edge passes the eye corner",
+     "dxAtXminus1": "stops at 1: lid_6: visible iris 5 < 75% of 7 (would slide under lid line/lash)",
+     "dyAtYplus1": "stops at 1: iris edge passes the eye corner",
+     "dyAtYminus1": "stops at 1: iris edge passes the eye corner"
+    },
+    "visible_iris_px_per_lid_frame_centred": [
+     51,
+     43,
+     34,
+     27,
+     20,
+     14,
+     7,
+     0
+    ],
+    "view_px": {
+     "dxAtXplus1": 1.54,
+     "dxAtXminus1": 0.0,
+     "dyAtYplus1": 0.0,
+     "dyAtYminus1": 0.0
+    }
+   }
+  }
+ },
+ "135": {
+  "note": "no staged diagonal eye rig (back diagonals: eyes not cut); nothing to widen"
+ },
+ "225": {
+  "note": "no staged diagonal eye rig (back diagonals: eyes not cut); nothing to widen"
+ }
+}

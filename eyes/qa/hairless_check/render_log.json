@@ -1,0 +1,143 @@
+{
+ "apose_live": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 views/apose/base_body.png",
+   "200 views/apose/base_body_skin.png",
+   "200 views/apose/base_body_underlay.png"
+  ]
+ },
+ "apose_hairless": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 hair/staged/lineart_fix/views/apose/hair/rig.json",
+   "200 body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body.png",
+   "200 hands/staged/f7_wrist_apose/L_palm.png",
+   "200 hands/staged/f7_wrist_apose/R_palm.png",
+   "200 hair/staged/ear_strands/apose/views/apose/hair/hair_front.png",
+   "200 hair/staged/speck_fix/views/apose/hair/strand_02.png",
+   "200 hair/staged/ear_strands/apose/views/apose/hair/strand_03_tip.png",
+   "200 hair/staged/merged/apose/hair/strand_04.png",
+   "200 hair/staged/speck_fix/views/apose/hair/strand_05.png",
+   "200 hair/staged/speck_fix/views/apose/hair/strand_01.png",
+   "200 hair/staged/speck_fix/views/apose/hair/strand_07.png",
+   "200 hair/staged/ear_strands/apose/views/apose/hair/strand_06_tip.png",
+   "200 body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body_skin.png",
+   "200 body_tools/work/hairless_division_staged/apose/hand_mask.png",
+   "200 views/apose/base_body_underlay.png"
+  ]
+ },
+ "tpose_live": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 views/tpose/base_body.png",
+   "200 views/tpose/base_body_skin.png",
+   "200 views/tpose/base_body_underlay.png"
+  ]
+ },
+ "tpose_hairless": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 hair/staged/lineart_fix/views/tpose/hair/rig.json",
+   "200 body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body.png",
+   "200 hair/staged/lineart_fix/views/tpose/hair/hair_front.png",
+   "200 hair/staged/speck_fix/views/tpose/hair/strand_01.png",
+   "200 hair/staged/speck_fix/views/tpose/hair/strand_02.png",
+   "200 hair/staged/lineart_fix/views/tpose/hair/strand_04.png",
+   "200 hair/staged/speck_fix/views/tpose/hair/strand_06.png",
+   "200 hair/staged/lineart_fix/views/tpose/hair/strand_05.png",
+   "200 hair/staged/speck_fix/views/tpose/hair/strand_03.png",
+   "200 hair/staged/speck_fix/views/tpose/hair/strand_06_tip.png",
+   "200 body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body_skin.png",
+   "200 views/tpose/base_body_underlay.png"
+  ]
+ },
+ "left_live": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 views/left/base_body.png",
+   "200 views/left/base_body_skin.png",
+   "200 views/left/base_body_underlay.png"
+  ]
+ },
+ "left_hairless": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 hair/staged/lineart_fix/views/left/hair/rig.json",
+   "200 body_tools/work/hairless_division_staged/left/live_patch_staged/base_body.png",
+   "200 hair/staged/lineart_fix/views/left/hair/hair_front.png",
+   "200 hair/staged/lineart_fix/views/left/hair/strand_01.png",
+   "200 body_tools/work/hairless_division_staged/left/live_patch_staged/base_body_skin.png",
+   "200 views/left/base_body_underlay.png"
+  ]
+ },
+ "right_live": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 views/right/base_body.png",
+   "200 views/right/base_body_skin.png",
+   "200 views/right/base_body_underlay.png"
+  ]
+ },
+ "right_hairless": {
+  "hasEyes": true,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 body_tools/work/hairless_division_staged/right/live_patch_staged/base_body.png",
+   "200 hair/staged/lineart_fix/views/right/hair/strand_01.png",
+   "200 hair/staged/lineart_fix/views/right/hair/strand_03.png",
+   "200 hair/staged/speck_fix/views/right/hair/strand_04.png",
+   "200 body_tools/work/hairless_division_staged/right/live_patch_staged/base_body_skin.png",
+   "200 views/right/base_body_underlay.png"
+  ]
+ },
+ "back_live": {
+  "hasEyes": false,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (back, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 views/back/base_body.png",
+   "200 views/back/base_body_skin.png",
+   "200 views/back/base_body_underlay.png"
+  ]
+ },
+ "back_hairless": {
+  "hasEyes": false,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (back, skin mesh)",
+  "fallbacks": [],
+  "errs": [],
+  "loaded": [
+   "200 body_tools/work/hairless_division_staged/back/live_patch_staged/base_body.png",
+   "200 hair/staged/speck_fix/views/back/hair/strand_01.png",
+   "200 hair/staged/speck_fix/views/back/hair/strand_02.png",
+   "200 hair/staged/speck_fix/views/back/hair/strand_04.png",
+   "200 hair/staged/speck_fix/views/back/hair/strand_05.png",
+   "200 body_tools/work/hairless_division_staged/back/live_patch_staged/base_body_skin.png",
+   "200 views/back/base_body_underlay.png"
+  ]
+ }
+}

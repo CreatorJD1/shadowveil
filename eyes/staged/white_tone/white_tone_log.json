@@ -1,0 +1,82 @@
+{
+ "apose/EyeR": {
+  "exposedPx": 112,
+  "anchoredKept": 0,
+  "changedPx": 69,
+  "keptNotDarker": 43,
+  "irisPx": 199,
+  "tonesUsed": [
+   "#FFFBF2",
+   "#FFEEDE",
+   "#F1E9DE",
+   "#D3C6B6",
+   "#C3B0A1",
+   "#BEAD9D",
+   "#AB9985"
+  ]
+ },
+ "apose/EyeL": {
+  "exposedPx": 106,
+  "anchoredKept": 0,
+  "changedPx": 36,
+  "keptNotDarker": 70,
+  "irisPx": 192,
+  "tonesUsed": [
+   "#F3E9DF",
+   "#F0EADE",
+   "#DECAC3",
+   "#C1ADA4"
+  ]
+ },
+ "tpose/EyeR": {
+  "exposedPx": 97,
+  "anchoredKept": 0,
+  "changedPx": 27,
+  "keptNotDarker": 70,
+  "irisPx": 181,
+  "tonesUsed": [
+   "#F8F3DC",
+   "#F6EAE1",
+   "#E9DACC",
+   "#D2BFAB"
+  ]
+ },
+ "tpose/EyeL": {
+  "exposedPx": 96,
+  "anchoredKept": 0,
+  "changedPx": 45,
+  "keptNotDarker": 51,
+  "irisPx": 185,
+  "tonesUsed": [
+   "#F5EADD",
+   "#EDE6CE",
+   "#D3C5B2",
+   "#BBAD96",
+   "#8D836F"
+  ]
+ },
+ "left/EyeL": {
+  "exposedPx": 30,
+  "anchoredKept": 14,
+  "changedPx": 10,
+  "keptNotDarker": 6,
+  "irisPx": 59,
+  "tonesUsed": [
+   "#F7F4EC",
+   "#E9E2D5"
+  ]
+ },
+ "right/EyeR": {
+  "exposedPx": 46,
+  "anchoredKept": 14,
+  "changedPx": 27,
+  "keptNotDarker": 5,
+  "irisPx": 103,
+  "tonesUsed": [
+   "#FFFFFA",
+   "#F4EDEA",
+   "#D6CBCA",
+   "#ABA7A2"
+  ]
+ }
+}

@@ -1,0 +1,1003 @@
+{
+ "views": [
+  "apose",
+  "tpose",
+  "left",
+  "right",
+  "back"
+ ],
+ "part": "eyes",
+ "staged_dirs": [
+  "eyes/work/lashfix/staged"
+ ],
+ "tol": 2.0,
+ "leak": {
+  "live": {
+   "apose": {
+    "eyes": [
+     {
+      "file": "views/apose/eyes/EyeL_iris.png",
+      "opaque": 192,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lash.png",
+      "opaque": 75,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_0.png",
+      "opaque": 578,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_1.png",
+      "opaque": 444,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 91
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_2.png",
+      "opaque": 498,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 92
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_3.png",
+      "opaque": 548,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 91
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_4.png",
+      "opaque": 597,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 93
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_5.png",
+      "opaque": 651,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 90
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_6.png",
+      "opaque": 699,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 89
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_7.png",
+      "opaque": 1007,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 96
+     },
+     {
+      "file": "views/apose/eyes/EyeL_white.png",
+      "opaque": 353,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeR_iris.png",
+      "opaque": 199,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lash.png",
+      "opaque": 88,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_0.png",
+      "opaque": 661,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_1.png",
+      "opaque": 446,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 89
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_2.png",
+      "opaque": 493,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 92
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_3.png",
+      "opaque": 544,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 96
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_4.png",
+      "opaque": 598,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 94
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_5.png",
+      "opaque": 648,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 96
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_6.png",
+      "opaque": 700,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 94
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_7.png",
+      "opaque": 1057,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 112
+     },
+     {
+      "file": "views/apose/eyes/EyeR_white.png",
+      "opaque": 360,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "tpose": {
+    "eyes": [
+     {
+      "file": "views/tpose/eyes/EyeL_iris.png",
+      "opaque": 185,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lash.png",
+      "opaque": 71,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_0.png",
+      "opaque": 614,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_1.png",
+      "opaque": 428,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 84
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_2.png",
+      "opaque": 476,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 83
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_3.png",
+      "opaque": 524,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 83
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_4.png",
+      "opaque": 570,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 85
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_5.png",
+      "opaque": 620,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 82
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_6.png",
+      "opaque": 663,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 84
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_7.png",
+      "opaque": 1014,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 104
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_white.png",
+      "opaque": 325,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_iris.png",
+      "opaque": 181,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lash.png",
+      "opaque": 78,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_0.png",
+      "opaque": 583,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_1.png",
+      "opaque": 385,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 98
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_2.png",
+      "opaque": 435,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 103
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_3.png",
+      "opaque": 485,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 100
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_4.png",
+      "opaque": 536,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 102
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_5.png",
+      "opaque": 586,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 97
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_6.png",
+      "opaque": 630,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 102
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_7.png",
+      "opaque": 942,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 127
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_white.png",
+      "opaque": 332,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "left": {
+    "eyes": [
+     {
+      "file": "views/left/eyes/EyeL_iris.png",
+      "opaque": 59,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/eyes/EyeL_lash.png",
+      "opaque": 52,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_0.png",
+      "opaque": 433,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_1.png",
+      "opaque": 330,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 52
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_2.png",
+      "opaque": 366,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 51
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_3.png",
+      "opaque": 406,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 48
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_4.png",
+      "opaque": 439,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 51
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_5.png",
+      "opaque": 470,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 55
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_6.png",
+      "opaque": 501,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 51
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_7.png",
+      "opaque": 686,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 80
+     },
+     {
+      "file": "views/left/eyes/EyeL_white.png",
+      "opaque": 200,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "right": {
+    "eyes": [
+     {
+      "file": "views/right/eyes/EyeR_iris.png",
+      "opaque": 103,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/eyes/EyeR_lash.png",
+      "opaque": 50,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_0.png",
+      "opaque": 448,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_1.png",
+      "opaque": 306,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 61
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_2.png",
+      "opaque": 339,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 64
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_3.png",
+      "opaque": 374,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 64
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_4.png",
+      "opaque": 411,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 70
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_5.png",
+      "opaque": 443,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 71
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_6.png",
+      "opaque": 473,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 74
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_7.png",
+      "opaque": 743,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 89
+     },
+     {
+      "file": "views/right/eyes/EyeR_white.png",
+      "opaque": 235,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   }
+  },
+  "staged": {
+   "apose": {
+    "eyes": [
+     {
+      "file": "views/apose/eyes/EyeL_iris.png (no staged fix; live)",
+      "opaque": 192,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lash.png (no staged fix; live)",
+      "opaque": 75,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeL_lid_0.png (no staged fix; live)",
+      "opaque": 578,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeL_lid_1.png",
+      "opaque": 237,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeL_lid_2.png",
+      "opaque": 286,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeL_lid_3.png",
+      "opaque": 334,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeL_lid_4.png",
+      "opaque": 382,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeL_lid_5.png",
+      "opaque": 428,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeL_lid_6.png",
+      "opaque": 465,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeL_lid_7.png",
+      "opaque": 681,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 60
+     },
+     {
+      "file": "views/apose/eyes/EyeL_white.png (no staged fix; live)",
+      "opaque": 353,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeR_iris.png (no staged fix; live)",
+      "opaque": 199,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lash.png (no staged fix; live)",
+      "opaque": 88,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/apose/eyes/EyeR_lid_0.png (no staged fix; live)",
+      "opaque": 661,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeR_lid_1.png",
+      "opaque": 227,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeR_lid_2.png",
+      "opaque": 276,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeR_lid_3.png",
+      "opaque": 328,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeR_lid_4.png",
+      "opaque": 376,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeR_lid_5.png",
+      "opaque": 421,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeR_lid_6.png",
+      "opaque": 462,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/apose/EyeR_lid_7.png",
+      "opaque": 755,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 70
+     },
+     {
+      "file": "views/apose/eyes/EyeR_white.png (no staged fix; live)",
+      "opaque": 360,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "tpose": {
+    "eyes": [
+     {
+      "file": "views/tpose/eyes/EyeL_iris.png (no staged fix; live)",
+      "opaque": 185,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lash.png (no staged fix; live)",
+      "opaque": 71,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_lid_0.png (no staged fix; live)",
+      "opaque": 614,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeL_lid_1.png",
+      "opaque": 218,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeL_lid_2.png",
+      "opaque": 265,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeL_lid_3.png",
+      "opaque": 306,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeL_lid_4.png",
+      "opaque": 352,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeL_lid_5.png",
+      "opaque": 392,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeL_lid_6.png",
+      "opaque": 427,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeL_lid_7.png",
+      "opaque": 673,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 60
+     },
+     {
+      "file": "views/tpose/eyes/EyeL_white.png (no staged fix; live)",
+      "opaque": 325,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_iris.png (no staged fix; live)",
+      "opaque": 181,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lash.png (no staged fix; live)",
+      "opaque": 78,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_lid_0.png (no staged fix; live)",
+      "opaque": 583,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeR_lid_1.png",
+      "opaque": 202,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeR_lid_2.png",
+      "opaque": 248,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeR_lid_3.png",
+      "opaque": 293,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeR_lid_4.png",
+      "opaque": 337,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeR_lid_5.png",
+      "opaque": 380,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeR_lid_6.png",
+      "opaque": 411,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/tpose/EyeR_lid_7.png",
+      "opaque": 692,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 63
+     },
+     {
+      "file": "views/tpose/eyes/EyeR_white.png (no staged fix; live)",
+      "opaque": 332,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "left": {
+    "eyes": [
+     {
+      "file": "views/left/eyes/EyeL_iris.png (no staged fix; live)",
+      "opaque": 59,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/eyes/EyeL_lash.png (no staged fix; live)",
+      "opaque": 52,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/left/eyes/EyeL_lid_0.png (no staged fix; live)",
+      "opaque": 433,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/left/EyeL_lid_1.png",
+      "opaque": 266,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/left/EyeL_lid_2.png",
+      "opaque": 307,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/left/EyeL_lid_3.png",
+      "opaque": 363,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/left/EyeL_lid_4.png",
+      "opaque": 399,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/left/EyeL_lid_5.png",
+      "opaque": 413,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/left/EyeL_lid_6.png",
+      "opaque": 424,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/left/EyeL_lid_7.png",
+      "opaque": 602,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 41
+     },
+     {
+      "file": "views/left/eyes/EyeL_white.png (no staged fix; live)",
+      "opaque": 200,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   },
+   "right": {
+    "eyes": [
+     {
+      "file": "views/right/eyes/EyeR_iris.png (no staged fix; live)",
+      "opaque": 103,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/eyes/EyeR_lash.png (no staged fix; live)",
+      "opaque": 50,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "views/right/eyes/EyeR_lid_0.png (no staged fix; live)",
+      "opaque": 448,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/right/EyeR_lid_1.png",
+      "opaque": 202,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/right/EyeR_lid_2.png",
+      "opaque": 251,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/right/EyeR_lid_3.png",
+      "opaque": 309,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/right/EyeR_lid_4.png",
+      "opaque": 349,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/right/EyeR_lid_5.png",
+      "opaque": 373,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/right/EyeR_lid_6.png",
+      "opaque": 388,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     },
+     {
+      "file": "eyes/work/lashfix/staged/right/EyeR_lid_7.png",
+      "opaque": 567,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 47
+     },
+     {
+      "file": "views/right/eyes/EyeR_white.png (no staged fix; live)",
+      "opaque": 235,
+      "off_palette": 0,
+      "chroma": 0,
+      "soft_edge": 0
+     }
+    ]
+   }
+  },
+  "diagonals": {},
+  "mesh_outside_mask": {},
+  "totals": {
+   "live": {
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 3530,
+    "files": 66
+   },
+   "staged": {
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 341,
+    "files": 66
+   },
+   "diagonals": {
+    "off_palette": 0,
+    "chroma": 0,
+    "soft_edge": 0,
+    "files": 0
+   },
+   "mesh_outside_mask": 0
+  },
+  "pass_live": true,
+  "pass_staged": true,
+  "note": "soft_edge (0<alpha<255) is reported separately and does not fail the gate; off-palette counts opaque px only."
+ },
+ "pass": true
+}

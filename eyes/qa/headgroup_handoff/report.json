@@ -1,0 +1,641 @@
+{
+ "title": "Eye handoff offsets with head group",
+ "author": "Base Eyes",
+ "when": "Fri Oct 02 2026 11:36 PM PT",
+ "convention": "residual = turn frame minus rig render (?headgroup=1, all params at default/rest), view px, +x right, +y down. Frame warped into view px with body_tools/work/apose_turn/angle_map.json handoff (base = scale*frame + d).",
+ "server": {
+  "root": "/workspace/shadowveil",
+  "port": 8781,
+  "base": "http://127.0.0.1:8781/rig/",
+  "rig_index_sha256": "a27a1a7aa89a239f59837477c92ef359ff15e5f0a7ed0083e175023b4ce986ad",
+  "index_sha_matches_shadowveil": true,
+  "note": "own scratch python3 http.server; earlier run via 8765 served /workspace/tmpsv_tree and is in invalid_tmpsv_tree/"
+ },
+ "capture": "headless Chrome (puppeteer-core) http://127.0.0.1:8781/rig/?view=<v>&quality=linear[&headgroup=1]; RigHeadGroup.applyHandoff(view); RigManual(); set all P to default; draw(); FR canvas. caps/ (hg_* and live_*).",
+ "eyes": {
+  "apose_EyeR": {
+   "view": "apose",
+   "frame": "f001",
+   "eye": "her right, amber",
+   "headgroup_offset": [
+    0,
+    -10
+   ],
+   "methods": {
+    "iris_opening_centroid": [
+     1.2,
+     -0.07
+    ],
+    "iris_green_colour_centroid": null,
+    "eye_opening_centroid": [
+     -0.08,
+     -0.0
+    ],
+    "lash_band_centroid": [
+     -0.09,
+     0.8
+    ],
+    "upper_lash_chamfer": [
+     1,
+     1
+    ],
+    "upper_lash_chamfer_subpx": [
+     1.05,
+     1.31
+    ],
+    "all_lid_chamfer": [
+     1,
+     1
+    ],
+    "lid_edge_profile": [
+     -7,
+     1.0
+    ],
+    "eye_luma_ncc": [
+     0,
+     1
+    ],
+    "eye_luma_ncc_score": 0.887
+   },
+   "best_estimate_residual": [
+    0.4,
+    0.6
+   ],
+   "best_estimate_rule": "mean of iris_opening_centroid, lash_band_centroid, eye_luma_ncc",
+   "total_eye_offset_vs_live": [
+    0.4,
+    -9.4
+   ],
+   "lash_band": {
+    "rig": {
+     "x0": 619,
+     "x1": 662,
+     "w": 44,
+     "cx": 638.33,
+     "cy": 212.28,
+     "y_at_x0": 210.3,
+     "y_at_x1": 220.6,
+     "bottom_med": 213.0
+    },
+    "frame": {
+     "x0": 620,
+     "x1": 662,
+     "w": 43,
+     "cx": 638.24,
+     "cy": 213.08,
+     "y_at_x0": 211.3,
+     "y_at_x1": 221.0,
+     "bottom_med": 214.0
+    },
+    "centroid_offset": [
+     -0.09,
+     0.8
+    ],
+    "minx_corner_offset": [
+     1,
+     1.0
+    ],
+    "maxx_corner_offset": [
+     0,
+     0.4
+    ],
+    "width_ratio": 0.977
+   },
+   "cheek_mole_offset": [
+    -2.5,
+    0.5
+   ],
+   "mole_pos": {
+    "rig": [
+     642.5,
+     228.0
+    ],
+    "frame": [
+     640.0,
+     228.5
+    ]
+   },
+   "rig_iris_part_centroid": [
+    646.65,
+    219.21
+   ],
+   "rig_iris_seg_vs_part": [
+    -0.86,
+    -1.2
+   ],
+   "mouth_face_residual": [
+    0,
+    1
+   ],
+   "mouth_lower_face_ncc": [
+    0,
+    1
+   ],
+   "mouth_lower_face_silhouette": [
+    1,
+    1
+   ],
+   "eye_minus_mouth": [
+    0.4,
+    -0.4
+   ],
+   "sanity_hg_render_minus_live": [
+    0,
+    -10,
+    1.0
+   ],
+   "windows": {
+    "template": [
+     617,
+     199,
+     673,
+     233
+    ],
+    "search": [
+     598,
+     190,
+     692,
+     254
+    ]
+   },
+   "rejected": {
+    "amber_colour_centroid": [
+     -2.04,
+     2.15
+    ],
+    "pupil_dark_core": [
+     5.0,
+     1.17
+    ]
+   }
+  },
+  "apose_EyeL": {
+   "view": "apose",
+   "frame": "f001",
+   "eye": "her left, green",
+   "headgroup_offset": [
+    0,
+    -10
+   ],
+   "methods": {
+    "iris_opening_centroid": [
+     0.27,
+     0.98
+    ],
+    "iris_green_colour_centroid": [
+     0.59,
+     0.58
+    ],
+    "eye_opening_centroid": [
+     0.57,
+     0.88
+    ],
+    "lash_band_centroid": [
+     0.5,
+     0.57
+    ],
+    "upper_lash_chamfer": [
+     -1,
+     1
+    ],
+    "upper_lash_chamfer_subpx": [
+     -0.62,
+     1.46
+    ],
+    "all_lid_chamfer": [
+     -1,
+     1
+    ],
+    "lid_edge_profile": [
+     6,
+     0.5
+    ],
+    "eye_luma_ncc": [
+     0,
+     1
+    ],
+    "eye_luma_ncc_score": 0.898
+   },
+   "best_estimate_residual": [
+    0.3,
+    0.8
+   ],
+   "best_estimate_rule": "mean of iris_opening_centroid, lash_band_centroid, eye_luma_ncc",
+   "total_eye_offset_vs_live": [
+    0.3,
+    -9.2
+   ],
+   "lash_band": {
+    "rig": {
+     "x0": 701,
+     "x1": 743,
+     "w": 43,
+     "cx": 723.67,
+     "cy": 212.62,
+     "y_at_x0": 219.0,
+     "y_at_x1": 210.3,
+     "bottom_med": 214.0
+    },
+    "frame": {
+     "x0": 702,
+     "x1": 743,
+     "w": 42,
+     "cx": 724.17,
+     "cy": 213.19,
+     "y_at_x0": 219.0,
+     "y_at_x1": 210.7,
+     "bottom_med": 214.0
+    },
+    "centroid_offset": [
+     0.5,
+     0.57
+    ],
+    "minx_corner_offset": [
+     1,
+     0.0
+    ],
+    "maxx_corner_offset": [
+     0,
+     0.4
+    ],
+    "width_ratio": 0.977
+   },
+   "cheek_mole_offset": [
+    3.7,
+    11.6
+   ],
+   "mole_pos": {
+    "rig": [
+     731.3,
+     234.4
+    ],
+    "frame": [
+     735.0,
+     246.0
+    ]
+   },
+   "rig_iris_part_centroid": [
+    715.24,
+    219.65
+   ],
+   "rig_iris_seg_vs_part": [
+    1.52,
+    -1.58
+   ],
+   "mouth_face_residual": [
+    0,
+    1
+   ],
+   "mouth_lower_face_ncc": [
+    0,
+    1
+   ],
+   "mouth_lower_face_silhouette": [
+    1,
+    1
+   ],
+   "eye_minus_mouth": [
+    0.3,
+    -0.2
+   ],
+   "sanity_hg_render_minus_live": [
+    0,
+    -10,
+    1.0
+   ],
+   "windows": {
+    "template": [
+     691,
+     197,
+     748,
+     237
+    ],
+    "search": [
+     672,
+     188,
+     767,
+     258
+    ]
+   },
+   "rejected": {
+    "amber_colour_centroid": null,
+    "pupil_dark_core": [
+     3.13,
+     -0.89
+    ]
+   }
+  },
+  "left_EyeL": {
+   "view": "left",
+   "frame": "f062",
+   "eye": "her left, green",
+   "headgroup_offset": [
+    -2,
+    1
+   ],
+   "methods": {
+    "iris_opening_centroid": [
+     3.88,
+     9.93
+    ],
+    "iris_green_colour_centroid": [
+     2.73,
+     8.19
+    ],
+    "eye_opening_centroid": [
+     2.97,
+     10.14
+    ],
+    "lash_band_centroid": [
+     -0.11,
+     10.17
+    ],
+    "upper_lash_chamfer": [
+     7,
+     9
+    ],
+    "upper_lash_chamfer_subpx": [
+     6.91,
+     9.31
+    ],
+    "all_lid_chamfer": [
+     -2,
+     11
+    ],
+    "lid_edge_profile": [
+     3,
+     11.5
+    ],
+    "eye_luma_ncc": [
+     1,
+     10
+    ],
+    "eye_luma_ncc_score": 0.464
+   },
+   "best_estimate_residual": [
+    1.6,
+    10.0
+   ],
+   "best_estimate_rule": "mean of iris_opening_centroid, lash_band_centroid, eye_luma_ncc",
+   "total_eye_offset_vs_live": [
+    -0.4,
+    11.0
+   ],
+   "lash_band": {
+    "rig": {
+     "x0": 603,
+     "x1": 633,
+     "w": 31,
+     "cx": 617.06,
+     "cy": 207.26,
+     "y_at_x0": 210.3,
+     "y_at_x1": 205.3,
+     "bottom_med": 207.0
+    },
+    "frame": {
+     "x0": 607,
+     "x1": 628,
+     "w": 22,
+     "cx": 616.95,
+     "cy": 217.43,
+     "y_at_x0": 217.2,
+     "y_at_x1": 213.3,
+     "bottom_med": 220.0
+    },
+    "centroid_offset": [
+     -0.11,
+     10.17
+    ],
+    "minx_corner_offset": [
+     4,
+     6.9
+    ],
+    "maxx_corner_offset": [
+     -5,
+     8.0
+    ],
+    "width_ratio": 0.71
+   },
+   "cheek_mole_offset": [
+    -11.4,
+    7.6
+   ],
+   "mole_pos": {
+    "rig": [
+     632.5,
+     232.0
+    ],
+    "frame": [
+     621.1,
+     239.6
+    ]
+   },
+   "rig_iris_part_centroid": [
+    612.8,
+    217.17
+   ],
+   "rig_iris_seg_vs_part": [
+    -0.36,
+    -1.37
+   ],
+   "mouth_face_residual": [
+    8,
+    11
+   ],
+   "mouth_lower_face_ncc": [
+    6,
+    9
+   ],
+   "mouth_lower_face_silhouette": [
+    8,
+    9
+   ],
+   "eye_minus_mouth": [
+    -6.4,
+    -1.0
+   ],
+   "sanity_hg_render_minus_live": [
+    -2,
+    1,
+    1.0
+   ],
+   "windows": {
+    "template": [
+     598,
+     194,
+     641,
+     231
+    ],
+    "search": [
+     579,
+     185,
+     660,
+     252
+    ]
+   },
+   "rejected": {
+    "amber_colour_centroid": null,
+    "pupil_dark_core": [
+     1.99,
+     12.21
+    ]
+   }
+  },
+  "right_EyeR": {
+   "view": "right",
+   "frame": "f160",
+   "eye": "her right, amber",
+   "headgroup_offset": [
+    5,
+    -6
+   ],
+   "methods": {
+    "iris_opening_centroid": [
+     -4.03,
+     10.47
+    ],
+    "iris_green_colour_centroid": null,
+    "eye_opening_centroid": [
+     -4.51,
+     11.52
+    ],
+    "lash_band_centroid": [
+     -0.95,
+     11.68
+    ],
+    "upper_lash_chamfer": [
+     -1,
+     12
+    ],
+    "upper_lash_chamfer_subpx": [
+     -1.16,
+     11.96
+    ],
+    "all_lid_chamfer": [
+     -1,
+     12
+    ],
+    "lid_edge_profile": [
+     -1,
+     12.0
+    ],
+    "eye_luma_ncc": [
+     0,
+     12
+    ],
+    "eye_luma_ncc_score": 0.483
+   },
+   "best_estimate_residual": [
+    -1.7,
+    11.4
+   ],
+   "best_estimate_rule": "mean of iris_opening_centroid, lash_band_centroid, eye_luma_ncc",
+   "total_eye_offset_vs_live": [
+    3.3,
+    5.4
+   ],
+   "lash_band": {
+    "rig": {
+     "x0": 736,
+     "x1": 771,
+     "w": 36,
+     "cx": 754.52,
+     "cy": 202.37,
+     "y_at_x0": 200.3,
+     "y_at_x1": 204.0,
+     "bottom_med": 203.0
+    },
+    "frame": {
+     "x0": 741,
+     "x1": 767,
+     "w": 27,
+     "cx": 753.57,
+     "cy": 214.05,
+     "y_at_x0": 216.0,
+     "y_at_x1": 216.0,
+     "bottom_med": 217.0
+    },
+    "centroid_offset": [
+     -0.95,
+     11.68
+    ],
+    "minx_corner_offset": [
+     5,
+     15.7
+    ],
+    "maxx_corner_offset": [
+     -4,
+     12.0
+    ],
+    "width_ratio": 0.75
+   },
+   "cheek_mole_offset": [
+    5.3,
+    12.0
+   ],
+   "mole_pos": {
+    "rig": [
+     747.0,
+     227.0
+    ],
+    "frame": [
+     752.3,
+     239.0
+    ]
+   },
+   "rig_iris_part_centroid": [
+    761.48,
+    210.83
+   ],
+   "rig_iris_seg_vs_part": [
+    1.87,
+    -1.08
+   ],
+   "mouth_face_residual": [
+    -7,
+    11
+   ],
+   "mouth_lower_face_ncc": [
+    -6,
+    11
+   ],
+   "mouth_lower_face_silhouette": [
+    -10,
+    10
+   ],
+   "eye_minus_mouth": [
+    5.3,
+    0.4
+   ],
+   "sanity_hg_render_minus_live": [
+    5,
+    -6,
+    1.0
+   ],
+   "windows": {
+    "template": [
+     730,
+     187,
+     777,
+     226
+    ],
+    "search": [
+     711,
+     178,
+     796,
+     247
+    ]
+   },
+   "rejected": {
+    "amber_colour_centroid": [
+     9.24,
+     3.99
+    ],
+    "pupil_dark_core": [
+     -3.6,
+     10.2
+    ]
+   }
+  }
+ }
+}
