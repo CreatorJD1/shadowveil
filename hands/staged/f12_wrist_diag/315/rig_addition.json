@@ -1,0 +1,39 @@
+{
+ "add_to": "hands/staged/f8_diagonals/315/rig.json",
+ "parts": [
+  {
+   "id": "L_wristflap",
+   "file": "L_wristflap.png",
+   "frame_file": "frame_scale/L_wristflap.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 973.45,
+   "pivotY": 702.65,
+   "pivot_frame": [
+    562.56,
+    488.99
+   ],
+   "parent": "L_palm",
+   "layer": 319,
+   "maxCurlDeg": 0,
+   "note": "F12 hidden wrist/cuff flap: rotates with the palm, draws under the palm and under the forearm; flat colour from her own px of this side"
+  },
+  {
+   "id": "R_wristflap",
+   "file": "R_wristflap.png",
+   "frame_file": "frame_scale/R_wristflap.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 360.65,
+   "pivotY": 716.68,
+   "pivot_frame": [
+    165.85,
+    498.07
+   ],
+   "parent": "R_palm",
+   "layer": 299,
+   "maxCurlDeg": 0,
+   "note": "F12 hidden wrist/cuff flap: rotates with the palm, draws under the palm and under the forearm; flat colour from her own px of this side"
+  }
+ ]
+}

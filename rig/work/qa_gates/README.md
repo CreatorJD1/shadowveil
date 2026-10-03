@@ -22,6 +22,20 @@ How the flags work:
 - `--staged-dir` can be repeated. It is looked up as `<dir>/<view>/<system>/<file>`, then `<dir>/views/<view>/<system>/<file>`, then `<dir>/<view>/<file>` (the eyes layout). If you leave it out, the script uses all three tone-fix dirs.
 - A file with no staged fix is reported as live in the staged column.
 
+## Per-part dir overrides
+- `--hair-dir`, `--mouth-dir`, `--eyes-dir`, `--hands-dir` and `--body-dir` point one system at another folder, so staged sets run without making a copy.
+- For each view the script looks for, in order:
+  1. `DIR` with `{view}` replaced by the view name
+  2. `DIR/<view>/<sys>`
+  3. `DIR/views/<view>/<sys>`
+  4. `DIR/<view>`
+  5. `DIR` itself, if it holds a rig.json or PNGs
+- If none of those exist, it falls back to `views/<view>/<sys>`.
+- Diagonal angles can be passed to `--view` along with an override, for example:
+  `python3 rig/qa_gates.py --gate leak --part hair --hair-dir hair/staged/diagonals_v2 --view 045,135,225,315 --no-mesh`
+  The palette is then all 5 base.png, her live hair in all 5 views, and her turn frame.
+- Result for that run (03:48 PT): 34 files, 0 off-palette, 0 chroma, 0 soft edge.
+
 ## G1 `weights`: weight bleed (body `skin.json` plus its `underlay`)
 - **bleed_vs_dominant_bone:** any weight above 0.001 on a bone that is not the vertex's dominant bone, its parent, its child, or its sibling. **Fails.**
 - **bleed_vs_texel_owner:** the same test, but the owner is the top-layer body part mask under the vertex (the way build_skin assigns owners). This is reported for information; profile overlaps show up here.

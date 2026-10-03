@@ -1,0 +1,5 @@
+FATAL page.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('#reset')
+
+    at /workspace/shadowveil/app/driver/tools/simple_test.js:82:9

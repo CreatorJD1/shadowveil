@@ -101,7 +101,7 @@
    },
    {
     "file": "eyes/staged/diagonals/045/EyeR_lash.png",
-    "opaque": 54,
+    "opaque": 34,
     "off_palette": 0,
     "chroma": 0,
     "soft_edge": 0,
@@ -109,7 +109,7 @@
    },
    {
     "file": "eyes/staged/diagonals/045/EyeR_lid_0.png",
-    "opaque": 200,
+    "opaque": 198,
     "off_palette": 0,
     "chroma": 0,
     "soft_edge": 0,
@@ -191,7 +191,7 @@
    },
    {
     "file": "eyes/staged/diagonals/315/EyeL_lash.png",
-    "opaque": 53,
+    "opaque": 35,
     "off_palette": 0,
     "chroma": 0,
     "soft_edge": 0,
@@ -199,7 +199,7 @@
    },
    {
     "file": "eyes/staged/diagonals/315/EyeL_lid_0.png",
-    "opaque": 227,
+    "opaque": 222,
     "off_palette": 0,
     "chroma": 0,
     "soft_edge": 0,
@@ -363,39 +363,39 @@
   "045": {
    "current": {
     "off_palette": 0,
-    "chroma": 22230,
+    "chroma": 22536,
     "cases": 72,
     "worst": [
-     "X-1 Y-1 k1",
-     309
+     "X-1 Y-1 k0",
+     313
     ]
    },
    "diag": {
     "off_palette": 0,
-    "chroma": 22230,
+    "chroma": 22536,
     "cases": 72,
     "worst": [
-     "X-1 Y-1 k1",
-     309
+     "X-1 Y-1 k0",
+     313
     ]
    }
   },
   "315": {
    "current": {
     "off_palette": 0,
-    "chroma": 29475,
+    "chroma": 29520,
     "cases": 72,
     "worst": [
-     "X-1 Y-1 k1",
+     "X-1 Y-1 k0",
      410
     ]
    },
    "diag": {
     "off_palette": 0,
-    "chroma": 29475,
+    "chroma": 29520,
     "cases": 72,
     "worst": [
-     "X-1 Y-1 k1",
+     "X-1 Y-1 k0",
      410
     ]
    }

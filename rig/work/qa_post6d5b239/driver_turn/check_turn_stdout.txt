@@ -1,0 +1,97 @@
+{
+ "url": "http://127.0.0.1:8765/app/driver/index.html",
+ "rigs": {
+  "apose": true,
+  "left": true,
+  "back": true,
+  "right": true
+ },
+ "seen": "turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle",
+ "samples": 552,
+ "liveFrames": [
+  "109:back",
+  "1:apose",
+  "160:right",
+  "62:left"
+ ],
+ "badHandoff": [],
+ "align": {
+  "apose": {
+   "frame": 1,
+   "iou": 0.9165,
+   "mismatch_px": 29992,
+   "meanAbsRGB_overlap": 15.53,
+   "overlap_px_diff_gt40": 26106,
+   "frame_top_bottom": [
+    31,
+    1681
+   ],
+   "live_top_bottom": [
+    40,
+    1682
+   ]
+  },
+  "left": {
+   "frame": 62,
+   "iou": 0.8834,
+   "mismatch_px": 26433,
+   "meanAbsRGB_overlap": 20.94,
+   "overlap_px_diff_gt40": 35464,
+   "frame_top_bottom": [
+    35,
+    1683
+   ],
+   "live_top_bottom": [
+    41,
+    1680
+   ]
+  },
+  "back": {
+   "frame": 109,
+   "iou": 0.8086,
+   "mismatch_px": 74360,
+   "meanAbsRGB_overlap": 15.75,
+   "overlap_px_diff_gt40": 37128,
+   "frame_top_bottom": [
+    31,
+    1680
+   ],
+   "live_top_bottom": [
+    41,
+    1680
+   ]
+  },
+  "right": {
+   "frame": 160,
+   "iou": 0.8584,
+   "mismatch_px": 31984,
+   "meanAbsRGB_overlap": 19.85,
+   "overlap_px_diff_gt40": 31183,
+   "frame_top_bottom": [
+    28,
+    1680
+   ],
+   "live_top_bottom": [
+    40,
+    1680
+   ]
+  }
+ },
+ "nohold": {
+  "57": 56,
+  "164": 165
+ },
+ "talk": {
+  "talk": true,
+  "t": 2.815278,
+  "rs": 4,
+  "flashSkipAdded": 1,
+  "changedPx": 0,
+  "stoppedAwayFromFront": true
+ },
+ "generatedStillRequests": [],
+ "turnFrameRequests": 233,
+ "failed": [],
+ "errors": [],
+ "broken": []
+}

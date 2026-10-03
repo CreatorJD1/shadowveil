@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>Shadowveil live driver (simplified)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Staged simplified live driver (see AUDIT.md). Drives rig/index.html ONLY through its existing globals:
+     P / v / inputs (param table), set(k,x) + draw(), RigManual(), #rest, #hairpreset, ?view= / ?clip= / ?autoplay= / ?hair=,
+     and the rig's own motion helpers (stepHair, stepTalk, makeAnim, idleLegStance, lifeSlopes, footPlantApply, BLINK).
+     Nothing is drawn on the character here and rig/index.html is never edited. -->
+<style>
+:root{--bg:#14161b;--fg:#dde1e8;--mut:#8a93a3;--line:#2a2f39;--acc:#6aa9ff;--na:#c9a227;--panel:#191c22}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:13px system-ui,sans-serif}
+#app{display:grid;grid-template-columns:minmax(300px,1fr) 360px;height:100%}
+#stagewrap{position:relative;min-width:0;background:#2a2a30}#stagewrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#loading{position:absolute;left:10px;top:10px;background:#000c;padding:5px 10px;border-radius:4px;font-size:12px;color:#f1c56a}
+aside{overflow:auto;border-left:1px solid var(--line);background:var(--panel);padding:6px 10px 20px}
+aside>b{display:block;margin:4px 0 6px}
+details{border-top:1px solid var(--line);padding:2px 0 6px}summary{cursor:pointer;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);padding:6px 0 4px}
+.row{display:grid;grid-template-columns:96px 1fr 38px;gap:6px;align-items:center;padding:1px 0}.row input[type=range]{width:100%}
+.row .val{color:var(--mut);font-size:10px;text-align:right;font-variant-numeric:tabular-nums}
+.row.off{opacity:.45}.note{font-size:10px;color:var(--na)}.msg{font-size:11px;color:var(--mut);margin:3px 0;line-height:1.35}
+h5{margin:6px 0 2px;font-size:11px;color:#b8c0cc;font-weight:600}
+button,select{background:#232733;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:3px 8px;cursor:pointer;font-size:12px}
+button.on{background:var(--acc);color:#081018;border-color:var(--acc)}button:disabled,select:disabled{opacity:.45;cursor:not-allowed}
+.seg{display:flex;gap:4px;flex-wrap:wrap}.sw{display:flex;align-items:center;gap:6px;padding:2px 0}
+.dial{display:flex;justify-content:center}.dial svg{width:150px;height:150px}
+.dial text{font:10px system-ui;fill:#cfd5df;cursor:pointer;text-anchor:middle;dominant-baseline:middle}.dial text.on{fill:#fff;font-weight:700}
+#gaze{position:relative;width:120px;height:90px;background:#101216;border:1px solid var(--line);border-radius:6px;cursor:crosshair;touch-action:none;margin:3px 0 3px 102px}
+#gaze:before,#gaze:after{content:'';position:absolute;background:#2a2f39}#gaze:before{left:50%;top:0;bottom:0;width:1px}#gaze:after{top:50%;left:0;right:0;height:1px}
+#gaze i{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--acc);pointer-events:none;z-index:1}
+#gaze.off{opacity:.45;pointer-events:none}
+@media(max-width:760px){#app{grid-template-columns:1fr;grid-template-rows:60vh auto;height:auto}aside{border-left:0}}
+</style></head><body>
+<div id="app">
+ <div id="stagewrap"><div id="loading">loading rig…</div></div>
+ <aside id="panel"><b>Live driver <span class="msg">(simplified, staged)</span></b>
+  <div class="dial" id="dial"></div>
+  <div class="msg" id="viewmsg"></div>
+  <div class="sw"><span style="width:96px">Motion</span><select id="motion" data-ctl="motion"></select><button id="replay" title="replay the selected clip">↻</button></div>
+  <div class="msg" id="motionmsg"></div>
+  <div class="seg" style="margin:6px 0"><button id="reset" data-ctl="reset" style="flex:1">Reset to rest</button></div>
+  <details open id="sec-expr"><summary>Expression</summary><div class="seg" id="expr"></div><div class="msg" id="exprmsg"></div></details>
+  <details open id="sec-body"><summary>Body</summary></details>
+  <details open id="sec-eyes"><summary>Eyes</summary></details>
+  <details open id="sec-mouth"><summary>Mouth</summary></details>
+  <details open id="sec-hands"><summary>Hands</summary></details>
+  <details open id="sec-hair"><summary>Hair</summary></details>
+  <details id="sec-adv"><summary>Advanced</summary></details>
+ </aside>
+</div>
+<script>
+'use strict';
+(() => {
+const $ = s => document.querySelector(s);
+const h = (t, a = {}, ...c) => { const e = document.createElement(t); for (const [k, x] of Object.entries(a)) { if (k === 'on') for (const [ev, f] of Object.entries(x)) e.addEventListener(ev, f); else if (x !== false && x != null) e.setAttribute(k, x === true ? '' : x) } for (const y of c.flat()) if (y != null) e.append(y.nodeType ? y : document.createTextNode(y)); return e };
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+const RIG = '../../rig/index.html';
+const VIEWS = ['apose', 'tpose', 'left', 'right', 'back'];
+// dial angles follow the authored Clean room turn (poses.json handoffs: f062 90° = left, f160 270° = right); tpose sits in the centre
+const DIAL = { apose: 0, left: 90, back: 180, right: 270 };
+// one Motion list = the rig's live clips (status.json live_rig.clips). 'keys' and 'showcase' load the same file, so only showcase is listed.
+const MOTIONS = [['', 'Off (manual pose)'], ['idle', 'Idle: procedural (Life)'], ['breathe', 'Idle: breathe (archived keys)'], ['weight_shift', 'Idle: weight shift'], ['arm_settle', 'Idle: arm settle'],
+  ['showcase', 'Body showcase (keys)'], ['jump', 'Action: jump'], ['anger', 'Action: anger'], ['run', 'Action: run']];
+const FING = ['Index', 'Middle', 'Ring', 'Pinky'], ALLF = ['Thumb', ...FING];
+const POSES = { Open: [0, 0, 0, 0, 0], Fist: [1, 1, 1, 1, 1], Point: [1, 0, 1, 1, 1], Peace: [1, 0, 0, 1, 1] };   // same table as the rig's Hand presets
+// Expression = mouth grid points: rest (0,0), smile (0,1), anger (0.25,-1) = the Clean room anger mouth art (mouth_anger / anger.png)
+const EXPR = { Neutral: [0, 0], Smile: [0, 1], Anger: [0.25, -1] };
+
+const S = { view: 'apose', motion: '', cw: null, fr: null, ready: false, manual: {}, weight: 0, sway: 1, preset: 'A',
+  phys: false, blink: false, talk: false, lids: { L: 1, R: 1 }, mouth: [0, 0], hairA: null, blinkA: null, talkA: null, last: 0, dirty: false, gen: 0 };
+const ctls = [];                                   // {id, el, row, keys, get, set, en, fmt}
+const ev = js => S.cw.eval(js);
+const P = () => ev('P'), V = () => ev('v'), INP = () => ev('inputs');
+const has = k => S.ready && k in P();
+const enabled = k => has(k) && !INP()[k]?.disabled;
+const noFace = () => { try { return !!ev('R&&R.noFace') } catch { return false } };
+
+/* ---------- param writes: the rig's own set()+draw(), exactly what its sliders do ---------- */
+function setP(k, x, { manual = true, pause = true } = {}) {
+  if (!enabled(k)) return false; const p = P()[k];
+  if (pause) { try { S.cw.RigManual?.() } catch { } }
+  x = clamp(+x, p[0], p[1]); S.cw.set(k, x);
+  if (manual) { if (x === p[2]) delete S.manual[k]; else S.manual[k] = x }
+  S.dirty = true; return true;
+}
+function draw() { if (S.ready) { try { if (S.talk && !rigAutoOn()) ev('mouthTalk=true'); S.cw.draw() } catch (e) { console.warn(e) } S.dirty = false } }
+
+/* ---------- UI builders ---------- */
+const HER = s => (s === 'L' ? 'Her left ' : 'Her right ');
+function slider(sec, id, label, { keys, min, max, step = 0.01, get, set, en, note, fmt } = {}) {
+  const i = h('input', { type: 'range', min, max, step, value: 0, 'data-ctl': id, 'aria-label': label });
+  const o = h('span', { class: 'val' }, '');
+  const row = h('div', { class: 'row', title: (keys || []).join(', ') }, h('span', {}, label), i, o);
+  const c = { id, el: i, row, keys: keys || [], kind: 'range', get, set, en, fmt: fmt || (x => (+x).toFixed(2)), note };
+  i.addEventListener('input', () => { c.set(+i.value); o.textContent = c.fmt(+i.value); draw() });
+  i.addEventListener('dblclick', () => { c.set(c.rest ?? 0); draw(); syncAll() });
+  sec.append(row); if (note) sec.append(h('div', { class: 'note' }, note)); ctls.push(c); return c;
+}
+function param(sec, k, label, extra = {}) {    // plain one-param slider (range from the rig's P table at build time)
+  return slider(sec, 'p:' + k, label, { keys: [k], min: extra.min ?? -1, max: extra.max ?? 1, step: extra.step, get: () => V()[k], set: x => setP(k, x), en: () => enabled(k), ...extra });
+}
+function missing(sec, label, why) {            // no backing param: shown disabled, never faked
+  const i = h('input', { type: 'range', disabled: true, 'data-ctl': 'missing:' + label, 'data-missing': '1' });
+  sec.append(h('div', { class: 'row off', title: why }, h('span', {}, label), i, h('span', { class: 'val' }, '—')), h('div', { class: 'note' }, 'no rig param yet: ' + why));
+}
+function toggle(sec, id, label, onchange) {
+  const i = h('input', { type: 'checkbox', 'data-ctl': id }); const c = { id, el: i, kind: 'switch', keys: [] };
+  i.addEventListener('change', () => onchange(i.checked)); sec.append(h('label', { class: 'sw' }, i, label)); ctls.push(c); return c;
+}
+
+/* ---------- build panel ---------- */
+function build() {
+  // Motion
+  const m = $('#motion'); for (const [k, t] of MOTIONS) m.append(h('option', { value: k }, t));
+  m.addEventListener('change', () => { S.motion = m.value; loadRig() });
+  $('#replay').addEventListener('click', () => { try { S.cw.SVClip?.replay() } catch { } });
+  $('#reset').addEventListener('click', resetRest);
+  // Expression
+  for (const n of Object.keys(EXPR)) $('#expr').append(h('button', { 'data-ctl': 'expr:' + n, 'data-expr': n, on: { click: () => expression(n) } }, n));
+  // Body
+  const B = $('#sec-body');
+  param(B, 'BodyLean', 'Lean');
+  slider(B, 'weight', 'Weight shift', { keys: ['HipL', 'HipR', 'KneeL', 'KneeR', 'AnkleL', 'AnkleR', 'RootX', 'RootY'], min: -1, max: 1, get: () => S.weight, set: weight, en: () => enabled('HipL') || enabled('HipR'),
+    note: 'UI mapping (no single rig param): hips + knees + ankles via the rig\'s idle leg stance, feet kept planted with its foot plant (writes Root X/Y).' });
+  for (const j of ['Shoulder', 'Elbow', 'Hip', 'Knee']) for (const s of ['L', 'R']) param(B, j + s, HER(s) + j.toLowerCase());
+  param(B, 'HeadTilt', 'Head tilt'); param(B, 'HeadNod', 'Head nod');
+  // Eyes
+  const E = $('#sec-eyes');
+  slider(E, 'blink', 'Blink (both)', { keys: ['EyeLOpen', 'EyeROpen'], min: 0, max: 1, get: () => 1 - Math.min(V().EyeLOpen, V().EyeROpen), set: x => { lids(1 - x, 1 - x) }, en: () => !noFace() });
+  slider(E, 'lidL', 'Her left lid (green, open)', { keys: ['EyeLOpen'], min: 0, max: 1, get: () => V().EyeLOpen, set: x => lids(x, null), en: () => !noFace() }).rest = 1;
+  slider(E, 'lidR', 'Her right lid (amber, open)', { keys: ['EyeROpen'], min: 0, max: 1, get: () => V().EyeROpen, set: x => lids(null, x), en: () => !noFace() }).rest = 1;
+  ctls.find(c => c.id === 'blink').rest = 0;
+  E.append(h('div', { class: 'msg' }, 'Gaze (EyeBallX / EyeBallY) · double-click to centre'), gazePad());
+  toggle(E, 'autoblink', 'Auto-blink (rig blink timing, both lids)', on => { S.blink = on; S.blinkA = null; if (!on) restoreLids() });
+  // Mouth
+  const M = $('#sec-mouth');
+  slider(M, 'p:MouthOpen', 'MouthOpen', { keys: ['MouthOpen'], min: 0, max: 1, get: () => V().MouthOpen, set: x => mouth(x, null), en: () => !noFace() });
+  slider(M, 'p:MouthForm', 'MouthForm', { keys: ['MouthForm'], min: -1, max: 1, get: () => V().MouthForm, set: x => mouth(null, x), en: () => !noFace() });
+  toggle(M, 'autotalk', 'Auto-talk (rig talk driver)', on => { S.talk = on; S.talkA = null; if (!on) restoreMouth() });
+  // Hands
+  const Hs = $('#sec-hands');
+  const hp = h('select', { 'data-ctl': 'handpose', on: { change: e => { if (e.target.value) handPose(e.target.value) } } }, h('option', { value: '' }, '— (custom)'), Object.keys(POSES).map(n => h('option', { value: n }, n)));
+  Hs.append(h('div', { class: 'sw' }, h('span', { style: 'width:96px' }, 'Hand pose'), hp, h('span', { class: 'msg' }, 'both hands')));
+  ctls.push({ id: 'handpose', el: hp, kind: 'select', keys: [] });
+  for (const s of ['L', 'R']) {
+    Hs.append(h('h5', {}, s === 'L' ? 'Her left hand' : 'Her right hand'));
+    slider(Hs, 'curl' + s, 'Curl (4 fingers)', { keys: FING.map(f => 'Hand' + s + f), min: 0, max: 1, get: () => FING.reduce((a, f) => a + V()['Hand' + s + f], 0) / 4,
+      set: x => { for (const f of FING) setP('Hand' + s + f, x); hp.value = '' }, en: () => FING.some(f => enabled('Hand' + s + f)) });
+    param(Hs, 'Hand' + s + 'Spread', 'Spread', { min: 0, max: 1 });
+    param(Hs, 'Hand' + s + 'Thumb', 'Thumb (curl)', { min: 0, max: 1 });
+    param(Hs, 'Wrist' + s, 'Wrist bend');
+  }
+  // Hair
+  const Hr = $('#sec-hair');
+  toggle(Hr, 'physics', 'Physics (rig hair springs)', on => { S.phys = on; S.hairA = null; if (!on) { try { ev('hairDrive=null') } catch { } setP('HairSwayX', S.manual.HairSwayX ?? 0, { manual: false, pause: false }); setP('HairSwayY', S.manual.HairSwayY ?? 0, { manual: false, pause: false }); draw() } });
+  slider(Hr, 'sway', 'Sway amount', { keys: ['HairSwayX', 'HairSwayY'], min: 0, max: 1, step: 0.05, get: () => S.sway, set: x => { S.sway = x }, en: () => S.phys,
+    note: 'scales every strand\'s spring output (needs Physics on)' }).rest = 1;
+  const sp = h('select', { 'data-ctl': 'preset', on: { change: e => setPreset(e.target.value) } }, h('option', { value: 'A' }, 'A · 4.0 Hz / ζ 0.8 (default)'), h('option', { value: 'B' }, 'B · 2.0 Hz / ζ 0.6'), h('option', { value: 'default' }, 'legacy · 1.1 Hz / ζ 0.3'));
+  Hr.append(h('div', { class: 'sw' }, h('span', { style: 'width:96px' }, 'Spring preset'), sp)); ctls.push({ id: 'preset', el: sp, kind: 'select', keys: [] });
+  // Advanced (collapsed)
+  const A = $('#sec-adv');
+  A.append(h('h5', {}, 'Twist axes'));
+  for (const j of ['Shoulder', 'Forearm', 'Hip', 'Knee', 'Ankle']) for (const s of ['L', 'R']) param(A, j + 'Twist' + s, HER(s) + j.toLowerCase() + ' twist');
+  param(A, 'NeckTwist', 'Neck twist');
+  A.append(h('h5', {}, 'Wrist twist (authored hand angles)'));
+  for (const s of ['L', 'R']) param(A, 'WristTwist' + s, HER(s) + 'wrist twist');
+  A.append(h('h5', {}, 'Root (px)')); param(A, 'RootX', 'Root X', { min: -40, max: 40, step: 1 }); param(A, 'RootY', 'Root Y', { min: -40, max: 40, step: 1 });
+  A.append(h('h5', {}, 'Per-finger curl'));
+  for (const s of ['L', 'R']) for (const f of FING) param(A, 'Hand' + s + f, HER(s) + f.toLowerCase() + ' curl', { min: 0, max: 1 });
+  A.append(h('h5', {}, 'Hair strands'));
+  missing(A, 'Per-strand angles', 'strands only move through the global HairSwayX/Y or the spring sim (hairDrive is internal, not a param)');
+  missing(A, 'Bun offset', 'the bun is a hair part (swayWeight 0.3) with no offset param');
+  A.append(h('h5', {}, 'Other rig params (not in the agreed layout; kept so nothing becomes unreachable)'));
+  for (const s of ['L', 'R']) param(A, 'Ankle' + s, HER(s) + 'ankle');
+  for (const s of ['L', 'R']) param(A, 'Toe' + s, HER(s) + 'toe');
+  for (const s of ['L', 'R']) param(A, 'Hand' + s + 'ThumbSpread', HER(s) + 'thumb spread');
+  param(A, 'HairSwayX', 'Hair sway X (all)', { en: () => enabled('HairSwayX') && !S.phys }); param(A, 'HairSwayY', 'Hair sway Y (all)', { en: () => enabled('HairSwayY') && !S.phys });
+  A.append(h('div', { class: 'msg' }, 'Per-joint finger offsets (Hand*1..3), PalmTwist (linked to WristTwist by the rig) and the 30 split-curl sliders are not shown; Reset still returns them to rest.'));
+}
+function gazePad() {
+  const pad = h('div', { id: 'gaze', 'data-ctl': 'gaze', title: 'EyeBallX (left/right) · EyeBallY (up/down)' }), dot = h('i');
+  pad.append(dot); let drag = false;
+  const put = e => { const r = pad.getBoundingClientRect(); const x = clamp((e.clientX - r.left) / r.width * 2 - 1, -1, 1), y = clamp((e.clientY - r.top) / r.height * 2 - 1, -1, 1); setP('EyeBallX', x); setP('EyeBallY', y); draw() };
+  pad.addEventListener('pointerdown', e => { drag = true; pad.setPointerCapture(e.pointerId); put(e) });
+  pad.addEventListener('pointermove', e => { if (drag) put(e) }); pad.addEventListener('pointerup', () => drag = false);
+  pad.addEventListener('dblclick', () => { setP('EyeBallX', 0); setP('EyeBallY', 0); draw() });
+  ctls.push({ id: 'gaze', el: pad, kind: 'pad', keys: ['EyeBallX', 'EyeBallY'], dot }); return pad;
+}
+
+/* ---------- composite behaviours ---------- */
+function lids(l, r) { if (l != null) { S.lids.L = l; setP('EyeLOpen', l) } if (r != null) { S.lids.R = r; setP('EyeROpen', r) } }
+function restoreLids() { setP('EyeLOpen', S.lids.L, { pause: false }); setP('EyeROpen', S.lids.R, { pause: false }); draw() }
+function mouth(o, f) { if (o != null) { S.mouth[0] = o; setP('MouthOpen', o) } if (f != null) { S.mouth[1] = f; setP('MouthForm', f) } }
+function restoreMouth() { try { ev('mouthTalk=false') } catch { } setP('MouthOpen', S.mouth[0], { pause: false }); setP('MouthForm', S.mouth[1], { pause: false }); draw() }
+function expression(n) { const [o, f] = EXPR[n]; mouth(o, f); draw(); syncAll() }
+function handPose(n) {
+  const c = POSES[n]; try { S.cw.RigManual?.() } catch { }
+  for (const s of ['L', 'R']) ALLF.forEach((f, i) => { const k = 'Hand' + s + f; if (enabled(k)) { setP(k, c[i], { pause: false }); for (let j = 1; j <= 3; j++) setP(k + j, 0, { pause: false }) } });
+  draw(); syncAll();
+}
+function weight(w) {   // hips + knees (+ ankles) together, feet planted: the rig's own Life leg stance + foot plant, applied once per change
+  S.weight = w; try { S.cw.RigManual?.() } catch { }
+  const legs = ['HipL', 'HipR', 'KneeL', 'KneeR', 'AnkleL', 'AnkleR', 'ToeL', 'ToeR'];
+  if (w === 0) { for (const k of [...legs, 'RootX', 'RootY']) setP(k, P()[k][2], { pause: false }); draw(); return }
+  const L = 1.5 * Math.min(1, Math.abs(w) * 4);          // ramps in near 0 so 0 is exactly rest; 30 px pelvis shift at |w|=1
+  let ok = false; try { ok = S.cw.idleLegStance({ S: S.cw.lifeSlopes() }, L, w) } catch { ok = false }
+  if (!ok) for (const s of ['L', 'R']) { if (enabled('Hip' + s)) S.cw.set('Hip' + s, 0.3 * w); if (enabled('Knee' + s)) S.cw.set('Knee' + s, -0.3 * w) }
+  try { S.cw.footPlantApply() } catch { }
+  const v = V(); for (const k of [...legs, 'RootX', 'RootY']) if (has(k)) { if (v[k] === P()[k][2]) delete S.manual[k]; else S.manual[k] = v[k] }
+  S.dirty = true;
+}
+function setPreset(p) { S.preset = p; try { const e = S.cw.document.getElementById('hairpreset'); e.value = p; e.dispatchEvent(new Event('change', { bubbles: true })) } catch { } }
+
+function resetRest() {
+  S.weight = 0; S.sway = 1; S.lids = { L: 1, R: 1 }; S.mouth = [0, 0]; S.manual = {};
+  for (const id of ['autoblink', 'autotalk', 'physics']) { const c = ctls.find(c => c.id === id); if (c.el.checked) { c.el.checked = false } }
+  S.blink = S.talk = S.phys = false; S.hairA = S.blinkA = S.talkA = null;
+  $('[data-ctl=handpose]').value = 'Open';
+  if (S.motion) { S.motion = ''; $('#motion').value = ''; loadRig(); return }
+  try { S.cw.document.getElementById('rest').click() }       // rig's own Reset: pauseManual, every P to its default, hairDrive=null, draw
+  catch { const p = P(); for (const k in p) S.cw.set(k, p[k][2]); draw() }
+  syncAll();
+}
+
+/* ---------- view dial ---------- */
+function dial() {
+  const NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg'), a0 = DIAL[S.view];
+  svg.setAttribute('viewBox', '-70 -70 140 140');
+  svg.innerHTML = `<circle r="62" fill="#1c2029" stroke="#2a2f3b"/><circle r="20" fill="#232838" stroke="#2a2f3b"/>` + (a0 == null ? '' :
+    `<line x1="0" y1="0" x2="${(Math.sin(a0 * Math.PI / 180) * 46).toFixed(1)}" y2="${(-Math.cos(a0 * Math.PI / 180) * 46).toFixed(1)}" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>`);
+  for (const vw of VIEWS) { const a = DIAL[vw], t = document.createElementNS(NS, 'text'); const [x, y] = a == null ? [0, 0] : [Math.sin(a * Math.PI / 180) * 48, -Math.cos(a * Math.PI / 180) * 48];
+    t.setAttribute('x', x.toFixed(1)); t.setAttribute('y', y.toFixed(1)); t.textContent = vw + (a == null ? '' : ''); t.dataset.ctl = 'view:' + vw; t.dataset.view = vw; if (vw === S.view) t.setAttribute('class', 'on');
+    t.addEventListener('click', () => { if (vw !== S.view) { S.view = vw; loadRig() } }); svg.append(t) }
+  $('#dial').replaceChildren(svg);
+  $('#viewmsg').textContent = `View: ${S.view} (authored views only, no mirroring; 0° front, 90° left, 180° back, 270° right, T-pose in the centre).`;
+}
+
+/* ---------- rig iframe ---------- */
+const HIDE = '#ui,#layers,#pose-toolbar,#pose-nodes{display:none!important}body{padding-top:0!important}';
+function hideRigUi(fr) { try { const d = fr.contentDocument; if (d && d.head && !d.getElementById('sv-simple-hide')) { const s = d.createElement('style'); s.id = 'sv-simple-hide'; s.textContent = HIDE; d.head.append(s) } } catch { } }
+function loadRig() {
+  const gen = ++S.gen; S.ready = false; S.hairA = S.blinkA = S.talkA = null; dial(); syncEnabled();
+  const q = new URLSearchParams({ view: S.view, hair: S.preset }); if (S.motion) { q.set('clip', S.motion); q.set('autoplay', '1') }
+  const fr = h('iframe', { src: RIG + '?' + q, title: 'live rig ' + S.view });
+  $('#stagewrap').replaceChildren(fr, h('div', { id: 'loading' }, 'loading ' + S.view + ' rig…')); S.fr = fr;
+  const early = setInterval(() => { if (S.gen !== gen) return clearInterval(early); hideRigUi(fr) }, 30);
+  fr.addEventListener('load', () => {
+    hideRigUi(fr); clearInterval(early); S.cw = fr.contentWindow;
+    const wait = (n = 0) => { if (S.gen !== gen) return; let ok = false; try { ok = S.cw.eval('typeof R!=="undefined"&&!!R&&!R.loading') } catch { }
+      if (!ok) { const l = $('#loading'); if (l) l.textContent = `loading ${S.view} rig parts… ${Math.round(n / 4)} s`; if (n < 720) setTimeout(() => wait(n + 1), 250); else if (l) l.textContent = 'rig did not load'; return }
+      onReady(gen) };
+    wait();
+  });
+}
+function onReady(gen) {
+  S.ready = true; $('#loading')?.remove(); setPreset(S.preset);
+  if (!S.motion) { for (const [k, x] of Object.entries(S.manual)) setP(k, x, { pause: false }); if (S.weight) weight(S.weight); draw() }
+  try { S.cw.document.addEventListener('rig-controls-change', syncEnabled) } catch { }
+  // Auto-talk keeps the rig's talk-shape filter (no EE / EE_half / smile / anger) on. The rig's own rAF loop clears mouthTalk every
+  // frame while its Auto is off, and its mouth crossfade redraws on the next frame, so re-assert it in a rAF callback queued after that loop.
+  const keep = () => { if (S.gen !== gen) return; try { S.cw.requestAnimationFrame(keep); if (S.talk && !rigAutoOn()) ev('mouthTalk=true') } catch { } };
+  try { S.cw.requestAnimationFrame(keep) } catch { }
+  // Anger needs the anger mouth shape in this view
+  syncAll(); window.SVSimple.ready = true; window.SVSimple.loads++;
+}
+
+/* ---------- sync + live loops ---------- */
+function syncEnabled() {
+  for (const c of ctls) { if (c.kind !== 'range' && c.kind !== 'pad') continue; const on = S.ready && (c.en ? c.en() : true); if (c.kind === 'pad') c.el.classList.toggle('off', !on); else { c.el.disabled = !on; c.row.classList.toggle('off', !on); c.row.title = on ? c.keys.join(', ') : (S.ready ? 'not driven in this view (the rig disabled it or has no part for it)' : 'rig loading') } }
+  const face = S.ready && !noFace(); let shapes = []; try { shapes = S.ready ? ev('(R.mouthShapes||[]).map(s=>s.name)') : [] } catch { }
+  for (const b of document.querySelectorAll('[data-expr]')) b.disabled = !face || (b.dataset.expr === 'Anger' && !shapes.includes('anger'));
+  $('#exprmsg').textContent = !S.ready ? '' : !face ? 'No face in this view.' : shapes.includes('anger') ? 'Sets MouthOpen / MouthForm; Anger = the Clean room anger mouth (0.25, −1).' : 'Anger: no anger mouth art delivered for this view.';
+  for (const id of ['autoblink', 'autotalk']) { const c = ctls.find(c => c.id === id); if (c) c.el.disabled = !face }
+  $('#replay').disabled = !S.motion;
+}
+function syncAll() {
+  if (!S.ready) return; syncEnabled(); const v = V();
+  for (const c of ctls) {
+    if (c.kind === 'range' && document.activeElement !== c.el) { const x = c.get(); if (Number.isFinite(x)) { c.el.value = x; c.row.querySelector('.val').textContent = c.fmt(x) } }
+    else if (c.kind === 'pad') { c.dot.style.left = ((v.EyeBallX + 1) / 2 * 100) + '%'; c.dot.style.top = ((v.EyeBallY + 1) / 2 * 100) + '%' }
+  }
+  for (const b of document.querySelectorAll('[data-expr]')) { const [o, f] = EXPR[b.dataset.expr]; b.classList.toggle('on', Math.abs(v.MouthOpen - o) < 1e-6 && Math.abs(v.MouthForm - f) < 1e-6) }
+  $('[data-ctl=preset]').value = S.preset;
+  let st = null; try { st = S.cw.SVClip?.state } catch { }
+  const rigAuto = rigAutoOn();
+  $('#motionmsg').textContent = S.motion ? `${st?.error ? 'Clip error: ' + st.error : st?.ready ? 'Clip loaded' : 'Loading clip…'}${rigAuto ? ' · playing (the rig drives face and hair; moving any control pauses it)' : ' · paused (↻ replays)'}` : 'Manual pose. Pick a clip to play it live in the rig.';
+}
+function rigAutoOn() { try { return !!S.cw.document.getElementById('auto').checked } catch { return false } }
+const BLINK0 = { close: 0.042, hold: 0.165, open: 0.125, min: 2.5, max: 5.0 };
+function tick(now) {
+  requestAnimationFrame(tick);
+  if (!S.ready) { S.last = now; return }
+  const dt = clamp((now - (S.last || now)) / 1000, 0.001, 0.25); S.last = now;
+  const rigAuto = rigAutoOn(); let live = false;
+  if (!rigAuto) {
+    if (S.phys) { try {
+        if (!S.hairA) S.hairA = S.cw.makeAnim((Math.random() * 2 ** 31) | 0);
+        S.hairA.t += dt; S.cw.stepHair(S.hairA, dt);
+        const d = ev('hairDrive'); if (d) for (const id in d) { d[id] = { x: clamp(d[id].x * S.sway, -1, 1), y: clamp(d[id].y * S.sway, -1, 1) } }
+        const v = V(); S.cw.set('HairSwayX', clamp(v.HairSwayX * S.sway, -1, 1)); S.cw.set('HairSwayY', clamp(v.HairSwayY * S.sway, -1, 1)); live = true;
+      } catch (e) { console.warn('hair physics unavailable', e); S.phys = false; ctls.find(c => c.id === 'physics').el.checked = false } }
+    if (S.blink && !noFace()) {
+      let B = BLINK0; try { B = ev('BLINK') } catch { }
+      const A = S.blinkA || (S.blinkA = { t: 0, next: 0.8 + Math.random() * 2, t0: -1 }); A.t += dt; let open = 1;
+      if (A.t0 < 0 && A.t >= A.next) A.t0 = A.t;
+      if (A.t0 >= 0) { const u = A.t - A.t0; if (u < B.close) open = 1 - u / B.close; else if (u < B.close + B.hold) open = 0; else if (u < B.close + B.hold + B.open) { const x = (u - B.close - B.hold) / B.open; open = x * x } else { A.t0 = -1; A.next = A.t + B.min + Math.random() * (B.max - B.min) } }
+      S.cw.set('EyeLOpen', S.lids.L * open); S.cw.set('EyeROpen', S.lids.R * open); live = true;
+    }
+    if (S.talk && !noFace()) { try {
+        if (!S.talkA) S.talkA = S.cw.makeAnim((Math.random() * 2 ** 31) | 0);
+        S.talkA.t += dt; S.cw.stepTalk(S.talkA, dt); ev('mouthTalk=true'); live = true;   // talk excludes EE / EE_half / smile / anger, as in the rig's talk style
+      } catch (e) { console.warn('auto-talk unavailable', e) } }
+  }
+  if (live || S.dirty) draw();
+  if (now - (S.lastSync || 0) > 120) { S.lastSync = now; syncAll() }
+}
+
+window.SVSimple = { ready: false, loads: 0, state: S, controls: ctls, get cw() { return S.cw }, resetRest, loadRig };
+build(); dial(); loadRig(); requestAnimationFrame(tick);
+})();
+</script>
+</body></html>

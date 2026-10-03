@@ -170,3 +170,12 @@ Same pipeline as T-pose: `make_hairless.py <view>`, `divide.py <view>`, `sheets.
   gaps beside the jaw (base.png (602-604,312-314) and (605-608,271-276), x<616, outside the neck; body pieces empty there), moved with the head -> not filled.
   Page rest ?hairless=1&headgroup=1: 0 px in all five views. Note: the page draws the live skinned body, not these pieces.
 - Sheets: <view>/sheet_headgroup_neck_before_after.png (rest | before | after at the offset).
+
+## Hair ear_strands masks on left/right/back hairless bodies (Sat Oct 3 2026, ~03:20 AM PT) — STAGED
+- Masks: hair/staged/ear_strands/<view>/for_base_body/<view>_body_{skin,clear}_mask.png. skin -> flat skin (left 185,122,78 / right 183,120,76 / back 183,122,77);
+  clear -> rgba 0. Backups before any change: <view>/pre_hair_ear_masks/ (hairless, pieces, live_patch_staged, parts.json, hairless_report.json).
+- Changed: left hairless 621 (68 skin + 553 alpha0), head 618, neck 3; right hairless 640 (64 + 576), head 637, neck 4 (2 skin + 2 alpha0); back hairless 437 (45 + 392), head 437.
+  0 px outside the masks, 0 wrong values, 0 off-palette, eye/mouth/hand-erase/F11 wrist-flap overlap 0. Pieces rebuild == hairless (0 px outside hand mask).
+- live_patch_staged/ NOT changed: with the masks applied, page ?hairless=1 rest = 621 / 640 / 437 px (the page still maps the pre-ear_strands hair_front).
+  With Hair's ear_strands hair_front in place too it is 0 / 0 / 0, so apply to live_patch together with Hair's hair_front going in. Details + scripts: hair_ear_masks_check/.
+- Sheets: <view>/sheet_hair_ear_masks_before_after.png.

@@ -1,0 +1,127 @@
+{
+ "apose": {
+  "handoff": {
+   "frame": 1,
+   "dx": 0,
+   "dy": -9,
+   "rot": 0,
+   "scale": 1
+  },
+  "sub": {
+   "mouth": {
+    "dx": 0,
+    "dy": 0
+   }
+  },
+  "rest_px_with_handoff_and_sub": 44315,
+  "rigRestCheck": "All part sets loaded for apose",
+  "sub_changed_px": 0,
+  "sub_changed_bbox": null,
+  "mouth_anchor": {
+   "x": 681,
+   "y": 286,
+   "desc": "front: lip-seam centre; profile: back corner of the mouth (seam end)"
+  },
+  "w_after_ease": 0,
+  "eased_to0_vs_no_headgroup_px": 0,
+  "errs": []
+ },
+ "tpose": {
+  "handoff": null,
+  "sub": {},
+  "rest_px_with_handoff_and_sub": 0,
+  "rigRestCheck": "All part sets loaded for tpose",
+  "sub_changed_px": 0,
+  "sub_changed_bbox": null,
+  "mouth_anchor": {
+   "x": 682,
+   "y": 277,
+   "desc": "front: lip-seam centre; profile: back corner of the mouth (seam end)"
+  },
+  "w_after_ease": 0,
+  "eased_to0_vs_no_headgroup_px": 0,
+  "errs": []
+ },
+ "left": {
+  "handoff": {
+   "frame": 62,
+   "dx": 0,
+   "dy": 11,
+   "rot": 0,
+   "scale": 1
+  },
+  "sub": {
+   "mouth": {
+    "dx": 6,
+    "dy": 1
+   }
+  },
+  "rest_px_with_handoff_and_sub": 52537,
+  "rigRestCheck": "All part sets loaded for left",
+  "sub_changed_px": 339,
+  "sub_changed_bbox": [
+   595,
+   270,
+   621,
+   298
+  ],
+  "mouth_anchor": {
+   "x": 612,
+   "y": 270,
+   "desc": "front: lip-seam centre; profile: back corner of the mouth (seam end)"
+  },
+  "w_after_ease": 0,
+  "eased_to0_vs_no_headgroup_px": 0,
+  "errs": []
+ },
+ "right": {
+  "handoff": {
+   "frame": 160,
+   "dx": 3,
+   "dy": 5,
+   "rot": 0,
+   "scale": 1
+  },
+  "sub": {
+   "mouth": {
+    "dx": -5,
+    "dy": 0
+   }
+  },
+  "rest_px_with_handoff_and_sub": 52123,
+  "rigRestCheck": "All part sets loaded for right",
+  "sub_changed_px": 328,
+  "sub_changed_bbox": [
+   755,
+   265,
+   780,
+   293
+  ],
+  "mouth_anchor": {
+   "x": 760,
+   "y": 274,
+   "desc": "front: lip-seam centre; profile: back corner of the mouth (seam end)"
+  },
+  "w_after_ease": 0,
+  "eased_to0_vs_no_headgroup_px": 0,
+  "errs": []
+ },
+ "back": {
+  "handoff": {
+   "frame": 109,
+   "dx": 2,
+   "dy": 11,
+   "rot": 0,
+   "scale": 1
+  },
+  "sub": {},
+  "rest_px_with_handoff_and_sub": 41131,
+  "rigRestCheck": "All part sets loaded for back",
+  "sub_changed_px": 0,
+  "sub_changed_bbox": null,
+  "mouth_anchor": null,
+  "w_after_ease": 0,
+  "eased_to0_vs_no_headgroup_px": 0,
+  "errs": []
+ }
+}

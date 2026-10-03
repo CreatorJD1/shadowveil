@@ -1,0 +1,74 @@
+{
+ "contract": "diag slot v1",
+ "angle": 315,
+ "frame": "f191",
+ "canvas": [
+  1365,
+  1739
+ ],
+ "frameSize": [
+  768,
+  1168
+ ],
+ "crop": [
+  0,
+  0,
+  768,
+  1168
+ ],
+ "viewFit": {
+  "scale": 1.54468,
+  "dx": 104.47,
+  "dy": -52.68
+ },
+ "face": true,
+ "locks": {
+  "BodyLean": 0,
+  "ShoulderL": 0,
+  "ShoulderR": 0,
+  "ElbowL": 0,
+  "ElbowR": 0,
+  "HipL": 0,
+  "HipR": 0,
+  "KneeL": 0,
+  "KneeR": 0,
+  "AnkleL": 0,
+  "AnkleR": 0,
+  "ToeL": 0,
+  "ToeR": 0,
+  "WristL": 0,
+  "WristR": 0,
+  "WristTwistL": 0,
+  "WristTwistR": 0,
+  "PalmTwistL": 0,
+  "PalmTwistR": 0
+ },
+ "lockGroups": {
+  "body": [
+   "BodyLean",
+   "ShoulderL",
+   "ShoulderR",
+   "ElbowL",
+   "ElbowR",
+   "HipL",
+   "HipR",
+   "KneeL",
+   "KneeR",
+   "AnkleL",
+   "AnkleR",
+   "ToeL",
+   "ToeR"
+  ],
+  "wrist": [
+   "WristL",
+   "WristR",
+   "WristTwistL",
+   "WristTwistR",
+   "PalmTwistL",
+   "PalmTwistR"
+  ]
+ },
+ "locksWhy": "body joints locked at 0 (user rejected the piece bends; mesh prototype behind &diagbend=1&skin=skin.json); wrist locked until Hands' flaps pass (&diagwrist=1 to test)",
+ "hairSway": "static (0) until Hair supplies under-strand art; v4 per-part caps: 315 strand_06 +X, 045 strand_03_tip -X",
+ "mouth": "rest only; open shapes need ?diagmouth=1 and mouth/rig_diagmouth.json (not delivered)"
+}

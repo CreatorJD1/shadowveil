@@ -1,0 +1,596 @@
+{
+ "045": {
+  "rest": {
+   "frame_px": 189,
+   "view_px": 439,
+   "diff_frame_vs_ref_px": 0,
+   "diff_view_vs_resample_px": 0
+  },
+  "M": {
+   "MouthOpen": 0,
+   "MouthForm": -1,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 22,
+    "interior_px": 0,
+    "lip_px": 75,
+    "skin_px": 240,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      22
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 34,
+    "interior_px": 0,
+    "lip_px": 192,
+    "skin_px": 572,
+    "pad_px_outside_her_lips": 92,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      34
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "smile": {
+   "MouthOpen": 0,
+   "MouthForm": 1,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 26,
+    "interior_px": 0,
+    "lip_px": 111,
+    "skin_px": 263,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      26
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 41,
+    "interior_px": 0,
+    "lip_px": 276,
+    "skin_px": 628,
+    "pad_px_outside_her_lips": 85,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      41
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "OH_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": -1,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 20,
+    "interior_px": 59,
+    "lip_px": 70,
+    "skin_px": 222,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      20
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 32,
+    "interior_px": 143,
+    "lip_px": 183,
+    "skin_px": 513,
+    "pad_px_outside_her_lips": 74,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      32
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "AA_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": 0,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 23,
+    "interior_px": 63,
+    "lip_px": 84,
+    "skin_px": 216,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      23
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 36,
+    "interior_px": 150,
+    "lip_px": 228,
+    "skin_px": 497,
+    "pad_px_outside_her_lips": 73,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      36
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "EE_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": 1,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 26,
+    "interior_px": 74,
+    "lip_px": 89,
+    "skin_px": 245,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      26
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 41,
+    "interior_px": 170,
+    "lip_px": 236,
+    "skin_px": 574,
+    "pad_px_outside_her_lips": 53,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      41
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "OH": {
+   "MouthOpen": 1,
+   "MouthForm": -1,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 22,
+    "interior_px": 118,
+    "lip_px": 72,
+    "skin_px": 202,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      22
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 33,
+    "interior_px": 280,
+    "lip_px": 179,
+    "skin_px": 490,
+    "pad_px_outside_her_lips": 67,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      33
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "AA": {
+   "MouthOpen": 1,
+   "MouthForm": 0,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 23,
+    "interior_px": 127,
+    "lip_px": 77,
+    "skin_px": 207,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      23
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 37,
+    "interior_px": 299,
+    "lip_px": 196,
+    "skin_px": 497,
+    "pad_px_outside_her_lips": 61,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      37
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "EE": {
+   "MouthOpen": 1,
+   "MouthForm": 1,
+   "frame": {
+    "peek_covered_px": 1,
+    "line_px": 26,
+    "interior_px": 143,
+    "lip_px": 91,
+    "skin_px": 226,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      26
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 41,
+    "interior_px": 338,
+    "lip_px": 222,
+    "skin_px": 551,
+    "pad_px_outside_her_lips": 35,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      41
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "_tones": {
+   "her_lip_tones": 169,
+   "line_rgb": [
+    39,
+    4,
+    0
+   ],
+   "skin_rgb": [
+    186,
+    128,
+    85
+   ],
+   "frame_box": [
+    329,
+    195,
+    385,
+    238
+   ],
+   "view_box": [
+    595,
+    250,
+    675,
+    308
+   ]
+  }
+ },
+ "315": {
+  "rest": {
+   "frame_px": 177,
+   "view_px": 425,
+   "diff_frame_vs_ref_px": 0,
+   "diff_view_vs_resample_px": 0
+  },
+  "M": {
+   "MouthOpen": 0,
+   "MouthForm": -1,
+   "frame": {
+    "peek_covered_px": 2,
+    "line_px": 20,
+    "interior_px": 0,
+    "lip_px": 70,
+    "skin_px": 225,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      20
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 34,
+    "interior_px": 0,
+    "lip_px": 177,
+    "skin_px": 534,
+    "pad_px_outside_her_lips": 75,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      34
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "smile": {
+   "MouthOpen": 0,
+   "MouthForm": 1,
+   "frame": {
+    "peek_covered_px": 0,
+    "line_px": 26,
+    "interior_px": 0,
+    "lip_px": 102,
+    "skin_px": 242,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      26
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 39,
+    "interior_px": 0,
+    "lip_px": 265,
+    "skin_px": 573,
+    "pad_px_outside_her_lips": 69,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      39
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "OH_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": -1,
+   "frame": {
+    "peek_covered_px": 2,
+    "line_px": 17,
+    "interior_px": 59,
+    "lip_px": 67,
+    "skin_px": 204,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      17
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 31,
+    "interior_px": 133,
+    "lip_px": 164,
+    "skin_px": 485,
+    "pad_px_outside_her_lips": 68,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      31
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "AA_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": 0,
+   "frame": {
+    "peek_covered_px": 2,
+    "line_px": 21,
+    "interior_px": 63,
+    "lip_px": 85,
+    "skin_px": 192,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      21
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 33,
+    "interior_px": 137,
+    "lip_px": 209,
+    "skin_px": 465,
+    "pad_px_outside_her_lips": 65,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      33
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "EE_half": {
+   "MouthOpen": 0.5,
+   "MouthForm": 1,
+   "frame": {
+    "peek_covered_px": 0,
+    "line_px": 22,
+    "interior_px": 75,
+    "lip_px": 79,
+    "skin_px": 221,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      22
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 36,
+    "interior_px": 167,
+    "lip_px": 212,
+    "skin_px": 532,
+    "pad_px_outside_her_lips": 53,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      36
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "OH": {
+   "MouthOpen": 1,
+   "MouthForm": -1,
+   "frame": {
+    "peek_covered_px": 2,
+    "line_px": 18,
+    "interior_px": 106,
+    "lip_px": 74,
+    "skin_px": 179,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      18
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 32,
+    "interior_px": 264,
+    "lip_px": 164,
+    "skin_px": 428,
+    "pad_px_outside_her_lips": 53,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      32
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "AA": {
+   "MouthOpen": 1,
+   "MouthForm": 0,
+   "frame": {
+    "peek_covered_px": 2,
+    "line_px": 23,
+    "interior_px": 114,
+    "lip_px": 77,
+    "skin_px": 175,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      23
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 34,
+    "interior_px": 280,
+    "lip_px": 182,
+    "skin_px": 428,
+    "pad_px_outside_her_lips": 52,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      34
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "EE": {
+   "MouthOpen": 1,
+   "MouthForm": 1,
+   "frame": {
+    "peek_covered_px": 0,
+    "line_px": 25,
+    "interior_px": 139,
+    "lip_px": 79,
+    "skin_px": 195,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      25
+     ],
+     "blocks_2x2": 0
+    }
+   },
+   "view": {
+    "peek_covered_px": 0,
+    "line_px": 36,
+    "interior_px": 322,
+    "lip_px": 216,
+    "skin_px": 466,
+    "pad_px_outside_her_lips": 28,
+    "lines": {
+     "components": 1,
+     "sizes": [
+      36
+     ],
+     "blocks_2x2": 0
+    }
+   }
+  },
+  "_tones": {
+   "her_lip_tones": 158,
+   "line_rgb": [
+    36,
+    8,
+    0
+   ],
+   "skin_rgb": [
+    187,
+    127,
+    86
+   ],
+   "frame_box": [
+    382,
+    195,
+    437,
+    239
+   ],
+   "view_box": [
+    698,
+    253,
+    775,
+    313
+   ]
+  }
+ }
+}

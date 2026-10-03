@@ -1,0 +1,617 @@
+{
+ "left": {
+  "rest_px_vs_base": {
+   "def": 0,
+   "ctl": 0,
+   "ho": 53,
+   "hot": 0
+  },
+  "hot_loaded_trim_dir": true,
+  "def_staged_requests": 0,
+  "errors": 0,
+  "poses": {
+   "rest": {
+    "hot_vs_ho_px": 53,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 53,
+    "changed_bbox": [
+     656,
+     852,
+     703,
+     853
+    ]
+   },
+   "WristL+1": {
+    "hot_vs_ho_px": 126,
+    "new_holes_vs_ho": 55,
+    "holes_vs_ctl": 55,
+    "hot_vs_ctl_px": 1091,
+    "ho_vs_ctl_px": 1104,
+    "changed_bbox": [
+     657,
+     824,
+     701,
+     863
+    ]
+   },
+   "WristL-1": {
+    "hot_vs_ho_px": 119,
+    "new_holes_vs_ho": 35,
+    "holes_vs_ctl": 35,
+    "hot_vs_ctl_px": 1112,
+    "ho_vs_ctl_px": 1077,
+    "changed_bbox": [
+     658,
+     828,
+     707,
+     862
+    ]
+   },
+   "WristR+1": {
+    "hot_vs_ho_px": 53,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 53,
+    "changed_bbox": [
+     656,
+     852,
+     703,
+     853
+    ]
+   },
+   "WristR-1": {
+    "hot_vs_ho_px": 53,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 53,
+    "changed_bbox": [
+     656,
+     852,
+     703,
+     853
+    ]
+   },
+   "ElbowL+1": {
+    "hot_vs_ho_px": 7833,
+    "new_holes_vs_ho": 7577,
+    "holes_vs_ctl": 7577,
+    "hot_vs_ctl_px": 7880,
+    "ho_vs_ctl_px": 129,
+    "changed_bbox": [
+     571,
+     659,
+     734,
+     853
+    ]
+   },
+   "ElbowL-1": {
+    "hot_vs_ho_px": 7968,
+    "new_holes_vs_ho": 7902,
+    "holes_vs_ctl": 7902,
+    "hot_vs_ctl_px": 8006,
+    "ho_vs_ctl_px": 118,
+    "changed_bbox": [
+     656,
+     644,
+     795,
+     857
+    ]
+   },
+   "ElbowR+1": {
+    "hot_vs_ho_px": 53,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 53,
+    "changed_bbox": [
+     656,
+     852,
+     703,
+     853
+    ]
+   },
+   "ElbowR-1": {
+    "hot_vs_ho_px": 53,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 53,
+    "changed_bbox": [
+     656,
+     852,
+     703,
+     853
+    ]
+   },
+   "EW+1": {
+    "hot_vs_ho_px": 7832,
+    "new_holes_vs_ho": 7577,
+    "holes_vs_ctl": 7627,
+    "hot_vs_ctl_px": 8884,
+    "ho_vs_ctl_px": 1140,
+    "changed_bbox": [
+     576,
+     659,
+     734,
+     853
+    ]
+   },
+   "EW-1": {
+    "hot_vs_ho_px": 7970,
+    "new_holes_vs_ho": 7902,
+    "holes_vs_ctl": 7904,
+    "hot_vs_ctl_px": 9008,
+    "ho_vs_ctl_px": 1120,
+    "changed_bbox": [
+     656,
+     644,
+     789,
+     864
+    ]
+   }
+  }
+ },
+ "right": {
+  "rest_px_vs_base": {
+   "def": 0,
+   "ctl": 0,
+   "ho": 24,
+   "hot": 0
+  },
+  "hot_loaded_trim_dir": true,
+  "def_staged_requests": 0,
+  "errors": 0,
+  "poses": {
+   "rest": {
+    "hot_vs_ho_px": 24,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 24,
+    "changed_bbox": [
+     687,
+     856,
+     705,
+     857
+    ]
+   },
+   "WristL+1": {
+    "hot_vs_ho_px": 24,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 24,
+    "changed_bbox": [
+     687,
+     856,
+     705,
+     857
+    ]
+   },
+   "WristL-1": {
+    "hot_vs_ho_px": 24,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 24,
+    "changed_bbox": [
+     687,
+     856,
+     705,
+     857
+    ]
+   },
+   "WristR+1": {
+    "hot_vs_ho_px": 105,
+    "new_holes_vs_ho": 63,
+    "holes_vs_ctl": 63,
+    "hot_vs_ctl_px": 1225,
+    "ho_vs_ctl_px": 1189,
+    "changed_bbox": [
+     652,
+     834,
+     702,
+     869
+    ]
+   },
+   "WristR-1": {
+    "hot_vs_ho_px": 40,
+    "new_holes_vs_ho": 4,
+    "holes_vs_ctl": 4,
+    "hot_vs_ctl_px": 1170,
+    "ho_vs_ctl_px": 1167,
+    "changed_bbox": [
+     685,
+     843,
+     705,
+     852
+    ]
+   },
+   "ElbowL+1": {
+    "hot_vs_ho_px": 24,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 24,
+    "changed_bbox": [
+     687,
+     856,
+     705,
+     857
+    ]
+   },
+   "ElbowL-1": {
+    "hot_vs_ho_px": 24,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 24,
+    "changed_bbox": [
+     687,
+     856,
+     705,
+     857
+    ]
+   },
+   "ElbowR+1": {
+    "hot_vs_ho_px": 8329,
+    "new_holes_vs_ho": 8296,
+    "holes_vs_ctl": 8296,
+    "hot_vs_ctl_px": 8386,
+    "ho_vs_ctl_px": 98,
+    "changed_bbox": [
+     592,
+     647,
+     705,
+     857
+    ]
+   },
+   "ElbowR-1": {
+    "hot_vs_ho_px": 8344,
+    "new_holes_vs_ho": 8011,
+    "holes_vs_ctl": 8011,
+    "hot_vs_ctl_px": 8376,
+    "ho_vs_ctl_px": 75,
+    "changed_bbox": [
+     632,
+     649,
+     793,
+     857
+    ]
+   },
+   "EW+1": {
+    "hot_vs_ho_px": 8332,
+    "new_holes_vs_ho": 8296,
+    "holes_vs_ctl": 8329,
+    "hot_vs_ctl_px": 9493,
+    "ho_vs_ctl_px": 1201,
+    "changed_bbox": [
+     589,
+     647,
+     705,
+     867
+    ]
+   },
+   "EW-1": {
+    "hot_vs_ho_px": 8341,
+    "new_holes_vs_ho": 8011,
+    "holes_vs_ctl": 8011,
+    "hot_vs_ctl_px": 9509,
+    "ho_vs_ctl_px": 1204,
+    "changed_bbox": [
+     632,
+     649,
+     785,
+     857
+    ]
+   }
+  }
+ },
+ "apose": {
+  "rest_px_vs_base": {
+   "def": 0,
+   "ctl": 0,
+   "ho": 0,
+   "hot": 0
+  },
+  "hot_loaded_trim_dir": true,
+  "def_staged_requests": 0,
+  "errors": 0,
+  "poses": {
+   "rest": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "WristL+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "WristL-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "WristR+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "WristR-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "ElbowL+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "ElbowL-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "ElbowR+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "ElbowR-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "EW+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "EW-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   }
+  }
+ },
+ "tpose": {
+  "rest_px_vs_base": {
+   "def": 0,
+   "ctl": 0,
+   "ho": 0,
+   "hot": 0
+  },
+  "hot_loaded_trim_dir": true,
+  "def_staged_requests": 0,
+  "errors": 0,
+  "poses": {
+   "rest": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "WristL+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 61,
+    "hot_vs_ctl_px": 1025,
+    "ho_vs_ctl_px": 1025,
+    "changed_bbox": null
+   },
+   "WristL-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 89,
+    "hot_vs_ctl_px": 1054,
+    "ho_vs_ctl_px": 1054,
+    "changed_bbox": null
+   },
+   "WristR+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 78,
+    "hot_vs_ctl_px": 957,
+    "ho_vs_ctl_px": 957,
+    "changed_bbox": null
+   },
+   "WristR-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 50,
+    "hot_vs_ctl_px": 954,
+    "ho_vs_ctl_px": 954,
+    "changed_bbox": null
+   },
+   "ElbowL+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 102,
+    "ho_vs_ctl_px": 102,
+    "changed_bbox": null
+   },
+   "ElbowL-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 106,
+    "ho_vs_ctl_px": 106,
+    "changed_bbox": null
+   },
+   "ElbowR+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 107,
+    "ho_vs_ctl_px": 107,
+    "changed_bbox": null
+   },
+   "ElbowR-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 103,
+    "ho_vs_ctl_px": 103,
+    "changed_bbox": null
+   },
+   "EW+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 145,
+    "hot_vs_ctl_px": 2015,
+    "ho_vs_ctl_px": 2015,
+    "changed_bbox": null
+   },
+   "EW-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 150,
+    "hot_vs_ctl_px": 2045,
+    "ho_vs_ctl_px": 2045,
+    "changed_bbox": null
+   }
+  }
+ },
+ "back": {
+  "rest_px_vs_base": {
+   "def": 0,
+   "ctl": 0,
+   "ho": 0,
+   "hot": 0
+  },
+  "hot_loaded_trim_dir": true,
+  "def_staged_requests": 0,
+  "errors": 0,
+  "poses": {
+   "rest": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 0,
+    "ho_vs_ctl_px": 0,
+    "changed_bbox": null
+   },
+   "WristL+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 49,
+    "hot_vs_ctl_px": 1195,
+    "ho_vs_ctl_px": 1195,
+    "changed_bbox": null
+   },
+   "WristL-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 28,
+    "hot_vs_ctl_px": 1163,
+    "ho_vs_ctl_px": 1163,
+    "changed_bbox": null
+   },
+   "WristR+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 48,
+    "hot_vs_ctl_px": 1225,
+    "ho_vs_ctl_px": 1225,
+    "changed_bbox": null
+   },
+   "WristR-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 41,
+    "hot_vs_ctl_px": 1209,
+    "ho_vs_ctl_px": 1209,
+    "changed_bbox": null
+   },
+   "ElbowL+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 82,
+    "ho_vs_ctl_px": 82,
+    "changed_bbox": null
+   },
+   "ElbowL-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 91,
+    "ho_vs_ctl_px": 91,
+    "changed_bbox": null
+   },
+   "ElbowR+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 98,
+    "ho_vs_ctl_px": 98,
+    "changed_bbox": null
+   },
+   "ElbowR-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 0,
+    "hot_vs_ctl_px": 101,
+    "ho_vs_ctl_px": 101,
+    "changed_bbox": null
+   },
+   "EW+1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 106,
+    "hot_vs_ctl_px": 2448,
+    "ho_vs_ctl_px": 2448,
+    "changed_bbox": null
+   },
+   "EW-1": {
+    "hot_vs_ho_px": 0,
+    "new_holes_vs_ho": 0,
+    "holes_vs_ctl": 78,
+    "hot_vs_ctl_px": 2423,
+    "ho_vs_ctl_px": 2423,
+    "changed_bbox": null
+   }
+  }
+ }
+}

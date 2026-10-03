@@ -38,7 +38,7 @@ button.big{font-size:14px;padding:7px 14px;font-weight:600}
 .pad .mk.act{color:#fff;font-weight:700}.pad.off{opacity:.35;pointer-events:none}
 #mpad{width:100%;height:150px}#mpad:after{display:none}#gpad{width:180px;height:110px}
 .shape{font-size:13px;margin:4px 0}.shape b{color:var(--key)}
-.dial svg{width:170px;height:170px}.dial text{font:11px system-ui;fill:#cfd5df;cursor:pointer;text-anchor:middle;dominant-baseline:middle}
+.dial svg{width:204px;height:170px}.dial text{font:11px system-ui;fill:#cfd5df;cursor:pointer;text-anchor:middle;dominant-baseline:middle}
 .dial text.on{fill:#fff;font-weight:700}.dial text.still{fill:#8a93a3}
 #timeline{border-top:1px solid var(--line);background:#171a20;padding:8px 12px}
 #tlrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
@@ -91,7 +91,7 @@ button.big{font-size:14px;padding:7px 14px;font-weight:600}
     <div id="eyes-blink"></div>
     <label class="sw"><input type="checkbox" id="eyelink" checked>Link both lids</label>
     <label class="sw"><input type="checkbox" id="autoblink">Auto-blink (≈333 ms, every 2.5–5 s, upper lid; seeded)</label>
-    <label class="sw"><input type="checkbox" id="headlead" checked>Eyes lead head turns (timeline), blink on a reversal</label>
+    <label class="sw"><input type="checkbox" id="headlead" checked>Eyes lead head turns (timeline; follows the head's on-screen motion), blink on a reversal</label>
     <div id="eyes-lead"></div>
     <h4>Mouth</h4>
     <div class="note">Drag: MouthForm across (−1 … +1), MouthOpen up (0 … 1). The rig shows the nearest drawn shape.</div>
@@ -242,9 +242,14 @@ function poseAt(t) {
 }
 const nFrames = () => Math.max(1, Math.round(S.tl.dur * S.tl.fps));
 // eyes bake: seeded blink schedule + reversal blinks on the keyed head turn (NeckTwist), simulated frame by frame at the fixed step
+// the head's on-screen x (canvas px) for a pose, from the rig's own headPose() (body chain + head tilt/nod + root).
+// NeckTwist is a neck-skin projection only (renders: the head does not move), so it is not used as the turn signal.
+const HEADK = () => Object.keys(S.P).filter(k => /^(BodyLean|Shoulder|Elbow|Hip|Knee|Ankle|Toe|Root|Head)/.test(k));
+function headX(o) { const v = ev('v'), ks = HEADK(), sv = {}; for (const k of ks) { sv[k] = v[k]; v[k] = o[k] ?? S.P[k][2] } let x = 0; try { x = S.cw.headPose().x } catch { } for (const k of ks) v[k] = sv[k]; return x }
+function headSpan() { const x0 = headX({}), x1 = headX({ BodyLean: 1 }); return { x0, full: Math.abs(x1 - x0) || 1 } }
 function bakeEyes() {
   const N = nFrames(), fps = S.tl.fps, dt = 1 / fps, r = rng(S.tl.seed), B = BLINK0, lead = S.leadMs / 1000;
-  const yaw = f => poseAt(f * dt).NeckTwist || 0;
+  const hs = headSpan(), hx = Array.from({ length: N + 1 }, (_, f) => (headX(poseAt(f * dt)) - hs.x0) / hs.full), yaw = f => hx[clamp(f, 0, N)];
   const req = new Set(); if (S.headLead) { let dir = 0, ext = yaw(0); for (let f = 1; f <= N; f++) { const d = yaw(f) - yaw(f - 1), s = Math.sign(Math.abs(d) < 1e-6 ? 0 : d);
     if (s && s !== dir) { if (dir && Math.abs(yaw(f - 1) - ext) >= 0.05) req.add(Math.max(0, f - 1 - Math.round(lead * fps))); dir = s; ext = yaw(f - 1) } } }
   const open = new Float32Array(N + 1); let next = 0.8 + r() * 2, t0 = -1, lastEnd = -10, want = false;
@@ -252,7 +257,7 @@ function bakeEyes() {
     if (t0 < 0 && (t >= next || (want && t - lastEnd >= B.turnGap))) { t0 = t; want = false }
     let o = 1; if (t0 >= 0) { const u = t - t0; if (u < B.close) o = 1 - u / B.close; else if (u < B.close + B.hold) o = 0; else if (u < B.close + B.hold + B.open) { const q = (u - B.close - B.hold) / B.open; o = q * q } else { t0 = -1; lastEnd = t; next = t + B.min + r() * (B.max - B.min) } }
     open[f] = o }
-  S.eyeBake = { open, req: [...req] };
+  S.eyeBake = { open, req: [...req], hx };
 }
 // hair bake: the rig's own stepHair, stepped from frame 0 at the fixed step with each frame's keyed pose; cached per frame
 function invalidate() { S.bake = null; S.eyeBake = null }
@@ -274,7 +279,8 @@ function applyHair(drive) {   // scale the spring output by the sway amount (cap
 function frameState(f) {
   const t = f / S.tl.fps, o = poseAt(t);
   if (S.autoBlink) { if (!S.eyeBake) bakeEyes(); const b = S.eyeBake.open[Math.min(f, S.eyeBake.open.length - 1)]; o.EyeLOpen = Math.min(o.EyeLOpen, b); o.EyeROpen = Math.min(o.EyeROpen, b) }
-  if (S.headLead) { const fut = poseAt(t + S.leadMs / 1000).NeckTwist || 0; o.EyeBallX = clamp(o.EyeBallX + 0.4 * fut, -1, 1) }
+  // eyes lead the head: EyeBallX + = screen right (her left), head x + = screen right; the gaze jumps ~0.4 toward where the head will be
+  if (S.headLead) { if (!S.eyeBake) bakeEyes(); const H = S.eyeBake.hx, fl = clamp(f + Math.round(S.leadMs / 1000 * S.tl.fps), 0, H.length - 1); o.EyeBallX = clamp(o.EyeBallX + 0.4 * clamp(H[fl], -1, 1), -1, 1) }
   return o;
 }
 function applyFrame(f) {
@@ -395,7 +401,8 @@ function mouthPad() {
 }
 function mouthMarks() {   // label every drawn shape at its grid point (from the rig's own R.mouthShapes)
   const pad = $('#mpad'); pad.querySelectorAll('.mk').forEach(m => m.remove()); let shapes = []; try { shapes = ev('(R.mouthShapes||[]).map(s=>({id:s.id,name:s.name,open:s.open,form:s.form}))') } catch { }
-  for (const s of shapes) pad.append(h('span', { class: 'mk', 'data-id': s.id, style: `left:${(s.form + 1) / 2 * 100}%;top:${(1 - s.open) * 100}%` }, s.name));
+  for (const s of shapes) { const tx = s.form <= -0.99 ? '0' : s.form >= 0.99 ? '-100%' : '-50%', ty = s.open >= 0.99 ? '0' : s.open <= 0.01 ? '-100%' : '-50%';
+    pad.append(h('span', { class: 'mk', 'data-id': s.id, style: `left:${(s.form + 1) / 2 * 100}%;top:${(1 - s.open) * 100}%;transform:translate(${tx},${ty});padding:0 3px` }, s.name)) }
   for (const b of document.querySelectorAll('[data-shape]')) { const n = b.dataset.shape; const there = shapes.some(s => s.name === n); const profile = S.view === 'left' || S.view === 'right';
     b.disabled = !there || noFace() || (n === 'anger' && profile); b.title = n === 'anger' && profile ? 'anger is front-only (greyed out in left / right)' : there ? '' : 'not drawn in this view' }
 }
@@ -483,7 +490,7 @@ function syncUI(skipFocused) {
   $('#autoblink').disabled = !face; $('#autoblink').checked = S.autoBlink;
 }
 function dial() {
-  const NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', '-80 -80 160 160');
+  const NS = 'http://www.w3.org/2000/svg', svg = document.createElementNS(NS, 'svg'); svg.setAttribute('viewBox', '-96 -80 192 160');
   const a0 = S.turn; svg.innerHTML = `<circle r="70" fill="#1c2029" stroke="#2a2f3b"/><circle r="18" fill="#232838" stroke="#2a2f3b"/>` + (S.view === 'tpose' ? '' : `<line x1="0" y1="0" x2="${(Math.sin(a0 * Math.PI / 180) * 44).toFixed(1)}" y2="${(-Math.cos(a0 * Math.PI / 180) * 44).toFixed(1)}" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>`);
   const add = (x, y, label, on, cls, fn, title) => { const t = document.createElementNS(NS, 'text'); t.setAttribute('x', x); t.setAttribute('y', y); t.textContent = label; t.setAttribute('class', (on ? 'on ' : '') + (cls || '')); t.addEventListener('click', fn); const tt = document.createElementNS(NS, 'title'); tt.textContent = title; t.append(tt); svg.append(t) };
   for (const [deg, tgt] of TURN) { const x = (Math.sin(deg * Math.PI / 180) * 57).toFixed(1), y = (-Math.cos(deg * Math.PI / 180) * 57).toFixed(1); const still = typeof tgt === 'number';
@@ -567,7 +574,7 @@ function timelineUI() {
   $('#tl-fps').onchange = e => { const t = S.tl.frame / S.tl.fps; S.tl.fps = +e.target.value; S.tl.frame = Math.round(t * S.tl.fps); invalidate(); syncTL() };
   $('#tl-seed').onchange = e => { S.tl.seed = Math.round(+e.target.value || 0); invalidate(); if (S.tl.keys.length) applyFrame(S.tl.frame) };
   $('#tl-export').onclick = () => download('timeline.json', tlJSON()); $('#tl-import').onclick = () => openFile('timeline');
-  $('#tl-clear').onclick = () => { if (!S.tl.keys.length) return; S.tl.keys = []; S.tl.sel = -1; stopPlay(); invalidate(); syncFade(); syncTL() };
+  $('#tl-clear').onclick = () => { S.tl.keys = []; S.tl.sel = -1; S.tl.frame = 0; stopPlay(); invalidate(); syncFade(); syncTL() };
 }
 
 /* ---------------- main loop ---------------- */

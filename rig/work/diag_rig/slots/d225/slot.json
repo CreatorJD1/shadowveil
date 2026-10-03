@@ -1,0 +1,194 @@
+{
+ "angle": 225,
+ "frame": "f131",
+ "viewFit_for_display_only": {
+  "scale": 1.57335,
+  "dx": 56.1,
+  "dy": -44.96
+ },
+ "key": {
+  "key_px": 762712,
+  "dropped_specks_px": 85,
+  "dropped_specks": 34,
+  "fringe_px_kept(25<b-max<=60)": 3311
+ },
+ "systems": {
+  "hands": {
+   "parts": 17,
+   "px": 5513,
+   "near": [
+    "R"
+   ]
+  },
+  "body": {
+   "px": 128714,
+   "parts": {
+    "torso": 25450,
+    "pelvis": 6102,
+    "upperArm_L": 4617,
+    "forearm_L": 3585,
+    "thigh_L": 16274,
+    "shin_L": 10319,
+    "foot_L": 2238,
+    "upperArm_R": 4144,
+    "forearm_R": 4766,
+    "thigh_R": 17501,
+    "shin_R": 10480,
+    "foot_R": 4305,
+    "head": 18933
+   },
+   "pivots": {
+    "pelvis": [
+     389.5,
+     477.3
+    ],
+    "torso": [
+     389.5,
+     477.3
+    ],
+    "head": [
+     389.5,
+     477.3
+    ],
+    "upperArm_L": [
+     312.1,
+     307.6
+    ],
+    "forearm_L": [
+     264.5,
+     385.9
+    ],
+    "wrist_L": [
+     197.9,
+     495.7
+    ],
+    "thigh_L": [
+     343.5,
+     532.0
+    ],
+    "shin_L": [
+     339.5,
+     759.5
+    ],
+    "foot_L": [
+     326.5,
+     1026.4
+    ],
+    "toes_L": [
+     326.5,
+     1029.6
+    ],
+    "upperArm_R": [
+     425.9,
+     307.6
+    ],
+    "forearm_R": [
+     495.5,
+     385.9
+    ],
+    "wrist_R": [
+     595.1,
+     498.1
+    ],
+    "thigh_R": [
+     421.5,
+     532.0
+    ],
+    "shin_R": [
+     416.5,
+     759.5
+    ],
+    "foot_R": [
+     413.5,
+     1026.4
+    ],
+    "toes_R": [
+     413.5,
+     1029.6
+    ]
+   },
+   "fit": {
+    "body_config_used": [],
+    "ys": {
+     "waist": 477.3,
+     "shoulder": 307.6,
+     "elbow": 385.93,
+     "hip": 531.96,
+     "knee": 759.5,
+     "ankle": 1026.45,
+     "neck": 259.61
+    },
+    "xc": 389.5,
+    "crotch_y": 648,
+    "side_map(viewer->her)": {
+     "vl": "L",
+     "vr": "R"
+    },
+    "radii": {
+     "torso": 60.0,
+     "arm_L": 19.0,
+     "leg_L": 24.0,
+     "thighw_L": 34.0,
+     "arm_R": 20.0,
+     "leg_R": 25.0,
+     "thighw_R": 38.0
+    }
+   }
+  },
+  "hair": {
+   "hair_under": 3787,
+   "hair_back": 11155,
+   "hair_front": 0,
+   "strand_01": 141,
+   "strand_03_tip": 85,
+   "strand_03": 50,
+   "extra_1": 19,
+   "extra_2": 0,
+   "bun": 3511
+  }
+ },
+ "files": {
+  "base.png": "a1a05221be68f71f",
+  "base_body_skin.png": "c51c5db6af5e3a44",
+  "base_body.png": "c51c5db6af5e3a44",
+  "hair/strand_01.png": "d5f112405042f1cf",
+  "hair/hair_back.png": "14d327fded07e5b2",
+  "hair/hair_under.png": "73837d12800379cc",
+  "hair/extra_1.png": "23ab7f8914f6f716",
+  "hair/extra_2.png": "58231e900b4c2e49",
+  "hair/strand_03.png": "b1a5ef8c823c623a",
+  "hair/strand_03_tip.png": "fb1265b3b5966c72",
+  "hair/bun.png": "f95ba07adc1ba1fb",
+  "hair/hair_front.png": "58231e900b4c2e49",
+  "body/shin_R.png": "09c72561aa27577c",
+  "body/upperArm_L.png": "3e4d265344548422",
+  "body/thigh_R.png": "c05958f64bf8af4c",
+  "body/thigh_L.png": "1a29abd52137cae6",
+  "body/foot_R.png": "47635a35bb8e25d8",
+  "body/forearm_R.png": "4753b23f4f0eabe3",
+  "body/torso.png": "22dca2bc9ac4dc71",
+  "body/pelvis.png": "ca85bdeac76ec513",
+  "body/forearm_L.png": "62663e9f538d8967",
+  "body/head.png": "5791b29cad31bfb6",
+  "body/shin_L.png": "75d21a32a3424971",
+  "body/upperArm_R.png": "82f3b7cb5af14de1",
+  "body/foot_L.png": "53cebabee40276ac",
+  "hands/R_Middle2.png": "c0ac607f0e03ed1f",
+  "hands/R_palm.png": "a30f3bbcf15e2b35",
+  "hands/R_Pinky2.png": "1f79c261018e8bf4",
+  "hands/R_Thumb1.png": "e82f14b41793bc39",
+  "hands/L_palm.png": "bf868022491479f0",
+  "hands/R_Index3.png": "03596a7b43cb0e7a",
+  "hands/R_Thumb3.png": "e15adff88e43553e",
+  "hands/R_Ring3.png": "faea4c9725b780a2",
+  "hands/R_Pinky3.png": "fe1c51aab1adf623",
+  "hands/R_Pinky1.png": "9a51f57e440fb4aa",
+  "hands/R_Middle1.png": "bb29d25beecd0ee2",
+  "hands/R_Index1.png": "94cf2a18f5ccede8",
+  "hands/R_Ring2.png": "8415ca92913155d1",
+  "hands/R_Ring1.png": "c1420a7510a022f5",
+  "hands/R_Middle3.png": "e35290a6220816e2",
+  "hands/R_Thumb2.png": "e7d4c6dc3ea26f7d",
+  "hands/R_Index2.png": "ee0a9bb5ed42f34b"
+ }
+}

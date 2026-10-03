@@ -1,0 +1,92 @@
+{
+ "angle": 315,
+ "frame": "f191",
+ "units": "FRAME px of reference/apose_turn/frames/f191.png (768x1168), origin top-left; matches hands/staged/f8_diagonals/315/frame_scale/",
+ "side_labels": "R/L as in Hands F8 / diag_check (R = viewer-left arm, L = viewer-right arm)",
+ "rule": "forearm_<side> = her figure px (not key: B-max(R,G)<=25, border-connected) minus the union of F8 frame_scale <side>_* parts; hands draw UNDER the forearm; no forearm flap past the cut (it would cover F8 px at rest)",
+ "view_fit": {
+  "scale": 1.54468,
+  "dx": 104.47,
+  "dy": -52.68
+ },
+ "wrists": {
+  "L": {
+   "hands_part_files": "hands/staged/f8_diagonals/315/frame_scale/L_*.png",
+   "f8_palm_pivot_frame": [
+    562.56,
+    488.99
+   ],
+   "diag_check_red_line": [
+    [
+     572.5,
+     479.5
+    ],
+    [
+     551.6,
+     497.5
+    ]
+   ],
+   "boundary_line_fit": [
+    [
+     567.98,
+     480.48
+    ],
+    [
+     550.73,
+     495.27
+    ]
+   ],
+   "boundary_line_note": "least-squares line through the shared edges between forearm px and F8 hand px (frame px, edge coords)",
+   "boundary_edge_count": 33,
+   "boundary_offset_from_red_line_px": {
+    "min": -2.64,
+    "max": -1.95,
+    "mean": -2.27
+   },
+   "forearm_px_on_boundary": 18,
+   "hand_px_on_boundary": 19,
+   "rest_overlap_px": 0,
+   "rest_gap_px_wrist_zone": 0,
+   "nonhand_fg_px_on_hand_side": 0
+  },
+  "R": {
+   "hands_part_files": "hands/staged/f8_diagonals/315/frame_scale/R_*.png",
+   "f8_palm_pivot_frame": [
+    165.85,
+    498.07
+   ],
+   "diag_check_red_line": [
+    [
+     175.3,
+     505.7
+    ],
+    [
+     155.4,
+     489.5
+    ]
+   ],
+   "boundary_line_fit": [
+    [
+     175.49,
+     502.01
+    ],
+    [
+     158.93,
+     488.58
+    ]
+   ],
+   "boundary_line_note": "least-squares line through the shared edges between forearm px and F8 hand px (frame px, edge coords)",
+   "boundary_edge_count": 31,
+   "boundary_offset_from_red_line_px": {
+    "min": -3.34,
+    "max": -2.63,
+    "mean": -3.0
+   },
+   "forearm_px_on_boundary": 17,
+   "hand_px_on_boundary": 18,
+   "rest_overlap_px": 0,
+   "rest_gap_px_wrist_zone": 0,
+   "nonhand_fg_px_on_hand_side": 0
+  }
+ }
+}

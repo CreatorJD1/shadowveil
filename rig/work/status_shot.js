@@ -1,0 +1,4 @@
+const pp=require('/workspace/jt/node_modules/puppeteer-core');(async()=>{const b=await pp.launch({executablePath:'/usr/bin/google-chrome',headless:'new',args:['--no-sandbox','--disable-dev-shm-usage']});const p=await b.newPage();const errs=[];p.on('pageerror',e=>errs.push(e.message));await p.setViewport({width:1300,height:2400});
+await p.goto('http://127.0.0.1:8795/status/',{waitUntil:'networkidle0',timeout:180000});await new Promise(r=>setTimeout(r,2000));
+const t=await p.evaluate(()=>{const el=[...document.querySelectorAll('*')].find(e=>/Waiting on your OK/.test(e.textContent)&&e.children.length<3);const s=document.body.innerText;return{has:s.includes('mouth switch fix'),hasTone:s.includes('hair_back fill tone fix'),hasHoles:s.includes('2 px hole fills'),hasMouthTone:s.includes('talk-shape tone snap'),lids:s.includes('exact tones'),len:s.length}});
+await p.screenshot({path:'status_check_2355.png'});console.log(JSON.stringify({t,errs}));await b.close()})();

@@ -1,0 +1,59 @@
+{
+ "apose": {
+  "src_md5": {
+   "base_body.png": "3ea58814712f3e645e00add67b807156",
+   "base_body_skin.png": "3ea58814712f3e645e00add67b807156"
+  },
+  "trimmed_px": 0
+ },
+ "tpose": {
+  "src_md5": {
+   "base_body.png": "9ad27c039fccc70771a935d95d6b226c",
+   "base_body_skin.png": "9ad27c039fccc70771a935d95d6b226c"
+  },
+  "trimmed_px": 0
+ },
+ "left": {
+  "src_md5": {
+   "base_body.png": "3053780946a41441e2ddb43b9098d3de",
+   "base_body_skin.png": "3053780946a41441e2ddb43b9098d3de"
+  },
+  "trimmed_px": 53,
+  "rows": [
+   852,
+   853
+  ],
+  "x": [
+   656,
+   703
+  ],
+  "overlap_hand_erase_mask": 53,
+  "before_rgba_uniq": 17,
+  "out_md5": "d20e36f9ba8c7936e75e76a2e37f9ea8"
+ },
+ "right": {
+  "src_md5": {
+   "base_body.png": "6ec4875b9412c715f35f6f3b284fbca2",
+   "base_body_skin.png": "6ec4875b9412c715f35f6f3b284fbca2"
+  },
+  "trimmed_px": 24,
+  "rows": [
+   856,
+   857
+  ],
+  "x": [
+   687,
+   705
+  ],
+  "overlap_hand_erase_mask": 24,
+  "before_rgba_uniq": 6,
+  "out_md5": "127de5ccdfeb34d4879329906d20878a"
+ },
+ "back": {
+  "src_md5": {
+   "base_body.png": "2d5aae59a4069707d8433a4acf629cfb",
+   "base_body_skin.png": "2d5aae59a4069707d8433a4acf629cfb"
+  },
+  "trimmed_px": 0
+ }
+}

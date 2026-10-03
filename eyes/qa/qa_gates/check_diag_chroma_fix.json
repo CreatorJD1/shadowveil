@@ -55,95 +55,10 @@
    }
   },
   "after": {
-   "rest_on_frame_diff_px": 6,
+   "rest_on_frame_diff_px": 0,
    "rest_diff_in_face_px": 0,
-   "rest_diff_outside_face_px": 6,
-   "rest_diff_xy_frame": [
-    [
-     326,
-     168,
-     [
-      7,
-      0,
-      127
-     ],
-     [
-      8,
-      0,
-      48
-     ]
-    ],
-    [
-     327,
-     168,
-     [
-      6,
-      0,
-      126
-     ],
-     [
-      6,
-      0,
-      44
-     ]
-    ],
-    [
-     326,
-     169,
-     [
-      8,
-      1,
-      128
-     ],
-     [
-      10,
-      2,
-      24
-     ]
-    ],
-    [
-     327,
-     169,
-     [
-      9,
-      2,
-      129
-     ],
-     [
-      12,
-      4,
-      20
-     ]
-    ],
-    [
-     330,
-     179,
-     [
-      4,
-      0,
-      134
-     ],
-     [
-      6,
-      0,
-      44
-     ]
-    ],
-    [
-     331,
-     179,
-     [
-      11,
-      5,
-      141
-     ],
-     [
-      22,
-      11,
-      15
-     ]
-    ]
-   ],
+   "rest_diff_outside_face_px": 0,
+   "rest_diff_xy_frame": [],
    "grey_chroma_px_total_144_renders": 0,
    "grey_cases_with_chroma": 0,
    "grey_worst": [],
@@ -650,81 +565,10 @@
    }
   },
   "after": {
-   "rest_on_frame_diff_px": 5,
+   "rest_on_frame_diff_px": 0,
    "rest_diff_in_face_px": 0,
-   "rest_diff_outside_face_px": 5,
-   "rest_diff_xy_frame": [
-    [
-     432,
-     180,
-     [
-      34,
-      28,
-      139
-     ],
-     [
-      61,
-      50,
-      47
-     ]
-    ],
-    [
-     432,
-     181,
-     [
-      34,
-      28,
-      139
-     ],
-     [
-      61,
-      50,
-      47
-     ]
-    ],
-    [
-     432,
-     182,
-     [
-      32,
-      17,
-      124
-     ],
-     [
-      58,
-      31,
-      17
-     ]
-    ],
-    [
-     432,
-     186,
-     [
-      20,
-      8,
-      129
-     ],
-     [
-      40,
-      16,
-      4
-     ]
-    ],
-    [
-     433,
-     186,
-     [
-      16,
-      4,
-      125
-     ],
-     [
-      28,
-      7,
-      27
-     ]
-    ]
-   ],
+   "rest_diff_outside_face_px": 0,
+   "rest_diff_xy_frame": [],
    "grey_chroma_px_total_144_renders": 0,
    "grey_cases_with_chroma": 0,
    "grey_worst": [],

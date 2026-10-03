@@ -1,0 +1,284 @@
+{
+ "url": "http://127.0.0.1:8765/app/driver/index.html",
+ "rigs": {
+  "apose": true,
+  "left": true,
+  "back": true,
+  "right": true
+ },
+ "seen": "turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle>turn>hold>drift>idle",
+ "samples": 552,
+ "liveFrames": [
+  "109:back",
+  "1:apose",
+  "160:right",
+  "62:left"
+ ],
+ "badHandoff": [],
+ "align": {
+  "apose": {
+   "frame": 1,
+   "iou": 0.9165,
+   "mismatch_px": 29992,
+   "meanAbsRGB_overlap": 15.53,
+   "overlap_px_diff_gt40": 26106,
+   "frame_top_bottom": [
+    31,
+    1681
+   ],
+   "live_top_bottom": [
+    40,
+    1682
+   ]
+  },
+  "left": {
+   "frame": 62,
+   "iou": 0.8834,
+   "mismatch_px": 26433,
+   "meanAbsRGB_overlap": 20.94,
+   "overlap_px_diff_gt40": 35464,
+   "frame_top_bottom": [
+    35,
+    1683
+   ],
+   "live_top_bottom": [
+    41,
+    1680
+   ]
+  },
+  "back": {
+   "frame": 109,
+   "iou": 0.8086,
+   "mismatch_px": 74360,
+   "meanAbsRGB_overlap": 15.75,
+   "overlap_px_diff_gt40": 37128,
+   "frame_top_bottom": [
+    31,
+    1680
+   ],
+   "live_top_bottom": [
+    41,
+    1680
+   ]
+  },
+  "right": {
+   "frame": 160,
+   "iou": 0.8584,
+   "mismatch_px": 31984,
+   "meanAbsRGB_overlap": 19.85,
+   "overlap_px_diff_gt40": 31183,
+   "frame_top_bottom": [
+    28,
+    1680
+   ],
+   "live_top_bottom": [
+    40,
+    1680
+   ]
+  }
+ },
+ "nohold": {
+  "57": 56,
+  "164": 165
+ },
+ "talk": {
+  "talk": true,
+  "t": 2.815278,
+  "rs": 4,
+  "flashSkipAdded": 1,
+  "changedPx": 0,
+  "stoppedAwayFromFront": true
+ },
+ "generatedStillRequests": [],
+ "turnFrameRequests": 233,
+ "failed": [],
+ "errors": [],
+ "broken": [],
+ "history": [
+  {
+   "phase": "idle",
+   "at": 22893,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 25607,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 27091,
+   "frame": 33
+  },
+  {
+   "phase": "drift",
+   "at": 28574,
+   "frame": 33
+  },
+  {
+   "phase": "idle",
+   "at": 30590,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 33440,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 36140,
+   "frame": 62
+  },
+  {
+   "phase": "drift",
+   "at": 37557,
+   "frame": 62
+  },
+  {
+   "phase": "idle",
+   "at": 41540,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 44223,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 47923,
+   "frame": 87
+  },
+  {
+   "phase": "drift",
+   "at": 50940,
+   "frame": 87
+  },
+  {
+   "phase": "idle",
+   "at": 56356,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 59006,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 63623,
+   "frame": 109
+  },
+  {
+   "phase": "drift",
+   "at": 64339,
+   "frame": 109
+  },
+  {
+   "phase": "idle",
+   "at": 67806,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 69122,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 71356,
+   "frame": 132
+  },
+  {
+   "phase": "drift",
+   "at": 72072,
+   "frame": 132
+  },
+  {
+   "phase": "idle",
+   "at": 75239,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 76572,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 78205,
+   "frame": 160
+  },
+  {
+   "phase": "drift",
+   "at": 78922,
+   "frame": 160
+  },
+  {
+   "phase": "idle",
+   "at": 81289,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 82605,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 83588,
+   "frame": 191
+  },
+  {
+   "phase": "drift",
+   "at": 84305,
+   "frame": 191
+  },
+  {
+   "phase": "idle",
+   "at": 85622,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 86955,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 87738,
+   "frame": 33
+  },
+  {
+   "phase": "drift",
+   "at": 88455,
+   "frame": 33
+  },
+  {
+   "phase": "idle",
+   "at": 89455,
+   "frame": 1
+  },
+  {
+   "phase": "turn",
+   "at": 90788,
+   "frame": 1
+  },
+  {
+   "phase": "hold",
+   "at": 92171,
+   "frame": 62
+  },
+  {
+   "phase": "drift",
+   "at": 92888,
+   "frame": 62
+  },
+  {
+   "phase": "idle",
+   "at": 94888,
+   "frame": 1
+  }
+ ]
+}

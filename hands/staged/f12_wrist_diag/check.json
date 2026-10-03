@@ -1,0 +1,606 @@
+{
+ "bends_deg": {
+  "bend+1": 25,
+  "bend-1": -25,
+  "anger+0.14": 3.5,
+  "jump-0.2": -5,
+  "jump+0.2969": 7.42,
+  "run-0.12": -3,
+  "run+0.12": 3
+ },
+ "radius": 20.0,
+ "line_px": 2,
+ "45_L": {
+  "skin": [
+   188,
+   128,
+   85
+  ],
+  "line": [
+   44,
+   18,
+   54
+  ],
+  "flap_px": 364,
+  "line_px": 80,
+  "off_palette": 0,
+  "chroma": 0,
+  "flap_px_not_under_opaque_forearm": 0,
+  "rest_px_change_with_flap": 0,
+  "rest_composite_vs_her_frame_px": 273,
+  "rest_line_width": 2.0,
+  "rest_breaks": 16,
+  "bend+1": {
+   "deg": 25,
+   "gap_no_flap": 18,
+   "holes_no_flap": 0,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 7,
+   "end_notch_flap": 2,
+   "breaks_no_flap": 30,
+   "breaks_flap": 5,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.166
+  },
+  "bend-1": {
+   "deg": -25,
+   "gap_no_flap": 21,
+   "holes_no_flap": 0,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 7,
+   "end_notch_flap": 2,
+   "breaks_no_flap": 33,
+   "breaks_flap": 9,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.173
+  },
+  "anger+0.14": {
+   "deg": 3.5,
+   "gap_no_flap": 2,
+   "holes_no_flap": 3,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 1,
+   "end_notch_flap": 0,
+   "breaks_no_flap": 23,
+   "breaks_flap": 5,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "jump-0.2": {
+   "deg": -5,
+   "gap_no_flap": 4,
+   "holes_no_flap": 5,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 8,
+   "end_notch_flap": 8,
+   "breaks_no_flap": 29,
+   "breaks_flap": 11,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "jump+0.2969": {
+   "deg": 7.42,
+   "gap_no_flap": 5,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 4,
+   "end_notch_flap": 4,
+   "breaks_no_flap": 28,
+   "breaks_flap": 5,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "run-0.12": {
+   "deg": -3,
+   "gap_no_flap": 1,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 5,
+   "end_notch_flap": 5,
+   "breaks_no_flap": 27,
+   "breaks_flap": 15,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "run+0.12": {
+   "deg": 3,
+   "gap_no_flap": 1,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 1,
+   "end_notch_flap": 0,
+   "breaks_no_flap": 28,
+   "breaks_flap": 14,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "view_scale": {
+   "px": 856,
+   "colours_subset_of_frame_flap": true,
+   "chroma": 0,
+   "method": "nearest-neighbour inverse view_fit (exact colours)",
+   "view_fit": {
+    "scale": 1.54468,
+    "dx": 83.62,
+    "dy": -55.77
+   }
+  }
+ },
+ "45_R": {
+  "skin": [
+   186,
+   128,
+   87
+  ],
+  "line": [
+   36,
+   8,
+   59
+  ],
+  "flap_px": 331,
+  "line_px": 82,
+  "off_palette": 0,
+  "chroma": 0,
+  "flap_px_not_under_opaque_forearm": 0,
+  "rest_px_change_with_flap": 0,
+  "rest_composite_vs_her_frame_px": 273,
+  "rest_line_width": 2.0,
+  "rest_breaks": 27,
+  "bend+1": {
+   "deg": 25,
+   "gap_no_flap": 25,
+   "holes_no_flap": 0,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 9,
+   "end_notch_flap": 6,
+   "breaks_no_flap": 38,
+   "breaks_flap": 12,
+   "dw_no_flap": 0.033,
+   "dw_flap": 0.121
+  },
+  "bend-1": {
+   "deg": -25,
+   "gap_no_flap": 8,
+   "holes_no_flap": 0,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 11,
+   "end_notch_flap": 6,
+   "breaks_no_flap": 37,
+   "breaks_flap": 14,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.302
+  },
+  "anger+0.14": {
+   "deg": 3.5,
+   "gap_no_flap": 3,
+   "holes_no_flap": 4,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 3,
+   "end_notch_flap": 3,
+   "breaks_no_flap": 38,
+   "breaks_flap": 22,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "jump-0.2": {
+   "deg": -5,
+   "gap_no_flap": 2,
+   "holes_no_flap": 3,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 7,
+   "end_notch_flap": 7,
+   "breaks_no_flap": 34,
+   "breaks_flap": 17,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "jump+0.2969": {
+   "deg": 7.42,
+   "gap_no_flap": 6,
+   "holes_no_flap": 4,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 6,
+   "end_notch_flap": 5,
+   "breaks_no_flap": 42,
+   "breaks_flap": 20,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "run-0.12": {
+   "deg": -3,
+   "gap_no_flap": 0,
+   "holes_no_flap": 0,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 4,
+   "end_notch_flap": 3,
+   "breaks_no_flap": 32,
+   "breaks_flap": 22,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "run+0.12": {
+   "deg": 3,
+   "gap_no_flap": 2,
+   "holes_no_flap": 3,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 2,
+   "end_notch_flap": 2,
+   "breaks_no_flap": 38,
+   "breaks_flap": 22,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "view_scale": {
+   "px": 783,
+   "colours_subset_of_frame_flap": true,
+   "chroma": 0,
+   "method": "nearest-neighbour inverse view_fit (exact colours)",
+   "view_fit": {
+    "scale": 1.54468,
+    "dx": 83.62,
+    "dy": -55.77
+   }
+  }
+ },
+ "315_L": {
+  "skin": [
+   190,
+   130,
+   87
+  ],
+  "line": [
+   59,
+   23,
+   47
+  ],
+  "flap_px": 348,
+  "line_px": 80,
+  "off_palette": 0,
+  "chroma": 0,
+  "flap_px_not_under_opaque_forearm": 0,
+  "rest_px_change_with_flap": 0,
+  "rest_composite_vs_her_frame_px": 202,
+  "rest_line_width": 2.0,
+  "rest_breaks": 18,
+  "bend+1": {
+   "deg": 25,
+   "gap_no_flap": 12,
+   "holes_no_flap": 0,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 10,
+   "end_notch_flap": 3,
+   "breaks_no_flap": 32,
+   "breaks_flap": 8,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.195
+  },
+  "bend-1": {
+   "deg": -25,
+   "gap_no_flap": 25,
+   "holes_no_flap": 1,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 9,
+   "end_notch_flap": 4,
+   "breaks_no_flap": 30,
+   "breaks_flap": 8,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.092
+  },
+  "anger+0.14": {
+   "deg": 3.5,
+   "gap_no_flap": 1,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 7,
+   "end_notch_flap": 6,
+   "breaks_no_flap": 26,
+   "breaks_flap": 13,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "jump-0.2": {
+   "deg": -5,
+   "gap_no_flap": 4,
+   "holes_no_flap": 5,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 5,
+   "end_notch_flap": 4,
+   "breaks_no_flap": 25,
+   "breaks_flap": 11,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "jump+0.2969": {
+   "deg": 7.42,
+   "gap_no_flap": 3,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 10,
+   "end_notch_flap": 6,
+   "breaks_no_flap": 33,
+   "breaks_flap": 13,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "run-0.12": {
+   "deg": -3,
+   "gap_no_flap": 2,
+   "holes_no_flap": 3,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 2,
+   "end_notch_flap": 1,
+   "breaks_no_flap": 26,
+   "breaks_flap": 14,
+   "dw_no_flap": 0.0,
+   "dw_flap": 0.0
+  },
+  "run+0.12": {
+   "deg": 3,
+   "gap_no_flap": 0,
+   "holes_no_flap": 1,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 6,
+   "end_notch_flap": 5,
+   "breaks_no_flap": 24,
+   "breaks_flap": 13,
+   "dw_no_flap": 0.027,
+   "dw_flap": 0.02
+  },
+  "view_scale": {
+   "px": 829,
+   "colours_subset_of_frame_flap": true,
+   "chroma": 0,
+   "method": "nearest-neighbour inverse view_fit (exact colours)",
+   "view_fit": {
+    "scale": 1.54468,
+    "dx": 104.47,
+    "dy": -52.68
+   }
+  }
+ },
+ "315_R": {
+  "skin": [
+   189,
+   129,
+   86
+  ],
+  "line": [
+   49,
+   23,
+   53
+  ],
+  "flap_px": 360,
+  "line_px": 81,
+  "off_palette": 0,
+  "chroma": 0,
+  "flap_px_not_under_opaque_forearm": 0,
+  "rest_px_change_with_flap": 0,
+  "rest_composite_vs_her_frame_px": 202,
+  "rest_line_width": 2.0,
+  "rest_breaks": 14,
+  "bend+1": {
+   "deg": 25,
+   "gap_no_flap": 13,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 7,
+   "end_notch_flap": 3,
+   "breaks_no_flap": 30,
+   "breaks_flap": 9,
+   "dw_no_flap": 0.013,
+   "dw_flap": 0.075
+  },
+  "bend-1": {
+   "deg": -25,
+   "gap_no_flap": 17,
+   "holes_no_flap": 0,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 9,
+   "end_notch_flap": 4,
+   "breaks_no_flap": 25,
+   "breaks_flap": 0,
+   "dw_no_flap": 0.024,
+   "dw_flap": 0.175
+  },
+  "anger+0.14": {
+   "deg": 3.5,
+   "gap_no_flap": 1,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 3,
+   "end_notch_flap": 3,
+   "breaks_no_flap": 23,
+   "breaks_flap": 15,
+   "dw_no_flap": 0.049,
+   "dw_flap": 0.044
+  },
+  "jump-0.2": {
+   "deg": -5,
+   "gap_no_flap": 3,
+   "holes_no_flap": 3,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 5,
+   "end_notch_flap": 4,
+   "breaks_no_flap": 22,
+   "breaks_flap": 3,
+   "dw_no_flap": 0.061,
+   "dw_flap": 0.052
+  },
+  "jump+0.2969": {
+   "deg": 7.42,
+   "gap_no_flap": 4,
+   "holes_no_flap": 4,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 7,
+   "end_notch_flap": 5,
+   "breaks_no_flap": 26,
+   "breaks_flap": 11,
+   "dw_no_flap": 0.045,
+   "dw_flap": 0.049
+  },
+  "run-0.12": {
+   "deg": -3,
+   "gap_no_flap": 1,
+   "holes_no_flap": 2,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 1,
+   "end_notch_flap": 0,
+   "breaks_no_flap": 19,
+   "breaks_flap": 8,
+   "dw_no_flap": 0.058,
+   "dw_flap": 0.052
+  },
+  "run+0.12": {
+   "deg": 3,
+   "gap_no_flap": 0,
+   "holes_no_flap": 1,
+   "gap_flap": 0,
+   "holes_flap": 0,
+   "end_notch_no_flap": 2,
+   "end_notch_flap": 1,
+   "breaks_no_flap": 18,
+   "breaks_flap": 12,
+   "dw_no_flap": 0.013,
+   "dw_flap": 0.012
+  },
+  "view_scale": {
+   "px": 861,
+   "colours_subset_of_frame_flap": true,
+   "chroma": 0,
+   "method": "nearest-neighbour inverse view_fit (exact colours)",
+   "view_fit": {
+    "scale": 1.54468,
+    "dx": 104.47,
+    "dy": -52.68
+   }
+  }
+ },
+ "merged_rig_45": {
+  "path": "hands/staged/f12_wrist_diag/45/rig.json",
+  "parts": 19,
+  "added": [
+   "L_wristflap",
+   "R_wristflap"
+  ],
+  "f8_rig_md5_unchanged": true
+ },
+ "merged_rig_315": {
+  "path": "hands/staged/f12_wrist_diag/315/rig.json",
+  "parts": 19,
+  "added": [
+   "L_wristflap",
+   "R_wristflap"
+  ],
+  "f8_rig_md5_unchanged": true
+ },
+ "315_L_4px": {
+  "px": [
+   {
+    "x": 590,
+    "y": 548,
+    "rgb": [
+     33,
+     0,
+     60
+    ],
+    "B_minus_maxRG": 27
+   },
+   {
+    "x": 591,
+    "y": 548,
+    "rgb": [
+     64,
+     31,
+     91
+    ],
+    "B_minus_maxRG": 27
+   },
+   {
+    "x": 590,
+    "y": 549,
+    "rgb": [
+     47,
+     14,
+     74
+    ],
+    "B_minus_maxRG": 27
+   },
+   {
+    "x": 591,
+    "y": 549,
+    "rgb": [
+     32,
+     0,
+     59
+    ],
+    "B_minus_maxRG": 27
+   }
+  ],
+  "frame_rest_vs_prefix_composite_px": 0,
+  "frame_rest_vs_her_frame_at_4px": 0,
+  "view_px_changed_vs_original_F8": 25,
+  "exact_0000FF_px": {
+   "frame": 0,
+   "view": 0
+  },
+  "key_gate_B_minus_maxRG_gt25": {
+   "frame": 4,
+   "view": 2
+  },
+  "off_her_frame_palette": {
+   "frame": 0,
+   "view": 0
+  },
+  "off_F8_palette_plus_4": {
+   "frame": 0,
+   "view": 0
+  },
+  "view_key_gate_colours": [
+   [
+    32,
+    0,
+    59
+   ],
+   [
+    47,
+    14,
+    74
+   ]
+  ],
+  "frame_off_her_frame_palette_note": "F8 re-matte px (alpha<255 edge ring) carry nearest-interior colours, so some frame px colours are not at that px in her frame; counted as colours anywhere in her f191 hand area",
+  "view_changed_bbox": [
+   1015,
+   1019,
+   793,
+   797
+  ],
+  "view_method": "F8 resample of the new frame part; only px whose resample changed are re-snapped (F8 palette + her 4 exact colours); all other view px identical to F8"
+ }
+}

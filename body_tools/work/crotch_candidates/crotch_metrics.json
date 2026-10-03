@@ -1,0 +1,926 @@
+{
+ "apose": {
+  "live": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "base_body_underlay.png"
+   },
+   "skin": "views/apose/body/skin.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1411,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 2,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 689,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 13,
+     "vs_live_px": 0
+    },
+    "HipL-1": {
+     "holes_crotch_box": 1080,
+     "holes_above_apex": 405,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1861,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 6,
+     "vs_live_px": 0
+    },
+    "HipR+1": {
+     "holes_crotch_box": 1169,
+     "holes_above_apex": 434,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1964,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 3,
+     "vs_live_px": 0
+    },
+    "HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 620,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 28,
+     "vs_live_px": 0
+    },
+    "Hips+1": {
+     "holes_crotch_box": 327,
+     "holes_above_apex": 142,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1303,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 1,
+     "vs_live_px": 0
+    },
+    "Hips-1": {
+     "holes_crotch_box": 242,
+     "holes_above_apex": 121,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1153,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 3,
+     "vs_live_px": 0
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 2188,
+     "holes_above_apex": 778,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2586,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 3,
+     "vs_live_px": 0
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 4,
+     "holes_above_apex": 4,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 325,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 26,
+     "vs_live_px": 0
+    }
+   },
+   "rest_vs_live_px": 0
+  },
+  "ulnb": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "apose_underlay_ulnb.png"
+   },
+   "skin": "views/apose/body/cand_skin_ulnb.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1411,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 2,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 689,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 13,
+     "vs_live_px": 0
+    },
+    "HipL-1": {
+     "holes_crotch_box": 832,
+     "holes_above_apex": 174,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 2,
+     "dark_px_box": 1821,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 11,
+     "vs_live_px": 344
+    },
+    "HipR+1": {
+     "holes_crotch_box": 980,
+     "holes_above_apex": 245,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 75,
+     "dark_px_box": 2004,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 4,
+     "vs_live_px": 268
+    },
+    "HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 620,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 28,
+     "vs_live_px": 0
+    },
+    "Hips+1": {
+     "holes_crotch_box": 257,
+     "holes_above_apex": 72,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 11,
+     "dark_px_box": 1234,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 6,
+     "vs_live_px": 220
+    },
+    "Hips-1": {
+     "holes_crotch_box": 142,
+     "holes_above_apex": 21,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 17,
+     "dark_px_box": 1069,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 11,
+     "vs_live_px": 299
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 1759,
+     "holes_above_apex": 366,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 78,
+     "dark_px_box": 2597,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 9,
+     "vs_live_px": 581
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 4,
+     "holes_above_apex": 4,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 325,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 26,
+     "vs_live_px": 0
+    }
+   },
+   "rest_vs_live_px": 0
+  },
+  "cb24": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "base_body_underlay.png"
+   },
+   "skin": "views/apose/body/cand_skin_cb24.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1411,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 2,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 220,
+     "dark_px_box": 860,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 10,
+     "vs_live_px": 1153
+    },
+    "HipL-1": {
+     "holes_crotch_box": 779,
+     "holes_above_apex": 272,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 257,
+     "dark_px_box": 1933,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 6,
+     "vs_live_px": 3125
+    },
+    "HipR+1": {
+     "holes_crotch_box": 703,
+     "holes_above_apex": 261,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 304,
+     "dark_px_box": 2048,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 2,
+     "vs_live_px": 3635
+    },
+    "HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 311,
+     "dark_px_box": 872,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 26,
+     "vs_live_px": 1669
+    },
+    "Hips+1": {
+     "holes_crotch_box": 267,
+     "holes_above_apex": 189,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 403,
+     "dark_px_box": 1569,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 1,
+     "vs_live_px": 3839
+    },
+    "Hips-1": {
+     "holes_crotch_box": 396,
+     "holes_above_apex": 229,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 486,
+     "dark_px_box": 1493,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 9,
+     "vs_live_px": 3961
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 1481,
+     "holes_above_apex": 532,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 570,
+     "dark_px_box": 2607,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 4,
+     "vs_live_px": 6350
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 289,
+     "dark_px_box": 519,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 17,
+     "vs_live_px": 2284
+    }
+   },
+   "rest_vs_live_px": 0
+  }
+ },
+ "tpose": {
+  "live": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "base_body_underlay.png"
+   },
+   "skin": "views/tpose/body/skin.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1387,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 1,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 638,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 32,
+     "vs_live_px": 0
+    },
+    "HipL-1": {
+     "holes_crotch_box": 1318,
+     "holes_above_apex": 548,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1757,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 5,
+     "vs_live_px": 0
+    },
+    "HipR+1": {
+     "holes_crotch_box": 1254,
+     "holes_above_apex": 535,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1826,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 3,
+     "vs_live_px": 0
+    },
+    "HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 601,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 67,
+     "vs_live_px": 0
+    },
+    "Hips+1": {
+     "holes_crotch_box": 220,
+     "holes_above_apex": 139,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1206,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 4,
+     "vs_live_px": 0
+    },
+    "Hips-1": {
+     "holes_crotch_box": 270,
+     "holes_above_apex": 149,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1133,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 1,
+     "vs_live_px": 0
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 2522,
+     "holes_above_apex": 1033,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2407,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 5,
+     "vs_live_px": 0
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 4,
+     "holes_above_apex": 4,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 338,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 50,
+     "vs_live_px": 0
+    }
+   },
+   "rest_vs_live_px": 0
+  },
+  "ulnb": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "tpose_underlay_ulnb.png"
+   },
+   "skin": "views/tpose/body/cand_skin_ulnb.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1387,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 1,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 638,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 32,
+     "vs_live_px": 0
+    },
+    "HipL-1": {
+     "holes_crotch_box": 1144,
+     "holes_above_apex": 374,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 5,
+     "dark_px_box": 1728,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 7,
+     "vs_live_px": 286
+    },
+    "HipR+1": {
+     "holes_crotch_box": 1126,
+     "holes_above_apex": 407,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 13,
+     "dark_px_box": 1808,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 5,
+     "vs_live_px": 233
+    },
+    "HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 601,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 67,
+     "vs_live_px": 0
+    },
+    "Hips+1": {
+     "holes_crotch_box": 169,
+     "holes_above_apex": 88,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 10,
+     "dark_px_box": 1158,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 11,
+     "vs_live_px": 232
+    },
+    "Hips-1": {
+     "holes_crotch_box": 187,
+     "holes_above_apex": 66,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 9,
+     "dark_px_box": 1069,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 7,
+     "vs_live_px": 297
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 2220,
+     "holes_above_apex": 731,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 18,
+     "dark_px_box": 2361,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 8,
+     "vs_live_px": 501
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 4,
+     "holes_above_apex": 4,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 338,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 50,
+     "vs_live_px": 0
+    }
+   },
+   "rest_vs_live_px": 0
+  },
+  "cb24": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "base_body_underlay.png"
+   },
+   "skin": "views/tpose/body/cand_skin_cb24.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1387,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 1,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 2,
+     "holes_above_apex": 2,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 258,
+     "dark_px_box": 852,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 16,
+     "vs_live_px": 1477
+    },
+    "HipL-1": {
+     "holes_crotch_box": 587,
+     "holes_above_apex": 263,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 417,
+     "dark_px_box": 1984,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 2,
+     "vs_live_px": 4338
+    },
+    "HipR+1": {
+     "holes_crotch_box": 828,
+     "holes_above_apex": 342,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 327,
+     "dark_px_box": 1967,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 5,
+     "vs_live_px": 3674
+    },
+    "HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 256,
+     "dark_px_box": 813,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 65,
+     "vs_live_px": 1733
+    },
+    "Hips+1": {
+     "holes_crotch_box": 407,
+     "holes_above_apex": 275,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 431,
+     "dark_px_box": 1538,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 4,
+     "vs_live_px": 4025
+    },
+    "Hips-1": {
+     "holes_crotch_box": 143,
+     "holes_above_apex": 143,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 487,
+     "dark_px_box": 1443,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 12,
+     "vs_live_px": 4601
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 1415,
+     "holes_above_apex": 605,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 739,
+     "dark_px_box": 2630,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 5,
+     "vs_live_px": 7479
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 254,
+     "dark_px_box": 490,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 39,
+     "vs_live_px": 2597
+    }
+   },
+   "rest_vs_live_px": 0
+  }
+ },
+ "back": {
+  "live": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "base_body_underlay.png"
+   },
+   "skin": "views/back/body/skin.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2116,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 7,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 832,
+     "holes_above_apex": 206,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2306,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 10,
+     "vs_live_px": 0
+    },
+    "HipL-1": {
+     "holes_crotch_box": 25,
+     "holes_above_apex": 25,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1694,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 25,
+     "vs_live_px": 0
+    },
+    "HipR+1": {
+     "holes_crotch_box": 12,
+     "holes_above_apex": 12,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1709,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 56,
+     "vs_live_px": 0
+    },
+    "HipR-1": {
+     "holes_crotch_box": 832,
+     "holes_above_apex": 214,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2265,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 22,
+     "vs_live_px": 0
+    },
+    "Hips+1": {
+     "holes_crotch_box": 231,
+     "holes_above_apex": 46,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1984,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 10,
+     "vs_live_px": 0
+    },
+    "Hips-1": {
+     "holes_crotch_box": 230,
+     "holes_above_apex": 59,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1977,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 16,
+     "vs_live_px": 0
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 67,
+     "holes_above_apex": 67,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1477,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 35,
+     "vs_live_px": 0
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 1583,
+     "holes_above_apex": 339,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2553,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 24,
+     "vs_live_px": 0
+    }
+   },
+   "rest_vs_live_px": 0
+  },
+  "ulnb": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "back_underlay_ulnb.png"
+   },
+   "skin": "views/back/body/cand_skin_ulnb.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2116,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 7,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 413,
+     "holes_above_apex": 149,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 17,
+     "dark_px_box": 2271,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 10,
+     "vs_live_px": 589
+    },
+    "HipL-1": {
+     "holes_crotch_box": 25,
+     "holes_above_apex": 25,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1694,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 25,
+     "vs_live_px": 0
+    },
+    "HipR+1": {
+     "holes_crotch_box": 12,
+     "holes_above_apex": 12,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1709,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 56,
+     "vs_live_px": 0
+    },
+    "HipR-1": {
+     "holes_crotch_box": 426,
+     "holes_above_apex": 143,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 16,
+     "dark_px_box": 2225,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 32,
+     "vs_live_px": 582
+    },
+    "Hips+1": {
+     "holes_crotch_box": 36,
+     "holes_above_apex": 19,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 23,
+     "dark_px_box": 1898,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 21,
+     "vs_live_px": 496
+    },
+    "Hips-1": {
+     "holes_crotch_box": 42,
+     "holes_above_apex": 26,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 28,
+     "dark_px_box": 1895,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 28,
+     "vs_live_px": 489
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 67,
+     "holes_above_apex": 67,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 1477,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 35,
+     "vs_live_px": 0
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 773,
+     "holes_above_apex": 226,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 25,
+     "dark_px_box": 2487,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 32,
+     "vs_live_px": 1126
+    }
+   },
+   "rest_vs_live_px": 0
+  },
+  "cb24": {
+   "rest_px_vs_base": 0,
+   "underlay": {
+    "ok": true,
+    "src": "base_body_underlay.png"
+   },
+   "skin": "views/back/body/cand_skin_cb24.json",
+   "errors": 0,
+   "poses": {
+    "rest": {
+     "holes_crotch_box": 0,
+     "holes_above_apex": 0,
+     "notch_closed": true,
+     "new_dark_px_vs_live_box": 0,
+     "dark_px_box": 2116,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 7,
+     "vs_live_px": 0
+    },
+    "HipL+1": {
+     "holes_crotch_box": 466,
+     "holes_above_apex": 127,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 150,
+     "dark_px_box": 2308,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 9,
+     "vs_live_px": 3115
+    },
+    "HipL-1": {
+     "holes_crotch_box": 6,
+     "holes_above_apex": 6,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 122,
+     "dark_px_box": 1790,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 23,
+     "vs_live_px": 1560
+    },
+    "HipR+1": {
+     "holes_crotch_box": 2,
+     "holes_above_apex": 2,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 101,
+     "dark_px_box": 1786,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 45,
+     "vs_live_px": 1345
+    },
+    "HipR-1": {
+     "holes_crotch_box": 444,
+     "holes_above_apex": 137,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 215,
+     "dark_px_box": 2341,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 23,
+     "vs_live_px": 3056
+    },
+    "Hips+1": {
+     "holes_crotch_box": 235,
+     "holes_above_apex": 130,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 152,
+     "dark_px_box": 2040,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 9,
+     "vs_live_px": 3449
+    },
+    "Hips-1": {
+     "holes_crotch_box": 226,
+     "holes_above_apex": 142,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 203,
+     "dark_px_box": 2096,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 19,
+     "vs_live_px": 3579
+    },
+    "wide_HipL-1_HipR+1": {
+     "holes_crotch_box": 5,
+     "holes_above_apex": 5,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 180,
+     "dark_px_box": 1611,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 22,
+     "vs_live_px": 2152
+    },
+    "cross_HipL+1_HipR-1": {
+     "holes_crotch_box": 888,
+     "holes_above_apex": 242,
+     "notch_closed": false,
+     "new_dark_px_vs_live_box": 326,
+     "dark_px_box": 2599,
+     "leak_px_outside_rest_and_live": 0,
+     "off_palette_px_roi_tol2": 28,
+     "vs_live_px": 5467
+    }
+   },
+   "rest_vs_live_px": 0
+  }
+ }
+}

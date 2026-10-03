@@ -1,0 +1,86 @@
+{
+ "045": {
+  "rest": {
+   "diff_px_on_covered": 4,
+   "diff_px_hair": 4,
+   "figure_px_uncovered": 5414,
+   "overlap_px": 22945,
+   "covered_outside_figure": 951,
+   "hair_px_outside_figure": 951,
+   "uncovered_bbox": [
+    160,
+    661,
+    125,
+    575
+   ]
+  },
+  "sway": {
+   "states": 831,
+   "max_holes_inside_figure": 163,
+   "worst_state": {
+    "x": 1.0,
+    "Y": -1,
+    "path": "slider"
+   },
+   "underfill_union_px": 247,
+   "underfill_bbox": [
+    332,
+    447,
+    62,
+    229
+   ],
+   "background_px_uncovered_union": 288
+  },
+  "key_gap_045": {
+   "region": "x400-419 y200-235",
+   "her_frame_key_px": 352,
+   "hair_over_it_rest": 50,
+   "hair_over_it_min_max_sway": [
+    34,
+    85
+   ]
+  }
+ },
+ "315": {
+  "rest": {
+   "diff_px_on_covered": 0,
+   "diff_px_hair": 0,
+   "figure_px_uncovered": 5474,
+   "overlap_px": 23233,
+   "covered_outside_figure": 893,
+   "hair_px_outside_figure": 892,
+   "uncovered_bbox": [
+    106,
+    601,
+    127,
+    579
+   ]
+  },
+  "sway": {
+   "states": 831,
+   "max_holes_inside_figure": 241,
+   "worst_state": {
+    "x": -1.0,
+    "Y": -1,
+    "path": "slider"
+   },
+   "underfill_union_px": 333,
+   "underfill_bbox": [
+    314,
+    437,
+    62,
+    242
+   ],
+   "background_px_uncovered_union": 352
+  },
+  "key_gap_045": {
+   "region": "x400-419 y200-235",
+   "her_frame_key_px": 108,
+   "hair_over_it_rest": 0,
+   "hair_over_it_min_max_sway": [
+    0,
+    0
+   ]
+  }
+ }
+}

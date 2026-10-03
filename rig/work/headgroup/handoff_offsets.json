@@ -1,0 +1,70 @@
+{
+ "apose": {
+  "frame": 1,
+  "face": {
+   "dx": 0,
+   "dy": -9,
+   "ncc": 0.671
+  },
+  "torso": {
+   "dx": 0,
+   "dy": -7,
+   "ncc": 0.684
+  },
+  "head_rel_torso": {
+   "dx": 0,
+   "dy": -2
+  }
+ },
+ "left": {
+  "frame": 62,
+  "face": {
+   "dx": 5,
+   "dy": 11,
+   "ncc": 0.239
+  },
+  "torso": {
+   "dx": -7,
+   "dy": 11,
+   "ncc": 0.215
+  },
+  "head_rel_torso": {
+   "dx": 12,
+   "dy": 0
+  }
+ },
+ "back": {
+  "frame": 109,
+  "face": {
+   "dx": -1,
+   "dy": 19,
+   "ncc": 0.339
+  },
+  "torso": {
+   "dx": 2,
+   "dy": 29,
+   "ncc": 0.438
+  },
+  "head_rel_torso": {
+   "dx": -3,
+   "dy": -10
+  }
+ },
+ "right": {
+  "frame": 160,
+  "face": {
+   "dx": -4,
+   "dy": 4,
+   "ncc": 0.197
+  },
+  "torso": {
+   "dx": 9,
+   "dy": -15,
+   "ncc": 0.252
+  },
+  "head_rel_torso": {
+   "dx": -13,
+   "dy": 19
+  }
+ }
+}

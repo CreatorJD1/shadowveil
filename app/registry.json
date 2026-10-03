@@ -31,6 +31,13 @@
           "path": "app/driver/index.html",
           "note": "Turn axis 0-360: idle > turn > hold > drift > idle, crossfades authored turnaround stills; 045/090/315 held out (beauty marks)",
           "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "body_tools/work/pose_targets/serve/rig/index.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
         }
       ],
       "reports": [
@@ -101,7 +108,7 @@
           "label": "Idle resim final summary",
           "path": "body_tools/idle/resim/final_summary.json",
           "note": "Unavailable in the current source snapshot.",
-          "exists": false
+          "exists": true
         },
         {
           "label": "Idle clips definition",
@@ -149,6 +156,62 @@
           "label": "Body handoff",
           "path": "body_tools/HANDOFF.md",
           "note": "Sep 30 5:06 AM PT",
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "body_tools/work/hairless_division_staged/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "body_tools/work/round2_staged/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "FORMAT",
+          "path": "body_tools/work/pose_targets/serve/rig/partmesh/FORMAT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "body_tools/work/pose_targets/serve/rig/hand_angles/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "body_tools/work/threequarter_apose/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "report",
+          "path": "body_tools/work/linetone_snap/report.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "body_tools/work/regen_staged/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "recheck 00892ccb",
+          "path": "body_tools/work/regen_staged/spot1_right_hip_armpit/recheck_00892ccb.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
           "exists": true
         }
       ],
@@ -311,6 +374,164 @@
           "path": "eyes/HANDOFF.md",
           "note": "",
           "exists": true
+        },
+        {
+          "label": "Lash fix apose",
+          "path": "eyes/work/lashfix/sheet_apose.png",
+          "note": "STAGED only (eyes/work/lashfix/staged/apose), not live; before=live vs after=staged, lid frames 0-7",
+          "exists": true
+        },
+        {
+          "label": "Lash fix tpose",
+          "path": "eyes/work/lashfix/sheet_tpose.png",
+          "note": "STAGED only (eyes/work/lashfix/staged/tpose), not live; before=live vs after=staged, lid frames 0-7",
+          "exists": true
+        },
+        {
+          "label": "Lash fix left",
+          "path": "eyes/work/lashfix/sheet_left.png",
+          "note": "STAGED only (eyes/work/lashfix/staged/left), not live; before=live vs after=staged, lid frames 0-7",
+          "exists": true
+        },
+        {
+          "label": "Lash fix right",
+          "path": "eyes/work/lashfix/sheet_right.png",
+          "note": "STAGED only (eyes/work/lashfix/staged/right), not live; before=live vs after=staged, lid frames 0-7",
+          "exists": true
+        },
+        {
+          "label": "partmesh notes",
+          "path": "eyes/staged/partmesh_notes.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Lash fix closed-frame variants (live | staged crease kept | alt crease hidden), lid_7 all views",
+          "path": "eyes/work/lashfix/sheet_closed_variants.png",
+          "note": "staged only; user picks lid_7 variant",
+          "exists": true
+        },
+        {
+          "label": "Diagonal eyes 45/315 staged: blink k0-7 + gaze extremes",
+          "path": "eyes/staged/diagonals/sheet.png",
+          "note": "staged only; rest 0 px vs frames; eyes 13-24 px wide, soft",
+          "exists": true
+        },
+        {
+          "label": "Side-glance white tone (staged)",
+          "path": "eyes/staged/white_tone/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Eyes on hairless base (?hairless=1)",
+          "path": "eyes/qa/hairless_check/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "report",
+          "path": "eyes/qa/hairless_check/report.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Eye head-group handoff offsets (shadowveil root)",
+          "path": "eyes/qa/headgroup_handoff/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "REPORT",
+          "path": "eyes/qa/headgroup_handoff/REPORT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "report",
+          "path": "eyes/qa/headgroup_handoff/report.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "REPORT",
+          "path": "eyes/qa/headgroup_handoff/invalid_tmpsv_tree/REPORT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "report",
+          "path": "eyes/qa/headgroup_handoff/invalid_tmpsv_tree/report.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "eyes/qa/headgroup_handoff/invalid_tmpsv_tree/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Eye targets for the six benchmarks",
+          "path": "eyes/qa/benchmark_targets/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Diagonal iris limits check",
+          "path": "eyes/qa/irislimits_diag/irislimits_diag_check.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "QA gates on eye parts",
+          "path": "eyes/qa/qa_gates/QA_GATES_EYES_REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Diagonal far-eye chroma fix (staged)",
+          "path": "eyes/qa/qa_gates/diag_chroma_fix.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Diagonal iris limits v4 check",
+          "path": "eyes/qa/irislimits_diag/v4/sheet_v4.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "REPORT",
+          "path": "eyes/qa/benchmark_targets/REPORT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Diagonal eyes vs hair v3 (lash trim + sway)",
+          "path": "eyes/qa/hair_v3_eyes/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Diagonal eyes: silhouette-edge px cleared (rest 0)",
+          "path": "eyes/qa/edge_clear/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Eyes handoff (master status)",
+          "path": "eyes/HANDOFF_EYES.md",
+          "note": "",
+          "exists": true
         }
       ],
       "media": [
@@ -441,6 +662,41 @@
           "path": "rig/index.html",
           "note": "",
           "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "mouth/qa/render_v2/scratch/rig/index.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "mouth/qa/mouthfix_verify/rig_0ce6fecc_copy.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "mouth/qa/mouthfix_verify/rig_00892ccb_copy.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "mouth/qa/mouthfix_verify/rig_562c32a7_copy.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "mouth/qa/mouthfix_verify/rig_db5cf270_copy.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
         }
       ],
       "reports": [
@@ -546,6 +802,162 @@
           "path": "mouth/HANDOFF.md",
           "note": "",
           "exists": true
+        },
+        {
+          "label": "Mouth lock mask apose json (bbox, px count)",
+          "path": "mouth/handoff_hairless/apose_mouth_lock.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth lock mask tpose json (bbox, px count)",
+          "path": "mouth/handoff_hairless/tpose_mouth_lock.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth lock mask left json (bbox, px count)",
+          "path": "mouth/handoff_hairless/left_mouth_lock.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth lock mask right json (bbox, px count)",
+          "path": "mouth/handoff_hairless/right_mouth_lock.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth lock masks summary (4 views)",
+          "path": "mouth/handoff_hairless/mouth_lock_summary.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split apose parts.json (bbox, seam, bend axes)",
+          "path": "mouth/staged/mesh_split/apose/parts.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split tpose parts.json (bbox, seam, bend axes)",
+          "path": "mouth/staged/mesh_split/tpose/parts.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth staged jobs report: lock masks + mesh split",
+          "path": "mouth/staged/mesh_split/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth mesh-bend prototype (Job A) report",
+          "path": "mouth/staged/mesh_bend/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth diagonals 45/315 proposal (Job B) report",
+          "path": "mouth/staged/diagonals/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "itable",
+          "path": "mouth/work/mb_scratch/itable.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Mouth QA: hairless slot + headgroup handoff re-measure",
+          "path": "mouth/qa/hairless_headgroup/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "mouth/qa/render_v2/work/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "mouth/qa/render_v2/scratch/rig/hand_angles/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Mouth render QA v2 + anger clip check (Oct 2)",
+          "path": "mouth/qa/render_v2/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth tone fix report (staged)",
+          "path": "mouth/staged/tone_fix/REPORT.md",
+          "note": "Lip-region palette snap of 32 shapes; unsnapped list for user",
+          "exists": true
+        },
+        {
+          "label": "Mouth tone fix log (json)",
+          "path": "mouth/staged/tone_fix/tone_fix_log.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth QA re-run on own server 8785 (render_v2, hairless, headgroup new offsets, T/A-pose lock)",
+          "path": "mouth/qa/rerun_shadowveil/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "mouth/qa/rerun_shadowveil/render_v2/work/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "mouthfix verify",
+          "path": "mouth/qa/mouthfix_verify/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "mouth qa_gates",
+          "path": "mouth/qa/qa_gates/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "mouth/qa/qa_gates/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "mouth/qa/mouthfix_verify/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "mouth diag posable",
+          "path": "mouth/staged/diag_posable/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "mouth handoff",
+          "path": "mouth/HANDOFF_MOUTH.md",
+          "note": "",
+          "exists": true
         }
       ],
       "media": [
@@ -615,7 +1027,7 @@
           "exists": true
         },
         {
-          "label": "Turn video mouth, 0-360\u00b0",
+          "label": "Turn video mouth, 0-360°",
           "path": "mouth/work/turn_ref/turn_mouth_contact_sheet.png",
           "note": "",
           "exists": true
@@ -637,6 +1049,168 @@
           "path": "mouth/work/turn_handoff/handoff_sheet.png",
           "note": "",
           "exists": true
+        },
+        {
+          "label": "Mouth lock mask apose (hairless base handoff, staged)",
+          "path": "mouth/handoff_hairless/apose_mouth_lock.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth lock mask tpose (hairless base handoff, staged)",
+          "path": "mouth/handoff_hairless/tpose_mouth_lock.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth lock mask left (hairless base handoff, staged)",
+          "path": "mouth/handoff_hairless/left_mouth_lock.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth lock mask right (hairless base handoff, staged)",
+          "path": "mouth/handoff_hairless/right_mouth_lock.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split apose contact sheet 8x (staged)",
+          "path": "mouth/staged/mesh_split/apose/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split apose upper lip (staged)",
+          "path": "mouth/staged/mesh_split/apose/upper_lip.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split apose lower lip (staged)",
+          "path": "mouth/staged/mesh_split/apose/lower_lip.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split apose interior from AA (staged)",
+          "path": "mouth/staged/mesh_split/apose/interior.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split tpose contact sheet 8x (staged)",
+          "path": "mouth/staged/mesh_split/tpose/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split tpose upper lip (staged)",
+          "path": "mouth/staged/mesh_split/tpose/upper_lip.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split tpose lower lip (staged)",
+          "path": "mouth/staged/mesh_split/tpose/lower_lip.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mesh mouth split tpose interior from AA (staged)",
+          "path": "mouth/staged/mesh_split/tpose/interior.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth mesh-bend (Job A) contact sheet: her shapes vs bent, apose+tpose, 8x",
+          "path": "mouth/staged/mesh_bend/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth mesh-bend apose 5x5 Open x Form grid",
+          "path": "mouth/staged/mesh_bend/grid_apose_on_face.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth mesh-bend tpose 5x5 Open x Form grid",
+          "path": "mouth/staged/mesh_bend/grid_tpose_on_face.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth diagonals 45/315 PROPOSAL sheet (front art bent to f033/f191 lips)",
+          "path": "mouth/staged/diagonals/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth QA: hairless_sheet",
+          "path": "mouth/qa/hairless_headgroup/hairless_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth QA: headgroup_handoff_sheet",
+          "path": "mouth/qa/hairless_headgroup/headgroup_handoff_sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth QA: headgroup_face_context",
+          "path": "mouth/qa/hairless_headgroup/headgroup_face_context.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth render QA v2 contact sheet (sweep, crossfades, anger clip, flicker)",
+          "path": "mouth/qa/render_v2/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth tone fix before/after sheet",
+          "path": "mouth/staged/tone_fix/sheet.png",
+          "note": "All views, 6x, changed px highlighted",
+          "exists": true
+        },
+        {
+          "label": "Mouth tone fix sheet apose",
+          "path": "mouth/staged/tone_fix/sheet_apose.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth tone fix sheet tpose",
+          "path": "mouth/staged/tone_fix/sheet_tpose.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth tone fix sheet left",
+          "path": "mouth/staged/tone_fix/sheet_left.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Mouth tone fix sheet right",
+          "path": "mouth/staged/tone_fix/sheet_right.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "mouthfix verify sheet",
+          "path": "mouth/qa/mouthfix_verify/sheet.png",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "mouth diag posable sheet",
+          "path": "mouth/staged/diag_posable/sheet.png",
+          "note": "",
+          "exists": true
         }
       ]
     },
@@ -652,6 +1226,20 @@
           "label": "Intermediate hand meshes",
           "path": "rig/hand_angles/manifest.json",
           "note": "Created from the authored turn frames; three joints per finger",
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "hands/work/f10rig/index_scratch_patched.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "hands/work/f11rig/index_scratch_patched.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
           "exists": true
         }
       ],
@@ -721,6 +1309,102 @@
           "path": "hands/work/turn_check/HANDOFF.md",
           "note": "auto-registered by update.py scan",
           "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Diagonal hands: cut check (f033/f087/f131/f191)",
+          "path": "hands/work/turn_check/DIAGONALS.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F7 A-pose wrist flaps (staged)",
+          "path": "hands/staged/f7_wrist_apose/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F5 line-art fixes (staged)",
+          "path": "hands/staged/f5_lineart/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F6 overlap flaps (staged, FAIL: pose px)",
+          "path": "hands/staged/f6_overlap/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F7 A-pose wrist flaps: real-rig check on 8775 (supersedes 8765 run)",
+          "path": "hands/staged/f7_wrist_apose/RIG_CHECK.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F9 partmesh pilot specks: 20 px ink trimmed, partmesh PASS, rigid +1-2 tear px",
+          "path": "hands/staged/f9_partmesh_specks/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F10 T-pose wrist flaps (staged)",
+          "path": "hands/staged/f10_wrist_tpose/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F11 wrist flaps left/right/back (staged)",
+          "path": "hands/staged/f11_wrist_profile_back/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F8 diagonal hands cut from her frames (staged)",
+          "path": "hands/staged/f8_diagonals/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hand scale audit vs master sheet",
+          "path": "hands/qa/scale_audit/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hand scale audit data (scale.json)",
+          "path": "hands/qa/scale_audit/scale.json",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F5 v2: back Ring1 curl width within 1 px (staged)",
+          "path": "hands/staged/f5_lineart/v2_ring_width/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "hand_angles 144.7 vs 156.6: definition vs drift",
+          "path": "hands/qa/scale_audit/hand_angles_note.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "qa_gates on live + staged hand parts (F5v2/F7/F10/F11/F8)",
+          "path": "hands/qa/gates/REPORT.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "F12 diagonal wrist flaps",
+          "path": "hands/staged/f12_wrist_diag/README.md",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Hands handoff",
+          "path": "hands/HANDOFF_HANDS.md",
+          "note": "",
           "exists": true
         }
       ],
@@ -875,51 +1559,57 @@
           "exists": true
         },
         {
-          "label": "New rig: 45\u00b0 left hand",
+          "label": "New rig: 45° left hand",
           "path": "rig/hand_angles/45_L.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         },
         {
-          "label": "New rig: 45\u00b0 right hand",
+          "label": "New rig: 45° right hand",
           "path": "rig/hand_angles/45_R.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         },
         {
-          "label": "New rig: 135\u00b0 left hand",
+          "label": "New rig: 135° left hand",
           "path": "rig/hand_angles/135_L.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         },
         {
-          "label": "New rig: 135\u00b0 right hand",
+          "label": "New rig: 135° right hand",
           "path": "rig/hand_angles/135_R.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         },
         {
-          "label": "New rig: 225\u00b0 left hand",
+          "label": "New rig: 225° left hand",
           "path": "rig/hand_angles/225_L.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         },
         {
-          "label": "New rig: 225\u00b0 right hand",
+          "label": "New rig: 225° right hand",
           "path": "rig/hand_angles/225_R.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         },
         {
-          "label": "New rig: 315\u00b0 left hand",
+          "label": "New rig: 315° left hand",
           "path": "rig/hand_angles/315_L.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
           "exists": true
         },
         {
-          "label": "New rig: 315\u00b0 right hand",
+          "label": "New rig: 315° right hand",
           "path": "rig/hand_angles/315_R.png",
           "note": "Reference artwork with three finger joints; live in wrist rotation",
+          "exists": true
+        },
+        {
+          "label": "Hand scale audit sheet (hers vs rig crops)",
+          "path": "hands/qa/scale_audit/scale_sheet.png",
+          "note": "",
           "exists": true
         }
       ]
@@ -1024,6 +1714,160 @@
           "label": "Hair handoff",
           "path": "hair/HANDOFF.md",
           "note": "",
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/handoff_hairless/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "hair/handoff_hairless/work/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/lineart_fix/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "SUMMARY",
+          "path": "hair/qa/lineart/r18/SUMMARY.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "SUMMARY",
+          "path": "hair/qa/turn_handoff/SUMMARY.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/ear_strands/apose/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/brow_strand/apose/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/diagonals/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/merged/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "SUMMARY",
+          "path": "hair/qa/sway_over_hairless_final/SUMMARY.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/hairfront_holes/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/ear_strands/tpose/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "SUMMARY",
+          "path": "hair/qa/turn_handoff/subofs_eyefit/SUMMARY.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/ear_strands/right/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/ear_strands/back/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/ear_strands/left/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/staged/diagonals_v2/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "REPORT",
+          "path": "hair/qa/turn_handoff/subofs_v2/REPORT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "REPORT",
+          "path": "hair/qa/qa_gates_runs/REPORT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "REPORT",
+          "path": "hair/qa/no_mirror/REPORT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "SUMMARY",
+          "path": "hair/qa/colour_sweep/SUMMARY.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "hair/qa/widows_peak/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
           "exists": true
         }
       ],
@@ -1185,6 +2029,33 @@
           "note": "auto-registered by update.py scan",
           "auto": true,
           "exists": true
+        },
+        {
+          "label": "Poser (unified)",
+          "path": "rig/poser.html",
+          "note": "",
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "rig/work/handorder/index_copy.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "rig/work/armsub/index_copy.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "Shadowveil rig preview (contract v1.8)",
+          "path": "rig/work/hgsubhair/index_new.html",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
         }
       ],
       "reports": [
@@ -1258,6 +2129,69 @@
           "label": "Actions v1 render queue log",
           "path": "rig/previews/actions/v1/work/queue.log",
           "note": "added in the Sep 30 4:25 AM PT refresh",
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "rig/hand_angles/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "summary",
+          "path": "rig/work/qa_post6d5b239/summary.json",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "FORMAT",
+          "path": "rig/partmesh/FORMAT.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "rig/work/qa_gates/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "rig/work/crotch_weights/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "rig/work/irislimits/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "README",
+          "path": "rig/work/armsub/README.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "HOOKS",
+          "path": "rig/poser/HOOKS.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
+          "exists": true
+        },
+        {
+          "label": "PLAN",
+          "path": "rig/benchmarks/PLAN.md",
+          "note": "auto-registered by update.py scan",
+          "auto": true,
           "exists": true
         }
       ],
@@ -1490,7 +2424,7 @@
           "label": "Base model rig brief",
           "path": "reference/grok_build/artifacts/base-model-rig-brief.md",
           "note": "Unavailable in the current source snapshot.",
-          "exists": false
+          "exists": true
         },
         {
           "label": "Clean room media check (final)",
@@ -1515,6 +2449,12 @@
           "path": "app/qa/beauty_marks/REPORT.md",
           "note": "",
           "exists": true
+        },
+        {
+          "label": "Outfit design reference (from user)",
+          "path": "reference/outfit/README.md",
+          "note": "",
+          "exists": true
         }
       ],
       "media": [
@@ -1537,51 +2477,51 @@
           "exists": true
         },
         {
-          "label": "Turnaround 0\u00b0",
+          "label": "Turnaround 0°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-000.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 45\u00b0",
+          "label": "Turnaround 45°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-045.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 90\u00b0",
+          "label": "Turnaround 90°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-090.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 135\u00b0",
+          "label": "Turnaround 135°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-135.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 180\u00b0",
+          "label": "Turnaround 180°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-180.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 225\u00b0",
+          "label": "Turnaround 225°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-225.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 270\u00b0",
+          "label": "Turnaround 270°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-270.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
-          "label": "Turnaround 315\u00b0",
+          "label": "Turnaround 315°",
           "path": "reference/grok_build/public/clean-room/layers/rotation/turn-315.png",
-          "note": "clean-room rotation strip (45\u00b0 steps)",
+          "note": "clean-room rotation strip (45° steps)",
           "exists": true
         },
         {
@@ -1622,6 +2562,13 @@
       "path": "body_tools/preview.html",
       "title": "Shadowveil body rig preview",
       "bytes": 11875,
+      "embedded_in": "body",
+      "excluded": false
+    },
+    {
+      "path": "body_tools/work/pose_targets/serve/rig/index.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 190889,
       "embedded_in": "body",
       "excluded": false
     },
@@ -1675,105 +2622,148 @@
       "excluded": false
     },
     {
+      "path": "hands/work/f10rig/index_scratch_patched.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 191131,
+      "embedded_in": "hands",
+      "excluded": false
+    },
+    {
+      "path": "hands/work/f11rig/index_scratch_patched.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 191400,
+      "embedded_in": "hands",
+      "excluded": false
+    },
+    {
+      "path": "mouth/qa/mouthfix_verify/rig_00892ccb_copy.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 192232,
+      "embedded_in": "mouth",
+      "excluded": false
+    },
+    {
+      "path": "mouth/qa/mouthfix_verify/rig_0ce6fecc_copy.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 190889,
+      "embedded_in": "mouth",
+      "excluded": false
+    },
+    {
+      "path": "mouth/qa/mouthfix_verify/rig_562c32a7_copy.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 193602,
+      "embedded_in": "mouth",
+      "excluded": false
+    },
+    {
+      "path": "mouth/qa/mouthfix_verify/rig_db5cf270_copy.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 190759,
+      "embedded_in": "mouth",
+      "excluded": false
+    },
+    {
+      "path": "mouth/qa/render_v2/scratch/rig/index.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 187997,
+      "embedded_in": "mouth",
+      "excluded": false
+    },
+    {
       "path": "reference/grok_build/artifacts/base-model-clean-room.html",
       "title": "Base model clean room",
       "bytes": 2391626,
       "embedded_in": "",
-      "excluded": false,
-      "exists": false,
-      "note": "Unavailable in the current source snapshot."
+      "excluded": false
     },
     {
       "path": "reference/grok_build/artifacts/clean-room.html",
       "title": "Clean room",
       "bytes": 962021,
       "embedded_in": "",
-      "excluded": false,
-      "exists": false,
-      "note": "Unavailable in the current source snapshot."
+      "excluded": false
     },
     {
       "path": "reference/grok_build/artifacts/index.html",
       "title": "Clean room",
       "bytes": 9235,
       "embedded_in": "",
-      "excluded": false,
-      "exists": false,
-      "note": "Unavailable in the current source snapshot."
+      "excluded": false
     },
     {
       "path": "reference/grok_build/attachments/Shadowveil_Driver_Screen_Labels(2) (2).html",
-      "title": "Shadowveil \u00b7 Character Animation Studio",
+      "title": "Shadowveil · Character Animation Studio",
       "bytes": 99703983,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/attachments/index-4.html",
-      "title": "Shadowveil \u2014 2D Puppet Rig",
+      "title": "Shadowveil — 2D Puppet Rig",
       "bytes": 18402,
       "embedded_in": "reference",
       "excluded": false
     },
     {
       "path": "reference/grok_build/driver-work/Shadowveil_Character_Driver_Foundation.html",
-      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
+      "title": "Shadowveil · Screen Labels 0.1.2",
       "bytes": 4943190,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/driver-work/docs/driver/Meta_AI_Guide_Handoff.html",
-      "title": "Shadowveil \u2014 HTML guide handoff for Meta AI",
+      "title": "Shadowveil — HTML guide handoff for Meta AI",
       "bytes": 7056,
       "embedded_in": "reference",
       "excluded": false
     },
     {
       "path": "reference/grok_build/driver-work/public/driver-foundation/index.html",
-      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
+      "title": "Shadowveil · Screen Labels 0.1.2",
       "bytes": 4943190,
       "embedded_in": "reference",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/baseline/Shadowveil_Driver_Screen_Labels.html",
-      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
+      "title": "Shadowveil · Screen Labels 0.1.2",
       "bytes": 4105708,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/Shadowveil_Character_Driver_Foundation.html",
-      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
+      "title": "Shadowveil · Screen Labels 0.1.2",
       "bytes": 4105708,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/docs/driver/Meta_AI_Guide_Handoff.html",
-      "title": "Shadowveil \u2014 HTML guide handoff for Meta AI",
+      "title": "Shadowveil — HTML guide handoff for Meta AI",
       "bytes": 7056,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/driver-source/public/driver-foundation/index.html",
-      "title": "Shadowveil \u00b7 Screen Labels 0.1.2",
+      "title": "Shadowveil · Screen Labels 0.1.2",
       "bytes": 4105708,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/prior-reports/Shadowveil_Character_Driver_Direction_Fix.html",
-      "title": "Shadowveil \u00b7 Direction Fix 0.1.1",
+      "title": "Shadowveil · Direction Fix 0.1.1",
       "bytes": 4099882,
       "embedded_in": "",
       "excluded": false
     },
     {
       "path": "reference/grok_build/freebuff/Shadowveil_Freebuff_Handoff/references/Shadowveil_Interactive_Master_Sheet.html",
-      "title": "Shadowveil \u2014 Character Master Sheet",
+      "title": "Shadowveil — Character Master Sheet",
       "bytes": 61096318,
       "embedded_in": "reference",
       "excluded": false
@@ -1807,6 +2797,13 @@
       "excluded": false
     },
     {
+      "path": "reference/outfit/outfit_reference.html",
+      "title": "Shadowveil · Character Animation Studio",
+      "bytes": 99703983,
+      "embedded_in": "",
+      "excluded": false
+    },
+    {
       "path": "rig/index (copy 1).html",
       "title": "Shadowveil rig preview (contract v1.5.1)",
       "bytes": 67091,
@@ -1816,14 +2813,14 @@
     {
       "path": "rig/index.html",
       "title": "Shadowveil rig preview (contract v1.8)",
-      "bytes": 107748,
+      "bytes": 193602,
       "embedded_in": "coder",
       "excluded": false
     },
     {
       "path": "rig/index.v18-wip.html",
       "title": "Shadowveil rig preview (contract v1.8)",
-      "bytes": 107748,
+      "bytes": 167811,
       "embedded_in": "coder",
       "excluded": false
     },
@@ -1838,6 +2835,90 @@
       "path": "rig/index.v19-wip.html",
       "title": "Shadowveil rig preview (contract v1.8)",
       "bytes": 120606,
+      "embedded_in": "coder",
+      "excluded": false
+    },
+    {
+      "path": "rig/poser.html",
+      "title": "Shadowveil poser (unified)",
+      "bytes": 56831,
+      "embedded_in": "coder",
+      "excluded": false
+    },
+    {
+      "path": "rig/work/armsub/index_copy.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 193602,
+      "embedded_in": "coder",
+      "excluded": false
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 175129,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index_pre_armsub_0150.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 190889,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index_pre_armsub_0245.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 192232,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index_pre_hairsub_0105.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 190759,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index_pre_handorder_0158.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 190889,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index_pre_hgsub_0008.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 189611,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index_pre_mouthfix_2324.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 188068,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/backup_post6d5b239/index_pre_mouthfix_2330.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 188068,
+      "embedded_in": "",
+      "excluded": true
+    },
+    {
+      "path": "rig/work/handorder/index_copy.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 192232,
+      "embedded_in": "coder",
+      "excluded": false
+    },
+    {
+      "path": "rig/work/hgsubhair/index_new.html",
+      "title": "Shadowveil rig preview (contract v1.8)",
+      "bytes": 190889,
       "embedded_in": "coder",
       "excluded": false
     }

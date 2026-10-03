@@ -1,0 +1,153 @@
+{
+ "view_px_changed": 25,
+ "view_reproduce_check_px": 0,
+ "superseded_snap": [
+  {
+   "x": 590,
+   "y": 548,
+   "frame_rgb": [
+    33,
+    0,
+    60
+   ],
+   "snapped_rgb": [
+    31,
+    0,
+    56
+   ],
+   "rgb_dist": 4.47,
+   "old_alpha": 0
+  },
+  {
+   "x": 591,
+   "y": 548,
+   "frame_rgb": [
+    64,
+    31,
+    91
+   ],
+   "snapped_rgb": [
+    63,
+    33,
+    88
+   ],
+   "rgb_dist": 3.74,
+   "old_alpha": 0
+  },
+  {
+   "x": 590,
+   "y": 549,
+   "frame_rgb": [
+    47,
+    14,
+    74
+   ],
+   "snapped_rgb": [
+    49,
+    10,
+    71
+   ],
+   "rgb_dist": 5.39,
+   "old_alpha": 0
+  },
+  {
+   "x": 591,
+   "y": 549,
+   "frame_rgb": [
+    32,
+    0,
+    59
+   ],
+   "snapped_rgb": [
+    31,
+    0,
+    56
+   ],
+   "rgb_dist": 3.16,
+   "old_alpha": 0
+  }
+ ],
+ "exact_colour_fix": {
+  "px": [
+   {
+    "x": 590,
+    "y": 548,
+    "rgb": [
+     33,
+     0,
+     60
+    ],
+    "B_minus_maxRG": 27
+   },
+   {
+    "x": 591,
+    "y": 548,
+    "rgb": [
+     64,
+     31,
+     91
+    ],
+    "B_minus_maxRG": 27
+   },
+   {
+    "x": 590,
+    "y": 549,
+    "rgb": [
+     47,
+     14,
+     74
+    ],
+    "B_minus_maxRG": 27
+   },
+   {
+    "x": 591,
+    "y": 549,
+    "rgb": [
+     32,
+     0,
+     59
+    ],
+    "B_minus_maxRG": 27
+   }
+  ],
+  "frame_rest_vs_prefix_composite_px": 0,
+  "frame_rest_vs_her_frame_at_4px": 0,
+  "view_px_changed_vs_original_F8": 25,
+  "exact_0000FF_px": {
+   "frame": 0,
+   "view": 0
+  },
+  "key_gate_B_minus_maxRG_gt25": {
+   "frame": 4,
+   "view": 2
+  },
+  "off_her_frame_palette": {
+   "frame": 0,
+   "view": 0
+  },
+  "off_F8_palette_plus_4": {
+   "frame": 0,
+   "view": 0
+  },
+  "view_key_gate_colours": [
+   [
+    32,
+    0,
+    59
+   ],
+   [
+    47,
+    14,
+    74
+   ]
+  ],
+  "frame_off_her_frame_palette_note": "F8 re-matte px (alpha<255 edge ring) carry nearest-interior colours, so some frame px colours are not at that px in her frame; counted as colours anywhere in her f191 hand area",
+  "view_changed_bbox": [
+   1015,
+   1019,
+   793,
+   797
+  ],
+  "view_method": "F8 resample of the new frame part; only px whose resample changed are re-snapped (F8 palette + her 4 exact colours); all other view px identical to F8"
+ }
+}

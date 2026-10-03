@@ -1,0 +1,239 @@
+{
+ "angle": 315,
+ "frame": "f191",
+ "viewFit_for_display_only": {
+  "scale": 1.54468,
+  "dx": 104.47,
+  "dy": -52.68
+ },
+ "key": {
+  "key_px": 764382,
+  "dropped_specks_px": 49,
+  "dropped_specks": 26,
+  "fringe_px_kept(25<b-max<=60)": 3352,
+  "source": "Body figure_keyed_full.png",
+  "figure_px": 129217
+ },
+ "systems": {
+  "hands": {
+   "parts": 19,
+   "px": 5373,
+   "near": [
+    "R"
+   ]
+  },
+  "body": {
+   "source": "Body diag_body",
+   "px": 113985,
+   "parts": {
+    "upperArm_R": 6435,
+    "forearm_R": 4533,
+    "upperArm_L": 9104,
+    "forearm_L": 3582,
+    "thigh_R": 24784,
+    "shin_R": 10771,
+    "foot_R": 5511,
+    "thigh_L": 19862,
+    "shin_L": 9976,
+    "foot_L": 4390,
+    "head": 5718,
+    "neck": 5623,
+    "torso": 26107,
+    "pelvis": 8184,
+    "toes_L": null,
+    "toes_R": null
+   },
+   "pivots": {
+    "upperArm_R": [
+     308.0,
+     292.0
+    ],
+    "forearm_R": [
+     244.1,
+     392.4
+    ],
+    "upperArm_L": [
+     452.0,
+     305.0
+    ],
+    "forearm_L": [
+     485.9,
+     394.8
+    ],
+    "thigh_R": [
+     344.0,
+     535.0
+    ],
+    "shin_R": [
+     337.0,
+     778.6
+    ],
+    "foot_R": [
+     320.3,
+     1029.9
+    ],
+    "thigh_L": [
+     424.0,
+     546.0
+    ],
+    "shin_L": [
+     414.0,
+     778.5
+    ],
+    "foot_L": [
+     410.7,
+     1027.0
+    ],
+    "head": [
+     374.0,
+     238.0
+    ],
+    "neck": [
+     370.0,
+     266.0
+    ],
+    "torso": [
+     389.0,
+     470.0
+    ],
+    "pelvis": [
+     389.0,
+     470.0
+    ],
+    "toes_L": [
+     410.7,
+     1030.0
+    ],
+    "toes_R": [
+     320.3,
+     1032.9
+    ]
+   }
+  },
+  "eyes": {
+   "parts": 22,
+   "removed_on_key": 26
+  },
+  "mouth": {
+   "parts_px": {
+    "mouth_rest": 177,
+    "mouth_M": 219,
+    "mouth_smile": 223,
+    "mouth_OH_half": 221,
+    "mouth_AA_half": 220,
+    "mouth_EE_half": 228,
+    "mouth_OH": 244,
+    "mouth_AA": 255,
+    "mouth_EE": 266
+   },
+   "default": [
+    "mouth_rest"
+   ],
+   "diagmouth": [
+    "mouth_rest",
+    "mouth_M",
+    "mouth_smile",
+    "mouth_OH_half",
+    "mouth_AA_half",
+    "mouth_EE_half",
+    "mouth_OH",
+    "mouth_AA",
+    "mouth_EE"
+   ]
+  },
+  "hair": {
+   "hair_under": 3160,
+   "hair_back": 616,
+   "bun": 2890,
+   "hair_front": 5125,
+   "strand_03_tip": 40,
+   "strand_03": 6,
+   "strand_04": 115,
+   "strand_05": 74,
+   "strand_06_tip": 0,
+   "strand_06": 35,
+   "extra_1": 31
+  }
+ },
+ "hair_residual_px": 85,
+ "files": {
+  "base.png": "0e9ea8fa0ffe89b1",
+  "base_body_skin.png": "fefe23fba905337e",
+  "base_body.png": "fefe23fba905337e",
+  "eyes/EyeR_lid_2.png": "909584e7ef957566",
+  "eyes/EyeL_lid_5.png": "07e03548e900db16",
+  "eyes/EyeR_lid_6.png": "e1819d867597700f",
+  "eyes/EyeL_lid_7.png": "4d839527cf0531a7",
+  "eyes/EyeR_lid_1.png": "d9bce509eab20a52",
+  "eyes/EyeR_white.png": "e48267bddf3c21b0",
+  "eyes/EyeL_lid_4.png": "55d0fe203463598c",
+  "eyes/EyeL_lid_1.png": "8575d5b9aaaf7830",
+  "eyes/EyeR_lash.png": "5bed22f68952af6c",
+  "eyes/EyeL_white.png": "43078d4709320554",
+  "eyes/EyeL_lid_2.png": "42c03722b09e8e52",
+  "eyes/EyeL_iris.png": "37c6c8c8341e97fa",
+  "eyes/EyeL_lid_0.png": "387a43fb246e0583",
+  "eyes/EyeR_lid_7.png": "fe52e1e110598091",
+  "eyes/EyeR_lid_4.png": "8db3bb3a197b47a2",
+  "eyes/EyeL_lash.png": "57f6d32fbabfa5cd",
+  "eyes/EyeL_lid_3.png": "f161b6f2321001ed",
+  "eyes/EyeR_lid_0.png": "0d5787cf3faeaced",
+  "eyes/EyeR_lid_5.png": "56f87e1848cb2832",
+  "eyes/EyeR_lid_3.png": "c6398497db12d442",
+  "eyes/EyeL_lid_6.png": "1f1136e3e414bd70",
+  "eyes/EyeR_iris.png": "b577b78e6e8cdfaf",
+  "hair/hair_back.png": "63ab7ec10facdd3c",
+  "hair/hair_under.png": "6c1efb440feaf6e9",
+  "hair/strand_04.png": "70309c1e7e11d06c",
+  "hair/strand_06.png": "bce37b02e1cb3841",
+  "hair/extra_1.png": "de2a7cb478302af5",
+  "hair/strand_05.png": "8e573c6011690827",
+  "hair/strand_03.png": "0fa5a19e754ffe62",
+  "hair/strand_03_tip.png": "3aa268564f807468",
+  "hair/strand_06_tip.png": "58231e900b4c2e49",
+  "hair/bun.png": "914a52fcbe26e60c",
+  "hair/hair_front.png": "defb06c80e7958f0",
+  "body/shin_R.png": "ae271daf009ccfca",
+  "body/upperArm_L.png": "58383d2e42e37f42",
+  "body/thigh_R.png": "041e895436d3c08a",
+  "body/thigh_L.png": "c0311005bb2c2e71",
+  "body/foot_R.png": "490dd09f588e89cc",
+  "body/forearm_R.png": "d2cd450dc42d76cc",
+  "body/torso.png": "30f989fc7829798f",
+  "body/pelvis.png": "94b7db0bf4c10e58",
+  "body/forearm_L.png": "8167ee68563c05c4",
+  "body/head.png": "7749848eab4993c3",
+  "body/shin_L.png": "f5215102bec975e6",
+  "body/upperArm_R.png": "38d1cd7a4c6d22e6",
+  "body/foot_L.png": "3cf163f963e0017c",
+  "body/neck.png": "7d2f82992615f3be",
+  "mouth/M.png": "eb2bfaccdf71c2c4",
+  "mouth/rest.png": "5666272468ecde1b",
+  "mouth/OH_half.png": "3178a279361272a9",
+  "mouth/OH.png": "60d346030f0e3880",
+  "mouth/smile.png": "1598aa14a2ac0e8a",
+  "mouth/EE.png": "dd74905f6875d2f1",
+  "mouth/EE_half.png": "81040775f27c7485",
+  "mouth/AA_half.png": "7a932fa6bd4e11e1",
+  "mouth/AA.png": "e0ad2b77c3c779e9",
+  "hands/R_Middle2.png": "95597dc5b834720f",
+  "hands/R_palm.png": "05a9df1b597ce474",
+  "hands/R_Pinky2.png": "2d8225c717a6b541",
+  "hands/R_Thumb1.png": "07a23bc62d4999c8",
+  "hands/L_palm.png": "691ad23db50386ac",
+  "hands/R_Index3.png": "2e86c4573486cf50",
+  "hands/R_wristflap.png": "3c0e21e5d8e5b273",
+  "hands/R_Thumb3.png": "820d25d5d20aacd2",
+  "hands/R_Ring3.png": "e64d7a47cd970b87",
+  "hands/R_Pinky3.png": "3fcfb917ae6977be",
+  "hands/R_Pinky1.png": "e9ab935c02a69422",
+  "hands/R_Middle1.png": "a2e8a83fa7f32dc9",
+  "hands/R_Index1.png": "f730c4868af70e05",
+  "hands/R_Ring2.png": "6d2284e869c3785c",
+  "hands/L_wristflap.png": "8d6c1eb6b3cd1de1",
+  "hands/R_Ring1.png": "6df995b6b119a68f",
+  "hands/R_Middle3.png": "69d1f22674a3f630",
+  "hands/R_Thumb2.png": "d08a59808e620661",
+  "hands/R_Index2.png": "c53e79a1fd7f887e"
+ }
+}

@@ -1,7 +1,7 @@
 {
   "title": "Shadowveil — character rig & live driver status",
-  "updated": "2026-10-03T03:06:15-07:00",
-  "updated_pt": "Sat Oct 3 2026, 3:06 AM PT",
+  "updated": "2026-10-03T03:45:20-07:00",
+  "updated_pt": "Sat Oct 3 2026, 3:45 AM PT",
   "progress": {
     "pct": 45,
     "label": "roughly 40–50% to a quality live driver",
@@ -477,6 +477,18 @@
         {
           "text": "Eyes: diagonal far-eye blue fix (167 px removed, 0 chroma; 62 px faint navy kept because it's in the turn frame)",
           "state": "decision"
+        },
+        {
+          "text": "Coder: rig/poser.html (Poser unified) as the main driver, replacing simple.html. Rest matches index.html exactly, scrub = playback, 0 console errors. Diagonal angles view-only for now.",
+          "state": "decision"
+        },
+        {
+          "text": "Body + Hair pair (one line, live together or not at all): Body's masked hairless live patch (left/right/back) + Hair's new hair_front (hair/staged/ear_strands/<view>/.../hair_front.png). Together rest 0/0/0 px; either alone is 378-640 px off.",
+          "state": "decision"
+        },
+        {
+          "text": "Body crotch notch: ulnb skin (--crotch 0, no --bgk). Rest 0, reduces wide-stance notch (apose 778->366, tpose 1033->731) but doesn't fully close it; small new dark-edge px (78/18). Sheet: body_tools/work/crotch_candidates/sheet_crotch_before_after.png",
+          "state": "decision"
         }
       ]
     },
@@ -531,7 +543,7 @@
     {
       "name": "Hands",
       "state": "fixes live",
-      "latest": "All hand sets 0 chroma/0 off-palette; F5 v2 passes scale; F7/F10/F11 pass (need handorder); F8 4/8 within 1px; awaiting user OK + GitHub push approval in DM"
+      "latest": "F12 diagonal wrist flaps 45/315 staged and passing (rest 0, gap 0 at ±25°). Merged rigs in hands/staged/f12_wrist_diag/<angle>/rig.json. Waiting on Coder ?diag=1 slot rerun. All staged, awaiting user OK."
     },
     {
       "name": "Hair",

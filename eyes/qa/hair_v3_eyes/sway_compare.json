@@ -1,0 +1,5225 @@
+{
+ "doc": "Diagonal eyes (staged, after lash trim) vs Base Hair v3 (hair/staged/diagonals_v3, read-only) in VIEW space (1365x1739).\nBase = her turn frame (f033/f191) mapped with the eyes' viewFit (nearest, as hair/.../work/common.py). Eye parts (frame px) mapped the same way.\nHair: contract sec.4 slider path - every part's s = HairSwayX; angle = swayWeight*maxSwayDeg*s about its pivot, chained through parent\n(own rotation, then each ancestor); dy = round(HairSwayY*swayY*swayYMaxPx), not inherited. No hair renderer exists in diagonals_v3, so this is a\nPython mirror: inverse-mapped nearest sampling (hard alpha, like the v3 files). Layers < 400 (hair_back, bun) are behind the body and skipped.\nDraw order: frame, per eye white(+iris atop, gaze shift), lid_k, lash (layers 400-413), then hair parts by layer (600+).\nMetrics in a window = eye workRegion mapped to view, padded 30 px:\n  lash_vis_on_src_hair : lash px visible (not under hair) where her frame draws hair (Base Hair key rule) - must be 0\n  lash_under_hair      : lash px covered by a hair part (hidden by z-order; info)\n  hair_over_opening    : hair px over visible eye white/iris (white|iris not covered by lid/lash)\n  holes_trim           : trimmed lash px (view) covered by neither hair nor any eye part (would show the face base)\nTwo hair variants: 'v3' = files as staged; 'v3_refill_sim' = in-memory only (nothing written to hair/): each v3 part gets back its\nv2 pre_eyecut px (alpha>=128, raw colour, alpha 255) at the trimmed lash px - a projection of what build_v3.py would restore if rerun with the\ntrimmed lash in the opening (the real rebuild also palette-snaps / iris-tone filters).",
+ "045": {
+  "v3": {
+   "hair_over_opening_by_part_max_gaze": {
+    "X-1.0 Y+0 strand_03_tip": 1,
+    "X-1.0 Y+1 strand_03_tip": 5,
+    "X-0.5 Y-1 strand_03_tip": 4,
+    "X-0.5 Y+0 strand_03_tip": 5,
+    "X-0.5 Y+1 strand_03_tip": 5
+   },
+   "window_view_xyxy": [
+    557,
+    166,
+    726,
+    264
+   ],
+   "trim_view_px": 45,
+   "max_over_all_states": {
+    "lash_vis_on_src_hair": 0,
+    "lash_under_hair": 2,
+    "hair_over_opening": 5,
+    "holes_trim": 45
+   },
+   "states": {
+    "X-1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 29
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 1,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 1,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 1,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 1,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 1,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 1,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 1,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 43
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 43
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 4,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 4,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 4,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 4,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 4,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 4,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 4,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 5,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 38
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 45
+    },
+    "REST eyes-only PRE-trim": {
+     "lash_vis_on_src_hair": 45,
+     "eye_diff_vs_frame_view": 12
+    },
+    "REST +hair PRE-trim": {
+     "lash_vis_on_src_hair": 45,
+     "holes_trim": 0,
+     "trim_px_covered_by_hair": 0,
+     "hair_over_opening": 0
+    },
+    "REST eyes-only post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "eye_diff_vs_frame_view": 3
+    },
+    "REST +hair post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "holes_trim": 45,
+     "trim_px_covered_by_hair": 0,
+     "hair_over_opening": 0
+    }
+   }
+  },
+  "v3_refill_sim": {
+   "hair_over_opening_by_part_max_gaze": {
+    "X-1.0 Y+0 strand_03_tip": 2,
+    "X-1.0 Y+1 strand_03_tip": 11,
+    "X-0.5 Y-1 strand_03_tip": 5,
+    "X-0.5 Y+0 strand_03_tip": 12,
+    "X-0.5 Y+1 strand_03_tip": 14
+   },
+   "window_view_xyxy": [
+    557,
+    166,
+    726,
+    264
+   ],
+   "trim_view_px": 45,
+   "max_over_all_states": {
+    "lash_vis_on_src_hair": 0,
+    "lash_under_hair": 17,
+    "hair_over_opening": 14,
+    "holes_trim": 27
+   },
+   "states": {
+    "X-1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 16
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 2,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 2,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 2,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 2,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 2,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 2,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 2,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 11,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 11,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 11,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 11,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 11,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 11,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 11,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 0,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 0,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 0,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 0,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 0,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 0,
+     "holes_trim": 25
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 5,
+     "hair_over_opening": 0,
+     "holes_trim": 25
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 5,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 5,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 5,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 5,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 5,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 5,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 5,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 12,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 12,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 12,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 12,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 12,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 12,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 12,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 14,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 14,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 14,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 14,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 14,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 14,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 14,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 17,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 16,
+     "hair_over_opening": 0,
+     "holes_trim": 12
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 1
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 19
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "REST eyes-only PRE-trim": {
+     "lash_vis_on_src_hair": 45,
+     "eye_diff_vs_frame_view": 12
+    },
+    "REST +hair PRE-trim": {
+     "lash_vis_on_src_hair": 1,
+     "holes_trim": 0,
+     "trim_px_covered_by_hair": 44,
+     "hair_over_opening": 0
+    },
+    "REST eyes-only post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "eye_diff_vs_frame_view": 3
+    },
+    "REST +hair post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "holes_trim": 1,
+     "trim_px_covered_by_hair": 44,
+     "hair_over_opening": 0
+    }
+   }
+  }
+ },
+ "315": {
+  "v3": {
+   "hair_over_opening_by_part_max_gaze": {
+    "X+0.5 Y-1 strand_06": 12,
+    "X+0.5 Y+0 strand_06": 6,
+    "X+0.5 Y+1 strand_06": 1,
+    "X+1.0 Y-1 strand_06": 27,
+    "X+1.0 Y+0 strand_06": 18,
+    "X+1.0 Y+1 strand_06": 9
+   },
+   "window_view_xyxy": [
+    652,
+    167,
+    814,
+    267
+   ],
+   "trim_view_px": 42,
+   "max_over_all_states": {
+    "lash_vis_on_src_hair": 0,
+    "lash_under_hair": 9,
+    "hair_over_opening": 27,
+    "holes_trim": 42
+   },
+   "states": {
+    "X-1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 33
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 1,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 12,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 12,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 12,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 12,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 12,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 12,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 12,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 6,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 6,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 6,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 6,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 6,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 6,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 6,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 1,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 1,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 1,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 1,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 1,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 1,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 1,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 2,
+     "hair_over_opening": 0,
+     "holes_trim": 39
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 27,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 27,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 27,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 27,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 27,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 27,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 27,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 7,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 18,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 18,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 18,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 18,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 18,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 18,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 18,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 9,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 9,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 9,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 9,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 9,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 9,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 9,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 9,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 0,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 0,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 0,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 0,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 0,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 0,
+     "holes_trim": 24
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 8,
+     "hair_over_opening": 0,
+     "holes_trim": 24
+    },
+    "REST eyes-only PRE-trim": {
+     "lash_vis_on_src_hair": 42,
+     "eye_diff_vs_frame_view": 8
+    },
+    "REST +hair PRE-trim": {
+     "lash_vis_on_src_hair": 42,
+     "holes_trim": 0,
+     "trim_px_covered_by_hair": 0,
+     "hair_over_opening": 0
+    },
+    "REST eyes-only post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "eye_diff_vs_frame_view": 8
+    },
+    "REST +hair post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "holes_trim": 42,
+     "trim_px_covered_by_hair": 0,
+     "hair_over_opening": 0
+    }
+   }
+  },
+  "v3_refill_sim": {
+   "hair_over_opening_by_part_max_gaze": {
+    "X+0.5 Y-1 strand_06": 20,
+    "X+0.5 Y+0 strand_06": 16,
+    "X+0.5 Y+1 strand_06": 10,
+    "X+1.0 Y-1 strand_06": 32,
+    "X+1.0 Y+0 strand_06": 31,
+    "X+1.0 Y+1 strand_06": 24
+   },
+   "window_view_xyxy": [
+    652,
+    167,
+    814,
+    267
+   ],
+   "trim_view_px": 42,
+   "max_over_all_states": {
+    "lash_vis_on_src_hair": 0,
+    "lash_under_hair": 26,
+    "hair_over_opening": 32,
+    "holes_trim": 42
+   },
+   "states": {
+    "X-1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 41
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 42
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 4,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 40
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X-0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 36
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 18,
+     "hair_over_opening": 0,
+     "holes_trim": 18
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 0,
+     "hair_over_opening": 0,
+     "holes_trim": 0
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 10,
+     "hair_over_opening": 0,
+     "holes_trim": 27
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 20,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 20,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 20,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 20,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 20,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 20,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 20,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+0.5 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 12,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 16,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 16,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 16,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 16,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 16,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 16,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 16,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 10,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 10,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 10,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 10,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 10,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 10,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 10,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+0.5 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 23,
+     "hair_over_opening": 0,
+     "holes_trim": 37
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 32,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 32,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 32,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 32,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 32,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 32,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 32,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y-1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 19,
+     "hair_over_opening": 0,
+     "holes_trim": 35
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 31,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 31,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 31,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 31,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 31,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 31,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 31,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+0 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 26,
+     "hair_over_opening": 0,
+     "holes_trim": 28
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 24,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid0 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 24,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 24,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid0 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 24,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid0 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 24,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid0 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 24,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid0 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 24,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid7 gaze-1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+0": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid7 gaze+0,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid7 gaze+0,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid7 gaze-1,-1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 23
+    },
+    "X+1.0 Y+1 lid7 gaze+1,+1": {
+     "lash_vis_on_src_hair": 0,
+     "lash_under_hair": 22,
+     "hair_over_opening": 0,
+     "holes_trim": 23
+    },
+    "REST eyes-only PRE-trim": {
+     "lash_vis_on_src_hair": 42,
+     "eye_diff_vs_frame_view": 8
+    },
+    "REST +hair PRE-trim": {
+     "lash_vis_on_src_hair": 0,
+     "holes_trim": 0,
+     "trim_px_covered_by_hair": 42,
+     "hair_over_opening": 0
+    },
+    "REST eyes-only post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "eye_diff_vs_frame_view": 8
+    },
+    "REST +hair post-trim": {
+     "lash_vis_on_src_hair": 0,
+     "holes_trim": 0,
+     "trim_px_covered_by_hair": 42,
+     "hair_over_opening": 0
+    }
+   }
+  }
+ }
+}

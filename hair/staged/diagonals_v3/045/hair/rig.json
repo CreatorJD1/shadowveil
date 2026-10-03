@@ -1,0 +1,131 @@
+{
+ "view": "diagonal_045",
+ "frame": "f033",
+ "source": "reference/apose_turn/frames/f033.png",
+ "view_fit": {
+  "scale": 1.54468,
+  "dx": 83.62,
+  "dy": -55.77
+ },
+ "swayYMaxPx": 3,
+ "parts": [
+  {
+   "id": "hair_back",
+   "file": "hair_back.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 679.6,
+   "pivotY": 149.4,
+   "parent": null,
+   "layer": 100,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "bun",
+   "file": "bun.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 716.9,
+   "pivotY": 119.0,
+   "parent": "hair_front",
+   "layer": 101,
+   "swayWeight": 0.3,
+   "maxSwayDeg": 4.0,
+   "swayY": 0.3
+  },
+  {
+   "id": "hair_front",
+   "file": "hair_front.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 679.6,
+   "pivotY": 149.4,
+   "parent": null,
+   "layer": 600,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0
+  },
+  {
+   "id": "strand_03_tip",
+   "file": "strand_03_tip.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 569.5,
+   "pivotY": 194.0,
+   "parent": "strand_03",
+   "layer": 607,
+   "swayWeight": 0.95,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.9
+  },
+  {
+   "id": "strand_03",
+   "file": "strand_03.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 569.0,
+   "pivotY": 160.0,
+   "parent": "hair_front",
+   "layer": 608,
+   "swayWeight": 0.57,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.9
+  },
+  {
+   "id": "strand_04",
+   "file": "strand_04.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 651.0,
+   "pivotY": 143.0,
+   "parent": "hair_front",
+   "layer": 610,
+   "swayWeight": 0.82,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.75
+  },
+  {
+   "id": "strand_06_tip",
+   "file": "strand_06_tip.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 718.9,
+   "pivotY": 268.0,
+   "parent": "strand_06",
+   "layer": 616,
+   "swayWeight": 0.88,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.85
+  },
+  {
+   "id": "strand_06",
+   "file": "strand_06.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 732.0,
+   "pivotY": 256.0,
+   "parent": "hair_front",
+   "layer": 617,
+   "swayWeight": 0.53,
+   "maxSwayDeg": 10.0,
+   "swayY": 0.85
+  },
+  {
+   "id": "extra_1",
+   "file": "extra_1.png",
+   "x": 0,
+   "y": 0,
+   "pivotX": 710.0,
+   "pivotY": 251.0,
+   "parent": "hair_front",
+   "layer": 621,
+   "swayWeight": 0,
+   "maxSwayDeg": 0,
+   "swayY": 0,
+   "note": "no front-view strand at this angle; static"
+  }
+ ]
+}

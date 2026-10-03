@@ -150,3 +150,5 @@ Push all of `hair/` and `views/*/hair/`, including staged work, QA summaries, sh
 - **No-mirror:** `qa/no_mirror/REPORT.md` = PASS.
 - **hgSub hair/bun v2:** `qa/turn_handoff/subofs_v2/REPORT.md`. Recommendation: (0,0) in all views until posed frames use a body without baked hair.
 - Parked: Job 7 (benchmarks) and Job 8 (gold bun band).
+- **diagonals_v3** (supersedes v2's eye cut): cut only inside the eye opening (white+iris+lash); restored 9/7/39 px over lid where her frame draws hair. See `staged/diagonals_v3/README.md`.
+- **diagonals_v4** (supersedes v3): her-hair coverage is complete (uncovered 0), Eyes' lash trim is filled, and there is a native frame_scale cut (rest 0). Direction-only sway caps give eye/mouth 0 at full sway: 045 strand_03_tip −1.425°, strand_03 −1.71°; 315 strand_06 +0.265°. The Coder must add degAt± support for hair. See `staged/diagonals_v4/README.md`.

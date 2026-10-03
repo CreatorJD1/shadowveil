@@ -1,0 +1,5 @@
+tpose f0 tpose f30 tpose f60 tpose f90 tpose f120 tpose f150 tpose f180 tpose f210 
+tpose done; guard errs 0 issues 0 holds 47 83.3
+PASS: Motion quality (tpose)
+[face-only (gap check)] 60 frames, guard violations: 0, missing parts: 0, alpha gaps vs rest inside body/hand/hair masks (320202 px region): 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms
+[full auto] 60 frames, guard violations: 0, missing parts: 0, blinks: 2, mouth switches: 28, min shape hold: 83 ms

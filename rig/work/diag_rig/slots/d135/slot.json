@@ -1,0 +1,192 @@
+{
+ "angle": 135,
+ "frame": "f087",
+ "viewFit_for_display_only": {
+  "scale": 1.57033,
+  "dx": 112.9,
+  "dy": -41.66
+ },
+ "key": {
+  "key_px": 762384,
+  "dropped_specks_px": 141,
+  "dropped_specks": 34,
+  "fringe_px_kept(25<b-max<=60)": 3391
+ },
+ "systems": {
+  "hands": {
+   "parts": 17,
+   "px": 5332,
+   "near": [
+    "L"
+   ]
+  },
+  "body": {
+   "px": 129167,
+   "parts": {
+    "torso": 25991,
+    "pelvis": 6201,
+    "upperArm_L": 3661,
+    "forearm_L": 4662,
+    "thigh_L": 17954,
+    "shin_L": 10549,
+    "foot_L": 3575,
+    "upperArm_R": 4704,
+    "forearm_R": 3635,
+    "thigh_R": 16647,
+    "shin_R": 10178,
+    "foot_R": 2613,
+    "head": 18797
+   },
+   "pivots": {
+    "pelvis": [
+     367.5,
+     476.1
+    ],
+    "torso": [
+     367.5,
+     476.1
+    ],
+    "head": [
+     367.5,
+     476.1
+    ],
+    "upperArm_L": [
+     333.9,
+     306.1
+    ],
+    "forearm_L": [
+     265.5,
+     384.6
+    ],
+    "wrist_L": [
+     164.7,
+     500.3
+    ],
+    "thigh_L": [
+     334.5,
+     530.9
+    ],
+    "shin_L": [
+     338.5,
+     758.9
+    ],
+    "foot_L": [
+     335.5,
+     1026.3
+    ],
+    "toes_L": [
+     335.5,
+     1029.5
+    ],
+    "upperArm_R": [
+     445.4,
+     306.1
+    ],
+    "forearm_R": [
+     494.5,
+     384.6
+    ],
+    "wrist_R": [
+     564.3,
+     496.2
+    ],
+    "thigh_R": [
+     416.5,
+     530.9
+    ],
+    "shin_R": [
+     420.5,
+     758.9
+    ],
+    "foot_R": [
+     432.5,
+     1026.3
+    ],
+    "toes_R": [
+     432.5,
+     1029.5
+    ]
+   },
+   "fit": {
+    "body_config_used": [],
+    "ys": {
+     "waist": 476.12,
+     "shoulder": 306.09,
+     "elbow": 384.58,
+     "hip": 530.88,
+     "knee": 758.86,
+     "ankle": 1026.32,
+     "neck": 258.01
+    },
+    "xc": 367.5,
+    "crotch_y": 628,
+    "side_map(viewer->her)": {
+     "vl": "L",
+     "vr": "R"
+    },
+    "radii": {
+     "torso": 62.0,
+     "arm_L": 20.0,
+     "leg_L": 25.0,
+     "thighw_L": 41.0,
+     "arm_R": 19.0,
+     "leg_R": 23.0,
+     "thighw_R": 35.0
+    }
+   }
+  },
+  "hair": {
+   "hair_under": 3444,
+   "hair_back": 11457,
+   "hair_front": 0,
+   "strand_06_tip": 187,
+   "strand_06": 51,
+   "extra_1": 26,
+   "extra_2": 0,
+   "bun": 3206
+  }
+ },
+ "files": {
+  "base.png": "816759d0b6f836f4",
+  "base_body_skin.png": "74f8a0403c6cb355",
+  "base_body.png": "74f8a0403c6cb355",
+  "hair/hair_back.png": "cb05847263cd13fc",
+  "hair/hair_under.png": "9a7d5c40be98eb7a",
+  "hair/strand_06.png": "225fc08bd2a2ccf1",
+  "hair/extra_1.png": "29e92c24f7c17e5c",
+  "hair/extra_2.png": "58231e900b4c2e49",
+  "hair/strand_06_tip.png": "921b65f82c9e9b37",
+  "hair/bun.png": "ef25fcf18295274d",
+  "hair/hair_front.png": "58231e900b4c2e49",
+  "body/shin_R.png": "c8c7c3b269e610aa",
+  "body/upperArm_L.png": "ee27fb845ba7b4b7",
+  "body/thigh_R.png": "f7e335e5e0836d36",
+  "body/thigh_L.png": "dba8c2f0630a7849",
+  "body/foot_R.png": "275f0739e37c0d16",
+  "body/forearm_R.png": "f835b7d7b2f479bf",
+  "body/torso.png": "056643a8effad54d",
+  "body/pelvis.png": "e2ba97087ea19c7e",
+  "body/forearm_L.png": "5441a99dcb35f05d",
+  "body/head.png": "59f69fda0ffc2ecc",
+  "body/shin_L.png": "f5c9c1ce7a6639cf",
+  "body/upperArm_R.png": "4a6169805c8b0cd2",
+  "body/foot_L.png": "aad6509bfcb3dc13",
+  "hands/L_Thumb3.png": "0e6417adc4ae7012",
+  "hands/L_Pinky1.png": "5bab457ed7d8e174",
+  "hands/L_Middle2.png": "b0cd2f329679c626",
+  "hands/R_palm.png": "59df4a52a58acb75",
+  "hands/L_Middle3.png": "3e63e83b7dd4816a",
+  "hands/L_Pinky3.png": "480172b40f26f602",
+  "hands/L_palm.png": "adf9d80645c7d24b",
+  "hands/L_Index2.png": "61358d284722f5db",
+  "hands/L_Index1.png": "9ae589b59343fed3",
+  "hands/L_Ring1.png": "c75cf5d7c26414f4",
+  "hands/L_Middle1.png": "186d7cf021dee046",
+  "hands/L_Index3.png": "1a1c50b755712905",
+  "hands/L_Pinky2.png": "08e7acd1ed73e167",
+  "hands/L_Ring3.png": "0307a30fb0147b9d",
+  "hands/L_Thumb1.png": "6ef530c52b5c657c",
+  "hands/L_Ring2.png": "838c76a256e7c50a",
+  "hands/L_Thumb2.png": "5ce59f93365116e9"
+ }
+}

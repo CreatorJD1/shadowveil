@@ -19,6 +19,18 @@ DIAG_FRAME = {'045': 'f033', '135': 'f087', '225': 'f131', '315': 'f191'}
 STAGED_TONE = ['eyes/work/lashfix/staged', 'hair/staged/tone_fix', 'mouth/staged/tone_fix']
 
 def P(*a): return os.path.join(ROOT, *a)
+
+# per-part dir overrides (--hair-dir/--mouth-dir/--eyes-dir/--hands-dir/--body-dir): a system's folder for a view is looked up
+# in the override first: DIR with {view} substituted, DIR/<view>/<sys>, DIR/views/<view>/<sys>, DIR/<view>, DIR (if it has
+# rig.json); falls back to views/<view>/<sys>. Diagonal angles (045/135/225/315) can be passed to --view with an override.
+SYS_DIR = {}
+def sysdir(view, system):
+    o = SYS_DIR.get(system)
+    if o:
+        o = o if os.path.isabs(o) else P(o)
+        for c in (o.replace('{view}', view), os.path.join(o, view, system), os.path.join(o, 'views', view, system), os.path.join(o, view), o):
+            if '{view}' not in c and os.path.isdir(c) and (os.path.exists(os.path.join(c, 'rig.json')) or glob.glob(os.path.join(c, '*.png'))): return c
+    return P('views', view, system)
 def jload(p):
     with open(p) as f: return json.load(f)
 def parts_of(rig): return rig if isinstance(rig, list) else rig.get('parts', [])
@@ -95,11 +107,11 @@ def poses_for(bones):
 
 # ---------------------------------------------------------------- owner map (top-layer body part masks, like build_skin)
 def owner_map(view, bones):
-    rig = jload(P('views', view, 'body', 'rig.json')); idx = {b['name']: i for i, b in enumerate(bones)}
+    rig = jload(os.path.join(sysdir(view, 'body'), 'rig.json')); idx = {b['name']: i for i, b in enumerate(bones)}
     om = None
     for p in sorted(parts_of(rig), key=lambda p: p.get('layer', 0)):
         if not p.get('file'): continue
-        f = P('views', view, 'body', p['file'])
+        f = os.path.join(sysdir(view, 'body'), p['file'])
         if p['id'] not in idx or not os.path.exists(f): continue
         a = rgba(f)[..., 3]
         if om is None: om = np.full(a.shape, -1, np.int16)
@@ -109,9 +121,9 @@ def owner_map(view, bones):
 
 # ---------------------------------------------------------------- G1 weights
 def gate_weights(view, skin_path=None, tol_px=0.5, wmin=1e-3):
-    sk = jload(skin_path or P('views', view, 'body', 'skin.json')); bones = sk['bones']; nb = len(bones)
+    sk = jload(skin_path or os.path.join(sysdir(view, 'body'), 'skin.json')); bones = sk['bones']; nb = len(bones)
     par, kids, rel, desc = relations(bones); names = [b['name'] for b in bones]
-    om = owner_map(view, bones); res = {'skin': os.path.relpath(skin_path or P('views', view, 'body', 'skin.json'), ROOT), 'meshes': {}}
+    om = owner_map(view, bones); res = {'skin': os.path.relpath(skin_path or os.path.join(sysdir(view, 'body'), 'skin.json'), ROOT), 'meshes': {}}
     meshes = [('skin', sk)] + ([('underlay', sk['underlay'])] if isinstance(sk.get('underlay'), dict) and sk['underlay'].get('weights') else [])
     fail = False
     for mname, m in meshes:
@@ -207,7 +219,7 @@ def soft_count(img): a = img[..., 3]; return int(((a > 0) & (a < 255)).sum())
 
 # ---------------------------------------------------------------- file sets
 def live_files(view, system):
-    d = P('views', view, system)
+    d = sysdir(view, system)
     if not os.path.isdir(d): return []
     # only the files the rig references (rig.json, recursively): skips *_chroma.png key previews, sheets and notes
     refs = set()
@@ -219,7 +231,7 @@ def live_files(view, system):
     if os.path.exists(rj): walk(jload(rj))
     fs = sorted(os.path.join(d, f) for f in refs if os.path.exists(os.path.join(d, f)))
     if system == 'body':  # renderer draws the skin texture (+ underlay) for the body
-        sk = P('views', view, 'body', 'skin.json')
+        sk = os.path.join(sysdir(view, 'body'), 'skin.json')
         if os.path.exists(sk):
             j = jload(sk); ims = [j.get('image')] + [(j.get('underlay') or {}).get('image')]
             fs += [P('views', view, x) for x in ims if x and os.path.exists(P('views', view, x))]
@@ -238,8 +250,8 @@ def staged_lookup(sdirs, view, system, fname):
 def diag_sets(part_filter):
     out = []
     for ang in sorted(DIAG_FRAME):
-        for f in sorted(glob.glob(P('hair/staged/diagonals', ang, 'hair', '*.png'))): out.append((ang, 'hair', f))
-        for f in sorted(glob.glob(P('mouth/staged/diagonals', ang, 'renders', '*.png'))): out.append((ang, 'mouth', f))
+        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'hair') if 'hair' in SYS_DIR else P('hair/staged/diagonals', ang, 'hair'), '*.png'))): out.append((ang, 'hair', f))
+        for f in sorted(glob.glob(os.path.join(sysdir(ang, 'mouth') if 'mouth' in SYS_DIR else P('mouth/staged/diagonals', ang, 'renders'), '*.png'))): out.append((ang, 'mouth', f))
         for f in sorted(glob.glob(P('rig/hand_angles', ang + '_*.png'))): out.append((ang, 'hands', f))
     return [o for o in out if part_filter(o[1], os.path.basename(o[2]))]
 
@@ -251,9 +263,9 @@ def file_report(view, system, f, tol, pal_view=None):
 
 # ---------------------------------------------------------------- G2b mesh colour-outside-mask (posed)
 def mesh_outside(view, skin_path=None, thr=1.0):
-    sk = jload(skin_path or P('views', view, 'body', 'skin.json')); bones = sk['bones']; nb = len(bones)
+    sk = jload(skin_path or os.path.join(sysdir(view, 'body'), 'skin.json')); bones = sk['bones']; nb = len(bones)
     par, kids, rel, desc = relations(bones); om = owner_map(view, bones)
-    tex = rgba(P('views', view, sk['image'])) if os.path.exists(P('views', view, sk['image'])) else rgba(P('views', view, 'body', sk['image']))
+    tex = rgba(P('views', view, sk['image'])) if os.path.exists(P('views', view, sk['image'])) else rgba(os.path.join(sysdir(view, 'body'), sk['image']))
     V = np.asarray(sk['vertices'], float); W = dense_w(sk['weights'], nb); T = np.asarray(sk['triangles'])[:, :3]
     xi = np.clip(np.round(V[:, 0]).astype(int), 0, om.shape[1]-1); yi = np.clip(np.round(V[:, 1]).astype(int), 0, om.shape[0]-1)
     own = om[yi, xi].astype(int); own = np.where(own >= 0, own, W.argmax(1))
@@ -285,9 +297,9 @@ def bbox_h(path):
 
 def scale_measure(view):
     out = {}
-    br = {p['id']: p for p in parts_of(jload(P('views', view, 'body', 'rig.json')))}
-    sk = jload(P('views', view, 'body', 'skin.json')); bones = {b['name']: b for b in sk['bones']}
-    head_h, _ = bbox_h(P('views', view, 'body', br['head'].get('file') or 'head.png'))
+    br = {p['id']: p for p in parts_of(jload(os.path.join(sysdir(view, 'body'), 'rig.json')))}
+    sk = jload(os.path.join(sysdir(view, 'body'), 'skin.json')); bones = {b['name']: b for b in sk['bones']}
+    head_h, _ = bbox_h(os.path.join(sysdir(view, 'body'), br['head'].get('file') or 'head.png'))
     out['head_h'] = head_h
     hr = {p['id']: p for p in parts_of(jload(P('views', view, 'hands', 'rig.json')))}
     for side, s in (('L', 'L'), ('R', 'R')):
@@ -303,7 +315,7 @@ def scale_measure(view):
             out[f'finger_{side}'] = round(float(np.hypot(m2['pivotX']-m1['pivotX'], m2['pivotY']-m1['pivotY']) + np.hypot(m3['pivotX']-m2['pivotX'], m3['pivotY']-m2['pivotY']) + tip), 2)
         ft = br.get(f'foot_{side}')
         if ft and ft.get('file'):
-            h, w = bbox_h(P('views', view, 'body', ft['file'])); out[f'foot_{side}'] = max(h, w)
+            h, w = bbox_h(os.path.join(sysdir(view, 'body'), ft['file'])); out[f'foot_{side}'] = max(h, w)
     return out
 
 def gate_scale(views, tol=1.0):
@@ -349,16 +361,19 @@ def main():
     ap.add_argument('--view', default=','.join(VIEWS), help='comma list of views (default all 5)')
     ap.add_argument('--staged-dir', action='append', default=None, help='staged tone-fix dir(s); default: the three known tone_fix dirs. Repeatable')
     ap.add_argument('--skin', default=None, help='alternate skin.json for G1/G2 mesh (e.g. a candidate build); only with one --view')
+    for sy in SYSTEMS: ap.add_argument(f'--{sy}-dir', default=None, help=f'override folder for {sy} parts (see sysdir())')
     ap.add_argument('--no-diagonals', action='store_true'); ap.add_argument('--no-mesh', action='store_true')
     ap.add_argument('--tol', type=float, default=2.0, help='RGB distance tolerance for off-palette (default 2)')
     ap.add_argument('--json', default=None, help='write full JSON result here')
     a = ap.parse_args()
+    for sy in SYSTEMS:
+        if getattr(a, f'{sy}_dir'): SYS_DIR[sy] = getattr(a, f'{sy}_dir')
     views = [v for v in a.view.split(',') if v]; gates = VIEWS and (['weights', 'leak', 'scale'] if a.gate == 'all' else a.gate.split(','))
     sdirs = a.staged_dir if a.staged_dir is not None else STAGED_TONE
     psys, ppat = (a.part.split('/', 1) + ['*'])[:2] if a.part else ('', '*')
     if psys and psys not in SYSTEMS: psys, ppat = '', a.part
     def pf(system, fname): return (not psys or system == psys) and __import__('fnmatch').fnmatch(fname, ppat if ppat.endswith(('*', '.png')) else ppat + '*')
-    R = {'views': views, 'part': a.part or 'all', 'staged_dirs': sdirs, 'tol': a.tol}; ok = True
+    R = {'views': views, 'part': a.part or 'all', 'staged_dirs': sdirs, 'tol': a.tol, 'dir_overrides': SYS_DIR}; ok = True
     body_sel = (not psys or psys == 'body')
     if 'weights' in gates and body_sel:
         R['weights'] = {v: gate_weights(v, a.skin) for v in views}; ok &= all(r['pass'] for r in R['weights'].values())

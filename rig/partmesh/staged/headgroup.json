@@ -73,6 +73,54 @@
    },
    "left": {
     "frame": 62,
+    "dx": 0,
+    "dy": 0
+   },
+   "back": {
+    "frame": 109,
+    "dx": 0,
+    "dy": 0
+   },
+   "right": {
+    "frame": 160,
+    "dx": 0,
+    "dy": 0
+   }
+  },
+  "bun": {
+   "_source": "hair/qa/turn_handoff/subofs_eyefit/SUMMARY.md + subofs.json (Base Hair, 00:50 PT; on top of the eye-fit head group). Profile hair keeps 6-8 px edge distance at best shift (shape differs from her art): ease in over handoff frames only.",
+   "apose": {
+    "frame": 1,
+    "dx": 0,
+    "dy": 0
+   },
+   "left": {
+    "frame": 62,
+    "dx": 0,
+    "dy": 0
+   },
+   "back": {
+    "frame": 109,
+    "dx": 0,
+    "dy": 0
+   },
+   "right": {
+    "frame": 160,
+    "dx": 0,
+    "dy": 0
+   }
+  }
+ },
+ "sub_tuned_parked": {
+  "hair": {
+   "_source": "hair/qa/turn_handoff/subofs_eyefit/SUMMARY.md + subofs.json (Base Hair, 00:50 PT; on top of the eye-fit head group). Profile hair keeps 6-8 px edge distance at best shift (shape differs from her art): ease in over handoff frames only.",
+   "apose": {
+    "frame": 1,
+    "dx": 0,
+    "dy": 0
+   },
+   "left": {
+    "frame": 62,
     "dx": -10,
     "dy": 0
    },
@@ -109,6 +157,7 @@
     "dx": -4,
     "dy": -11
    }
-  }
+  },
+  "_note": "parked 03:46 PT Oct 3 2026 (user): tuned values moved here; live table zeroed in left/right/back (they made back worse and opened holes, rig/work/hgsubhair/)"
  }
 }
