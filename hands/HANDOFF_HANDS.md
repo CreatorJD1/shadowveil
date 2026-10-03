@@ -28,3 +28,6 @@ Everything below is STAGED, not live, and needs the user's OK. Live rig: rig/ind
 - Her five base views are the scale truth. The master sheet is reference only.
 - Before rendering, check that the served rig/index.html md5 matches the file on disk. Run python3 rig/qa_gates.py and hands/qa/gates/gates_extra.py.
 - Known qa_gates bugs: the '045' key skips 45_*.png, and staged lookup can't find flat layouts.
+
+## Soft-edge note (leak gate v2, 2026-10-03, merge 6c3a9d4)
+- F5 v2 ring-finger pieces carry 2 + 2 new soft px (her antialiased edge kept when cut). Left as-is pending the user's exempt-vs-snap decision. If snapping: snap to her f191 line/skin tones, then recheck rest = 0 px, 0 #0000FF, 0 off-palette, line width within ~1 px.

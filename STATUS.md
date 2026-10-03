@@ -107,6 +107,7 @@ Dashboard: http://127.0.0.1:8765/app/#status (master app; /status/ redirects the
 - [~] Coder: rig/poser.html unified poser + keyframe timeline (staged; drives live rig/index.html via iframe, no rig edits). Hooks proposed in rig/poser/HOOKS.md. Benchmark plan parked in rig/benchmarks/PLAN.md.
 - [~] Follow-up merged to main: chroma rule v2, bend check, weight-bleed fix, Body diag fix + HANDOFF (PR #3, merge d8a8331)
 - [x] qa_gates glob fixes: staged sweep reads each system's staged dirs; diagonals read hair v4 / mouth diag_posable / eyes / hands f8+f12 / body diag_fix; leak v2 all 0/0 (body PASS False only from mesh_outside_mask 3,762)
+- [x] qa_gates glob fixes + HANDOFF updates merged to main (PR #4, merge 6c3a9d4)
 
 ## Blockers & open issues
 

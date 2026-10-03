@@ -1,6 +1,6 @@
 {
   "title": "Shadowveil — character rig & live driver status",
-  "updated": "2026-10-03T04:59:10-07:00",
+  "updated": "2026-10-03T04:59:48-07:00",
   "updated_pt": "Sat Oct 3 2026, 4:59 AM PT",
   "progress": {
     "pct": 45,
@@ -401,6 +401,10 @@
         },
         {
           "text": "qa_gates glob fixes: staged sweep reads each system's staged dirs; diagonals read hair v4 / mouth diag_posable / eyes / hands f8+f12 / body diag_fix; leak v2 all 0/0 (body PASS False only from mesh_outside_mask 3,762)",
+          "state": "done"
+        },
+        {
+          "text": "qa_gates glob fixes + HANDOFF updates merged to main (PR #4, merge 6c3a9d4)",
           "state": "done"
         }
       ]
