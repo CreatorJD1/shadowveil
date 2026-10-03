@@ -44,6 +44,9 @@ The user stopped all diagonal work on 2026-10-03 to focus on the main model. The
 3. **qa_gates:** the Coder is adding `--hair-dir`. Until then, use the pointed copies in `hair/qa/qa_gates_runs/`.
 4. **Parked by the user:** the benchmark expression sheet (`reference/benchmarks/`) and the gold bun band from `reference/outfit/`.
 
+5. **Official gate coverage:** `rig/qa_gates.py --gate leak --part hair --chroma-rule v2` passes live hair (0 chroma, 0 off-palette). But its staged sweep reads the same 47 files as live, so the staged hair fixes aren't checked. Fix: add `hair/staged/{tone_fix,hairfront_holes,lineart_fix,ear_strands,merged,speck_fix}/**`. Its diagonal sweep must read `hair/staged/diagonals_v4/` (v1-v3 are superseded; v1 shows 144 off-palette and 1 chroma).
+6. **Soft edges:** live hair has 7,385 soft-edge px. They're her own antialiasing, the same in live and staged, so not a regression. Decide either to exempt them like her art allowlist or to snap their alpha.
+
 ## Checks before anything hair goes live
 - Rest diff against `base.png` is 0 px in every view, including `?hairless=1` with Body's paired patch.
 - The colour sweep has 0 off-palette, 0 chroma and 0 outside the mask.

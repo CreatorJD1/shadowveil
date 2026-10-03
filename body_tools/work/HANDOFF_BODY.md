@@ -38,3 +38,20 @@ no new shading or folds; outline within 1 px; no visible shape change; 0 overlap
 - Lock overlap 0: eye lock, mouth lock, hair masks, hands/<view>_hand_erase_mask.png, and the wrist flaps f7/f10/f11/f12.
 - Pose extremes ±25° on every joint: 0 holes, and the outline continuous within 1 px.
 - Every fix needs a before/after sheet with a crop from her master sheet, and the user's OK.
+
+## diag_body_fix regressions found by Coder's --bend-check (rig/work/bend_check/, 04:46 PT); task these out
+- Waist step fixed (18–20 px -> 3), but a NEW 6–7 px bulge: the skin fill in the old notch pokes past her outline.
+  Fix: in tools/build_fix.py, clip the waist cap/flap to her rest silhouette swept over -25..+25 (intersection, not union).
+- 045 hip_L -25 step 1.41 -> 3.16 px: the thigh's top corner pokes out. Fix: round the thigh's top corner cap to the hip arc,
+  or shrink the hip cap radius so the corner stays under the pelvis.
+- 045 head_neck -25 gap 88 -> 128 px: the head pivot moved up to y=228. Fix: put the head pivot back toward the old (387,237),
+  or extend the neck underfill a further ~10 px under the jaw. Re-run --bend-check.
+- shoulder_L -25 step +1–2 px at both angles: the armpit hollow opens. Fix: restore part of the old flat armpit flap, limited to the -25..0 range.
+- Acceptance: every one of the four spots is no worse than diag_body/ on --bend-check, rest 0 px, holes 0, lock overlap 0.
+
+## qa_gates.py --gate leak --part body --chroma-rule v2 (04:50 PT): PASS=False
+- Chroma 0, off-palette 0.
+- Staged reads the same 67 files as live, and diagonals reads 0 files, so staged body work isn't checked. Add the globs
+  hairless_division_staged/*/, regen_staged/**, diag_body_fix/{045,315}/pieces/.
+- Soft edges: 131,030 px, the same in live and staged (pre-existing in the live textures, not a regression). Needs a gate exemption or a decision on snapping their alpha.
+- mesh_outside_mask is 3,762 on live: a skin.json item (Coder).

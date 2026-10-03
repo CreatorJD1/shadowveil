@@ -1,7 +1,7 @@
 {
   "title": "Shadowveil — character rig & live driver status",
-  "updated": "2026-10-03T04:04:49-07:00",
-  "updated_pt": "Sat Oct 3 2026, 4:04 AM PT",
+  "updated": "2026-10-03T04:59:10-07:00",
+  "updated_pt": "Sat Oct 3 2026, 4:59 AM PT",
   "progress": {
     "pct": 45,
     "label": "roughly 40–50% to a quality live driver",
@@ -215,6 +215,10 @@
         {
           "text": "Part mesh pilot, hair (apose strand_03 + tip): PASS at iteration 1 (width p95 0.43 px, 0 breaks, 0 new holes, browser vs Python mirror within 2 ink px); rest 0 px in all 5 views with ?partmesh=1; flag-off default byte-identical (30/30 frame hashes)",
           "state": "done"
+        },
+        {
+          "text": "Full project push + master HANDOFF.md (commit e0df3a1, PR #2)",
+          "state": "done"
         }
       ]
     },
@@ -392,8 +396,12 @@
           "state": "wip"
         },
         {
-          "text": "Full project push + master HANDOFF.md (commit e0df3a1, PR #2)",
+          "text": "Follow-up merged to main: chroma rule v2, bend check, weight-bleed fix, Body diag fix + HANDOFF (PR #3, merge d8a8331)",
           "state": "wip"
+        },
+        {
+          "text": "qa_gates glob fixes: staged sweep reads each system's staged dirs; diagonals read hair v4 / mouth diag_posable / eyes / hands f8+f12 / body diag_fix; leak v2 all 0/0 (body PASS False only from mesh_outside_mask 3,762)",
+          "state": "done"
         }
       ]
     },
@@ -492,6 +500,10 @@
         },
         {
           "text": "Body crotch notch: ulnb skin (--crotch 0, no --bgk). Rest 0, reduces wide-stance notch (apose 778->366, tpose 1033->731) but doesn't fully close it; small new dark-edge px (78/18). Sheet: body_tools/work/crotch_candidates/sheet_crotch_before_after.png",
+          "state": "decision"
+        },
+        {
+          "text": "USER DECISION: soft edges in her live textures (body 131,030 / hands 22,362 / mouth 8,655 / hair 7,385 px): exempt her own antialiasing (report-only, current) or snap alpha? qa_gates reports them as pre-existing vs new; never fail PASS (HANDOFF.md section 8)",
           "state": "decision"
         }
       ]

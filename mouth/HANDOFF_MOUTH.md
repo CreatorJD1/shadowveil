@@ -42,3 +42,8 @@ Plain-English status of the mouth, for whoever picks this up next. Older notes a
 
 ## Files to push
 `mouth/push_manifest.txt` lists every mouth file to push (all exist). Folders named `renders/` are git-ignored except the real shapes in `staged/{diagonals,diagonals_snap}/{045,315}/renders/`.
+
+## QA gate notes (chroma rule v2, Oct 3 2026 4:50 AM PT)
+- `qa_gates.py --gate leak --part mouth --chroma-rule v2` passes: live and staged 0 chroma, 0 off-palette, 0 frame fringe.
+- Live mouth has 8,655 soft-edge px, identical in live and staged; they come from the existing live textures, not a regression. Needs a decision: exempt them like her own art, or snap their alpha.
+- Gate gaps (asked Coder to fix): staged reads the same 38 files as live, so add `mouth/staged/tone_fix/**`; the diagonal sweep must read `mouth/staged/diag_posable/<ang>/frame_scale/` (0/0/0), not the superseded `diagonals/` renders (65 off-palette from pre-snap blends). `diagonals/` and `diagonals_snap/` are superseded by `diag_posable/`.
