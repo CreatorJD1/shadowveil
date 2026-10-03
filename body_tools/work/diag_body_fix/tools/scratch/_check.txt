@@ -1,0 +1,32 @@
+045 rest {'diff_px_vs_frame_on_body_px': 0, 'body_px_outside_body_area': 0, 'body_px': 114439, 'note': 'composite of the 14 pieces (layer order, flaps hidden) vs her frame px; body area = her keyed figure minus teammates rest px', 'figure_px_covered_by_nobody': 0, 'teammate_px_outside_her_keyed_figure': {'hand_L': 0, 'hand_R': 0, 'eyes': 10, 'hair': 1410, 'mouth': 0}} totals {'off_palette': 0, 'chroma': 0, 'soft': 0, 'overlap_teammates_rest': 0} overlap {'hand_L': 0, 'hand_L_wristflap_all_states': 364, 'hand_R': 0, 'hand_R_wristflap_all_states': 331, 'eyes': 0, 'eyes_all_states': 0, 'hair': 0, 'mouth': 0, 'mouth_all_states': 115} allowlist {'px': 0, 'colours': [], 'note': 'body px whose exact RGB is her frame px but B-max(R,G)>25 (enclosed ink islands < 6 px kept as figure); NOT snapped or removed; qa_gates chroma (b>max+60 & b>120) = 0'}
+  shoulder_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  shoulder_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  elbow_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  elbow_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  hip_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  hip_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  knee_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  knee_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  ankle_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (1, 0, 1)}}
+  ankle_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  waist {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  neck_base {'nearest': {'+0': (51, 51, 0), '-25': (51, 51, 51), '+25': (50, 50, 50)}, 'bilinear': {'+0': (51, 51, 0), '-25': (135, 50, 135), '+25': (140, 48, 119)}}
+  head_neck {'nearest': {'+0': (56, 56, 0), '-25': (56, 56, 41), '+25': (52, 52, 34)}, 'bilinear': {'+0': (56, 56, 0), '-25': (117, 0, 117), '+25': (96, 0, 66)}}
+  wrist_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (1, 0, 1), '+25': (16, 0, 16)}}
+  wrist_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (5, 0, 5), '+25': (1, 0, 1)}}
+315 rest {'diff_px_vs_frame_on_body_px': 0, 'body_px_outside_body_area': 0, 'body_px': 113985, 'note': 'composite of the 14 pieces (layer order, flaps hidden) vs her frame px; body area = her keyed figure minus teammates rest px', 'figure_px_covered_by_nobody': 0, 'teammate_px_outside_her_keyed_figure': {'hand_L': 0, 'hand_R': 0, 'eyes': 26, 'hair': 1330, 'mouth': 0}} totals {'off_palette': 0, 'chroma': 0, 'soft': 0, 'overlap_teammates_rest': 0} overlap {'hand_L': 0, 'hand_L_wristflap_all_states': 348, 'hand_R': 0, 'hand_R_wristflap_all_states': 360, 'eyes': 0, 'eyes_all_states': 0, 'hair': 0, 'mouth': 0, 'mouth_all_states': 97} allowlist {'px': 0, 'colours': [], 'note': 'body px whose exact RGB is her frame px but B-max(R,G)>25 (enclosed ink islands < 6 px kept as figure); NOT snapped or removed; qa_gates chroma (b>max+60 & b>120) = 0'}
+  shoulder_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (1, 0, 1), '+25': (0, 0, 0)}}
+  shoulder_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  elbow_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  elbow_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  hip_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (1, 0, 1)}}
+  hip_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  knee_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  knee_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  ankle_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  ankle_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  waist {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}}
+  neck_base {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (74, 0, 74), '+25': (106, 0, 106)}}
+  head_neck {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (125, 0, 125), '+25': (106, 0, 106)}}
+  wrist_R {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (14, 0, 14), '+25': (11, 0, 11)}}
+  wrist_L {'nearest': {'+0': (0, 0, 0), '-25': (0, 0, 0), '+25': (0, 0, 0)}, 'bilinear': {'+0': (0, 0, 0), '-25': (6, 0, 6), '+25': (6, 0, 6)}}

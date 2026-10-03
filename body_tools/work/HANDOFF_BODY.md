@@ -7,7 +7,7 @@ no new shading or folds; outline within 1 px; no visible shape change; 0 overlap
 ## Status
 - diag_body/{045,315}/: rigid diagonal pieces from turn frames f033/f191. Rest 0 px, 0 holes at ±25°.
   REJECTED by the user for unnatural bends (waist step, hip dent, jagged shoulders/elbows, head-neck gap). Bends stay locked.
-- diag_body_fix/{045,315}/: IN PROGRESS. Fixes for exactly those 4 defects using the same pieces and setup
+- diag_body_fix/{045,315}/: DONE 04:28 PT, waiting on the user's verdict. Lumps and gaps are gone at the shoulders, hips, elbows and neck; the waist still turns as a block (~5 px pelvis corner) and the hips show a small sharp corner. Rest 0, holes 0. Was: Fixes for exactly those 4 defects using the same pieces and setup
   (joint caps, underlaps, pivots), plus the 045 neck key set to alpha 0. Before/after sheets will go here.
 - natural_bend_proto/: smooth-mesh idea. DROPPED by the user; do not continue.
 - 135/225 diagonals: paused, not started.

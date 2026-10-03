@@ -1,0 +1,268 @@
+{
+ "view": "apose",
+ "note": "live rig, nearest; BodyLean is +-8 deg (live limit), other joints +-25 deg; body-only renders for waist/hips/shoulders/elbows, full (with hair) for the neck",
+ "joints": {
+  "waist": {
+   "param": "BodyLean",
+   "pivot": [
+    681.5,
+    706.0
+   ],
+   "band_radius_px": 124,
+   "rest": {
+    "left": 1.0,
+    "left_y": 671,
+    "right": 1.0,
+    "right_y": 671
+   },
+   "BodyLean-1": {
+    "left": 4.0,
+    "left_y": 713,
+    "right": 2.0,
+    "right_y": 680
+   },
+   "BodyLean-1_vs_rest": {
+    "left": 3.0,
+    "left_y": 42,
+    "right": 1.0,
+    "right_y": 9
+   },
+   "BodyLean+1": {
+    "left": 2.0,
+    "left_y": 673,
+    "right": 4.0,
+    "right_y": 713
+   },
+   "BodyLean+1_vs_rest": {
+    "left": 1.0,
+    "left_y": 2,
+    "right": 3.0,
+    "right_y": 42
+   }
+  },
+  "hip_L": {
+   "param": "HipL",
+   "pivot": [
+    747.0,
+    792.5
+   ],
+   "band_radius_px": 93,
+   "rest": {
+    "dent_px": 1.0,
+    "notch_px": 12
+   },
+   "HipL-1": {
+    "dent_px": 1.41,
+    "notch_px": 40
+   },
+   "HipL-1_vs_rest": {
+    "dent_px": 0.41,
+    "notch_px": 28
+   },
+   "HipL+1": {
+    "dent_px": 1.0,
+    "notch_px": 13
+   },
+   "HipL+1_vs_rest": {
+    "dent_px": 0.0,
+    "notch_px": 1
+   }
+  },
+  "hip_R": {
+   "param": "HipR",
+   "pivot": [
+    618.0,
+    791.5
+   ],
+   "band_radius_px": 95,
+   "rest": {
+    "dent_px": 1.0,
+    "notch_px": 12
+   },
+   "HipR-1": {
+    "dent_px": 1.0,
+    "notch_px": 15
+   },
+   "HipR-1_vs_rest": {
+    "dent_px": 0.0,
+    "notch_px": 3
+   },
+   "HipR+1": {
+    "dent_px": 2.24,
+    "notch_px": 34
+   },
+   "HipR+1_vs_rest": {
+    "dent_px": 1.24,
+    "notch_px": 22
+   }
+  },
+  "shoulder_L": {
+   "param": "ShoulderL",
+   "pivot": [
+    822.0,
+    439.0
+   ],
+   "band_radius_px": 58,
+   "rest": {
+    "spikes": 2,
+    "max_dev_px": 1.74
+   },
+   "ShoulderL-1": {
+    "spikes": 0,
+    "max_dev_px": 1.43
+   },
+   "ShoulderL-1_vs_rest": {
+    "spikes": -2,
+    "max_dev_px": -0.31
+   },
+   "ShoulderL+1": {
+    "spikes": 2,
+    "max_dev_px": 1.86
+   },
+   "ShoulderL+1_vs_rest": {
+    "spikes": 0,
+    "max_dev_px": 0.12
+   }
+  },
+  "shoulder_R": {
+   "param": "ShoulderR",
+   "pivot": [
+    541.0,
+    439.0
+   ],
+   "band_radius_px": 58,
+   "rest": {
+    "spikes": 1,
+    "max_dev_px": 1.74
+   },
+   "ShoulderR-1": {
+    "spikes": 1,
+    "max_dev_px": 1.67
+   },
+   "ShoulderR-1_vs_rest": {
+    "spikes": 0,
+    "max_dev_px": -0.07
+   },
+   "ShoulderR+1": {
+    "spikes": 1,
+    "max_dev_px": 1.39
+   },
+   "ShoulderR+1_vs_rest": {
+    "spikes": 0,
+    "max_dev_px": -0.35
+   }
+  },
+  "elbow_L": {
+   "param": "ElbowL",
+   "pivot": [
+    925.5,
+    561.5
+   ],
+   "band_radius_px": 50,
+   "rest": {
+    "spikes": 0,
+    "max_dev_px": 0.6
+   },
+   "ElbowL-1": {
+    "spikes": 0,
+    "max_dev_px": 1.18
+   },
+   "ElbowL-1_vs_rest": {
+    "spikes": 0,
+    "max_dev_px": 0.58
+   },
+   "ElbowL+1": {
+    "spikes": 0,
+    "max_dev_px": 1.03
+   },
+   "ElbowL+1_vs_rest": {
+    "spikes": 0,
+    "max_dev_px": 0.43
+   }
+  },
+  "elbow_R": {
+   "param": "ElbowR",
+   "pivot": [
+    438.0,
+    563.0
+   ],
+   "band_radius_px": 50,
+   "rest": {
+    "spikes": 0,
+    "max_dev_px": 0.49
+   },
+   "ElbowR-1": {
+    "spikes": 1,
+    "max_dev_px": 1.23
+   },
+   "ElbowR-1_vs_rest": {
+    "spikes": 1,
+    "max_dev_px": 0.74
+   },
+   "ElbowR+1": {
+    "spikes": 1,
+    "max_dev_px": 1.35
+   },
+   "ElbowR+1_vs_rest": {
+    "spikes": 1,
+    "max_dev_px": 0.86
+   }
+  },
+  "head_neck": {
+   "param": "HeadTilt",
+   "pivot": [
+    681,
+    364
+   ],
+   "band_radius_px": 66,
+   "rest": {
+    "gap_px": 6,
+    "gap_width_px": 2.0
+   },
+   "HeadTilt-1": {
+    "gap_px": 13,
+    "gap_width_px": 2.0
+   },
+   "HeadTilt-1_vs_rest": {
+    "gap_px": 7,
+    "gap_width_px": 0.0
+   },
+   "HeadTilt+1": {
+    "gap_px": 20,
+    "gap_width_px": 2.8
+   },
+   "HeadTilt+1_vs_rest": {
+    "gap_px": 14,
+    "gap_width_px": 0.8
+   }
+  },
+  "head_nod": {
+   "param": "HeadNod",
+   "pivot": [
+    681,
+    364
+   ],
+   "band_radius_px": 66,
+   "rest": {
+    "gap_px": 6,
+    "gap_width_px": 2.0
+   },
+   "HeadNod-1": {
+    "gap_px": 4,
+    "gap_width_px": 2.0
+   },
+   "HeadNod-1_vs_rest": {
+    "gap_px": -2,
+    "gap_width_px": 0.0
+   },
+   "HeadNod+1": {
+    "gap_px": 19,
+    "gap_width_px": 4.0
+   },
+   "HeadNod+1_vs_rest": {
+    "gap_px": 13,
+    "gap_width_px": 2.0
+   }
+  }
+ }
+}

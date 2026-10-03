@@ -1,0 +1,223 @@
+{
+ "views": [
+  "right"
+ ],
+ "part": "all",
+ "staged_dirs": [
+  "eyes/work/lashfix/staged",
+  "hair/staged/tone_fix",
+  "mouth/staged/tone_fix"
+ ],
+ "tol": 2.0,
+ "dir_overrides": {},
+ "owner": "layer",
+ "weights": {
+  "right": {
+   "skin": "views/right/body/skin.json",
+   "meshes": {
+    "skin": {
+     "vertices": 28106,
+     "bleed_vs_dominant_bone": {
+      "vertices": 21,
+      "pairs": {
+       "torso<-forearm_R": 14,
+       "forearm_R<-torso": 7
+      }
+     },
+     "bleed_vs_texel_owner": {
+      "pairs": {
+       "torso<-forearm_R": 32,
+       "forearm_R<-torso": 57,
+       "forearm_R<-pelvis": 76,
+       "pelvis<-forearm_R": 23,
+       "forearm_R<-thigh_R": 61,
+       "thigh_R<-forearm_R": 91
+      },
+      "vertices_total": 340
+     },
+     "isolation": {
+      "torso": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 340
+      },
+      "upperArm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "upperArm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 1500
+      },
+      "forearm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "forearm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 185
+      },
+      "thigh_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "thigh_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 1541
+      },
+      "shin_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "shin_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 261
+      },
+      "foot_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "foot_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 187
+      },
+      "toes_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "toes_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 190
+      }
+     },
+     "pass": false
+    },
+    "underlay": {
+     "vertices": 11757,
+     "bleed_vs_dominant_bone": {
+      "vertices": 0,
+      "pairs": {}
+     },
+     "bleed_vs_texel_owner": {
+      "pairs": {
+       "forearm_R<-torso": 1236,
+       "forearm_R<-pelvis": 1410,
+       "forearm_R<-thigh_R": 1102
+      },
+      "vertices_total": 3748
+     },
+     "isolation": {
+      "torso": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 8
+      },
+      "upperArm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "upperArm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "forearm_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "forearm_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "thigh_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "thigh_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 1101,
+       "max_px": 34.64,
+       "by_part": {
+        "forearm_R": 1101
+       },
+       "info_related_parent_or_sibling_verts_moving": 386
+      },
+      "shin_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "shin_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "foot_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "foot_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "toes_L": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      },
+      "toes_R": {
+       "verts_of_other_parts_moving_gt_0.5px": 0,
+       "max_px": 0.0,
+       "by_part": {},
+       "info_related_parent_or_sibling_verts_moving": 0
+      }
+     },
+     "pass": false
+    }
+   },
+   "pass": false
+  }
+ },
+ "pass": false
+}

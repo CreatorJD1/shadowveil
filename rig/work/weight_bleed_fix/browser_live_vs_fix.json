@@ -1,0 +1,210 @@
+{
+ "left": {
+  "BodyLean+1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "BodyLean-1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "ElbowL+1": {
+   "px_changed": 21,
+   "new_holes": 0,
+   "max_rgb_delta": 63,
+   "changed_px_max_dist_from_reweighted_verts": 6.1,
+   "bbox": [
+    684,
+    636,
+    700,
+    639
+   ]
+  },
+  "ElbowL-1": {
+   "px_changed": 58,
+   "new_holes": 0,
+   "max_rgb_delta": 8,
+   "changed_px_max_dist_from_reweighted_verts": 8.1,
+   "bbox": [
+    684,
+    641,
+    702,
+    650
+   ]
+  },
+  "HipL+1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "HipL-1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "ShL+1_ElL+1": {
+   "px_changed": 29,
+   "new_holes": 0,
+   "max_rgb_delta": 30,
+   "changed_px_max_dist_from_reweighted_verts": 79.7,
+   "bbox": [
+    613,
+    610,
+    634,
+    619
+   ]
+  },
+  "ShL-1_ElL-1": {
+   "px_changed": 195,
+   "new_holes": 8,
+   "max_rgb_delta": 255,
+   "changed_px_max_dist_from_reweighted_verts": 89.7,
+   "bbox": [
+    744,
+    629,
+    791,
+    642
+   ]
+  },
+  "ShoulderL+1": {
+   "px_changed": 3,
+   "new_holes": 0,
+   "max_rgb_delta": 7,
+   "changed_px_max_dist_from_reweighted_verts": 73.4,
+   "bbox": [
+    617,
+    616,
+    618,
+    617
+   ]
+  },
+  "ShoulderL-1": {
+   "px_changed": 2,
+   "new_holes": 0,
+   "max_rgb_delta": 1,
+   "changed_px_max_dist_from_reweighted_verts": 87.3,
+   "bbox": [
+    788,
+    627,
+    788,
+    628
+   ]
+  },
+  "rest": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  }
+ },
+ "right": {
+  "BodyLean+1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "BodyLean-1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "ElbowR+1": {
+   "px_changed": 138,
+   "new_holes": 0,
+   "max_rgb_delta": 17,
+   "changed_px_max_dist_from_reweighted_verts": 9.1,
+   "bbox": [
+    671,
+    629,
+    689,
+    653
+   ]
+  },
+  "ElbowR-1": {
+   "px_changed": 76,
+   "new_holes": 0,
+   "max_rgb_delta": 99,
+   "changed_px_max_dist_from_reweighted_verts": 6.1,
+   "bbox": [
+    671,
+    628,
+    689,
+    642
+   ]
+  },
+  "HipR+1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "HipR-1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "ShR+1_ElR+1": {
+   "px_changed": 765,
+   "new_holes": 36,
+   "max_rgb_delta": 255,
+   "changed_px_max_dist_from_reweighted_verts": 90.4,
+   "bbox": [
+    580,
+    627,
+    671,
+    648
+   ]
+  },
+  "ShR-1_ElR-1": {
+   "px_changed": 180,
+   "new_holes": 0,
+   "max_rgb_delta": 99,
+   "changed_px_max_dist_from_reweighted_verts": 81.6,
+   "bbox": [
+    712,
+    603,
+    765,
+    635
+   ]
+  },
+  "ShoulderR+1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "ShoulderR-1": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  },
+  "rest": {
+   "px_changed": 0,
+   "new_holes": 0,
+   "max_rgb_delta": 0,
+   "changed_px_max_dist_from_reweighted_verts": 0.0,
+   "bbox": null
+  }
+ }
+}

@@ -1,0 +1,1937 @@
+{
+ "views": [
+  "apose",
+  "tpose",
+  "left",
+  "right",
+  "back"
+ ],
+ "part": "all",
+ "staged_dirs": [
+  "eyes/work/lashfix/staged",
+  "hair/staged/tone_fix",
+  "mouth/staged/tone_fix"
+ ],
+ "tol": 2.0,
+ "dir_overrides": {},
+ "owner": "texel",
+ "chroma_rule": "v2",
+ "bend_check": {
+  "out_dir": "rig/work/bend_check",
+  "report": "bend_check_report.json",
+  "diag": {
+   "doc": "--bend-check (STAGED, scope-cut 03:53 PT): measures ONLY the 4 defects in Base Body's 045/315 before/after tiles, on the same pieces and setup\n(body_tools/work/diag_body = OLD, body_tools/work/diag_body_fix = NEW; posed with Body's own posekit.pose: child subtree rotated about the joint pivot,\nnearest, teammates as green cover). Read-only on Body's files; writes rig/work/bend_check/ only. Rig untouched.\n  pieces: waist = torso+pelvis only; hips = torso+pelvis+legs (arms/hands hang over the hips in these views); shoulders/elbows and the neck =\n         all pieces + teammates as cover (hair covers the nape legitimately).\n  1 waist_side_step_px : waist joint. Per side (left/right silhouette edge), over rows within 35 px of the waist pivot: the largest jump in the\n                         edge x between consecutive rows (a step in the side outline). Reported per side, posed minus her rest value.\n  2 hip_crease_dent_px : hip_L/hip_R. Deepest notch of the posed silhouette vs its closing with an 8 px disk, inside the joint band; also notch area px.\n  3 jagged_spikes      : shoulder_L/R, elbow_L/R. Outline points in the band whose direction turns > 50 deg over a 4 px chord either side\n                         (corner spikes), plus the largest outline deviation from its sigma-3 smoothed path (px). Posed minus rest.\n  4 head_neck_gap_px   : head_neck + neck_base. Background px the head/neck rotation opens INSIDE her figure near the neck seam: px in the\n                         closing (6 px disk) of the posed silhouette that are not covered, minus the same at rest; plus the widest gap (px).\nusage: python3 rig/qa_gates.py --bend-check [--bend-port 8793]   or   python3 rig/work/bend_check/bend_check.py [--angles 045,315] [--live apose]\nLive front baseline: rig/work/bend_check/render_live.js renders views/apose at each joint 0/+-1 (needs a local http server on the repo root).",
+   "angles": {
+    "045": {
+     "waist": {
+      "pieces": [
+       "torso",
+       "pelvis"
+      ],
+      "teammates_as_cover": false,
+      "old": {
+       "+0": {
+        "left": 2.0,
+        "left_y": 445,
+        "right": 2.0,
+        "right_y": 439
+       },
+       "-25": {
+        "left": 3.0,
+        "left_y": 440,
+        "right": 20.0,
+        "right_y": 469
+       },
+       "-25_vs_rest": {
+        "left": 1.0,
+        "left_y": -5,
+        "right": 18.0,
+        "right_y": 30
+       },
+       "+25": {
+        "left": 18.0,
+        "left_y": 469,
+        "right": 7.0,
+        "right_y": 469
+       },
+       "+25_vs_rest": {
+        "left": 16.0,
+        "left_y": 24,
+        "right": 5.0,
+        "right_y": 30
+       }
+      },
+      "new": {
+       "+0": {
+        "left": 2.0,
+        "left_y": 445,
+        "right": 2.0,
+        "right_y": 439
+       },
+       "-25": {
+        "left": 3.0,
+        "left_y": 434,
+        "right": 3.0,
+        "right_y": 439
+       },
+       "-25_vs_rest": {
+        "left": 1.0,
+        "left_y": -11,
+        "right": 1.0,
+        "right_y": 0
+       },
+       "+25": {
+        "left": 3.0,
+        "left_y": 435,
+        "right": 7.0,
+        "right_y": 469
+       },
+       "+25_vs_rest": {
+        "left": 1.0,
+        "left_y": -10,
+        "right": 5.0,
+        "right_y": 30
+       }
+      }
+     },
+     "hip_L": {
+      "pieces": [
+       "torso",
+       "pelvis",
+       "thigh_L",
+       "thigh_R",
+       "shin_L",
+       "shin_R",
+       "foot_L",
+       "foot_R"
+      ],
+      "teammates_as_cover": false,
+      "old": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 46
+       },
+       "-25": {
+        "dent_px": 1.41,
+        "notch_px": 91
+       },
+       "-25_vs_rest": {
+        "dent_px": 0.41,
+        "notch_px": 45
+       },
+       "+25": {
+        "dent_px": 1.0,
+        "notch_px": 24
+       },
+       "+25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -22
+       }
+      },
+      "new": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 51
+       },
+       "-25": {
+        "dent_px": 3.16,
+        "notch_px": 153
+       },
+       "-25_vs_rest": {
+        "dent_px": 2.16,
+        "notch_px": 102
+       },
+       "+25": {
+        "dent_px": 1.0,
+        "notch_px": 38
+       },
+       "+25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -13
+       }
+      }
+     },
+     "hip_R": {
+      "pieces": [
+       "torso",
+       "pelvis",
+       "thigh_L",
+       "thigh_R",
+       "shin_L",
+       "shin_R",
+       "foot_L",
+       "foot_R"
+      ],
+      "teammates_as_cover": false,
+      "old": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 33
+       },
+       "-25": {
+        "dent_px": 1.0,
+        "notch_px": 24
+       },
+       "-25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -9
+       },
+       "+25": {
+        "dent_px": 4.47,
+        "notch_px": 145
+       },
+       "+25_vs_rest": {
+        "dent_px": 3.47,
+        "notch_px": 112
+       }
+      },
+      "new": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 33
+       },
+       "-25": {
+        "dent_px": 1.0,
+        "notch_px": 31
+       },
+       "-25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -2
+       },
+       "+25": {
+        "dent_px": 4.47,
+        "notch_px": 145
+       },
+       "+25_vs_rest": {
+        "dent_px": 3.47,
+        "notch_px": 112
+       }
+      }
+     },
+     "shoulder_L": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 2,
+        "max_dev_px": 1.62
+       },
+       "-25": {
+        "spikes": 8,
+        "max_dev_px": 1.88
+       },
+       "-25_vs_rest": {
+        "spikes": 6,
+        "max_dev_px": 0.26
+       },
+       "+25": {
+        "spikes": 4,
+        "max_dev_px": 2.35
+       },
+       "+25_vs_rest": {
+        "spikes": 2,
+        "max_dev_px": 0.73
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 2,
+        "max_dev_px": 1.62
+       },
+       "-25": {
+        "spikes": 10,
+        "max_dev_px": 1.78
+       },
+       "-25_vs_rest": {
+        "spikes": 8,
+        "max_dev_px": 0.16
+       },
+       "+25": {
+        "spikes": 1,
+        "max_dev_px": 1.81
+       },
+       "+25_vs_rest": {
+        "spikes": -1,
+        "max_dev_px": 0.19
+       }
+      }
+     },
+     "shoulder_R": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 6,
+        "max_dev_px": 2.27
+       },
+       "-25": {
+        "spikes": 9,
+        "max_dev_px": 2.4
+       },
+       "-25_vs_rest": {
+        "spikes": 3,
+        "max_dev_px": 0.13
+       },
+       "+25": {
+        "spikes": 12,
+        "max_dev_px": 2.27
+       },
+       "+25_vs_rest": {
+        "spikes": 6,
+        "max_dev_px": 0.0
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 7,
+        "max_dev_px": 2.27
+       },
+       "-25": {
+        "spikes": 9,
+        "max_dev_px": 2.27
+       },
+       "-25_vs_rest": {
+        "spikes": 2,
+        "max_dev_px": 0.0
+       },
+       "+25": {
+        "spikes": 11,
+        "max_dev_px": 2.27
+       },
+       "+25_vs_rest": {
+        "spikes": 4,
+        "max_dev_px": 0.0
+       }
+      }
+     },
+     "elbow_L": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 0,
+        "max_dev_px": 0.89
+       },
+       "-25": {
+        "spikes": 1,
+        "max_dev_px": 1.45
+       },
+       "-25_vs_rest": {
+        "spikes": 1,
+        "max_dev_px": 0.56
+       },
+       "+25": {
+        "spikes": 0,
+        "max_dev_px": 1.1
+       },
+       "+25_vs_rest": {
+        "spikes": 0,
+        "max_dev_px": 0.21
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 0,
+        "max_dev_px": 0.89
+       },
+       "-25": {
+        "spikes": 2,
+        "max_dev_px": 1.35
+       },
+       "-25_vs_rest": {
+        "spikes": 2,
+        "max_dev_px": 0.46
+       },
+       "+25": {
+        "spikes": 2,
+        "max_dev_px": 1.21
+       },
+       "+25_vs_rest": {
+        "spikes": 2,
+        "max_dev_px": 0.32
+       }
+      }
+     },
+     "elbow_R": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 0,
+        "max_dev_px": 0.97
+       },
+       "-25": {
+        "spikes": 3,
+        "max_dev_px": 1.3
+       },
+       "-25_vs_rest": {
+        "spikes": 3,
+        "max_dev_px": 0.33
+       },
+       "+25": {
+        "spikes": 6,
+        "max_dev_px": 1.37
+       },
+       "+25_vs_rest": {
+        "spikes": 6,
+        "max_dev_px": 0.4
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 0,
+        "max_dev_px": 0.97
+       },
+       "-25": {
+        "spikes": 0,
+        "max_dev_px": 1.19
+       },
+       "-25_vs_rest": {
+        "spikes": 0,
+        "max_dev_px": 0.22
+       },
+       "+25": {
+        "spikes": 3,
+        "max_dev_px": 1.17
+       },
+       "+25_vs_rest": {
+        "spikes": 3,
+        "max_dev_px": 0.2
+       }
+      }
+     },
+     "head_neck": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "gap_px": 101,
+        "gap_width_px": 4.0
+       },
+       "-25": {
+        "gap_px": 88,
+        "gap_width_px": 4.0
+       },
+       "-25_vs_rest": {
+        "gap_px": -13,
+        "gap_width_px": 0.0
+       },
+       "+25": {
+        "gap_px": 143,
+        "gap_width_px": 4.5
+       },
+       "+25_vs_rest": {
+        "gap_px": 42,
+        "gap_width_px": 0.5
+       }
+      },
+      "new": {
+       "+0": {
+        "gap_px": 100,
+        "gap_width_px": 4.0
+       },
+       "-25": {
+        "gap_px": 128,
+        "gap_width_px": 4.5
+       },
+       "-25_vs_rest": {
+        "gap_px": 28,
+        "gap_width_px": 0.5
+       },
+       "+25": {
+        "gap_px": 86,
+        "gap_width_px": 4.5
+       },
+       "+25_vs_rest": {
+        "gap_px": -14,
+        "gap_width_px": 0.5
+       }
+      }
+     },
+     "neck_base": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "gap_px": 106,
+        "gap_width_px": 4.0
+       },
+       "-25": {
+        "gap_px": 131,
+        "gap_width_px": 4.5
+       },
+       "-25_vs_rest": {
+        "gap_px": 25,
+        "gap_width_px": 0.5
+       },
+       "+25": {
+        "gap_px": 113,
+        "gap_width_px": 4.5
+       },
+       "+25_vs_rest": {
+        "gap_px": 7,
+        "gap_width_px": 0.5
+       }
+      },
+      "new": {
+       "+0": {
+        "gap_px": 106,
+        "gap_width_px": 4.0
+       },
+       "-25": {
+        "gap_px": 126,
+        "gap_width_px": 4.5
+       },
+       "-25_vs_rest": {
+        "gap_px": 20,
+        "gap_width_px": 0.5
+       },
+       "+25": {
+        "gap_px": 106,
+        "gap_width_px": 4.5
+       },
+       "+25_vs_rest": {
+        "gap_px": 0,
+        "gap_width_px": 0.5
+       }
+      }
+     },
+     "_body_metrics": {
+      "waist": {
+       "-25": {
+        "old": {
+         "step_px": 3.74,
+         "dent_px": 2.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.31,
+         "dent_px": 1.41,
+         "lump_px": 7.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 3.88,
+         "dent_px": 2.0,
+         "lump_px": 1.41,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.2,
+         "dent_px": 2.0,
+         "lump_px": 7.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "hip_L": {
+       "-25": {
+        "old": {
+         "step_px": 4.59,
+         "dent_px": 1.41,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 4.92,
+         "dent_px": 3.16,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 1.3,
+         "dent_px": 1.0,
+         "lump_px": 8.06,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.03,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "hip_R": {
+       "-25": {
+        "old": {
+         "step_px": 1.61,
+         "dent_px": 1.0,
+         "lump_px": 10.2,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.26,
+         "dent_px": 1.0,
+         "lump_px": 3.61,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 3.2,
+         "dent_px": 1.41,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.2,
+         "dent_px": 1.41,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "shoulder_L": {
+       "-25": {
+        "old": {
+         "step_px": 3.68,
+         "dent_px": 3.0,
+         "lump_px": 5.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.99,
+         "dent_px": 2.0,
+         "lump_px": 1.41,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 2.16,
+         "dent_px": 1.0,
+         "lump_px": 3.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.95,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "shoulder_R": {
+       "-25": {
+        "old": {
+         "step_px": 1.88,
+         "dent_px": 1.0,
+         "lump_px": 9.85,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.63,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 2.7,
+         "dent_px": 1.41,
+         "lump_px": 13.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.58,
+         "dent_px": 1.0,
+         "lump_px": 2.24,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "elbow_L": {
+       "-25": {
+        "old": {
+         "step_px": 2.2,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.78,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 1.79,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.57,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "elbow_R": {
+       "-25": {
+        "old": {
+         "step_px": 2.03,
+         "dent_px": 1.0,
+         "lump_px": 2.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.66,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 2.15,
+         "dent_px": 1.0,
+         "lump_px": 1.41,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.11,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "head_neck": {
+       "-25": {
+        "old": {
+         "step_px": 3.66,
+         "dent_px": 3.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 33,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 33
+        },
+        "new": {
+         "step_px": 3.51,
+         "dent_px": 2.24,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 56,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 41
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 3.36,
+         "dent_px": 2.24,
+         "lump_px": 4.0,
+         "holes_seethrough_nearest": 55,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 55
+        },
+        "new": {
+         "step_px": 2.76,
+         "dent_px": 2.24,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 52,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 34
+        }
+       }
+      },
+      "neck_base": {
+       "-25": {
+        "old": {
+         "step_px": 4.07,
+         "dent_px": 5.39,
+         "lump_px": 5.83,
+         "holes_seethrough_nearest": 52,
+         "holes_seethrough_bilinear": 54,
+         "holes_new_vs_rest_nearest": 52
+        },
+        "new": {
+         "step_px": 3.88,
+         "dent_px": 5.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 51,
+         "holes_seethrough_bilinear": 50,
+         "holes_new_vs_rest_nearest": 51
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 2.54,
+         "dent_px": 2.0,
+         "lump_px": 3.16,
+         "holes_seethrough_nearest": 53,
+         "holes_seethrough_bilinear": 50,
+         "holes_new_vs_rest_nearest": 53
+        },
+        "new": {
+         "step_px": 3.63,
+         "dent_px": 2.24,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 50,
+         "holes_seethrough_bilinear": 48,
+         "holes_new_vs_rest_nearest": 50
+        }
+       }
+      }
+     }
+    },
+    "315": {
+     "waist": {
+      "pieces": [
+       "torso",
+       "pelvis"
+      ],
+      "teammates_as_cover": false,
+      "old": {
+       "+0": {
+        "left": 2.0,
+        "left_y": 439,
+        "right": 2.0,
+        "right_y": 439
+       },
+       "-25": {
+        "left": 7.0,
+        "left_y": 469,
+        "right": 18.0,
+        "right_y": 469
+       },
+       "-25_vs_rest": {
+        "left": 5.0,
+        "left_y": 30,
+        "right": 16.0,
+        "right_y": 30
+       },
+       "+25": {
+        "left": 18.0,
+        "left_y": 469,
+        "right": 3.0,
+        "right_y": 438
+       },
+       "+25_vs_rest": {
+        "left": 16.0,
+        "left_y": 30,
+        "right": 1.0,
+        "right_y": -1
+       }
+      },
+      "new": {
+       "+0": {
+        "left": 2.0,
+        "left_y": 439,
+        "right": 2.0,
+        "right_y": 439
+       },
+       "-25": {
+        "left": 7.0,
+        "left_y": 469,
+        "right": 3.0,
+        "right_y": 437
+       },
+       "-25_vs_rest": {
+        "left": 5.0,
+        "left_y": 30,
+        "right": 1.0,
+        "right_y": -2
+       },
+       "+25": {
+        "left": 3.0,
+        "left_y": 434,
+        "right": 3.0,
+        "right_y": 438
+       },
+       "+25_vs_rest": {
+        "left": 1.0,
+        "left_y": -5,
+        "right": 1.0,
+        "right_y": -1
+       }
+      }
+     },
+     "hip_L": {
+      "pieces": [
+       "torso",
+       "pelvis",
+       "thigh_L",
+       "thigh_R",
+       "shin_L",
+       "shin_R",
+       "foot_L",
+       "foot_R"
+      ],
+      "teammates_as_cover": false,
+      "old": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 27
+       },
+       "-25": {
+        "dent_px": 4.47,
+        "notch_px": 130
+       },
+       "-25_vs_rest": {
+        "dent_px": 3.47,
+        "notch_px": 103
+       },
+       "+25": {
+        "dent_px": 1.0,
+        "notch_px": 19
+       },
+       "+25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -8
+       }
+      },
+      "new": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 27
+       },
+       "-25": {
+        "dent_px": 4.47,
+        "notch_px": 130
+       },
+       "-25_vs_rest": {
+        "dent_px": 3.47,
+        "notch_px": 103
+       },
+       "+25": {
+        "dent_px": 1.0,
+        "notch_px": 25
+       },
+       "+25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -2
+       }
+      }
+     },
+     "hip_R": {
+      "pieces": [
+       "torso",
+       "pelvis",
+       "thigh_L",
+       "thigh_R",
+       "shin_L",
+       "shin_R",
+       "foot_L",
+       "foot_R"
+      ],
+      "teammates_as_cover": false,
+      "old": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 61
+       },
+       "-25": {
+        "dent_px": 1.0,
+        "notch_px": 36
+       },
+       "-25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -25
+       },
+       "+25": {
+        "dent_px": 2.0,
+        "notch_px": 86
+       },
+       "+25_vs_rest": {
+        "dent_px": 1.0,
+        "notch_px": 25
+       }
+      },
+      "new": {
+       "+0": {
+        "dent_px": 1.0,
+        "notch_px": 61
+       },
+       "-25": {
+        "dent_px": 1.0,
+        "notch_px": 47
+       },
+       "-25_vs_rest": {
+        "dent_px": 0.0,
+        "notch_px": -14
+       },
+       "+25": {
+        "dent_px": 2.0,
+        "notch_px": 86
+       },
+       "+25_vs_rest": {
+        "dent_px": 1.0,
+        "notch_px": 25
+       }
+      }
+     },
+     "shoulder_L": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 4,
+        "max_dev_px": 1.98
+       },
+       "-25": {
+        "spikes": 14,
+        "max_dev_px": 1.98
+       },
+       "-25_vs_rest": {
+        "spikes": 10,
+        "max_dev_px": 0.0
+       },
+       "+25": {
+        "spikes": 7,
+        "max_dev_px": 2.17
+       },
+       "+25_vs_rest": {
+        "spikes": 3,
+        "max_dev_px": 0.19
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 7,
+        "max_dev_px": 2.03
+       },
+       "-25": {
+        "spikes": 15,
+        "max_dev_px": 2.03
+       },
+       "-25_vs_rest": {
+        "spikes": 8,
+        "max_dev_px": 0.0
+       },
+       "+25": {
+        "spikes": 10,
+        "max_dev_px": 2.03
+       },
+       "+25_vs_rest": {
+        "spikes": 3,
+        "max_dev_px": 0.0
+       }
+      }
+     },
+     "shoulder_R": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 3,
+        "max_dev_px": 1.61
+       },
+       "-25": {
+        "spikes": 3,
+        "max_dev_px": 1.85
+       },
+       "-25_vs_rest": {
+        "spikes": 0,
+        "max_dev_px": 0.24
+       },
+       "+25": {
+        "spikes": 8,
+        "max_dev_px": 1.65
+       },
+       "+25_vs_rest": {
+        "spikes": 5,
+        "max_dev_px": 0.04
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 2,
+        "max_dev_px": 1.61
+       },
+       "-25": {
+        "spikes": 5,
+        "max_dev_px": 1.62
+       },
+       "-25_vs_rest": {
+        "spikes": 3,
+        "max_dev_px": 0.01
+       },
+       "+25": {
+        "spikes": 6,
+        "max_dev_px": 1.41
+       },
+       "+25_vs_rest": {
+        "spikes": 4,
+        "max_dev_px": -0.2
+       }
+      }
+     },
+     "elbow_L": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 1,
+        "max_dev_px": 1.04
+       },
+       "-25": {
+        "spikes": 1,
+        "max_dev_px": 1.08
+       },
+       "-25_vs_rest": {
+        "spikes": 0,
+        "max_dev_px": 0.04
+       },
+       "+25": {
+        "spikes": 1,
+        "max_dev_px": 1.04
+       },
+       "+25_vs_rest": {
+        "spikes": 0,
+        "max_dev_px": 0.0
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 1,
+        "max_dev_px": 1.04
+       },
+       "-25": {
+        "spikes": 3,
+        "max_dev_px": 1.24
+       },
+       "-25_vs_rest": {
+        "spikes": 2,
+        "max_dev_px": 0.2
+       },
+       "+25": {
+        "spikes": 2,
+        "max_dev_px": 1.39
+       },
+       "+25_vs_rest": {
+        "spikes": 1,
+        "max_dev_px": 0.35
+       }
+      }
+     },
+     "elbow_R": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "spikes": 0,
+        "max_dev_px": 0.91
+       },
+       "-25": {
+        "spikes": 1,
+        "max_dev_px": 1.22
+       },
+       "-25_vs_rest": {
+        "spikes": 1,
+        "max_dev_px": 0.31
+       },
+       "+25": {
+        "spikes": 0,
+        "max_dev_px": 1.3
+       },
+       "+25_vs_rest": {
+        "spikes": 0,
+        "max_dev_px": 0.39
+       }
+      },
+      "new": {
+       "+0": {
+        "spikes": 0,
+        "max_dev_px": 0.91
+       },
+       "-25": {
+        "spikes": 2,
+        "max_dev_px": 1.46
+       },
+       "-25_vs_rest": {
+        "spikes": 2,
+        "max_dev_px": 0.55
+       },
+       "+25": {
+        "spikes": 2,
+        "max_dev_px": 1.35
+       },
+       "+25_vs_rest": {
+        "spikes": 2,
+        "max_dev_px": 0.44
+       }
+      }
+     },
+     "head_neck": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "gap_px": 55,
+        "gap_width_px": 2.8
+       },
+       "-25": {
+        "gap_px": 129,
+        "gap_width_px": 5.7
+       },
+       "-25_vs_rest": {
+        "gap_px": 74,
+        "gap_width_px": 2.9
+       },
+       "+25": {
+        "gap_px": 92,
+        "gap_width_px": 4.5
+       },
+       "+25_vs_rest": {
+        "gap_px": 37,
+        "gap_width_px": 1.7
+       }
+      },
+      "new": {
+       "+0": {
+        "gap_px": 53,
+        "gap_width_px": 2.8
+       },
+       "-25": {
+        "gap_px": 69,
+        "gap_width_px": 4.0
+       },
+       "-25_vs_rest": {
+        "gap_px": 16,
+        "gap_width_px": 1.2
+       },
+       "+25": {
+        "gap_px": 79,
+        "gap_width_px": 4.0
+       },
+       "+25_vs_rest": {
+        "gap_px": 26,
+        "gap_width_px": 1.2
+       }
+      }
+     },
+     "neck_base": {
+      "pieces": "all",
+      "teammates_as_cover": true,
+      "old": {
+       "+0": {
+        "gap_px": 60,
+        "gap_width_px": 2.8
+       },
+       "-25": {
+        "gap_px": 65,
+        "gap_width_px": 2.8
+       },
+       "-25_vs_rest": {
+        "gap_px": 5,
+        "gap_width_px": 0.0
+       },
+       "+25": {
+        "gap_px": 96,
+        "gap_width_px": 4.0
+       },
+       "+25_vs_rest": {
+        "gap_px": 36,
+        "gap_width_px": 1.2
+       }
+      },
+      "new": {
+       "+0": {
+        "gap_px": 61,
+        "gap_width_px": 2.8
+       },
+       "-25": {
+        "gap_px": 60,
+        "gap_width_px": 2.0
+       },
+       "-25_vs_rest": {
+        "gap_px": -1,
+        "gap_width_px": -0.8
+       },
+       "+25": {
+        "gap_px": 77,
+        "gap_width_px": 4.0
+       },
+       "+25_vs_rest": {
+        "gap_px": 16,
+        "gap_width_px": 1.2
+       }
+      }
+     },
+     "_body_metrics": {
+      "waist": {
+       "-25": {
+        "old": {
+         "step_px": 3.66,
+         "dent_px": 2.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.63,
+         "dent_px": 1.41,
+         "lump_px": 6.32,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 4.07,
+         "dent_px": 2.0,
+         "lump_px": 1.41,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.48,
+         "dent_px": 1.0,
+         "lump_px": 7.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "hip_L": {
+       "-25": {
+        "old": {
+         "step_px": 2.81,
+         "dent_px": 1.41,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.81,
+         "dent_px": 1.41,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 1.43,
+         "dent_px": 1.0,
+         "lump_px": 9.49,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.25,
+         "dent_px": 1.0,
+         "lump_px": 3.61,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "hip_R": {
+       "-25": {
+        "old": {
+         "step_px": 1.6,
+         "dent_px": 1.0,
+         "lump_px": 5.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.34,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 1.34,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.34,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "shoulder_L": {
+       "-25": {
+        "old": {
+         "step_px": 3.29,
+         "dent_px": 2.24,
+         "lump_px": 12.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.8,
+         "dent_px": 2.0,
+         "lump_px": 2.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 2.02,
+         "dent_px": 1.0,
+         "lump_px": 11.18,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.65,
+         "dent_px": 2.24,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "shoulder_R": {
+       "-25": {
+        "old": {
+         "step_px": 3.1,
+         "dent_px": 1.0,
+         "lump_px": 5.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.91,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 2.69,
+         "dent_px": 2.0,
+         "lump_px": 4.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.12,
+         "dent_px": 1.41,
+         "lump_px": 1.41,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "elbow_L": {
+       "-25": {
+        "old": {
+         "step_px": 1.86,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.86,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 1.48,
+         "dent_px": 1.0,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.76,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "elbow_R": {
+       "-25": {
+        "old": {
+         "step_px": 1.9,
+         "dent_px": 1.0,
+         "lump_px": 1.41,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.94,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 1.86,
+         "dent_px": 1.0,
+         "lump_px": 1.41,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 1.78,
+         "dent_px": 1.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "head_neck": {
+       "-25": {
+        "old": {
+         "step_px": 3.56,
+         "dent_px": 2.0,
+         "lump_px": 4.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 2.59,
+         "dent_px": 1.41,
+         "lump_px": 1.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 3.37,
+         "dent_px": 4.0,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 3.66,
+         "dent_px": 2.83,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      },
+      "neck_base": {
+       "-25": {
+        "old": {
+         "step_px": 3.51,
+         "dent_px": 2.0,
+         "lump_px": 6.71,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 4.19,
+         "dent_px": 2.24,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       },
+       "+25": {
+        "old": {
+         "step_px": 3.88,
+         "dent_px": 9.43,
+         "lump_px": 4.12,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        },
+        "new": {
+         "step_px": 4.35,
+         "dent_px": 8.54,
+         "lump_px": 0.0,
+         "holes_seethrough_nearest": 0,
+         "holes_seethrough_bilinear": 0,
+         "holes_new_vs_rest_nearest": 0
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "live": {
+   "apose": {
+    "view": "apose",
+    "note": "live rig, nearest; BodyLean is +-8 deg (live limit), other joints +-25 deg; body-only renders for waist/hips/shoulders/elbows, full (with hair) for the neck",
+    "joints": {
+     "waist": {
+      "param": "BodyLean",
+      "pivot": [
+       681.5,
+       706.0
+      ],
+      "band_radius_px": 124,
+      "rest": {
+       "left": 1.0,
+       "left_y": 671,
+       "right": 1.0,
+       "right_y": 671
+      },
+      "BodyLean-1": {
+       "left": 4.0,
+       "left_y": 713,
+       "right": 2.0,
+       "right_y": 680
+      },
+      "BodyLean-1_vs_rest": {
+       "left": 3.0,
+       "left_y": 42,
+       "right": 1.0,
+       "right_y": 9
+      },
+      "BodyLean+1": {
+       "left": 2.0,
+       "left_y": 673,
+       "right": 4.0,
+       "right_y": 713
+      },
+      "BodyLean+1_vs_rest": {
+       "left": 1.0,
+       "left_y": 2,
+       "right": 3.0,
+       "right_y": 42
+      }
+     },
+     "hip_L": {
+      "param": "HipL",
+      "pivot": [
+       747.0,
+       792.5
+      ],
+      "band_radius_px": 93,
+      "rest": {
+       "dent_px": 1.0,
+       "notch_px": 12
+      },
+      "HipL-1": {
+       "dent_px": 1.41,
+       "notch_px": 40
+      },
+      "HipL-1_vs_rest": {
+       "dent_px": 0.41,
+       "notch_px": 28
+      },
+      "HipL+1": {
+       "dent_px": 1.0,
+       "notch_px": 13
+      },
+      "HipL+1_vs_rest": {
+       "dent_px": 0.0,
+       "notch_px": 1
+      }
+     },
+     "hip_R": {
+      "param": "HipR",
+      "pivot": [
+       618.0,
+       791.5
+      ],
+      "band_radius_px": 95,
+      "rest": {
+       "dent_px": 1.0,
+       "notch_px": 12
+      },
+      "HipR-1": {
+       "dent_px": 1.0,
+       "notch_px": 15
+      },
+      "HipR-1_vs_rest": {
+       "dent_px": 0.0,
+       "notch_px": 3
+      },
+      "HipR+1": {
+       "dent_px": 2.24,
+       "notch_px": 34
+      },
+      "HipR+1_vs_rest": {
+       "dent_px": 1.24,
+       "notch_px": 22
+      }
+     },
+     "shoulder_L": {
+      "param": "ShoulderL",
+      "pivot": [
+       822.0,
+       439.0
+      ],
+      "band_radius_px": 58,
+      "rest": {
+       "spikes": 2,
+       "max_dev_px": 1.74
+      },
+      "ShoulderL-1": {
+       "spikes": 0,
+       "max_dev_px": 1.43
+      },
+      "ShoulderL-1_vs_rest": {
+       "spikes": -2,
+       "max_dev_px": -0.31
+      },
+      "ShoulderL+1": {
+       "spikes": 2,
+       "max_dev_px": 1.86
+      },
+      "ShoulderL+1_vs_rest": {
+       "spikes": 0,
+       "max_dev_px": 0.12
+      }
+     },
+     "shoulder_R": {
+      "param": "ShoulderR",
+      "pivot": [
+       541.0,
+       439.0
+      ],
+      "band_radius_px": 58,
+      "rest": {
+       "spikes": 1,
+       "max_dev_px": 1.74
+      },
+      "ShoulderR-1": {
+       "spikes": 1,
+       "max_dev_px": 1.67
+      },
+      "ShoulderR-1_vs_rest": {
+       "spikes": 0,
+       "max_dev_px": -0.07
+      },
+      "ShoulderR+1": {
+       "spikes": 1,
+       "max_dev_px": 1.39
+      },
+      "ShoulderR+1_vs_rest": {
+       "spikes": 0,
+       "max_dev_px": -0.35
+      }
+     },
+     "elbow_L": {
+      "param": "ElbowL",
+      "pivot": [
+       925.5,
+       561.5
+      ],
+      "band_radius_px": 50,
+      "rest": {
+       "spikes": 0,
+       "max_dev_px": 0.6
+      },
+      "ElbowL-1": {
+       "spikes": 0,
+       "max_dev_px": 1.18
+      },
+      "ElbowL-1_vs_rest": {
+       "spikes": 0,
+       "max_dev_px": 0.58
+      },
+      "ElbowL+1": {
+       "spikes": 0,
+       "max_dev_px": 1.03
+      },
+      "ElbowL+1_vs_rest": {
+       "spikes": 0,
+       "max_dev_px": 0.43
+      }
+     },
+     "elbow_R": {
+      "param": "ElbowR",
+      "pivot": [
+       438.0,
+       563.0
+      ],
+      "band_radius_px": 50,
+      "rest": {
+       "spikes": 0,
+       "max_dev_px": 0.49
+      },
+      "ElbowR-1": {
+       "spikes": 1,
+       "max_dev_px": 1.23
+      },
+      "ElbowR-1_vs_rest": {
+       "spikes": 1,
+       "max_dev_px": 0.74
+      },
+      "ElbowR+1": {
+       "spikes": 1,
+       "max_dev_px": 1.35
+      },
+      "ElbowR+1_vs_rest": {
+       "spikes": 1,
+       "max_dev_px": 0.86
+      }
+     },
+     "head_neck": {
+      "param": "HeadTilt",
+      "pivot": [
+       681,
+       364
+      ],
+      "band_radius_px": 66,
+      "rest": {
+       "gap_px": 6,
+       "gap_width_px": 2.0
+      },
+      "HeadTilt-1": {
+       "gap_px": 13,
+       "gap_width_px": 2.0
+      },
+      "HeadTilt-1_vs_rest": {
+       "gap_px": 7,
+       "gap_width_px": 0.0
+      },
+      "HeadTilt+1": {
+       "gap_px": 20,
+       "gap_width_px": 2.8
+      },
+      "HeadTilt+1_vs_rest": {
+       "gap_px": 14,
+       "gap_width_px": 0.8
+      }
+     },
+     "head_nod": {
+      "param": "HeadNod",
+      "pivot": [
+       681,
+       364
+      ],
+      "band_radius_px": 66,
+      "rest": {
+       "gap_px": 6,
+       "gap_width_px": 2.0
+      },
+      "HeadNod-1": {
+       "gap_px": 4,
+       "gap_width_px": 2.0
+      },
+      "HeadNod-1_vs_rest": {
+       "gap_px": -2,
+       "gap_width_px": 0.0
+      },
+      "HeadNod+1": {
+       "gap_px": 19,
+       "gap_width_px": 4.0
+      },
+      "HeadNod+1_vs_rest": {
+       "gap_px": 13,
+       "gap_width_px": 2.0
+      }
+     }
+    }
+   }
+  }
+ },
+ "pass": true
+}

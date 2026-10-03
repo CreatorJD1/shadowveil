@@ -81,3 +81,17 @@ How the flags work:
 - **Limits:**
   - The sprites' `physicalLength` may be defined differently from the apose chain. All 8 come out at 144.7 view px vs 156.6, so check the definition before reading −12 px as real drift.
   - Generated diagonal body/turn frames other than hands are not covered yet.
+
+## Added Oct 3, 2026 (~04:30–04:45 PT)
+- **G2 chroma rule v2 (default)** `--chroma-rule v2|old`:
+  - Exact `#0000FF` always fails (`chroma_v2.key_exact`).
+  - A bluish px (old test: b > max(r,g)+60 and b > 120) is hers only if its RGB is in the allowlist. The allowlist is built from her palette-source art with the silhouette eroded 1 px, where key = alpha 0, exact key, or bluish connected to the border.
+  - A non-allowlisted px that exactly equals `views/<view>/base.png` at the same position counts as `frame_match_rest` (at rest), or as `frame_fringe` when posed. Neither one fails.
+  - `--chroma-rule old` restores the old bluish heuristic for comparison. Every file reports both `chroma_old_rule` and `chroma_v2{...}`.
+  - On the live rig (all 5 views) both rules give identical totals: live 0, staged 0, diagonals 1 (`hair/staged/diagonals/315/hair/strand_04.png`). See `out/leak_live_chroma_{old,v2}.json`.
+- **`--owner texel|layer`** (G1 isolation): the owner is the top-layer texel (default), or the part of the vertex's own triangle layer(s).
+- **`--bend-check`** (or `--gate bend` to run it alone): runs `rig/work/bend_check/bend_check.py`. It measures waist side-step, hip crease dent/notch, shoulder/elbow outline spikes and the head-neck gap:
+  - on Body's `diag_body` vs `diag_body_fix` (`--bend-angles 045,315`);
+  - on the live rig renders (`--bend-live apose`). `--bend-render PORT` re-renders them with `render_live.js` against a server you already run on PORT.
+  - It is informational and never changes PASS. Output goes to `rig/work/bend_check/`.
+- **Per-system dir overrides** `--hair-dir/--mouth-dir/--eyes-dir/--hands-dir/--body-dir DIR`.
