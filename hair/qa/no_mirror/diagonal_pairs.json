@@ -1,0 +1,27 @@
+{
+ "diagonals 045 vs flipped 315": {
+  "best_shift": 2,
+  "iou": 0.787,
+  "exact_rgba_on_overlap": 0.0017
+ },
+ "diagonals 135 vs flipped 225": {
+  "best_shift": -2,
+  "iou": 0.894,
+  "exact_rgba_on_overlap": 0.0108
+ },
+ "diagonals_v2 045 vs flipped 315": {
+  "best_shift": 2,
+  "iou": 0.787,
+  "exact_rgba_on_overlap": 0.0022
+ },
+ "diagonals_v2 135 vs flipped 225": {
+  "best_shift": -2,
+  "iou": 0.894,
+  "exact_rgba_on_overlap": 0.0111
+ },
+ "live left vs flipped live right (all hair parts)": {
+  "best_shift": 4,
+  "iou": 0.881,
+  "exact_rgba_on_overlap": 0.003
+ }
+}

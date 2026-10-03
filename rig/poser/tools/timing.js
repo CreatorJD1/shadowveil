@@ -1,0 +1,10 @@
+const puppeteer=require('/workspace/jt/node_modules/puppeteer-core');
+(async()=>{const b=await puppeteer.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox','--disable-dev-shm-usage'],headless:'new',protocolTimeout:900000});
+const pg=await b.newPage();await pg.setViewport({width:1600,height:1000});const errs=[];pg.on('console',m=>{if(m.type()==='error')errs.push(m.text())});pg.on('pageerror',e=>errs.push(e.message));
+const t0=Date.now();await pg.goto('http://127.0.0.1:8797/rig/poser.html',{waitUntil:'domcontentloaded'});await pg.waitForFunction('window.SVPoser&&SVPoser.ready',{timeout:900000,polling:1000});console.log('ready s',(Date.now()-t0)/1000);
+const r=await pg.evaluate(async()=>{const X=SVPoser,S=X.state;const cw=document.getElementById('rig').contentWindow;const o={};let t=performance.now();
+ cw.draw();o.draw=performance.now()-t;t=performance.now();const hp=cw.eval('headPose()');o.headPose=performance.now()-t;
+ const A=cw.makeAnim(1);t=performance.now();for(let i=0;i<10;i++){A.t=i/30;cw.stepHair(A,1/30)}o.stepHair10=performance.now()-t;
+ const c=cw.document.getElementById('c');t=performance.now();const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;await crypto.subtle.digest('SHA-256',d);o.hash=performance.now()-t;
+ t=performance.now();X.poseAt(1);o.poseAt=performance.now()-t;return o});
+console.log(JSON.stringify(r),errs);await b.close()})();

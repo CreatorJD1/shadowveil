@@ -1,0 +1,66 @@
+{
+ "angle": "045",
+ "frame": 33,
+ "despill": {
+  "hair_px_raw": 11689,
+  "blue_tinted_before": 3217,
+  "blue_tinted_after": 0,
+  "key_in_loops_px": 56,
+  "key_in_loops_left_opaque_after": 0,
+  "blue_tinted_before_body_metric": 1237
+ },
+ "parts": {
+  "hair_back": {
+   "px": 6637,
+   "layer": 100
+  },
+  "bun": {
+   "px": 8083,
+   "layer": 101
+  },
+  "hair_front": {
+   "px": 11280,
+   "layer": 600
+  },
+  "strand_03_tip": {
+   "px": 2204,
+   "layer": 607
+  },
+  "strand_03": {
+   "px": 142,
+   "layer": 608
+  },
+  "strand_04": {
+   "px": 335,
+   "layer": 610
+  },
+  "strand_06_tip": {
+   "px": 620,
+   "layer": 616
+  },
+  "strand_06": {
+   "px": 59,
+   "layer": 617
+  },
+  "extra_1": {
+   "px": 152,
+   "layer": 621
+  }
+ },
+ "hidden_or_merged_front_strands": [
+  "strand_01",
+  "strand_02",
+  "strand_05",
+  "strand_07"
+ ],
+ "rest_composite_vs_warp_px": 0,
+ "overlapping_part_px": 0,
+ "softness_aa_band_per_edge_px": {
+  "linear": 3.961,
+  "cubic(used)": 3.711,
+  "lanczos4": 3.732,
+  "nearest": 3.303,
+  "raw_frame_before_scale": 2.894,
+  "views_apose_base_png": 0.998
+ }
+}

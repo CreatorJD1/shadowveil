@@ -1,0 +1,5980 @@
+{
+  "schema": "linetone_snap/v1",
+  "project": "/workspace/shadowveil",
+  "target_rgb": [
+    13,
+    11,
+    29
+  ],
+  "views": {
+    "apose": {
+      "base_file": "views/apose/base.png",
+      "target_rgb": [
+        13,
+        11,
+        29
+      ],
+      "target_px_in_base": 0,
+      "dark_tone_rule": "opaque RGB colors with max(channel)<=40 and squared RGB distance to target<=25",
+      "existing_dark_line_tones_near_target": [
+        {
+          "rgb": [
+            12,
+            11,
+            29
+          ],
+          "count": 2,
+          "squared_distance": 1
+        },
+        {
+          "rgb": [
+            13,
+            10,
+            29
+          ],
+          "count": 2,
+          "squared_distance": 1
+        },
+        {
+          "rgb": [
+            13,
+            12,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 2
+        },
+        {
+          "rgb": [
+            14,
+            11,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 2
+        },
+        {
+          "rgb": [
+            12,
+            11,
+            27
+          ],
+          "count": 3,
+          "squared_distance": 5
+        },
+        {
+          "rgb": [
+            13,
+            10,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 5
+        },
+        {
+          "rgb": [
+            14,
+            9,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 5
+        },
+        {
+          "rgb": [
+            12,
+            9,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 6
+        },
+        {
+          "rgb": [
+            10,
+            11,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 9
+        },
+        {
+          "rgb": [
+            13,
+            11,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 9
+        },
+        {
+          "rgb": [
+            13,
+            8,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 10
+        },
+        {
+          "rgb": [
+            14,
+            12,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            15,
+            13,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 12
+        },
+        {
+          "rgb": [
+            10,
+            11,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 13
+        },
+        {
+          "rgb": [
+            13,
+            9,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 13
+        },
+        {
+          "rgb": [
+            11,
+            10,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            12,
+            9,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            12,
+            14,
+            27
+          ],
+          "count": 2,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            15,
+            14,
+            28
+          ],
+          "count": 3,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            13,
+            11,
+            25
+          ],
+          "count": 1,
+          "squared_distance": 16
+        },
+        {
+          "rgb": [
+            13,
+            11,
+            33
+          ],
+          "count": 1,
+          "squared_distance": 16
+        },
+        {
+          "rgb": [
+            9,
+            12,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            10,
+            9,
+            27
+          ],
+          "count": 2,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            12,
+            11,
+            25
+          ],
+          "count": 2,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            13,
+            15,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            15,
+            13,
+            26
+          ],
+          "count": 2,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            16,
+            9,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            13,
+            14,
+            32
+          ],
+          "count": 2,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            14,
+            10,
+            25
+          ],
+          "count": 1,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            14,
+            10,
+            33
+          ],
+          "count": 1,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            14,
+            12,
+            33
+          ],
+          "count": 1,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            10,
+            8,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 19
+        },
+        {
+          "rgb": [
+            12,
+            14,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 19
+        },
+        {
+          "rgb": [
+            14,
+            14,
+            26
+          ],
+          "count": 3,
+          "squared_distance": 19
+        },
+        {
+          "rgb": [
+            13,
+            15,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 20
+        },
+        {
+          "rgb": [
+            15,
+            11,
+            25
+          ],
+          "count": 3,
+          "squared_distance": 20
+        },
+        {
+          "rgb": [
+            9,
+            12,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            9,
+            12,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            11,
+            7,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            11,
+            12,
+            33
+          ],
+          "count": 2,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            12,
+            7,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            17,
+            13,
+            28
+          ],
+          "count": 2,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            10,
+            13,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 22
+        },
+        {
+          "rgb": [
+            16,
+            13,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 22
+        },
+        {
+          "rgb": [
+            9,
+            11,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 25
+        },
+        {
+          "rgb": [
+            16,
+            15,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 25
+        }
+      ],
+      "nearest_squared_distance_all_opaque_colors": 1,
+      "nearest_tones_at_minimum_distance_all_opaque_colors": [
+        {
+          "rgb": [
+            12,
+            11,
+            29
+          ],
+          "count": 2,
+          "squared_distance": 1
+        },
+        {
+          "rgb": [
+            13,
+            10,
+            29
+          ],
+          "count": 2,
+          "squared_distance": 1
+        }
+      ],
+      "tone_used": [
+        12,
+        11,
+        29
+      ],
+      "tone_used_squared_distance": 1
+    },
+    "tpose": {
+      "base_file": "views/tpose/base.png",
+      "target_rgb": [
+        13,
+        11,
+        29
+      ],
+      "target_px_in_base": 0,
+      "dark_tone_rule": "opaque RGB colors with max(channel)<=40 and squared RGB distance to target<=25",
+      "existing_dark_line_tones_near_target": [
+        {
+          "rgb": [
+            12,
+            12,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 2
+        },
+        {
+          "rgb": [
+            13,
+            12,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 2
+        },
+        {
+          "rgb": [
+            14,
+            12,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 3
+        },
+        {
+          "rgb": [
+            11,
+            10,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 5
+        },
+        {
+          "rgb": [
+            15,
+            11,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 5
+        },
+        {
+          "rgb": [
+            12,
+            9,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 6
+        },
+        {
+          "rgb": [
+            13,
+            12,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 10
+        },
+        {
+          "rgb": [
+            14,
+            12,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            11,
+            9,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 12
+        },
+        {
+          "rgb": [
+            15,
+            9,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 12
+        },
+        {
+          "rgb": [
+            13,
+            8,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 13
+        },
+        {
+          "rgb": [
+            16,
+            11,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 13
+        },
+        {
+          "rgb": [
+            10,
+            13,
+            28
+          ],
+          "count": 2,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            11,
+            14,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            12,
+            8,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            15,
+            14,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            15,
+            14,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            13,
+            7,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 16
+        },
+        {
+          "rgb": [
+            13,
+            7,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            15,
+            8,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            17,
+            10,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            17,
+            12,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            16,
+            12,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 19
+        },
+        {
+          "rgb": [
+            13,
+            7,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 20
+        },
+        {
+          "rgb": [
+            9,
+            9,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            11,
+            10,
+            25
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            14,
+            15,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            10,
+            8,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 22
+        },
+        {
+          "rgb": [
+            10,
+            14,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 22
+        },
+        {
+          "rgb": [
+            16,
+            9,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 22
+        },
+        {
+          "rgb": [
+            15,
+            7,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 24
+        },
+        {
+          "rgb": [
+            13,
+            11,
+            24
+          ],
+          "count": 1,
+          "squared_distance": 25
+        }
+      ],
+      "nearest_squared_distance_all_opaque_colors": 2,
+      "nearest_tones_at_minimum_distance_all_opaque_colors": [
+        {
+          "rgb": [
+            12,
+            12,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 2
+        },
+        {
+          "rgb": [
+            13,
+            12,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 2
+        }
+      ],
+      "tone_used": [
+        12,
+        12,
+        29
+      ],
+      "tone_used_squared_distance": 2
+    },
+    "left": {
+      "base_file": "views/left/base.png",
+      "target_rgb": [
+        13,
+        11,
+        29
+      ],
+      "target_px_in_base": 0,
+      "dark_tone_rule": "opaque RGB colors with max(channel)<=40 and squared RGB distance to target<=25",
+      "existing_dark_line_tones_near_target": [
+        {
+          "rgb": [
+            12,
+            10,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 3
+        },
+        {
+          "rgb": [
+            13,
+            13,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 4
+        },
+        {
+          "rgb": [
+            13,
+            14,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 9
+        },
+        {
+          "rgb": [
+            15,
+            13,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 9
+        },
+        {
+          "rgb": [
+            10,
+            11,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 10
+        },
+        {
+          "rgb": [
+            10,
+            12,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            12,
+            12,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            12,
+            9,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            9,
+            11,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            9,
+            11,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            13,
+            12,
+            33
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            12,
+            12,
+            25
+          ],
+          "count": 1,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            13,
+            14,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 18
+        },
+        {
+          "rgb": [
+            10,
+            14,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 19
+        },
+        {
+          "rgb": [
+            9,
+            11,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 20
+        },
+        {
+          "rgb": [
+            15,
+            15,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            17,
+            9,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            11,
+            14,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 22
+        },
+        {
+          "rgb": [
+            11,
+            13,
+            25
+          ],
+          "count": 1,
+          "squared_distance": 24
+        },
+        {
+          "rgb": [
+            8,
+            11,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 25
+        },
+        {
+          "rgb": [
+            13,
+            8,
+            33
+          ],
+          "count": 1,
+          "squared_distance": 25
+        },
+        {
+          "rgb": [
+            13,
+            11,
+            24
+          ],
+          "count": 1,
+          "squared_distance": 25
+        },
+        {
+          "rgb": [
+            16,
+            11,
+            25
+          ],
+          "count": 1,
+          "squared_distance": 25
+        }
+      ],
+      "nearest_squared_distance_all_opaque_colors": 3,
+      "nearest_tones_at_minimum_distance_all_opaque_colors": [
+        {
+          "rgb": [
+            12,
+            10,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 3
+        }
+      ],
+      "tone_used": [
+        12,
+        10,
+        28
+      ],
+      "tone_used_squared_distance": 3
+    },
+    "right": {
+      "base_file": "views/right/base.png",
+      "target_rgb": [
+        13,
+        11,
+        29
+      ],
+      "target_px_in_base": 0,
+      "dark_tone_rule": "opaque RGB colors with max(channel)<=40 and squared RGB distance to target<=25",
+      "existing_dark_line_tones_near_target": [
+        {
+          "rgb": [
+            11,
+            11,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 5
+        },
+        {
+          "rgb": [
+            14,
+            13,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 6
+        },
+        {
+          "rgb": [
+            12,
+            13,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 9
+        },
+        {
+          "rgb": [
+            12,
+            8,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            12,
+            14,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            14,
+            14,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            11,
+            11,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 13
+        },
+        {
+          "rgb": [
+            15,
+            14,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 13
+        },
+        {
+          "rgb": [
+            15,
+            14,
+            30
+          ],
+          "count": 2,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            9,
+            11,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 16
+        },
+        {
+          "rgb": [
+            11,
+            9,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 17
+        },
+        {
+          "rgb": [
+            10,
+            14,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 19
+        },
+        {
+          "rgb": [
+            14,
+            13,
+            33
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            15,
+            15,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            15,
+            15,
+            30
+          ],
+          "count": 1,
+          "squared_distance": 21
+        },
+        {
+          "rgb": [
+            11,
+            15,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 24
+        },
+        {
+          "rgb": [
+            8,
+            11,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 25
+        },
+        {
+          "rgb": [
+            10,
+            11,
+            33
+          ],
+          "count": 1,
+          "squared_distance": 25
+        }
+      ],
+      "nearest_squared_distance_all_opaque_colors": 5,
+      "nearest_tones_at_minimum_distance_all_opaque_colors": [
+        {
+          "rgb": [
+            11,
+            11,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 5
+        }
+      ],
+      "tone_used": [
+        11,
+        11,
+        28
+      ],
+      "tone_used_squared_distance": 5
+    },
+    "back": {
+      "base_file": "views/back/base.png",
+      "target_rgb": [
+        13,
+        11,
+        29
+      ],
+      "target_px_in_base": 0,
+      "dark_tone_rule": "opaque RGB colors with max(channel)<=40 and squared RGB distance to target<=25",
+      "existing_dark_line_tones_near_target": [
+        {
+          "rgb": [
+            11,
+            12,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 6
+        },
+        {
+          "rgb": [
+            12,
+            12,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 6
+        },
+        {
+          "rgb": [
+            10,
+            10,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 11
+        },
+        {
+          "rgb": [
+            11,
+            9,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 12
+        },
+        {
+          "rgb": [
+            12,
+            13,
+            26
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            12,
+            14,
+            27
+          ],
+          "count": 1,
+          "squared_distance": 14
+        },
+        {
+          "rgb": [
+            9,
+            11,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 25
+        },
+        {
+          "rgb": [
+            13,
+            15,
+            32
+          ],
+          "count": 1,
+          "squared_distance": 25
+        },
+        {
+          "rgb": [
+            16,
+            15,
+            29
+          ],
+          "count": 1,
+          "squared_distance": 25
+        }
+      ],
+      "nearest_squared_distance_all_opaque_colors": 6,
+      "nearest_tones_at_minimum_distance_all_opaque_colors": [
+        {
+          "rgb": [
+            11,
+            12,
+            28
+          ],
+          "count": 1,
+          "squared_distance": 6
+        },
+        {
+          "rgb": [
+            12,
+            12,
+            31
+          ],
+          "count": 1,
+          "squared_distance": 6
+        }
+      ],
+      "tone_used": [
+        12,
+        12,
+        31
+      ],
+      "tone_used_squared_distance": 6
+    }
+  },
+  "live_files": [
+    {
+      "view": "apose",
+      "source": "views/apose/base_body.png",
+      "output": "body_tools/work/linetone_snap/live/apose/base_body.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 45,
+      "source_sha256_after": "e17587c440bfc12a9eae469f23d8d7e7278e0a5e2aac8554381de90b3012fae2",
+      "changed_px": 45,
+      "expected_changed_px": 45,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "apose",
+      "source": "views/apose/base_body_preview_head.png",
+      "output": "body_tools/work/linetone_snap/live/apose/base_body_preview_head.png",
+      "mode": "RGBA",
+      "size": [
+        284,
+        353
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "60eba67f5b73c155ba083db0255c007ca2351ef39a7bd854eed7b90083342997",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "apose",
+      "source": "views/apose/base_body_skin.png",
+      "output": "body_tools/work/linetone_snap/live/apose/base_body_skin.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 45,
+      "source_sha256_after": "99e2f96501e6ea8f8d11337ef58ce9fe9d78bb604a02b55c7a01bb6fb892118a",
+      "changed_px": 45,
+      "expected_changed_px": 45,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "apose",
+      "source": "views/apose/base_body_underlay.png",
+      "output": "body_tools/work/linetone_snap/live/apose/base_body_underlay.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "f022d00c0fe6fc7881ab7f8c5eb196acc08f4f50b20667b476b732e01bf543a4",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "tpose",
+      "source": "views/tpose/base_body.png",
+      "output": "body_tools/work/linetone_snap/live/tpose/base_body.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 35,
+      "source_sha256_after": "579d492684849548c3a39be9938bd05a7d55bc531d39fc0f2b9b15ab24b9e4b3",
+      "changed_px": 35,
+      "expected_changed_px": 35,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "tpose",
+      "source": "views/tpose/base_body_preview_head.png",
+      "output": "body_tools/work/linetone_snap/live/tpose/base_body_preview_head.png",
+      "mode": "RGBA",
+      "size": [
+        273,
+        342
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "739106555560ec6948c8c5201b22ab01b5f653e2b0b38442810f357a0a36e312",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "tpose",
+      "source": "views/tpose/base_body_skin.png",
+      "output": "body_tools/work/linetone_snap/live/tpose/base_body_skin.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 35,
+      "source_sha256_after": "fabb97fa056f5612d46007be2d5557dd76d0d50855bf2a92f966ce3ba297281d",
+      "changed_px": 35,
+      "expected_changed_px": 35,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "tpose",
+      "source": "views/tpose/base_body_underlay.png",
+      "output": "body_tools/work/linetone_snap/live/tpose/base_body_underlay.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "6c3cd57979a6a709d6e6760006befc764d4c0f475d848f7fd9f074bcc1665755",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "left",
+      "source": "views/left/base_body.png",
+      "output": "body_tools/work/linetone_snap/live/left/base_body.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "4e1f4be84ecea41f39b642bdc60208fda5a31bc5f184fc865c56f6161c435f4d",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "left",
+      "source": "views/left/base_body_preview_hand.png",
+      "output": "body_tools/work/linetone_snap/live/left/base_body_preview_hand.png",
+      "mode": "RGBA",
+      "size": [
+        600,
+        600
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "6291ef11d3cba4bd5ee18dfb24bb2cca11ba4bdbb5cd1c7bf523ecf594939297",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "left",
+      "source": "views/left/base_body_preview_head.png",
+      "output": "body_tools/work/linetone_snap/live/left/base_body_preview_head.png",
+      "mode": "RGBA",
+      "size": [
+        304,
+        327
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "05a87a2636ed4428112f011e42e05df02212602e566b36392daffcb6ad839d5a",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "left",
+      "source": "views/left/base_body_skin.png",
+      "output": "body_tools/work/linetone_snap/live/left/base_body_skin.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "4e1f4be84ecea41f39b642bdc60208fda5a31bc5f184fc865c56f6161c435f4d",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "left",
+      "source": "views/left/base_body_underlay.png",
+      "output": "body_tools/work/linetone_snap/live/left/base_body_underlay.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "5241a24fedc07e373eaba75101b4abd088430c096496ee0d276fd86d35d290ba",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "136cfd88b812c931cb808c8333ac26fe088689d914420634012168f5c9563219",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_preview_hand.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_preview_hand.png",
+      "mode": "RGBA",
+      "size": [
+        600,
+        600
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "121797f2126a2073bb40c67e0a91496e7b6ef5064c0d73ff6bff1515e2bf4309",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_preview_head.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_preview_head.png",
+      "mode": "RGBA",
+      "size": [
+        319,
+        324
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "a403a4e0dc18b15b23f3107c08f038d0b02fd4833b9103f7da963499580972dc",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_skin.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_skin.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "136cfd88b812c931cb808c8333ac26fe088689d914420634012168f5c9563219",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_underlay.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_underlay.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 137,
+      "source_sha256_after": "61a3fc435022c9bc6e8e475e4f385e4ef714bb1b6dcbbbe52502a9a330bfe6ef",
+      "changed_px": 137,
+      "expected_changed_px": 137,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_underlay_v0.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_underlay_v0.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 143,
+      "source_sha256_after": "257eb1c2cfe9a26c47b2280c0cd66d3be1fc18baf6b67113aa61dac7ed2fc377",
+      "changed_px": 143,
+      "expected_changed_px": 143,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_underlay_vA.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_underlay_vA.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 133,
+      "source_sha256_after": "1b46f3a68fa3d2feba6e900e18b836076d91ee572a670532f1fe26af34a8a806",
+      "changed_px": 133,
+      "expected_changed_px": 133,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_underlay_vB.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_underlay_vB.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 133,
+      "source_sha256_after": "1b46f3a68fa3d2feba6e900e18b836076d91ee572a670532f1fe26af34a8a806",
+      "changed_px": 133,
+      "expected_changed_px": 133,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_underlay_vC.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_underlay_vC.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 143,
+      "source_sha256_after": "257eb1c2cfe9a26c47b2280c0cd66d3be1fc18baf6b67113aa61dac7ed2fc377",
+      "changed_px": 143,
+      "expected_changed_px": 143,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "right",
+      "source": "views/right/base_body_underlay_vcur.png",
+      "output": "body_tools/work/linetone_snap/live/right/base_body_underlay_vcur.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 137,
+      "source_sha256_after": "61a3fc435022c9bc6e8e475e4f385e4ef714bb1b6dcbbbe52502a9a330bfe6ef",
+      "changed_px": 137,
+      "expected_changed_px": 137,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "back",
+      "source": "views/back/base_body.png",
+      "output": "body_tools/work/linetone_snap/live/back/base_body.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "source_sha256_after": "7dbb4ce56dbc2095604cae220f05c760d48c63ac1b8adbebe3113a35526c5180",
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "back",
+      "source": "views/back/base_body_preview_head.png",
+      "output": "body_tools/work/linetone_snap/live/back/base_body_preview_head.png",
+      "mode": "RGBA",
+      "size": [
+        273,
+        331
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "6eb5bfec341650cb214345aed7f48760d01d26b866795b351b8b5e67ebc53635",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "back",
+      "source": "views/back/base_body_skin.png",
+      "output": "body_tools/work/linetone_snap/live/back/base_body_skin.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "source_sha256_after": "b363206108d26978dedb683947cb442e0fe24083a76a7b40719d5e136d139f00",
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    },
+    {
+      "view": "back",
+      "source": "views/back/base_body_underlay.png",
+      "output": "body_tools/work/linetone_snap/live/back/base_body_underlay.png",
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "source_sha256_after": "a953019cc9ac5cc825c754cbd150c03d23347272e84c50fdc9f246df6cd726c8",
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true,
+      "source_untouched": true
+    }
+  ],
+  "staged_files": [
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/face_lock_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/face_lock_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/forehead_clean_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/forehead_clean_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/forehead_clean_zone.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/forehead_clean_zone.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/hair_handoff_px_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/hair_handoff_px_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/hair_mask_part_union_visible.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/hair_mask_part_union_visible.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/hair_mask_residual_specks.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/hair_mask_residual_specks.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/hair_mask_residual_specks_fringe.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/hair_mask_residual_specks_fringe.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/hair_mask_used.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/hair_mask_used.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/hairless_apose.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/hairless_apose.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 319,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 319,
+      "expected_changed_px": 319,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/hand_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/hand_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/head_body_region.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/head_body_region.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/live_patch_staged/pre_linetone_snap/base_body.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 45,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 45,
+      "expected_changed_px": 45,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/live_patch_staged/base_body_skin.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/live_patch_staged/pre_linetone_snap/base_body_skin.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 45,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 45,
+      "expected_changed_px": 45,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/foot_L.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/foot_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 22,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 22,
+      "expected_changed_px": 22,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/foot_R.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/foot_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 27,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 27,
+      "expected_changed_px": 27,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/forearm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/forearm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 18,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 18,
+      "expected_changed_px": 18,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/forearm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/forearm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 18,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 18,
+      "expected_changed_px": 18,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/head.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/head.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 319,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 319,
+      "expected_changed_px": 319,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/neck.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/neck.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 96,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 96,
+      "expected_changed_px": 96,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/pelvis.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/pelvis.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/shin_L.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/shin_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/shin_R.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/shin_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/thigh_L.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/thigh_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 59,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 59,
+      "expected_changed_px": 59,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/thigh_R.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/thigh_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 58,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 58,
+      "expected_changed_px": 58,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/torso.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/torso.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 200,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 200,
+      "expected_changed_px": 200,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/upper_arm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/upper_arm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 23,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 23,
+      "expected_changed_px": 23,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/pieces/upper_arm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pieces/pre_linetone_snap/upper_arm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 24,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 24,
+      "expected_changed_px": 24,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/rest_recomposite_diff.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/rest_recomposite_diff.png",
+      "backup_identical": true,
+      "mode": "RGB",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/wrist_line_L.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/wrist_line_L.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "apose",
+      "file": "body_tools/work/hairless_division_staged/apose/wrist_line_R.png",
+      "backup": "body_tools/work/hairless_division_staged/apose/pre_linetone_snap/wrist_line_R.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        11,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/face_lock_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/face_lock_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/forehead_clean_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/forehead_clean_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/forehead_clean_zone.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/forehead_clean_zone.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/hair_handoff_px_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/hair_handoff_px_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/hair_mask_part_union_visible.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/hair_mask_part_union_visible.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/hair_mask_residual_specks_fringe.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/hair_mask_residual_specks_fringe.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/hair_mask_used.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/hair_mask_used.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/hairless_back.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/hairless_back.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 308,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 308,
+      "expected_changed_px": 308,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/hand_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/hand_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/head_body_region.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/head_body_region.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/kept_ink_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/kept_ink_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/live_patch_staged/base_body.png",
+      "backup": "body_tools/work/hairless_division_staged/back/live_patch_staged/pre_linetone_snap/base_body.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/live_patch_staged/base_body_skin.png",
+      "backup": "body_tools/work/hairless_division_staged/back/live_patch_staged/pre_linetone_snap/base_body_skin.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/foot_L.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/foot_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 38,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 38,
+      "expected_changed_px": 38,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/foot_R.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/foot_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 36,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 36,
+      "expected_changed_px": 36,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/forearm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/forearm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 29,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 29,
+      "expected_changed_px": 29,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/forearm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/forearm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 32,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 32,
+      "expected_changed_px": 32,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/head.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/head.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 308,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 308,
+      "expected_changed_px": 308,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/neck.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/neck.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 127,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 127,
+      "expected_changed_px": 127,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/pelvis.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/pelvis.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/shin_L.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/shin_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/shin_R.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/shin_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 33,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 33,
+      "expected_changed_px": 33,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/thigh_L.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/thigh_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 77,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 77,
+      "expected_changed_px": 77,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/thigh_R.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/thigh_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 67,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 67,
+      "expected_changed_px": 67,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/torso.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/torso.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 213,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 213,
+      "expected_changed_px": 213,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/upper_arm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/upper_arm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 23,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 23,
+      "expected_changed_px": 23,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/pieces/upper_arm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pieces/pre_linetone_snap/upper_arm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 25,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 25,
+      "expected_changed_px": 25,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/rest_recomposite_diff.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/rest_recomposite_diff.png",
+      "backup_identical": true,
+      "mode": "RGB",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/wrist_line_L.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/wrist_line_L.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "back",
+      "file": "body_tools/work/hairless_division_staged/back/wrist_line_R.png",
+      "backup": "body_tools/work/hairless_division_staged/back/pre_linetone_snap/wrist_line_R.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/face_lock_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/face_lock_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/forehead_clean_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/forehead_clean_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/forehead_clean_zone.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/forehead_clean_zone.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/hair_handoff_px_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/hair_handoff_px_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/hair_mask_part_union_visible.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/hair_mask_part_union_visible.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/hair_mask_residual_specks_fringe.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/hair_mask_residual_specks_fringe.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/hair_mask_used.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/hair_mask_used.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/hairless_left.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/hairless_left.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 476,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 476,
+      "expected_changed_px": 476,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/hand_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/hand_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/head_body_region.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/head_body_region.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/kept_ink_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/kept_ink_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/live_patch_staged/base_body.png",
+      "backup": "body_tools/work/hairless_division_staged/left/live_patch_staged/pre_linetone_snap/base_body.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/live_patch_staged/base_body_skin.png",
+      "backup": "body_tools/work/hairless_division_staged/left/live_patch_staged/pre_linetone_snap/base_body_skin.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/foot_L.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/foot_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 60,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 60,
+      "expected_changed_px": 60,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/forearm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/forearm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 26,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 26,
+      "expected_changed_px": 26,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/head.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/head.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 476,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 476,
+      "expected_changed_px": 476,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/neck.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/neck.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 254,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 254,
+      "expected_changed_px": 254,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/pelvis.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/pelvis.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/shin_L.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/shin_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 38,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 38,
+      "expected_changed_px": 38,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/thigh_L.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/thigh_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 69,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 69,
+      "expected_changed_px": 69,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/torso.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/torso.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 1126,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 1126,
+      "expected_changed_px": 1126,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/pieces/upper_arm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pieces/pre_linetone_snap/upper_arm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/rest_recomposite_diff.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/rest_recomposite_diff.png",
+      "backup_identical": true,
+      "mode": "RGB",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "left",
+      "file": "body_tools/work/hairless_division_staged/left/wrist_line_L.png",
+      "backup": "body_tools/work/hairless_division_staged/left/pre_linetone_snap/wrist_line_L.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        10,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/face_lock_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/face_lock_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/forehead_clean_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/forehead_clean_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/forehead_clean_zone.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/forehead_clean_zone.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/hair_handoff_px_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/hair_handoff_px_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/hair_mask_part_union_visible.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/hair_mask_part_union_visible.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/hair_mask_residual_specks_fringe.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/hair_mask_residual_specks_fringe.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/hair_mask_used.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/hair_mask_used.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/hairless_right.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/hairless_right.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 465,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 465,
+      "expected_changed_px": 465,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/hand_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/hand_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/head_body_region.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/head_body_region.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/kept_ink_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/kept_ink_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/live_patch_staged/base_body.png",
+      "backup": "body_tools/work/hairless_division_staged/right/live_patch_staged/pre_linetone_snap/base_body.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/live_patch_staged/base_body_skin.png",
+      "backup": "body_tools/work/hairless_division_staged/right/live_patch_staged/pre_linetone_snap/base_body_skin.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/foot_R.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/foot_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 60,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 60,
+      "expected_changed_px": 60,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/forearm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/forearm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 27,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 27,
+      "expected_changed_px": 27,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/head.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/head.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 465,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 465,
+      "expected_changed_px": 465,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/neck.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/neck.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 177,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 177,
+      "expected_changed_px": 177,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/pelvis.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/pelvis.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/shin_R.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/shin_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 46,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 46,
+      "expected_changed_px": 46,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/thigh_R.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/thigh_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 110,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 110,
+      "expected_changed_px": 110,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/torso.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/torso.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 1023,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 1023,
+      "expected_changed_px": 1023,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/pieces/upper_arm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pieces/pre_linetone_snap/upper_arm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/rest_recomposite_diff.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/rest_recomposite_diff.png",
+      "backup_identical": true,
+      "mode": "RGB",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "right",
+      "file": "body_tools/work/hairless_division_staged/right/wrist_line_R.png",
+      "backup": "body_tools/work/hairless_division_staged/right/pre_linetone_snap/wrist_line_R.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/face_lock_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/face_lock_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/forehead_clean_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/forehead_clean_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/forehead_clean_zone.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/forehead_clean_zone.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/hair_handoff_px_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/hair_handoff_px_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/hair_mask_part_union_visible.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/hair_mask_part_union_visible.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/hair_mask_residual_specks_fringe.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/hair_mask_residual_specks_fringe.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/hair_mask_used.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/hair_mask_used.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/hairless_tpose.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/hairless_tpose.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 278,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 278,
+      "expected_changed_px": 278,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/hand_mask.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/hand_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/head_body_region.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/head_body_region.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/live_patch_staged/pre_linetone_snap/base_body.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 35,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 35,
+      "expected_changed_px": 35,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body_skin.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/live_patch_staged/pre_linetone_snap/base_body_skin.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 35,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 35,
+      "expected_changed_px": 35,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/foot_L.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/foot_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 30,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 30,
+      "expected_changed_px": 30,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/foot_R.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/foot_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 33,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 33,
+      "expected_changed_px": 33,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/forearm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/forearm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 23,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 23,
+      "expected_changed_px": 23,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/forearm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/forearm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 21,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 21,
+      "expected_changed_px": 21,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/head.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/head.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 278,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 278,
+      "expected_changed_px": 278,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/neck.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/neck.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 153,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 153,
+      "expected_changed_px": 153,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/pelvis.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/pelvis.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/shin_L.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/shin_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 37,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 37,
+      "expected_changed_px": 37,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/shin_R.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/shin_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 31,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 31,
+      "expected_changed_px": 31,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/thigh_L.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/thigh_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 65,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 65,
+      "expected_changed_px": 65,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/thigh_R.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/thigh_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 75,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 75,
+      "expected_changed_px": 75,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/torso.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/torso.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 238,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 238,
+      "expected_changed_px": 238,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/upper_arm_L.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/upper_arm_L.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 32,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 32,
+      "expected_changed_px": 32,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/pieces/upper_arm_R.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pieces/pre_linetone_snap/upper_arm_R.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 32,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 32,
+      "expected_changed_px": 32,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/rest_recomposite_diff.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/rest_recomposite_diff.png",
+      "backup_identical": true,
+      "mode": "RGB",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/wrist_line_L.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/wrist_line_L.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "hairless_division_staged",
+      "view": "tpose",
+      "file": "body_tools/work/hairless_division_staged/tpose/wrist_line_R.png",
+      "backup": "body_tools/work/hairless_division_staged/tpose/pre_linetone_snap/wrist_line_R.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        29
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "regen_staged",
+      "view": "right",
+      "file": "body_tools/work/regen_staged/spot1_right_hip_armpit/base_body_underlay_handtrim.png",
+      "backup": "body_tools/work/regen_staged/spot1_right_hip_armpit/pre_linetone_snap/base_body_underlay_handtrim.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 113,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 113,
+      "expected_changed_px": 113,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "regen_staged",
+      "view": "right",
+      "file": "body_tools/work/regen_staged/spot1_right_hip_armpit/mask.png",
+      "backup": "body_tools/work/regen_staged/spot1_right_hip_armpit/pre_linetone_snap/mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        11,
+        11,
+        28
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "regen_staged",
+      "view": null,
+      "file": "body_tools/work/regen_staged/spot2_crotch_notch_sheet.png",
+      "backup": "body_tools/work/regen_staged/pre_linetone_snap/spot2_crotch_notch_sheet.png",
+      "backup_identical": true,
+      "mode": "RGB",
+      "size": [
+        1340,
+        820
+      ],
+      "target_px_before": 0,
+      "replacement_tone": null,
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "regen_staged",
+      "view": "back",
+      "file": "body_tools/work/regen_staged/spot4_seam_holes/back_mask.png",
+      "backup": "body_tools/work/regen_staged/spot4_seam_holes/pre_linetone_snap/back_mask.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "regen_staged",
+      "view": "back",
+      "file": "body_tools/work/regen_staged/spot4_seam_holes/back_thigh_L_candidate.png",
+      "backup": "body_tools/work/regen_staged/spot4_seam_holes/pre_linetone_snap/back_thigh_L_candidate.png",
+      "backup_identical": true,
+      "mode": "RGBA",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 77,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 77,
+      "expected_changed_px": 77,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    },
+    {
+      "root": "regen_staged",
+      "view": "back",
+      "file": "body_tools/work/regen_staged/spot4_seam_holes/tpose_mask_REJECTED_line_lock.png",
+      "backup": "body_tools/work/regen_staged/spot4_seam_holes/pre_linetone_snap/tpose_mask_REJECTED_line_lock.png",
+      "backup_identical": true,
+      "mode": "L",
+      "size": [
+        1365,
+        1739
+      ],
+      "target_px_before": 0,
+      "replacement_tone": [
+        12,
+        12,
+        31
+      ],
+      "changed_px": 0,
+      "expected_changed_px": 0,
+      "changed_equals_count": true,
+      "unexpected_pixel_changes": 0,
+      "wrong_replacement_pixels": 0,
+      "alpha_identical": true,
+      "remaining_target_px": 0,
+      "verified": true
+    }
+  ],
+  "skipped_staged_pngs": [
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/ear_brow_zoom_before_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/forehead_zoom_before_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/foot_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/foot_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/forearm_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/forearm_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/head.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/neck.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/pelvis.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/shin_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/shin_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/thigh_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/thigh_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/torso.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/upper_arm_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/pieces_pre_headgroup/upper_arm_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/sheet_hairless_vs_original.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/sheet_headgroup_neck_before_after.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/sheet_joint_test_25_bilinear.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/sheet_joint_test_25_nearest.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/sheet_parts_exploded.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/sheet_parts_exploded_inplace.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/temple_L_lock_overlay_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/temple_R_lock_overlay_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/apose/temple_zoom_before_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/head_ears_nape_zoom_before_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/foot_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/foot_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/forearm_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/forearm_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/head.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/neck.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/pelvis.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/shin_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/shin_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/thigh_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/thigh_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/torso.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/upper_arm_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/pieces_pre_headgroup/upper_arm_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/sheet_hairless_vs_original.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/sheet_headgroup_neck_before_after.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/sheet_joint_test_25_bilinear.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/sheet_joint_test_25_nearest.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/sheet_parts_exploded.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/back/sheet_parts_exploded_inplace.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/forehead_temple_ear_zoom_before_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/foot_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/forearm_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/head.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/neck.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/pelvis.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/shin_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/thigh_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/torso.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/pieces_pre_headgroup/upper_arm_L.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/sheet_hairless_vs_original.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/sheet_headgroup_neck_before_after.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/sheet_joint_test_25_bilinear.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/sheet_joint_test_25_nearest.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/sheet_parts_exploded.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/left/sheet_parts_exploded_inplace.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/forehead_temple_ear_zoom_before_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/foot_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/forearm_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/head.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/neck.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/pelvis.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/shin_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/thigh_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/torso.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/pieces_pre_headgroup/upper_arm_R.png",
+      "reason": "pre_backup"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/sheet_hairless_vs_original.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/sheet_headgroup_neck_before_after.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/sheet_joint_test_25_bilinear.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/sheet_joint_test_25_nearest.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/sheet_parts_exploded.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/right/sheet_parts_exploded_inplace.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/tpose/forehead_temple_ear_zoom_before_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/tpose/sheet_hairless_vs_original.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/tpose/sheet_joint_test_25_bilinear.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/tpose/sheet_joint_test_25_nearest.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/tpose/sheet_parts_exploded.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/hairless_division_staged/tpose/sheet_parts_exploded_inplace.png",
+      "reason": "sheet"
+    },
+    {
+      "file": "body_tools/work/regen_staged/spot4_seam_holes/back_after.png",
+      "reason": "before_after"
+    },
+    {
+      "file": "body_tools/work/regen_staged/spot4_seam_holes/back_before.png",
+      "reason": "before_after"
+    }
+  ],
+  "summary": {
+    "live_file_count": 27,
+    "staged_file_count": 143,
+    "skipped_staged_png_count": 86,
+    "live_target_px_total": 1046,
+    "staged_target_px_total": 9223,
+    "all_live_verified": true,
+    "all_staged_verified": true
+  }
+}

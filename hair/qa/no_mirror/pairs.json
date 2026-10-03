@@ -1,0 +1,518 @@
+{
+ "parts": 153,
+ "pairs_tested": 400,
+ "top": [
+  {
+   "a": "hair/staged/diagonals/225/hair/bun.png",
+   "b": "hair/staged/diagonals/225/hair/bun.png",
+   "iou": 1.0,
+   "exact": 0.0153
+  },
+  {
+   "a": "hair/staged/diagonals/135/hair/bun.png",
+   "b": "hair/staged/diagonals/135/hair/bun.png",
+   "iou": 0.9985,
+   "exact": 0.0158
+  },
+  {
+   "a": "hair/staged/diagonals/045/hair/bun.png",
+   "b": "hair/staged/diagonals/045/hair/bun.png",
+   "iou": 0.9823,
+   "exact": 0.0129
+  },
+  {
+   "a": "hair/staged/diagonals/135/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "iou": 0.9732,
+   "exact": 0.0157
+  },
+  {
+   "a": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "b": "hair/staged/diagonals/135/hair/bun.png",
+   "iou": 0.9732,
+   "exact": 0.0157
+  },
+  {
+   "a": "hair/staged/diagonals/225/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "iou": 0.9653,
+   "exact": 0.0146
+  },
+  {
+   "a": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "b": "hair/staged/diagonals/225/hair/bun.png",
+   "iou": 0.9653,
+   "exact": 0.0146
+  },
+  {
+   "a": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "iou": 0.9478,
+   "exact": 0.0172
+  },
+  {
+   "a": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "b": "views/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "views/back/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "views/back/hair/hair_back.png",
+   "b": "views/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "iou": 0.9353,
+   "exact": 0.0073
+  },
+  {
+   "a": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "iou": 0.9297,
+   "exact": 0.0146
+  },
+  {
+   "a": "hair/staged/diagonals/045/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "iou": 0.9241,
+   "exact": 0.0127
+  },
+  {
+   "a": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "b": "hair/staged/diagonals/045/hair/bun.png",
+   "iou": 0.9241,
+   "exact": 0.0127
+  },
+  {
+   "a": "hair/staged/diagonals/315/hair/bun.png",
+   "b": "hair/staged/diagonals/315/hair/bun.png",
+   "iou": 0.918,
+   "exact": 0.013
+  },
+  {
+   "a": "views/left/hair/bun.png",
+   "b": "views/left/hair/bun.png",
+   "iou": 0.8664,
+   "exact": 0.0063
+  },
+  {
+   "a": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "b": "views/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "views/tpose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "views/tpose/hair/hair_back.png",
+   "b": "views/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "iou": 0.8606,
+   "exact": 0.2749
+  },
+  {
+   "a": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "b": "views/apose/hair/hair_back.png",
+   "iou": 0.8606,
+   "exact": 0.0096
+  },
+  {
+   "a": "views/apose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "iou": 0.8606,
+   "exact": 0.0096
+  }
+ ],
+ "flagged": [
+  {
+   "a": "hair/staged/diagonals/225/hair/bun.png",
+   "b": "hair/staged/diagonals/225/hair/bun.png",
+   "iou": 1.0,
+   "exact": 0.0153
+  },
+  {
+   "a": "hair/staged/diagonals/135/hair/bun.png",
+   "b": "hair/staged/diagonals/135/hair/bun.png",
+   "iou": 0.9985,
+   "exact": 0.0158
+  },
+  {
+   "a": "hair/staged/diagonals/045/hair/bun.png",
+   "b": "hair/staged/diagonals/045/hair/bun.png",
+   "iou": 0.9823,
+   "exact": 0.0129
+  },
+  {
+   "a": "hair/staged/diagonals/135/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "iou": 0.9732,
+   "exact": 0.0157
+  },
+  {
+   "a": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "b": "hair/staged/diagonals/135/hair/bun.png",
+   "iou": 0.9732,
+   "exact": 0.0157
+  },
+  {
+   "a": "hair/staged/diagonals/225/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "iou": 0.9653,
+   "exact": 0.0146
+  },
+  {
+   "a": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "b": "hair/staged/diagonals/225/hair/bun.png",
+   "iou": 0.9653,
+   "exact": 0.0146
+  },
+  {
+   "a": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/135/hair/bun.png",
+   "iou": 0.9478,
+   "exact": 0.0172
+  },
+  {
+   "a": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "b": "views/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "views/back/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "views/back/hair/hair_back.png",
+   "b": "views/back/hair/hair_back.png",
+   "iou": 0.938,
+   "exact": 0.3053
+  },
+  {
+   "a": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/225/hair/bun.png",
+   "iou": 0.9353,
+   "exact": 0.0073
+  },
+  {
+   "a": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "iou": 0.9297,
+   "exact": 0.0146
+  },
+  {
+   "a": "hair/staged/diagonals/045/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "iou": 0.9241,
+   "exact": 0.0127
+  },
+  {
+   "a": "hair/staged/diagonals_v2/045/hair/bun.png",
+   "b": "hair/staged/diagonals/045/hair/bun.png",
+   "iou": 0.9241,
+   "exact": 0.0127
+  },
+  {
+   "a": "hair/staged/diagonals/315/hair/bun.png",
+   "b": "hair/staged/diagonals/315/hair/bun.png",
+   "iou": 0.918,
+   "exact": 0.013
+  },
+  {
+   "a": "views/left/hair/bun.png",
+   "b": "views/left/hair/bun.png",
+   "iou": 0.8664,
+   "exact": 0.0063
+  },
+  {
+   "a": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "b": "views/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "views/tpose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "views/tpose/hair/hair_back.png",
+   "b": "views/tpose/hair/hair_back.png",
+   "iou": 0.8613,
+   "exact": 0.2863
+  },
+  {
+   "a": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "iou": 0.8606,
+   "exact": 0.2749
+  },
+  {
+   "a": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "b": "views/apose/hair/hair_back.png",
+   "iou": 0.8606,
+   "exact": 0.0096
+  },
+  {
+   "a": "views/apose/hair/hair_back.png",
+   "b": "hair/staged/tone_fix/apose/hair/hair_back.png",
+   "iou": 0.8606,
+   "exact": 0.0096
+  },
+  {
+   "a": "views/apose/hair/hair_back.png",
+   "b": "views/apose/hair/hair_back.png",
+   "iou": 0.8606,
+   "exact": 0.2748
+  },
+  {
+   "a": "hair/staged/diagonals_v2/315/hair/bun.png",
+   "b": "hair/staged/diagonals_v2/315/hair/bun.png",
+   "iou": 0.8366,
+   "exact": 0.0026
+  },
+  {
+   "a": "views/apose/hair/hair_front.png",
+   "b": "views/apose/hair/hair_front.png",
+   "iou": 0.8299,
+   "exact": 0.014
+  },
+  {
+   "a": "hair/staged/ear_strands/apose/views/apose/hair/hair_front.png",
+   "b": "hair/staged/ear_strands/apose/views/apose/hair/hair_front.png",
+   "iou": 0.8262,
+   "exact": 0.0138
+  },
+  {
+   "a": "hair/staged/ear_strands/apose/views/apose/hair/hair_front.png",
+   "b": "hair/staged/hairfront_holes/apose/hair/hair_front.png",
+   "iou": 0.8261,
+   "exact": 0.0138
+  },
+  {
+   "a": "hair/staged/hairfront_holes/apose/hair/hair_front.png",
+   "b": "hair/staged/ear_strands/apose/views/apose/hair/hair_front.png",
+   "iou": 0.8261,
+   "exact": 0.0138
+  },
+  {
+   "a": "hair/staged/hairfront_holes/apose/hair/hair_front.png",
+   "b": "hair/staged/hairfront_holes/apose/hair/hair_front.png",
+   "iou": 0.826,
+   "exact": 0.0138
+  },
+  {
+   "a": "views/apose/hair/bun.png",
+   "b": "views/apose/hair/bun.png",
+   "iou": 0.8129,
+   "exact": 0.0101
+  },
+  {
+   "a": "hair/staged/lineart_fix/views/tpose/hair/hair_front.png",
+   "b": "hair/staged/lineart_fix/views/tpose/hair/hair_front.png",
+   "iou": 0.796,
+   "exact": 0.0086
+  },
+  {
+   "a": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front.png",
+   "b": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front.png",
+   "iou": 0.7944,
+   "exact": 0.0085
+  },
+  {
+   "a": "hair/staged/lineart_fix/views/tpose/hair/hair_front.png",
+   "b": "views/tpose/hair/hair_front.png",
+   "iou": 0.7942,
+   "exact": 0.0086
+  },
+  {
+   "a": "views/tpose/hair/hair_front.png",
+   "b": "hair/staged/lineart_fix/views/tpose/hair/hair_front.png",
+   "iou": 0.7942,
+   "exact": 0.0086
+  },
+  {
+   "a": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front.png",
+   "b": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front_68only.png",
+   "iou": 0.7928,
+   "exact": 0.0085
+  },
+  {
+   "a": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front_68only.png",
+   "b": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front.png",
+   "iou": 0.7928,
+   "exact": 0.0085
+  },
+  {
+   "a": "views/tpose/hair/hair_front.png",
+   "b": "views/tpose/hair/hair_front.png",
+   "iou": 0.7924,
+   "exact": 0.0086
+  },
+  {
+   "a": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front_68only.png",
+   "b": "hair/staged/ear_strands/tpose/views/tpose/hair/hair_front_68only.png",
+   "iou": 0.7911,
+   "exact": 0.0086
+  },
+  {
+   "a": "views/right/hair/bun.png",
+   "b": "views/right/hair/bun.png",
+   "iou": 0.7834,
+   "exact": 0.0069
+  },
+  {
+   "a": "views/apose/hair/strand_03.png",
+   "b": "views/apose/hair/strand_03.png",
+   "iou": 0.7764,
+   "exact": 0.152
+  },
+  {
+   "a": "hair/staged/diagonals_v2/315/hair/strand_03.png",
+   "b": "hair/staged/diagonals_v2/315/hair/strand_03.png",
+   "iou": 0.7662,
+   "exact": 0.1186
+  },
+  {
+   "a": "views/back/hair/bun.png",
+   "b": "views/back/hair/bun.png",
+   "iou": 0.7376,
+   "exact": 0.0222
+  },
+  {
+   "a": "hair/staged/lineart_fix/views/right/hair/strand_03.png",
+   "b": "hair/staged/lineart_fix/views/right/hair/strand_03.png",
+   "iou": 0.7087,
+   "exact": 0.1889
+  },
+  {
+   "a": "hair/staged/lineart_fix/views/right/hair/strand_03.png",
+   "b": "views/right/hair/strand_03.png",
+   "iou": 0.7078,
+   "exact": 0.0
+  },
+  {
+   "a": "views/right/hair/strand_03.png",
+   "b": "hair/staged/lineart_fix/views/right/hair/strand_03.png",
+   "iou": 0.7078,
+   "exact": 0.0
+  },
+  {
+   "a": "views/right/hair/strand_03.png",
+   "b": "views/right/hair/strand_03.png",
+   "iou": 0.6975,
+   "exact": 0.1928
+  },
+  {
+   "a": "views/tpose/hair/bun.png",
+   "b": "views/tpose/hair/bun.png",
+   "iou": 0.6895,
+   "exact": 0.0172
+  },
+  {
+   "a": "hair/staged/diagonals_v2/225/hair/strand_03.png",
+   "b": "views/apose/hair/strand_03.png",
+   "iou": 0.6795,
+   "exact": 0.0
+  },
+  {
+   "a": "views/apose/hair/strand_03.png",
+   "b": "hair/staged/diagonals_v2/225/hair/strand_03.png",
+   "iou": 0.6795,
+   "exact": 0.0
+  },
+  {
+   "a": "hair/staged/diagonals/315/hair/strand_03.png",
+   "b": "hair/staged/diagonals/315/hair/strand_03.png",
+   "iou": 0.6183,
+   "exact": 0.1111
+  },
+  {
+   "a": "hair/staged/diagonals_v2/135/hair/hair_back.png",
+   "b": "hair/staged/diagonals_v2/135/hair/hair_back.png",
+   "iou": 0.6107,
+   "exact": 0.016
+  },
+  {
+   "a": "views/left/hair/strand_03.png",
+   "b": "views/left/hair/strand_03.png",
+   "iou": 0.1246,
+   "exact": 0.6
+  },
+  {
+   "a": "hair/staged/diagonals_v2/315/hair/strand_05.png",
+   "b": "hair/staged/diagonals_v2/315/hair/strand_05.png",
+   "iou": 0.1007,
+   "exact": 0.9286
+  },
+  {
+   "a": "hair/staged/diagonals/315/hair/extra_1.png",
+   "b": "hair/staged/diagonals/315/hair/extra_1.png",
+   "iou": 0.0364,
+   "exact": 0.5556
+  },
+  {
+   "a": "hair/staged/diagonals/045/hair/extra_1.png",
+   "b": "hair/staged/diagonals/045/hair/extra_1.png",
+   "iou": 0.0305,
+   "exact": 0.5556
+  },
+  {
+   "a": "hair/staged/diagonals_v2/315/hair/extra_1.png",
+   "b": "hair/staged/diagonals_v2/315/hair/extra_1.png",
+   "iou": 0.0175,
+   "exact": 1.0
+  },
+  {
+   "a": "hair/staged/diagonals_v2/045/hair/extra_1.png",
+   "b": "hair/staged/diagonals_v2/045/hair/extra_1.png",
+   "iou": 0.0149,
+   "exact": 1.0
+  }
+ ]
+}

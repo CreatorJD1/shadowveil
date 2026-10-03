@@ -1,0 +1,135 @@
+{
+ "contract": "benchmark preset v0 (PARKED)",
+ "benchmark": "4_cheer",
+ "reference": "reference/benchmarks/4_cheer.jpg",
+ "view": "apose",
+ "note": "Signs inferred from rig.json rotSign (+ = clockwise on screen) and part pivots; NOT render-verified (benchmark work parked before screenshots). Body joints clamp to +-1 = +-25 deg (BodyLean 8 deg, HeadTilt 8 deg, HeadNod 6 deg).",
+ "apply": {
+  "MouthOpen": 1,
+  "MouthForm": 1,
+  "EyeROpen": 0.6,
+  "EyeLOpen": 0.6,
+  "ShoulderL": -1,
+  "ElbowL": -0.5,
+  "HandLThumb": 1,
+  "HandLIndex": 1,
+  "HandLMiddle": 1,
+  "HandLRing": 1,
+  "HandLPinky": 1,
+  "ShoulderR": 1,
+  "HandRThumb": 1,
+  "HandRIndex": 1,
+  "HandRMiddle": 1,
+  "HandRRing": 1,
+  "HandRPinky": 1,
+  "HeadTilt": 0.8,
+  "HipL": -0.5,
+  "HipR": 0.5
+ },
+ "controls": {
+  "MouthOpen": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "MouthForm": {
+   "value": 1,
+   "status": "reachable",
+   "note": "EE nearest; open-smile art"
+  },
+  "EyeROpen": {
+   "value": 0.6,
+   "status": "reachable",
+   "note": ""
+  },
+  "EyeLOpen": {
+   "value": 0.6,
+   "status": "reachable",
+   "note": ""
+  },
+  "ShoulderL": {
+   "value": -1,
+   "status": "blocked",
+   "note": "arm overhead ~160 deg: 25 deg cap; shoulder/armpit corrective shapes needed"
+  },
+  "ElbowL": {
+   "value": -0.5,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLThumb": {
+   "value": 1,
+   "status": "blocked",
+   "note": "fist: curl reachable; thumb-over-fingers needs per-pose draw order"
+  },
+  "HandLIndex": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLMiddle": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLRing": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLPinky": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "ShoulderR": {
+   "value": 1,
+   "status": "blocked",
+   "note": "arm raised ~120 deg"
+  },
+  "HandRThumb": {
+   "value": 1,
+   "status": "blocked",
+   "note": "same fist note"
+  },
+  "HandRIndex": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRMiddle": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRRing": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRPinky": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HeadTilt": {
+   "value": 0.8,
+   "status": "reachable",
+   "note": ""
+  },
+  "HipL": {
+   "value": -0.5,
+   "status": "reachable",
+   "note": "wide stance"
+  },
+  "HipR": {
+   "value": 0.5,
+   "status": "reachable",
+   "note": ""
+  }
+ },
+ "outfit": {
+  "status": "blocked",
+  "note": "bodysuit + heeled sandals: Body owns this layer on skin.json meshes; not built. Dominates any silhouette score."
+ }
+}

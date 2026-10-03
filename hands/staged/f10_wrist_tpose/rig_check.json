@@ -1,0 +1,47 @@
+{
+ "ul": {
+  "tot": {
+   "holes": 0,
+   "tears": -4,
+   "partial": 20,
+   "breaks": 0
+  },
+  "new_holes_or_breaks": [],
+  "px_vs_live_under": {
+   "rest": 0,
+   "pose_Fist": 0,
+   "pose_Point": 0,
+   "pose_Peace": 0
+  }
+ },
+ "c_r20": {
+  "tot": {
+   "holes": 0,
+   "tears": -1,
+   "partial": 29,
+   "breaks": 0
+  },
+  "new_holes_or_breaks": [],
+  "px_vs_live_under": {
+   "rest": 0,
+   "pose_Fist": 0,
+   "pose_Point": 0,
+   "pose_Peace": 0
+  }
+ },
+ "c_r20d5": {
+  "tot": {
+   "holes": 0,
+   "tears": -4,
+   "partial": 20,
+   "breaks": 0
+  },
+  "new_holes_or_breaks": [],
+  "px_vs_live_under": {
+   "rest": 0,
+   "pose_Fist": 0,
+   "pose_Point": 0,
+   "pose_Peace": 0
+  }
+ }
+}

@@ -1,0 +1,1285 @@
+{
+ "doc": "Pass 2: navy fringe in the staged diagonal far-eye files (after fix_diag_chroma.py).\nTargets: px with a>0 and b - max(r,g) > 30 in 045 EyeR_{lid_0,lash}, 315 EyeL_{lid_0,lash}.\nSame unmix rule as pass 1 (local key blue B from the frame; palette = qa_gates palette for <ang>/eyes, here restricted to\ntones with b - max(r,g) <= 30 so no snapped px is itself fringe):\n  t >= 0.5 -> alpha 0 ; t <= 0.5 -> exact palette tone P*, alpha 255.\n  The 11 pass-1 palette-tone edge px are kept opaque (re-toned to a <=30 tone if they are targets), never cleared.\nContinuity guard (vs the pass-1 state): 8-conn components of the file itself AND of lid_k U lash for k=0..7 must not\nincrease; cleared px are re-added (as P*) lowest-t first until no metric is worse. Isolated snapped specks are cleared.\nBackup of the pass-1 state: eyes/staged/diagonals/backups_chroma_fix/pass2/<ang>/. _chroma.png regenerated as before.",
+ "files": {
+  "045/EyeR_lid_0": {
+   "fringe_before": 1,
+   "cleared": 0,
+   "snapped": 1,
+   "kept_for_continuity": 0,
+   "pass1_edge_px_retoned": 1,
+   "specks_cleared": 0,
+   "fringe_after": 0,
+   "chroma_after": 0,
+   "px": [
+    {
+     "xy": [
+      330,
+      179
+     ],
+     "rgb": [
+      6,
+      0,
+      44
+     ],
+     "t_blue": 0.178,
+     "P": [
+      7,
+      0,
+      0
+     ],
+     "resid": 0.0,
+     "action": "snap (pass-1 edge px kept, re-toned)"
+    }
+   ]
+  },
+  "045/EyeR_lash": {
+   "fringe_before": 24,
+   "cleared": 0,
+   "snapped": 24,
+   "kept_for_continuity": 0,
+   "pass1_edge_px_retoned": 2,
+   "specks_cleared": 0,
+   "fringe_after": 0,
+   "chroma_after": 0,
+   "px": [
+    {
+     "xy": [
+      326,
+      165
+     ],
+     "rgb": [
+      9,
+      6,
+      51
+     ],
+     "t_blue": 0.171,
+     "P": [
+      11,
+      7,
+      9
+     ],
+     "resid": 0.2,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      327,
+      165
+     ],
+     "rgb": [
+      6,
+      3,
+      48
+     ],
+     "t_blue": 0.169,
+     "P": [
+      7,
+      4,
+      6
+     ],
+     "resid": 0.4,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      326,
+      166
+     ],
+     "rgb": [
+      6,
+      3,
+      81
+     ],
+     "t_blue": 0.253,
+     "P": [
+      8,
+      4,
+      22
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      327,
+      166
+     ],
+     "rgb": [
+      4,
+      1,
+      79
+     ],
+     "t_blue": 0.2,
+     "P": [
+      5,
+      1,
+      35
+     ],
+     "resid": 0.2,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      326,
+      167
+     ],
+     "rgb": [
+      7,
+      4,
+      82
+     ],
+     "t_blue": 0.308,
+     "P": [
+      10,
+      6,
+      5
+     ],
+     "resid": 0.2,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      327,
+      167
+     ],
+     "rgb": [
+      5,
+      2,
+      80
+     ],
+     "t_blue": 0.297,
+     "P": [
+      7,
+      3,
+      6
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      326,
+      168
+     ],
+     "rgb": [
+      8,
+      0,
+      48
+     ],
+     "t_blue": 0.049,
+     "P": [
+      8,
+      0,
+      38
+     ],
+     "resid": 0.1,
+     "action": "snap (pass-1 edge px kept, re-toned)"
+    },
+    {
+     "xy": [
+      327,
+      168
+     ],
+     "rgb": [
+      6,
+      0,
+      44
+     ],
+     "t_blue": 0.043,
+     "P": [
+      6,
+      0,
+      35
+     ],
+     "resid": 0.0,
+     "action": "snap (pass-1 edge px kept, re-toned)"
+    },
+    {
+     "xy": [
+      328,
+      170
+     ],
+     "rgb": [
+      17,
+      9,
+      93
+     ],
+     "t_blue": 0.36,
+     "P": [
+      24,
+      14,
+      9
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      329,
+      170
+     ],
+     "rgb": [
+      34,
+      26,
+      110
+     ],
+     "t_blue": 0.352,
+     "P": [
+      50,
+      40,
+      38
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      328,
+      171
+     ],
+     "rgb": [
+      19,
+      11,
+      95
+     ],
+     "t_blue": 0.352,
+     "P": [
+      27,
+      17,
+      15
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      329,
+      171
+     ],
+     "rgb": [
+      18,
+      10,
+      94
+     ],
+     "t_blue": 0.336,
+     "P": [
+      25,
+      15,
+      19
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      328,
+      172
+     ],
+     "rgb": [
+      0,
+      0,
+      92
+     ],
+     "t_blue": 0.29,
+     "P": [
+      0,
+      0,
+      30
+     ],
+     "resid": 0.9,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      329,
+      172
+     ],
+     "rgb": [
+      0,
+      0,
+      87
+     ],
+     "t_blue": 0.266,
+     "P": [
+      0,
+      0,
+      30
+     ],
+     "resid": 0.9,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      328,
+      173
+     ],
+     "rgb": [
+      4,
+      2,
+      96
+     ],
+     "t_blue": 0.382,
+     "P": [
+      5,
+      3,
+      4
+     ],
+     "resid": 0.2,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      329,
+      173
+     ],
+     "rgb": [
+      3,
+      1,
+      95
+     ],
+     "t_blue": 0.388,
+     "P": [
+      3,
+      2,
+      0
+     ],
+     "resid": 0.3,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      330,
+      174
+     ],
+     "rgb": [
+      19,
+      10,
+      54
+     ],
+     "t_blue": 0.158,
+     "P": [
+      22,
+      12,
+      18
+     ],
+     "resid": 0.2,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      331,
+      174
+     ],
+     "rgb": [
+      1,
+      0,
+      36
+     ],
+     "t_blue": 0.023,
+     "P": [
+      1,
+      0,
+      31
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      330,
+      175
+     ],
+     "rgb": [
+      14,
+      5,
+      49
+     ],
+     "t_blue": 0.147,
+     "P": [
+      16,
+      6,
+      15
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      331,
+      175
+     ],
+     "rgb": [
+      4,
+      0,
+      39
+     ],
+     "t_blue": 0.037,
+     "P": [
+      4,
+      0,
+      31
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      330,
+      176
+     ],
+     "rgb": [
+      9,
+      3,
+      84
+     ],
+     "t_blue": 0.285,
+     "P": [
+      12,
+      4,
+      19
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      331,
+      176
+     ],
+     "rgb": [
+      0,
+      0,
+      71
+     ],
+     "t_blue": 0.188,
+     "P": [
+      0,
+      0,
+      30
+     ],
+     "resid": 0.3,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      330,
+      177
+     ],
+     "rgb": [
+      14,
+      8,
+      89
+     ],
+     "t_blue": 0.328,
+     "P": [
+      20,
+      12,
+      12
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      331,
+      177
+     ],
+     "rgb": [
+      4,
+      0,
+      79
+     ],
+     "t_blue": 0.293,
+     "P": [
+      5,
+      0,
+      9
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    }
+   ]
+  },
+  "045/EyeR_components": {
+   "order": "lid_0, lash, lid_k|lash k0..7",
+   "before": [
+    1,
+    4,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "after": [
+    1,
+    4,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
+  },
+  "315/EyeL_lid_0": {
+   "fringe_before": 11,
+   "cleared": 0,
+   "snapped": 11,
+   "kept_for_continuity": 0,
+   "pass1_edge_px_retoned": 0,
+   "specks_cleared": 0,
+   "fringe_after": 0,
+   "chroma_after": 0,
+   "px": [
+    {
+     "xy": [
+      432,
+      179
+     ],
+     "rgb": [
+      23,
+      15,
+      115
+     ],
+     "t_blue": 0.409,
+     "P": [
+      39,
+      25,
+      18
+     ],
+     "resid": 0.2,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      179
+     ],
+     "rgb": [
+      20,
+      12,
+      112
+     ],
+     "t_blue": 0.397,
+     "P": [
+      33,
+      20,
+      18
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      180
+     ],
+     "rgb": [
+      14,
+      8,
+      119
+     ],
+     "t_blue": 0.46,
+     "P": [
+      26,
+      15,
+      3
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      181
+     ],
+     "rgb": [
+      12,
+      6,
+      117
+     ],
+     "t_blue": 0.452,
+     "P": [
+      22,
+      11,
+      3
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      182
+     ],
+     "rgb": [
+      20,
+      5,
+      112
+     ],
+     "t_blue": 0.281,
+     "P": [
+      28,
+      7,
+      56
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      432,
+      183
+     ],
+     "rgb": [
+      28,
+      13,
+      120
+     ],
+     "t_blue": 0.405,
+     "P": [
+      47,
+      22,
+      28
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      183
+     ],
+     "rgb": [
+      23,
+      8,
+      115
+     ],
+     "t_blue": 0.438,
+     "P": [
+      41,
+      14,
+      6
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      432,
+      184
+     ],
+     "rgb": [
+      25,
+      16,
+      113
+     ],
+     "t_blue": 0.406,
+     "P": [
+      42,
+      27,
+      16
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      184
+     ],
+     "rgb": [
+      16,
+      7,
+      104
+     ],
+     "t_blue": 0.408,
+     "P": [
+      27,
+      12,
+      0
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      432,
+      185
+     ],
+     "rgb": [
+      16,
+      7,
+      104
+     ],
+     "t_blue": 0.408,
+     "P": [
+      27,
+      12,
+      0
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      185
+     ],
+     "rgb": [
+      19,
+      10,
+      107
+     ],
+     "t_blue": 0.406,
+     "P": [
+      32,
+      17,
+      6
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    }
+   ]
+  },
+  "315/EyeL_lash": {
+   "fringe_before": 26,
+   "cleared": 0,
+   "snapped": 26,
+   "kept_for_continuity": 0,
+   "pass1_edge_px_retoned": 0,
+   "specks_cleared": 0,
+   "fringe_after": 0,
+   "chroma_after": 0,
+   "px": [
+    {
+     "xy": [
+      434,
+      168
+     ],
+     "rgb": [
+      73,
+      56,
+      131
+     ],
+     "t_blue": 0.291,
+     "P": [
+      103,
+      79,
+      80
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      435,
+      168
+     ],
+     "rgb": [
+      20,
+      3,
+      78
+     ],
+     "t_blue": 0.306,
+     "P": [
+      29,
+      4,
+      0
+     ],
+     "resid": 0.3,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      434,
+      169
+     ],
+     "rgb": [
+      48,
+      31,
+      106
+     ],
+     "t_blue": 0.262,
+     "P": [
+      65,
+      42,
+      53
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      435,
+      169
+     ],
+     "rgb": [
+      25,
+      8,
+      83
+     ],
+     "t_blue": 0.325,
+     "P": [
+      37,
+      12,
+      0
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      434,
+      170
+     ],
+     "rgb": [
+      17,
+      12,
+      86
+     ],
+     "t_blue": 0.293,
+     "P": [
+      24,
+      17,
+      16
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      435,
+      170
+     ],
+     "rgb": [
+      17,
+      12,
+      86
+     ],
+     "t_blue": 0.293,
+     "P": [
+      24,
+      17,
+      16
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      434,
+      171
+     ],
+     "rgb": [
+      3,
+      0,
+      72
+     ],
+     "t_blue": 0.25,
+     "P": [
+      4,
+      0,
+      11
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      435,
+      171
+     ],
+     "rgb": [
+      10,
+      5,
+      79
+     ],
+     "t_blue": 0.285,
+     "P": [
+      14,
+      7,
+      9
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      436,
+      172
+     ],
+     "rgb": [
+      2,
+      3,
+      108
+     ],
+     "t_blue": 0.382,
+     "P": [
+      3,
+      5,
+      17
+     ],
+     "resid": 0.2,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      437,
+      172
+     ],
+     "rgb": [
+      6,
+      7,
+      112
+     ],
+     "t_blue": 0.409,
+     "P": [
+      10,
+      12,
+      13
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      436,
+      173
+     ],
+     "rgb": [
+      1,
+      2,
+      107
+     ],
+     "t_blue": 0.378,
+     "P": [
+      2,
+      3,
+      17
+     ],
+     "resid": 0.3,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      437,
+      173
+     ],
+     "rgb": [
+      7,
+      8,
+      113
+     ],
+     "t_blue": 0.423,
+     "P": [
+      12,
+      14,
+      9
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      434,
+      174
+     ],
+     "rgb": [
+      1,
+      1,
+      47
+     ],
+     "t_blue": 0.071,
+     "P": [
+      1,
+      1,
+      31
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      435,
+      174
+     ],
+     "rgb": [
+      1,
+      1,
+      47
+     ],
+     "t_blue": 0.071,
+     "P": [
+      1,
+      1,
+      31
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      436,
+      174
+     ],
+     "rgb": [
+      0,
+      5,
+      99
+     ],
+     "t_blue": 0.284,
+     "P": [
+      0,
+      7,
+      37
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      437,
+      174
+     ],
+     "rgb": [
+      5,
+      10,
+      104
+     ],
+     "t_blue": 0.373,
+     "P": [
+      8,
+      16,
+      14
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      434,
+      175
+     ],
+     "rgb": [
+      6,
+      6,
+      52
+     ],
+     "t_blue": 0.14,
+     "P": [
+      7,
+      7,
+      19
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      435,
+      175
+     ],
+     "rgb": [
+      6,
+      6,
+      52
+     ],
+     "t_blue": 0.14,
+     "P": [
+      7,
+      7,
+      19
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      436,
+      175
+     ],
+     "rgb": [
+      2,
+      7,
+      101
+     ],
+     "t_blue": 0.361,
+     "P": [
+      3,
+      11,
+      14
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      437,
+      175
+     ],
+     "rgb": [
+      6,
+      11,
+      105
+     ],
+     "t_blue": 0.39,
+     "P": [
+      10,
+      18,
+      9
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      432,
+      176
+     ],
+     "rgb": [
+      6,
+      0,
+      74
+     ],
+     "t_blue": 0.252,
+     "P": [
+      8,
+      0,
+      13
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      176
+     ],
+     "rgb": [
+      21,
+      8,
+      89
+     ],
+     "t_blue": 0.341,
+     "P": [
+      32,
+      12,
+      3
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      432,
+      177
+     ],
+     "rgb": [
+      9,
+      0,
+      77
+     ],
+     "t_blue": 0.187,
+     "P": [
+      11,
+      0,
+      36
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      177
+     ],
+     "rgb": [
+      26,
+      13,
+      94
+     ],
+     "t_blue": 0.348,
+     "P": [
+      40,
+      20,
+      8
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      432,
+      178
+     ],
+     "rgb": [
+      7,
+      0,
+      99
+     ],
+     "t_blue": 0.3,
+     "P": [
+      10,
+      0,
+      32
+     ],
+     "resid": 0.0,
+     "action": "snap"
+    },
+    {
+     "xy": [
+      433,
+      178
+     ],
+     "rgb": [
+      22,
+      14,
+      114
+     ],
+     "t_blue": 0.417,
+     "P": [
+      38,
+      24,
+      13
+     ],
+     "resid": 0.1,
+     "action": "snap"
+    }
+   ]
+  },
+  "315/EyeL_components": {
+   "order": "lid_0, lash, lid_k|lash k0..7",
+   "before": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "after": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ }
+}

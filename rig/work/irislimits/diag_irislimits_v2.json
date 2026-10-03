@@ -1,0 +1,463 @@
+{
+ "rule": "Row-by-row: the iris is clipped per row by her white (the opening between her lid line / lash ink); a shift dx is allowed\nwhen, on every lid frame k=0..7:\n  clipped(dx) = shifted iris core (a>=128) px that fall outside the white, at the X+-1 extremes, <= the eye's Y+-1 baseline\n                clip (max 14). The X+-1,Y+-1 corners are reported (info): Y+-1 alone already sits at the baseline, so requiring the\n                corners too would force dx = 0 for every eye.\n  outside/on_ink of the VISIBLE iris = 0 (always true: iris is source-atop on white and drawn under lid_k + lash; checked)\nLinking (one gaze value, each eye scaled to its own range): per side, r_e = min(r_e, r_other + 1); r_e = 0 if r_other = 0,\nso the eyes never move in opposite directions or by visibly different amounts.",
+ "angles": {
+  "045": {
+   "nearEye": "EyeL",
+   "eyes": {
+    "EyeR": {
+     "current": {
+      "dxAtXminus1": -2,
+      "dxAtXplus1": 0,
+      "dyAtYminus1": -1,
+      "dyAtYplus1": 1
+     },
+     "v1_irislimits_diag": {
+      "dxAtXplus1": 0,
+      "dxAtXminus1": 0,
+      "dyAtYplus1": 0,
+      "dyAtYminus1": 0
+     },
+     "row_by_row_unlinked": {
+      "dxAtXplus1": 1,
+      "dxAtXminus1": -3
+     },
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 1,
+      "dxAtXminus1": -3,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 8,
+     "core_px": 50,
+     "extremes": {
+      "X+1": {
+       "off": [
+        1,
+        0
+       ],
+       "iris_px_lost": 8,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px_lost": 3,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y+1": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px_lost": 7,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y-1": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px_lost": 8,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y+1": {
+       "off": [
+        1,
+        1
+       ],
+       "iris_px_lost": 10,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y-1": {
+       "off": [
+        1,
+        -1
+       ],
+       "iris_px_lost": 14,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y+1": {
+       "off": [
+        -3,
+        1
+       ],
+       "iris_px_lost": 8,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y-1": {
+       "off": [
+        -3,
+        -1
+       ],
+       "iris_px_lost": 2,
+       "of": 50,
+       "outside_opening": 0,
+       "on_ink": 0
+      }
+     },
+     "current_X_loss": {
+      "X+1": 0,
+      "X-1": 2
+     }
+    },
+    "EyeL": {
+     "current": {
+      "dxAtXminus1": 0,
+      "dxAtXplus1": 1,
+      "dyAtYminus1": -1,
+      "dyAtYplus1": 1
+     },
+     "v1_irislimits_diag": {
+      "dxAtXplus1": 3,
+      "dxAtXminus1": -4,
+      "dyAtYplus1": 0,
+      "dyAtYminus1": 0
+     },
+     "row_by_row_unlinked": {
+      "dxAtXplus1": 3,
+      "dxAtXminus1": -3
+     },
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 2,
+      "dxAtXminus1": -3,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 14,
+     "core_px": 107,
+     "extremes": {
+      "X+1": {
+       "off": [
+        2,
+        0
+       ],
+       "iris_px_lost": 5,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1": {
+       "off": [
+        -3,
+        0
+       ],
+       "iris_px_lost": 14,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y+1": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px_lost": 6,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y-1": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px_lost": 14,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y+1": {
+       "off": [
+        2,
+        1
+       ],
+       "iris_px_lost": 12,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y-1": {
+       "off": [
+        2,
+        -1
+       ],
+       "iris_px_lost": 13,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y+1": {
+       "off": [
+        -3,
+        1
+       ],
+       "iris_px_lost": 11,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y-1": {
+       "off": [
+        -3,
+        -1
+       ],
+       "iris_px_lost": 27,
+       "of": 107,
+       "outside_opening": 0,
+       "on_ink": 0
+      }
+     },
+     "current_X_loss": {
+      "X+1": 2,
+      "X-1": 0
+     }
+    }
+   }
+  },
+  "315": {
+   "nearEye": "EyeR",
+   "eyes": {
+    "EyeR": {
+     "current": {
+      "dxAtXminus1": -2,
+      "dxAtXplus1": 2,
+      "dyAtYminus1": -1,
+      "dyAtYplus1": 1
+     },
+     "v1_irislimits_diag": {
+      "dxAtXplus1": 4,
+      "dxAtXminus1": -3,
+      "dyAtYplus1": 0,
+      "dyAtYminus1": 0
+     },
+     "row_by_row_unlinked": {
+      "dxAtXplus1": 4,
+      "dxAtXminus1": -3
+     },
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 4,
+      "dxAtXminus1": -2,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 13,
+     "core_px": 85,
+     "extremes": {
+      "X+1": {
+       "off": [
+        4,
+        0
+       ],
+       "iris_px_lost": 12,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1": {
+       "off": [
+        -2,
+        0
+       ],
+       "iris_px_lost": 5,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y+1": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px_lost": 8,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y-1": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px_lost": 13,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y+1": {
+       "off": [
+        4,
+        1
+       ],
+       "iris_px_lost": 15,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y-1": {
+       "off": [
+        4,
+        -1
+       ],
+       "iris_px_lost": 22,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y+1": {
+       "off": [
+        -2,
+        1
+       ],
+       "iris_px_lost": 12,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y-1": {
+       "off": [
+        -2,
+        -1
+       ],
+       "iris_px_lost": 13,
+       "of": 85,
+       "outside_opening": 0,
+       "on_ink": 0
+      }
+     },
+     "current_X_loss": {
+      "X+1": 5,
+      "X-1": 5
+     }
+    },
+    "EyeL": {
+     "current": {
+      "dxAtXminus1": 0,
+      "dxAtXplus1": 2,
+      "dyAtYminus1": -1,
+      "dyAtYplus1": 1
+     },
+     "v1_irislimits_diag": {
+      "dxAtXplus1": 1,
+      "dxAtXminus1": 0,
+      "dyAtYplus1": 0,
+      "dyAtYminus1": 0
+     },
+     "row_by_row_unlinked": {
+      "dxAtXplus1": 3,
+      "dxAtXminus1": -1
+     },
+     "irislimits_diag_v2": {
+      "dxAtXplus1": 3,
+      "dxAtXminus1": -1,
+      "dyAtYplus1": 1,
+      "dyAtYminus1": -1
+     },
+     "baseline_clip_Y": 10,
+     "core_px": 51,
+     "extremes": {
+      "X+1": {
+       "off": [
+        3,
+        0
+       ],
+       "iris_px_lost": 10,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1": {
+       "off": [
+        -1,
+        0
+       ],
+       "iris_px_lost": 7,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y+1": {
+       "off": [
+        0,
+        1
+       ],
+       "iris_px_lost": 7,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "Y-1": {
+       "off": [
+        0,
+        -1
+       ],
+       "iris_px_lost": 10,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y+1": {
+       "off": [
+        3,
+        1
+       ],
+       "iris_px_lost": 16,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X+1,Y-1": {
+       "off": [
+        3,
+        -1
+       ],
+       "iris_px_lost": 9,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y+1": {
+       "off": [
+        -1,
+        1
+       ],
+       "iris_px_lost": 9,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      },
+      "X-1,Y-1": {
+       "off": [
+        -1,
+        -1
+       ],
+       "iris_px_lost": 15,
+       "of": 51,
+       "outside_opening": 0,
+       "on_ink": 0
+      }
+     },
+     "current_X_loss": {
+      "X+1": 4,
+      "X-1": 0
+     }
+    }
+   }
+  }
+ }
+}

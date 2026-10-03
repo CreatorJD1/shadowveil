@@ -1,0 +1,204 @@
+{
+ "045": {
+  "eye_region_view_px": 2436,
+  "viewFit": {
+   "scale": 1.54468,
+   "dx": 83.62,
+   "dy": -55.77,
+   "rule": "base_x = scale*frame_x + dx; base_y = scale*frame_y + dy",
+   "source": "body_tools/work/apose_turn/diagonals/diagonals.json"
+  },
+  "files": {
+   "bun.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "extra_1.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "hair_back.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "hair_front.png": {
+    "orig_soft_px_over_eyes": 63,
+    "v2_px_over_eyes_before": 53,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_03.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_03_tip.png": {
+    "orig_soft_px_over_eyes": 168,
+    "v2_px_over_eyes_before": 117,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_04.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_06.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_06_tip.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   }
+  }
+ },
+ "315": {
+  "eye_region_view_px": 2424,
+  "viewFit": {
+   "scale": 1.54468,
+   "dx": 104.47,
+   "dy": -52.68,
+   "rule": "base_x = scale*frame_x + dx; base_y = scale*frame_y + dy",
+   "source": "body_tools/work/apose_turn/diagonals/diagonals.json"
+  },
+  "files": {
+   "bun.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "extra_1.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "hair_back.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "hair_front.png": {
+    "orig_soft_px_over_eyes": 4,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_03.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_03_tip.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_04.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_05.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_06.png": {
+    "orig_soft_px_over_eyes": 352,
+    "v2_px_over_eyes_before": 217,
+    "v2_px_over_eyes_after": 0
+   },
+   "strand_06_tip.png": {
+    "orig_soft_px_over_eyes": 0,
+    "v2_px_over_eyes_before": 0,
+    "v2_px_over_eyes_after": 0
+   }
+  }
+ },
+ "eyes_listed_11_px_after": {
+  "045": [
+   [
+    "hair_front.png",
+    590,
+    203,
+    0,
+    true
+   ],
+   [
+    "hair_front.png",
+    591,
+    205,
+    0,
+    true
+   ],
+   [
+    "hair_front.png",
+    591,
+    206,
+    0,
+    true
+   ],
+   [
+    "strand_03_tip.png",
+    593,
+    207,
+    0,
+    true
+   ],
+   [
+    "strand_03_tip.png",
+    594,
+    207,
+    0,
+    true
+   ],
+   [
+    "strand_03_tip.png",
+    597,
+    221,
+    0,
+    true
+   ],
+   [
+    "strand_03_tip.png",
+    598,
+    221,
+    0,
+    true
+   ]
+  ],
+  "315": [
+   [
+    "strand_06.png",
+    760,
+    216,
+    0,
+    true
+   ],
+   [
+    "strand_06.png",
+    763,
+    217,
+    0,
+    true
+   ],
+   [
+    "strand_06.png",
+    764,
+    217,
+    0,
+    true
+   ],
+   [
+    "strand_06.png",
+    757,
+    219,
+    0,
+    true
+   ]
+  ]
+ }
+}

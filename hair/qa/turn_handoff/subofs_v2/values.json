@@ -1,0 +1,174 @@
+{
+ "index_md5_measured": "00892ccb (renders), search offline",
+ "index_md5_now": "562c32a7",
+ "recommended": {
+  "back": {
+   "hair": {
+    "dx": 0,
+    "dy": 0
+   },
+   "bun": {
+    "dx": 0,
+    "dy": 0
+   }
+  },
+  "left": {
+   "hair": {
+    "dx": 0,
+    "dy": 0
+   },
+   "bun": {
+    "dx": 0,
+    "dy": 0
+   }
+  },
+  "right": {
+   "hair": {
+    "dx": 0,
+    "dy": 0
+   },
+   "bun": {
+    "dx": 0,
+    "dy": 0
+   }
+  }
+ },
+ "reason": "only (0,0) gives 0 dark_ring_px and 0 new_hole_px; every other rigid or split shift exposes baked hair in Body's live_patch base_body and/or opens holes",
+ "per_view": {
+  "back": {
+   "off": {
+    "hair": [
+     0,
+     0
+    ],
+    "bun": [
+     0,
+     0
+    ],
+    "mass_edge": 10.97,
+    "mass_iou": 0.271,
+    "dark_ring_px": 0,
+    "new_hole_px": 0
+   },
+   "coder_live": {
+    "hair": [
+     1,
+     0
+    ],
+    "bun": [
+     -3,
+     -15
+    ],
+    "mass_edge": 7.53,
+    "mass_iou": 0.32,
+    "dark_ring_px": 2,
+    "new_hole_px": 64
+   },
+   "n_zero_ring_zero_hole_rigid": 1,
+   "best_edge_any": {
+    "hair": [
+     -2,
+     -12
+    ],
+    "bun": [
+     -2,
+     -12
+    ],
+    "mass_edge": 7.25,
+    "mass_iou": 0.32,
+    "dark_ring_px": 16,
+    "new_hole_px": 173
+   }
+  },
+  "left": {
+   "off": {
+    "hair": [
+     0,
+     0
+    ],
+    "bun": [
+     0,
+     0
+    ],
+    "mass_edge": 9.11,
+    "mass_iou": 0.733,
+    "dark_ring_px": 0,
+    "new_hole_px": 0
+   },
+   "coder_live": {
+    "hair": [
+     -10,
+     0
+    ],
+    "bun": [
+     14,
+     -10
+    ],
+    "mass_edge": 7.83,
+    "mass_iou": 0.814,
+    "dark_ring_px": 2506,
+    "new_hole_px": 170
+   },
+   "n_zero_ring_zero_hole_rigid": 1,
+   "best_edge_any": {
+    "hair": [
+     -4,
+     -8
+    ],
+    "bun": [
+     -4,
+     -8
+    ],
+    "mass_edge": 8.02,
+    "mass_iou": 0.77,
+    "dark_ring_px": 1896,
+    "new_hole_px": 162
+   }
+  },
+  "right": {
+   "off": {
+    "hair": [
+     0,
+     0
+    ],
+    "bun": [
+     0,
+     0
+    ],
+    "mass_edge": 7.86,
+    "mass_iou": 0.743,
+    "dark_ring_px": 0,
+    "new_hole_px": 0
+   },
+   "coder_live": {
+    "hair": [
+     13,
+     -1
+    ],
+    "bun": [
+     -4,
+     -11
+    ],
+    "mass_edge": 6.34,
+    "mass_iou": 0.826,
+    "dark_ring_px": 3448,
+    "new_hole_px": 303
+   },
+   "n_zero_ring_zero_hole_rigid": 1,
+   "best_edge_any": {
+    "hair": [
+     8,
+     -7
+    ],
+    "bun": [
+     8,
+     -7
+    ],
+    "mass_edge": 6.03,
+    "mass_iou": 0.812,
+    "dark_ring_px": 2649,
+    "new_hole_px": 291
+   }
+  }
+ }
+}

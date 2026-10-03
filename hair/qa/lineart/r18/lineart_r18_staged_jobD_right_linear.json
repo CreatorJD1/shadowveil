@@ -1,0 +1,2139 @@
+{
+ "right": {
+  "rig": "views/right/hair/rig.json",
+  "files": {
+   "hair_back": "views/right/hair/hair_back.png",
+   "hair_front": "views/right/hair/hair_front.png",
+   "bun": "views/right/hair/bun.png",
+   "strand_01": "hair/staged/lineart_fix/views/right/hair/strand_01.png",
+   "strand_01_tip": "views/right/hair/strand_01_tip.png",
+   "strand_02": "views/right/hair/strand_02.png",
+   "strand_02_tip": "views/right/hair/strand_02_tip.png",
+   "strand_03": "hair/staged/lineart_fix/views/right/hair/strand_03.png",
+   "strand_04": "hair/staged/speck_fix/views/right/hair/strand_04.png",
+   "__line1": "hair/staged/lineart_fix/work/baseline/right_strand_04_w1.png",
+   "__line2": "hair/staged/lineart_fix/work/baseline/right_strand_04_w2.png"
+  },
+  "joints": {
+   "bun<-hair_front": {
+    "parent": "hair_front",
+    "sway": {
+     "0": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": null
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0,
+      "abs_rot_deg": 0.0
+     },
+     "-1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": null
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -1.2,
+      "abs_rot_deg": -1.2
+     },
+     "-0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": null
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -0.6,
+      "abs_rot_deg": -0.6
+     },
+     "0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": null
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0.6,
+      "abs_rot_deg": 0.6
+     },
+     "1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": null
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 1.2,
+      "abs_rot_deg": 1.2
+     }
+    },
+    "rest": {
+     "connected": null,
+     "components": 1,
+     "line_dir_deg": 177.2
+    },
+    "verdict": "clean",
+    "score": 0,
+    "verdict_without_line1": "clean"
+   },
+   "strand_01<-hair_front": {
+    "parent": "hair_front",
+    "sway": {
+     "0": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0,
+      "abs_rot_deg": 0.0
+     },
+     "-1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -6.06,
+      "abs_rot_deg": -6.06
+     },
+     "-0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -3.03,
+      "abs_rot_deg": -3.03
+     },
+     "0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 3.03,
+      "abs_rot_deg": 3.03
+     },
+     "1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 6.06,
+      "abs_rot_deg": 6.06
+     }
+    },
+    "rest": {
+     "connected": true,
+     "components": 1,
+     "line_dir_deg": 101.5
+    },
+    "verdict": "clean",
+    "score": 0,
+    "verdict_without_line1": "clean"
+   },
+   "strand_01_tip<-strand_01": {
+    "parent": "strand_01",
+    "sway": {
+     "0": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0,
+      "abs_rot_deg": 0.0
+     },
+     "-1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -10.1,
+      "abs_rot_deg": -16.16
+     },
+     "-0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 3
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 3,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -5.05,
+      "abs_rot_deg": -8.08
+     },
+     "0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 3
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 3,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 5.05,
+      "abs_rot_deg": 8.08
+     },
+     "1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 10.1,
+      "abs_rot_deg": 16.16
+     }
+    },
+    "rest": {
+     "connected": true,
+     "components": 1,
+     "line_dir_deg": 83.1
+    },
+    "verdict": "clean",
+    "score": 0,
+    "verdict_without_line1": "clean"
+   },
+   "strand_02<-hair_front": {
+    "parent": "hair_front",
+    "sway": {
+     "0": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0,
+      "abs_rot_deg": 0.0
+     },
+     "-1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -5.2,
+      "abs_rot_deg": -5.2
+     },
+     "-0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -2.6,
+      "abs_rot_deg": -2.6
+     },
+     "0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 2.6,
+      "abs_rot_deg": 2.6
+     },
+     "1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 5.2,
+      "abs_rot_deg": 5.2
+     }
+    },
+    "rest": {
+     "connected": true,
+     "components": 1,
+     "line_dir_deg": 103.5
+    },
+    "verdict": "clean",
+    "score": 0,
+    "verdict_without_line1": "clean"
+   },
+   "strand_02_tip<-strand_02": {
+    "parent": "strand_02",
+    "sway": {
+     "0": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0,
+      "abs_rot_deg": 0.0
+     },
+     "-1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -8.6,
+      "abs_rot_deg": -13.8
+     },
+     "-0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 6
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 6,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -4.3,
+      "abs_rot_deg": -6.9
+     },
+     "0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 6
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 6,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 4.3,
+      "abs_rot_deg": 6.9
+     },
+     "1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 13
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 13,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 8.6,
+      "abs_rot_deg": 13.8
+     }
+    },
+    "rest": {
+     "connected": true,
+     "components": 1,
+     "line_dir_deg": 86.0
+    },
+    "verdict": "clean",
+    "score": 0,
+    "verdict_without_line1": "clean"
+   },
+   "strand_03<-hair_front": {
+    "parent": "hair_front",
+    "sway": {
+     "0": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0,
+      "abs_rot_deg": 0.0
+     },
+     "-1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 1
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 4
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 4,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 1,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -9.5,
+      "abs_rot_deg": -9.5
+     },
+     "-0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 1
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 1,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 1,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -4.75,
+      "abs_rot_deg": -4.75
+     },
+     "0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 3
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 3,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 4.75,
+      "abs_rot_deg": 4.75
+     },
+     "1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 1
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 5
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 5,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 1,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 9.5,
+      "abs_rot_deg": 9.5
+     }
+    },
+    "rest": {
+     "connected": true,
+     "components": 1,
+     "line_dir_deg": 96.8
+    },
+    "verdict": "clean",
+    "score": 0,
+    "verdict_without_line1": "clean"
+   },
+   "strand_04<-hair_front": {
+    "parent": "hair_front",
+    "sway": {
+     "0": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 0,
+      "abs_rot_deg": 0.0
+     },
+     "-1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -8.2,
+      "abs_rot_deg": -8.2
+     },
+     "-0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": -4.1,
+      "abs_rot_deg": -4.1
+     },
+     "0.5": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 4.1,
+      "abs_rot_deg": 4.1
+     },
+     "1": {
+      "measured": {
+       "break_": false,
+       "dC": 0,
+       "corners": 0,
+       "connected": true
+      },
+      "baselines": {
+       "rigid": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "line1": {
+        "break_": false,
+        "dC": 0,
+        "corners": 4
+       },
+       "line2": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "static": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       },
+       "joint_s0_posed": {
+        "break_": false,
+        "dC": 0,
+        "corners": 0
+       }
+      },
+      "baseline_max": {
+       "dC": 0,
+       "corners": 4,
+       "break_": false
+      },
+      "worse_than_baseline": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "baseline_max_without_line1": {
+       "dC": 0,
+       "corners": 0,
+       "break_": false
+      },
+      "worse_than_baseline_without_line1": {
+       "line_break": false,
+       "pieces": false,
+       "corners": false
+      },
+      "rel_rot_deg": 8.2,
+      "abs_rot_deg": 8.2
+     }
+    },
+    "rest": {
+     "connected": true,
+     "components": 1,
+     "line_dir_deg": 66.4
+    },
+    "verdict": "clean",
+    "score": 0,
+    "verdict_without_line1": "clean"
+   }
+  },
+  "parts": {
+   "strand_01": {
+    "rest_pieces": 2,
+    "baseline_subpixel_max_growth": 0,
+    "sway": {
+     "-1": 0,
+     "-0.5": 0,
+     "0.5": 0,
+     "1": 0
+    },
+    "verdict": "clean"
+   },
+   "strand_01_tip": {
+    "rest_pieces": 1,
+    "baseline_subpixel_max_growth": 0,
+    "sway": {
+     "-1": 0,
+     "-0.5": 0,
+     "0.5": 0,
+     "1": 0
+    },
+    "verdict": "clean"
+   },
+   "strand_02": {
+    "rest_pieces": 1,
+    "baseline_subpixel_max_growth": 0,
+    "sway": {
+     "-1": 0,
+     "-0.5": 0,
+     "0.5": 0,
+     "1": 0
+    },
+    "verdict": "clean"
+   },
+   "strand_02_tip": {
+    "rest_pieces": 1,
+    "baseline_subpixel_max_growth": 0,
+    "sway": {
+     "-1": 0,
+     "-0.5": 0,
+     "0.5": 0,
+     "1": 0
+    },
+    "verdict": "clean"
+   },
+   "strand_03": {
+    "rest_pieces": 1,
+    "baseline_subpixel_max_growth": 0,
+    "sway": {
+     "-1": 0,
+     "-0.5": 0,
+     "0.5": 0,
+     "1": 0
+    },
+    "verdict": "clean"
+   },
+   "strand_04": {
+    "rest_pieces": 2,
+    "baseline_subpixel_max_growth": 0,
+    "sway": {
+     "-1": 0,
+     "-0.5": 0,
+     "0.5": 0,
+     "1": 0
+    },
+    "verdict": "clean"
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "R": {
+  "erode": 0,
+  "erode_top_only": false,
+  "radius": 20.0,
+  "line_px": 2,
+  "depth": 5.0,
+  "flap_px": 99,
+  "line_px_count": 85,
+  "changed_in_hand_mask": 0,
+  "flap_not_under_opaque_forearm": 0
+ }
+}

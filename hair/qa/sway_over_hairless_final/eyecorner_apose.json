@@ -1,0 +1,99 @@
+{
+ "region_px": 375,
+ "body_changed": 223,
+ "changed_L": 90,
+ "changed_R": 133,
+ "hair_front_alpha255_on_changed": 223,
+ "body_final_alpha255": 223,
+ "body_partial": 0,
+ "skin_eq_body": 223,
+ "colours": [
+  [
+   186,
+   129,
+   86
+  ]
+ ],
+ "colours_in_base_png": [
+  true
+ ],
+ "chroma": 0,
+ "isolated_specks": 0,
+ "poses": {
+  "rest": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sx+1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sx+1sy+1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sx+1sy-1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sx-1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sx-1sy+1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sx-1sy-1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sy+1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "sy-1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "whip+1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "whip+1sy+1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "whip+1sy-1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "whip-1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "whip-1sy+1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  },
+  "whip-1sy-1": {
+   "hl_eq_live": 223,
+   "skin_visible": 0,
+   "alpha_lt255": 0
+  }
+ }
+}

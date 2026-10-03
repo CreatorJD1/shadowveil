@@ -76,8 +76,38 @@ function pauseManual(){document.getElementById('auto').checked=false;anim=null;h
 function set(k,x){v[k]=x;inputs[k].value=x;const m=k.match(/^(?:Palm|Wrist)Twist([LR])$/);if(m){const other=(k.startsWith('Palm')?'Wrist':'Palm')+'Twist'+m[1];v[other]=x;inputs[other].value=x}}
 const clamp=(x,a,b)=>Math.min(b,Math.max(a,x));
 const c=document.getElementById('c'),ctx=guard(c.getContext('2d'));
-const cache={};function img(u){if(!u)return Promise.resolve(null);if(!cache[u])cache[u]=new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>r(null);i.src=u});return cache[u]}
-async function json(u){try{const r=await fetch(u);return r.ok?await r.json():null}catch(e){return null}}
+// HAIRLESS SLOT (staged, ?hairless=1; off by default; views/ and rig.json untouched; staged files are read in place, never copied):
+//  body (all 5 views): Body's staged base_body.png / base_body_skin.png from HL_BODY_DIR(view) -- default
+//        body_tools/work/hairless_division_staged/<view>/live_patch_staged/, override with ?hlbody=<dir with {view}>;
+//        a missing staged copy falls back to the live file and is logged in R.warn (so the check shows which views are not posted yet).
+//        Speck px are NOT cleared here: body files change only on Body's side.
+//  apose draw order per Body parts.json (forearms 220, hands UNDER the forearms -> hands into the 210-219 band, own order kept),
+//        with the skin texture cut by Body's hand_mask.png in memory (as Body's pieces are cut);
+//  hands (apose view only, never without the hands-under-forearm order): Hands' F7 wrist flaps replace L_palm.png / R_palm.png only;
+//  hair (all views), later overrides earlier: speck_fix -> ear_strands (apose) -> lineart_fix Job D (png + rig.json) -> merged (apose strand_04);
+//  eyes and mouth stay live.
+const HAIRLESS=new URLSearchParams(location.search).get('hairless')==='1';const HAIRLESS_T=Date.now();const HAIRLESS_MISS=new Set();
+const HL_BODY_TPL=new URLSearchParams(location.search).get('hlbody')||'../body_tools/work/hairless_division_staged/{view}/live_patch_staged/';
+const HL_BODY_DIR=vw=>HL_BODY_TPL.replace(/\{view\}/g,vw).replace(/\/?$/,'/');
+const HAIRLESS_HAIR={"../views/apose/hair/strand_01.png":"../hair/staged/speck_fix/views/apose/hair/strand_01.png","../views/apose/hair/strand_02.png":"../hair/staged/speck_fix/views/apose/hair/strand_02.png","../views/apose/hair/strand_03_tip.png":"../hair/staged/ear_strands/apose/views/apose/hair/strand_03_tip.png","../views/apose/hair/strand_05.png":"../hair/staged/speck_fix/views/apose/hair/strand_05.png","../views/apose/hair/strand_06_tip.png":"../hair/staged/ear_strands/apose/views/apose/hair/strand_06_tip.png","../views/apose/hair/strand_07.png":"../hair/staged/speck_fix/views/apose/hair/strand_07.png","../views/apose/hair/hair_front.png":"../hair/staged/hairfront_holes/apose/hair/hair_front.png","../views/apose/hair/strand_04.png":"../hair/staged/merged/apose/hair/strand_04.png","../views/apose/hair/rig.json":"../hair/staged/lineart_fix/views/apose/hair/rig.json","../views/tpose/hair/strand_01.png":"../hair/staged/speck_fix/views/tpose/hair/strand_01.png","../views/tpose/hair/strand_02.png":"../hair/staged/speck_fix/views/tpose/hair/strand_02.png","../views/tpose/hair/strand_03.png":"../hair/staged/speck_fix/views/tpose/hair/strand_03.png","../views/tpose/hair/strand_06.png":"../hair/staged/speck_fix/views/tpose/hair/strand_06.png","../views/tpose/hair/strand_06_tip.png":"../hair/staged/speck_fix/views/tpose/hair/strand_06_tip.png","../views/tpose/hair/hair_front.png":"../hair/staged/lineart_fix/views/tpose/hair/hair_front.png","../views/tpose/hair/strand_04.png":"../hair/staged/lineart_fix/views/tpose/hair/strand_04.png","../views/tpose/hair/strand_05.png":"../hair/staged/lineart_fix/views/tpose/hair/strand_05.png","../views/tpose/hair/rig.json":"../hair/staged/lineart_fix/views/tpose/hair/rig.json","../views/left/hair/strand_01.png":"../hair/staged/lineart_fix/views/left/hair/strand_01.png","../views/left/hair/hair_front.png":"../hair/staged/lineart_fix/views/left/hair/hair_front.png","../views/left/hair/rig.json":"../hair/staged/lineart_fix/views/left/hair/rig.json","../views/right/hair/strand_04.png":"../hair/staged/speck_fix/views/right/hair/strand_04.png","../views/right/hair/strand_01.png":"../hair/staged/lineart_fix/views/right/hair/strand_01.png","../views/right/hair/strand_03.png":"../hair/staged/lineart_fix/views/right/hair/strand_03.png","../views/back/hair/strand_01.png":"../hair/staged/speck_fix/views/back/hair/strand_01.png","../views/back/hair/strand_02.png":"../hair/staged/speck_fix/views/back/hair/strand_02.png","../views/back/hair/strand_04.png":"../hair/staged/speck_fix/views/back/hair/strand_04.png","../views/back/hair/strand_05.png":"../hair/staged/speck_fix/views/back/hair/strand_05.png","../views/right/hair/hair_front.png":"../hair/staged/hairfront_holes/right/hair/hair_front.png","../views/apose/hair/hair_back.png":"../hair/staged/tone_fix/apose/hair/hair_back.png","../views/tpose/hair/hair_back.png":"../hair/staged/tone_fix/tpose/hair/hair_back.png","../views/right/hair/hair_back.png":"../hair/staged/tone_fix/right/hair/hair_back.png","../views/back/hair/hair_back.png":"../hair/staged/tone_fix/back/hair/hair_back.png"};
+function hairlessMap(u){if(!HAIRLESS||!u)return u;let m=/^\.\.\/views\/([a-z]+)\/(base_body|base_body_skin)\.png$/.exec(u);if(m)return HL_BODY_DIR(m[1])+m[2]+'.png?v='+HAIRLESS_T;
+ m=view==='apose'&&/^\.\.\/views\/apose\/hands\/(L_palm|R_palm)\.png$/.exec(u);if(m)return '../hands/staged/f7_wrist_apose/'+m[1]+'.png?v='+HAIRLESS_T;
+ m=HANDORDER&&/^\.\.\/views\/(tpose|left|right|back)\/hands\/(L_palm|R_palm)\.png$/.exec(u);if(m&&m[1]===view&&HO_PALMS[view].includes(m[2]))return HO_DIR[view]+m[2]+'.png?v='+HAIRLESS_T; // ?handorder=1: Base Hands F10 (tpose) / F11 (profiles, back) wrist-flap palms
+ const h=HAIRLESS_HAIR[u];return h?h+'?v='+HAIRLESS_T:u}
+window.RigHairless={get on(){return HAIRLESS},bodyDir:HL_BODY_DIR,get missing(){return[...HAIRLESS_MISS]},hairMap:HAIRLESS_HAIR};
+// hands under the forearms: the skin texture keeps skin colour inside the hand area, so cut it with Body's hand_mask.png (as Body's pieces are cut); in memory only
+// in-memory apose hand_mask cut: DROPPED 23:36 PT (Body's re-toned apose/tpose skin copies have the hand_mask cut baked in). ?hlhandcut=1 re-enables it for comparison only
+const HL_HANDCUT=(q=>q==='1')(new URLSearchParams(location.search).get('hlhandcut'));
+async function hairlessHandCut(im){const m=await img('../body_tools/work/hairless_division_staged/apose/hand_mask.png?v='+HAIRLESS_T);if(!m){R&&R.warn&&R.warn.push('hairless: hand_mask.png missing');return im}
+ const mc=document.createElement('canvas');mc.width=W;mc.height=H;const mg=mc.getContext('2d');mg.drawImage(m,0,0);const md=mg.getImageData(0,0,W,H),M=md.data;let n=0;
+ for(let i=0;i<M.length;i+=4){const on=M[i+3]>0&&(M[i]|M[i+1]|M[i+2])>0;M[i]=M[i+1]=M[i+2]=0;M[i+3]=on?255:0;n+=on}mg.putImageData(md,0,0);
+ const c=document.createElement('canvas');c.width=W;c.height=H;const g=c.getContext('2d');g.drawImage(im,0,0);g.globalCompositeOperation='destination-out';g.drawImage(mc,0,0);g.globalCompositeOperation='source-over';
+ c.naturalWidth=W;c.naturalHeight=H;c.hairlessCutPx=n;return c}
+// ?handorder=1 (staged, needs ?hairless=1): Base Hands F10/F11 draw order. tpose+back: hands 300..335 -> 210..218.75 (under forearms 220, above thighs 205); left/right: -> 243..248.25 (above thigh 242, under forearm 250).
+const HANDORDER=HAIRLESS&&new URLSearchParams(location.search).get('handorder')==='1';const HO_DIR={tpose:'../hands/staged/f10_wrist_tpose/',left:'../hands/staged/f11_wrist_profile_back/left/',right:'../hands/staged/f11_wrist_profile_back/right/',back:'../hands/staged/f11_wrist_profile_back/back/'};const HO_PALMS={tpose:['L_palm','R_palm'],left:['L_palm'],right:['R_palm'],back:['L_palm','R_palm']};
+function hairlessOrder(Z,vw){if(HANDORDER&&(vw==='left'||vw==='right')){for(const k in Z)if(k.startsWith('hands:')&&Z[k]>=300&&Z[k]<=399)Z[k]=243+(Z[k]-300)*0.15;return}if(HANDORDER&&(vw==='tpose'||vw==='back')){for(const k in Z)if(k.startsWith('hands:')&&Z[k]>=300&&Z[k]<=399)Z[k]=210+(Z[k]-300)*0.25;return}if(!HAIRLESS||vw!=='apose')return;for(const k in Z)if(k.startsWith('hands:')&&Z[k]>=300&&Z[k]<=399)Z[k]=210+(Z[k]-300)*0.25} // 300..335 -> 210..218.75, under the 220 body/forearms
+const cache={};function img(u){const u0=u;u=hairlessMap(u);if(!u)return Promise.resolve(null);if(!cache[u])cache[u]=new Promise(r=>{const i=new Image();i.onload=()=>r(i);i.onerror=()=>{if(u!==u0){HAIRLESS_MISS.add(u.replace(/\?v=\d+$/,'')+' (fell back to live '+u0.replace(/^\.\.\//,'')+')');const j=new Image();j.onload=()=>r(j);j.onerror=()=>r(null);j.src=u0}else r(null)};i.src=u});return cache[u]}
+async function json(u){const u0=u;u=hairlessMap(u);try{const r=await fetch(u);if(!r.ok&&u!==u0){HAIRLESS_MISS.add(u+' (fell back to live)');const q=await fetch(u0);return q.ok?await q.json():null}return r.ok?await r.json():null}catch(e){return null}}
 const partsOf=j=>j?(Array.isArray(j)?j:(Array.isArray(j.parts)?j.parts:null)):null;
 // views without a face: eyes/mouth are not requested at all (no 404s); an empty rig.json (no parts) counts as 'no part set'
 const NO_FACE_VIEWS=new Set(['back']);
@@ -113,7 +143,7 @@ function resolveLayers(r){const Z={},S={};
   if(isV12('eyes',ps)){S.eyes='v1.2';for(const p of ps)Z['eyes:'+p.id]=p.layer}
   else{S.eyes='legacy (mapped)';r.eyes.eyes.forEach((E,i)=>{for(const p of ps){if(!p.id.startsWith(E+'_'))continue;const s=p.id.slice(E.length+1);Z['eyes:'+p.id]=400+i*10+(s==='white'||s==='iris'?0:s.startsWith('lid_')?1:2)}})}}
  if(r.mouth){const ps=r.mouth.parts;if(isV12('mouth',ps)){S.mouth='v1.2';for(const p of ps)Z['mouth:'+p.id]=p.layer}else{S.mouth='legacy (mapped)';for(const p of ps)Z['mouth:'+p.id]=500}}
- r.z=Z;r.scheme=S}
+ hairlessOrder(Z,typeof view!=='undefined'?view:'');if(HAIRLESS&&view==='apose')S.hairless='staged: hands 210-219 under forearms';if(HANDORDER&&view!=='apose')S.hairless='staged handorder: hands '+((view==='left'||view==='right')?'243-248 (thigh 242 < hands < forearm 250)':'210-219 under forearms');r.z=Z;r.scheme=S}
 
 let R=null,view='apose',mouthState={cur:'mouth_rest',prev:null,t0:0};
 let loadGeneration=0;
@@ -167,7 +197,7 @@ async function load(){const generation=++loadGeneration;view=document.getElement
  if(hands)for(const p of hands.parts){if(p.layerCurled!=null&&p.layerCurled!==''&&Number.isInteger(+p.layerCurled))p.layerCurled=+p.layerCurled;if(p.curlLayerAt!=null&&Number.isFinite(+p.curlLayerAt))p.curlLayerAt=+p.curlLayerAt;
   if(p.layerCurled!=null&&(!Number.isInteger(p.layerCurled)||!inBand('hands',p.layerCurled)))r.warn.push(p.id+': layerCurled '+p.layerCurled+' outside the hands band; ignored');
   for(const f of (r.frames[p.id]||[]))if(f.layer!=null&&!inBand('hands',f.layer)){r.warn.push(p.id+': frame layer '+f.layer+' outside the hands band; ignored');f.layer=null}}
- r.loading=true;R=r;const drv=new Set();if(r.body)r.body.parts.filter(p=>p.file).forEach(p=>{const k=bodyParamOf(p);if(k)drv.add(k)});if(r.skin)r.skin.bones.forEach(p=>{if(p.param)drv.add(p.param)});setBodyUI(!!(r.body||r.skin),drv);groupBox['Root (v1.8, px)'].style.display=(r.body||r.skin)?'':'none';groupBox['Head (v1.8)'].style.display=(r.body||r.skin)?'':'none';r.neck=neckSetup(r);r.wrist=wristSetup(r);r.twist=twistSetup(r);r.handAngles=await loadHandAngles(r,view,hands);if(generation!==loadGeneration)return;r.feet=footSetup(r);updateTwistAvailability();r.eyeW=eyeWidth(r);if(Object.keys(r.handAngles).length)r.warn.push('Hand rotation snaps to the nearest authored angle with opaque swaps and fitted wrist edges. Finger chains and authored curl frames remain active across delivered hand angles. Missing angles are clamped.');
+ r.loading=true;R=r;const drv=new Set();if(r.body)r.body.parts.filter(p=>p.file).forEach(p=>{const k=bodyParamOf(p);if(k)drv.add(k)});if(r.skin)r.skin.bones.forEach(p=>{if(p.param)drv.add(p.param)});setBodyUI(!!(r.body||r.skin),drv);groupBox['Root (v1.8, px)'].style.display=(r.body||r.skin)?'':'none';groupBox['Head (v1.8)'].style.display=(r.body||r.skin)?'':'none';r.neck=neckSetup(r);r.wrist=wristSetup(r);r.twist=twistSetup(r);r.handAngles=await loadHandAngles(r,view,hands);r.pm=PARTMESH?await pmLoad(r,view):null;if(generation!==loadGeneration)return;r.feet=footSetup(r);updateTwistAvailability();r.eyeW=eyeWidth(r);if(Object.keys(r.handAngles).length)r.warn.push('Hand rotation snaps to the nearest authored angle with opaque swaps and fitted wrist edges. Finger chains and authored curl frames remain active across delivered hand angles. Missing angles are clamped.');
  r.loading=false;R=r;LP.key='';LP.loadOvr();if(location.hash.includes('check'))setTimeout(()=>document.getElementById('check').click(),0);
  status((r.missing.length?'Not delivered yet for '+view+': '+r.missing.join(', '):'All part sets loaded for '+view)+(r.skin?'\nbody: skin mesh '+r.skin.src+' ('+r.skin.nv+' vertices, '+r.skin.nt+' triangles, groups '+r.skin.groups.map(g=>g.layer).join('/')+')'+(r.skin.underlay?(r.skin.underlay.ok?'\nskin underlay: '+r.skin.underlay.src+' ('+r.skin.underlay.nt+' triangles, layer '+r.skin.underlay.z+', rest footprint '+r.skin.underlay.check.footprintPx+' px fully hidden)':'\nskin underlay REJECTED: '+r.skin.underlay.reason):''):'')+(r.body?'\nbody: '+Object.keys(r.im).filter(k=>k.startsWith('body:')).length+' jointed parts':(r.im.body?'':'\nbase_body.png missing, using base.png'))+'\nlayers: '+Object.entries(r.scheme).map(([k,x])=>k+'='+x).join(', ')+'\nmouth shapes: '+r.mouthShapes.map(s=>s.name).join(', ')+(Object.keys(r.frames).length?'\nfinger frames: '+Object.keys(r.frames).length+' segments':'')+(r.warn.length?'\nWARN: '+r.warn.join('\nWARN: '):''));draw();preview.hidden=true;caption.hidden=true}
 // v1.3 performance: parts are full-canvas PNGs; crop each to its alpha bounding box once at load (exact pixel copy)
@@ -193,7 +223,26 @@ const HEAD_TILT_DEG=8,HEAD_NOD_DEG=6,HEAD_NOD_PX=4,NECK_GATE_PX=36;
 function headFacing(){const vw=document.getElementById('view').value;return vw==='left'?-1:vw==='right'?1:0}
 function headLocal(){const N=R&&R.neck;if(!N)return null;const t=clamp(v.HeadTilt||0,-1,1),n=clamp(v.HeadNod||0,-1,1);if(!t&&!n)return null;const f=headFacing();
  if(f)return n?rotAt(N.x,N.y,f*n*HEAD_NOD_DEG):null;return mul(T(0,n*HEAD_NOD_PX),rotAt(N.x,N.y,t*HEAD_TILT_DEG))}
-function headApply(BM,rest,key){if(rest||!key||!BM[key])return BM;const L=headLocal();if(L)BM[key]=mul(BM[key],L);return BM}
+// HEAD GROUP (staged, ?headgroup=1): one transform on Body head + eyes/brows/mouth + hair (everything carried by the head bone), pivot (681.5,318).
+// Single correction path for head placement at turn handoffs; identity unless set, so the default and rest are unchanged.
+const HEADGROUP=new URLSearchParams(location.search).get('headgroup')==='1';const HG_PIVOT=[681.5,318];const HG={dx:0,dy:0,rot:0,scale:1,w:1,sub:{}};
+// HG.sub: per-system sub-offsets inside the head group ({mouth,hair,bun:{dx,dy}}; 'bun' = hair part id 'bun', 'hair' = every other hair part), on top of the group, posed frames only (never at rest).
+// HG.w (0..1) scales the group offset AND the subs together: driver eases it 1 -> 0 inside the turn via RigHeadGroup.easeTo(0,ms).
+let HG_TABLE=null;
+if(HEADGROUP){const q=new URLSearchParams(location.search);for(const[k,f]of[['hgdx','dx'],['hgdy','dy'],['hgrot','rot'],['hgs','scale']])if(q.has(k))HG[f]=+q.get(k)}
+function hgSub(sys,M){if(!HEADGROUP||!POSED||!M)return M;const o=HG.sub&&HG.sub[sys];if(!o)return M;const w=HG.w==null?1:HG.w,x=(+o.dx||0)*w,y=(+o.dy||0)*w;if(!x&&!y)return M;return mul(T(x,y),M)}
+function hgM(){if(!HEADGROUP)return null;const w=HG.w==null?1:HG.w,dx=HG.dx*w,dy=HG.dy*w,rot=HG.rot*w,scale=1+(HG.scale-1)*w;if(!dx&&!dy&&!rot&&scale===1)return null;const[px,py]=HG_PIVOT;const S=[scale,0,0,scale,px-scale*px,py-scale*py];return mul(T(dx,dy),mul(rotAt(px,py,rot),S))}
+window.RigHeadGroup={get on(){return HEADGROUP},pivot:HG_PIVOT,get(){return{...HG}},set(o){Object.assign(HG,o||{});if(typeof draw==='function')draw()},reset(){Object.assign(HG,{dx:0,dy:0,rot:0,scale:1,w:1,sub:{}});if(HG._ease){cancelAnimationFrame(HG._ease);HG._ease=0}if(typeof draw==='function')draw()},
+ async applyHandoff(view){if(!HEADGROUP)return null;if(!HG_TABLE){try{HG_TABLE=await (await fetch('partmesh/staged/headgroup.json',{cache:'no-store'})).json()}catch(e){HG_TABLE={}}}const h=(HG_TABLE.handoffs||{})[view];if(h){const sub={};const SB=HG_TABLE.sub||{};for(const sys in SB){const o=(SB[sys]||{})[view];if(o)sub[sys]={dx:+o.dx||0,dy:+o.dy||0}}this.set({dx:h.dx||0,dy:h.dy||0,rot:h.rot||0,scale:h.scale||1,w:1,sub})}return h||null},
+ easeTo(target,ms){if(HG._ease)cancelAnimationFrame(HG._ease);const w0=HG.w==null?1:HG.w,t0=performance.now(),D=Math.max(0,+ms||0);return new Promise(res=>{const step=()=>{const u=D?Math.min(1,(performance.now()-t0)/D):1;HG.w=w0+(target-w0)*(u*u*(3-2*u));if(typeof draw==='function')draw();if(u<1)HG._ease=requestAnimationFrame(step);else{HG._ease=0;res(HG.w)}};step()})}};
+// ARM SUB (staged, ?armsub=1): per-forearm sub-rotation (deg about the elbow) at turn handoffs, posed frames only (never at rest), eased by AS.w like HG.w.
+const ARMSUB=new URLSearchParams(location.search).get('armsub')==='1';const AS={w:1,sub:{}};let AS_TABLE=null;
+function armSub(p){if(!ARMSUB||!POSED||!p)return 0;const o=AS.sub[p.id];if(!o)return 0;return o*(AS.w==null?1:AS.w)}
+function bodyAngleAS(p){return bodyAngle(p)+armSub(p)}
+window.RigArmSub={get on(){return ARMSUB},get(){return{w:AS.w,sub:{...AS.sub}}},set(o){if(o&&o.sub)AS.sub={...o.sub};if(o&&o.w!=null)AS.w=o.w;if(typeof draw==='function')draw()},reset(){AS.w=1;AS.sub={};if(AS._ease){cancelAnimationFrame(AS._ease);AS._ease=0}if(typeof draw==='function')draw()},
+ async applyHandoff(view){if(!ARMSUB)return null;if(!AS_TABLE){try{AS_TABLE=await (await fetch('partmesh/staged/armsub.json',{cache:'no-store'})).json()}catch(e){AS_TABLE={}}}const h=((AS_TABLE.forearm||{})[view])||null;this.set({w:1,sub:h||{}});return h},
+ easeTo(target,ms){if(AS._ease)cancelAnimationFrame(AS._ease);const w0=AS.w==null?1:AS.w,t0=performance.now(),D=Math.max(0,+ms||0);return new Promise(res=>{const step=()=>{const u=D?Math.min(1,(performance.now()-t0)/D):1;AS.w=w0+(target-w0)*(u*u*(3-2*u));if(typeof draw==='function')draw();if(u<1)AS._ease=requestAnimationFrame(step);else{AS._ease=0;res(AS.w)}};step()})}};
+function headApply(BM,rest,key){if(!key||!BM[key])return BM;if(!rest){const L=headLocal();if(L)BM[key]=mul(BM[key],L)}const G=hgM();if(G)BM[key]=mul(G,BM[key]);return BM}
 function neckSetup(r){const Sk=r.skin;const hb=Sk?Sk.headBone:null;
  if(!Sk){const hp=r.body&&r.body.parts.find(p=>p.id===((r.body.cfg&&r.body.cfg.headPart)||'head'));return hp?{x:hp.pivotX,y:hp.pivotY,n:0,gated:false,note:'cut parts: no seam gate'}:null}
  const hi=Sk.bones.findIndex(b=>b.id===hb);if(hi<0)return null;const ti=Sk.bones.findIndex(b=>b.id===Sk.bones[hi].parent);if(ti<0)return null;
@@ -303,9 +352,14 @@ function lidIds(j,E){if(j._lid&&j._lid[E])return j._lid[E];const pick=x=>{if(typ
  const ids=pick(lf)||pick(pf)||pick(5);(j._lid=j._lid||{})[E]=ids;return ids}
 // v1.8 talk driver: while auto talk is running, EE, EE_half and smile are not picked
 const TALK_EXCLUDE=new Set(['EE','EE_half','smile','anger']);let mouthTalk=false;
+// MOUTH FIX (staged, ?mouthfix=1): (a) hard cut on every switch (forces mouthfade=0), (b) mouth drawn with its lip-seam anchor phase-snapped to whole px
+//  in posed frames (same resampling phase every frame -> no sharp/soft flicker at exactly-0 head rotation; rest path untouched), (c) rest wins exact ties.
+const MOUTHFIX=new URLSearchParams(location.search).get('mouthfix')==='1';
+function mouthM(M){if(!MOUTHFIX||!POSED||!R||!R.mouth||!R.mouth.anchor||!M||M===I)return M;const ax=+R.mouth.anchor.x,ay=+R.mouth.anchor.y;if(!Number.isFinite(ax)||!Number.isFinite(ay))return M;
+ const px=M[0]*ax+M[2]*ay+M[4],py=M[1]*ax+M[3]*ay+M[5];const ddx=Math.round(px-ax)-(px-ax),ddy=Math.round(py-ay)-(py-ay);if(!ddx&&!ddy)return M;return[M[0],M[1],M[2],M[3],M[4]+ddx,M[5]+ddy]}
 function mouthPick(){const S0=R.mouthShapes;const S=mouthTalk&&S0?S0.filter(s=>!TALK_EXCLUDE.has(s.name)):S0;if(!S||!S.length)return'mouth_rest';const mo=clamp(v.MouthOpen,0,1),mf=clamp(v.MouthForm,-1,1);let best=null,bk=null;
  const lt=(a,b)=>{for(let i=0;i<a.length;i++){if(a[i]!==b[i])return a[i]<b[i]}return false};
- for(const s of S){const k=[Math.round(Math.hypot(s.open-mo,s.form-mf)*1e9),s.name==='rest'?1:0,s.open,s.idx];if(!bk||lt(k,bk)){best=s;bk=k}}return best.id}
+ for(const s of S){const k=[Math.round(Math.hypot(s.open-mo,s.form-mf)*1e9),s.name==='rest'?(MOUTHFIX?0:1):(MOUTHFIX?1:0),s.open,s.idx];if(!bk||lt(k,bk)){best=s;bk=k}}return best.id}
 const MOUTH_HOLD_MS=120,MOUTH_HOLD_TARGET_MS=125;let MOUTH_FADE_MS=35;let holdLog=null; // v1.8: min hold 120 ms (target 125), crossfade 35 ms or 0 = hard cut
 function mouthUpdate(now){const want=mouthPick(),st=mouthState;if(want===st.cur)return false;
  if(now-st.t0<MOUTH_HOLD_MS)return true; // hold the current shape at least 70 ms: no flicker
@@ -331,7 +385,7 @@ async function loadSkin(sj,b,r,src){const bad=m=>{throw new Error(m)};
  if(!Array.isArray(sj.bones)||!Array.isArray(sj.vertices)||!Array.isArray(sj.triangles)||!Array.isArray(sj.weights))bad('bones/vertices/triangles/weights missing');
  const nb=sj.bones.length,nv=sj.vertices.length,nt=sj.triangles.length;
  const names=new Set(sj.bones.map(x=>x.name));for(const x of sj.bones)if(x.parent&&!names.has(x.parent))bad('bone '+x.name+': unknown parent '+x.parent);
- const image=await img(b+(sj.image||'base_body.png'));if(!image)bad('image '+(sj.image||'base_body.png')+' missing');if(image.naturalWidth!==W||image.naturalHeight!==H)bad('image is not '+W+'x'+H);
+ let image=await img(b+(sj.image||'base_body.png'));if(!image)bad('image '+(sj.image||'base_body.png')+' missing');if(image.naturalWidth!==W||image.naturalHeight!==H)bad('image is not '+W+'x'+H);if(HAIRLESS&&view==='apose'&&HL_HANDCUT)image=await hairlessHandCut(image);
  const bones=sj.bones.map(x=>{const o={id:x.name,parent:x.parent||null,pivotX:x.pivot[0],pivotY:x.pivot[1],param:x.param!==undefined?x.param:(BODY_PARAM_OF[x.name]??null)};
   for(const k of['maxRotDeg','minRotDeg','rotDir','degAtPlus1','degAtMinus1','maxDeg','wristPivot'])if(x[k]!=null)o[k]=x[k];return o});
  const {wb,ww}=parseWeights(sj.weights,nv,nb,bad,'');
@@ -392,6 +446,33 @@ function meshDraw(Mh,ranges,filt,S){const gl=SKGL.gl,cv=SKGL.cv;if(cv.width!==W*
 function meshReadAlpha(Mh,ranges){meshDraw(Mh,ranges,'nearest',1);const gl=SKGL.gl;const px=new Uint8Array(W*H*4);gl.readPixels(0,0,W,H,gl.RGBA,gl.UNSIGNED_BYTE,px);
  const a=new Uint8Array(W*H);for(let y=0;y<H;y++){const src=(H-1-y)*W*4,dst=y*W;for(let x=0;x<W;x++)a[dst+x]=px[src+x*4+3]}return a}
 function blitGL(g){g.save();g.setTransform(1,0,0,1,0,0);g.globalAlpha=DIM;g.imageSmoothingEnabled=false;g.drawImage(SKGL.cv,0,0);g.restore()}
+// v1.9 partmesh pilot (rig/partmesh/FORMAT.md). OFF by default: only ?partmesh=1 reads rig/partmesh/staged/manifest.json.
+// A meshed drawing bends across its joints with the v1.4 GL mesh path: posed vertex = Mparent * D_self(w) * D_child(u) * x,
+// D(t) = the fraction t of the relative joint transform (angle about the joint centre + offset), so the parent's distal end and
+// the child's root deform identically where they overlap. Identity joints (rest / unposed) draw with drawM exactly as before.
+const PARTMESH=new URLSearchParams(location.search).get('partmesh')==='1';
+function invM(m){const[a,b,c,d,e,f]=m,det=a*d-b*c,ia=d/det,ib=-b/det,ic=-c/det,id=a/det;return[ia,ib,ic,id,-(ia*e+ic*f),-(ib*e+id*f)]}
+function relJoint(Mp,Mc,c){const D=mul(invM(Mp),Mc);const a=Math.atan2(D[1],D[0])*180/Math.PI;const x=D[0]*c[0]+D[2]*c[1]+D[4]-c[0],y=D[1]*c[0]+D[3]*c[1]+D[5]-c[1];return{a,d:[x,y],c,id:Math.abs(a)<1e-9&&Math.abs(x)<1e-9&&Math.abs(y)<1e-9}}
+function fracJ(J,t){if(!J||J.id||!t)return I;if(t===1)return mul(T(J.d[0],J.d[1]),rotAt(J.c[0],J.c[1],J.a));return mul(T(t*J.d[0],t*J.d[1]),rotAt(J.c[0],J.c[1],t*J.a))}
+async function pmLoad(r,vw){const out={};const man=await json('partmesh/staged/manifest.json');if(!man){r.warn.push('partmesh: no staged manifest');return out}
+ for(const f of man.files||[]){if(f.view!==vw)continue;const j=await json('partmesh/staged/'+f.file);if(!j||!/^partmesh v0\.[12]$/.test(j.contract)){r.warn.push('partmesh: '+f.file+' rejected (contract)');continue}
+  for(const p of j.parts){const ds={};for(const k in p.drawings){const d=p.drawings[k],m=d.mesh,nv=m.vertices.length,nt=m.triangles.length;if(m.weights.length!==nv){r.warn.push('partmesh: '+p.id+' '+k+' weights != vertices');continue}
+    const V=new Float32Array(nv*2);m.vertices.forEach(([x,y],i)=>{V[2*i]=x;V[2*i+1]=y});const W2=new Float32Array(nv*2);m.weights.forEach(([w,u],i)=>{W2[2*i]=w;W2[2*i+1]=u});
+    const idx=new Uint32Array(nt*3);m.triangles.forEach((t,i)=>{idx[3*i]=t[0];idx[3*i+1]=t[1];idx[3*i+2]=t[2]});ds[k]={key:k,pivot:d.pivot,image:d.image,V,W2,idx,nv,nt,def:new Float32Array(nv*2),pos:new Float32Array(nt*6)}}
+   out[j.system+':'+p.id]={id:p.id,parent:p.parent,child:p.child,childJoint:p.child?j.joints[p.child]:null,drawings:ds,src:f.file}}}
+ if(Object.keys(out).length)r.warn.push('partmesh pilot ON (staged): '+Object.keys(out).join(', '));return out}
+const PM_PAD=6;
+function pmDraw(g,key,dk,im,Mp,Mx,Mc){const e=R.pm&&R.pm[key],d=e&&e.drawings[dk];
+ if(!d||!im||im.empty){drawM(g,im,Mx);return}
+ const Jr=relJoint(Mp,Mx,d.pivot),Jc=e.child&&Mc?relJoint(Mx,Mc,e.childJoint.centre):null;
+ if(Jr.id&&(!Jc||Jc.id)){d.meshed=false;drawM(g,im,Mx);return}
+ const gl=glInit();if(d.texFor!==im){const w=im.naturalWidth||im.width,h=im.naturalHeight||im.height,c=document.createElement('canvas');c.width=w+2*PM_PAD;c.height=h+2*PM_PAD;c.getContext('2d').drawImage(im,PM_PAD,PM_PAD);
+  if(d.tex)gl.deleteTexture(d.tex);d.tex=glTex(gl,c);d.texFor=im;const ox=(im.ox||0)-PM_PAD,oy=(im.oy||0)-PM_PAD;const uv=new Float32Array(d.nt*6);for(let k=0;k<d.idx.length;k++){const vi=d.idx[k];uv[2*k]=(d.V[2*vi]-ox)/c.width;uv[2*k+1]=(d.V[2*vi+1]-oy)/c.height}
+  if(d.uvBuf)gl.deleteBuffer(d.uvBuf);d.uvBuf=glBuf(gl,uv,gl.STATIC_DRAW);if(!d.posBuf)d.posBuf=gl.createBuffer()}
+ for(let i=0;i<d.nv;i++){const M=mul(Mp,mul(fracJ(Jr,d.W2[2*i]),fracJ(Jc,d.W2[2*i+1])));const x=d.V[2*i],y=d.V[2*i+1];d.def[2*i]=M[0]*x+M[2]*y+M[4];d.def[2*i+1]=M[1]*x+M[3]*y+M[5]}
+ for(let k=0;k<d.idx.length;k++){d.pos[2*k]=d.def[2*d.idx[k]];d.pos[2*k+1]=d.def[2*d.idx[k]+1]}d.dirty=true;d.meshed=true;
+ meshDraw(d,[{start:0,count:d.nt}],QUAL==='nearest'?'nearest':'linear',g.__S||1);blitGL(g)}
+window.RigPartMesh={get on(){return PARTMESH},get parts(){return R&&R.pm?Object.keys(R.pm):[]},draw:pmDraw};
 let SKIN_FORCE_GL=false; // test hook: draw rest through the GL path too
 function poseStill(pose){if(pose.still==null)pose.still=(!TWS||pose.rest)&&R.skin.bones.every(b=>{const M=pose.BM[b.id];return isAxis(M)&&M[4]===0&&M[5]===0});return pose.still}
 function poseIdent(pose){if(pose.ident==null)pose.ident=poseStill(pose)&&!R._taper&&!R._clip;return pose.ident}
@@ -501,6 +582,8 @@ const HAND_ATTACH={"apose":{"R":{"wrist":[[281,690],[309,723]],"length":153.8195
 const WT_DONORS={apose:{L:[['left',90],['back',180]],R:[['right',90],['back',180]]},tpose:{L:[['apose',-90],['back',90]],R:[['apose',-90],['back',90]]},
  left:{L:[['apose',-90],['back',90]]},right:{R:[['apose',-90],['back',90]]},back:{L:[['left',-90],['apose',-180]],R:[['right',-90],['apose',-180]]}};
 function faAxis(bj,H){const bs=bj&&(bj.bones||partsOf(bj));if(!bs)return null;const f=bs.find(b=>(b.name||b.id)==='forearm_'+H);if(!f)return null;const wp=pt(f.wristPivot);const pv=f.pivot||[f.pivotX,f.pivotY];if(!wp||!pv)return null;return{wp,a:Math.atan2(wp[1]-pv[1],wp[0]-pv[0])}}
+// v1.9 staged: ?handangles=off drops the generated turned-hand sprites (rig/hand_angles 45/135/225/315); authored views stay.
+const HAND_ANGLES_GENERATED=new URLSearchParams(location.search).get('handangles')!=='off'; // DEFAULT FLIP (A): change !=='off' to ==='on'
 async function loadHandAngles(r,vw,hands){const out={};const D=WT_DONORS[vw]||{};const bT=r.skin?{bones:r.skin.bones.map(b=>({name:b.id,pivot:[b.pivotX,b.pivotY],wristPivot:b.wristPivot}))}:(r.body?{parts:r.body.parts}:null);
  for(const H of['L','R']){const palm=hands&&hands.parts.find(p=>p.id===H+'_palm'&&p.file&&!p.hidden);if(!palm)continue;const tA=faAxis(bT,H);if(!tA)continue;const ownParts=byLayer(hands.parts.filter(p=>p.file&&!p.hidden&&p.id.startsWith(H+'_'))).map(p=>({im:r.im['hands:'+p.id]}));const ownImage=composeHand(ownParts,null);const E=[{deg:0,native:true,src:vw}];
   for(const [dv,deg] of (D[H]||[])){const b='../views/'+dv+'/';const hj=await json(b+'hands/rig.json');const bj=await json(b+'body/skin.json')||await json(b+'body/rig.json');const ps=partsOf(hj);if(!ps)continue;
@@ -510,7 +593,7 @@ async function loadHandAngles(r,vw,hands){const out={};const D=WT_DONORS[vw]||{}
    const th=tA.a-dA.a;const target=HAND_ATTACH[vw]?.[H],donor=HAND_ATTACH[dv]?.[H];if(!target||!donor){r.warn.push('No authored attachment for '+dv+' '+H);continue}const image=composeHand(parts,mask,dA);const targetOpening=handOpening(ownImage,tA,target),donorOpening=handOpening(image,dA,donor);const A=fitHand(targetOpening,donorOpening,tA,dA);
    const frames={};for(const part of donorParts){if(!Array.isArray(part.frames)||!part.frames.length)continue;const loaded=await Promise.all(part.frames.map(async f=>{const meta=typeof f==='string'?{file:f}:f;const url=b+'hands/'+meta.file;const im=await img(url);const result=im?{img:trim(im),file:meta.file,pivot:pt(meta.pivot),childPivot:pt(meta.childPivot),layer:meta.layer}:null;delete cache[url];return result}));if(loaded.every(Boolean))frames[part.id]=loaded;else r.warn.push('Incomplete finger frames '+dv+' '+part.id)}
    E.push({deg,src:dv,parts,mask,image,A,skinScale:A.skinScale,rig:{...hj,parts:donorParts},frames,attachment:{target:targetOpening,donor:donorOpening},rotDeg:+(th*180/Math.PI).toFixed(1)})}
-  E.push(...await loadIntermediateHandAngles(r,vw,H,tA,ownImage));
+  if(HAND_ANGLES_GENERATED)E.push(...await loadIntermediateHandAngles(r,vw,H,tA,ownImage));
   const opening=handOpening(ownImage,tA,HAND_ATTACH[vw][H]);for(const e of E)e.contours=[];E.sort((a,b)=>a.deg-b.deg);out[H]={E,axis:tA.a,wp:tA.wp,min:E[0].deg,max:E[E.length-1].deg}}return out}
 // Opaque nearest authored hand angle: no overlapping images, opacity fades, or scale animation.
 function twistState(H,rest){const S=R&&R.handAngles&&R.handAngles[H];if(rest||!S)return null;const x=clamp(+v['WristTwist'+H]||0,-1,1);if(!x)return null;
@@ -547,7 +630,10 @@ function bleedRGB(src){const w=src.width,h=src.height,q=src.getContext('2d'),img
   if(p[(i-1)*4+3]>=250)s=i-1;else if(p[(i+1)*4+3]>=250)s=i+1;else if(p[(i-w)*4+3]>=250)s=i-w;else if(p[(i+w)*4+3]>=250)s=i+w;
   if(s<0)continue;p[i*4]=p[s*4];p[i*4+1]=p[s*4+1];p[i*4+2]=p[s*4+2]}}
  if(!SSB)SSB=document.createElement('canvas');if(SSB.width!==w||SSB.height!==h){SSB.width=w;SSB.height=h}SSB.getContext('2d').putImageData(img,0,0);return SSB}
-function renderFinal(g,rest){if(rest||QUAL!=='ss2'){g.__S=1;render(g,rest);return}
+// v1.9 staged: ?ss2rest=1 draws a pose that equals rest at 1x (same path as the Rest check) so Reset is 0 px vs base.png under ss2.
+const SS2_EXACT_REST=new URLSearchParams(location.search).get('ss2rest')==='1'; // DEFAULT FLIP (B): change ==='1' to !=='0'
+function poseAtRest(){if(hairDrive||anim)return false;for(const k in P)if(v[k]!==P[k][2])return false;return true}
+function renderFinal(g,rest){if(rest||QUAL!=='ss2'||(SS2_EXACT_REST&&poseAtRest())){g.__S=1;render(g,rest);return}
  if(!SS){SS=document.createElement('canvas');SS.width=2*W;SS.height=2*H}const q=guard(SS.getContext('2d'));q.__S=2;render(q,false);
  g.setTransform(1,0,0,1,0,0);g.globalAlpha=1;g.globalCompositeOperation='source-over';g.clearRect(0,0,W,H);g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';g.drawImage(SS,0,0,2*W,2*H,0,0,W,H);
  const bled=bleedRGB(g.canvas);g.setTransform(1,0,0,1,0,0);g.imageSmoothingEnabled=false;g.drawImage(bled,0,0)}
@@ -558,11 +644,11 @@ function render(g,rest){POSED=!rest;TWS=twistAmounts(rest);const TWH={L:twistSta
  const add=(z,step,fn,m)=>items.push({z:Number.isFinite(z)?z:[150,220,300,400,500,650][step],step,seq:seq++,fn,m});const LPA=LP.active;const f1=x=>(+x).toFixed(2);
  // body: jointed parts if delivered, else base_body.png as in v1.1
  let BM={},headM=I;
- if(R.body){const bps=R.body.parts;BM=rootApply(chain(bps,rest?()=>0:bodyAngle,null,p=>p.parent!==undefined?p.parent:BODY_PARENT_OF[p.id]),rest);
+ if(R.body){const bps=R.body.parts;BM=rootApply(chain(bps,rest?()=>0:bodyAngleAS,null,p=>p.parent!==undefined?p.parent:BODY_PARENT_OF[p.id]),rest);
   const hp=R.body.cfg.headPart||(BM.head?'head':'torso');headApply(BM,rest,BM.head||R.body.cfg.headPart?hp:null);headM=BM[hp]||I;
   if(!useSkin())for(const p of bps)if(p.file)add(Z['body:'+p.id],STEP.body,g=>drawM(g,need('body:'+p.id,im['body:'+p.id]),BM[p.id]),{id:'body:'+p.id,gid:'body',glabel:'cut parts',sys:'body',label:p.id,info:LPA&&!rest&&bodyParamOf(p)?bodyParamOf(p)+' '+f1(v[bodyParamOf(p)]||0)+' → '+bodyAngle(p).toFixed(1)+'°':''})}
  if(useSkin()){ // v1.4 skinned mesh replaces the cut parts; its bones drive hands (forearm) and face/hair (head)
-  const Sk=R.skin;BM=headApply(rootApply(chain(Sk.bones,rest?()=>0:bodyAngle,null,p=>p.parent),rest),rest,Sk.headBone);if(R.wrist&&R.hands)for(const H in R.wrist){const pm=R.hands.parts.find(p=>p.id===H+'_palm'&&p.file);if(pm)BM['__hand_'+H]=handRoot(pm,BM,rest,TWH)}headM=BM[Sk.headBone]||BM.head||BM.torso||I;const pose={BM,rest,def:null};R._pose=pose;
+  const Sk=R.skin;BM=headApply(rootApply(chain(Sk.bones,rest?()=>0:bodyAngleAS,null,p=>p.parent),rest),rest,Sk.headBone);if(R.wrist&&R.hands)for(const H in R.wrist){const pm=R.hands.parts.find(p=>p.id===H+'_palm'&&p.file);if(pm)BM['__hand_'+H]=handRoot(pm,BM,rest,TWH)}headM=BM[Sk.headBone]||BM.head||BM.torso||I;const pose={BM,rest,def:null};R._pose=pose;
   if(useUnderlay())add(Sk.underlay.z,STEP.body,g=>underlayPass(g,pose),{id:'skin:underlay',gid:'skin',glabel:'skin mesh passes',sys:'body',label:'underlay ('+Sk.underlay.src.split('/').pop()+')',info:Sk.underlay.nt+' tris'});
   for(const gr of Sk.groups)items.push({z:gr.layer,step:STEP.body,seq:seq++,skin:gr,pose,m:{id:'skin:'+gr.layer,gid:'skin',glabel:'skin mesh passes',sys:'body',label:'pass '+gr.layer+' · '+gr.label,info:gr.count+' tris'}})}
  else if(!R.body)add(Z['body:base_body'],STEP.body,g=>drawM(g,im.body||im.base,I),{id:'body:base_body',gid:'body',glabel:'body',sys:'body',label:'base_body.png'});
@@ -572,12 +658,13 @@ function render(g,rest){POSED=!rest;TWS=twistAmounts(rest);const TWH={L:twistSta
  const hair=R.hair||[];const dr=id=>(!rest&&hairDrive&&hairDrive[id])||null;
  const HA={};const hM=chain(hair,p=>{if(rest)return 0;const d=dr(p.id);const a=(p.swayWeight||0)*(p.maxSwayDeg||0)*clamp(d?d.x:v.HairSwayX,-1,1);HA[p.id]=a;return a});
  const yMax=+R.hairCfg.swayYMaxPx||0;
- for(const p of hair){if(!p.file)continue;const d=dr(p.id);const dy=rest?0:Math.round(clamp(d?d.y:v.HairSwayY,-1,1)*clamp(+p.swayY||0,0,1)*yMax);const M=mul(headM,mul(T(0,dy),hM[p.id]));const z=Z['hair:'+p.id];const hi=(R.hairInfo||{})[p.id]||{root:p.id,depth:0};const lim=Math.abs((p.swayWeight||0)*(p.maxSwayDeg||0));add(z,z<200?STEP.hair_back:STEP.hair_front,g=>drawM(g,need('hair:'+p.id,im['hair:'+p.id]),M),{id:'hair:'+p.id,gid:'hairstrand:'+hi.root,glabel:'strand '+hi.root,sys:z<200?'hair_back':'hair_front',label:p.id+(hi.depth?' (chain '+hi.depth+')':''),info:LPA?(()=>{let tot=0,q=p,n=0;while(q&&n++<20){tot+=HA[q.id]||0;q=q.parent?hair.find(h=>h.id===q.parent):null}return (lim?(HA[p.id]||0).toFixed(1)+'° / ±'+lim.toFixed(1)+'° (w '+(p.swayWeight||0)+' × max '+(p.maxSwayDeg||0)+'°)':'no sway')+(hi.depth?' · chain Σ '+tot.toFixed(1)+'°':'')+(dy?' · dy '+dy:'')})():'',ginfo:LPA&&hi.depth===0&&lim?'sway '+(HA[p.id]||0).toFixed(1)+'° / ±'+lim.toFixed(1)+'° (maxSwayDeg '+(p.maxSwayDeg||0)+'°)':undefined})}
+ const hairWorld=id=>{const q=id&&hair.find(h=>h.id===id);if(!q)return headM;const d=dr(q.id);const dy=rest?0:Math.round(clamp(d?d.y:v.HairSwayY,-1,1)*clamp(+q.swayY||0,0,1)*yMax);return mul(headM,mul(T(0,dy),hM[q.id]))};
+ for(const p of hair){if(!p.file)continue;const d=dr(p.id);const dy=rest?0:Math.round(clamp(d?d.y:v.HairSwayY,-1,1)*clamp(+p.swayY||0,0,1)*yMax);const hsys=p.id==='bun'?'bun':'hair';const M=hgSub(hsys,mul(headM,mul(T(0,dy),hM[p.id])));const z=Z['hair:'+p.id];const hi=(R.hairInfo||{})[p.id]||{root:p.id,depth:0};const lim=Math.abs((p.swayWeight||0)*(p.maxSwayDeg||0));add(z,z<200?STEP.hair_back:STEP.hair_front,(R.pm&&R.pm['hair:'+p.id])?g=>pmDraw(g,'hair:'+p.id,'part',need('hair:'+p.id,im['hair:'+p.id]),hgSub(hsys,hairWorld(p.parent)),M,hgSub(hsys,hairWorld(R.pm['hair:'+p.id].child))):g=>drawM(g,need('hair:'+p.id,im['hair:'+p.id]),M),{id:'hair:'+p.id,gid:'hairstrand:'+hi.root,glabel:'strand '+hi.root,sys:z<200?'hair_back':'hair_front',label:p.id+(hi.depth?' (chain '+hi.depth+')':''),info:LPA?(()=>{let tot=0,q=p,n=0;while(q&&n++<20){tot+=HA[q.id]||0;q=q.parent?hair.find(h=>h.id===q.parent):null}return (lim?(HA[p.id]||0).toFixed(1)+'° / ±'+lim.toFixed(1)+'° (w '+(p.swayWeight||0)+' × max '+(p.maxSwayDeg||0)+'°)':'no sway')+(hi.depth?' · chain Σ '+tot.toFixed(1)+'°':'')+(dy?' · dy '+dy:'')})():'',ginfo:LPA&&hi.depth===0&&lim?'sway '+(HA[p.id]||0).toFixed(1)+'° / ±'+lim.toFixed(1)+'° (maxSwayDeg '+(p.maxSwayDeg||0)+'°)':undefined})}
  // hands: palms parent to the body forearm (at wristPivot) when the body rig is active
  if(R.hands){const M=handChain(R.hands.parts,rest?()=>0:handAngle(R.hands),p=>handRoot(p,BM,rest,TWH),rest);
   for(const H of['L','R']){const st=TWH[H];if(!st)continue;const pm=R.hands.parts.find(p=>p.id===H+'_palm'&&p.file);if(!pm)continue;const root0=palmExt(pm,BM,rest);
    for(const it of st.L){if(it.e.native)continue;const Mr=root0;const e=it.e,al=it.alpha;add(R.z['hands:'+pm.id],STEP.hands,g=>{drawDonor(g,e,Mr,al)},{id:'hands:'+H+':twist:'+e.src,gid:'hands:'+H,glabel:(H==='L'?'left':'right')+' hand ('+H+')',sys:'hands',label:'authored angle '+e.src+' ('+e.deg+'°)',info:'Requested '+st.tau.toFixed(0)+'° · authored '+st.selectedDeg+'° · opaque, fitted wrist'+(st.clamped?' · CLAMPED (no art past '+st.S.min+'..'+st.S.max+'°)':'')})}}
-  for(const p of R.hands.parts)if(p.file){if(TWH[p.id[0]]&&!TWH[p.id[0]].L.some(q=>q.e.native))continue;const f=frameOf(p,rest);const H0=p.id[0];let info='',ginfo;if(LPA){const fr=R.frames[p.id];const fm=p.id.match(/^([LR])_(\w+?)\d$/);const cu=fm?clamp(v['Hand'+fm[1]+fm[2]]||0,0,1):null;info=(fr?'frame f'+fr.indexOf(f)+'/'+(fr.length-1)+' '+(f.file||''):(fm?'no frames':''))+(cu!=null?' · curl '+f1(cu):'');ginfo=['Thumb','Index','Middle','Ring','Pinky'].map(n=>n[0]+' '+f1(v['Hand'+H0+n]||0)).join(' ')+' · wrist '+f1(v['Wrist'+H0]||0)}add(handLayer(p,rest),STEP.hands,g=>{drawM(g,need('hands:'+p.id,f?f.img:im['hands:'+p.id]),M[p.id])},{id:'hands:'+p.id,gid:'hands:'+H0,glabel:(H0==='L'?'left':'right')+' hand ('+H0+')',sys:'hands',label:p.id,info,ginfo})}}
+  for(const p of R.hands.parts)if(p.file){if(TWH[p.id[0]]&&!TWH[p.id[0]].L.some(q=>q.e.native))continue;const f=frameOf(p,rest);const H0=p.id[0];let info='',ginfo;if(LPA){const fr=R.frames[p.id];const fm=p.id.match(/^([LR])_(\w+?)\d$/);const cu=fm?clamp(v['Hand'+fm[1]+fm[2]]||0,0,1):null;info=(fr?'frame f'+fr.indexOf(f)+'/'+(fr.length-1)+' '+(f.file||''):(fm?'no frames':''))+(cu!=null?' · curl '+f1(cu):'');ginfo=['Thumb','Index','Middle','Ring','Pinky'].map(n=>n[0]+' '+f1(v['Hand'+H0+n]||0)).join(' ')+' · wrist '+f1(v['Wrist'+H0]||0)}add(handLayer(p,rest),STEP.hands,(R.pm&&R.pm['hands:'+p.id])?g=>{const e=R.pm['hands:'+p.id],fr=R.frames[p.id],fi=fr&&f?fr.indexOf(f):-1;pmDraw(g,'hands:'+p.id,fi>=0?'f'+fi:'part',need('hands:'+p.id,f?f.img:im['hands:'+p.id]),M[p.parent]||I,M[p.id],e.child?M[e.child]:null)}:g=>{drawM(g,need('hands:'+p.id,f?f.img:im['hands:'+p.id]),M[p.id])},{id:'hands:'+p.id,gid:'hands:'+H0,glabel:(H0==='L'?'left':'right')+' hand ('+H0+')',sys:'hands',label:p.id,info,ginfo})}}
  if(R.eyes){const j=R.eyes,L=j.irisLimitsPx;const X=rest?0:clamp(v.EyeBallX,-1,1),Y=rest?0:clamp(v.EyeBallY,-1,1);const dx=Math.round(X*(X>0?L.dxAtXplus1:-L.dxAtXminus1)),dy=Math.round(Y*(Y>0?L.dyAtYplus1:-L.dyAtYminus1));
   for(const E of j.eyes){const rl=id=>{const q=(j.parts||[]).find(x=>x.id===id);return q&&q.layer!=null?q.layer:'—'}; // layer as written in the eyes' rig.json (panel label only)
    const zW=Z['eyes:'+E+'_white'],zI=Z['eyes:'+E+'_iris']??zW;
@@ -600,8 +687,8 @@ function render(g,rest){POSED=!rest;TWS=twistAmounts(rest);const TWH={L:twistSta
    if(inFade||pending){if(simNow==null)requestAnimationFrame(draw)}
    // v1.3 crossfade rule: outgoing shape stays at full opacity underneath, incoming fades in on top (same layer, drawn after),
    // outgoing is dropped once incoming reaches 1 -> her base lips never show through mid-fade
-   const fading=inFade;if(fading&&aOut>0)add(zm(st.cur),STEP.mouth,g=>drawM(g,need('mouth:'+st.prev,im['mouth:'+st.prev]),headM,aOut),{id:'mouth:out',gid:'mouth',glabel:'mouth',sys:'mouth',label:'outgoing '+String(st.prev).replace(/^mouth_/,''),info:'opacity '+f1(aOut)+' (underneath, fades over the last half)'});
-   add(zm(st.cur),STEP.mouth,g=>drawM(g,need('mouth:'+st.cur,im['mouth:'+st.cur]),headM,fading?a:1),{id:'mouth:in',gid:'mouth',glabel:'mouth',sys:'mouth',label:(fading?'incoming ':'shape ')+String(st.cur).replace(/^mouth_/,''),info:fading?'opacity '+f1(a)+' (on top)':'opacity 1.00',ginfo:mg(st.cur)+(fading?' · crossfade '+f1(a):'')})}}
+   const fading=inFade;if(fading&&aOut>0)add(zm(st.cur),STEP.mouth,g=>drawM(g,need('mouth:'+st.prev,im['mouth:'+st.prev]),mouthM(hgSub('mouth',headM)),aOut),{id:'mouth:out',gid:'mouth',glabel:'mouth',sys:'mouth',label:'outgoing '+String(st.prev).replace(/^mouth_/,''),info:'opacity '+f1(aOut)+' (underneath, fades over the last half)'});
+   add(zm(st.cur),STEP.mouth,g=>drawM(g,need('mouth:'+st.cur,im['mouth:'+st.cur]),mouthM(hgSub('mouth',headM)),fading?a:1),{id:'mouth:in',gid:'mouth',glabel:'mouth',sys:'mouth',label:(fading?'incoming ':'shape ')+String(st.cur).replace(/^mouth_/,''),info:fading?'opacity '+f1(a)+' (on top)':'opacity 1.00',ginfo:mg(st.cur)+(fading?' · crossfade '+f1(a):'')})}}
  if(LPA)for(const it of items){if(it.panelOnly)continue;const o=it.m&&LP.ovr[it.m.id];if(o!=null&&Number.isFinite(o))it.z=o} // preview-only reorder override
  items.sort((a,b)=>(a.z-b.z)||(a.step-b.step)||(a.seq-b.seq));
  let list=items;if(LPA){lpRecord(items);list=items.filter(it=>!it.panelOnly&&(LP.visible(it.m)||(it.alsoM&&LP.visible(it.alsoM))))}
@@ -634,7 +721,7 @@ document.getElementById('check').onclick=()=>{if(!R||!R.im.base)return;const A=r
 document.getElementById('rest').onclick=()=>{pauseManual();for(const k in P)set(k,P[k][2]);hairDrive=null;mouthTalk=false;draw()};
 // v1.8 settings: UI selects + URL (?auto=talk|idle, ?footplant=xy|y|off, ?hair=default|A|B, ?mouthfade=35|0)
 {const q=new URLSearchParams(location.search);for(const[k,id]of[['auto','autostyle'],['footplant','footplant'],['hair','hairpreset'],['mouthfade','mouthfade'],['quality','quality'],['seal','seal']]){const x=q.get(k);const e=document.getElementById(id);if(x!=null&&[...e.options].some(o=>o.value===x))e.value=x}
- const mf=document.getElementById('mouthfade');MOUTH_FADE_MS=+mf.value;mf.onchange=()=>{MOUTH_FADE_MS=+mf.value};QUAL=document.getElementById('quality').value;const lq=q.get('life');if(lq!=null&&isFinite(+lq))document.getElementById('life').value=clamp(+lq,0,1)}
+ const mf=document.getElementById('mouthfade');if(MOUTHFIX)mf.value='0';MOUTH_FADE_MS=+mf.value;mf.onchange=()=>{MOUTH_FADE_MS=+mf.value};QUAL=document.getElementById('quality').value;const lq=q.get('life');if(lq!=null&&isFinite(+lq))document.getElementById('life').value=clamp(+lq,0,1)}
 ['view'].forEach(id=>document.getElementById(id).onchange=()=>{anim=null;hairDrive=null;LP.key='';LP.hidden.clear();LP.solo.clear();load().catch(showLoadFailure)});
 document.getElementById('bodymode').onchange=draw;document.getElementById('underlay').onchange=draw;document.getElementById('quality').onchange=e=>{QUAL=e.target.value;draw()};['zoom','orig'].forEach(id=>document.getElementById(id).onchange=draw);
 

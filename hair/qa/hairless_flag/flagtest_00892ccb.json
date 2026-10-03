@@ -1,0 +1,49 @@
+{
+ "index_md5": "00892ccbc3168b632aa86c57736a1917",
+ "tpose_live": {
+  "on": false,
+  "body_urls": [
+   "/views/tpose/base_body.png",
+   "/views/tpose/base_body_skin.png",
+   "/views/tpose/base_body_underlay.png"
+  ]
+ },
+ "tpose_hairless": {
+  "on": true,
+  "body_urls": [
+   "/body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body.png",
+   "/body_tools/work/hairless_division_staged/tpose/live_patch_staged/base_body_skin.png",
+   "/views/tpose/base_body_underlay.png"
+  ]
+ },
+ "tpose": {
+  "hair_mask_px": 19551,
+  "full_live_vs_hairless_diff": 181,
+  "nohair_dark_in_hairmask_live": 10545,
+  "nohair_dark_in_hairmask_hairless": 10545,
+  "nohair_live_vs_hairless_diff": 270
+ },
+ "left_live": {
+  "on": false,
+  "body_urls": [
+   "/views/left/base_body.png",
+   "/views/left/base_body_skin.png",
+   "/views/left/base_body_underlay.png"
+  ]
+ },
+ "left_hairless": {
+  "on": true,
+  "body_urls": [
+   "/body_tools/work/hairless_division_staged/left/live_patch_staged/base_body.png",
+   "/body_tools/work/hairless_division_staged/left/live_patch_staged/base_body_skin.png",
+   "/views/left/base_body_underlay.png"
+  ]
+ },
+ "left": {
+  "hair_mask_px": 28682,
+  "full_live_vs_hairless_diff": 0,
+  "nohair_dark_in_hairmask_live": 18243,
+  "nohair_dark_in_hairmask_hairless": 18243,
+  "nohair_live_vs_hairless_diff": 68
+ }
+}

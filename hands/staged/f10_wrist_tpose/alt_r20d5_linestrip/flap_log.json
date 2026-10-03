@@ -1,0 +1,20 @@
+{
+ "L": {
+  "radius": 20.0,
+  "line_px": 2,
+  "depth": 5.0,
+  "flap_px": 50,
+  "line_px_count": 50,
+  "changed_in_hand_mask": 0,
+  "flap_not_under_opaque_forearm": 0
+ },
+ "R": {
+  "radius": 20.0,
+  "line_px": 2,
+  "depth": 5.0,
+  "flap_px": 26,
+  "line_px_count": 26,
+  "changed_in_hand_mask": 0,
+  "flap_not_under_opaque_forearm": 0
+ }
+}

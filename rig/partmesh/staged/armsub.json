@@ -1,0 +1,9 @@
+{
+ "_note": "STAGED (?armsub=1 only). Forearm sub-rotation in degrees about the elbow, added to the posed forearm angle at turn handoffs only (never at rest; RigArmSub.applyHandoff(view) then RigArmSub.easeTo(0,ms) eases it out inside the turn). Hands ride the forearm matrix, so each palm pivot stays on its wristPivot (rest distance, <=2 px). Values: forearm-only fit to the measured handoff wrist offset (frame vs live, rel. torso, edge-NCC), rig/work/armsub/armsub_fit.json. Low-confidence measurement (ncc 0.12-0.25); forearm rotation leaves 14-37 px residual, see rig/work/armsub/README.md.",
+ "forearm": {
+  "left":  {"forearm_L": 0.4},
+  "back":  {"forearm_L": 7.4, "forearm_R": -7.5},
+  "right": {"forearm_R": -1.8}
+ },
+ "_source": "rig/work/armsub/measure_arm.py + ik.py, Coder, Sat Oct 3 2026 PT"
+}

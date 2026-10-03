@@ -1,0 +1,490 @@
+{
+ "view": "right",
+ "hair_mask_px": 30538,
+ "components": {
+  "visible_hair_part_px": 29775,
+  "specks_px": 0,
+  "residual_hair_px": 578,
+  "hairline_fringe_px": 185,
+  "erase_mask_extra": 0
+ },
+ "sweep_mask": false,
+ "changed_px_total": 27392,
+ "changed_outside_hair_mask": 3457,
+ "changed_outside_hair_mask_and_forehead_clean": 1599,
+ "hair_handoff": {
+  "crescent_px": 0,
+  "crescent_to_skin": 0,
+  "crescent_kept_in_locks": 0,
+  "flyaway_px": 0,
+  "flyaway_alpha0_after": 0,
+  "flyaway_changed_vs_base": 0,
+  "brow_above_px": 0,
+  "brow_to_skin": 0,
+  "brow_in_locks": 0
+ },
+ "forehead_clean": {
+  "cleared_to_flat_skin_px": 1871,
+  "of_which_outside_hair_mask": 1871,
+  "components": 19,
+  "kept_far_from_hair_px": 21,
+  "flattened_skin_noise_px": 1190,
+  "ear_top_row": 205,
+  "eye_lock_px": 1892
+ },
+ "lock_changed": {
+  "eye_brow": 0,
+  "mouth": 21,
+  "hand": 0,
+  "nose": 14,
+  "beauty_marks": 0,
+  "face_oval_nonhair": 0,
+  "ear": 0
+ },
+ "face_lock_total_changed": 31,
+ "filled_skin_px": 20248,
+ "cranium_line_px": 465,
+ "ear_line_fill_dropped_floating": 0,
+ "ear_fill_poly_px": 0,
+ "ear_line_px": 0,
+ "cleared_to_alpha0_px": 9825,
+ "kept_ink_other_views": {
+  "listed_px_in_source": 652,
+  "cut_into_staged_hair_part_px": 0,
+  "kept_as_drawn_px": 652,
+  "kept_components": [
+   {
+    "kind": "thick",
+    "px": 112,
+    "x": [
+     669,
+     757
+    ],
+    "y": [
+     84,
+     104
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 76,
+    "x": [
+     761,
+     776
+    ],
+    "y": [
+     106,
+     139
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 70,
+    "x": [
+     556,
+     584
+    ],
+    "y": [
+     127,
+     163
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 25,
+    "x": [
+     777,
+     788
+    ],
+    "y": [
+     139,
+     152
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 49,
+    "x": [
+     571,
+     577
+    ],
+    "y": [
+     179,
+     205
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 12,
+    "x": [
+     579,
+     584
+    ],
+    "y": [
+     215,
+     225
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 76,
+    "x": [
+     584,
+     619
+    ],
+    "y": [
+     227,
+     264
+    ]
+   },
+   {
+    "kind": "thick",
+    "px": 44,
+    "x": [
+     631,
+     646
+    ],
+    "y": [
+     270,
+     288
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 7,
+    "x": [
+     652,
+     657
+    ],
+    "y": [
+     52,
+     57
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     672,
+     674
+    ],
+    "y": [
+     75,
+     76
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 9,
+    "x": [
+     688,
+     696
+    ],
+    "y": [
+     82,
+     82
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     678,
+     680
+    ],
+    "y": [
+     83,
+     83
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     706,
+     708
+    ],
+    "y": [
+     83,
+     83
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     714,
+     717
+    ],
+    "y": [
+     85,
+     85
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     767,
+     771
+    ],
+    "y": [
+     108,
+     112
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 11,
+    "x": [
+     788,
+     793
+    ],
+    "y": [
+     143,
+     148
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 25,
+    "x": [
+     563,
+     572
+    ],
+    "y": [
+     159,
+     162
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     575,
+     578
+    ],
+    "y": [
+     160,
+     162
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 21,
+    "x": [
+     565,
+     567
+    ],
+    "y": [
+     174,
+     183
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     781,
+     783
+    ],
+    "y": [
+     176,
+     179
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     573,
+     573
+    ],
+    "y": [
+     187,
+     189
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     571,
+     571
+    ],
+    "y": [
+     193,
+     196
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     569,
+     569
+    ],
+    "y": [
+     202,
+     205
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     572,
+     572
+    ],
+    "y": [
+     206,
+     208
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     569,
+     569
+    ],
+    "y": [
+     217,
+     219
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     586,
+     587
+    ],
+    "y": [
+     238,
+     241
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 4,
+    "x": [
+     590,
+     591
+    ],
+    "y": [
+     245,
+     248
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     598,
+     602
+    ],
+    "y": [
+     250,
+     254
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     597,
+     599
+    ],
+    "y": [
+     254,
+     256
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 12,
+    "x": [
+     618,
+     625
+    ],
+    "y": [
+     275,
+     277
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 22,
+    "x": [
+     630,
+     637
+    ],
+    "y": [
+     282,
+     292
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 5,
+    "x": [
+     623,
+     627
+    ],
+    "y": [
+     284,
+     287
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 3,
+    "x": [
+     639,
+     641
+    ],
+    "y": [
+     284,
+     285
+    ]
+   },
+   {
+    "kind": "faint",
+    "px": 13,
+    "x": [
+     617,
+     619
+    ],
+    "y": [
+     295,
+     300
+    ]
+   }
+  ]
+ },
+ "skin_rgb": [
+  183,
+  120,
+  76
+ ],
+ "skin_detect_ref_rgb": [
+  180,
+  119,
+  76
+ ],
+ "skin_rgb_sampled": [
+  180,
+  119,
+  76
+ ],
+ "fill_px_written_in_skin_rgb": 22119,
+ "native_px_in_detect_ref_colour_kept": 77,
+ "source": "body_tools/work/hairless_division_staged/right/live_patch_staged/base_body.png",
+ "keep_boxes": [],
+ "line_rgb": [
+  13,
+  11,
+  29
+ ]
+}

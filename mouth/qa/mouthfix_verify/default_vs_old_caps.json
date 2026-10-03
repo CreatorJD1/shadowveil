@@ -1,0 +1,242 @@
+{
+ "caps_0ce6/apose_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/apose_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/apose_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/apose_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/apose_AA_half": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/apose_anger": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/apose_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/tpose_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/tpose_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/tpose_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/tpose_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/tpose_AA_half": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/tpose_anger": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/tpose_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/left_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/left_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/left_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/left_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/left_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/right_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/right_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/right_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/right_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps_0ce6/right_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/apose_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/apose_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/apose_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/apose_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/apose_AA_half": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/apose_anger": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/apose_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/tpose_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/tpose_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/tpose_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/tpose_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/tpose_AA_half": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/tpose_anger": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/tpose_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/left_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/left_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/left_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/left_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/left_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/right_rest": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/right_AA": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/right_M": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/right_smile": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ },
+ "caps/right_restpath": {
+  "bytes_identical": true,
+  "full_px": 0,
+  "mouth_px": 0
+ }
+}

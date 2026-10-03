@@ -1,0 +1,30 @@
+{
+ "note": "Previous (22:05 PT silhouette) offsets, applied via RigHeadGroup.set() to re-check the old 8765 numbers on the 8785 server",
+ "pivot": [
+  681.5,
+  318
+ ],
+ "handoffs": {
+  "apose": {
+   "frame": 1,
+   "dx": 0,
+   "dy": -10,
+   "rot": 0,
+   "scale": 1
+  },
+  "left": {
+   "frame": 62,
+   "dx": -2,
+   "dy": 1,
+   "rot": 0,
+   "scale": 1
+  },
+  "right": {
+   "frame": 160,
+   "dx": 5,
+   "dy": -6,
+   "rot": 0,
+   "scale": 1
+  }
+ }
+}

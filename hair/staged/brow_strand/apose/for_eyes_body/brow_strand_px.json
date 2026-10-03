@@ -1,0 +1,541 @@
+{
+"view": "apose",
+"part": "strand_04",
+"source": "views/apose/base.png (copied unchanged)",
+"above": 24,
+"below": 11,
+"total": 35,
+"crossing_kept_by_eyes": [
+{
+"x": 630,
+"y": 201
+},
+{
+"x": 631,
+"y": 201
+},
+{
+"x": 632,
+"y": 201
+},
+{
+"x": 633,
+"y": 201
+},
+{
+"x": 634,
+"y": 201
+},
+{
+"x": 635,
+"y": 201
+},
+{
+"x": 630,
+"y": 202
+},
+{
+"x": 631,
+"y": 202
+},
+{
+"x": 632,
+"y": 202
+},
+{
+"x": 633,
+"y": 202
+},
+{
+"x": 634,
+"y": 202
+},
+{
+"x": 635,
+"y": 202
+},
+{
+"x": 630,
+"y": 203
+},
+{
+"x": 631,
+"y": 203
+},
+{
+"x": 632,
+"y": 203
+},
+{
+"x": 633,
+"y": 203
+},
+{
+"x": 634,
+"y": 203
+},
+{
+"x": 635,
+"y": 203
+}
+],
+"pixels": [
+{
+"x": 636,
+"y": 191,
+"side": "above",
+"rgba": [
+139,
+104,
+76,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": false
+},
+{
+"x": 640,
+"y": 192,
+"side": "above",
+"rgba": [
+139,
+92,
+50,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 638,
+"y": 193,
+"side": "above",
+"rgba": [
+147,
+116,
+88,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 635,
+"y": 195,
+"side": "above",
+"rgba": [
+61,
+30,
+12,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 636,
+"y": 195,
+"side": "above",
+"rgba": [
+22,
+0,
+0,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 637,
+"y": 195,
+"side": "above",
+"rgba": [
+103,
+73,
+49,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 634,
+"y": 196,
+"side": "above",
+"rgba": [
+151,
+108,
+76,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 635,
+"y": 196,
+"side": "above",
+"rgba": [
+30,
+1,
+0,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 636,
+"y": 196,
+"side": "above",
+"rgba": [
+31,
+5,
+0,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 634,
+"y": 197,
+"side": "above",
+"rgba": [
+86,
+52,
+25,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 635,
+"y": 197,
+"side": "above",
+"rgba": [
+23,
+0,
+0,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 636,
+"y": 197,
+"side": "above",
+"rgba": [
+81,
+53,
+32,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 633,
+"y": 198,
+"side": "above",
+"rgba": [
+144,
+117,
+88,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 634,
+"y": 198,
+"side": "above",
+"rgba": [
+28,
+8,
+0,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 635,
+"y": 198,
+"side": "above",
+"rgba": [
+27,
+3,
+0,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 636,
+"y": 198,
+"side": "above",
+"rgba": [
+151,
+120,
+91,
+255
+],
+"in_eyes_lock_v1": false,
+"in_eyes_lock_v2": true
+},
+{
+"x": 633,
+"y": 199,
+"side": "above",
+"rgba": [
+70,
+52,
+32,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 634,
+"y": 199,
+"side": "above",
+"rgba": [
+16,
+0,
+0,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 635,
+"y": 199,
+"side": "above",
+"rgba": [
+84,
+62,
+39,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 631,
+"y": 200,
+"side": "above",
+"rgba": [
+145,
+115,
+89,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 632,
+"y": 200,
+"side": "above",
+"rgba": [
+106,
+81,
+59,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 633,
+"y": 200,
+"side": "above",
+"rgba": [
+23,
+4,
+0,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 634,
+"y": 200,
+"side": "above",
+"rgba": [
+29,
+12,
+5,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 635,
+"y": 200,
+"side": "above",
+"rgba": [
+124,
+102,
+88,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 631,
+"y": 204,
+"side": "below",
+"rgba": [
+145,
+119,
+102,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 632,
+"y": 204,
+"side": "below",
+"rgba": [
+35,
+6,
+0,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 633,
+"y": 204,
+"side": "below",
+"rgba": [
+150,
+113,
+87,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 631,
+"y": 205,
+"side": "below",
+"rgba": [
+99,
+67,
+46,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 632,
+"y": 205,
+"side": "below",
+"rgba": [
+78,
+42,
+20,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 631,
+"y": 206,
+"side": "below",
+"rgba": [
+48,
+12,
+0,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 632,
+"y": 206,
+"side": "below",
+"rgba": [
+155,
+117,
+96,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 630,
+"y": 207,
+"side": "below",
+"rgba": [
+119,
+74,
+41,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 631,
+"y": 207,
+"side": "below",
+"rgba": [
+73,
+33,
+8,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 630,
+"y": 208,
+"side": "below",
+"rgba": [
+51,
+7,
+0,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+},
+{
+"x": 631,
+"y": 208,
+"side": "below",
+"rgba": [
+157,
+108,
+78,
+255
+],
+"in_eyes_lock_v1": true,
+"in_eyes_lock_v2": true
+}
+],
+"for_eyes": "keep the crossing px (brow stroke) in the lock; the moved px marked in_eyes_lock_v1/v2 should leave the lock (they now belong to strand_04)",
+"for_body": "base_body.png / base_body_skin.png may keep skin under these px (all alpha 255; strand_04 layer 610 covers them exactly at rest)"
+}

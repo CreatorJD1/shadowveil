@@ -1,0 +1,146 @@
+{
+ "apose": {
+  "frame": 1,
+  "head_group": [
+   0,
+   -9
+  ],
+  "off": {
+   "mass_edge": 5.45,
+   "mass_iou": 0.863,
+   "exbun_edge": 5.81,
+   "exbun_iou": 0.809,
+   "bun_edge": 1.13,
+   "bun_iou": 0.948
+  },
+  "on": {
+   "mass_edge": 5.45,
+   "mass_iou": 0.863,
+   "exbun_edge": 5.81,
+   "exbun_iou": 0.809,
+   "bun_edge": 1.13,
+   "bun_iou": 0.948
+  },
+  "new_hole_px": 0,
+  "holes_off_on": [
+   382,
+   382
+  ],
+  "face_solo_px_diff": 0,
+  "face_visible_px_off_on": [
+   2855,
+   2855
+  ],
+  "face_px_newly_covered": 0,
+  "face_px_newly_shown": 0,
+  "full_frame_px_changed_in_face": 0
+ },
+ "left": {
+  "frame": 62,
+  "head_group": [
+   0,
+   11
+  ],
+  "off": {
+   "mass_edge": 9.24,
+   "mass_iou": 0.73,
+   "exbun_edge": 7.91,
+   "exbun_iou": 0.672,
+   "bun_edge": 6.76,
+   "bun_iou": 0.806
+  },
+  "on": {
+   "mass_edge": 8.29,
+   "mass_iou": 0.814,
+   "exbun_edge": 6.31,
+   "exbun_iou": 0.775,
+   "bun_edge": 4.83,
+   "bun_iou": 0.861
+  },
+  "new_hole_px": 170,
+  "holes_off_on": [
+   130,
+   300
+  ],
+  "face_solo_px_diff": 0,
+  "face_visible_px_off_on": [
+   984,
+   982
+  ],
+  "face_px_newly_covered": 2,
+  "face_px_newly_shown": 0,
+  "full_frame_px_changed_in_face": 2
+ },
+ "back": {
+  "frame": 109,
+  "head_group": [
+   2,
+   11
+  ],
+  "off": {
+   "mass_edge": 4.81,
+   "mass_iou": 0.847,
+   "exbun_edge": 2.72,
+   "exbun_iou": 0.865,
+   "bun_edge": 5.6,
+   "bun_iou": 0.828
+  },
+  "on": {
+   "mass_edge": 15.63,
+   "mass_iou": 0.714,
+   "exbun_edge": 9.61,
+   "exbun_iou": 0.606,
+   "bun_edge": 6.31,
+   "bun_iou": 0.833
+  },
+  "new_hole_px": 64,
+  "holes_off_on": [
+   0,
+   64
+  ],
+  "face_solo_px_diff": 0,
+  "face_visible_px_off_on": [
+   0,
+   0
+  ],
+  "face_px_newly_covered": 0,
+  "face_px_newly_shown": 0,
+  "full_frame_px_changed_in_face": 0
+ },
+ "right": {
+  "frame": 160,
+  "head_group": [
+   3,
+   5
+  ],
+  "off": {
+   "mass_edge": 7.88,
+   "mass_iou": 0.738,
+   "exbun_edge": 7.68,
+   "exbun_iou": 0.668,
+   "bun_edge": 4.27,
+   "bun_iou": 0.843
+  },
+  "on": {
+   "mass_edge": 6.57,
+   "mass_iou": 0.838,
+   "exbun_edge": 4.83,
+   "exbun_iou": 0.811,
+   "bun_edge": 4.49,
+   "bun_iou": 0.873
+  },
+  "new_hole_px": 303,
+  "holes_off_on": [
+   249,
+   408
+  ],
+  "face_solo_px_diff": 0,
+  "face_visible_px_off_on": [
+   1023,
+   1022
+  ],
+  "face_px_newly_covered": 1,
+  "face_px_newly_shown": 0,
+  "full_frame_px_changed_in_face": 1
+ }
+}

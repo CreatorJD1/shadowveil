@@ -1,13 +1,92 @@
 {
-  "title": "Shadowveil \u2014 character rig & live driver status",
-  "updated": "2026-09-30T05:10:00-07:00",
-  "updated_pt": "Wed Sep 30 2026, 5:10 AM PT",
+  "title": "Shadowveil — character rig & live driver status",
+  "updated": "2026-10-03T03:06:15-07:00",
+  "updated_pt": "Sat Oct 3 2026, 3:06 AM PT",
   "progress": {
     "pct": 45,
-    "label": "roughly 40\u201350% to a quality live driver",
+    "label": "roughly 40–50% to a quality live driver",
     "note": "rough estimate"
   },
   "sections": [
+    {
+      "id": "waiting",
+      "title": "Waiting on your OK",
+      "color": "violet",
+      "items": [
+        {
+          "text": "Eyes: lash fix go live? Lids now on her exact tones (eyes/staged/, Eyes HANDOFF.md)",
+          "state": "decision"
+        },
+        {
+          "text": "Eyes: closed-frame crease, stay or hide? (eyes/staged/, Eyes HANDOFF.md)",
+          "state": "decision"
+        },
+        {
+          "text": "Eyes: diagonals lid rule 2 px/column? (eyes/staged/diagonals/)",
+          "state": "decision"
+        },
+        {
+          "text": "Eyes: side-glance white tones, 214 px (eyes/staged/white_tone/sheet.png)",
+          "state": "decision"
+        },
+        {
+          "text": "Hair: staged hair set go live: speck fix, ear strands, merged strand_04, six line-art fixes, four diagonal angles (hair/staged/, hair/HANDOFF.md)",
+          "state": "decision"
+        },
+        {
+          "text": "Hair: hair_back fill tone fix (hair/staged/tone_fix/, tone_fix_log.json)",
+          "state": "decision"
+        },
+        {
+          "text": "Hair: hair_front 2 px hole fills (hair/staged/hairfront_holes/)",
+          "state": "decision"
+        },
+        {
+          "text": "Hands: F5 line-art fixes (hands/staged/f5_lineart/README.md)",
+          "state": "decision"
+        },
+        {
+          "text": "Hands: A-pose wrist flaps, ~520 px/wrist new colour (hands/staged/f7_wrist_apose/README.md, palette fixed to her tones)",
+          "state": "decision"
+        },
+        {
+          "text": "Mouth: lip bend extras (skin pad, interior notch fill, upper-lip flap), once the format loads them (mouth/staged/mesh_bend/REPORT.md)",
+          "state": "decision"
+        },
+        {
+          "text": "Mouth: talk-shape tone snap (mouth/staged/tone_fix/)",
+          "state": "decision"
+        },
+        {
+          "text": "Body: right-view round-2 underlay, reviewed safe by Coder (body_tools/work/round2_staged/README.md)",
+          "state": "decision"
+        },
+        {
+          "text": "Body: hairless bases go live; needs the hand_mask cut baked into base_body_skin (body_tools/work/hairless_division_staged/<view>/live_patch_staged/; test rig/?hairless=1; palette fix: fill (186,129,86), palms match)",
+          "state": "decision"
+        },
+        {
+          "text": "Coder: turn off generated turned-hand sprites by default (?handangles=off; rig/index.html HAND_ANGLES_GENERATED)",
+          "state": "decision"
+        },
+        {
+          "text": "Coder: exact rest at default quality, ss2rest or linear as default (?ss2rest=1; rig/index.html SS2_EXACT_REST)",
+          "state": "decision"
+        },
+        {
+          "text": "Coder: make simple.html the main driver and cut the 8 extra sliders (app/driver/simple.html)",
+          "state": "decision"
+        },
+        {
+          "text": "Coder: wire the driver to the head group, RigHeadGroup.applyHandoff at handoffs (rig/partmesh/staged/headgroup.json, FORMAT.md 3.6)",
+          "state": "decision"
+        },
+        {
+          "text": "Coder: mouth switch fix: hard cut, no flicker, rest wins ties (?mouthfix=1; rig/index.html MOUTHFIX)",
+          "state": "decision"
+        }
+      ]
+    },
     {
       "id": "built",
       "title": "Built & working",
@@ -50,15 +129,15 @@
           "state": "done"
         },
         {
-          "text": "Three-quarter reference frames agreed: f033 (45\u00b0) and f191 (315\u00b0)",
+          "text": "Three-quarter reference frames agreed: f033 (45°) and f191 (315°)",
           "state": "done"
         },
         {
-          "text": "Idle test v1 run \u2014 findings:",
+          "text": "Idle test v1 run — findings:",
           "state": "done",
           "sub": [
             {
-              "text": "Auto idle is lifeless (body under 1\u00b0)",
+              "text": "Auto idle is lifeless (body under 1°)",
               "state": "blocked"
             },
             {
@@ -74,11 +153,11 @@
               "state": "blocked"
             },
             {
-              "text": "Keyed clips: knees kink ~33\u00b0, feet lift 14 px",
+              "text": "Keyed clips: knees kink ~33°, feet lift 14 px",
               "state": "blocked"
             },
             {
-              "text": "Hair at 1.1 Hz / \u03b6 0.3 pins at its limits; tips overrun (worst +6.1\u00b0)",
+              "text": "Hair at 1.1 Hz / ζ 0.3 pins at its limits; tips overrun (worst +6.1°)",
               "state": "blocked"
             }
           ]
@@ -94,7 +173,7 @@
           ]
         },
         {
-          "text": "DECIDED: hair preset A (spring 4.0 Hz, \u03b6 0.8) is the default",
+          "text": "DECIDED: hair preset A (spring 4.0 Hz, ζ 0.8) is the default",
           "state": "done"
         },
         {
@@ -110,18 +189,38 @@
           "state": "done"
         },
         {
-          "text": "Pose driver (Clean room): app/driver/ \u2014 in-between crossfade of the turnaround stills with idle>turn>hold>drift>idle, scrub, targets, eye/hand stills composited where aligned, hair skin-fill hide, front-only talk clips; beauty-mark audit holds out turn-045/090/315 (app/qa/beauty_marks/REPORT.md)",
+          "text": "Pose driver (Clean room): app/driver/ — in-between crossfade of the turnaround stills with idle>turn>hold>drift>idle, scrub, targets, eye/hand stills composited where aligned, hair skin-fill hide, front-only talk clips; beauty-mark audit holds out turn-045/090/315 (app/qa/beauty_marks/REPORT.md)",
           "state": "done"
         },
         {
-          "text": "Body tab: Rig controls panel (app/rigctl.js) embeds the v1.8 WIP rig and drives it via set()+draw(). Live: finger curl L/R, WristL/R, HeadTilt/Nod, body joints, root, hair preset, and a view dial with \u25c0 \u25b6 (reloads ?view=). WristRot, twist and split-curl params show as in progress and switch on automatically when the rig's P adds them",
+          "text": "Body tab: Rig controls panel (app/rigctl.js) embeds the v1.8 WIP rig and drives it via set()+draw(). Live: finger curl L/R, WristL/R, HeadTilt/Nod, body joints, root, hair preset, and a view dial with ◀ ▶ (reloads ?view=). WristRot, twist and split-curl params show as in progress and switch on automatically when the rig's P adds them",
+          "state": "done"
+        },
+        {
+          "text": "Post-6d5b239 regression check (Oct 2): rig Rest check PASS 0 px in apose/tpose/left/right/back; live canvas at Reset-to-rest is 0 px with quality=linear in all 5 views; 8 hand_angles load in all views with 0 console errors (rig/work/qa_post6d5b239/)",
+          "state": "done"
+        },
+        {
+          "text": "Anger clips regenerated with rig/tools/merge_clips.py (byte-identical to the live anger.json / anger_stress.json, no old M keys); load OK in 5 views; anger shown at t>=0.3 s in apose/tpose; auto-talk never picks anger (rest 0 px after clip)",
+          "state": "done"
+        },
+        {
+          "text": "Hairless rest check (Oct 2, 10:54 PM PT): ?hairless=1 = 0 px in apose/tpose/left/right/back at linear (Body's speck-cleared base_body/base_body_skin copies, Body apose order with hands under forearms + Hands F7 palms, Hair's full staged set; eyes/mouth live). Default (no flag) still 0 px in all 5. Test: http://127.0.0.1:8765/rig/?view=apose&hairless=1&quality=linear (swap view=)",
+          "state": "done"
+        },
+        {
+          "text": "Part mesh format v0.2 written (rig/partmesh/FORMAT.md): matches the schema the renderer reads behind ?partmesh=1; requirements (a)-(l) incl. child-under-parent order, 8-angle turn, Eyes G1-G14, Mouth's mesh-bend needs (OH/EE stay swaps), head-group rule. Ready for Hair and Hands; Mouth/Eyes/Body need clip/flap/lid/sampling fields built next",
+          "state": "done"
+        },
+        {
+          "text": "Part mesh pilot, hair (apose strand_03 + tip): PASS at iteration 1 (width p95 0.43 px, 0 breaks, 0 new holes, browser vs Python mirror within 2 ink px); rest 0 px in all 5 views with ?partmesh=1; flag-off default byte-identical (30/30 frame hashes)",
           "state": "done"
         }
       ]
     },
     {
       "id": "progress",
-      "title": "In progress \u2014 v1.8",
+      "title": "In progress — v1.8",
       "color": "amber",
       "items": [
         {
@@ -153,7 +252,7 @@
               "state": "wip"
             },
             {
-              "text": "Hair presets: default / A (4.0 Hz, \u03b6 0.8, now the default) / B (2.0 Hz, \u03b6 0.6)",
+              "text": "Hair presets: default / A (4.0 Hz, ζ 0.8, now the default) / B (2.0 Hz, ζ 0.6)",
               "state": "wip"
             },
             {
@@ -249,7 +348,7 @@
           "state": "wip"
         },
         {
-          "text": "Pose driver: Clean room turnaround in-between driver (idle \u2192 turn \u2192 hold \u2192 drift \u2192 idle); blends only between beauty-mark-consistent stills",
+          "text": "Pose driver: Clean room turnaround in-between driver (idle → turn → hold → drift → idle); blends only between beauty-mark-consistent stills",
           "state": "wip"
         },
         {
@@ -267,6 +366,30 @@
         {
           "text": "Body: profile skin/underlay fix for the armpit hole and hip slit",
           "state": "wip"
+        },
+        {
+          "text": "Pose driver turn verified end to end (Oct 2): reference/apose_turn f001-f232, 6 full idle>turn>hold>drift cycles, live parts only at f001/f062/f109/f160, 80 ms crossfade, 0 generated-still requests, mirror false, 0 errors. Open: visible jump at handoffs (IoU 0.92/0.88/0.81/0.86) (rig/work/qa_post6d5b239/driver_turn/)",
+          "state": "wip"
+        },
+        {
+          "text": "Part mesh pilot, fingers (tpose R_Middle, blend 4/4/3, 3 rounds + 10 sweep candidates): passes width (<=0.62 px), breaks (rigid 6 -> 0 at curl 0.87), no new holes, 0 px changed outside; mesh removes the need for flaps at the Middle joints. OPEN: 1-3 px floating specks from frame f1/f2 cap/crease ink in the bend zone (art-side fix for Hands)",
+          "state": "wip"
+        },
+        {
+          "text": "Head group staged behind ?headgroup=1 (Body head + eyes/brows/mouth + hair, pivot 681.5,318, single correction path; rig/partmesh/staged/headgroup.json). Handoff head offsets dx,dy: f001 apose 0,-10 · f062 left -2,+1 · f109 back +2,+11 · f160 right +5,-6. Neck seam gap 0 px at all 4 (skin stretches): stretch +10 apose, +6 right; overlap 1 left, 11 back. Driver not wired yet",
+          "state": "wip"
+        },
+        {
+          "text": "Coder: head-group hair/bun sub-offsets wired behind ?headgroup=1 (rig/partmesh/staged/headgroup.json sub.hair/sub.bun, Base Hair values); left/right edge distance improves, back gets worse and the bun shows a ring + see-through gaps, so it waits on Base Hair (rig/work/hgsubhair/)",
+          "state": "wip"
+        },
+        {
+          "text": "Coder: ?hairless=1 confirmed working (no regression; at rest it matches live by design). tpose hairless fails 181 px from Body's 02:01 eye-corner fill. index.html now 562c32a7 (handorder + armsub, flags only, default 30/30 identical). qa_gates.py baseline, crotch candidates, arm handoff proto, diag iris limits, hair/bun sub-offsets staged.",
+          "state": "wip"
+        },
+        {
+          "text": "Coder: rig/poser.html unified poser + keyframe timeline (staged; drives live rig/index.html via iframe, no rig edits). Hooks proposed in rig/poser/HOOKS.md. Benchmark plan parked in rig/benchmarks/PLAN.md.",
+          "state": "wip"
         }
       ]
     },
@@ -280,11 +403,11 @@
           "state": "blocked"
         },
         {
-          "text": "Turning her needs native lossless angle stills at ~22.5\u00b0 steps (no mirroring)",
+          "text": "Turning her needs native lossless angle stills at ~22.5° steps (no mirroring)",
           "state": "blocked"
         },
         {
-          "text": "Joint caps (25\u00b0) and 8\u00b0 lean make the run a tight jog",
+          "text": "Joint caps (25°) and 8° lean make the run a tight jog",
           "state": "blocked"
         },
         {
@@ -310,6 +433,50 @@
         {
           "text": "Permanent named Cloudflare tunnel needs a domain",
           "state": "blocked"
+        },
+        {
+          "text": "Turned hands (rig/hand_angles 45/135/225/315, from 20ff7bb/6d5b239) are reconstructed art from generated atlases (tools/hand-art), palette-normalised, with no outline and a visible wrist seam: breaks 'authored art only' and line-art rules. Needs a user decision",
+          "state": "blocked"
+        },
+        {
+          "text": "Default live display (quality=2x supersampled) at Reset-to-rest differs from base.png by 149k-235k px in all 5 views (pre-existing since at least 9458143; the Rest check renders the non-ss2 path so it passes). Needs a decision on the default quality or an exact rest path in ss2",
+          "state": "blocked"
+        },
+        {
+          "text": "Body: A-pose neck extension for the head group (138 px of her skin and outline added to neck.png, hidden at rest, up to 9 px shows at the turn handoff). Staged in hairless_division_staged/apose/pieces/; sheet_headgroup_neck_before_after.png. Needs your OK because it adds her colours where she didn't draw.",
+          "state": "decision"
+        },
+        {
+          "text": "Body + Hair: T-pose eye-corner and ear-strand fill. 68 + 113 px move into the static hair_front, and Body turns the pixels under them into her skin (186,129,86). Staged in hair/staged/ear_strands/tpose/. Needs your OK because it adds her colours where she didn't draw.",
+          "state": "decision"
+        },
+        {
+          "text": "Body: line-tone snap on the live body files. 1,046 px of (13,11,29) become each view's nearest dark tone from her base.png. The snapped copies are in body_tools/work/linetone_snap/live/, and the live files are untouched until you OK it.",
+          "state": "decision"
+        },
+        {
+          "text": "Scale rule: her five base views are the scale truth for hands and feet, and the base feet and hands stay as drawn. The low-res master sheet is a reference only, and only generated turn frames get measured against her views. Body's foot report: body_tools/work/foot_scale/. Hands' report: hands/qa/scale_audit/REPORT.md.",
+          "state": "decision"
+        },
+        {
+          "text": "Hands: the F10/F11 wrist flaps and ?handorder=1 go live together as one item. If the flaps are drawn over the forearm, they fail by 2.6 px on the left and 9.7 px on the right.",
+          "state": "decision"
+        },
+        {
+          "text": "Coder: the generated turned hands are +32 to +35 px too long on the far side, and the back view is shrunk 14-17 px. I recommend switching them off (?handangles=off) and using Hands' F8 diagonals. If they stay on, the 1.64x fit should apply to the near-side hands only.",
+          "state": "decision"
+        },
+        {
+          "text": "Crotch notch: underlay change (--crotch 0, no --bgk) recommended over the weight blend; candidates in rig/work/crotch_weights/, need Body browser render",
+          "state": "decision"
+        },
+        {
+          "text": "Coder ?irislimits=diag v4 (045/315): wider sideways reach (315 near EyeR -2/+4, 045 near EyeL -3/+2), eyes linked, 0 leaks, rest 0 px. Trade-off: up-left/up-right and 045 down-right glances go straight up (0 sideways; today up to 2 px). Eyes verified: eyes/qa/irislimits_diag/v4/sheet_v4.png",
+          "state": "decision"
+        },
+        {
+          "text": "Eyes: diagonal far-eye blue fix (167 px removed, 0 chroma; 62 px faint navy kept because it's in the turn frame)",
+          "state": "decision"
         }
       ]
     },
@@ -319,19 +486,19 @@
       "color": "blue",
       "items": [
         {
-          "text": "v1.8 + action audit \u2014 within hours",
+          "text": "v1.8 + action audit — within hours",
           "state": "todo"
         },
         {
-          "text": "Weighted meshes clean in 5 views \u2014 a few days",
+          "text": "Weighted meshes clean in 5 views — a few days",
           "state": "todo"
         },
         {
-          "text": "Angle views \u2014 depends on the stills",
+          "text": "Angle views — depends on the stills",
           "state": "todo"
         },
         {
-          "text": "Driver system \u2014 about a week after that",
+          "text": "Driver system — about a week after that",
           "state": "todo"
         },
         {
@@ -349,12 +516,12 @@
     {
       "name": "Body",
       "state": "skin fix WIP",
-      "latest": "Profile skin/underlay fix for the armpit hole and hip slit; jump/run/anger action JSON + stress checks (body_tools/actions)"
+      "latest": "Neck cut to head-group offsets (staged)"
     },
     {
       "name": "Eyes",
-      "state": "See eyes/HANDOFF.md; lash fix and turn offsets unfinished",
-      "latest": "Stopped, handoff written"
+      "state": "Waiting on user: lash fix live OK, closed-frame crease, 2 px lid rule on diagonals, side-glance white tones",
+      "latest": "Staged: lash fix, 45/315 eyes, side-glance white, tpose lock trim; head-group eye fit verified within 1 px by Coder"
     },
     {
       "name": "Mouth",
@@ -364,7 +531,7 @@
     {
       "name": "Hands",
       "state": "fixes live",
-      "latest": "Stopped. Handoff in hands/HANDOFF.md; live verified, rest 0 in all views."
+      "latest": "All hand sets 0 chroma/0 off-palette; F5 v2 passes scale; F7/F10/F11 pass (need handorder); F8 4/8 within 1px; awaiting user OK + GitHub push approval in DM"
     },
     {
       "name": "Hair",
@@ -374,7 +541,7 @@
     {
       "name": "Coder",
       "state": "v1.8 WIP",
-      "latest": "Hand rotation (WristRot + palm twist), wrist leak fix, twist axes on all joints, weighted skinning; life idle + action clips"
+      "latest": "Hairless rest check 0 px in all 5 views; FORMAT v0.2; hair pilot pass; finger pilot open (specks); head group staged with handoff numbers"
     }
   ],
   "outputs": [
@@ -607,8 +774,8 @@
       "group": "Auto idle",
       "version": "idle v1",
       "name": "apose_idle",
-      "date": "Sep 30 1:51 AM PT",
-      "mtime": "2026-09-30T01:51:58-07:00",
+      "date": "Oct 1 11:25 PM PT",
+      "mtime": "2026-10-01T23:25:40-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -621,8 +788,8 @@
       "group": "Auto idle",
       "version": "idle v1",
       "name": "back_idle",
-      "date": "Sep 30 1:52 AM PT",
-      "mtime": "2026-09-30T01:52:09-07:00",
+      "date": "Oct 1 11:25 PM PT",
+      "mtime": "2026-10-01T23:25:20-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -635,8 +802,8 @@
       "group": "Auto idle",
       "version": "idle v1",
       "name": "left_idle",
-      "date": "Sep 30 1:52 AM PT",
-      "mtime": "2026-09-30T01:52:04-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:21-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -649,8 +816,8 @@
       "group": "Auto idle",
       "version": "idle v1",
       "name": "right_idle",
-      "date": "Sep 30 1:52 AM PT",
-      "mtime": "2026-09-30T01:52:06-07:00",
+      "date": "Oct 1 11:25 PM PT",
+      "mtime": "2026-10-01T23:25:23-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -663,8 +830,8 @@
       "group": "Auto idle",
       "version": "idle v1",
       "name": "tpose_idle",
-      "date": "Sep 30 1:52 AM PT",
-      "mtime": "2026-09-30T01:52:01-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:00-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -677,8 +844,8 @@
       "group": "Auto idle (hair variants)",
       "version": "idle v1",
       "name": "apose_idle_hair_middle",
-      "date": "Sep 30 1:52 AM PT",
-      "mtime": "2026-09-30T01:52:15-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:48-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -691,8 +858,8 @@
       "group": "Auto idle (hair variants)",
       "version": "idle v1",
       "name": "apose_idle_hair_stiff",
-      "date": "Sep 30 1:52 AM PT",
-      "mtime": "2026-09-30T01:52:12-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:34-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -705,8 +872,8 @@
       "group": "Auto idle",
       "version": "idle v1",
       "name": "idle_all",
-      "date": "Sep 30 1:52 AM PT",
-      "mtime": "2026-09-30T01:52:19-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:49-07:00",
       "duration": 8.0,
       "size": [
         3410,
@@ -719,8 +886,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_arm_settle_all5",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:39-07:00",
+      "date": "Oct 1 11:25 PM PT",
+      "mtime": "2026-10-01T23:25:30-07:00",
       "duration": 8.0,
       "size": [
         3410,
@@ -733,8 +900,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_arm_settle_apose",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:22-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:21-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -747,8 +914,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_arm_settle_back",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:34-07:00",
+      "date": "Oct 1 11:25 PM PT",
+      "mtime": "2026-10-01T23:25:52-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -761,8 +928,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_arm_settle_left",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:28-07:00",
+      "date": "Oct 1 11:25 PM PT",
+      "mtime": "2026-10-01T23:25:29-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -775,8 +942,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_arm_settle_right",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:31-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:41-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -789,8 +956,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_arm_settle_tpose",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:26-07:00",
+      "date": "Oct 1 11:25 PM PT",
+      "mtime": "2026-10-01T23:25:32-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -803,8 +970,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_breathe_all5",
-      "date": "Sep 30 2:07 AM PT",
-      "mtime": "2026-09-30T02:07:56-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:22-07:00",
       "duration": 8.0,
       "size": [
         3410,
@@ -817,8 +984,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_breathe_apose",
-      "date": "Sep 30 2:07 AM PT",
-      "mtime": "2026-09-30T02:07:38-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:24-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -831,8 +998,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_breathe_back",
-      "date": "Sep 30 2:07 AM PT",
-      "mtime": "2026-09-30T02:07:52-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:21-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -845,8 +1012,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_breathe_left",
-      "date": "Sep 30 2:07 AM PT",
-      "mtime": "2026-09-30T02:07:45-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:23-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -859,8 +1026,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_breathe_right",
-      "date": "Sep 30 2:07 AM PT",
-      "mtime": "2026-09-30T02:07:48-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:21-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -873,8 +1040,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_breathe_tpose",
-      "date": "Sep 30 2:07 AM PT",
-      "mtime": "2026-09-30T02:07:42-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:38-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -887,8 +1054,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_keys_all",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:49-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:07-07:00",
       "duration": 8.0,
       "size": [
         3410,
@@ -901,8 +1068,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_weight_shift_all5",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:19-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:09-07:00",
       "duration": 8.0,
       "size": [
         3410,
@@ -915,8 +1082,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_weight_shift_apose",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:00-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:23-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -929,8 +1096,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_weight_shift_back",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:13-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:11-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -943,8 +1110,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_weight_shift_left",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:07-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:07-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -957,8 +1124,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_weight_shift_right",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:10-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:24-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -971,8 +1138,8 @@
       "group": "Keyed idle clips",
       "version": "keys v1",
       "name": "idle_weight_shift_tpose",
-      "date": "Sep 30 2:08 AM PT",
-      "mtime": "2026-09-30T02:08:04-07:00",
+      "date": "Oct 1 11:26 PM PT",
+      "mtime": "2026-10-01T23:26:41-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -985,8 +1152,8 @@
       "group": "Idle v2",
       "version": "idle v2",
       "name": "apose_life_after",
-      "date": "Sep 30 4:19 AM PT",
-      "mtime": "2026-09-30T04:19:06-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:49-07:00",
       "duration": 8.0,
       "size": [
         1366,
@@ -999,8 +1166,8 @@
       "group": "Idle v2",
       "version": "idle v2",
       "name": "apose_life_before_after",
-      "date": "Sep 30 4:18 AM PT",
-      "mtime": "2026-09-30T04:18:40-07:00",
+      "date": "Oct 1 11:27 PM PT",
+      "mtime": "2026-10-01T23:27:01-07:00",
       "duration": 8.0,
       "size": [
         2048,

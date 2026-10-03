@@ -1,0 +1,55 @@
+{
+  "view": "left",
+  "canvas": {
+    "width": 1365,
+    "height": 1739
+  },
+  "mask": "mouth/handoff_hairless/left_mouth_lock.png",
+  "meaning": "white(255)=locked: Body must keep these base pixels byte-identical (RGBA); black(0)=free",
+  "bbox": {
+    "x0": 583,
+    "y0": 248,
+    "x1": 623,
+    "y1": 299,
+    "note": "inclusive, view px"
+  },
+  "pixelCount": 1512,
+  "undilatedBBox": {
+    "x0": 587,
+    "y0": 252,
+    "x1": 619,
+    "y1": 295
+  },
+  "undilatedPixelCount": 827,
+  "dilation": {
+    "px": 4,
+    "metric": "chebyshev (9x9 square)"
+  },
+  "sources": {
+    "shapes_opaque_px": {
+      "rest": 339,
+      "M": 646,
+      "smile": 646,
+      "OH_half": 661,
+      "AA_half": 733,
+      "EE_half": 646,
+      "OH": 670,
+      "AA": 810,
+      "EE": 665
+    },
+    "rest_lips_of_base_px": 339
+  },
+  "anchor": {
+    "x": 612,
+    "y": 270,
+    "desc": "front: lip-seam centre; profile: back corner of the mouth (seam end)"
+  },
+  "drawnMouthBBox": {
+    "x0": 590,
+    "y0": 261,
+    "x1": 612,
+    "y1": 283,
+    "note": "inclusive, view px, lip pixels of base.png"
+  },
+  "base_sha_note": "check: base[lock] of Body output == views/left/base.png[lock]"
+}

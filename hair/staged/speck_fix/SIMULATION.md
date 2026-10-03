@@ -30,3 +30,17 @@ STAGED ONLY. Nothing under `views/`, the hair erase masks, `base_body*`, `body_t
 - **The 201 rest px with the current body** are exactly the speck px with base alpha < 255. The strand copy composites over the identical body px. That is why this must wait for Base Body.
 - **The clear_hair copy** is not what Base Body's full rebuild produces: even with the live mask it breaks rest by 900 to 1700 px per view. It is reported only as a delta. The staged mask adds at most 1 failing px per view (apose 1, right 1), and those are still inside that emulation's noise.
 - **Lineart:** see `hair/qa/lineart/SUMMARY.md`. The live hair already fails 7 joints plus 1 part, so an absolute lineart pass is not possible for any hair state today. `apply.sh` gates on "no new lineart failures", and as staged that gate fails in left and back.
+
+## FINAL (Fri Oct 2 2026, 8:55 PM PT, checked with the current renderer at main 6d5b239)
+The pixel list is **final at 413 px** (apose 58, tpose 54, left 68, right 23, back 210). It is unchanged from the list above.
+
+The six faint clusters that split off at sway were re-checked with the current renderer:
+- left strand_01: four clusters, around (576,151), (583,180), (586,193) and (572,200);
+- back strand_04: around (756,309);
+- back strand_05: around (782–786,224–228).
+
+All the base.png px that connect them to their strand are already in the staged strand as exact copies. The only other base px within 3 px of the split pieces are at the left strand_01 root, where hair_front/hair_back own them. See `work/connect_probe.py` and `work/connect_probe.json`. So no px was added.
+
+The split is the faint 1 px stroke dropping under the ink threshold after resampling. It happens even at s=0 posed (pure ss2 resampling, no rotation). Whether that counts as a defect is scored against the resampling baseline in `hair/qa/lineart/` (step 2).
+
+Consistency check (`work/verify_final.py`): ALL CONSISTENT.

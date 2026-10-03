@@ -1,0 +1,74 @@
+{
+ "contract": "benchmark preset v0 (PARKED)",
+ "benchmark": "3_smirk",
+ "reference": "reference/benchmarks/3_smirk.jpg",
+ "view": "apose",
+ "note": "Signs inferred from rig.json rotSign (+ = clockwise on screen) and part pivots; NOT render-verified (benchmark work parked before screenshots). Body joints clamp to +-1 = +-25 deg (BodyLean 8 deg, HeadTilt 8 deg, HeadNod 6 deg).",
+ "apply": {
+  "MouthOpen": 0,
+  "MouthForm": 0.5,
+  "EyeROpen": 0.9,
+  "EyeLOpen": 0.9,
+  "HeadTilt": 0.15,
+  "ShoulderR": 0,
+  "ShoulderL": 0,
+  "HandRMiddle": 0.3,
+  "HandLMiddle": 0.3
+ },
+ "controls": {
+  "MouthOpen": {
+   "value": 0,
+   "status": "reachable",
+   "note": ""
+  },
+  "MouthForm": {
+   "value": 0.5,
+   "status": "blocked",
+   "note": "one-sided smirk: needs its own drawn one-sided shape at MouthForm between rest and smile (never mirrored); today 0.5 picks rest or smile"
+  },
+  "EyeROpen": {
+   "value": 0.9,
+   "status": "reachable",
+   "note": ""
+  },
+  "EyeLOpen": {
+   "value": 0.9,
+   "status": "reachable",
+   "note": ""
+  },
+  "HeadTilt": {
+   "value": 0.15,
+   "status": "reachable",
+   "note": ""
+  },
+  "ShoulderR": {
+   "value": 0,
+   "status": "reachable",
+   "note": ""
+  },
+  "ShoulderL": {
+   "value": 0,
+   "status": "reachable",
+   "note": "arms at sides ~ rest A-pose"
+  },
+  "HandRMiddle": {
+   "value": 0.3,
+   "status": "reachable",
+   "note": "relaxed curl"
+  },
+  "HandLMiddle": {
+   "value": 0.3,
+   "status": "reachable",
+   "note": ""
+  },
+  "Brows": {
+   "value": null,
+   "status": "blocked",
+   "note": "one raised brow: no brow controls"
+  }
+ },
+ "outfit": {
+  "status": "blocked",
+  "note": "bodysuit + heeled sandals: Body owns this layer on skin.json meshes; not built. Dominates any silhouette score."
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "note": "Matches rig/partmesh/staged/headgroup.json as staged 23:39:57 PT (byte copy: headgroup_staged_2339_copy.json).",
+ "pivot": [
+  681.5,
+  318
+ ],
+ "handoffs": {
+  "apose": {
+   "frame": 1,
+   "dx": 0,
+   "dy": -9,
+   "rot": 0,
+   "scale": 1
+  },
+  "left": {
+   "frame": 62,
+   "dx": 0,
+   "dy": 11,
+   "rot": 0,
+   "scale": 1
+  },
+  "back": {
+   "frame": 109,
+   "dx": 2,
+   "dy": 11,
+   "rot": 0,
+   "scale": 1
+  },
+  "right": {
+   "frame": 160,
+   "dx": 3,
+   "dy": 5,
+   "rot": 0,
+   "scale": 1
+  }
+ }
+}

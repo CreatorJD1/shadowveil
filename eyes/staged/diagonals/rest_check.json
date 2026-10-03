@@ -1,1 +1,12 @@
-{"045": 0, "315": 0}
+{
+ "what": "rest (all eyes open, gaze 0, lid 0) rebuilt on the turn frame vs the frame; staged files as they are now. inside_face = frame px not key-blue by the qa_gates chroma rule (must be 0); outside_face_edge = key-blue frame px (the 11 palette-tone silhouette-edge px from the 2026-10-03 chroma fix). Written by eyes/qa/qa_gates/check_diag_chroma_fix.py; render_diag.py check writes the old single-number format.",
+ "updated": "2026-10-03T03:01:15-07:00",
+ "045": {
+  "inside_face": 0,
+  "outside_face_edge": 6
+ },
+ "315": {
+  "inside_face": 0,
+  "outside_face_edge": 5
+ }
+}

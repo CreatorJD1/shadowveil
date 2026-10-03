@@ -1,0 +1,170 @@
+{
+ "apose": {
+  "rest_FR_vs_control": 0,
+  "restPixels_vs_control": 0,
+  "restPixels_vs_base": {
+   "control": 0,
+   "handorder": 0
+  },
+  "restCheck": {
+   "control": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+   "handorder": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)"
+  },
+  "z_handorder": {
+   "body:forearm_L": 220,
+   "body:forearm_R": 220,
+   "body:thigh_L": 205,
+   "body:thigh_R": 205,
+   "hands:L_palm": 215,
+   "hands:R_palm": 210
+  },
+  "z_control": {
+   "body:forearm_L": 220,
+   "body:forearm_R": 220,
+   "body:thigh_L": 205,
+   "body:thigh_R": 205,
+   "hands:L_palm": 215,
+   "hands:R_palm": 210
+  },
+  "scheme": "staged: hands 210-219 under forearms",
+  "staged_handorder": [
+   "200 hands/staged/f7_wrist_apose/L_palm.png",
+   "200 hands/staged/f7_wrist_apose/R_palm.png"
+  ],
+  "errors": []
+ },
+ "tpose": {
+  "rest_FR_vs_control": 0,
+  "restPixels_vs_control": 0,
+  "restPixels_vs_base": {
+   "control": 0,
+   "handorder": 0
+  },
+  "restCheck": {
+   "control": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)",
+   "handorder": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)"
+  },
+  "z_handorder": {
+   "body:forearm_L": 220,
+   "body:forearm_R": 220,
+   "body:thigh_L": 205,
+   "body:thigh_R": 205,
+   "hands:L_palm": 215,
+   "hands:R_palm": 210
+  },
+  "z_control": {
+   "body:forearm_L": 220,
+   "body:forearm_R": 220,
+   "body:thigh_L": 205,
+   "body:thigh_R": 205,
+   "hands:L_palm": 320,
+   "hands:R_palm": 300
+  },
+  "scheme": "staged handorder: hands 210-219 under forearms",
+  "staged_handorder": [
+   "200 hands/staged/f10_wrist_tpose/L_palm.png",
+   "200 hands/staged/f10_wrist_tpose/R_palm.png"
+  ],
+  "errors": []
+ },
+ "left": {
+  "rest_FR_vs_control": 53,
+  "restPixels_vs_control": 53,
+  "restPixels_vs_base": {
+   "control": 0,
+   "handorder": 53
+  },
+  "restCheck": {
+   "control": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+   "handorder": "FAIL: rest vs base.png, 53 px differ (left, skin mesh)"
+  },
+  "z_handorder": {
+   "body:forearm_L": 250,
+   "body:forearm_R": 205,
+   "body:thigh_L": 242,
+   "body:thigh_R": 203,
+   "hands:L_palm": 246,
+   "hands:R_palm": 210
+  },
+  "z_control": {
+   "body:forearm_L": 250,
+   "body:forearm_R": 205,
+   "body:thigh_L": 242,
+   "body:thigh_R": 203,
+   "hands:L_palm": 320,
+   "hands:R_palm": 210
+  },
+  "scheme": "staged handorder: hands 243-248 (thigh 242 < hands < forearm 250)",
+  "staged_handorder": [
+   "200 hands/staged/f11_wrist_profile_back/left/L_palm.png"
+  ],
+  "errors": []
+ },
+ "right": {
+  "rest_FR_vs_control": 24,
+  "restPixels_vs_control": 24,
+  "restPixels_vs_base": {
+   "control": 0,
+   "handorder": 24
+  },
+  "restCheck": {
+   "control": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+   "handorder": "FAIL: rest vs base.png, 24 px differ (right, skin mesh)"
+  },
+  "z_handorder": {
+   "body:forearm_L": 205,
+   "body:forearm_R": 250,
+   "body:thigh_L": 203,
+   "body:thigh_R": 242,
+   "hands:L_palm": 210,
+   "hands:R_palm": 243
+  },
+  "z_control": {
+   "body:forearm_L": 205,
+   "body:forearm_R": 250,
+   "body:thigh_L": 203,
+   "body:thigh_R": 242,
+   "hands:L_palm": 210,
+   "hands:R_palm": 300
+  },
+  "scheme": "staged handorder: hands 243-248 (thigh 242 < hands < forearm 250)",
+  "staged_handorder": [
+   "200 hands/staged/f11_wrist_profile_back/right/R_palm.png"
+  ],
+  "errors": []
+ },
+ "back": {
+  "rest_FR_vs_control": 0,
+  "restPixels_vs_control": 0,
+  "restPixels_vs_base": {
+   "control": 0,
+   "handorder": 0
+  },
+  "restCheck": {
+   "control": "PASS: rest vs base.png, 0 px differ (back, skin mesh)",
+   "handorder": "PASS: rest vs base.png, 0 px differ (back, skin mesh)"
+  },
+  "z_handorder": {
+   "body:forearm_L": 220,
+   "body:forearm_R": 220,
+   "body:thigh_L": 205,
+   "body:thigh_R": 205,
+   "hands:L_palm": 215,
+   "hands:R_palm": 210
+  },
+  "z_control": {
+   "body:forearm_L": 220,
+   "body:forearm_R": 220,
+   "body:thigh_L": 205,
+   "body:thigh_R": 205,
+   "hands:L_palm": 320,
+   "hands:R_palm": 300
+  },
+  "scheme": "staged handorder: hands 210-219 under forearms",
+  "staged_handorder": [
+   "200 hands/staged/f11_wrist_profile_back/back/L_palm.png",
+   "200 hands/staged/f11_wrist_profile_back/back/R_palm.png"
+  ],
+  "errors": []
+ }
+}

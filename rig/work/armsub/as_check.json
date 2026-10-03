@@ -1,0 +1,54 @@
+{
+ "back": {
+  "handoff": {
+   "forearm_L": 7.4,
+   "forearm_R": -7.5
+  },
+  "restPixels_vs_base": 0,
+  "posed_px_changed_by_sub": 51809,
+  "palm": {},
+  "after_ease0_px_vs_off": 0,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (back, skin mesh)",
+  "errors": []
+ },
+ "left": {
+  "handoff": {
+   "forearm_L": 0.4
+  },
+  "restPixels_vs_base": 0,
+  "posed_px_changed_by_sub": 13881,
+  "palm": {},
+  "after_ease0_px_vs_off": 0,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "errors": []
+ },
+ "right": {
+  "handoff": {
+   "forearm_R": -1.8
+  },
+  "restPixels_vs_base": 0,
+  "posed_px_changed_by_sub": 19368,
+  "palm": {},
+  "after_ease0_px_vs_off": 0,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "errors": []
+ },
+ "apose": {
+  "handoff": null,
+  "restPixels_vs_base": 0,
+  "posed_px_changed_by_sub": 0,
+  "palm": {},
+  "after_ease0_px_vs_off": 0,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (apose, skin mesh)",
+  "errors": []
+ },
+ "tpose": {
+  "handoff": null,
+  "restPixels_vs_base": 0,
+  "posed_px_changed_by_sub": 0,
+  "palm": {},
+  "after_ease0_px_vs_off": 0,
+  "restCheck": "PASS: rest vs base.png, 0 px differ (tpose, skin mesh)",
+  "errors": []
+ }
+}

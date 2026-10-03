@@ -1,0 +1,27 @@
+{
+ "fade": "0",
+ "pixelFrames": [
+  10,
+  27,
+  45,
+  75,
+  100,
+  120
+ ],
+ "pixelMismatchesAfterColdReverse": [
+  120,
+  100,
+  75,
+  45,
+  27,
+  10
+ ],
+ "repeatSame": [
+  false,
+  false,
+  false,
+  false
+ ],
+ "msPerFrame": 1230,
+ "errors": []
+}

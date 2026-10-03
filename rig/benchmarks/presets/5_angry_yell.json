@@ -1,0 +1,134 @@
+{
+ "contract": "benchmark preset v0 (PARKED)",
+ "benchmark": "5_angry_yell",
+ "reference": "reference/benchmarks/5_angry_yell.jpg",
+ "view": "apose",
+ "note": "Signs inferred from rig.json rotSign (+ = clockwise on screen) and part pivots; NOT render-verified (benchmark work parked before screenshots). Body joints clamp to +-1 = +-25 deg (BodyLean 8 deg, HeadTilt 8 deg, HeadNod 6 deg).",
+ "apply": {
+  "MouthOpen": 1,
+  "MouthForm": -1,
+  "EyeROpen": 0.75,
+  "EyeLOpen": 0.75,
+  "HeadNod": 0.3,
+  "ShoulderR": 0.3,
+  "ShoulderL": -0.3,
+  "HandRThumb": 1,
+  "HandRIndex": 1,
+  "HandRMiddle": 1,
+  "HandRRing": 1,
+  "HandRPinky": 1,
+  "HandLThumb": 1,
+  "HandLIndex": 1,
+  "HandLMiddle": 1,
+  "HandLRing": 1,
+  "HandLPinky": 1,
+  "HipR": 0.2,
+  "HipL": -0.2
+ },
+ "controls": {
+  "MouthOpen": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "MouthForm": {
+   "value": -1,
+   "status": "blocked",
+   "note": "open yell at (1,-1) picks OH; anger (0.25,-1) is drawn but closer to a snarl; a yell shape is art"
+  },
+  "EyeROpen": {
+   "value": 0.75,
+   "status": "blocked",
+   "note": "lower-lid squint not drawn"
+  },
+  "EyeLOpen": {
+   "value": 0.75,
+   "status": "blocked",
+   "note": ""
+  },
+  "Brows": {
+   "value": null,
+   "status": "blocked",
+   "note": "brows down/in: no brow controls"
+  },
+  "HeadNod": {
+   "value": 0.3,
+   "status": "reachable",
+   "note": ""
+  },
+  "ShoulderR": {
+   "value": 0.3,
+   "status": "reachable",
+   "note": ""
+  },
+  "ShoulderL": {
+   "value": -0.3,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRThumb": {
+   "value": 1,
+   "status": "blocked",
+   "note": "wrapped fist draw order"
+  },
+  "HandRIndex": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRMiddle": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRRing": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandRPinky": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLThumb": {
+   "value": 1,
+   "status": "blocked",
+   "note": ""
+  },
+  "HandLIndex": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLMiddle": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLRing": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HandLPinky": {
+   "value": 1,
+   "status": "reachable",
+   "note": ""
+  },
+  "HipR": {
+   "value": 0.2,
+   "status": "reachable",
+   "note": ""
+  },
+  "HipL": {
+   "value": -0.2,
+   "status": "reachable",
+   "note": ""
+  }
+ },
+ "outfit": {
+  "status": "blocked",
+  "note": "bodysuit + heeled sandals: Body owns this layer on skin.json meshes; not built. Dominates any silhouette score."
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "view": "back",
+ "note": "STAGED copies, live untouched",
+ "locks_checked": [
+  "hand"
+ ],
+ "base_body.png": {
+  "speck_px": 210,
+  "speck_px_alpha_before": {
+   "255": 90,
+   "lt255": 120
+  },
+  "px_changed_vs_source": 210,
+  "speck_alpha0_after": 210,
+  "changed_inside_locks": {
+   "hand": 0
+  },
+  "src": "views/back/base_body.png",
+  "dst": "body_tools/work/hairless_division_staged/back/live_patch_staged/base_body.png"
+ },
+ "base_body_skin.png": {
+  "speck_px": 210,
+  "speck_px_alpha_before": {
+   "255": 90,
+   "lt255": 120
+  },
+  "hand_mask_px": 16726,
+  "hand_px_kept_under_piece_fill": 0,
+  "hand_cut_px": 16726,
+  "hand_cut_opaque_before": 2257,
+  "hand_cut_rgba_changed": 2257,
+  "hand_mask": "body_tools/work/hairless_division_staged/back/hand_mask.png",
+  "px_changed_vs_source": 2467,
+  "speck_alpha0_after": 210,
+  "changed_inside_locks": {
+   "hand": 2257
+  },
+  "src": "views/back/base_body_skin.png",
+  "dst": "body_tools/work/hairless_division_staged/back/live_patch_staged/base_body_skin.png"
+ }
+}

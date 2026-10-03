@@ -1,0 +1,104 @@
+{
+ "contract": "benchmark preset v0 (PARKED)",
+ "benchmark": "2_hand_on_hip",
+ "reference": "reference/benchmarks/2_hand_on_hip.jpg",
+ "view": "apose",
+ "note": "Signs inferred from rig.json rotSign (+ = clockwise on screen) and part pivots; NOT render-verified (benchmark work parked before screenshots). Body joints clamp to +-1 = +-25 deg (BodyLean 8 deg, HeadTilt 8 deg, HeadNod 6 deg).",
+ "apply": {
+  "MouthOpen": 0,
+  "MouthForm": -0.5,
+  "EyeBallX": 1,
+  "EyeROpen": 0.85,
+  "EyeLOpen": 0.85,
+  "HeadTilt": 0.3,
+  "NeckTwist": 0.4,
+  "ShoulderL": -1,
+  "ElbowL": 1,
+  "WristL": 1,
+  "BodyLean": 0.5,
+  "HipR": 0.2,
+  "KneeL": 0.3,
+  "RootX": 0
+ },
+ "controls": {
+  "MouthOpen": {
+   "value": 0,
+   "status": "reachable",
+   "note": ""
+  },
+  "MouthForm": {
+   "value": -0.5,
+   "status": "blocked",
+   "note": "closed frown at (0,-0.5): nearest-shape pick ties rest/M; no frown drawing"
+  },
+  "EyeBallX": {
+   "value": 1,
+   "status": "reachable",
+   "note": "side glance toward her left (sign per eyes rig.json: -1 = her right)"
+  },
+  "EyeROpen": {
+   "value": 0.85,
+   "status": "reachable",
+   "note": "slight lower; lower-lid squint not drawn"
+  },
+  "EyeLOpen": {
+   "value": 0.85,
+   "status": "reachable",
+   "note": ""
+  },
+  "HeadTilt": {
+   "value": 0.3,
+   "status": "reachable",
+   "note": ""
+  },
+  "NeckTwist": {
+   "value": 0.4,
+   "status": "blocked",
+   "note": "3/4 head turn needs diagonal-view art; skin projection only"
+  },
+  "ShoulderL": {
+   "value": -1,
+   "status": "blocked",
+   "note": "arm out to hip: 25 deg cap"
+  },
+  "ElbowL": {
+   "value": 1,
+   "status": "blocked",
+   "note": "elbow needs >90 deg; capped at 25 deg, no corrective shape"
+  },
+  "WristL": {
+   "value": 1,
+   "status": "blocked",
+   "note": "hand on hip needs 3/4 hand drawing + forearm over torso draw-order override"
+  },
+  "BodyLean": {
+   "value": 0.5,
+   "status": "reachable",
+   "note": "hip shift"
+  },
+  "HipR": {
+   "value": 0.2,
+   "status": "reachable",
+   "note": ""
+  },
+  "KneeL": {
+   "value": 0.3,
+   "status": "reachable",
+   "note": ""
+  },
+  "RootX": {
+   "value": 0,
+   "status": "reachable",
+   "note": ""
+  },
+  "body_view": {
+   "value": "diagonal 315",
+   "status": "blocked",
+   "note": "3/4 diagonal body pose: diagonals not posable (art acceptance + fit)"
+  }
+ },
+ "outfit": {
+  "status": "blocked",
+  "note": "bodysuit + heeled sandals: Body owns this layer on skin.json meshes; not built. Dominates any silhouette score."
+ }
+}

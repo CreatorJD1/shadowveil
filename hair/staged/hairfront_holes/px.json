@@ -1,0 +1,48 @@
+{
+ "apose": {
+  "source": "hair/staged/ear_strands/apose/views/apose/hair/hair_front.png",
+  "output": "hair/staged/hairfront_holes/apose/hair/hair_front.png",
+  "px": [
+   [
+    604,
+    129
+   ]
+  ],
+  "rgba_from_base": [
+   0,
+   24,
+   70,
+   255
+  ],
+  "previous_rgba": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "changed_px": 1
+ },
+ "right": {
+  "source": "views/right/hair/hair_front.png",
+  "output": "hair/staged/hairfront_holes/right/hair/hair_front.png",
+  "px": [
+   [
+    780,
+    169
+   ]
+  ],
+  "rgba_from_base": [
+   4,
+   4,
+   88,
+   255
+  ],
+  "previous_rgba": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "changed_px": 1
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "apose_live": {
+  "near_chroma": 0,
+  "max_blue_excess": 40
+ },
+ "tpose_live": {
+  "near_chroma": 0,
+  "max_blue_excess": 40
+ },
+ "left_live": {
+  "near_chroma": 0,
+  "max_blue_excess": 40
+ },
+ "right_live": {
+  "near_chroma": 0,
+  "max_blue_excess": 40
+ },
+ "back_live": {
+  "near_chroma": 0,
+  "max_blue_excess": 40
+ },
+ "apose_final": {
+  "near_chroma": 0,
+  "max_blue_excess": 58
+ },
+ "tpose_final": {
+  "near_chroma": 0,
+  "max_blue_excess": 66
+ },
+ "left_final": {
+  "near_chroma": 0,
+  "max_blue_excess": 88
+ },
+ "right_final": {
+  "near_chroma": 0,
+  "max_blue_excess": 90
+ },
+ "back_final": {
+  "near_chroma": 0,
+  "max_blue_excess": 85
+ }
+}

@@ -1,0 +1,614 @@
+{
+ "apose_EyeR": {
+  "frame": "f001",
+  "headgroup_offset": [
+   0,
+   -10
+  ],
+  "sanity_hg_minus_live_eye_ncc": [
+   0,
+   -10,
+   1.0
+  ],
+  "rig_iris_part_centroid": [
+   646.65,
+   219.21
+  ],
+  "rig_iris_colour_centroid": [
+   645.87,
+   219.93
+  ],
+  "rig_iris_colour_vs_part": [
+   -0.78,
+   0.72
+  ],
+  "M1_iris_colour_centroid": [
+   -2.04,
+   2.15
+  ],
+  "iris_px": {
+   "rig": 199,
+   "frame": 34
+  },
+  "iris_bbox": {
+   "rig": [
+    638,
+    213,
+    656,
+    226
+   ],
+   "frame": [
+    642,
+    217,
+    648,
+    226
+   ]
+  },
+  "M1o_iris_opening_centroid": [
+   1.2,
+   -0.07
+  ],
+  "M1o_rig_vs_part": [
+   -0.86,
+   -1.2
+  ],
+  "M1o_px": {
+   "rig": 93,
+   "frame": 66
+  },
+  "M1p_opening_centroid": [
+   -0.08,
+   -0.0
+  ],
+  "lash_band": {
+   "rig": {
+    "x0": 619,
+    "x1": 662,
+    "w": 44,
+    "cx": 638.33,
+    "cy": 212.28,
+    "y_at_x0": 210.3,
+    "y_at_x1": 220.6,
+    "bottom_med": 213.0
+   },
+   "frame": {
+    "x0": 620,
+    "x1": 662,
+    "w": 43,
+    "cx": 638.24,
+    "cy": 213.08,
+    "y_at_x0": 211.3,
+    "y_at_x1": 221.0,
+    "bottom_med": 214.0
+   },
+   "centroid_offset": [
+    -0.09,
+    0.8
+   ],
+   "minx_corner_offset": [
+    1,
+    1.0
+   ],
+   "maxx_corner_offset": [
+    0,
+    0.4
+   ],
+   "width_ratio": 0.977
+  },
+  "M1b_pupil_dark_core": [
+   5.0,
+   1.17
+  ],
+  "M2_upper_lash_chamfer": [
+   1,
+   1,
+   0.51
+  ],
+  "M2_subpx": [
+   1.05,
+   1.31
+  ],
+  "M2b_all_lid_chamfer": [
+   1,
+   1,
+   0.67
+  ],
+  "M2c_lid_edge_profile": [
+   -7,
+   1.0,
+   1.14
+  ],
+  "M3_eye_luma_ncc": [
+   0,
+   1,
+   0.887
+  ],
+  "M4_cheek_mole": [
+   -2.5,
+   0.5
+  ],
+  "mole_pos": {
+   "rig": [
+    642.5,
+    228.0
+   ],
+   "frame": [
+    640.0,
+    228.5
+   ]
+  },
+  "windows": {
+   "template": [
+    617,
+    199,
+    673,
+    233
+   ],
+   "search": [
+    598,
+    190,
+    692,
+    254
+   ]
+  }
+ },
+ "apose_EyeL": {
+  "frame": "f001",
+  "headgroup_offset": [
+   0,
+   -10
+  ],
+  "sanity_hg_minus_live_eye_ncc": [
+   0,
+   -10,
+   1.0
+  ],
+  "rig_iris_part_centroid": [
+   715.24,
+   219.65
+  ],
+  "rig_iris_colour_centroid": [
+   715.36,
+   218.34
+  ],
+  "rig_iris_colour_vs_part": [
+   0.12,
+   -1.31
+  ],
+  "M1_iris_colour_centroid": [
+   0.59,
+   0.58
+  ],
+  "iris_px": {
+   "rig": 192,
+   "frame": 134
+  },
+  "iris_bbox": {
+   "rig": [
+    707,
+    213,
+    723,
+    226
+   ],
+   "frame": [
+    710,
+    213,
+    723,
+    229
+   ]
+  },
+  "M1o_iris_opening_centroid": [
+   0.27,
+   0.98
+  ],
+  "M1o_rig_vs_part": [
+   1.52,
+   -1.58
+  ],
+  "M1o_px": {
+   "rig": 139,
+   "frame": 147
+  },
+  "M1p_opening_centroid": [
+   0.57,
+   0.88
+  ],
+  "lash_band": {
+   "rig": {
+    "x0": 701,
+    "x1": 743,
+    "w": 43,
+    "cx": 723.67,
+    "cy": 212.62,
+    "y_at_x0": 219.0,
+    "y_at_x1": 210.3,
+    "bottom_med": 214.0
+   },
+   "frame": {
+    "x0": 702,
+    "x1": 743,
+    "w": 42,
+    "cx": 724.17,
+    "cy": 213.19,
+    "y_at_x0": 219.0,
+    "y_at_x1": 210.7,
+    "bottom_med": 214.0
+   },
+   "centroid_offset": [
+    0.5,
+    0.57
+   ],
+   "minx_corner_offset": [
+    1,
+    0.0
+   ],
+   "maxx_corner_offset": [
+    0,
+    0.4
+   ],
+   "width_ratio": 0.977
+  },
+  "M1b_pupil_dark_core": [
+   3.13,
+   -0.89
+  ],
+  "M2_upper_lash_chamfer": [
+   -1,
+   1,
+   0.72
+  ],
+  "M2_subpx": [
+   -0.62,
+   1.46
+  ],
+  "M2b_all_lid_chamfer": [
+   -1,
+   1,
+   0.93
+  ],
+  "M2c_lid_edge_profile": [
+   6,
+   0.5,
+   1.62
+  ],
+  "M3_eye_luma_ncc": [
+   0,
+   1,
+   0.898
+  ],
+  "M4_cheek_mole": [
+   3.7,
+   11.6
+  ],
+  "mole_pos": {
+   "rig": [
+    731.3,
+    234.4
+   ],
+   "frame": [
+    735.0,
+    246.0
+   ]
+  },
+  "windows": {
+   "template": [
+    691,
+    197,
+    748,
+    237
+   ],
+   "search": [
+    672,
+    188,
+    767,
+    258
+   ]
+  }
+ },
+ "left_EyeL": {
+  "frame": "f062",
+  "headgroup_offset": [
+   -2,
+   1
+  ],
+  "sanity_hg_minus_live_eye_ncc": [
+   -2,
+   1,
+   1.0
+  ],
+  "rig_iris_part_centroid": [
+   612.8,
+   217.17
+  ],
+  "rig_iris_colour_centroid": [
+   610.0,
+   218.2
+  ],
+  "rig_iris_colour_vs_part": [
+   -2.8,
+   1.03
+  ],
+  "M1_iris_colour_centroid": [
+   2.73,
+   8.19
+  ],
+  "iris_px": {
+   "rig": 59,
+   "frame": 42
+  },
+  "iris_bbox": {
+   "rig": [
+    610,
+    210,
+    615,
+    223
+   ],
+   "frame": [
+    611,
+    221,
+    620,
+    229
+   ]
+  },
+  "M1o_iris_opening_centroid": [
+   3.88,
+   9.93
+  ],
+  "M1o_rig_vs_part": [
+   -0.36,
+   -1.37
+  ],
+  "M1o_px": {
+   "rig": 55,
+   "frame": 86
+  },
+  "M1p_opening_centroid": [
+   2.97,
+   10.14
+  ],
+  "lash_band": {
+   "rig": {
+    "x0": 603,
+    "x1": 633,
+    "w": 31,
+    "cx": 617.06,
+    "cy": 207.26,
+    "y_at_x0": 210.3,
+    "y_at_x1": 205.3,
+    "bottom_med": 207.0
+   },
+   "frame": {
+    "x0": 607,
+    "x1": 628,
+    "w": 22,
+    "cx": 616.95,
+    "cy": 217.43,
+    "y_at_x0": 217.2,
+    "y_at_x1": 213.3,
+    "bottom_med": 220.0
+   },
+   "centroid_offset": [
+    -0.11,
+    10.17
+   ],
+   "minx_corner_offset": [
+    4,
+    6.9
+   ],
+   "maxx_corner_offset": [
+    -5,
+    8.0
+   ],
+   "width_ratio": 0.71
+  },
+  "M1b_pupil_dark_core": [
+   1.99,
+   12.21
+  ],
+  "M2_upper_lash_chamfer": [
+   7,
+   9,
+   0.96
+  ],
+  "M2_subpx": [
+   6.91,
+   9.31
+  ],
+  "M2b_all_lid_chamfer": [
+   -2,
+   11,
+   1.16
+  ],
+  "M2c_lid_edge_profile": [
+   3,
+   11.5,
+   2.06
+  ],
+  "M3_eye_luma_ncc": [
+   1,
+   10,
+   0.464
+  ],
+  "M4_cheek_mole": [
+   -11.4,
+   7.6
+  ],
+  "mole_pos": {
+   "rig": [
+    632.5,
+    232.0
+   ],
+   "frame": [
+    621.1,
+    239.6
+   ]
+  },
+  "windows": {
+   "template": [
+    598,
+    194,
+    641,
+    231
+   ],
+   "search": [
+    579,
+    185,
+    660,
+    252
+   ]
+  }
+ },
+ "right_EyeR": {
+  "frame": "f160",
+  "headgroup_offset": [
+   5,
+   -6
+  ],
+  "sanity_hg_minus_live_eye_ncc": [
+   5,
+   -6,
+   1.0
+  ],
+  "rig_iris_part_centroid": [
+   761.48,
+   210.83
+  ],
+  "rig_iris_colour_centroid": [
+   NaN,
+   NaN
+  ],
+  "rig_iris_colour_vs_part": [
+   NaN,
+   NaN
+  ],
+  "M1_iris_colour_centroid": [
+   9.24,
+   3.99
+  ],
+  "iris_px": {
+   "rig": 103,
+   "frame": 28
+  },
+  "iris_bbox": {
+   "rig": [
+    758,
+    205,
+    767,
+    218
+   ],
+   "frame": [
+    768,
+    212,
+    774,
+    218
+   ]
+  },
+  "M1o_iris_opening_centroid": [
+   -4.03,
+   10.47
+  ],
+  "M1o_rig_vs_part": [
+   1.87,
+   -1.08
+  ],
+  "M1o_px": {
+   "rig": 32,
+   "frame": 32
+  },
+  "M1p_opening_centroid": [
+   -4.51,
+   11.52
+  ],
+  "lash_band": {
+   "rig": {
+    "x0": 736,
+    "x1": 771,
+    "w": 36,
+    "cx": 754.52,
+    "cy": 202.37,
+    "y_at_x0": 200.3,
+    "y_at_x1": 204.0,
+    "bottom_med": 203.0
+   },
+   "frame": {
+    "x0": 741,
+    "x1": 767,
+    "w": 27,
+    "cx": 753.57,
+    "cy": 214.05,
+    "y_at_x0": 216.0,
+    "y_at_x1": 216.0,
+    "bottom_med": 217.0
+   },
+   "centroid_offset": [
+    -0.95,
+    11.68
+   ],
+   "minx_corner_offset": [
+    5,
+    15.7
+   ],
+   "maxx_corner_offset": [
+    -4,
+    12.0
+   ],
+   "width_ratio": 0.75
+  },
+  "M1b_pupil_dark_core": [
+   -3.6,
+   10.2
+  ],
+  "M2_upper_lash_chamfer": [
+   -1,
+   12,
+   0.75
+  ],
+  "M2_subpx": [
+   -1.16,
+   11.96
+  ],
+  "M2b_all_lid_chamfer": [
+   -1,
+   12,
+   0.89
+  ],
+  "M2c_lid_edge_profile": [
+   -1,
+   12.0,
+   4.02
+  ],
+  "M3_eye_luma_ncc": [
+   0,
+   12,
+   0.483
+  ],
+  "M4_cheek_mole": [
+   5.3,
+   12.0
+  ],
+  "mole_pos": {
+   "rig": [
+    747.0,
+    227.0
+   ],
+   "frame": [
+    752.3,
+    239.0
+   ]
+  },
+  "windows": {
+   "template": [
+    730,
+    187,
+    777,
+    226
+   ],
+   "search": [
+    711,
+    178,
+    796,
+    247
+   ]
+  }
+ }
+}

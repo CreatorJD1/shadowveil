@@ -1,0 +1,478 @@
+{
+ "ctrl": {
+  "L rest": {
+   "holes": 0,
+   "tears": 3,
+   "partial": 0,
+   "breaks": 0,
+   "width": 2.0
+  },
+  "L wrist_Lp1": {
+   "holes": 0,
+   "tears": 3,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "L wrist_Lm1": {
+   "holes": 0,
+   "tears": 2,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.011
+  },
+  "L anger+0.14": {
+   "holes": 0,
+   "tears": -2,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "L jump-0.2": {
+   "holes": 0,
+   "tears": -2,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "L jump+0.2969": {
+   "holes": 0,
+   "tears": -3,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "L run-0.12": {
+   "holes": 0,
+   "tears": -3,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "L run+0.12": {
+   "holes": 0,
+   "tears": -3,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "R rest": {
+   "holes": 0,
+   "tears": 0,
+   "partial": 0,
+   "breaks": 0,
+   "width": 2.0
+  },
+  "R wrist_Rp1": {
+   "holes": 0,
+   "tears": 7,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.005
+  },
+  "R wrist_Rm1": {
+   "holes": 0,
+   "tears": 5,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "R anger+0.14": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "R jump-0.2": {
+   "holes": 0,
+   "tears": 4,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "R jump+0.2969": {
+   "holes": 0,
+   "tears": 1,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  },
+  "R run-0.12": {
+   "holes": 0,
+   "tears": 2,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.006
+  },
+  "R run+0.12": {
+   "holes": 0,
+   "tears": 3,
+   "partial": 0,
+   "breaks": 0,
+   "breaks_abs": 0,
+   "holes_abs": 0,
+   "dw": 0.0
+  }
+ },
+ "r20": {
+  "metrics": {
+   "L rest": {
+    "holes": 0,
+    "tears": 3,
+    "partial": 0,
+    "breaks": 0,
+    "width": 2.0
+   },
+   "L wrist_Lp1": {
+    "holes": 0,
+    "tears": -1,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L wrist_Lm1": {
+    "holes": 0,
+    "tears": -1,
+    "partial": 3,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.021
+   },
+   "L anger+0.14": {
+    "holes": 0,
+    "tears": -2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L jump-0.2": {
+    "holes": 0,
+    "tears": -2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L jump+0.2969": {
+    "holes": 0,
+    "tears": -3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L run-0.12": {
+    "holes": 0,
+    "tears": -3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L run+0.12": {
+    "holes": 0,
+    "tears": -3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R rest": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "width": 2.0
+   },
+   "R wrist_Rp1": {
+    "holes": 0,
+    "tears": 4,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.005
+   },
+   "R wrist_Rm1": {
+    "holes": 0,
+    "tears": 1,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R anger+0.14": {
+    "holes": 0,
+    "tears": 1,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R jump-0.2": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R jump+0.2969": {
+    "holes": 0,
+    "tears": 1,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R run-0.12": {
+    "holes": 0,
+    "tears": 3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.006
+   },
+   "R run+0.12": {
+    "holes": 0,
+    "tears": 2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   }
+  },
+  "px_vs_ctrl": {
+   "rest": 0,
+   "pose_Fist": 0,
+   "pose_Point": 0,
+   "pose_Peace": 0,
+   "wrist_Lp1": 1647,
+   "wrist_Lm1": 1744,
+   "wrist_Rp1": 1610,
+   "wrist_Rm1": 1587,
+   "anger+0.14": 2194,
+   "jump-0.2": 2634,
+   "jump+0.2969": 2859,
+   "run-0.12": 2276,
+   "run+0.12": 2366
+  },
+  "worse_than_ctrl": [
+   [
+    "R run-0.12",
+    {
+     "tears": [
+      2,
+      3
+     ]
+    }
+   ]
+  ],
+  "max_abs_dw": 0.021,
+  "abs_holes_breaks": []
+ },
+ "r20d5": {
+  "metrics": {
+   "L rest": {
+    "holes": 0,
+    "tears": 3,
+    "partial": 0,
+    "breaks": 0,
+    "width": 2.0
+   },
+   "L wrist_Lp1": {
+    "holes": 0,
+    "tears": -3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L wrist_Lm1": {
+    "holes": 0,
+    "tears": 2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.011
+   },
+   "L anger+0.14": {
+    "holes": 0,
+    "tears": -2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L jump-0.2": {
+    "holes": 0,
+    "tears": -2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L jump+0.2969": {
+    "holes": 0,
+    "tears": -3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L run-0.12": {
+    "holes": 0,
+    "tears": -3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "L run+0.12": {
+    "holes": 0,
+    "tears": -3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R rest": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "width": 2.0
+   },
+   "R wrist_Rp1": {
+    "holes": 0,
+    "tears": 7,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.005
+   },
+   "R wrist_Rm1": {
+    "holes": 0,
+    "tears": 2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R anger+0.14": {
+    "holes": 0,
+    "tears": 1,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R jump-0.2": {
+    "holes": 0,
+    "tears": 1,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R jump+0.2969": {
+    "holes": 0,
+    "tears": 0,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   },
+   "R run-0.12": {
+    "holes": 0,
+    "tears": 2,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.006
+   },
+   "R run+0.12": {
+    "holes": 0,
+    "tears": 3,
+    "partial": 0,
+    "breaks": 0,
+    "breaks_abs": 0,
+    "holes_abs": 0,
+    "dw": 0.0
+   }
+  },
+  "px_vs_ctrl": {
+   "rest": 0,
+   "pose_Fist": 0,
+   "pose_Point": 0,
+   "pose_Peace": 0,
+   "wrist_Lp1": 811,
+   "wrist_Lm1": 906,
+   "wrist_Rp1": 1074,
+   "wrist_Rm1": 943,
+   "anger+0.14": 865,
+   "jump-0.2": 1489,
+   "jump+0.2969": 1563,
+   "run-0.12": 1355,
+   "run+0.12": 1368
+  },
+  "worse_than_ctrl": [],
+  "max_abs_dw": 0.011,
+  "abs_holes_breaks": []
+ }
+}

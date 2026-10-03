@@ -1,0 +1,2380 @@
+{
+ "gate_px": 1.0,
+ "units": "view px (1642-px-tall body)",
+ "rig_md5": {
+  "renders_default": "0ce6fecc8592296204284389ae0bcb87",
+  "renders_handorder": "00892ccbc3168b632aa86c57736a1917",
+  "disk_now": "00892ccbc3168b632aa86c57736a1917"
+ },
+ "views": {
+  "apose_L": {
+   "metrics": {
+    "L": {
+     "her": 148.6,
+     "rig": 148.6,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 80.4,
+     "rig": 80.4,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 68.1,
+     "rig": 68.1,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 62.0,
+     "rig": 62.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "wrist_w": {
+     "her": 40.0,
+     "rig": 40.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.6459,
+   "rig_L_over_head": 0.6459,
+   "head_height_px": 230,
+   "forearm_len_her": 210.3,
+   "L_over_forearm_her": 0.7064,
+   "L_over_forearm_rig": 0.7064,
+   "palmw_over_wristw_her": 1.55,
+   "palmw_over_wristw_rig": 1.55,
+   "layers_check": "PASS"
+  },
+  "apose_R": {
+   "metrics": {
+    "L": {
+     "her": 148.8,
+     "rig": 148.8,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 80.4,
+     "rig": 80.4,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 68.4,
+     "rig": 68.4,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 60.5,
+     "rig": 60.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "wrist_w": {
+     "her": 40.5,
+     "rig": 40.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.6468,
+   "rig_L_over_head": 0.6468,
+   "head_height_px": 230,
+   "forearm_len_her": 209.1,
+   "L_over_forearm_her": 0.7114,
+   "L_over_forearm_rig": 0.7114,
+   "palmw_over_wristw_her": 1.4938,
+   "palmw_over_wristw_rig": 1.4938,
+   "layers_check": "PASS"
+  },
+  "tpose_L": {
+   "metrics": {
+    "L": {
+     "her": 127.5,
+     "rig": 127.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": null,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "finger_len": {
+     "her": null,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "palm_w": {
+     "her": null,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "wrist_w": {
+     "her": 32.0,
+     "rig": 32.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.5642,
+   "rig_L_over_head": 0.5642,
+   "head_height_px": 226,
+   "forearm_len_her": 208.6,
+   "L_over_forearm_her": 0.6114,
+   "L_over_forearm_rig": 0.6114,
+   "palmw_over_wristw_her": null,
+   "palmw_over_wristw_rig": null,
+   "layers_check": "PASS"
+  },
+  "tpose_R": {
+   "metrics": {
+    "L": {
+     "her": 128.5,
+     "rig": 128.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": null,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "finger_len": {
+     "her": null,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "palm_w": {
+     "her": null,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "wrist_w": {
+     "her": 32.0,
+     "rig": 32.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.5686,
+   "rig_L_over_head": 0.5686,
+   "head_height_px": 226,
+   "forearm_len_her": 207.6,
+   "L_over_forearm_her": 0.6191,
+   "L_over_forearm_rig": 0.6191,
+   "palmw_over_wristw_her": null,
+   "palmw_over_wristw_rig": null,
+   "layers_check": "PASS"
+  },
+  "back_L": {
+   "metrics": {
+    "L": {
+     "her": 148.6,
+     "rig": 148.6,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 79.4,
+     "rig": 79.4,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 69.1,
+     "rig": 69.1,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 61.0,
+     "rig": 61.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "wrist_w": {
+     "her": 38.5,
+     "rig": 38.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.6459,
+   "rig_L_over_head": 0.6459,
+   "head_height_px": 230,
+   "forearm_len_her": 202.0,
+   "L_over_forearm_her": 0.7354,
+   "L_over_forearm_rig": 0.7354,
+   "palmw_over_wristw_her": 1.5844,
+   "palmw_over_wristw_rig": 1.5844,
+   "layers_check": "PASS"
+  },
+  "back_R": {
+   "metrics": {
+    "L": {
+     "her": 146.8,
+     "rig": 146.8,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 77.8,
+     "rig": 77.8,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 69.0,
+     "rig": 69.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 60.5,
+     "rig": 60.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "wrist_w": {
+     "her": 40.5,
+     "rig": 40.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.6384,
+   "rig_L_over_head": 0.6384,
+   "head_height_px": 230,
+   "forearm_len_her": 203.5,
+   "L_over_forearm_her": 0.7215,
+   "L_over_forearm_rig": 0.7215,
+   "palmw_over_wristw_her": 1.4938,
+   "palmw_over_wristw_rig": 1.4938,
+   "layers_check": "PASS"
+  },
+  "left_L": {
+   "metrics": {
+    "L": {
+     "her": 144.5,
+     "rig": 144.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 76.9,
+     "rig": 76.9,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 67.6,
+     "rig": 67.6,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 68.5,
+     "rig": 68.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "wrist_w": {
+     "her": 44.5,
+     "rig": 44.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.6509,
+   "rig_L_over_head": 0.6509,
+   "head_height_px": 222,
+   "forearm_len_her": 220.0,
+   "L_over_forearm_her": 0.6568,
+   "L_over_forearm_rig": 0.6568,
+   "palmw_over_wristw_her": 1.5393,
+   "palmw_over_wristw_rig": 1.5393,
+   "layers_check": "FAIL"
+  },
+  "right_R": {
+   "metrics": {
+    "L": {
+     "her": 149.0,
+     "rig": 149.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 77.8,
+     "rig": 77.8,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 71.2,
+     "rig": 71.2,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 70.0,
+     "rig": 70.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "wrist_w": {
+     "her": 44.0,
+     "rig": 44.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.0,
+   "her_L_over_head": 0.662,
+   "rig_L_over_head": 0.662,
+   "head_height_px": 225,
+   "forearm_len_her": 216.9,
+   "L_over_forearm_her": 0.6867,
+   "L_over_forearm_rig": 0.6867,
+   "palmw_over_wristw_her": 1.5909,
+   "palmw_over_wristw_rig": 1.5909,
+   "layers_check": "FAIL"
+  }
+ },
+ "wrist_flaps": {
+  "apose_L": {
+   "f7_wrist_apose_over": {
+    "metrics": {
+     "L": {
+      "her": 148.6,
+      "rig": 148.6,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 80.4,
+      "rig": 80.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 68.1,
+      "rig": 68.1,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 62.0,
+      "rig": 62.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 40.0,
+      "rig": 40.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "f7_wrist_apose_underFA": {
+    "metrics": {
+     "L": {
+      "her": 148.6,
+      "rig": 148.6,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 80.4,
+      "rig": 80.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 68.1,
+      "rig": 68.1,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 62.0,
+      "rig": 62.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 40.0,
+      "rig": 40.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   }
+  },
+  "apose_R": {
+   "f7_wrist_apose_over": {
+    "metrics": {
+     "L": {
+      "her": 148.8,
+      "rig": 148.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 80.4,
+      "rig": 80.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 68.4,
+      "rig": 68.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 60.5,
+      "rig": 60.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 40.5,
+      "rig": 40.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "f7_wrist_apose_underFA": {
+    "metrics": {
+     "L": {
+      "her": 148.8,
+      "rig": 148.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 80.4,
+      "rig": 80.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 68.4,
+      "rig": 68.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 60.5,
+      "rig": 60.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 40.5,
+      "rig": 40.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   }
+  },
+  "tpose_L": {
+   "f10_wrist_tpose_over": {
+    "metrics": {
+     "L": {
+      "her": 127.5,
+      "rig": 127.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "finger_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "palm_w": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "wrist_w": {
+      "her": 32.0,
+      "rig": 32.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "f10_wrist_tpose_underFA": {
+    "metrics": {
+     "L": {
+      "her": 127.5,
+      "rig": 127.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "finger_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "palm_w": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "wrist_w": {
+      "her": 32.0,
+      "rig": 32.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "real_rig_00892ccb_hairless_handorder": {
+    "metrics": {
+     "L": {
+      "her": 127.5,
+      "rig": 127.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "finger_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "palm_w": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "wrist_w": {
+      "her": 32.0,
+      "rig": 32.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_diff_vs_base_in_her_hand": 0
+   }
+  },
+  "tpose_R": {
+   "f10_wrist_tpose_over": {
+    "metrics": {
+     "L": {
+      "her": 128.5,
+      "rig": 128.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "finger_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "palm_w": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "wrist_w": {
+      "her": 32.0,
+      "rig": 32.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "f10_wrist_tpose_underFA": {
+    "metrics": {
+     "L": {
+      "her": 128.5,
+      "rig": 128.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "finger_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "palm_w": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "wrist_w": {
+      "her": 32.0,
+      "rig": 32.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "real_rig_00892ccb_hairless_handorder": {
+    "metrics": {
+     "L": {
+      "her": 128.5,
+      "rig": 128.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "finger_len": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "palm_w": {
+      "her": null,
+      "rig": null,
+      "delta": null,
+      "ratio_delta_pct": null,
+      "verdict": "n/m"
+     },
+     "wrist_w": {
+      "her": 32.0,
+      "rig": 32.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_diff_vs_base_in_her_hand": 0
+   }
+  },
+  "back_L": {
+   "f11_wrist_profile_back_over": {
+    "metrics": {
+     "L": {
+      "her": 148.6,
+      "rig": 148.6,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 79.4,
+      "rig": 79.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 69.1,
+      "rig": 69.1,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 61.0,
+      "rig": 61.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 38.5,
+      "rig": 38.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 2
+   },
+   "f11_wrist_profile_back_underFA": {
+    "metrics": {
+     "L": {
+      "her": 148.6,
+      "rig": 148.6,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 79.4,
+      "rig": 79.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 69.1,
+      "rig": 69.1,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 61.0,
+      "rig": 61.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 38.5,
+      "rig": 38.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "real_rig_00892ccb_hairless_handorder": {
+    "metrics": {
+     "L": {
+      "her": 148.6,
+      "rig": 148.6,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 79.4,
+      "rig": 79.4,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 69.1,
+      "rig": 69.1,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 61.0,
+      "rig": 61.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 38.5,
+      "rig": 38.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_diff_vs_base_in_her_hand": 0
+   }
+  },
+  "back_R": {
+   "f11_wrist_profile_back_over": {
+    "metrics": {
+     "L": {
+      "her": 146.8,
+      "rig": 146.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 77.8,
+      "rig": 77.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 69.0,
+      "rig": 69.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 60.5,
+      "rig": 60.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 40.5,
+      "rig": 40.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "f11_wrist_profile_back_underFA": {
+    "metrics": {
+     "L": {
+      "her": 146.8,
+      "rig": 146.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 77.8,
+      "rig": 77.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 69.0,
+      "rig": 69.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 60.5,
+      "rig": 60.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 40.5,
+      "rig": 40.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "real_rig_00892ccb_hairless_handorder": {
+    "metrics": {
+     "L": {
+      "her": 146.8,
+      "rig": 146.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 77.8,
+      "rig": 77.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 69.0,
+      "rig": 69.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 60.5,
+      "rig": 60.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 40.5,
+      "rig": 40.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_diff_vs_base_in_her_hand": 0
+   }
+  },
+  "left_L": {
+   "f11_wrist_profile_back_over": {
+    "metrics": {
+     "L": {
+      "her": 144.5,
+      "rig": 147.0,
+      "delta": 2.52,
+      "ratio_delta_pct": 1.74,
+      "verdict": "FAIL"
+     },
+     "palm_len": {
+      "her": 76.9,
+      "rig": 79.5,
+      "delta": 2.57,
+      "ratio_delta_pct": 3.34,
+      "verdict": "FAIL"
+     },
+     "finger_len": {
+      "her": 67.6,
+      "rig": 67.5,
+      "delta": -0.05,
+      "ratio_delta_pct": -0.07,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 68.5,
+      "rig": 68.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 44.5,
+      "rig": 42.5,
+      "delta": -2.0,
+      "ratio_delta_pct": -4.49,
+      "verdict": "FAIL"
+     }
+    },
+    "verdict": "FAIL",
+    "max_abs_delta": 2.57,
+    "px_changed_in_her_hand": 0
+   },
+   "f11_wrist_profile_back_underFA": {
+    "metrics": {
+     "L": {
+      "her": 144.5,
+      "rig": 144.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 76.9,
+      "rig": 76.9,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 67.6,
+      "rig": 67.6,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 68.5,
+      "rig": 68.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 44.5,
+      "rig": 44.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "real_rig_00892ccb_hairless_handorder": {
+    "metrics": {
+     "L": {
+      "her": 144.5,
+      "rig": 145.0,
+      "delta": 0.5,
+      "ratio_delta_pct": 0.35,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 76.9,
+      "rig": 77.4,
+      "delta": 0.46,
+      "ratio_delta_pct": 0.6,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 67.6,
+      "rig": 67.6,
+      "delta": 0.04,
+      "ratio_delta_pct": 0.06,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 68.5,
+      "rig": 68.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 44.5,
+      "rig": 44.5,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.5,
+    "px_diff_vs_base_in_her_hand": 2
+   }
+  },
+  "right_R": {
+   "f11_wrist_profile_back_over": {
+    "metrics": {
+     "L": {
+      "her": 149.0,
+      "rig": 158.4,
+      "delta": 9.46,
+      "ratio_delta_pct": 6.35,
+      "verdict": "FAIL"
+     },
+     "palm_len": {
+      "her": 77.8,
+      "rig": 87.5,
+      "delta": 9.71,
+      "ratio_delta_pct": 12.48,
+      "verdict": "FAIL"
+     },
+     "finger_len": {
+      "her": 71.2,
+      "rig": 70.9,
+      "delta": -0.24,
+      "ratio_delta_pct": -0.34,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 70.0,
+      "rig": 70.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 44.0,
+      "rig": 42.5,
+      "delta": -1.5,
+      "ratio_delta_pct": -3.41,
+      "verdict": "FAIL"
+     }
+    },
+    "verdict": "FAIL",
+    "max_abs_delta": 9.71,
+    "px_changed_in_her_hand": 0
+   },
+   "f11_wrist_profile_back_underFA": {
+    "metrics": {
+     "L": {
+      "her": 149.0,
+      "rig": 149.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 77.8,
+      "rig": 77.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 71.2,
+      "rig": 71.2,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 70.0,
+      "rig": 70.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 44.0,
+      "rig": 44.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_changed_in_her_hand": 0
+   },
+   "real_rig_00892ccb_hairless_handorder": {
+    "metrics": {
+     "L": {
+      "her": 149.0,
+      "rig": 149.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_len": {
+      "her": 77.8,
+      "rig": 77.8,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "finger_len": {
+      "her": 71.2,
+      "rig": 71.2,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "palm_w": {
+      "her": 70.0,
+      "rig": 70.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     },
+     "wrist_w": {
+      "her": 44.0,
+      "rig": 44.0,
+      "delta": 0.0,
+      "ratio_delta_pct": 0.0,
+      "verdict": "PASS"
+     }
+    },
+    "verdict": "PASS",
+    "max_abs_delta": 0.0,
+    "px_diff_vs_base_in_her_hand": 8
+   }
+  }
+ },
+ "turn_angles": {
+  "0_L": {
+   "metrics": {
+    "L": {
+     "her": 151.8,
+     "rig": 148.6,
+     "delta": -3.25,
+     "ratio_delta_pct": -2.14,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 81.7,
+     "rig": 80.4,
+     "delta": -1.24,
+     "ratio_delta_pct": -1.51,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 70.1,
+     "rig": 68.1,
+     "delta": -2.01,
+     "ratio_delta_pct": -2.87,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 64.0,
+     "rig": 62.0,
+     "delta": -2.0,
+     "ratio_delta_pct": -3.12,
+     "verdict": "FAIL"
+    },
+    "wrist_w": {
+     "her": 40.5,
+     "rig": 40.0,
+     "delta": -0.5,
+     "ratio_delta_pct": -1.23,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 3.25,
+   "her_frame": "f001",
+   "rot_rel_forearm_her": 5.3,
+   "rot_rel_forearm_rig": 5.4,
+   "rot_delta_deg": 0.1,
+   "rig_sprite": "apose (native)"
+  },
+  "0_R": {
+   "metrics": {
+    "L": {
+     "her": 151.0,
+     "rig": 148.8,
+     "delta": -2.27,
+     "ratio_delta_pct": -1.5,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 81.4,
+     "rig": 80.4,
+     "delta": -1.09,
+     "ratio_delta_pct": -1.33,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 69.6,
+     "rig": 68.4,
+     "delta": -1.18,
+     "ratio_delta_pct": -1.7,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 61.0,
+     "rig": 60.5,
+     "delta": -0.5,
+     "ratio_delta_pct": -0.82,
+     "verdict": "PASS"
+    },
+    "wrist_w": {
+     "her": 41.0,
+     "rig": 40.5,
+     "delta": -0.5,
+     "ratio_delta_pct": -1.22,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 2.27,
+   "her_frame": "f001",
+   "rot_rel_forearm_her": -4.8,
+   "rot_rel_forearm_rig": -5.2,
+   "rot_delta_deg": -0.4,
+   "rig_sprite": "apose (native)"
+  },
+  "45_L": {
+   "metrics": {
+    "L": {
+     "her": 151.2,
+     "rig": 153.1,
+     "delta": 1.86,
+     "ratio_delta_pct": 1.23,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 80.1,
+     "rig": 77.1,
+     "delta": -3.04,
+     "ratio_delta_pct": -3.79,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 71.1,
+     "rig": 76.0,
+     "delta": 4.9,
+     "ratio_delta_pct": 6.89,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 60.0,
+     "rig": 51.0,
+     "delta": -9.0,
+     "ratio_delta_pct": -15.0,
+     "verdict": "FAIL"
+    },
+    "wrist_w": {
+     "her": 39.0,
+     "rig": 39.5,
+     "delta": 0.5,
+     "ratio_delta_pct": 1.28,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 9.0,
+   "her_frame": "f035",
+   "rot_rel_forearm_her": 0.9,
+   "rot_rel_forearm_rig": 0.5,
+   "rot_delta_deg": -0.4,
+   "rig_sprite": "45_L"
+  },
+  "45_R": {
+   "metrics": {
+    "L": {
+     "her": 122.0,
+     "rig": 154.5,
+     "delta": 32.51,
+     "ratio_delta_pct": 26.65,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 63.0,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "finger_len": {
+     "her": 59.0,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "palm_w": {
+     "her": 46.5,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "wrist_w": {
+     "her": 39.5,
+     "rig": 40.0,
+     "delta": 0.5,
+     "ratio_delta_pct": 1.27,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 32.51,
+   "her_frame": "f033",
+   "rot_rel_forearm_her": -7.2,
+   "rot_rel_forearm_rig": -0.0,
+   "rot_delta_deg": 7.1,
+   "rig_sprite": "45_R"
+  },
+  "90_L": {
+   "verdict": "NO GROUND TRUTH",
+   "note": "her hand hidden behind body/hip in the turn frame(s) f057",
+   "rig_L": 143.2,
+   "rig_sprite": "left (authored view donor)"
+  },
+  "90_R": {
+   "verdict": "NO GROUND TRUTH",
+   "note": "her hand hidden behind body/hip in the turn frame(s) f057",
+   "rig_L": 152.1,
+   "rig_sprite": "135_R (no -90 donor; nearest-angle tie)"
+  },
+  "135_L": {
+   "metrics": {
+    "L": {
+     "her": 157.4,
+     "rig": 156.9,
+     "delta": -0.57,
+     "ratio_delta_pct": -0.36,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 72.3,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "finger_len": {
+     "her": 85.1,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "palm_w": {
+     "her": 57.5,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "wrist_w": {
+     "her": 43.0,
+     "rig": 38.5,
+     "delta": -4.5,
+     "ratio_delta_pct": -10.47,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 4.5,
+   "her_frame": "f087",
+   "rot_rel_forearm_her": -6.8,
+   "rot_rel_forearm_rig": 1.2,
+   "rot_delta_deg": 8.0,
+   "rig_sprite": "135_L"
+  },
+  "135_R": {
+   "metrics": {
+    "L": {
+     "her": 119.4,
+     "rig": 152.1,
+     "delta": 32.72,
+     "ratio_delta_pct": 27.4,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 63.1,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "finger_len": {
+     "her": 56.3,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "palm_w": {
+     "her": 49.0,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "wrist_w": {
+     "her": 33.0,
+     "rig": 38.0,
+     "delta": 5.0,
+     "ratio_delta_pct": 15.15,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 32.72,
+   "her_frame": "f087",
+   "rot_rel_forearm_her": 3.0,
+   "rot_rel_forearm_rig": 1.1,
+   "rot_delta_deg": -1.9,
+   "rig_sprite": "135_R"
+  },
+  "180_L": {
+   "metrics": {
+    "L": {
+     "her": 155.9,
+     "rig": 138.9,
+     "delta": -16.94,
+     "ratio_delta_pct": -10.87,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 81.6,
+     "rig": 73.3,
+     "delta": -8.34,
+     "ratio_delta_pct": -10.21,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 74.2,
+     "rig": 65.6,
+     "delta": -8.61,
+     "ratio_delta_pct": -11.59,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 62.5,
+     "rig": 57.0,
+     "delta": -5.5,
+     "ratio_delta_pct": -8.8,
+     "verdict": "FAIL"
+    },
+    "wrist_w": {
+     "her": 43.0,
+     "rig": 39.0,
+     "delta": -4.0,
+     "ratio_delta_pct": -9.3,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 16.94,
+   "her_frame": "f109",
+   "rot_rel_forearm_her": -6.7,
+   "rot_rel_forearm_rig": -5.5,
+   "rot_delta_deg": 1.2,
+   "rig_sprite": "back (authored view donor)"
+  },
+  "180_R": {
+   "metrics": {
+    "L": {
+     "her": 151.4,
+     "rig": 137.7,
+     "delta": -13.68,
+     "ratio_delta_pct": -9.03,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 79.8,
+     "rig": 73.0,
+     "delta": -6.83,
+     "ratio_delta_pct": -8.56,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 71.6,
+     "rig": 64.8,
+     "delta": -6.84,
+     "ratio_delta_pct": -9.56,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 67.5,
+     "rig": 57.0,
+     "delta": -10.5,
+     "ratio_delta_pct": -15.56,
+     "verdict": "FAIL"
+    },
+    "wrist_w": {
+     "her": 42.5,
+     "rig": 39.5,
+     "delta": -3.0,
+     "ratio_delta_pct": -7.06,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 13.68,
+   "her_frame": "f109",
+   "rot_rel_forearm_her": 4.8,
+   "rot_rel_forearm_rig": 6.5,
+   "rot_delta_deg": 1.7,
+   "rig_sprite": "back (authored view donor)"
+  },
+  "225_L": {
+   "metrics": {
+    "L": {
+     "her": 123.9,
+     "rig": 157.3,
+     "delta": 33.43,
+     "ratio_delta_pct": 26.99,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 64.5,
+     "rig": 88.5,
+     "delta": 24.0,
+     "ratio_delta_pct": 37.24,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 59.4,
+     "rig": 68.8,
+     "delta": 9.42,
+     "ratio_delta_pct": 15.86,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 53.5,
+     "rig": 46.0,
+     "delta": -7.5,
+     "ratio_delta_pct": -14.02,
+     "verdict": "FAIL"
+    },
+    "wrist_w": {
+     "her": 34.5,
+     "rig": 39.5,
+     "delta": 5.0,
+     "ratio_delta_pct": 14.49,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 33.43,
+   "her_frame": "f131",
+   "rot_rel_forearm_her": -2.4,
+   "rot_rel_forearm_rig": -4.8,
+   "rot_delta_deg": -2.4,
+   "rig_sprite": "225_L"
+  },
+  "225_R": {
+   "metrics": {
+    "L": {
+     "her": 158.4,
+     "rig": 152.5,
+     "delta": -5.97,
+     "ratio_delta_pct": -3.77,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 77.8,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "finger_len": {
+     "her": 80.7,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "palm_w": {
+     "her": 63.0,
+     "rig": null,
+     "delta": null,
+     "ratio_delta_pct": null,
+     "verdict": "n/m"
+    },
+    "wrist_w": {
+     "her": 44.5,
+     "rig": 38.0,
+     "delta": -6.5,
+     "ratio_delta_pct": -14.61,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 6.5,
+   "her_frame": "f131",
+   "rot_rel_forearm_her": 4.9,
+   "rot_rel_forearm_rig": -0.7,
+   "rot_delta_deg": -5.5,
+   "rig_sprite": "225_R"
+  },
+  "270_L": {
+   "verdict": "NO GROUND TRUTH",
+   "note": "her hand hidden behind body/hip in the turn frame(s) f164",
+   "rig_L": 157.3,
+   "rig_sprite": "225_L (no -90 donor; nearest-angle tie)"
+  },
+  "270_R": {
+   "verdict": "NO GROUND TRUTH",
+   "note": "her hand hidden behind body/hip in the turn frame(s) f164",
+   "rig_L": 148.7,
+   "rig_sprite": "right (authored view donor)"
+  },
+  "315_L": {
+   "metrics": {
+    "L": {
+     "her": 121.9,
+     "rig": 156.4,
+     "delta": 34.45,
+     "ratio_delta_pct": 28.26,
+     "verdict": "FAIL"
+    },
+    "palm_len": {
+     "her": 64.4,
+     "rig": 119.4,
+     "delta": 54.94,
+     "ratio_delta_pct": 85.3,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 57.5,
+     "rig": 37.0,
+     "delta": -20.49,
+     "ratio_delta_pct": -35.64,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 45.5,
+     "rig": 28.0,
+     "delta": -17.5,
+     "ratio_delta_pct": -38.46,
+     "verdict": "FAIL"
+    },
+    "wrist_w": {
+     "her": 35.0,
+     "rig": 39.0,
+     "delta": 4.0,
+     "ratio_delta_pct": 11.43,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 54.94,
+   "her_frame": "f189",
+   "rot_rel_forearm_her": 8.7,
+   "rot_rel_forearm_rig": 4.5,
+   "rot_delta_deg": -4.2,
+   "rig_sprite": "315_L"
+  },
+  "315_R": {
+   "metrics": {
+    "L": {
+     "her": 154.0,
+     "rig": 153.4,
+     "delta": -0.51,
+     "ratio_delta_pct": -0.33,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 80.4,
+     "rig": 88.7,
+     "delta": 8.28,
+     "ratio_delta_pct": 10.3,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 73.6,
+     "rig": 64.8,
+     "delta": -8.79,
+     "ratio_delta_pct": -11.95,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 59.5,
+     "rig": 57.5,
+     "delta": -2.0,
+     "ratio_delta_pct": -3.36,
+     "verdict": "FAIL"
+    },
+    "wrist_w": {
+     "her": 39.0,
+     "rig": 35.5,
+     "delta": -3.5,
+     "ratio_delta_pct": -8.97,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 8.79,
+   "her_frame": "f191",
+   "rot_rel_forearm_her": -3.9,
+   "rot_rel_forearm_rig": 2.8,
+   "rot_delta_deg": 6.7,
+   "rig_sprite": "315_R"
+  }
+ },
+ "f8_diagonals": {
+  "45_L": {
+   "metrics": {
+    "L": {
+     "her": 147.3,
+     "rig": 147.6,
+     "delta": 0.28,
+     "ratio_delta_pct": 0.19,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 76.2,
+     "rig": 76.8,
+     "delta": 0.51,
+     "ratio_delta_pct": 0.67,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 71.0,
+     "rig": 70.8,
+     "delta": -0.23,
+     "ratio_delta_pct": -0.32,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 59.0,
+     "rig": 58.5,
+     "delta": -0.5,
+     "ratio_delta_pct": -0.85,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.51,
+   "silhouette": {
+    "f8_to_her_max": 2.0,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 6.324555320336759,
+    "her_to_f8_p95": 1.0,
+    "px_her": 7363,
+    "px_f8": 7324,
+    "iou": 0.966394430311956
+   }
+  },
+  "45_R": {
+   "metrics": {
+    "L": {
+     "her": 115.1,
+     "rig": 115.9,
+     "delta": 0.83,
+     "ratio_delta_pct": 0.72,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 56.9,
+     "rig": 57.6,
+     "delta": 0.76,
+     "ratio_delta_pct": 1.34,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 58.2,
+     "rig": 58.3,
+     "delta": 0.07,
+     "ratio_delta_pct": 0.11,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 44.5,
+     "rig": 44.0,
+     "delta": -0.5,
+     "ratio_delta_pct": -1.12,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.83,
+   "silhouette": {
+    "f8_to_her_max": 2.0,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 4.242640687119285,
+    "her_to_f8_p95": 1.4142135623730951,
+    "px_her": 4821,
+    "px_f8": 4868,
+    "iou": 0.958560743885183
+   }
+  },
+  "135_L": {
+   "metrics": {
+    "L": {
+     "her": 154.2,
+     "rig": 155.0,
+     "delta": 0.83,
+     "ratio_delta_pct": 0.54,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 70.9,
+     "rig": 72.9,
+     "delta": 2.02,
+     "ratio_delta_pct": 2.85,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 83.3,
+     "rig": 82.2,
+     "delta": -1.18,
+     "ratio_delta_pct": -1.42,
+     "verdict": "FAIL"
+    },
+    "palm_w": {
+     "her": 55.5,
+     "rig": 54.0,
+     "delta": -1.5,
+     "ratio_delta_pct": -2.7,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 2.02,
+   "silhouette": {
+    "f8_to_her_max": 2.0,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 3.0,
+    "her_to_f8_p95": 1.0,
+    "px_her": 8384,
+    "px_f8": 8467,
+    "iou": 0.9690348212199112
+   }
+  },
+  "135_R": {
+   "metrics": {
+    "L": {
+     "her": 100.4,
+     "rig": 100.4,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 45.4,
+     "rig": 46.4,
+     "delta": 1.0,
+     "ratio_delta_pct": 2.2,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 55.0,
+     "rig": 54.0,
+     "delta": -1.0,
+     "ratio_delta_pct": -1.82,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 46.5,
+     "rig": 47.5,
+     "delta": 1.0,
+     "ratio_delta_pct": 2.15,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 1.0,
+   "silhouette": {
+    "f8_to_her_max": 1.4142135623730951,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 3.0,
+    "her_to_f8_p95": 1.0,
+    "px_her": 4289,
+    "px_f8": 4269,
+    "iou": 0.9732534009684114
+   }
+  },
+  "225_L": {
+   "metrics": {
+    "L": {
+     "her": 109.5,
+     "rig": 109.5,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 51.2,
+     "rig": 51.7,
+     "delta": 0.5,
+     "ratio_delta_pct": 0.98,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 58.3,
+     "rig": 57.8,
+     "delta": -0.5,
+     "ratio_delta_pct": -0.86,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 48.0,
+     "rig": 49.5,
+     "delta": 1.5,
+     "ratio_delta_pct": 3.12,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 1.5,
+   "silhouette": {
+    "f8_to_her_max": 1.4142135623730951,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 6.324555320336759,
+    "her_to_f8_p95": 1.0,
+    "px_her": 4616,
+    "px_f8": 4588,
+    "iou": 0.9734133790737565
+   }
+  },
+  "225_R": {
+   "metrics": {
+    "L": {
+     "her": 157.0,
+     "rig": 157.0,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 78.7,
+     "rig": 78.9,
+     "delta": 0.25,
+     "ratio_delta_pct": 0.32,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 78.3,
+     "rig": 78.1,
+     "delta": -0.25,
+     "ratio_delta_pct": -0.32,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 61.0,
+     "rig": 62.5,
+     "delta": 1.5,
+     "ratio_delta_pct": 2.46,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 1.5,
+   "silhouette": {
+    "f8_to_her_max": 2.23606797749979,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 3.0,
+    "her_to_f8_p95": 1.0,
+    "px_her": 8593,
+    "px_f8": 8591,
+    "iou": 0.9605248146035368
+   }
+  },
+  "315_L": {
+   "metrics": {
+    "L": {
+     "her": 113.6,
+     "rig": 114.2,
+     "delta": 0.53,
+     "ratio_delta_pct": 0.47,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 57.0,
+     "rig": 58.3,
+     "delta": 1.24,
+     "ratio_delta_pct": 2.17,
+     "verdict": "FAIL"
+    },
+    "finger_len": {
+     "her": 56.6,
+     "rig": 55.9,
+     "delta": -0.71,
+     "ratio_delta_pct": -1.25,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 44.0,
+     "rig": 45.5,
+     "delta": 1.5,
+     "ratio_delta_pct": 3.41,
+     "verdict": "FAIL"
+    }
+   },
+   "verdict": "FAIL",
+   "max_abs_delta": 1.5,
+   "silhouette": {
+    "f8_to_her_max": 2.23606797749979,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 4.242640687119285,
+    "her_to_f8_p95": 1.4142135623730951,
+    "px_her": 4985,
+    "px_f8": 5023,
+    "iou": 0.9459459459459459
+   }
+  },
+  "315_R": {
+   "metrics": {
+    "L": {
+     "her": 145.9,
+     "rig": 145.9,
+     "delta": 0.01,
+     "ratio_delta_pct": 0.01,
+     "verdict": "PASS"
+    },
+    "palm_len": {
+     "her": 75.0,
+     "rig": 75.0,
+     "delta": 0.01,
+     "ratio_delta_pct": 0.02,
+     "verdict": "PASS"
+    },
+    "finger_len": {
+     "her": 70.9,
+     "rig": 70.9,
+     "delta": 0.0,
+     "ratio_delta_pct": 0.0,
+     "verdict": "PASS"
+    },
+    "palm_w": {
+     "her": 59.5,
+     "rig": 59.0,
+     "delta": -0.5,
+     "ratio_delta_pct": -0.84,
+     "verdict": "PASS"
+    }
+   },
+   "verdict": "PASS",
+   "max_abs_delta": 0.5,
+   "silhouette": {
+    "f8_to_her_max": 2.23606797749979,
+    "f8_to_her_p95": 1.0,
+    "her_to_f8_max": 3.0,
+    "her_to_f8_p95": 1.0,
+    "px_her": 7410,
+    "px_f8": 7420,
+    "iou": 0.9505458371695383
+   }
+  }
+ },
+ "master_sheet": {
+  "file": "reference/grok_build/artifacts/imagine_images/e843956d-1e25-414e-8793-341da4274435.jpg (269 KB, 1792x1008)",
+  "front_R->apose_R": {
+   "sheet_L": 128.1,
+   "rig_L": 148.8,
+   "delta": 20.63,
+   "ratio_delta_pct": 16.1,
+   "scale_sheet_to_view": 1.7248,
+   "verdict": "FAIL",
+   "her_view_drawing_L": 148.8,
+   "her_view_minus_sheet": 20.63
+  },
+  "front_L->apose_L": {
+   "sheet_L": 126.2,
+   "rig_L": 148.6,
+   "delta": 22.34,
+   "ratio_delta_pct": 17.7,
+   "scale_sheet_to_view": 1.7248,
+   "verdict": "FAIL",
+   "her_view_drawing_L": 148.6,
+   "her_view_minus_sheet": 22.34
+  },
+  "back_L->back_L": {
+   "sheet_L": 131.4,
+   "rig_L": 148.6,
+   "delta": 17.13,
+   "ratio_delta_pct": 13.03,
+   "scale_sheet_to_view": 1.7476,
+   "verdict": "FAIL",
+   "her_view_drawing_L": 148.6,
+   "her_view_minus_sheet": 17.13
+  },
+  "back_R->back_R": {
+   "sheet_L": 129.2,
+   "rig_L": 146.8,
+   "delta": 17.6,
+   "ratio_delta_pct": 13.62,
+   "scale_sheet_to_view": 1.7476,
+   "verdict": "FAIL",
+   "her_view_drawing_L": 146.8,
+   "her_view_minus_sheet": 17.6
+  },
+  "prof_L->left_L": {
+   "sheet_L": 133.8,
+   "rig_L": 144.5,
+   "delta": 10.7,
+   "ratio_delta_pct": 8.0,
+   "scale_sheet_to_view": 1.7607,
+   "verdict": "FAIL",
+   "her_view_drawing_L": 144.5,
+   "her_view_minus_sheet": 10.7
+  },
+  "head_check": {
+   "front_bun_to_chin_sheet": 274.2,
+   "apose": 275,
+   "delta": 0.8,
+   "profile_sheet": 269.4,
+   "left": 267,
+   "delta_profile": -2.4
+  }
+ },
+ "f5_lineart": {
+  "tpose/L_Ring1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 0.0,
+   "verdict": "PASS"
+  },
+  "tpose/R_Ring1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 0.0,
+   "verdict": "PASS"
+  },
+  "back/L_Index1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 0.0,
+   "verdict": "PASS"
+  },
+  "back/L_Middle1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 0.36,
+   "verdict": "PASS"
+  },
+  "back/L_Pinky1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 0.0,
+   "verdict": "PASS"
+  },
+  "back/L_Ring1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 1.34,
+   "verdict": "FAIL"
+  },
+  "back/R_Middle1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 0.0,
+   "verdict": "PASS"
+  },
+  "back/R_Ring1_f1.png": {
+   "d_reach": 0.0,
+   "d_median_seg_w_vs_live": 2.24,
+   "verdict": "FAIL"
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "off_apose": {
+  "old_crops": 956,
+  "identical": 956,
+  "differ": 0,
+  "differ_groups": [],
+  "new_only": 164
+ },
+ "fix_apose": {
+  "old_crops": 956,
+  "identical": 452,
+  "differ": 504,
+  "differ_groups": [
+   "fade",
+   "talk",
+   "tface",
+   "timed"
+  ],
+  "new_only": 164
+ },
+ "off_tpose": {
+  "old_crops": 956,
+  "identical": 956,
+  "differ": 0,
+  "differ_groups": [],
+  "new_only": 164
+ },
+ "fix_tpose": {
+  "old_crops": 956,
+  "identical": 453,
+  "differ": 503,
+  "differ_groups": [
+   "fade",
+   "talk",
+   "tface",
+   "timed"
+  ],
+  "new_only": 164
+ }
+}

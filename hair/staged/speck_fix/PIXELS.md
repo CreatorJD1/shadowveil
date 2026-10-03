@@ -96,3 +96,16 @@ For Base Body. These are the stray hair pixels still on `base_body.png` (and `ba
 
 (770,208) (773,208) (773,209) (772,211) (773,212) (767,213) (768,213) (769,213) (773,213) (775,215) (766,216) (772,216) (772,217) (773,217) (773,218) (779,220) (780,221) (778,222) (780,222) (781,222) (778,223) (780,223) (780,224) (782,224) (781,225) (782,225) (783,225) (783,226) (784,227) (785,228) (785,229) (786,230) (787,231)
 
+## FINAL (Fri Oct 2 2026, 8:55 PM PT, checked with the current renderer at main 6d5b239)
+The pixel list is **final at 413 px** (apose 58, tpose 54, left 68, right 23, back 210). It is unchanged from the list above.
+
+The six faint clusters that split off at sway were re-checked with the current renderer:
+- left strand_01: four clusters, around (576,151), (583,180), (586,193) and (572,200);
+- back strand_04: around (756,309);
+- back strand_05: around (782–786,224–228).
+
+All the base.png px that connect them to their strand are already in the staged strand as exact copies. The only other base px within 3 px of the split pieces are at the left strand_01 root, where hair_front/hair_back own them. See `work/connect_probe.py` and `work/connect_probe.json`. So no px was added.
+
+The split is the faint 1 px stroke dropping under the ink threshold after resampling. It happens even at s=0 posed (pure ss2 resampling, no rotation). Whether that counts as a defect is scored against the resampling baseline in `hair/qa/lineart/` (step 2).
+
+Consistency check (`work/verify_final.py`): ALL CONSISTENT.

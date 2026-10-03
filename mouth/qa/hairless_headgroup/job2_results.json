@@ -1,0 +1,362 @@
+{
+ "apose": {
+  "frame": 1,
+  "headgroup_offset": [
+   0,
+   -10
+  ],
+  "hg_render_mouth_shift_vs_live": [
+   0.0,
+   -10.0
+  ],
+  "old_offset_vs_live": [
+   0,
+   -9
+  ],
+  "old_minus_head": [
+   0,
+   1
+  ],
+  "residual": {
+   "A_lip_masked_ncc": [
+    0,
+    1,
+    0.923
+   ],
+   "A2_window_ncc_oldstyle": [
+    0,
+    1,
+    0.958
+   ],
+   "B_seam_chamfer": [
+    0,
+    1,
+    0.12
+   ],
+   "B2_lip_outline_chamfer": [
+    0,
+    1,
+    0.26
+   ],
+   "C_lip_centroid": [
+    0.2,
+    1.1
+   ],
+   "C2_seam_centroid": [
+    -0.3,
+    0.9
+   ],
+   "corner_front": [
+    0.0,
+    1.0
+   ],
+   "corner_back": [
+    1.0,
+    1.0
+   ]
+  },
+  "lower_face_crosscheck": {
+   "D_noseChin_ncc_lipsmasked": [
+    0,
+    1,
+    0.97
+   ],
+   "D2_silhouette_edge_chamfer": [
+    1,
+    1,
+    0.64
+   ]
+  },
+  "upper_face_eye_ncc": [
+   0,
+   1,
+   0.95
+  ],
+  "lip_px": {
+   "live": 478,
+   "frame": 460
+  },
+  "seam_px": {
+   "live": 113,
+   "frame": 167
+  },
+  "lip_height_px": {
+   "live": 18,
+   "frame": 18
+  },
+  "lip_width_px": {
+   "live": 48,
+   "frame": 48
+  },
+  "seam_ends_live": {
+   "front": [
+    703.25,
+    273.0
+   ],
+   "back": [
+    657.5,
+    272.5
+   ]
+  },
+  "seam_ends_frame": {
+   "front": [
+    703.25,
+    274.0
+   ],
+   "back": [
+    658.5,
+    273.5
+   ]
+  },
+  "anchor": [
+   681,
+   276
+  ],
+  "box": [
+   643,
+   256,
+   719,
+   303
+  ]
+ },
+ "left": {
+  "frame": 62,
+  "headgroup_offset": [
+   -2,
+   1
+  ],
+  "hg_render_mouth_shift_vs_live": [
+   -2.0,
+   1.0
+  ],
+  "old_offset_vs_live": [
+   8,
+   13
+  ],
+  "old_minus_head": [
+   10,
+   12
+  ],
+  "residual": {
+   "A_lip_masked_ncc": [
+    -7,
+    0,
+    0.512
+   ],
+   "A2_window_ncc_oldstyle": [
+    9,
+    13,
+    0.888
+   ],
+   "B_seam_chamfer": [
+    8,
+    11,
+    0.78
+   ],
+   "B2_lip_outline_chamfer": [
+    9,
+    11,
+    2.06
+   ],
+   "C_lip_centroid": [
+    9.3,
+    11.2
+   ],
+   "C2_seam_centroid": [
+    6.6,
+    10.5
+   ],
+   "corner_front": [
+    7.3,
+    7.5
+   ],
+   "corner_back": [
+    4.0,
+    10.0
+   ]
+  },
+  "lower_face_crosscheck": {
+   "D_noseChin_ncc_lipsmasked": [
+    6,
+    9,
+    0.82
+   ],
+   "D2_silhouette_edge_chamfer": [
+    8,
+    9,
+    1.97
+   ]
+  },
+  "upper_face_eye_ncc": [
+   1,
+   10,
+   0.583
+  ],
+  "lip_px": {
+   "live": 195,
+   "frame": 82
+  },
+  "seam_px": {
+   "live": 32,
+   "frame": 36
+  },
+  "lip_height_px": {
+   "live": 20,
+   "frame": 15
+  },
+  "lip_width_px": {
+   "live": 23,
+   "frame": 16
+  },
+  "seam_ends_live": {
+   "front": [
+    594.4,
+    271.8
+   ],
+   "back": [
+    608.5,
+    271.0
+   ]
+  },
+  "seam_ends_frame": {
+   "front": [
+    601.6666666666666,
+    279.3333333333333
+   ],
+   "back": [
+    612.5,
+    281.0
+   ]
+  },
+  "anchor": [
+   610,
+   271
+  ],
+  "box": [
+   574,
+   248,
+   625,
+   299
+  ]
+ },
+ "right": {
+  "frame": 160,
+  "headgroup_offset": [
+   5,
+   -6
+  ],
+  "hg_render_mouth_shift_vs_live": [
+   5.0,
+   -6.0
+  ],
+  "old_offset_vs_live": [
+   -7,
+   6
+  ],
+  "old_minus_head": [
+   -12,
+   12
+  ],
+  "residual": {
+   "A_lip_masked_ncc": [
+    -5,
+    12,
+    0.535
+   ],
+   "A2_window_ncc_oldstyle": [
+    -11,
+    16,
+    0.887
+   ],
+   "B_seam_chamfer": [
+    -7,
+    11,
+    0.68
+   ],
+   "B2_lip_outline_chamfer": [
+    -11,
+    12,
+    2.1
+   ],
+   "C_lip_centroid": [
+    -11.9,
+    12.2
+   ],
+   "C2_seam_centroid": [
+    -8.3,
+    11.6
+   ],
+   "corner_front": [
+    -8.8,
+    9.7
+   ],
+   "corner_back": [
+    -7.0,
+    10.0
+   ]
+  },
+  "lower_face_crosscheck": {
+   "D_noseChin_ncc_lipsmasked": [
+    -6,
+    11,
+    0.815
+   ],
+   "D2_silhouette_edge_chamfer": [
+    -10,
+    10,
+    1.86
+   ]
+  },
+  "upper_face_eye_ncc": [
+   1,
+   13,
+   0.54
+  ],
+  "lip_px": {
+   "live": 188,
+   "frame": 84
+  },
+  "seam_px": {
+   "live": 33,
+   "frame": 39
+  },
+  "lip_height_px": {
+   "live": 19,
+   "frame": 14
+  },
+  "lip_width_px": {
+   "live": 22,
+   "frame": 15
+  },
+  "seam_ends_live": {
+   "front": [
+    781.3333333333334,
+    267.3333333333333
+   ],
+   "back": [
+    766.5,
+    267.5
+   ]
+  },
+  "seam_ends_frame": {
+   "front": [
+    772.5,
+    277.0
+   ],
+   "back": [
+    759.5,
+    277.5
+   ]
+  },
+  "anchor": [
+   765,
+   268
+  ],
+  "box": [
+   751,
+   243,
+   802,
+   295
+  ]
+ }
+}

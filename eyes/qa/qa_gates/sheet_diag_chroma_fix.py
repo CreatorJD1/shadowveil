@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Before/after zoom sheet for the diagonal far-eye chroma fix -> eyes/qa/qa_gates/diag_chroma_fix.png"""
+"""Before/after zoom sheet (after = applied pass-1 state; pass-2 fringe candidate shown, not applied) for the diagonal far-eye chroma fix -> eyes/qa/qa_gates/diag_chroma_fix.png"""
 import json, numpy as np
 from PIL import Image, ImageDraw
 R = '/workspace/shadowveil'; D = f'{R}/eyes/staged/diagonals'; BK = f'{D}/backups_chroma_fix'
@@ -11,6 +11,7 @@ for key, s in L.items():
     x0, x1, y0, y1 = min(xs) - 6, max(xs) + 7, min(ys) - 6, max(ys) + 7
     B = np.asarray(Image.open(f'{BK}/{ang}/{f}.png').convert('RGBA')).astype(float)[y0:y1, x0:x1]
     A = np.asarray(Image.open(f'{D}/{ang}/{f}.png').convert('RGBA')).astype(float)[y0:y1, x0:x1]
+    C2 = np.asarray(Image.open(f'{BK}/pass2_candidate/{ang}/{f}.png').convert('RGBA')).astype(float)[y0:y1, x0:x1]
     F = np.asarray(Image.open(f'{R}/reference/apose_turn/frames/{FR[ang]}.png').convert('RGB')).astype(float)[y0:y1, x0:x1]
     grey = np.full(F.shape, 128.); chk = np.where(((np.indices(F.shape[:2]).sum(0)) % 2)[..., None], 200., 235.) * np.ones(3)
     M = np.full(F.shape, 255, np.uint8)
@@ -18,7 +19,7 @@ for key, s in L.items():
         x, y = p['xy'][0] - x0, p['xy'][1] - y0; M[y, x] = (230, 40, 40) if p['action'].startswith('clear') else (40, 170, 40)
     M[(B[..., 3] > 0) & (M == 255).all(-1)] = (90, 90, 90)
     panels = [('before on grey', on(grey, B)), ('after on grey', on(grey, A)), ('before on checker', on(chk, B)), ('after on checker', on(chk, A)),
-              ('frame', F.astype(np.uint8)), ('change: red=cleared green=snapped', M)]
+              ('frame', F.astype(np.uint8)), ('pass-2 candidate on grey (NOT applied)', on(grey, C2)), ('change: red=cleared green=snapped', M)]
     tiles = []
     for name, im in panels:
         I = Image.fromarray(im).resize((im.shape[1] * z, im.shape[0] * z), Image.NEAREST); T = Image.new('RGB', (I.width + 8, I.height + 20), 'white'); T.paste(I, (4, 18))
