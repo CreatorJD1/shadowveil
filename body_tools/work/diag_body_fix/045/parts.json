@@ -1,0 +1,670 @@
+{
+ "view": "diagonal_045",
+ "angle": 45,
+ "frame": "f033",
+ "source": "reference/apose_turn/frames/f033.png",
+ "canvas": [
+  768,
+  1168
+ ],
+ "coordinateSpace": "FRAME px of the turn frame (768x1168), origin top-left; all pieces full-canvas (x=y=0) in drawn position",
+ "view_fit": {
+  "scale": 1.54468,
+  "dx": 83.62,
+  "dy": -55.77,
+  "rule": "view_x = scale*frame_x + dx; view_y = scale*frame_y + dy (1365x1739 view space), same as Eyes/Hair/Hands diagonals"
+ },
+ "layerOrder_backToFront": [
+  "foot_L",
+  "foot_R",
+  "shin_L",
+  "shin_R",
+  "thigh_L",
+  "thigh_R",
+  "forearm_L",
+  "forearm_R",
+  "upper_arm_L",
+  "upper_arm_R",
+  "neck",
+  "torso",
+  "head",
+  "pelvis"
+ ],
+ "pieces": [
+  {
+   "id": "upper_arm_R",
+   "file": "pieces/upper_arm_R.png",
+   "layer": 222,
+   "parent": "torso",
+   "pivot": [
+    319.0,
+    289.0
+   ],
+   "pixels": 2737,
+   "flapPx": 5013
+  },
+  {
+   "id": "forearm_R",
+   "file": "pieces/forearm_R.png",
+   "layer": 220,
+   "parent": "upper_arm_R",
+   "pivot": [
+    274.85,
+    397.7
+   ],
+   "pixels": 3017,
+   "flapPx": 397
+  },
+  {
+   "id": "upper_arm_L",
+   "file": "pieces/upper_arm_L.png",
+   "layer": 222,
+   "parent": "torso",
+   "pivot": [
+    456.0,
+    292.0
+   ],
+   "pixels": 5146,
+   "flapPx": 1050
+  },
+  {
+   "id": "forearm_L",
+   "file": "pieces/forearm_L.png",
+   "layer": 220,
+   "parent": "upper_arm_L",
+   "pivot": [
+    521.0,
+    394.0
+   ],
+   "pixels": 3873,
+   "flapPx": 483
+  },
+  {
+   "id": "thigh_R",
+   "file": "pieces/thigh_R.png",
+   "layer": 205,
+   "parent": "pelvis",
+   "pivot": [
+    338.0,
+    545.0
+   ],
+   "pixels": 14838,
+   "flapPx": 5296
+  },
+  {
+   "id": "shin_R",
+   "file": "pieces/shin_R.png",
+   "layer": 203,
+   "parent": "thigh_R",
+   "pivot": [
+    348.0,
+    780.5
+   ],
+   "pixels": 8513,
+   "flapPx": 673
+  },
+  {
+   "id": "foot_R",
+   "file": "pieces/foot_R.png",
+   "layer": 201,
+   "parent": "shin_R",
+   "pivot": [
+    348.5,
+    1013.5
+   ],
+   "pixels": 3871,
+   "flapPx": 441
+  },
+  {
+   "id": "thigh_L",
+   "file": "pieces/thigh_L.png",
+   "layer": 205,
+   "parent": "pelvis",
+   "pivot": [
+    421.0,
+    545.0
+   ],
+   "pixels": 18427,
+   "flapPx": 3998
+  },
+  {
+   "id": "shin_L",
+   "file": "pieces/shin_L.png",
+   "layer": 203,
+   "parent": "thigh_L",
+   "pivot": [
+    428.75,
+    780.6
+   ],
+   "pixels": 9713,
+   "flapPx": 856
+  },
+  {
+   "id": "foot_L",
+   "file": "pieces/foot_L.png",
+   "layer": 201,
+   "parent": "shin_L",
+   "pivot": [
+    440.0,
+    1030.5
+   ],
+   "pixels": 4736,
+   "flapPx": 445
+  },
+  {
+   "id": "head",
+   "file": "pieces/head.png",
+   "layer": 242,
+   "parent": "neck",
+   "pivot": [
+    387.5,
+    228.0
+   ],
+   "pixels": 6045,
+   "flapPx": 0
+  },
+  {
+   "id": "neck",
+   "file": "pieces/neck.png",
+   "layer": 239,
+   "parent": "torso",
+   "pivot": [
+    392.4,
+    263.8
+   ],
+   "pixels": 1638,
+   "flapPx": 3267
+  },
+  {
+   "id": "torso",
+   "file": "pieces/torso.png",
+   "layer": 240,
+   "parent": "pelvis",
+   "pivot": [
+    374.0,
+    469.8
+   ],
+   "pixels": 23479,
+   "flapPx": 4765
+  },
+  {
+   "id": "pelvis",
+   "file": "pieces/pelvis.png",
+   "layer": 250,
+   "parent": null,
+   "pivot": [
+    373.0,
+    470.0
+   ],
+   "pixels": 8406,
+   "flapPx": 0
+  }
+ ],
+ "joints": {
+  "shoulder_R": {
+   "flap_on": "upper_arm_R",
+   "under": "torso",
+   "pivot": [
+    319.0,
+    289.0
+   ],
+   "old_pivot": [
+    312.0,
+    300.0
+   ],
+   "joint_radius_px": 74.6,
+   "cap_mode": "dt",
+   "cap_radius_px": 8.4,
+   "envelope_close_px": 16,
+   "cap_px": 57,
+   "cap_px_before_envelope": 57,
+   "flap_px": 4956,
+   "old_flap_px": 6469,
+   "seam_ends": [
+    [
+     330.5,
+     273.0,
+     4
+    ],
+    [
+     309.0,
+     371.0,
+     4
+    ]
+   ]
+  },
+  "shoulder_L": {
+   "flap_on": "upper_arm_L",
+   "under": "torso",
+   "pivot": [
+    456.0,
+    292.0
+   ],
+   "old_pivot": [
+    444.0,
+    300.0
+   ],
+   "joint_radius_px": 37.3,
+   "cap_mode": "dt",
+   "cap_radius_px": 18.9,
+   "envelope_close_px": 16,
+   "cap_px": 61,
+   "cap_px_before_envelope": 61,
+   "flap_px": 989,
+   "old_flap_px": 2112,
+   "seam_ends": [
+    [
+     436.5,
+     267.0,
+     4
+    ],
+    [
+     450.9,
+     328.2,
+     7
+    ]
+   ]
+  },
+  "elbow_R": {
+   "flap_on": "forearm_R",
+   "under": "upper_arm_R",
+   "pivot": [
+    274.85,
+    397.7
+   ],
+   "old_pivot": [
+    274.6,
+    397.3
+   ],
+   "joint_radius_px": 18.3,
+   "cap_mode": "chord",
+   "cap_radius_px": 13.9,
+   "envelope_close_px": 8,
+   "cap_px": 291,
+   "cap_px_before_envelope": 298,
+   "flap_px": 106,
+   "old_flap_px": 468,
+   "seam_ends": [
+    [
+     262.7,
+     390.9,
+     5
+    ],
+    [
+     287.0,
+     404.5,
+     4
+    ]
+   ]
+  },
+  "elbow_L": {
+   "flap_on": "forearm_L",
+   "under": "upper_arm_L",
+   "pivot": [
+    521.0,
+    394.0
+   ],
+   "old_pivot": [
+    521.2,
+    394.1
+   ],
+   "joint_radius_px": 19.4,
+   "cap_mode": "chord",
+   "cap_radius_px": 15.3,
+   "envelope_close_px": 8,
+   "cap_px": 368,
+   "cap_px_before_envelope": 372,
+   "flap_px": 115,
+   "old_flap_px": 551,
+   "seam_ends": [
+    [
+     533.0,
+     384.5,
+     4
+    ],
+    [
+     509.0,
+     403.5,
+     4
+    ]
+   ]
+  },
+  "hip_R": {
+   "flap_on": "thigh_R",
+   "under": "pelvis",
+   "pivot": [
+    338.0,
+    545.0
+   ],
+   "old_pivot": [
+    338.0,
+    545.0
+   ],
+   "joint_radius_px": 71.7,
+   "cap_mode": "outer",
+   "cap_radius_px": 48.2,
+   "envelope_close_px": 20,
+   "cap_px": 3438,
+   "cap_px_before_envelope": 3487,
+   "flap_px": 1858,
+   "old_flap_px": 5960,
+   "seam_ends": [
+    [
+     309.1,
+     506.4,
+     7
+    ]
+   ]
+  },
+  "hip_L": {
+   "flap_on": "thigh_L",
+   "under": "pelvis",
+   "pivot": [
+    421.0,
+    545.0
+   ],
+   "old_pivot": [
+    414.0,
+    540.0
+   ],
+   "joint_radius_px": 71.8,
+   "cap_mode": "outer",
+   "cap_radius_px": 48.2,
+   "envelope_close_px": 20,
+   "cap_px": 1100,
+   "cap_px_before_envelope": 1108,
+   "flap_px": 2898,
+   "old_flap_px": 5551,
+   "seam_ends": [
+    [
+     450.0,
+     506.5,
+     8
+    ]
+   ]
+  },
+  "knee_R": {
+   "flap_on": "shin_R",
+   "under": "thigh_R",
+   "pivot": [
+    348.0,
+    780.5
+   ],
+   "old_pivot": [
+    348.0,
+    780.5
+   ],
+   "joint_radius_px": 22.5,
+   "cap_mode": "chord",
+   "cap_radius_px": 19.0,
+   "envelope_close_px": 8,
+   "cap_px": 544,
+   "cap_px_before_envelope": 571,
+   "flap_px": 129,
+   "old_flap_px": 764,
+   "seam_ends": [
+    [
+     367.0,
+     780.0,
+     4
+    ],
+    [
+     329.0,
+     781.0,
+     4
+    ]
+   ]
+  },
+  "knee_L": {
+   "flap_on": "shin_L",
+   "under": "thigh_L",
+   "pivot": [
+    428.75,
+    780.6
+   ],
+   "old_pivot": [
+    429.0,
+    780.5
+   ],
+   "joint_radius_px": 25.6,
+   "cap_mode": "chord",
+   "cap_radius_px": 21.5,
+   "envelope_close_px": 8,
+   "cap_px": 694,
+   "cap_px_before_envelope": 726,
+   "flap_px": 162,
+   "old_flap_px": 974,
+   "seam_ends": [
+    [
+     450.2,
+     779.1,
+     7
+    ],
+    [
+     407.3,
+     782.1,
+     5
+    ]
+   ]
+  },
+  "ankle_R": {
+   "flap_on": "foot_R",
+   "under": "shin_R",
+   "pivot": [
+    348.5,
+    1013.5
+   ],
+   "old_pivot": [
+    345.8,
+    1015.9
+   ],
+   "joint_radius_px": 22.8,
+   "cap_mode": "chord",
+   "cap_radius_px": 15.9,
+   "envelope_close_px": 8,
+   "cap_px": 364,
+   "cap_px_before_envelope": 389,
+   "flap_px": 77,
+   "old_flap_px": 542,
+   "seam_ends": [
+    [
+     333.0,
+     1010.0,
+     4
+    ],
+    [
+     364.0,
+     1017.0,
+     8
+    ]
+   ]
+  },
+  "ankle_L": {
+   "flap_on": "foot_L",
+   "under": "shin_L",
+   "pivot": [
+    440.0,
+    1030.5
+   ],
+   "old_pivot": [
+    437.3,
+    1032.9
+   ],
+   "joint_radius_px": 21.3,
+   "cap_mode": "chord",
+   "cap_radius_px": 15.4,
+   "envelope_close_px": 8,
+   "cap_px": 363,
+   "cap_px_before_envelope": 375,
+   "flap_px": 82,
+   "old_flap_px": 520,
+   "seam_ends": [
+    [
+     425.0,
+     1027.0,
+     4
+    ],
+    [
+     455.0,
+     1034.0,
+     4
+    ]
+   ]
+  },
+  "waist": {
+   "flap_on": "torso",
+   "under": "pelvis",
+   "pivot": [
+    374.0,
+    469.8
+   ],
+   "old_pivot": [
+    373.0,
+    470.0
+   ],
+   "joint_radius_px": 40.0,
+   "cap_mode": "chord",
+   "cap_radius_px": 56.3,
+   "envelope_close_px": 20,
+   "cap_px": 4765,
+   "cap_px_before_envelope": 4927,
+   "flap_px": 0,
+   "old_flap_px": 2512,
+   "seam_ends": [
+    [
+     317.7,
+     469.8,
+     6
+    ],
+    [
+     430.3,
+     469.8,
+     6
+    ]
+   ]
+  },
+  "neck_base": {
+   "flap_on": "neck",
+   "under": "torso",
+   "pivot": [
+    392.4,
+    263.8
+   ],
+   "old_pivot": [
+    395.0,
+    264.0
+   ],
+   "joint_radius_px": 39.5,
+   "cap_mode": "chord",
+   "cap_radius_px": 32.0,
+   "envelope_close_px": 8,
+   "cap_px": 1545,
+   "cap_px_before_envelope": 1612,
+   "flap_px": 576,
+   "old_flap_px": 2474,
+   "seam_ends": [
+    [
+     424.3,
+     261.8,
+     6
+    ],
+    [
+     360.5,
+     265.8,
+     8
+    ]
+   ]
+  },
+  "head_neck": {
+   "flap_on": "neck",
+   "under": "head",
+   "mover": "head",
+   "pivot": [
+    387.5,
+    228.0
+   ],
+   "old_pivot": [
+    387.0,
+    237.0
+   ],
+   "joint_radius_px": 29.2,
+   "cap_radius_px": 20.5,
+   "neck_underlap_px": 1120,
+   "cap_px": 26,
+   "method": "neck column continued under the jaw + round cap at the top-of-neck pivot (on the neck piece, hidden under the head)"
+  }
+ },
+ "wrists": {
+  "R": {
+   "forearm_end_pivot": [
+    205.19,
+    487.33
+   ],
+   "cut_line": [
+    [
+     213.51,
+     493.99
+    ],
+    [
+     196.86,
+     480.67
+    ]
+   ],
+   "f8_palm_pivot_frame": null,
+   "see": "wrist_cuts.json"
+  },
+  "L": {
+   "forearm_end_pivot": [
+    596.08,
+    494.1
+   ],
+   "cut_line": [
+    [
+     605.1,
+     486.62
+    ],
+    [
+     587.06,
+     501.57
+    ]
+   ],
+   "f8_palm_pivot_frame": null,
+   "see": "wrist_cuts.json"
+  }
+ },
+ "hands_note": "F8 hands draw UNDER the forearms (parentExternal forearm_R/L); forearm ends exactly at the F8 boundary (wrist_cuts.json)",
+ "colours": {
+  "rule": "every hidden px copies one of her frame px: rim px = her nearest rim px of the same depth (1 or 2 px in); fill = her nearest plain-skin px of the two joint pieces",
+  "old": {
+   "skin_fill": [
+    189,
+    129,
+    88
+   ],
+   "skin_fill_count_in_frame": 14871,
+   "flap_line": [
+    32,
+    30,
+    28
+   ],
+   "flap_line_count_in_frame": 15,
+   "note": "both are her most common px of their class in this frame; every other px is her exact frame px"
+  }
+ },
+ "key_rule": "figure = not border-connected key (B - max(R,G) > 25, Hands F8 rule); enclosed key islands >= 6 px are background",
+ "teammates_excluded": {
+  "hand_L": 3157,
+  "hand_R": 2123,
+  "eyes": 787,
+  "hair": 9953,
+  "mouth": 189
+ },
+ "side_labels": "R/L = her right/left (R = viewer-left at 45 and 315), same as Hands F8",
+ "fix": {
+  "tool": "body_tools/work/diag_body_fix/tools/build_fix.py",
+  "base": "body_tools/work/diag_body/045",
+  "envelopeClosePx": 8,
+  "opts": {},
+  "note": "same pieces/partition/layers/parents as diag_body; only hidden px and joint pivots changed"
+ }
+}

@@ -1,7 +1,7 @@
 {
   "title": "Shadowveil — character rig & live driver status",
-  "updated": "2026-10-03T03:45:20-07:00",
-  "updated_pt": "Sat Oct 3 2026, 3:45 AM PT",
+  "updated": "2026-10-03T04:04:49-07:00",
+  "updated_pt": "Sat Oct 3 2026, 4:04 AM PT",
   "progress": {
     "pct": 45,
     "label": "roughly 40–50% to a quality live driver",
@@ -389,6 +389,10 @@
         },
         {
           "text": "Coder: rig/poser.html unified poser + keyframe timeline (staged; drives live rig/index.html via iframe, no rig edits). Hooks proposed in rig/poser/HOOKS.md. Benchmark plan parked in rig/benchmarks/PLAN.md.",
+          "state": "wip"
+        },
+        {
+          "text": "Full project push + master HANDOFF.md (commit e0df3a1, PR #2)",
           "state": "wip"
         }
       ]

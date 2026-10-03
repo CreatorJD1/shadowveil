@@ -9,6 +9,7 @@ Never writes outside --out (default rig/work/qa_gates/out). Exit code 1 if any g
 """
 import argparse, json, os, re, sys, glob
 import numpy as np
+from scipy import ndimage as ndi
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +25,7 @@ def P(*a): return os.path.join(ROOT, *a)
 # in the override first: DIR with {view} substituted, DIR/<view>/<sys>, DIR/views/<view>/<sys>, DIR/<view>, DIR (if it has
 # rig.json); falls back to views/<view>/<sys>. Diagonal angles (045/135/225/315) can be passed to --view with an override.
 SYS_DIR = {}
+OWNER_MODE = 'texel'   # --owner layer: G1 isolation owner of a vertex = the body part(s) of its own triangle layer(s) (overlap vertices split by layer)
 def sysdir(view, system):
     o = SYS_DIR.get(system)
     if o:
@@ -143,15 +145,29 @@ def gate_weights(view, skin_path=None, tol_px=0.5, wmin=1e-3):
                 if k not in rel[own[i]]:
                     key = f"{names[own[i]]}<-{names[k]}"; mask_bleed[key] = mask_bleed.get(key, 0) + 1
         # isolation: rotate each bone alone at ±1
+        lay_own = None
+        if OWNER_MODE == 'layer' and m.get('triangles') and len(m['triangles'][0]) > 3:
+            l2b = {}
+            for p in parts_of(jload(os.path.join(sysdir(view, 'body'), 'rig.json'))):
+                if p.get('file') and p['id'] in names and p.get('layer') is not None: l2b.setdefault(int(p['layer']), set()).add(names.index(p['id']))
+            lay_own = [set() for _ in range(len(V))]
+            for t in m['triangles']:
+                bs = l2b.get(int(t[3]))
+                if bs:
+                    for vi in t[:3]: lay_own[vi] |= bs
         iso = {}
         for bi, b in enumerate(bones):
             if not b.get('param'): continue
             allowed = {bi} | desc(bi) | rel[bi]   # self, descendants, parent, siblings = related (seam blending is allowed)
             worst = 0.0; n = 0; who = {}; seam = 0
+            if OWNER_MODE == 'layer' and lay_own is not None:
+                unrel = np.array([not (lay_own[i] & allowed) if lay_own[i] else (own[i] not in allowed) for i in range(len(V))])
+            else:
+                unrel = ~np.isin(own, list(allowed))
             for x in (1, -1):
                 mats = bone_mats(bones, {b['name']: body_angle(b, x)})
                 d = np.linalg.norm(lbs_fast(V, W, mats) - V, axis=1)
-                bad = (d > tol_px) & ~np.isin(own, list(allowed))
+                bad = (d > tol_px) & unrel
                 seam = max(seam, int(((d > tol_px) & np.isin(own, list(rel[bi] - {bi} - desc(bi)))).sum()))
                 n = max(n, int(bad.sum())); worst = max(worst, float(d[bad].max()) if bad.any() else 0.0)
                 for o in np.unique(own[bad]): who[names[o]] = max(who.get(names[o], 0), int((own[bad] == o).sum()))
@@ -217,6 +233,44 @@ def chroma_count(img, alpha_min=1):
 
 def soft_count(img): a = img[..., 3]; return int(((a > 0) & (a < 255)).sum())
 
+# ---- chroma rule v2 (default; --chroma-rule old = the plain bluish test above, for comparison)
+#  * exact #0000FF (the key) always fails ('key_exact')
+#  * a bluish px (old test) is hers only if its RGB is in the allowlist built from her art px that do NOT touch key
+#    (each source's silhouette eroded by 1 px; key = alpha 0, exact #0000FF, or bluish px connected to the image border)
+#  * a bluish px exactly equal to her frame (view base.png) at the same position: hers at rest; for posed files counted
+#    separately as 'frame_fringe' (not a failure)
+CHROMA_RULE = 'v2'
+def _bluish(img):
+    r, g, b = [img[..., i].astype(int) for i in range(3)]; return (b > np.maximum(r, g) + 60) & (b > 120)
+def key_mask(img):
+    a = img[..., 3] if img.shape[-1] == 4 else np.full(img.shape[:2], 255, np.uint8)
+    exact = (img[..., 0] == 0) & (img[..., 1] == 0) & (img[..., 2] == 255)
+    bl = _bluish(img); lab, n = ndi.label(bl)
+    edge = set(np.unique(np.r_[lab[0], lab[-1], lab[:, 0], lab[:, -1]]).tolist()) - {0}
+    return (a == 0) | exact | np.isin(lab, list(edge))
+_allow_cache = {}
+def allow_colours(path):
+    if path not in _allow_cache:
+        a = rgba(P(path)) if not os.path.isabs(path) else rgba(path)
+        her = ~key_mask(a) & (a[..., 3] == 255); core = ndi.binary_erosion(her, np.ones((3, 3), bool))
+        c = a[..., :3][core].astype(np.int32); _allow_cache[path] = np.unique((c[:, 0] << 16) | (c[:, 1] << 8) | c[:, 2])
+    return _allow_cache[path]
+def chroma_v2(img, sources, frame=None, posed=False):
+    vis = img[..., 3] > 0
+    exact = vis & (img[..., 0] == 0) & (img[..., 1] == 0) & (img[..., 2] == 255)
+    cand = vis & _bluish(img) & ~exact
+    out = {'key_exact': int(exact.sum()), 'candidates': int(cand.sum()), 'allowlisted': 0, 'frame_match_rest': 0, 'frame_fringe': 0, 'fail': 0}
+    if cand.any():
+        allow = np.unique(np.concatenate([allow_colours(x) for x in sources])) if sources else np.zeros(0, np.int64)
+        c = img[..., :3].astype(np.int64); code = (c[..., 0] << 16) | (c[..., 1] << 8) | c[..., 2]
+        al = cand & np.isin(code, allow); out['allowlisted'] = int(al.sum()); rest = cand & ~al
+        if frame is not None and frame.shape[:2] == img.shape[:2]:
+            fm = rest & np.all(img[..., :3] == frame[..., :3], -1) & (frame[..., 3] > 0)
+            out['frame_fringe' if posed else 'frame_match_rest'] = int(fm.sum()); rest &= ~fm
+        out['fail'] = int(rest.sum())
+    out['chroma'] = out['key_exact'] + out['fail']
+    return out
+
 # ---------------------------------------------------------------- file sets
 def live_files(view, system):
     d = sysdir(view, system)
@@ -255,11 +309,17 @@ def diag_sets(part_filter):
         for f in sorted(glob.glob(P('rig/hand_angles', ang + '_*.png'))): out.append((ang, 'hands', f))
     return [o for o in out if part_filter(o[1], os.path.basename(o[2]))]
 
-def file_report(view, system, f, tol, pal_view=None):
+def file_report(view, system, f, tol, pal_view=None, posed=False):
     img = rgba(f); fn = os.path.basename(f)
     pal = palette(palette_sources(pal_view or view, system, fn))
     off, opq = offpal_count(img, pal, tol)
-    return {'file': os.path.relpath(f, ROOT), 'opaque': opq, 'off_palette': off, 'chroma': chroma_count(img), 'soft_edge': soft_count(img)}
+    r = {'file': os.path.relpath(f, ROOT), 'opaque': opq, 'off_palette': off, 'chroma_old_rule': chroma_count(img), 'soft_edge': soft_count(img)}
+    if CHROMA_RULE == 'old': r['chroma'] = r['chroma_old_rule']
+    else:
+        srcs = palette_sources(pal_view or view, system, fn); v = pal_view or view
+        fr = rgba(P('views', v, 'base.png')) if v in VIEWS else None
+        r['chroma_v2'] = chroma_v2(img, srcs, fr, posed=posed); r['chroma'] = r['chroma_v2']['chroma']; r['frame_fringe'] = r['chroma_v2']['frame_fringe']
+    return r
 
 # ---------------------------------------------------------------- G2b mesh colour-outside-mask (posed)
 def mesh_outside(view, skin_path=None, thr=1.0):
@@ -354,18 +414,37 @@ def gate_scale(views, tol=1.0):
     res['pass'] = bool(ok); return res
 
 # ---------------------------------------------------------------- main
+def run_bend_check(a):
+    """4-spot bend check (rig/work/bend_check/bend_check.py). Returns the per-spot posed-minus-rest worst values."""
+    import subprocess
+    bdir = os.path.join(ROOT, 'rig', 'work', 'bend_check')
+    if a.bend_render:
+        subprocess.run(['node', os.path.join(bdir, 'render_live.js')], check=True, env=dict(os.environ, PORT=str(a.bend_render)), cwd=ROOT)
+    sys.path.insert(0, bdir); import bend_check as BC
+    out = BC.main(['--angles', a.bend_angles, '--live', a.bend_live])
+    print(f'  bend-check -> {os.path.relpath(bdir, ROOT)}/bend_check_report.json (+ diag/live json and sheets)')
+    return {'out_dir': os.path.relpath(bdir, ROOT), 'report': 'bend_check_report.json', 'diag': out.get('diag'), 'live': out.get('live')}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--gate', default='all', help='weights,leak,scale or all')
     ap.add_argument('--part', default='', help='system or part filter: body|eyes|mouth|hands|hair or a file/part glob, e.g. hair/bun* or mouth/anger')
     ap.add_argument('--view', default=','.join(VIEWS), help='comma list of views (default all 5)')
     ap.add_argument('--staged-dir', action='append', default=None, help='staged tone-fix dir(s); default: the three known tone_fix dirs. Repeatable')
+    ap.add_argument('--chroma-rule', choices=['v2', 'old'], default='v2', help='G2 chroma: v2 (key exact fails; allowlist from her 1px-eroded art; frame match/fringe) or the old bluish test')
+    ap.add_argument('--owner', choices=['texel', 'layer'], default='texel', help='G1 isolation owner: top-layer texel (default) or the part of the vertex\'s own triangle layer(s)')
     ap.add_argument('--skin', default=None, help='alternate skin.json for G1/G2 mesh (e.g. a candidate build); only with one --view')
     for sy in SYSTEMS: ap.add_argument(f'--{sy}-dir', default=None, help=f'override folder for {sy} parts (see sysdir())')
     ap.add_argument('--no-diagonals', action='store_true'); ap.add_argument('--no-mesh', action='store_true')
     ap.add_argument('--tol', type=float, default=2.0, help='RGB distance tolerance for off-palette (default 2)')
     ap.add_argument('--json', default=None, help='write full JSON result here')
+    ap.add_argument('--bend-check', action='store_true', help='also run the 4-spot bend check (waist step, hip dent, shoulder/elbow jaggies, head-neck gap) -> rig/work/bend_check/. Informational, does not change PASS. Use --gate bend to run it alone')
+    ap.add_argument('--bend-angles', default='045,315', help='diag_body vs diag_body_fix angles for --bend-check (empty = skip)')
+    ap.add_argument('--bend-live', default='apose', help='live views for --bend-check (need renders in rig/work/bend_check/live/, see --bend-render)')
+    ap.add_argument('--bend-render', type=int, default=0, metavar='PORT', help='re-render the live bend poses first with rig/work/bend_check/render_live.js against a static server already serving the repo root on PORT')
     a = ap.parse_args()
+    global OWNER_MODE, CHROMA_RULE; OWNER_MODE = a.owner; CHROMA_RULE = a.chroma_rule
     for sy in SYSTEMS:
         if getattr(a, f'{sy}_dir'): SYS_DIR[sy] = getattr(a, f'{sy}_dir')
     views = [v for v in a.view.split(',') if v]; gates = VIEWS and (['weights', 'leak', 'scale'] if a.gate == 'all' else a.gate.split(','))
@@ -373,7 +452,7 @@ def main():
     psys, ppat = (a.part.split('/', 1) + ['*'])[:2] if a.part else ('', '*')
     if psys and psys not in SYSTEMS: psys, ppat = '', a.part
     def pf(system, fname): return (not psys or system == psys) and __import__('fnmatch').fnmatch(fname, ppat if ppat.endswith(('*', '.png')) else ppat + '*')
-    R = {'views': views, 'part': a.part or 'all', 'staged_dirs': sdirs, 'tol': a.tol, 'dir_overrides': SYS_DIR}; ok = True
+    R = {'views': views, 'part': a.part or 'all', 'staged_dirs': sdirs, 'tol': a.tol, 'dir_overrides': SYS_DIR, 'owner': OWNER_MODE, 'chroma_rule': CHROMA_RULE}; ok = True
     body_sel = (not psys or psys == 'body')
     if 'weights' in gates and body_sel:
         R['weights'] = {v: gate_weights(v, a.skin) for v in views}; ok &= all(r['pass'] for r in R['weights'].values())
@@ -390,12 +469,12 @@ def main():
                     L['staged'].setdefault(v, {}).setdefault(s, []).append(rs)
             if body_sel and not a.no_mesh: L['mesh_outside_mask'][v] = mesh_outside(v, a.skin)
         if not a.no_diagonals:
-            for ang, s, f in diag_sets(pf): L['diagonals'].setdefault(ang, {}).setdefault(s, []).append(file_report(ang, s, f, a.tol))
+            for ang, s, f in diag_sets(pf): L['diagonals'].setdefault(ang, {}).setdefault(s, []).append(file_report(ang, s, f, a.tol, posed=True))
         def tot(tree):
-            t = {'off_palette': 0, 'chroma': 0, 'soft_edge': 0, 'files': 0}
+            t = {'off_palette': 0, 'chroma': 0, 'chroma_old_rule': 0, 'frame_fringe': 0, 'soft_edge': 0, 'files': 0}
             for vv in tree.values():
                 for lst in vv.values():
-                    for r in lst: t['files'] += 1; t['off_palette'] += r['off_palette']; t['chroma'] += r['chroma']; t['soft_edge'] += r['soft_edge']
+                    for r in lst: t['files'] += 1; t['off_palette'] += r['off_palette']; t['chroma'] += r['chroma']; t['chroma_old_rule'] += r['chroma_old_rule']; t['frame_fringe'] += r.get('frame_fringe', 0); t['soft_edge'] += r['soft_edge']
             return t
         L['totals'] = {k: tot(L[k]) for k in ('live', 'staged', 'diagonals')}
         L['totals']['mesh_outside_mask'] = sum(x[next(iter(x))] for vv in L['mesh_outside_mask'].values() for x in vv.values())
@@ -405,6 +484,7 @@ def main():
         R['leak'] = L; ok &= L['pass_staged']
     if 'scale' in gates and (not psys or psys in ('hands', 'body')):
         R['scale'] = gate_scale(views); ok &= R['scale']['pass']
+    if a.bend_check or 'bend' in gates: R['bend_check'] = run_bend_check(a)
     R['pass'] = bool(ok)
     js = json.dumps(R, indent=1, default=lambda o: o.item() if hasattr(o, 'item') else str(o))
     if a.json: os.makedirs(os.path.dirname(os.path.abspath(a.json)), exist_ok=True); open(a.json, 'w').write(js)

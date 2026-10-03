@@ -1,12 +1,12 @@
-# Shadowveil: master handoff (Oct 3, 2026, ~4:00 AM PT)
+# Shadowveil: master handoff (Oct 3, 2026, ~4:00 AM PT; chroma/bend/weight-bleed status updated ~4:45 AM PT)
 
 For any coding agent picking this up (Codex, Freebuff, or anyone else). Everything here comes from the five bot handoffs, `STATUS.md` / `status/status.json`, `CODER_HANDOFF.md`, `rig/poser/HOOKS.md` and the rig files as they were when this was pushed. Where something wasn't checked, this file says so.
 
 ## Top 5 next steps
 1. **Get the user's OK, or a no, on the staged items** (section 5). Nothing staged is live. Don't flip anything live without the user's OK, and use one OK-list line per item.
-2. **Fix the profile weight bleed** (left 9 / right 21 elbow vertices over the torso, plus the forearm/hip isolation failures) using a candidate skin under `rig/work/weight_bleed_fix/`. Never write `skin.json` directly, and the gates must pass with rest at 0 px. Note: `rig/work/weight_bleed_fix/` did **not** exist on disk at push time, so it isn't in this commit (see section 7).
+2. **Review the staged profile weight-bleed fix** in `rig/work/weight_bleed_fix/` (`?skin=../../../rig/work/weight_bleed_fix/<left|right>_skin_fix.json`). G1 bleed goes to 0 (was 9 / 21) with rest at 0 px and 0 new holes. It still moves the posed elbow outline by up to 3.1 px on the right (section 7.1). `skin.json` is untouched.
 3. **Fix the handorder wrist rows.** Draw the palm over the forearm, clipped to the hand erase mask, on the left rows y852–853 (53 px) and right rows y856–857 (24 px). Staged work is in `rig/work/handorder/wristrows/`.
-4. **Finish Body's visible-defect fixes** in `body_tools/work/diag_body_fix/` (it was still running, so it's not in this push), and the `?palsnap=1` palette snap (`rig/work/palsnap/`).
+4. **Body's visible-defect fixes** in `body_tools/work/diag_body_fix/` are staged and measured by `qa_gates.py --bend-check` (section 6). The waist step is fixed; 045 hip_L −25 and 045 head_neck −25 got worse and need another pass. Also finish the `?palsnap=1` palette snap (`rig/work/palsnap/`).
 5. **Before anything goes live, run the checks in section 8:** `rig/qa_gates.py`, rest identity at 0 px in all 5 views (with and without flags), and the md5 of the served `rig/index.html`.
 
 ---
@@ -50,7 +50,7 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
 - **The smooth-mesh rebuild was DROPPED by the user.** Only fix the visible defects on the existing pieces and setup.
 
 ## 4. Current status per area
-**Body** ([body_tools/work/HANDOFF_BODY.md](body_tools/work/HANDOFF_BODY.md)). Everything is staged. The diagonal pieces in `diag_body/{045,315}` (rest 0 px, 0 holes at ±25°) were rejected for unnatural bends. `diag_body_fix/` is fixing those exact defects (waist step, hip dent, jagged shoulders/elbows, head-neck gap, 045 neck key at alpha 0) and **isn't in this push**. The crotch `ulnb` candidate is recommended. The hairless live patch (`hairless_division_staged/<view>/live_patch_paired_hairfront/`) must go live with Hair's hair_front. The `handorder_wrist_trim` and `weight_bleed` attempts were rejected. Spot-1 (right armpit/hip) still opens ~650 px under combined shoulder+hip bends and needs a skin.json weights fix from the Coder. The line-tone snap (1,046 px) is staged in `linetone_snap/`.
+**Body** ([body_tools/work/HANDOFF_BODY.md](body_tools/work/HANDOFF_BODY.md)). Everything is staged. The diagonal pieces in `diag_body/{045,315}` (rest 0 px, 0 holes at ±25°) were rejected for unnatural bends. `diag_body_fix/` fixes those exact defects (waist step, hip dent, jagged shoulders/elbows, head-neck gap, 045 neck key at alpha 0). It is staged, and the bend-check results are in section 6. The crotch `ulnb` candidate is recommended. The hairless live patch (`hairless_division_staged/<view>/live_patch_paired_hairfront/`) must go live with Hair's hair_front. The `handorder_wrist_trim` and `weight_bleed` attempts were rejected. Spot-1 (right armpit/hip) still opens ~650 px under combined shoulder+hip bends and needs a skin.json weights fix from the Coder. The line-tone snap (1,046 px) is staged in `linetone_snap/`.
 
 **Eyes** ([eyes/HANDOFF_EYES.md](eyes/HANDOFF_EYES.md)). Live in apose/tpose/left/right with rest 0 px (left-profile gaze fix in). Staged: the lash fix, closed-frame crease choice, side-glance white tone, 45°/315° diagonal eyes with the far-eye blue fix (`eyes/staged/diagonals/`), and diagonal iris limits v4. 135°/225° have no eye parts because no eye is visible in her frames (`eyes/qa/diag_135_225/`). Open: a pale line above the iris and specks in the right profile (small), and the eye mesh lid for FORMAT v0.2 (not started). Expressions are parked.
 
@@ -75,14 +75,54 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
 
 ## 6. Paused / dropped work
 - **The 4 diagonal angles (45/135/225/315) are PAUSED.** The user said "I just want to fix her model". Staged diagonal work from every bot is kept for reference.
-- **Body's 45/315 diagonal sheets were rejected** for stair-steps and dents at the waist, hips, shoulders and elbows, and the neck gap. Body is fixing exactly those visible defects in `body_tools/work/diag_body_fix/`, which **isn't in this push** (still running; it comes in a later push).
+- **Body's 45/315 diagonal sheets were rejected** for stair-steps and dents at the waist, hips, shoulders and elbows, and the neck gap. Body's fix is staged in `body_tools/work/diag_body_fix/{045,315}/`, with `metrics_before_after.json` and `sheet_<angle>_before_after.png`. The rig bend check (`python3 rig/qa_gates.py --gate bend`) wrote `rig/work/bend_check/bend_check_diag.json` and `bend_check_diag_sheet.png`. Results at ±25°, old `diag_body` → `diag_body_fix`:
+  - **Waist side-step (max row jump, rest 2 px): fixed.**
+    - 045: −25 right 20→3; +25 left 18→3.
+    - 315: −25 right 18→3; +25 left 18→3.
+    - Residual 7 px remains at 045 +25 right and 315 −25 left (unchanged; these were already 7).
+    - Body's own metric has waist step 3.7–4.1 → 2.6–3.5, but **waist lump 0–1.4 → 6.3–7 px** (new, should be checked by eye).
+  - **Hip dent:**
+    - 045 hip_L −25 is **worse**: dent 1.41→3.16 px, notch 91→153 px. Body's metrics agree: 1.41→3.16.
+    - 045 hip_R +25 and 315 hip_L −25 are unchanged at 4.47 px.
+    - 315 hip_R +25 notch is unchanged (86 px).
+  - **Shoulder/elbow outline spikes (turn >50° over 4 px) are mixed:**
+    - Better: 045 elbow_R +25 6→3 and −25 3→0; 045 shoulder_L +25 4→1; 315 shoulder_R slightly better.
+    - Worse: 045 shoulder_L −25 8→10; 315 shoulder_L −25 14→15 (rest 4→7); 315 elbows 1→3 and 0→2.
+    - Max deviation from a smoothed outline stays 1–2.4 px everywhere.
+  - **Head-neck gap (closing a 6 px disk, teammates as cover):**
+    - 045 −25 is **worse**, 88→128 px.
+    - 045 +25 143→86; 315 −25 129→69 (width 5.7→4.0); 315 +25 92→79. neck_base is similar or slightly better.
+    - Rest is 100 px (045) and 53 px (315).
+  - **045 neck blue:**
+    - Body is right that the neck key is alpha 0 in every body piece (`neck_keygap_alpha0.json`: 56 px at x408–411, y210–227).
+    - No current diag-rig slot layer (`rig/work/diag_rig/slots/d045/**`) and no teammate source has bluish px there.
+    - The blue that shows comes from the stale renders `rig/work/diag_rig/renders/d045/*.png` (03:43 PT, before the slots were rebuilt at 03:48 PT): 5–23 near-frame navy px per render at the hair/jaw/neck edge, e.g. (7,16,121) ≈ frame (8,17,120). The diag worker kept these as "fringe 25<b−max≤60".
+    - The turn frame itself has 70 enclosed bluish px near the 045 neck, 64 of them uncovered by any layer.
+    - Re-render with the current slots. Anything left there is counted as `frame_fringe` by the new chroma rule.
 - **The smooth mesh** (`body_tools/work/natural_bend_proto/`, not pushed) **and the knuckle mesh were dropped.**
 - **Hair v4 diagonals** (`hair/staged/diagonals_v4/`) have one-sided sway caps (`sway_caps.json`) that need `degAtPlus1`/`degAtMinus1` support for hair in `rig/index.html`. That's not done. Without it, 045 `strand_03`/`strand_03_tip` and 315 `strand_06` can swing over the eye or mouth.
 - **Benchmarks** (`reference/benchmarks/`, `rig/benchmarks/PLAN.md`), **outfit work** (`reference/outfit/`, `body_tools/work/outfit_staged/`) **and Massfront are parked.**
 
 ## 7. Open issues and how to address them
-1. **Profile weight bleed.** Left 9 and right 21 vertices at the elbow over the torso, plus forearm/hip isolation failures (G1 in `rig/qa_gates.py`). *Fix:* build a candidate skin under `rig/work/weight_bleed_fix/` and check it with `python3 rig/qa_gates.py --gate weights,leak --part body --view left --skin <candidate>` (and the same for right). Rest must be 0 px with no visible shape change. **Never write `skin.json` directly.** Body's `--zero-cross-limb` attempt was rejected because vertices moved up to 31 px and 48 holes opened (`rig/tools/REJECTED_visible_change`, `body_tools/work/weight_bleed/`). *Note:* `rig/work/weight_bleed_fix/` and `rig/work/bend_check/` did not exist on disk when this was pushed. Whoever owns them should commit them in a later push.
-2. **Handorder wrist rows.** Left: 53 px at y852–853. Right: 24 px at y856–857. *Fix:* draw the palm over the forearm on those rows only, clipped to `hands/<view>_hand_erase_mask.png`. Don't trim the body skin (Body's trim was rejected). Staged work: `rig/work/handorder/wristrows/` (`apply_wristrows.py`, `index.wr.html`, `ho_check_wr.json`).
+1. **Profile weight bleed: fix staged, awaiting OK.**
+   - **What's there:** `rig/work/weight_bleed_fix/build_skin_bleedfix.py`, a copy of `body_tools/build_skin.py`.
+     - Without `--chain-bleed-fix` its output is identical to live `skin.json`.
+     - With the flag it changes only the bleeding vertices, using the smallest within-chain weight transfer (e.g. forearm→upperArm) that makes every weighted bone related to the dominant one.
+     - It refuses to write outside its folder. Outputs are `{left,right}_skin_fix.json`, plus `_ref.json`, which equals live.
+     - To view: `?skin=../../../rig/work/weight_bleed_fix/<view>_skin_fix.json`. **`skin.json` is not written.**
+   - **G1 result:**
+     - Bleed vs dominant bone: left 9→0, right 21→0.
+     - Isolation under `--owner layer` is clean.
+     - Under the default `--owner texel` isolation is unchanged from live: upperArm/forearm/thigh 113/118/52 (left) and 114/136/59 (right). These are forearm-layer vertices over thigh/pelvis texels; they're already split by layer.
+     - Underlay isolation thigh 1145 (left) / 1101 (right) is unchanged. The underlay is a hidden fill.
+   - **Shape:**
+     - Rest is 0 px in both views, with 0 new interior holes in any pose (`holes_live_vs_fix.json`).
+     - Max vertex move is 0.88 px on the left and 3.14 px on the right. A grid search shows ≥1.24–3.21 px is the floor for the 7 shared x=688 vertices with pure weights.
+     - Changed px: ElbowL±1 21/58, ElbowR±1 138/76, combined shoulder+elbow up to 195 (left) / 765 (right). Under Body's "alpha 0 where live >0" metric the posed elbow outline moves inward by 8 px (left, Sh−1 El−1) and 36 px (right, Sh+1 El+1).
+     - Files: `browser_live_vs_fix.json`, `sheet_live_vs_fix.png`.
+     - Compare: Body's `--zero-cross-limb` was rejected for 31 px moves and 48 holes.
+   - **Still open:** the user must OK the right-elbow outline change. A ≤1 px fix there needs a mesh change (split the x=688 vertices), not weights.
+2. **Handorder wrist rows.** Left: 53 px at y852–853. Right: 24 px at y856–857. *Fix:* draw the palm over the forearm on those rows only, clipped to `hands/<view>_hand_erase_mask.png`. Don't trim the body skin (Body's trim was rejected). Staged work: `rig/work/handorder/wristrows/` (`apply_wristrows.py`, `index.wr.html`, `ho_check_wr.json`). *Status (04:45 PT):* the patch gives rest 0 px left and right (was 53 / 24 px), restCheck PASS and 0 errors, with the clip at 74 px left / 35 px right. Still to do: the 5-view check, the underlay check and the default 30/30 hash check. It is **not** swapped into `rig/index.html`.
 3. **`?palsnap=1` palette snap is in progress.** It's in `rig/work/palsnap/` (`apply_palsnap.py` is an idempotent patcher and `index.palsnap.html` is the staged copy). Each posed item's non-exact texels snap to that item's own source tones, and rest frames are never touched. *To finish:* run `ps_check.js` with `cases_full.json`, confirm the default is byte-identical (`default_same_ab.js`), and check that 1–2 px hair tips don't vanish at full sway. The mouth palette must include teeth #efe4da, tongue #9c5a4a and profile interior #3f2319. Then rerun qa_gates for hair and mouth. The render output in `palsnap/out/` wasn't pushed.
 4. **hgSub hair/bun offsets.** Keep them at (0,0) in left, right and back while the posed bodies still have baked-in hair. Re-tune from `hair/qa/turn_handoff/subofs_v2/` once they don't (`rig/work/hgsubhair/`).
 5. **NeckTwist doesn't actually turn the head.** It only reprojects neck skin. *Fix:* a real head turn has to switch between her drawn angles (the 8-angle plan, which is paused), not warp the neck.
@@ -98,12 +138,23 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
   ```
   PYTHONDONTWRITEBYTECODE=1 python3 rig/qa_gates.py --gate weights,leak,scale|all --part body|eyes|mouth|hands|hair[/glob] \
      --view apose,tpose,left,right,back [--staged-dir DIR] [--skin cand.json] [--hair-dir/--mouth-dir/--eyes-dir/--hands-dir/--body-dir DIR] \
-     [--no-diagonals] [--no-mesh] [--tol 2] [--json out.json]
+     [--chroma-rule v2|old] [--owner texel|layer] [--bend-check|--gate bend] [--no-diagonals] [--no-mesh] [--tol 2] [--json out.json]
   ```
   - G1 **weights**: bleed vs dominant bone (fails), plus a bone isolation test (an unrelated vertex moving more than 0.5 px fails).
   - G2 **leak / colour sweep**: off-palette (more than `--tol` from any of her tones for that part/view), chroma, soft edges (info only), and the mesh_outside_mask pose sweep.
   - G3 **scale**: hand and foot length vs head and forearm. More than 1 px drift fails, and the base views are the truth.
-  - **The required chroma rules:** exact `#0000FF` always fails. Her own blue-ish colours are allowlisted only from 1 px-eroded silhouette art pixels. Frame-edge fringe is counted separately. *Caveat:* the `qa_gates.py` pushed here still uses the older heuristic (`blue > max(r,g)+60 and blue > 120`), and its `--help` has no bend-check flag. The exact/eroded/fringe rule and a bend check were in progress with the other rig worker, so confirm they've landed before relying on them.
+  - **The required chroma rules:** exact `#0000FF` always fails. Her own blue-ish colours are allowlisted only from 1 px-eroded silhouette art pixels. Frame-edge fringe is counted separately. This is now the default in `qa_gates.py` (`--chroma-rule v2`). A px that exactly matches the frame at the same position is `frame_match_rest` at rest and `frame_fringe` when posed; neither fails. `--chroma-rule old` keeps the old heuristic (`blue > max(r,g)+60 and blue > 120`) for comparison, and both counts are in every file report. Before/after on the live rig (all 5 views), both rules give identical results (`rig/work/qa_gates/out/leak_live_chroma_{old,v2}.json`):
+    - Chroma: live 0, staged 0, diagonals 1. The 1 is a real fail: `hair/staged/diagonals/315/hair/strand_04.png`.
+    - Off-palette: 0 / 0 / 209.
+    - mesh_outside_mask: 3762 (pre-existing).
+  - **Bend check:** `--bend-check` (or `--gate bend`) measures waist side-step, hip dent, shoulder/elbow outline spikes and the head-neck gap. Output goes to `rig/work/bend_check/`. It is info only and never changes PASS.
+    - Live A-pose baseline (nearest), posed vs rest:
+      - waist step +3 px at BodyLean±1;
+      - hip dent +0.41 / +1.24 px, notch +28 / +22 px;
+      - shoulder spikes 0, max dev ≤1.9 px;
+      - elbow_R +1 spike (dev +0.9), elbow_L 0 spikes;
+      - head-neck gap rest 6 px, HeadTilt +7 / +14 px, HeadNod+1 +13 px.
+    - Other options: `--owner texel|layer` for G1, and per-system `--<sys>-dir` overrides. See `rig/work/qa_gates/README.md`.
 - **Rest identity:** 0 px vs `base.png` in all 5 views at `quality=linear`, with no flag and with each staged flag (e.g. `?hairless=1`, `&headgroup=1`). Use `python3 rig/rest_check.py`, the rig's Rest check, or each bot's rest_check scripts. The default output must stay byte-identical (30/30 frame hashes).
 - **Bot-side checks:** `python3 eyes/qa/qa_gates/check_diag_chroma_fix.py` (Eyes diagonal rest), `hands/qa/gates/gates_extra.py` (Hands), the Hair colour sweep (`hair/qa/colour_sweep/`) for 0 over the eyes/mouth across full sway, and the Body pose extremes at ±25° on every joint (0 holes, outline within 1 px). Every fix needs a before/after sheet.
 - **Dashboard (`status/update.py`)** only edits `status/status.json` and `STATUS.md`:
@@ -140,4 +191,4 @@ Staged flags in `rig/index.html` (default output is unchanged when they're off):
   | 8790/8791 | Box egress tunnel (not ours) |
   | 8792–8796 | Coder test servers (handorder 8792, hgsub 8794, others ad hoc) |
 
-- Not pushed on purpose: `remote/` (tunnel and password files), backups, `__pycache__`, the `vis.npy` files (over 50 MB), render scratch (`rig/previews/wrist`, `rig/previews/idle`, `rig/previews/actions` renders, `rig/work/*/renders|out|tmp`, `.rgba` dumps in `rig/work/mouthfix`, most partmesh_pilot PNGs), large regenerable JSON (candidate skins, render dumps over 1 MB), `rig/index.*.html` working copies and `_*_test.html` pages, `body_tools/work/natural_bend_proto/` (dropped) and `diag_body_fix/` (still running), and the parked `reference/outfit` and `reference/benchmarks` updates. The full exclude list with reasons is `rig/work/push_prep/list2.json`.
+- Not pushed on purpose: `remote/` (tunnel and password files), backups, `__pycache__`, the `vis.npy` files (over 50 MB), render scratch (`rig/previews/wrist`, `rig/previews/idle`, `rig/previews/actions` renders, `rig/work/*/renders|out|tmp`, `.rgba` dumps in `rig/work/mouthfix`, most partmesh_pilot PNGs), large regenerable JSON (candidate skins, render dumps over 1 MB), `rig/index.*.html` working copies and `_*_test.html` pages, `body_tools/work/natural_bend_proto/` (dropped) and `diag_body_fix/` (still running at that push; it is now finished and staged, so add it in the next push, along with `rig/work/weight_bleed_fix/` (36 MB; the `*_skin_{ref,fix}.json` files are 2.3–2.6 MB each) and `rig/work/bend_check/` (21 MB, mostly the `live/` renders, which can be regenerated)), and the parked `reference/outfit` and `reference/benchmarks` updates. The full exclude list with reasons is `rig/work/push_prep/list2.json`.

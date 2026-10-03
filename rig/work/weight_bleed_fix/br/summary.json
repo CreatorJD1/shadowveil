@@ -1,0 +1,26 @@
+{
+ "left_live": {
+  "rest": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "skin": "views/left/body/skin.json",
+  "underlayOk": true,
+  "errs": []
+ },
+ "left_fix": {
+  "rest": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "skin": "views/left/body/../../../rig/work/weight_bleed_fix/left_skin_fix.json",
+  "underlayOk": true,
+  "errs": []
+ },
+ "right_live": {
+  "rest": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "skin": "views/right/body/skin.json",
+  "underlayOk": true,
+  "errs": []
+ },
+ "right_fix": {
+  "rest": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "skin": "views/right/body/../../../rig/work/weight_bleed_fix/right_skin_fix.json",
+  "underlayOk": true,
+  "errs": []
+ }
+}

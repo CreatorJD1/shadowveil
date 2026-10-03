@@ -1,6 +1,6 @@
 # Shadowveil — character rig & live driver status
 
-Last updated: Sat Oct 3 2026, 3:45 AM PT
+Last updated: Sat Oct 3 2026, 4:04 AM PT
 
 Overall: ~45% — roughly 40–50% to a quality live driver (rough estimate)
 
@@ -104,6 +104,7 @@ Dashboard: http://127.0.0.1:8765/app/#status (master app; /status/ redirects the
 - [~] Coder: head-group hair/bun sub-offsets wired behind ?headgroup=1 (rig/partmesh/staged/headgroup.json sub.hair/sub.bun, Base Hair values); left/right edge distance improves, back gets worse and the bun shows a ring + see-through gaps, so it waits on Base Hair (rig/work/hgsubhair/)
 - [~] Coder: ?hairless=1 confirmed working (no regression; at rest it matches live by design). tpose hairless fails 181 px from Body's 02:01 eye-corner fill. index.html now 562c32a7 (handorder + armsub, flags only, default 30/30 identical). qa_gates.py baseline, crotch candidates, arm handoff proto, diag iris limits, hair/bun sub-offsets staged.
 - [~] Coder: rig/poser.html unified poser + keyframe timeline (staged; drives live rig/index.html via iframe, no rig edits). Hooks proposed in rig/poser/HOOKS.md. Benchmark plan parked in rig/benchmarks/PLAN.md.
+- [~] Full project push + master HANDOFF.md (commit e0df3a1, PR #2)
 
 ## Blockers & open issues
 

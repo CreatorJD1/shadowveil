@@ -1,0 +1,14 @@
+{
+ "left_ref": {
+  "rest": "PASS: rest vs base.png, 0 px differ (left, skin mesh)",
+  "skin": "views/left/body/../../../rig/work/weight_bleed_fix/left_skin_ref.json",
+  "underlayOk": true,
+  "errs": []
+ },
+ "right_ref": {
+  "rest": "PASS: rest vs base.png, 0 px differ (right, skin mesh)",
+  "skin": "views/right/body/../../../rig/work/weight_bleed_fix/right_skin_ref.json",
+  "underlayOk": true,
+  "errs": []
+ }
+}

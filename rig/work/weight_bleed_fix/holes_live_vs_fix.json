@@ -1,0 +1,156 @@
+{
+ "left/BodyLean+1": {
+  "interior_holes_live": 155,
+  "interior_holes_fix": 155,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/BodyLean-1": {
+  "interior_holes_live": 166,
+  "interior_holes_fix": 166,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/ElbowL+1": {
+  "interior_holes_live": 141,
+  "interior_holes_fix": 141,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/ElbowL-1": {
+  "interior_holes_live": 140,
+  "interior_holes_fix": 140,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/HipL+1": {
+  "interior_holes_live": 140,
+  "interior_holes_fix": 140,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/HipL-1": {
+  "interior_holes_live": 140,
+  "interior_holes_fix": 140,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/ShL+1_ElL+1": {
+  "interior_holes_live": 140,
+  "interior_holes_fix": 140,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/ShL-1_ElL-1": {
+  "interior_holes_live": 141,
+  "interior_holes_fix": 141,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 8,
+  "outline_px_covered": 0
+ },
+ "left/ShoulderL+1": {
+  "interior_holes_live": 140,
+  "interior_holes_fix": 140,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/ShoulderL-1": {
+  "interior_holes_live": 140,
+  "interior_holes_fix": 140,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "left/rest": {
+  "interior_holes_live": 140,
+  "interior_holes_fix": 140,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/BodyLean+1": {
+  "interior_holes_live": 437,
+  "interior_holes_fix": 437,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/BodyLean-1": {
+  "interior_holes_live": 435,
+  "interior_holes_fix": 435,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/ElbowR+1": {
+  "interior_holes_live": 393,
+  "interior_holes_fix": 393,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/ElbowR-1": {
+  "interior_holes_live": 393,
+  "interior_holes_fix": 393,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/HipR+1": {
+  "interior_holes_live": 455,
+  "interior_holes_fix": 455,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/HipR-1": {
+  "interior_holes_live": 451,
+  "interior_holes_fix": 451,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/ShR+1_ElR+1": {
+  "interior_holes_live": 393,
+  "interior_holes_fix": 393,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 36,
+  "outline_px_covered": 0
+ },
+ "right/ShR-1_ElR-1": {
+  "interior_holes_live": 455,
+  "interior_holes_fix": 455,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/ShoulderR+1": {
+  "interior_holes_live": 393,
+  "interior_holes_fix": 393,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/ShoulderR-1": {
+  "interior_holes_live": 455,
+  "interior_holes_fix": 455,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ },
+ "right/rest": {
+  "interior_holes_live": 399,
+  "interior_holes_fix": 399,
+  "new_interior_holes": 0,
+  "outline_px_uncovered": 0,
+  "outline_px_covered": 0
+ }
+}
